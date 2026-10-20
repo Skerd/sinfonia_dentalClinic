@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/cardView/appointmentCard.tsx",
+  "failedTitle": "Impossibile caricare l'appuntamento",
+  "failedDescription": "Tocca per riprovare.",
+  "status": "Stato",
+  "statusValues": {
+    "pending": "In attesa di conferma",
+    "confirmed": "Confermato",
+    "completed": "Completato",
+    "cancelled": "Annullato",
+    "no_show": "Non presentato"
+  },
+  "startAt": "Inizia",
+  "practitioner": "Dentista",
+  "patient": "Paziente"
+}

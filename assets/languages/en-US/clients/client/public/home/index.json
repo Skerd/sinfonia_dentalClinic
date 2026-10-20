@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/home/index.tsx",
+  "title": "Your dental appointment, booked in a minute",
+  "subtitle": "Pick a treatment, a dentist and a time that suits you. No account needed.",
+  "bookNow": "Book an appointment",
+  "servicesTitle": "Treatments",
+  "teamTitle": "Our team",
+  "bookThis": "Book this",
+  "callToBook": "Book by phone",
+  "bookWith": "Book with this dentist",
+  "priceFrom": "from",
+  "priceFree": "Free",
+  "priceOnRequest": "Price on request",
+  "minutes": "min",
+  "role": {
+    "dentist": "Dentist",
+    "hygienist": "Dental hygienist",
+    "orthodontist": "Orthodontist",
+    "other": "Team member"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/createClinicService.tsx",
+  "title": "Aggiungi trattamento",
+  "description": "Aggiungi un trattamento che i pazienti possono prenotare",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Cosa dovrebbero sapere i pazienti su questo trattamento",
+    "imagesLabel": "Foto",
+    "nameLabel": "Nome",
+    "namePlaceholder": "es. Zurigo Centro",
+    "priceTypeLabel": "Visualizzazione del prezzo",
+    "priceTypePlaceholder": "Seleziona come mostrare il prezzo",
+    "pricingSectionTitle": "Prezzo mostrato",
+    "slugLabel": "Nome per l'indirizzo web",
+    "slugPlaceholder": "es. controllo",
+    "timingSectionTitle": "Tempi"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio trattamento",
+      "time": 3000
+    },
+    "success": {
+      "title": "Trattamento aggiunto",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile aggiungere il trattamento. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi trattamento",
+    "description": "Aggiungi un trattamento che i pazienti possono prenotare"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

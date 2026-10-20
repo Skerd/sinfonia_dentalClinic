@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/cancelAppointmentDialog.tsx",
+  "title": "Termin absagen",
+  "description": "Die Patientin oder der Patient erhält eine E-Mail, dass der Termin abgesagt ist.",
+  "confirm": "Termin absagen",
+  "cancel": "Zurück",
+  "reasonLabel": "Grund (intern)",
+  "reasonPlaceholder": "z. B. Patient hat angerufen, um abzusagen"
+}

@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/cardView/appointmentCard.tsx",
+  "failedTitle": "Takimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "status": "Statusi",
+  "statusValues": {
+    "pending": "Në pritje të konfirmimit",
+    "confirmed": "Konfirmuar",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "no_show": "Mosparaqitje"
+  },
+  "startAt": "Fillon",
+  "practitioner": "Dentist",
+  "patient": "Pacienti"
+}

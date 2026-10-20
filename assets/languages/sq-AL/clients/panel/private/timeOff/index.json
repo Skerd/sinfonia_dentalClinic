@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/index.tsx",
+  "title": "Mungesë",
+  "description": "Pushime, ditë trajnimi dhe mbyllje kur nuk mund të rezervohet askush",
+  "help": {
+    "ariaLabel": "Rreth mungesave",
+    "title": "Rreth mungesave",
+    "overview": "Një mungesë e heq një mjek nga rezervimet për një kohë; mbyllja e një vendndodhjeje i heq të gjithë në atë vendndodhje.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Një mungesë nuk mund të mbulojë takime ekzistuese: gabimi i rendit ato që të zhvendosen fillimisht.",
+          "Pasi krijohet, periudha është e fiksuar. Për ta ndryshuar, fshijeni dhe krijoni një të re."
+        ]
+      }
+    ]
+  },
+  "create": "Shto mungesë",
+  "searchPlaceholder": "Kërko mungesa ose shto filtra...",
+  "noData": "Ende pa mungesa",
+  "failTitle": "Mungesa nuk u ngarkua",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "practitioner": "Dentist",
+    "location": "Vendndodhja",
+    "startAt": "Fillon",
+    "endAt": "Përfundon",
+    "internalNote": "Shënim i brendshëm",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

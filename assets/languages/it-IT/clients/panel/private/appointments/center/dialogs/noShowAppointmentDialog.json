@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/noShowAppointmentDialog.tsx",
+  "title": "Segna come non presentato",
+  "description": "Registra che il paziente non si è presentato. Possibile una volta trascorsa la tolleranza dopo l'inizio.",
+  "confirm": "Segna non presentato",
+  "cancel": "Indietro"
+}

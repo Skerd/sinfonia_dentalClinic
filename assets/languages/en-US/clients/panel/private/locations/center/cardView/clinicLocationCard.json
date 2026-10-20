@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/center/cardView/clinicLocationCard.tsx",
+  "failedTitle": "Failed to load location",
+  "failedDescription": "Tap to retry.",
+  "timezone": "Timezone",
+  "phone": "Phone",
+  "isActive": "Active"
+}

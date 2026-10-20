@@ -1,0 +1,64 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
+  "title": "Impostazioni dello studio",
+  "description": "Regole di prenotazione online, messaggi, privacy e conservazione dei dati",
+  "form": {
+    "bookingSectionTitle": "Prenotazione online",
+    "cancellationDeadlineHoursLabel": "Annullamento online fino a (ore prima)",
+    "cancellationDeadlineHoursPlaceholder": "Annullamento online fino a (ore prima)",
+    "currencyLabel": "Valuta dei prezzi mostrati",
+    "currencyPlaceholder": "Seleziona valuta",
+    "guestBookingAllowedLabel": "I pazienti possono prenotare senza account",
+    "includeServiceInMessagesLabel": "Indica il trattamento in e-mail e SMS",
+    "maxAdvanceDaysLabel": "Prenotabile fino a (giorni prima)",
+    "maxAdvanceDaysPlaceholder": "Prenotabile fino a (giorni prima)",
+    "minNoticeHoursLabel": "Preavviso minimo (ore)",
+    "minNoticeHoursPlaceholder": "Preavviso minimo (ore)",
+    "noShowGraceMinutesLabel": "Non presentato dopo (minuti di ritardo)",
+    "noShowGraceMinutesPlaceholder": "Non presentato dopo (minuti di ritardo)",
+    "notificationsSectionTitle": "Avvisi al personale",
+    "notifyUsersLabel": "Informa questi utenti delle prenotazioni online nuove e annullate",
+    "patientNoteEnabledLabel": "I pazienti possono aggiungere una breve nota",
+    "patientSectionTitle": "Pazienti e messaggi",
+    "privacyNoticeTextLabel": "Informativa sulla privacy mostrata prima della prenotazione",
+    "privacyNoticeTextPlaceholder": "Il testo che i pazienti accettano prima di prenotare",
+    "privacyNoticeVersionLabel": "Versione",
+    "privacyNoticeVersionPlaceholder": "es. 2026-10",
+    "privacySectionTitle": "Informativa sulla privacy",
+    "publicBookingEnabledLabel": "Prenotazione online sul sito web",
+    "reminderHoursBeforeLabel": "Promemoria (ore prima, 0 = disattivato)",
+    "reminderHoursBeforePlaceholder": "Promemoria (ore prima, 0 = disattivato)",
+    "reminderSmsLabel": "Invia i promemoria anche via SMS",
+    "removeUser": "Rimuovi",
+    "requireStaffConfirmationLabel": "Verifica le prenotazioni online prima di confermarle",
+    "rescheduleDeadlineHoursLabel": "Modifiche online fino a (ore prima)",
+    "rescheduleDeadlineHoursPlaceholder": "Modifiche online fino a (ore prima)",
+    "retentionMonthsLabel": "Rimuovi i dati del paziente dopo (mesi)",
+    "retentionMonthsPlaceholder": "Rimuovi i dati del paziente dopo (mesi)",
+    "selectUser": "Aggiungi un utente",
+    "slotIntervalMinutesLabel": "Griglia oraria (minuti)",
+    "slotIntervalMinutesPlaceholder": "Griglia oraria (minuti)"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio impostazioni",
+      "time": 3000
+    },
+    "success": {
+      "title": "Impostazioni salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile salvare le impostazioni. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Impostazioni dello studio",
+    "description": "Regole di prenotazione online, messaggi, privacy e conservazione dei dati"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

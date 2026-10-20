@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/index.tsx",
+  "title": "Team",
+  "description": "Zahnärzte und Dentalhygieniker: was sie tun, wo und wann sie arbeiten",
+  "help": {
+    "ariaLabel": "Über das Team",
+    "title": "Über das Team",
+    "overview": "Jedes Teammitglied hat ein öffentliches Profil, die Behandlungen, die es durchführt, die Standorte, an denen es arbeitet, und wöchentliche Arbeitszeiten pro Standort.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Verknüpfen Sie ein Benutzerkonto, damit diese Person nur ihre eigenen Termine und ihren eigenen Tag sieht.",
+          "Änderungen der Arbeitszeiten gelten sofort für neue Buchungen; bestehende Termine bleiben, wo sie sind.",
+          "Wer bevorstehende Termine hat, kann erst deaktiviert werden, wenn diese verschoben oder abgesagt sind."
+        ]
+      }
+    ]
+  },
+  "create": "Teammitglied hinzufügen",
+  "searchPlaceholder": "Team durchsuchen oder Filter hinzufügen...",
+  "noData": "Noch kein Team",
+  "failTitle": "Team konnte nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "displayName": "Anzeigename",
+    "title": "Titel",
+    "role": "Rolle",
+    "locations": "Standorte",
+    "isBookable": "Online buchbar",
+    "isActive": "Aktiv",
+    "sortOrder": "Sortierung",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von",
+    "staffUser": "Benutzerkonto des Personals"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/createAppointment.tsx",
+  "title": "Aggiungi appuntamento",
+  "description": "Prenota un appuntamento per un paziente al telefono o alla reception",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "customerLabel": "Account paziente",
+    "customerPlaceholder": "Facoltativo: collega un account paziente",
+    "dateLabel": "Data",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Inserisci l'e-mail",
+    "firstNameLabel": "Nome",
+    "firstNamePlaceholder": "Inserisci il nome",
+    "lastNameLabel": "Cognome",
+    "lastNamePlaceholder": "Inserisci il cognome",
+    "localTimeHint": "Inserisci l'ora locale della sede. Le prenotazioni del personale possono iniziare fuori dalla griglia oraria online, ma devono rientrare negli orari del professionista.",
+    "locationLabel": "Sede",
+    "locationPlaceholder": "Seleziona sede",
+    "noteHint": "Non inserire dati medici qui: le note restano con la prenotazione e sono visibili al personale.",
+    "noteLabel": "Nota",
+    "notePlaceholder": "Solo indicazioni pratiche",
+    "patientSectionTitle": "Paziente",
+    "phoneLabel": "Telefono",
+    "phonePlaceholder": "Inserisci il telefono",
+    "practitionerLabel": "Dentista",
+    "practitionerPlaceholder": "Seleziona dentista",
+    "serviceLabel": "Trattamento",
+    "servicePlaceholder": "Seleziona trattamento",
+    "timeLabel": "Ora",
+    "visitSectionTitle": "Visita"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio appuntamento",
+      "time": 3000
+    },
+    "success": {
+      "title": "Appuntamento aggiunto",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile aggiungere l'appuntamento. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi appuntamento",
+    "description": "Prenota un appuntamento per un paziente al telefono o alla reception"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

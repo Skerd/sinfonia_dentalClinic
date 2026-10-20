@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/center/cardView/scheduleExceptionCard.tsx",
+  "failedTitle": "Mungesa nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "startAt": "Fillon",
+  "endAt": "Përfundon",
+  "location": "Vendndodhja"
+}

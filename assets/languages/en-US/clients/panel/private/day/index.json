@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
+  "title": "Day view",
+  "description": "Who works where today, their time off and every appointment",
+  "location": "Location",
+  "date": "Date",
+  "previousDay": "Previous day",
+  "nextDay": "Next day",
+  "today": "Today",
+  "timeOff": "Time off",
+  "loadError": "The day could not be loaded. Try again.",
+  "noLocations": "Add a location first.",
+  "noPractitioners": "Nobody works at this location yet. Add team members and their working hours.",
+  "status": {"pending": "Awaiting confirmation", "confirmed": "Confirmed", "completed": "Completed", "cancelled": "Cancelled", "no_show": "No-show"}
+}

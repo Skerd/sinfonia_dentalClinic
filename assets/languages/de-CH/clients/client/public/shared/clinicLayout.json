@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicLayout.tsx",
+  "fallbackName": "Zahnarztpraxis",
+  "book": "Termin buchen",
+  "privacy": "Datenschutz",
+  "unavailableTitle": "Online-Buchung ist nicht verfügbar",
+  "unavailableText": "Diese Praxis nimmt derzeit keine Online-Termine an. Bitte rufen Sie uns an.",
+  "locations": "Standorte"
+}

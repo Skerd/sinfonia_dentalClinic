@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/noShowAppointmentDialog.tsx",
+  "title": "Marquer comme absent",
+  "description": "Enregistrer que le patient n'est pas venu. Possible une fois le délai de tolérance après le début écoulé.",
+  "confirm": "Marquer absent",
+  "cancel": "Retour"
+}

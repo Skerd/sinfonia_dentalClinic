@@ -1,0 +1,64 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/editPractitioner.tsx",
+  "title": "Teammitglied bearbeiten",
+  "description": "Profil und Arbeitszeiten dieses Teammitglieds ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "bioLabel": "Über",
+    "bioPlaceholder": "Eine kurze Vorstellung für Patientinnen und Patienten",
+    "dayOfWeekLabel": "Tag",
+    "displayNameLabel": "Name",
+    "displayNamePlaceholder": "z. B. Dr. Anna Meier",
+    "eligibilitySectionTitle": "Was und wo",
+    "endTimeLabel": "Bis",
+    "languagesLabel": "Gesprochene Sprachen",
+    "languagesPlaceholder": "z. B. Deutsch",
+    "photoLabel": "Foto",
+    "removeItem": "Entfernen",
+    "roleLabel": "Rolle",
+    "rolePlaceholder": "Rolle auswählen",
+    "scheduleAddRow": "Arbeitszeiten hinzufügen",
+    "scheduleLocationLabel": "Standort",
+    "scheduleLocationPlaceholder": "Standort auswählen",
+    "scheduleRemoveRow": "Entfernen",
+    "scheduleRowTitle": "Arbeitszeiten",
+    "scheduleSectionTitle": "Arbeitszeiten",
+    "sortOrderLabel": "Sortierung",
+    "sortOrderPlaceholder": "Sortierung eingeben",
+    "staffUserLabel": "Benutzerkonto des Personals",
+    "staffUserPlaceholder": "Optional: einen Benutzer verknüpfen, damit er seine eigenen Termine sieht",
+    "startTimeLabel": "Von",
+    "titleLabel": "Titel",
+    "titlePlaceholder": "z. B. Zahnarzt, Dr. med. dent."
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Teammitglied bearbeiten",
+    "description": "Profil und Arbeitszeiten dieses Teammitglieds ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/createAppointment.tsx",
+  "title": "Shto takim",
+  "description": "Rezervoni një takim për një pacient me telefon ose në recepsion",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "customerLabel": "Llogaria e pacientit",
+    "customerPlaceholder": "Opsionale: lidhni një llogari pacienti",
+    "dateLabel": "Data",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Shkruani email-in",
+    "firstNameLabel": "Emri",
+    "firstNamePlaceholder": "Shkruani emrin",
+    "lastNameLabel": "Mbiemri",
+    "lastNamePlaceholder": "Shkruani mbiemrin",
+    "localTimeHint": "Shkruani orën si orë lokale të vendndodhjes. Rezervimet e punonjësve mund të fillojnë jashtë rrjetës orare online, por duhet të përshtaten me orarin e mjekut.",
+    "locationLabel": "Vendndodhja",
+    "locationPlaceholder": "Zgjidh vendndodhjen",
+    "noteHint": "Mos shkruani të dhëna mjekësore këtu: shënimet ruhen me rezervimin dhe i shohin punonjësit.",
+    "noteLabel": "Shënim",
+    "notePlaceholder": "Vetëm vërejtje praktike",
+    "patientSectionTitle": "Pacienti",
+    "phoneLabel": "Telefoni",
+    "phonePlaceholder": "Shkruani telefonin",
+    "practitionerLabel": "Dentist",
+    "practitionerPlaceholder": "Zgjidh mjekun",
+    "serviceLabel": "Trajtimi",
+    "servicePlaceholder": "Zgjidh trajtimin",
+    "timeLabel": "Ora",
+    "visitSectionTitle": "Vizita"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur takimin",
+      "time": 3000
+    },
+    "success": {
+      "title": "Takimi u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Takimi nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto takim",
+    "description": "Rezervoni një takim për një pacient me telefon ose në recepsion"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

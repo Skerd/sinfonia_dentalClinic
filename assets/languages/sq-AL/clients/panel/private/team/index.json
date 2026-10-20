@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/index.tsx",
+  "title": "Ekipi",
+  "description": "Dentistët dhe higjienistët: çfarë bëjnë, ku dhe kur punojnë",
+  "help": {
+    "ariaLabel": "Rreth ekipit",
+    "title": "Rreth ekipit",
+    "overview": "Çdo anëtar i ekipit ka një profil publik, trajtimet që kryen, vendndodhjet ku punon dhe orarin javor për çdo vendndodhje.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Lidhni një llogari punonjësi që ky person të shohë vetëm takimet dhe ditën e vet.",
+          "Ndryshimet e orarit vlejnë menjëherë për rezervimet e reja; takimet ekzistuese mbeten ku janë.",
+          "Dikush me takime të ardhshme nuk mund të çaktivizohet derisa ato të zhvendosen ose të anulohen."
+        ]
+      }
+    ]
+  },
+  "create": "Shto anëtar ekipi",
+  "searchPlaceholder": "Kërko në ekip ose shto filtra...",
+  "noData": "Ende pa ekip",
+  "failTitle": "Ekipi nuk u ngarkua",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "displayName": "Emri i shfaqur",
+    "title": "Titulli",
+    "role": "Roli",
+    "locations": "Vendndodhjet",
+    "isBookable": "I rezervueshëm online",
+    "isActive": "Aktiv",
+    "sortOrder": "Renditja",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga",
+    "staffUser": "Llogaria e punonjësit"
+  }
+}

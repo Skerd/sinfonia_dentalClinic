@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/confirmAppointmentDialog.tsx",
+  "title": "Konfirmo takimin",
+  "description": "Pacienti merr një email që takimi është konfirmuar.",
+  "confirm": "Konfirmo",
+  "cancel": "Mbrapa"
+}

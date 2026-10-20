@@ -1,0 +1,62 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/sheetView/appointmentSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "appointmentSubtitle": "Takim",
+  "at": "Kur",
+  "booked": "Siç u rezervua",
+  "consentVersion": "Njoftimi i privatësisë u pranua",
+  "customer": "Llogaria e pacientit",
+  "durationMinutes": "Kohëzgjatja (min)",
+  "email": "Email",
+  "endAt": "Përfundon",
+  "event": "Ngjarja",
+  "firstName": "Emri",
+  "lastName": "Mbiemri",
+  "location": "Vendndodhja",
+  "note": "Shënim",
+  "overview": "Përmbledhje",
+  "patient": "Pacienti",
+  "phone": "Telefoni",
+  "practitioner": "Dentist",
+  "price": "Çmimi",
+  "priceType": "Shfaqja e çmimit",
+  "rescheduleCount": "Herë të zhvendosura",
+  "service": "Trajtimi",
+  "serviceName": "Trajtimi",
+  "source": "Rezervuar përmes",
+  "startAt": "Fillon",
+  "status": "Statusi",
+  "timeline": "Historiku",
+  "timezone": "Zona kohore",
+  "priceTypeValues": {
+    "fixed": "Çmim fiks",
+    "from": "Nga",
+    "on_request": "Me kërkesë",
+    "free": "Falas"
+  },
+  "sourceValues": {
+    "online": "Faqja web",
+    "staff": "Punonjësit"
+  },
+  "statusValues": {
+    "pending": "Në pritje të konfirmimit",
+    "confirmed": "Konfirmuar",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "no_show": "Mosparaqitje"
+  },
+  "timelineEvent": {
+    "created": "Krijuar",
+    "confirmed": "Konfirmuar",
+    "rescheduled": "Zhvendosur",
+    "cancelled": "Anuluar",
+    "completed": "Përfunduar",
+    "no_show": "Mosparaqitje",
+    "anonymized": "Të dhënat e pacientit u hoqën"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

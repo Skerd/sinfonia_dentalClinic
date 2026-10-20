@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
+  "failedTitle": "Behandlung konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "durationMinutes": "Dauer (Min.)",
+  "priceType": "Preisanzeige",
+  "priceTypeValues": {
+    "fixed": "Fixpreis",
+    "from": "Von",
+    "on_request": "Auf Anfrage",
+    "free": "Kostenlos"
+  },
+  "price": "Preis",
+  "onlineBookable": "Online buchbar"
+}

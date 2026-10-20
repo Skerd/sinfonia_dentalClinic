@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/index.tsx",
+  "title": "Sedi",
+  "description": "I tuoi studi, con fuso orario e orari di apertura",
+  "help": {
+    "ariaLabel": "Informazioni sulle sedi",
+    "title": "Informazioni sulle sedi",
+    "overview": "Le sedi sono i tuoi studi. Ognuna ha il proprio fuso orario e orari di apertura; gli orari dei professionisti lì sono limitati a questi.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Imposta il fuso orario IANA (ad esempio Europe/Zurich) perché gli appuntamenti restino corretti con il cambio dell'ora.",
+          "Aggiungi i giorni festivi come chiusure; in quei giorni lì non si può prenotare nessuno.",
+          "Una sede con appuntamenti non può essere eliminata; disattivala invece."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi sede",
+  "searchPlaceholder": "Cerca sedi o aggiungi filtri...",
+  "noData": "Nessuna sede",
+  "failTitle": "Impossibile caricare le sedi",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "name": "Nome",
+    "timezone": "Fuso orario",
+    "phone": "Telefono",
+    "email": "E-mail",
+    "isActive": "Attivo",
+    "address": "Indirizzo",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

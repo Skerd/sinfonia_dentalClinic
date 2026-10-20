@@ -1,0 +1,62 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/createAppointment.tsx",
+  "title": "Add appointment",
+  "description": "Book an appointment for a patient on the phone or at the desk",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "customerLabel": "Patient account",
+    "customerPlaceholder": "Optional: link a patient account",
+    "dateLabel": "Date",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter email",
+    "firstNameLabel": "First name",
+    "firstNamePlaceholder": "Enter first name",
+    "lastNameLabel": "Last name",
+    "lastNamePlaceholder": "Enter last name",
+    "localTimeHint": "Enter the time as local time at the location. Staff bookings may start off the online time grid, but must fit the dentist's working hours.",
+    "locationLabel": "Location",
+    "locationPlaceholder": "Select location",
+    "noteHint": "Do not enter medical details here: notes are kept with the booking and shown to staff.",
+    "noteLabel": "Note",
+    "notePlaceholder": "Practical remarks only",
+    "patientSectionTitle": "Patient",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Enter phone",
+    "practitionerLabel": "Dentist",
+    "practitionerPlaceholder": "Select dentist",
+    "serviceLabel": "Treatment",
+    "servicePlaceholder": "Select treatment",
+    "timeLabel": "Time",
+    "visitSectionTitle": "Visit"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving appointment",
+      "time": 3000
+    },
+    "success": {
+      "title": "Appointment added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Appointment could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add appointment",
+    "description": "Book an appointment for a patient on the phone or at the desk"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

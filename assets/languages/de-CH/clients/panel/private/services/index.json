@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/index.tsx",
+  "title": "Behandlungen",
+  "description": "Was Patienten buchen können: Dauer, Vorbereitung und angezeigter Preis",
+  "help": {
+    "ariaLabel": "Über Behandlungen",
+    "title": "Über Behandlungen",
+    "overview": "Behandlungen sind das, was Patienten buchen. Die Dauer sieht die Patientin oder der Patient; Vorbereitung und Nachbereitung halten die Fachperson davor und danach besetzt.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Die Preisanzeige bestimmt, was die Website zeigt: einen Fixpreis, einen Ab-Preis, «auf Anfrage» oder kostenlos. Online wird nichts belastet.",
+          "Schalten Sie «Online buchbar» aus, um eine Behandlung nur für Buchungen durch das Personal zu behalten.",
+          "Eine Änderung der Behandlung ändert nie bereits gebuchte Termine."
+        ]
+      }
+    ]
+  },
+  "create": "Behandlung hinzufügen",
+  "searchPlaceholder": "Behandlungen suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Behandlungen",
+  "failTitle": "Behandlungen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Name",
+    "slug": "Webadressen-Name",
+    "durationMinutes": "Dauer (Min.)",
+    "priceType": "Preisanzeige",
+    "price": "Preis",
+    "onlineBookable": "Online buchbar",
+    "isActive": "Aktiv",
+    "sortOrder": "Sortierung",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/createClinicService.tsx",
+  "title": "Ajouter un soin",
+  "description": "Ajouter un soin que les patients peuvent réserver",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Ce que les patients doivent savoir sur ce soin",
+    "imagesLabel": "Photos",
+    "nameLabel": "Nom",
+    "namePlaceholder": "p. ex. Zurich Centre",
+    "priceTypeLabel": "Affichage du prix",
+    "priceTypePlaceholder": "Choisir l'affichage du prix",
+    "pricingSectionTitle": "Prix affiché",
+    "slugLabel": "Nom d'adresse web",
+    "slugPlaceholder": "p. ex. controle",
+    "timingSectionTitle": "Horaires"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement du soin",
+      "time": 3000
+    },
+    "success": {
+      "title": "Soin ajouté",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le soin n'a pas pu être ajouté. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter un soin",
+    "description": "Ajouter un soin que les patients peuvent réserver"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

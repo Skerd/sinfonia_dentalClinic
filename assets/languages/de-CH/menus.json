@@ -1,0 +1,26 @@
+{
+  "dentalClinic": {
+    "title": "Zahnarztpraxis",
+    "day": {
+      "title": "Tagesansicht"
+    },
+    "appointments": {
+      "title": "Termine"
+    },
+    "team": {
+      "title": "Team"
+    },
+    "timeOff": {
+      "title": "Abwesenheit"
+    },
+    "services": {
+      "title": "Behandlungen"
+    },
+    "locations": {
+      "title": "Standorte"
+    },
+    "settings": {
+      "title": "Einstellungen"
+    }
+  }
+}

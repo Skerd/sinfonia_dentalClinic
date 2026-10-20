@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/index.tsx",
+  "title": "Vendndodhjet",
+  "description": "Klinikat tuaja, me zonën kohore dhe orarin e punës",
+  "help": {
+    "ariaLabel": "Rreth vendndodhjeve",
+    "title": "Rreth vendndodhjeve",
+    "overview": "Vendndodhjet janë klinikat tuaja. Secila ka zonën kohore dhe orarin e vet; orari i mjekëve atje kufizohet brenda tyre.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Vendosni zonën kohore IANA (për shembull Europe/Zurich) që takimet të mbeten të sakta gjatë ndërrimit të orës.",
+          "Shtoni festat si ditë pushimi; atje nuk mund të rezervohet askush në ato ditë.",
+          "Një vendndodhje me takime nuk mund të fshihet; çaktivizojeni në vend të kësaj."
+        ]
+      }
+    ]
+  },
+  "create": "Shto vendndodhje",
+  "searchPlaceholder": "Kërko vendndodhje ose shto filtra...",
+  "noData": "Ende pa vendndodhje",
+  "failTitle": "Vendndodhjet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Emri",
+    "timezone": "Zona kohore",
+    "phone": "Telefoni",
+    "email": "Email",
+    "isActive": "Aktiv",
+    "address": "Adresa",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

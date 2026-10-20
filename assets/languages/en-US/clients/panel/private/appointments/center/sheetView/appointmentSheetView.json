@@ -1,0 +1,62 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/sheetView/appointmentSheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "appointmentSubtitle": "Appointment",
+  "at": "When",
+  "booked": "As booked",
+  "consentVersion": "Privacy notice accepted",
+  "customer": "Patient account",
+  "durationMinutes": "Duration (min)",
+  "email": "Email",
+  "endAt": "Ends",
+  "event": "Event",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "location": "Location",
+  "note": "Note",
+  "overview": "Overview",
+  "patient": "Patient",
+  "phone": "Phone",
+  "practitioner": "Dentist",
+  "price": "Price",
+  "priceType": "Price display",
+  "rescheduleCount": "Times moved",
+  "service": "Treatment",
+  "serviceName": "Treatment",
+  "source": "Booked via",
+  "startAt": "Starts",
+  "status": "Status",
+  "timeline": "History",
+  "timezone": "Time zone",
+  "priceTypeValues": {
+    "fixed": "Fixed price",
+    "from": "From",
+    "on_request": "On request",
+    "free": "Free"
+  },
+  "sourceValues": {
+    "online": "Website",
+    "staff": "Staff"
+  },
+  "statusValues": {
+    "pending": "Awaiting confirmation",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "no_show": "No-show"
+  },
+  "timelineEvent": {
+    "created": "Created",
+    "confirmed": "Confirmed",
+    "rescheduled": "Moved",
+    "cancelled": "Cancelled",
+    "completed": "Completed",
+    "no_show": "No-show",
+    "anonymized": "Patient details removed"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/index.tsx",
+  "title": "Team",
+  "description": "Dentists and hygienists, what they do, where and when they work",
+  "help": {
+    "ariaLabel": "About team",
+    "title": "About team",
+    "overview": "Each team member has a public profile, the treatments they do, the locations they work at, and weekly working hours per location.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Link a staff login to let that person see only their own appointments and day.",
+          "Working hours changes apply to new bookings at once; existing appointments stay where they are.",
+          "Someone with upcoming appointments can't be deactivated until those are moved or cancelled."
+        ]
+      }
+    ]
+  },
+  "create": "Add team member",
+  "searchPlaceholder": "Search team or add filters...",
+  "noData": "No team yet",
+  "failTitle": "Failed to load team",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "displayName": "Display name",
+    "title": "Title",
+    "role": "Role",
+    "locations": "Locations",
+    "isBookable": "Bookable online",
+    "isActive": "Active",
+    "sortOrder": "Sort order",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by",
+    "staffUser": "Staff login"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/index.tsx",
+  "title": "Takime",
+  "description": "Rezervime nga faqja dhe nga recepsioni",
+  "help": {
+    "ariaLabel": "Rreth takimeve",
+    "title": "Rreth takimeve",
+    "overview": "Çdo takim, nga faqja ose i krijuar këtu. Një takim është i fiksuar pasi krijohet: ndryshimet bëhen përmes veprimeve në menunë e tij.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Konfirmo pranon një kërkesë online kur klinika i shqyrton fillimisht rezervimet. Zhvendos e kontrollon orarin e ri si një rezervim të ri.",
+          "Shënoni një vizitë si të përfunduar pasi të ketë filluar, ose si mosparaqitje pas periudhës së tolerancës.",
+          "Oraret shfaqen në zonën kohore të vendndodhjes te vetë takimi. Një mjek me llogari të lidhur sheh vetëm takimet e veta."
+        ]
+      }
+    ]
+  },
+  "create": "Shto takim",
+  "searchPlaceholder": "Kërko takime ose shto filtra...",
+  "noData": "Ende pa takime",
+  "failTitle": "Takimet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "number": "Rezervimi",
+    "status": "Statusi",
+    "startAt": "Fillon",
+    "service": "Trajtimi",
+    "practitioner": "Dentist",
+    "location": "Vendndodhja",
+    "source": "Rezervuar përmes",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

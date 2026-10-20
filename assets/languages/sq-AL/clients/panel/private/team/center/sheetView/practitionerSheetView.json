@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/sheetView/practitionerSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "bio": "Rreth",
+  "dayOfWeek": "Dita",
+  "endTime": "Deri",
+  "isActive": "Aktiv",
+  "isBookable": "I rezervueshëm online",
+  "languages": "Gjuhët",
+  "location": "Vendndodhja",
+  "overview": "Përmbledhje",
+  "practitionerSubtitle": "Anëtar i ekipit",
+  "role": "Roli",
+  "schedule": "Orari i punës",
+  "startTime": "Nga",
+  "title": "Titulli",
+  "roleValues": {
+    "dentist": "Dentist",
+    "hygienist": "Higjienist",
+    "orthodontist": "Ortodont",
+    "other": "Tjetër"
+  },
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga",
+  "staffUser": "Llogaria e punonjësit"
+}

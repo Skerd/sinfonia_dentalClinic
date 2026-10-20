@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/index.tsx",
+  "title": "Appointments",
+  "description": "Bookings from the website and the front desk",
+  "help": {
+    "ariaLabel": "About appointments",
+    "title": "About appointments",
+    "overview": "Every appointment, from the website or made here. An appointment is fixed once made: changes go through the actions in its menu.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Confirm accepts an online request when the clinic reviews bookings first. Move checks the new time like a new booking.",
+          "Mark a visit completed once it has started, or as a no-show after the grace period.",
+          "Times are shown in the location's time zone on the appointment itself. A dentist with a linked login sees only their own appointments."
+        ]
+      }
+    ]
+  },
+  "create": "Add appointment",
+  "searchPlaceholder": "Search appointments or add filters...",
+  "noData": "No appointments yet",
+  "failTitle": "Failed to load appointments",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "number": "Booking",
+    "status": "Status",
+    "startAt": "Starts",
+    "service": "Treatment",
+    "practitioner": "Dentist",
+    "location": "Location",
+    "source": "Booked via",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

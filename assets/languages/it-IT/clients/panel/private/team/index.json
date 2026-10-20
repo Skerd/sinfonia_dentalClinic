@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/index.tsx",
+  "title": "Team",
+  "description": "Dentisti e igienisti: cosa fanno, dove e quando lavorano",
+  "help": {
+    "ariaLabel": "Informazioni sul team",
+    "title": "Informazioni sul team",
+    "overview": "Ogni membro del team ha un profilo pubblico, i trattamenti che esegue, le sedi in cui lavora e gli orari settimanali per sede.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Collega un account del personale perché quella persona veda solo i propri appuntamenti e la propria giornata.",
+          "Le modifiche agli orari valgono subito per le nuove prenotazioni; gli appuntamenti esistenti restano dove sono.",
+          "Chi ha appuntamenti futuri non può essere disattivato finché non vengono spostati o annullati."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi membro del team",
+  "searchPlaceholder": "Cerca nel team o aggiungi filtri...",
+  "noData": "Nessun membro del team",
+  "failTitle": "Impossibile caricare il team",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "displayName": "Nome visualizzato",
+    "title": "Titolo",
+    "role": "Ruolo",
+    "locations": "Sedi",
+    "isBookable": "Prenotabile online",
+    "isActive": "Attivo",
+    "sortOrder": "Ordinamento",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da",
+    "staffUser": "Account del personale"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/cardView/practitionerCard.tsx",
+  "failedTitle": "Impossible de charger le membre de l'équipe",
+  "failedDescription": "Touchez pour réessayer.",
+  "title": "Titre",
+  "role": "Rôle",
+  "roleValues": {
+    "dentist": "Dentiste",
+    "hygienist": "Hygiéniste",
+    "orthodontist": "Orthodontiste",
+    "other": "Autre"
+  },
+  "isBookable": "Réservable en ligne"
+}

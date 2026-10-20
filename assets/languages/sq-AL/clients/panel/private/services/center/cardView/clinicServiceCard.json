@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
+  "failedTitle": "Trajtimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "durationMinutes": "Kohëzgjatja (min)",
+  "priceType": "Shfaqja e çmimit",
+  "priceTypeValues": {
+    "fixed": "Çmim fiks",
+    "from": "Nga",
+    "on_request": "Me kërkesë",
+    "free": "Falas"
+  },
+  "price": "Çmimi",
+  "onlineBookable": "I rezervueshëm online"
+}

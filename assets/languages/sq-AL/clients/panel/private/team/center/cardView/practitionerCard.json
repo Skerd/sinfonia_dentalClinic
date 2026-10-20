@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/cardView/practitionerCard.tsx",
+  "failedTitle": "Anëtari i ekipit nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "title": "Titulli",
+  "role": "Roli",
+  "roleValues": {
+    "dentist": "Dentist",
+    "hygienist": "Higjienist",
+    "orthodontist": "Ortodont",
+    "other": "Tjetër"
+  },
+  "isBookable": "I rezervueshëm online"
+}

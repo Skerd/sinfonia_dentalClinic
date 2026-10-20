@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/rescheduleAppointmentDialog.tsx",
+  "title": "Zhvendos takimin",
+  "description": "Data dhe ora e re, në orën lokale të vendndodhjes. Ora kontrollohet si një rezervim i ri.",
+  "confirm": "Zhvendos",
+  "cancel": "Mbrapa",
+  "dateLabel": "Data e re",
+  "timeLabel": "Ora e re"
+}

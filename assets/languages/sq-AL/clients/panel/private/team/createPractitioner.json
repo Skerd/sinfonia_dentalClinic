@@ -1,0 +1,64 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/createPractitioner.tsx",
+  "title": "Shto anëtar ekipi",
+  "description": "Shtoni një dentist ose higjienist",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "bioLabel": "Rreth",
+    "bioPlaceholder": "Një prezantim i shkurtër për pacientët",
+    "dayOfWeekLabel": "Dita",
+    "displayNameLabel": "Emri",
+    "displayNamePlaceholder": "p.sh. Dr. Anna Meier",
+    "eligibilitySectionTitle": "Çfarë dhe ku",
+    "endTimeLabel": "Deri",
+    "languagesLabel": "Gjuhët që flet",
+    "languagesPlaceholder": "p.sh. Gjermanisht",
+    "photoLabel": "Foto",
+    "removeItem": "Hiq",
+    "roleLabel": "Roli",
+    "rolePlaceholder": "Zgjidh rolin",
+    "scheduleAddRow": "Shto orar pune",
+    "scheduleLocationLabel": "Vendndodhja",
+    "scheduleLocationPlaceholder": "Zgjidh vendndodhjen",
+    "scheduleRemoveRow": "Hiq",
+    "scheduleRowTitle": "Orari i punës",
+    "scheduleSectionTitle": "Orari i punës",
+    "sortOrderLabel": "Renditja",
+    "sortOrderPlaceholder": "Shkruani renditjen",
+    "staffUserLabel": "Llogaria e punonjësit",
+    "staffUserPlaceholder": "Opsionale: lidhni një përdorues që të shohë takimet e veta",
+    "startTimeLabel": "Nga",
+    "titleLabel": "Titulli",
+    "titlePlaceholder": "p.sh. Dentist, Dr. med. dent."
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur anëtarin e ekipit",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anëtari i ekipit u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Anëtari i ekipit nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Shto anëtar ekipi",
+    "description": "Shtoni një dentist ose higjienist"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  }
+}

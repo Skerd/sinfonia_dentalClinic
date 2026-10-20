@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/center/cardView/scheduleExceptionCard.tsx",
+  "failedTitle": "Impossible de charger l'absence",
+  "failedDescription": "Touchez pour réessayer.",
+  "startAt": "Commence",
+  "endAt": "Se termine",
+  "location": "Site"
+}

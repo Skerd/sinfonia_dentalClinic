@@ -1,0 +1,64 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
+  "title": "Praxiseinstellungen",
+  "description": "Regeln für Online-Buchungen, Nachrichten, Datenschutz und Datenaufbewahrung",
+  "form": {
+    "bookingSectionTitle": "Online-Buchung",
+    "cancellationDeadlineHoursLabel": "Online-Absage bis (Stunden vorher)",
+    "cancellationDeadlineHoursPlaceholder": "Online-Absage bis (Stunden vorher)",
+    "currencyLabel": "Währung für angezeigte Preise",
+    "currencyPlaceholder": "Währung auswählen",
+    "guestBookingAllowedLabel": "Patienten können ohne Konto buchen",
+    "includeServiceInMessagesLabel": "Behandlung in E-Mails und SMS nennen",
+    "maxAdvanceDaysLabel": "Buchbar bis (Tage im Voraus)",
+    "maxAdvanceDaysPlaceholder": "Buchbar bis (Tage im Voraus)",
+    "minNoticeHoursLabel": "Mindestvorlauf (Stunden)",
+    "minNoticeHoursPlaceholder": "Mindestvorlauf (Stunden)",
+    "noShowGraceMinutesLabel": "Nicht erschienen nach (Minuten Verspätung)",
+    "noShowGraceMinutesPlaceholder": "Nicht erschienen nach (Minuten Verspätung)",
+    "notificationsSectionTitle": "Benachrichtigungen ans Personal",
+    "notifyUsersLabel": "Diese Benutzer über neue und abgesagte Online-Buchungen informieren",
+    "patientNoteEnabledLabel": "Patienten dürfen eine kurze Notiz hinzufügen",
+    "patientSectionTitle": "Patienten und Nachrichten",
+    "privacyNoticeTextLabel": "Datenschutzerklärung vor der Buchung",
+    "privacyNoticeTextPlaceholder": "Die Erklärung, die Patienten vor der Buchung akzeptieren",
+    "privacyNoticeVersionLabel": "Version",
+    "privacyNoticeVersionPlaceholder": "z. B. 2026-10",
+    "privacySectionTitle": "Datenschutzerklärung",
+    "publicBookingEnabledLabel": "Online-Buchung auf der Website",
+    "reminderHoursBeforeLabel": "Erinnerung (Stunden vorher, 0 = aus)",
+    "reminderHoursBeforePlaceholder": "Erinnerung (Stunden vorher, 0 = aus)",
+    "reminderSmsLabel": "Erinnerungen auch per SMS senden",
+    "removeUser": "Entfernen",
+    "requireStaffConfirmationLabel": "Online-Buchungen vor der Bestätigung prüfen",
+    "rescheduleDeadlineHoursLabel": "Online-Änderungen bis (Stunden vorher)",
+    "rescheduleDeadlineHoursPlaceholder": "Online-Änderungen bis (Stunden vorher)",
+    "retentionMonthsLabel": "Patientendaten entfernen nach (Monaten)",
+    "retentionMonthsPlaceholder": "Patientendaten entfernen nach (Monaten)",
+    "selectUser": "Benutzer hinzufügen",
+    "slotIntervalMinutesLabel": "Zeitraster (Minuten)",
+    "slotIntervalMinutesPlaceholder": "Zeitraster (Minuten)"
+  },
+  "axios": {
+    "start": {
+      "title": "Einstellungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Einstellungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Einstellungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Praxiseinstellungen",
+    "description": "Regeln für Online-Buchungen, Nachrichten, Datenschutz und Datenaufbewahrung"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

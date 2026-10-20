@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/noShowAppointmentDialog.tsx",
+  "title": "Shëno si mosparaqitje",
+  "description": "Regjistroni që pacienti nuk erdhi. E mundur pasi të ketë kaluar toleranca pas fillimit.",
+  "confirm": "Shëno mosparaqitje",
+  "cancel": "Mbrapa"
+}

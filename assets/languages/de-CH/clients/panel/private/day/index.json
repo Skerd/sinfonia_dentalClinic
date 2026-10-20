@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
+  "title": "Tagesansicht",
+  "description": "Wer heute wo arbeitet, Abwesenheiten und alle Termine",
+  "location": "Standort",
+  "date": "Datum",
+  "previousDay": "Vorheriger Tag",
+  "nextDay": "Nächster Tag",
+  "today": "Heute",
+  "timeOff": "Abwesenheit",
+  "loadError": "Der Tag konnte nicht geladen werden. Versuchen Sie es erneut.",
+  "noLocations": "Legen Sie zuerst einen Standort an.",
+  "noPractitioners": "An diesem Standort arbeitet noch niemand. Fügen Sie Teammitglieder und ihre Arbeitszeiten hinzu.",
+  "status": {
+    "pending": "Wartet auf Bestätigung",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "no_show": "Nicht erschienen"
+  }
+}

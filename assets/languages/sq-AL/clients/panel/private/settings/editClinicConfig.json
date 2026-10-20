@@ -1,0 +1,64 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
+  "title": "Cilësimet e klinikës",
+  "description": "Rregullat e rezervimit online, mesazhet, privatësia dhe ruajtja e të dhënave",
+  "form": {
+    "bookingSectionTitle": "Rezervim online",
+    "cancellationDeadlineHoursLabel": "Anulimi online deri (orë përpara)",
+    "cancellationDeadlineHoursPlaceholder": "Anulimi online deri (orë përpara)",
+    "currencyLabel": "Monedha e çmimeve të shfaqura",
+    "currencyPlaceholder": "Zgjidh monedhën",
+    "guestBookingAllowedLabel": "Pacientët mund të rezervojnë pa llogari",
+    "includeServiceInMessagesLabel": "Përmend trajtimin në email dhe SMS",
+    "maxAdvanceDaysLabel": "I rezervueshëm deri në (ditë përpara)",
+    "maxAdvanceDaysPlaceholder": "I rezervueshëm deri në (ditë përpara)",
+    "minNoticeHoursLabel": "Paralajmërimi minimal (orë)",
+    "minNoticeHoursPlaceholder": "Paralajmërimi minimal (orë)",
+    "noShowGraceMinutesLabel": "Mosparaqitje pas (minutash vonesë)",
+    "noShowGraceMinutesPlaceholder": "Mosparaqitje pas (minutash vonesë)",
+    "notificationsSectionTitle": "Njoftime për punonjësit",
+    "notifyUsersLabel": "Njofto këta përdorues për rezervimet online të reja dhe të anuluara",
+    "patientNoteEnabledLabel": "Pacientët mund të shtojnë një shënim të shkurtër",
+    "patientSectionTitle": "Pacientët dhe mesazhet",
+    "privacyNoticeTextLabel": "Njoftimi i privatësisë para rezervimit",
+    "privacyNoticeTextPlaceholder": "Njoftimi që pacientët pranojnë para rezervimit",
+    "privacyNoticeVersionLabel": "Versioni",
+    "privacyNoticeVersionPlaceholder": "p.sh. 2026-10",
+    "privacySectionTitle": "Njoftimi i privatësisë",
+    "publicBookingEnabledLabel": "Rezervim online në faqe",
+    "reminderHoursBeforeLabel": "Kujtesa (orë përpara, 0 = joaktive)",
+    "reminderHoursBeforePlaceholder": "Kujtesa (orë përpara, 0 = joaktive)",
+    "reminderSmsLabel": "Dërgo kujtesat edhe me SMS",
+    "removeUser": "Hiq",
+    "requireStaffConfirmationLabel": "Shqyrto rezervimet online para konfirmimit",
+    "rescheduleDeadlineHoursLabel": "Ndryshimet online deri (orë përpara)",
+    "rescheduleDeadlineHoursPlaceholder": "Ndryshimet online deri (orë përpara)",
+    "retentionMonthsLabel": "Hiqi të dhënat e pacientit pas (muajsh)",
+    "retentionMonthsPlaceholder": "Hiqi të dhënat e pacientit pas (muajsh)",
+    "selectUser": "Shto një përdorues",
+    "slotIntervalMinutesLabel": "Rrjeta orare (minuta)",
+    "slotIntervalMinutesPlaceholder": "Rrjeta orare (minuta)"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur cilësimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Cilësimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Cilësimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Cilësimet e klinikës",
+    "description": "Rregullat e rezervimit online, mesazhet, privatësia dhe ruajtja e të dhënave"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

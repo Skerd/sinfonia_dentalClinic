@@ -1,0 +1,64 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
+  "title": "Paramètres du cabinet",
+  "description": "Règles de réservation en ligne, messages, confidentialité et conservation des données",
+  "form": {
+    "bookingSectionTitle": "Réservation en ligne",
+    "cancellationDeadlineHoursLabel": "Annulation en ligne jusqu'à (heures avant)",
+    "cancellationDeadlineHoursPlaceholder": "Annulation en ligne jusqu'à (heures avant)",
+    "currencyLabel": "Devise des prix affichés",
+    "currencyPlaceholder": "Choisir une devise",
+    "guestBookingAllowedLabel": "Les patients peuvent réserver sans compte",
+    "includeServiceInMessagesLabel": "Nommer le soin dans les e-mails et SMS",
+    "maxAdvanceDaysLabel": "Réservable jusqu'à (jours à l'avance)",
+    "maxAdvanceDaysPlaceholder": "Réservable jusqu'à (jours à l'avance)",
+    "minNoticeHoursLabel": "Préavis minimum (heures)",
+    "minNoticeHoursPlaceholder": "Préavis minimum (heures)",
+    "noShowGraceMinutesLabel": "Absent après (minutes de retard)",
+    "noShowGraceMinutesPlaceholder": "Absent après (minutes de retard)",
+    "notificationsSectionTitle": "Alertes au personnel",
+    "notifyUsersLabel": "Informer ces utilisateurs des réservations en ligne nouvelles et annulées",
+    "patientNoteEnabledLabel": "Les patients peuvent ajouter une courte note",
+    "patientSectionTitle": "Patients et messages",
+    "privacyNoticeTextLabel": "Politique de confidentialité affichée avant la réservation",
+    "privacyNoticeTextPlaceholder": "Le texte que les patients acceptent avant de réserver",
+    "privacyNoticeVersionLabel": "Version",
+    "privacyNoticeVersionPlaceholder": "p. ex. 2026-10",
+    "privacySectionTitle": "Politique de confidentialité",
+    "publicBookingEnabledLabel": "Réservation en ligne sur le site web",
+    "reminderHoursBeforeLabel": "Rappel (heures avant, 0 = désactivé)",
+    "reminderHoursBeforePlaceholder": "Rappel (heures avant, 0 = désactivé)",
+    "reminderSmsLabel": "Envoyer aussi les rappels par SMS",
+    "removeUser": "Supprimer",
+    "requireStaffConfirmationLabel": "Vérifier les réservations en ligne avant de confirmer",
+    "rescheduleDeadlineHoursLabel": "Modifications en ligne jusqu'à (heures avant)",
+    "rescheduleDeadlineHoursPlaceholder": "Modifications en ligne jusqu'à (heures avant)",
+    "retentionMonthsLabel": "Supprimer les données du patient après (mois)",
+    "retentionMonthsPlaceholder": "Supprimer les données du patient après (mois)",
+    "selectUser": "Ajouter un utilisateur",
+    "slotIntervalMinutesLabel": "Grille horaire (minutes)",
+    "slotIntervalMinutesPlaceholder": "Grille horaire (minutes)"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des paramètres",
+      "time": 3000
+    },
+    "success": {
+      "title": "Paramètres enregistrés",
+      "time": 3000
+    },
+    "error": {
+      "title": "Les paramètres n'ont pas pu être enregistrés. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Paramètres du cabinet",
+    "description": "Règles de réservation en ligne, messages, confidentialité et conservation des données"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

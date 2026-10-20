@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/index.tsx",
+  "title": "Trajtimet",
+  "description": "Çfarë mund të rezervojnë pacientët: kohëzgjatja, përgatitja dhe çmimi i shfaqur",
+  "help": {
+    "ariaLabel": "Rreth trajtimeve",
+    "title": "Rreth trajtimeve",
+    "overview": "Trajtimet janë ato që rezervojnë pacientët. Kohëzgjatja është ajo që sheh pacienti; përgatitja dhe pastrimi e mbajnë mjekun të zënë para dhe pas.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Shfaqja e çmimit përcakton çfarë tregon faqja: një çmim fiks, një çmim «nga», «me kërkesë» ose falas. Online nuk paguhet asgjë.",
+          "Çaktivizoni «I rezervueshëm online» për ta mbajtur një trajtim vetëm për rezervimet e punonjësve.",
+          "Ndryshimi i një trajtimi nuk ndryshon kurrë takimet e rezervuara tashmë."
+        ]
+      }
+    ]
+  },
+  "create": "Shto trajtim",
+  "searchPlaceholder": "Kërko trajtime ose shto filtra...",
+  "noData": "Ende pa trajtime",
+  "failTitle": "Trajtimet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Emri",
+    "slug": "Emri i adresës web",
+    "durationMinutes": "Kohëzgjatja (min)",
+    "priceType": "Shfaqja e çmimit",
+    "price": "Çmimi",
+    "onlineBookable": "I rezervueshëm online",
+    "isActive": "Aktiv",
+    "sortOrder": "Renditja",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

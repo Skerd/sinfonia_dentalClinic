@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx",
+  "lifecycle": "Cycle de vie",
+  "bufferAfterMinutes": "Nettoyage (min)",
+  "bufferBeforeMinutes": "Préparation (min)",
+  "clinicServiceSubtitle": "Soin",
+  "description": "Description",
+  "durationMinutes": "Durée (min)",
+  "images": "Images",
+  "isActive": "Actif",
+  "isPublic": "Sur le site web",
+  "onlineBookable": "Réservable en ligne",
+  "overview": "Aperçu",
+  "price": "Prix",
+  "priceType": "Affichage du prix",
+  "slug": "Nom d'adresse web",
+  "priceTypeValues": {
+    "fixed": "Prix fixe",
+    "from": "De",
+    "on_request": "Sur demande",
+    "free": "Gratuit"
+  },
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/rescheduleAppointmentDialog.tsx",
+  "title": "Move appointment",
+  "description": "New date and time, in the location's local time. The time is checked like a new booking.",
+  "confirm": "Move",
+  "cancel": "Back",
+  "dateLabel": "New date",
+  "timeLabel": "New time"
+}

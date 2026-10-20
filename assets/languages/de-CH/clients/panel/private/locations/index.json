@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/index.tsx",
+  "title": "Standorte",
+  "description": "Ihre Praxen, mit Zeitzone und Öffnungszeiten",
+  "help": {
+    "ariaLabel": "Über Standorte",
+    "title": "Über Standorte",
+    "overview": "Standorte sind Ihre Praxen. Jede hat ihre eigene Zeitzone und Öffnungszeiten; die Arbeitszeiten der Fachpersonen dort sind darauf beschränkt.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Legen Sie die IANA-Zeitzone fest (zum Beispiel Europe/Zurich), damit Termine bei der Sommerzeitumstellung korrekt bleiben.",
+          "Fügen Sie Ruhetage für Feiertage hinzu; an diesen Tagen kann dort niemand gebucht werden.",
+          "Ein Standort mit Terminen kann nicht gelöscht werden; deaktivieren Sie ihn stattdessen."
+        ]
+      }
+    ]
+  },
+  "create": "Standort hinzufügen",
+  "searchPlaceholder": "Standorte suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Standorte",
+  "failTitle": "Standorte konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "name": "Name",
+    "timezone": "Zeitzone",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "isActive": "Aktiv",
+    "address": "Adresse",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

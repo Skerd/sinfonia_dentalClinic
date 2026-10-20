@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "bufferAfterMinutes": "Pastrimi (min)",
+  "bufferBeforeMinutes": "Përgatitja (min)",
+  "clinicServiceSubtitle": "Trajtimi",
+  "description": "Përshkrimi",
+  "durationMinutes": "Kohëzgjatja (min)",
+  "images": "Imazhet",
+  "isActive": "Aktiv",
+  "isPublic": "Në faqe",
+  "onlineBookable": "I rezervueshëm online",
+  "overview": "Përmbledhje",
+  "price": "Çmimi",
+  "priceType": "Shfaqja e çmimit",
+  "slug": "Emri i adresës web",
+  "priceTypeValues": {
+    "fixed": "Çmim fiks",
+    "from": "Nga",
+    "on_request": "Me kërkesë",
+    "free": "Falas"
+  },
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

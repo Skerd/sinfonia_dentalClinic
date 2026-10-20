@@ -1,0 +1,26 @@
+{
+  "dentalClinic": {
+    "title": "Studio dentistico",
+    "day": {
+      "title": "Vista giornaliera"
+    },
+    "appointments": {
+      "title": "Appuntamenti"
+    },
+    "team": {
+      "title": "Team"
+    },
+    "timeOff": {
+      "title": "Assenza"
+    },
+    "services": {
+      "title": "Trattamenti"
+    },
+    "locations": {
+      "title": "Sedi"
+    },
+    "settings": {
+      "title": "Impostazioni"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx",
+  "lifecycle": "Lifecycle",
+  "bufferAfterMinutes": "Clean-up (min)",
+  "bufferBeforeMinutes": "Preparation (min)",
+  "clinicServiceSubtitle": "Treatment",
+  "description": "Description",
+  "durationMinutes": "Duration (min)",
+  "images": "Images",
+  "isActive": "Active",
+  "isPublic": "On the website",
+  "onlineBookable": "Bookable online",
+  "overview": "Overview",
+  "price": "Price",
+  "priceType": "Price display",
+  "slug": "Slug",
+  "priceTypeValues": {
+    "fixed": "Fixed price",
+    "from": "From",
+    "on_request": "On request",
+    "free": "Free"
+  },
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

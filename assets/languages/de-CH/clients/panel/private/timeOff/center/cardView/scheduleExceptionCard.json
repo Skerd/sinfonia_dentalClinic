@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/center/cardView/scheduleExceptionCard.tsx",
+  "failedTitle": "Abwesenheit konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "startAt": "Beginnt",
+  "endAt": "Endet",
+  "location": "Standort"
+}

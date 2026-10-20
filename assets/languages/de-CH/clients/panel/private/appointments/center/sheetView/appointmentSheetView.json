@@ -1,0 +1,62 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/sheetView/appointmentSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "appointmentSubtitle": "Termin",
+  "at": "Wann",
+  "booked": "Wie gebucht",
+  "consentVersion": "Datenschutzerklärung akzeptiert",
+  "customer": "Patientenkonto",
+  "durationMinutes": "Dauer (Min.)",
+  "email": "E-Mail",
+  "endAt": "Endet",
+  "event": "Ereignis",
+  "firstName": "Vorname",
+  "lastName": "Nachname",
+  "location": "Standort",
+  "note": "Notiz",
+  "overview": "Übersicht",
+  "patient": "Patient/in",
+  "phone": "Telefon",
+  "practitioner": "Zahnärztin/Zahnarzt",
+  "price": "Preis",
+  "priceType": "Preisanzeige",
+  "rescheduleCount": "Anzahl Verschiebungen",
+  "service": "Behandlung",
+  "serviceName": "Behandlung",
+  "source": "Gebucht über",
+  "startAt": "Beginnt",
+  "status": "Status",
+  "timeline": "Verlauf",
+  "timezone": "Zeitzone",
+  "priceTypeValues": {
+    "fixed": "Fixpreis",
+    "from": "Von",
+    "on_request": "Auf Anfrage",
+    "free": "Kostenlos"
+  },
+  "sourceValues": {
+    "online": "Website",
+    "staff": "Personal"
+  },
+  "statusValues": {
+    "pending": "Wartet auf Bestätigung",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "no_show": "Nicht erschienen"
+  },
+  "timelineEvent": {
+    "created": "Erstellt",
+    "confirmed": "Bestätigt",
+    "rescheduled": "Verschoben",
+    "cancelled": "Storniert",
+    "completed": "Abgeschlossen",
+    "no_show": "Nicht erschienen",
+    "anonymized": "Patientendaten entfernt"
+  },
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

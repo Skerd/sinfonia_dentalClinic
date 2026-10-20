@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/index.tsx",
+  "title": "Termine",
+  "description": "Buchungen über die Website und am Empfang",
+  "help": {
+    "ariaLabel": "Über Termine",
+    "title": "Über Termine",
+    "overview": "Jeder Termin, ob über die Website oder hier erfasst. Ein Termin ist nach dem Erfassen fest: Änderungen erfolgen über die Aktionen in seinem Menü.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Bestätigen nimmt eine Online-Anfrage an, wenn die Praxis Buchungen zuerst prüft. Verschieben prüft die neue Zeit wie eine neue Buchung.",
+          "Markieren Sie einen Besuch als abgeschlossen, sobald er begonnen hat, oder als nicht erschienen nach der Kulanzzeit.",
+          "Die Zeiten werden im Termin selbst in der Zeitzone des Standorts angezeigt. Eine Fachperson mit verknüpftem Konto sieht nur ihre eigenen Termine."
+        ]
+      }
+    ]
+  },
+  "create": "Termin hinzufügen",
+  "searchPlaceholder": "Termine suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Termine",
+  "failTitle": "Termine konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "number": "Buchung",
+    "status": "Status",
+    "startAt": "Beginnt",
+    "service": "Behandlung",
+    "practitioner": "Zahnärztin/Zahnarzt",
+    "location": "Standort",
+    "source": "Gebucht über",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
+  "title": "Vue du jour",
+  "description": "Qui travaille où aujourd'hui, ses absences et tous les rendez-vous",
+  "location": "Site",
+  "date": "Date",
+  "previousDay": "Jour précédent",
+  "nextDay": "Jour suivant",
+  "today": "Aujourd'hui",
+  "timeOff": "Absence",
+  "loadError": "La journée n'a pas pu être chargée. Réessayez.",
+  "noLocations": "Ajoutez d'abord un site.",
+  "noPractitioners": "Personne ne travaille encore sur ce site. Ajoutez des membres de l'équipe et leurs horaires.",
+  "status": {
+    "pending": "En attente de confirmation",
+    "confirmed": "Confirmé",
+    "completed": "Terminé",
+    "cancelled": "Annulé",
+    "no_show": "Absent"
+  }
+}

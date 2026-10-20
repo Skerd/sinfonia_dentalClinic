@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/cardView/practitionerCard.tsx",
+  "failedTitle": "Failed to load team member",
+  "failedDescription": "Tap to retry.",
+  "title": "Title",
+  "role": "Role",
+  "roleValues": {
+    "dentist": "Dentist",
+    "hygienist": "Hygienist",
+    "orthodontist": "Orthodontist",
+    "other": "Other"
+  },
+  "isBookable": "Bookable online"
+}

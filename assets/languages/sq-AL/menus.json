@@ -1,0 +1,26 @@
+{
+  "dentalClinic": {
+    "title": "Klinikë dentare",
+    "day": {
+      "title": "Pamja ditore"
+    },
+    "appointments": {
+      "title": "Takime"
+    },
+    "team": {
+      "title": "Ekipi"
+    },
+    "timeOff": {
+      "title": "Mungesë"
+    },
+    "services": {
+      "title": "Trajtimet"
+    },
+    "locations": {
+      "title": "Vendndodhjet"
+    },
+    "settings": {
+      "title": "Cilësimet"
+    }
+  }
+}

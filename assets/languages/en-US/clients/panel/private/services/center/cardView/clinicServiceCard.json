@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
+  "failedTitle": "Failed to load treatment",
+  "failedDescription": "Tap to retry.",
+  "durationMinutes": "Duration (min)",
+  "priceType": "Price display",
+  "priceTypeValues": {
+    "fixed": "Fixed price",
+    "from": "From",
+    "on_request": "On request",
+    "free": "Free"
+  },
+  "price": "Price",
+  "onlineBookable": "Bookable online"
+}

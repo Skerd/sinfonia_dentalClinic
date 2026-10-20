@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/editClinicService.tsx",
+  "title": "Modifica trattamento",
+  "description": "Modifica questo trattamento",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Cosa dovrebbero sapere i pazienti su questo trattamento",
+    "imagesLabel": "Foto",
+    "nameLabel": "Nome",
+    "namePlaceholder": "es. Zurigo Centro",
+    "priceTypeLabel": "Visualizzazione del prezzo",
+    "priceTypePlaceholder": "Seleziona come mostrare il prezzo",
+    "pricingSectionTitle": "Prezzo mostrato",
+    "slugLabel": "Nome per l'indirizzo web",
+    "slugPlaceholder": "es. controllo",
+    "timingSectionTitle": "Tempi"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica trattamento",
+    "description": "Modifica questo trattamento"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

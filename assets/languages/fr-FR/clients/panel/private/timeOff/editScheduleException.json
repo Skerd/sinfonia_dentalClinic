@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/editScheduleException.tsx",
+  "title": "Modifier l'absence",
+  "description": "Modifier la note",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "endAtLabel": "Jusqu'à",
+    "endAtPlaceholder": "Saisir la fin",
+    "internalNoteLabel": "Note interne",
+    "internalNotePlaceholder": "Non visible par les patients",
+    "locationLabel": "Site",
+    "locationPlaceholder": "Choisir un site",
+    "practitionerLabel": "Dentiste",
+    "practitionerPlaceholder": "Choisir un praticien",
+    "startAtLabel": "De",
+    "startAtPlaceholder": "Saisir le début",
+    "targetHint": "Choisissez un praticien pour une absence, ou un site pour le fermer à tous. Pas les deux. Les rendez-vous existants sur cette période doivent d'abord être déplacés."
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement des modifications",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifications enregistrées",
+      "time": 3000
+    },
+    "error": {
+      "title": "Les modifications n'ont pas pu être enregistrées. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifier l'absence",
+    "description": "Modifier la note"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

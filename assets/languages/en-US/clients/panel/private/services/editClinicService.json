@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/editClinicService.tsx",
+  "title": "Edit treatment",
+  "description": "Change this treatment",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "What patients should know about this treatment",
+    "imagesLabel": "Photos",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. Zurich Centre",
+    "priceTypeLabel": "Price display",
+    "priceTypePlaceholder": "Select how the price is shown",
+    "pricingSectionTitle": "Price shown",
+    "slugLabel": "Web address name",
+    "slugPlaceholder": "e.g. check-up",
+    "timingSectionTitle": "Timing"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving changes",
+      "time": 3000
+    },
+    "success": {
+      "title": "Changes saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Changes could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Edit treatment",
+    "description": "Change this treatment"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

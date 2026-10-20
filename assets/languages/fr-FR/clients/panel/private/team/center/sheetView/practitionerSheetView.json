@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/sheetView/practitionerSheetView.tsx",
+  "lifecycle": "Cycle de vie",
+  "bio": "À propos",
+  "dayOfWeek": "Jour",
+  "endTime": "Jusqu'à",
+  "isActive": "Actif",
+  "isBookable": "Réservable en ligne",
+  "languages": "Langues",
+  "location": "Site",
+  "overview": "Aperçu",
+  "practitionerSubtitle": "Membre de l'équipe",
+  "role": "Rôle",
+  "schedule": "Horaires de travail",
+  "startTime": "De",
+  "title": "Titre",
+  "roleValues": {
+    "dentist": "Dentiste",
+    "hygienist": "Hygiéniste",
+    "orthodontist": "Orthodontiste",
+    "other": "Autre"
+  },
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par",
+  "staffUser": "Compte du personnel"
+}

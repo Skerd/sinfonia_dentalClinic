@@ -1,0 +1,62 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/createAppointment.tsx",
+  "title": "Termin hinzufügen",
+  "description": "Einen Termin für eine Patientin oder einen Patienten am Telefon oder am Empfang buchen",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "customerLabel": "Patientenkonto",
+    "customerPlaceholder": "Optional: ein Patientenkonto verknüpfen",
+    "dateLabel": "Datum",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "E-Mail eingeben",
+    "firstNameLabel": "Vorname",
+    "firstNamePlaceholder": "Vorname eingeben",
+    "lastNameLabel": "Nachname",
+    "lastNamePlaceholder": "Nachname eingeben",
+    "localTimeHint": "Geben Sie die Zeit als Ortszeit am Standort ein. Buchungen durch das Personal dürfen ausserhalb des Online-Zeitrasters beginnen, müssen aber in die Arbeitszeiten der Fachperson passen.",
+    "locationLabel": "Standort",
+    "locationPlaceholder": "Standort auswählen",
+    "noteHint": "Geben Sie hier keine medizinischen Angaben ein: Notizen bleiben bei der Buchung und sind für das Personal sichtbar.",
+    "noteLabel": "Notiz",
+    "notePlaceholder": "Nur praktische Hinweise",
+    "patientSectionTitle": "Patient/in",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "Telefon eingeben",
+    "practitionerLabel": "Zahnärztin/Zahnarzt",
+    "practitionerPlaceholder": "Fachperson auswählen",
+    "serviceLabel": "Behandlung",
+    "servicePlaceholder": "Behandlung auswählen",
+    "timeLabel": "Zeit",
+    "visitSectionTitle": "Besuch"
+  },
+  "axios": {
+    "start": {
+      "title": "Termin wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Termin hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Der Termin konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Termin hinzufügen",
+    "description": "Einen Termin für eine Patientin oder einen Patienten am Telefon oder am Empfang buchen"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  }
+}

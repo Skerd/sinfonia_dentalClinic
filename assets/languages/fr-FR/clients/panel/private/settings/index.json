@@ -1,0 +1,4 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/settings/index.tsx",
+  "loadError": "Les paramètres du cabinet n'ont pas pu être ouverts. Ajoutez d'abord une devise, puis réessayez."
+}

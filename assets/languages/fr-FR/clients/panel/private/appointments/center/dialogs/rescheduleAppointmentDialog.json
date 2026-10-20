@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/rescheduleAppointmentDialog.tsx",
+  "title": "Déplacer le rendez-vous",
+  "description": "Nouvelle date et heure, à l'heure locale du site. L'horaire est vérifié comme une nouvelle réservation.",
+  "confirm": "Déplacer",
+  "cancel": "Retour",
+  "dateLabel": "Nouvelle date",
+  "timeLabel": "Nouvelle heure"
+}

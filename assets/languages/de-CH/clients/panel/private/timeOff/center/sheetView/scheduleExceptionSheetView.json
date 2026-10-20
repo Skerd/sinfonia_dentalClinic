@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/center/sheetView/scheduleExceptionSheetView.tsx",
+  "lifecycle": "Lebenszyklus",
+  "endAt": "Endet",
+  "internalNote": "Interne Notiz",
+  "location": "Standort",
+  "overview": "Übersicht",
+  "practitioner": "Zahnärztin/Zahnarzt",
+  "scheduleExceptionSubtitle": "Abwesenheit",
+  "startAt": "Beginnt",
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

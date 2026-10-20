@@ -1,0 +1,64 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/createPractitioner.tsx",
+  "title": "Aggiungi membro del team",
+  "description": "Aggiungi un dentista o un igienista",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "bioLabel": "Informazioni",
+    "bioPlaceholder": "Una breve presentazione per i pazienti",
+    "dayOfWeekLabel": "Giorno",
+    "displayNameLabel": "Nome",
+    "displayNamePlaceholder": "es. Dr.ssa Anna Meier",
+    "eligibilitySectionTitle": "Cosa e dove",
+    "endTimeLabel": "Fino a",
+    "languagesLabel": "Lingue parlate",
+    "languagesPlaceholder": "es. Tedesco",
+    "photoLabel": "Foto",
+    "removeItem": "Rimuovi",
+    "roleLabel": "Ruolo",
+    "rolePlaceholder": "Seleziona ruolo",
+    "scheduleAddRow": "Aggiungi orari di lavoro",
+    "scheduleLocationLabel": "Sede",
+    "scheduleLocationPlaceholder": "Seleziona sede",
+    "scheduleRemoveRow": "Rimuovi",
+    "scheduleRowTitle": "Orari di lavoro",
+    "scheduleSectionTitle": "Orari di lavoro",
+    "sortOrderLabel": "Ordinamento",
+    "sortOrderPlaceholder": "Inserisci l'ordinamento",
+    "staffUserLabel": "Account del personale",
+    "staffUserPlaceholder": "Facoltativo: collega un utente perché veda i propri appuntamenti",
+    "startTimeLabel": "Da",
+    "titleLabel": "Titolo",
+    "titlePlaceholder": "es. Dentista, Dr. med. dent."
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio membro del team",
+      "time": 3000
+    },
+    "success": {
+      "title": "Membro del team aggiunto",
+      "time": 3000
+    },
+    "error": {
+      "title": "Non è stato possibile aggiungere il membro del team. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi membro del team",
+    "description": "Aggiungi un dentista o un igienista"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

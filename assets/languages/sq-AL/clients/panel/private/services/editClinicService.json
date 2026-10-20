@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/editClinicService.tsx",
+  "title": "Ndrysho trajtimin",
+  "description": "Ndryshoni këtë trajtim",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "descriptionLabel": "Përshkrimi",
+    "descriptionPlaceholder": "Çfarë duhet të dinë pacientët për këtë trajtim",
+    "imagesLabel": "Fotot",
+    "nameLabel": "Emri",
+    "namePlaceholder": "p.sh. Qendra e Cyrihut",
+    "priceTypeLabel": "Shfaqja e çmimit",
+    "priceTypePlaceholder": "Zgjidh si shfaqet çmimi",
+    "pricingSectionTitle": "Çmimi i shfaqur",
+    "slugLabel": "Emri i adresës web",
+    "slugPlaceholder": "p.sh. kontroll",
+    "timingSectionTitle": "Kohët"
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho trajtimin",
+    "description": "Ndryshoni këtë trajtim"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/index.tsx",
+  "title": "Trattamenti",
+  "description": "Cosa possono prenotare i pazienti: durata, preparazione e prezzo mostrato",
+  "help": {
+    "ariaLabel": "Informazioni sui trattamenti",
+    "title": "Informazioni sui trattamenti",
+    "overview": "I trattamenti sono ciò che i pazienti prenotano. La durata è ciò che vede il paziente; preparazione e riordino tengono occupato il dentista prima e dopo.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "La visualizzazione del prezzo decide cosa mostra il sito: un prezzo fisso, un prezzo «da», «su richiesta» o gratuito. Online non viene addebitato nulla.",
+          "Disattiva «Prenotabile online» per riservare un trattamento alle prenotazioni del personale.",
+          "Cambiare un trattamento non modifica mai gli appuntamenti già prenotati."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi trattamento",
+  "searchPlaceholder": "Cerca trattamenti o aggiungi filtri...",
+  "noData": "Nessun trattamento",
+  "failTitle": "Impossibile caricare i trattamenti",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "name": "Nome",
+    "slug": "Nome per l'indirizzo web",
+    "durationMinutes": "Durata (min)",
+    "priceType": "Visualizzazione del prezzo",
+    "price": "Prezzo",
+    "onlineBookable": "Prenotabile online",
+    "isActive": "Attivo",
+    "sortOrder": "Ordinamento",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

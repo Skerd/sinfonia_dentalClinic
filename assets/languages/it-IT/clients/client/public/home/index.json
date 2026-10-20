@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/home/index.tsx",
+  "title": "Il tuo appuntamento dal dentista, prenotato in un minuto",
+  "subtitle": "Scegli un trattamento, un dentista e un orario adatto a te. Nessun account necessario.",
+  "bookNow": "Prenota un appuntamento",
+  "servicesTitle": "Trattamenti",
+  "teamTitle": "Il nostro team",
+  "bookThis": "Prenota questo",
+  "callToBook": "Prenota per telefono",
+  "bookWith": "Prenota con questo dentista",
+  "priceFrom": "da",
+  "priceFree": "Gratuito",
+  "priceOnRequest": "Prezzo su richiesta",
+  "minutes": "min",
+  "role": {
+    "dentist": "Dentista",
+    "hygienist": "Igienista dentale",
+    "orthodontist": "Ortodontista",
+    "other": "Membro del team"
+  }
+}

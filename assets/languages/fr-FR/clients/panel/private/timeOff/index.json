@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/index.tsx",
+  "title": "Absence",
+  "description": "Vacances, formations et fermetures pendant lesquelles personne ne peut être réservé",
+  "help": {
+    "ariaLabel": "À propos des absences",
+    "title": "À propos des absences",
+    "overview": "Une absence retire un praticien des réservations pour un temps ; une fermeture de site retire tout le monde sur ce site.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Une absence ne peut pas couvrir des rendez-vous existants : l'erreur les liste pour qu'ils soient d'abord déplacés.",
+          "Une fois créée, la période est figée. Pour la modifier, supprimez-la et créez-en une nouvelle."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter une absence",
+  "searchPlaceholder": "Rechercher des absences ou ajouter des filtres...",
+  "noData": "Aucune absence pour l'instant",
+  "failTitle": "Impossible de charger l'absence",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "practitioner": "Dentiste",
+    "location": "Site",
+    "startAt": "Commence",
+    "endAt": "Se termine",
+    "internalNote": "Note interne",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

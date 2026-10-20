@@ -1,0 +1,26 @@
+{
+  "dentalClinic": {
+    "title": "Cabinet dentaire",
+    "day": {
+      "title": "Vue du jour"
+    },
+    "appointments": {
+      "title": "Rendez-vous"
+    },
+    "team": {
+      "title": "Équipe"
+    },
+    "timeOff": {
+      "title": "Absence"
+    },
+    "services": {
+      "title": "Soins"
+    },
+    "locations": {
+      "title": "Sites"
+    },
+    "settings": {
+      "title": "Paramètres"
+    }
+  }
+}

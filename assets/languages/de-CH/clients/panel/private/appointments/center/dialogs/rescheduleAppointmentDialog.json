@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/rescheduleAppointmentDialog.tsx",
+  "title": "Termin verschieben",
+  "description": "Neues Datum und neue Zeit, in der Ortszeit des Standorts. Die Zeit wird wie eine neue Buchung geprüft.",
+  "confirm": "Verschieben",
+  "cancel": "Zurück",
+  "dateLabel": "Neues Datum",
+  "timeLabel": "Neue Zeit"
+}

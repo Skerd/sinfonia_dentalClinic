@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/cardView/practitionerCard.tsx",
+  "failedTitle": "Impossibile caricare il membro del team",
+  "failedDescription": "Tocca per riprovare.",
+  "title": "Titolo",
+  "role": "Ruolo",
+  "roleValues": {
+    "dentist": "Dentista",
+    "hygienist": "Igienista",
+    "orthodontist": "Ortodontista",
+    "other": "Altro"
+  },
+  "isBookable": "Prenotabile online"
+}

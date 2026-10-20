@@ -1,0 +1,15 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
+  "failedTitle": "Impossible de charger le soin",
+  "failedDescription": "Touchez pour réessayer.",
+  "durationMinutes": "Durée (min)",
+  "priceType": "Affichage du prix",
+  "priceTypeValues": {
+    "fixed": "Prix fixe",
+    "from": "De",
+    "on_request": "Sur demande",
+    "free": "Gratuit"
+  },
+  "price": "Prix",
+  "onlineBookable": "Réservable en ligne"
+}

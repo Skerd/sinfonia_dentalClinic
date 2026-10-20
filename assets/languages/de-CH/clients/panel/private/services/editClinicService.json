@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/editClinicService.tsx",
+  "title": "Behandlung bearbeiten",
+  "description": "Diese Behandlung ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "descriptionLabel": "Beschreibung",
+    "descriptionPlaceholder": "Was Patienten über diese Behandlung wissen sollten",
+    "imagesLabel": "Fotos",
+    "nameLabel": "Name",
+    "namePlaceholder": "z. B. Zürich Zentrum",
+    "priceTypeLabel": "Preisanzeige",
+    "priceTypePlaceholder": "Preisanzeige auswählen",
+    "pricingSectionTitle": "Angezeigter Preis",
+    "slugLabel": "Webadressen-Name",
+    "slugPlaceholder": "z. B. kontrolle",
+    "timingSectionTitle": "Zeiten"
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Behandlung bearbeiten",
+    "description": "Diese Behandlung ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/index.tsx",
+  "title": "Équipe",
+  "description": "Dentistes et hygiénistes : ce qu'ils font, où et quand ils travaillent",
+  "help": {
+    "ariaLabel": "À propos de l'équipe",
+    "title": "À propos de l'équipe",
+    "overview": "Chaque membre de l'équipe a un profil public, les soins qu'il réalise, les sites où il travaille et des horaires hebdomadaires par site.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Liez un compte du personnel pour que cette personne ne voie que ses propres rendez-vous et sa journée.",
+          "Les changements d'horaires s'appliquent aussitôt aux nouvelles réservations ; les rendez-vous existants restent en place.",
+          "Une personne ayant des rendez-vous à venir ne peut pas être désactivée tant qu'ils ne sont pas déplacés ou annulés."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un membre de l'équipe",
+  "searchPlaceholder": "Rechercher dans l'équipe ou ajouter des filtres...",
+  "noData": "Aucune équipe pour l'instant",
+  "failTitle": "Impossible de charger l'équipe",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "displayName": "Nom affiché",
+    "title": "Titre",
+    "role": "Rôle",
+    "locations": "Sites",
+    "isBookable": "Réservable en ligne",
+    "isActive": "Actif",
+    "sortOrder": "Ordre de tri",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par",
+    "staffUser": "Compte du personnel"
+  }
+}

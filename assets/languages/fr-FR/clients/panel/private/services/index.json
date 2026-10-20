@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/index.tsx",
+  "title": "Soins",
+  "description": "Ce que les patients peuvent réserver : durée, préparation et prix affiché",
+  "help": {
+    "ariaLabel": "À propos des soins",
+    "title": "À propos des soins",
+    "overview": "Les soins sont ce que les patients réservent. La durée est ce que voit le patient ; la préparation et le nettoyage occupent le praticien avant et après.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "L'affichage du prix détermine ce que montre le site web : un prix fixe, un prix « à partir de », « sur demande » ou gratuit. Rien n'est débité en ligne.",
+          "Désactivez « Réservable en ligne » pour réserver un soin aux réservations du personnel.",
+          "Modifier un soin ne change jamais les rendez-vous déjà pris."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un soin",
+  "searchPlaceholder": "Rechercher des soins ou ajouter des filtres...",
+  "noData": "Aucun soin pour l'instant",
+  "failTitle": "Impossible de charger les soins",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "name": "Nom",
+    "slug": "Nom d'adresse web",
+    "durationMinutes": "Durée (min)",
+    "priceType": "Affichage du prix",
+    "price": "Prix",
+    "onlineBookable": "Réservable en ligne",
+    "isActive": "Actif",
+    "sortOrder": "Ordre de tri",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

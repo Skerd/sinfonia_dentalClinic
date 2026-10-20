@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/actions/appointmentMenu.tsx",
+  "confirm": "Konfirmo",
+  "reschedule": "Zhvendos",
+  "complete": "Shëno të përfunduar",
+  "noShow": "Shëno mosparaqitje",
+  "cancel": "Anulo takimin"
+}

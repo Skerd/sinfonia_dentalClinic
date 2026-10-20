@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/completeAppointmentDialog.tsx",
+  "title": "Segna come completato",
+  "description": "Registra che la visita ha avuto luogo.",
+  "confirm": "Segna completato",
+  "cancel": "Indietro"
+}

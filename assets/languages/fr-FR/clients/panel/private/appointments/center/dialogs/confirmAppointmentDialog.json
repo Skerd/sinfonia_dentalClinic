@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/confirmAppointmentDialog.tsx",
+  "title": "Confirmer le rendez-vous",
+  "description": "Le patient reçoit un e-mail indiquant que le rendez-vous est confirmé.",
+  "confirm": "Confirmer",
+  "cancel": "Retour"
+}

@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/center/sheetView/scheduleExceptionSheetView.tsx",
+  "lifecycle": "Cikli i jetës",
+  "endAt": "Përfundon",
+  "internalNote": "Shënim i brendshëm",
+  "location": "Vendndodhja",
+  "overview": "Përmbledhje",
+  "practitioner": "Dentist",
+  "scheduleExceptionSubtitle": "Mungesë",
+  "startAt": "Fillon",
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/completeAppointmentDialog.tsx",
+  "title": "Shëno si të përfunduar",
+  "description": "Regjistroni që vizita u krye.",
+  "confirm": "Shëno të përfunduar",
+  "cancel": "Mbrapa"
+}

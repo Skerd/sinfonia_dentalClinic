@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/cancelAppointmentDialog.tsx",
+  "title": "Anulo takimin",
+  "description": "Pacienti merr një email që takimi është anuluar.",
+  "confirm": "Anulo takimin",
+  "cancel": "Mbrapa",
+  "reasonLabel": "Arsyeja (e brendshme)",
+  "reasonPlaceholder": "p.sh. Pacienti telefonoi për të anuluar"
+}

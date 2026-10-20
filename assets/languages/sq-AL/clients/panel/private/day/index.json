@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
+  "title": "Pamja ditore",
+  "description": "Kush punon ku sot, mungesat dhe çdo takim",
+  "location": "Vendndodhja",
+  "date": "Data",
+  "previousDay": "Dita e mëparshme",
+  "nextDay": "Dita tjetër",
+  "today": "Sot",
+  "timeOff": "Mungesë",
+  "loadError": "Dita nuk u ngarkua. Provoni përsëri.",
+  "noLocations": "Shtoni fillimisht një vendndodhje.",
+  "noPractitioners": "Askush nuk punon ende në këtë vendndodhje. Shtoni anëtarë ekipi dhe orarin e tyre.",
+  "status": {
+    "pending": "Në pritje të konfirmimit",
+    "confirmed": "Konfirmuar",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "no_show": "Mosparaqitje"
+  }
+}

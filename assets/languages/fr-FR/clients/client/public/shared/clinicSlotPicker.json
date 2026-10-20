@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicSlotPicker.tsx",
+  "loadFailed": "Les créneaux libres n'ont pas pu être chargés. Veuillez réessayer.",
+  "earlier": "Plus tôt",
+  "later": "Plus tard",
+  "localTime": "heure locale",
+  "noneThisWeek": "Aucun créneau libre cette semaine. Essayez la semaine suivante."
+}

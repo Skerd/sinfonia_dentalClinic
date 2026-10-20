@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicSlotPicker.tsx",
+  "loadFailed": "Oraret e lira nuk u ngarkuan. Ju lutemi provoni përsëri.",
+  "earlier": "Më herët",
+  "later": "Më vonë",
+  "localTime": "ora lokale",
+  "noneThisWeek": "Asnjë orar i lirë këtë javë. Provoni javën tjetër."
+}

@@ -1,0 +1,43 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/index.tsx",
+  "title": "Treatments",
+  "description": "What patients can book: duration, preparation and the price shown",
+  "help": {
+    "ariaLabel": "About treatments",
+    "title": "About treatments",
+    "overview": "Treatments are what patients book. The duration is what the patient sees; preparation and clean-up keep the dentist busy before and after.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "The price display decides what the website shows: a fixed price, a 'from' price, 'on request' or free. Nothing is charged online.",
+          "Turn off 'Bookable online' to keep a treatment for staff bookings only.",
+          "Changing a treatment never changes appointments already booked."
+        ]
+      }
+    ]
+  },
+  "create": "Add treatment",
+  "searchPlaceholder": "Search treatments or add filters...",
+  "noData": "No treatments yet",
+  "failTitle": "Failed to load treatments",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "name": "Name",
+    "slug": "Slug",
+    "durationMinutes": "Duration (min)",
+    "priceType": "Price display",
+    "price": "Price",
+    "onlineBookable": "Bookable online",
+    "isActive": "Active",
+    "sortOrder": "Sort order",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/cancelAppointmentDialog.tsx",
+  "title": "Cancel appointment",
+  "description": "The patient gets an email that the appointment is cancelled.",
+  "confirm": "Cancel appointment",
+  "cancel": "Back",
+  "reasonLabel": "Reason (internal)",
+  "reasonPlaceholder": "e.g. Patient called to cancel"
+}

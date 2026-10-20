@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/completeAppointmentDialog.tsx",
+  "title": "Mark as completed",
+  "description": "Record that the visit took place.",
+  "confirm": "Mark completed",
+  "cancel": "Back"
+}

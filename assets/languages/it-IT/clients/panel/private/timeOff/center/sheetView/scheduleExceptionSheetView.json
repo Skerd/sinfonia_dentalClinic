@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/center/sheetView/scheduleExceptionSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "endAt": "Termina",
+  "internalNote": "Nota interna",
+  "location": "Sede",
+  "overview": "Panoramica",
+  "practitioner": "Dentista",
+  "scheduleExceptionSubtitle": "Assenza",
+  "startAt": "Inizia",
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

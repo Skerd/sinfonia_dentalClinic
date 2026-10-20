@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/home/index.tsx",
+  "title": "Votre rendez-vous chez le dentiste, réservé en une minute",
+  "subtitle": "Choisissez un soin, un praticien et un horaire qui vous convient. Aucun compte nécessaire.",
+  "bookNow": "Prendre rendez-vous",
+  "servicesTitle": "Soins",
+  "teamTitle": "Notre équipe",
+  "bookThis": "Réserver ce soin",
+  "callToBook": "Réserver par téléphone",
+  "bookWith": "Réserver avec ce praticien",
+  "priceFrom": "à partir de",
+  "priceFree": "Gratuit",
+  "priceOnRequest": "Prix sur demande",
+  "minutes": "min",
+  "role": {
+    "dentist": "Dentiste",
+    "hygienist": "Hygiéniste dentaire",
+    "orthodontist": "Orthodontiste",
+    "other": "Membre de l'équipe"
+  }
+}

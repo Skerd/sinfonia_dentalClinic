@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/noShowAppointmentDialog.tsx",
+  "title": "Mark as no-show",
+  "description": "Record that the patient did not come. Possible once the grace period after the start has passed.",
+  "confirm": "Mark no-show",
+  "cancel": "Back"
+}

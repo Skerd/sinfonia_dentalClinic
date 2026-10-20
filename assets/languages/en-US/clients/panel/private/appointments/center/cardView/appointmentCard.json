@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/cardView/appointmentCard.tsx",
+  "failedTitle": "Failed to load appointment",
+  "failedDescription": "Tap to retry.",
+  "status": "Status",
+  "statusValues": {
+    "pending": "Awaiting confirmation",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "no_show": "No-show"
+  },
+  "startAt": "Starts",
+  "practitioner": "Dentist",
+  "patient": "Patient"
+}

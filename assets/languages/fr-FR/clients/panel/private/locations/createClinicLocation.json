@@ -1,0 +1,74 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/createClinicLocation.tsx",
+  "title": "Ajouter un site",
+  "description": "Ajouter un cabinet où les patients sont reçus",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "addressSectionTitle": "Adresse",
+    "cityLabel": "Ville",
+    "cityPlaceholder": "Saisir la ville",
+    "closureAddRow": "Ajouter un jour de fermeture",
+    "closureDateLabel": "Date",
+    "closureReasonLabel": "Motif",
+    "closureReasonPlaceholder": "p. ex. Jour férié",
+    "closureRemoveRow": "Supprimer",
+    "closureRowTitle": "Jour de fermeture",
+    "closuresSectionTitle": "Jours de fermeture",
+    "countryLabel": "Pays",
+    "countryPlaceholder": "Saisir le pays",
+    "dayOfWeekLabel": "Jour",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Saisir l'e-mail",
+    "endTimeLabel": "Jusqu'à",
+    "hoursAddRow": "Ajouter des horaires",
+    "hoursRemoveRow": "Supprimer",
+    "hoursRowTitle": "Horaires d'ouverture",
+    "isActiveLabel": "Actif",
+    "latitudeLabel": "Latitude",
+    "latitudePlaceholder": "Saisir la latitude",
+    "longitudeLabel": "Longitude",
+    "longitudePlaceholder": "Saisir la longitude",
+    "nameLabel": "Nom",
+    "namePlaceholder": "p. ex. Zurich Centre",
+    "openingHoursSectionTitle": "Horaires d'ouverture",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "Saisir le téléphone",
+    "postalCodeLabel": "Code postal",
+    "postalCodePlaceholder": "Saisir le code postal",
+    "startTimeLabel": "De",
+    "streetLabel": "Rue",
+    "streetPlaceholder": "Saisir la rue",
+    "timezoneLabel": "Fuseau horaire",
+    "timezonePlaceholder": "p. ex. Europe/Zurich"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement du site",
+      "time": 3000
+    },
+    "success": {
+      "title": "Site ajouté",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le site n'a pas pu être ajouté. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter un site",
+    "description": "Ajouter un cabinet où les patients sont reçus"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

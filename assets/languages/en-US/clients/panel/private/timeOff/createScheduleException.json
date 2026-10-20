@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/createScheduleException.tsx",
+  "title": "Add time off",
+  "description": "Block time for a dentist or a location",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "endAtLabel": "Until",
+    "endAtPlaceholder": "Enter end at",
+    "internalNoteLabel": "Internal note",
+    "internalNotePlaceholder": "Not shown to patients",
+    "locationLabel": "Location",
+    "locationPlaceholder": "Select location",
+    "practitionerLabel": "Dentist",
+    "practitionerPlaceholder": "Select dentist",
+    "startAtLabel": "From",
+    "startAtPlaceholder": "Enter start at",
+    "targetHint": "Choose a dentist for time off, or a location to close it for everyone. Not both. Existing appointments in this time must be moved first."
+  },
+  "axios": {
+    "start": {
+      "title": "Saving time off",
+      "time": 3000
+    },
+    "success": {
+      "title": "Time off added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Time off could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add time off",
+    "description": "Block time for a dentist or a location"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

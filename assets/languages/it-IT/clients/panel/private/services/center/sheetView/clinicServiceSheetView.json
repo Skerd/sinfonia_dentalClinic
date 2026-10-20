@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "bufferAfterMinutes": "Riordino (min)",
+  "bufferBeforeMinutes": "Preparazione (min)",
+  "clinicServiceSubtitle": "Trattamento",
+  "description": "Descrizione",
+  "durationMinutes": "Durata (min)",
+  "images": "Immagini",
+  "isActive": "Attivo",
+  "isPublic": "Sul sito web",
+  "onlineBookable": "Prenotabile online",
+  "overview": "Panoramica",
+  "price": "Prezzo",
+  "priceType": "Visualizzazione del prezzo",
+  "slug": "Nome per l'indirizzo web",
+  "priceTypeValues": {
+    "fixed": "Prezzo fisso",
+    "from": "Da",
+    "on_request": "Su richiesta",
+    "free": "Gratuito"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

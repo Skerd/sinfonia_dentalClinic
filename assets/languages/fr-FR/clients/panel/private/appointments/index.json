@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/index.tsx",
+  "title": "Rendez-vous",
+  "description": "Réservations du site web et de l'accueil",
+  "help": {
+    "ariaLabel": "À propos des rendez-vous",
+    "title": "À propos des rendez-vous",
+    "overview": "Chaque rendez-vous, pris sur le site web ou ici. Un rendez-vous est figé une fois pris : les changements passent par les actions de son menu.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Confirmer accepte une demande en ligne lorsque le cabinet vérifie d'abord les réservations. Déplacer vérifie le nouvel horaire comme une nouvelle réservation.",
+          "Marquez une visite comme terminée une fois commencée, ou comme absence après le délai de tolérance.",
+          "Les heures sont affichées dans le fuseau horaire du site sur le rendez-vous lui-même. Un praticien avec un compte lié ne voit que ses propres rendez-vous."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un rendez-vous",
+  "searchPlaceholder": "Rechercher des rendez-vous ou ajouter des filtres...",
+  "noData": "Aucun rendez-vous pour l'instant",
+  "failTitle": "Impossible de charger les rendez-vous",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "number": "Réservation",
+    "status": "Statut",
+    "startAt": "Commence",
+    "service": "Soin",
+    "practitioner": "Dentiste",
+    "location": "Site",
+    "source": "Réservé via",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "dentalClinic": {
+    "title": "Dental clinic",
+    "day": {"title": "Day view"},
+    "appointments": {"title": "Appointments"},
+    "team": {"title": "Team"},
+    "timeOff": {"title": "Time off"},
+    "services": {"title": "Treatments"},
+    "locations": {"title": "Locations"},
+    "settings": {"title": "Settings"}
+  }
+}

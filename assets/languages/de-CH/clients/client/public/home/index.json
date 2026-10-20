@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/home/index.tsx",
+  "title": "Ihr Zahnarzttermin, in einer Minute gebucht",
+  "subtitle": "Wählen Sie eine Behandlung, eine Fachperson und eine passende Zeit. Kein Konto nötig.",
+  "bookNow": "Termin buchen",
+  "servicesTitle": "Behandlungen",
+  "teamTitle": "Unser Team",
+  "bookThis": "Diese buchen",
+  "callToBook": "Telefonisch buchen",
+  "bookWith": "Bei dieser Fachperson buchen",
+  "priceFrom": "ab",
+  "priceFree": "Kostenlos",
+  "priceOnRequest": "Preis auf Anfrage",
+  "minutes": "Min.",
+  "role": {
+    "dentist": "Zahnärztin/Zahnarzt",
+    "hygienist": "Dentalhygienikerin",
+    "orthodontist": "Kieferorthopäde/in",
+    "other": "Teammitglied"
+  }
+}

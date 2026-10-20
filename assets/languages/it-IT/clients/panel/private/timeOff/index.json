@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/index.tsx",
+  "title": "Assenza",
+  "description": "Ferie, giornate di formazione e chiusure in cui nessuno può essere prenotato",
+  "help": {
+    "ariaLabel": "Informazioni sulle assenze",
+    "title": "Informazioni sulle assenze",
+    "overview": "Un'assenza toglie un dentista dalle prenotazioni per un periodo; una chiusura della sede toglie tutti in quella sede.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Un'assenza non può coprire appuntamenti esistenti: l'errore li elenca così puoi spostarli prima.",
+          "Una volta creato, il periodo è fisso. Per cambiarlo, eliminalo e creane uno nuovo."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi assenza",
+  "searchPlaceholder": "Cerca assenze o aggiungi filtri...",
+  "noData": "Nessuna assenza",
+  "failTitle": "Impossibile caricare l'assenza",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "practitioner": "Dentista",
+    "location": "Sede",
+    "startAt": "Inizia",
+    "endAt": "Termina",
+    "internalNote": "Nota interna",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

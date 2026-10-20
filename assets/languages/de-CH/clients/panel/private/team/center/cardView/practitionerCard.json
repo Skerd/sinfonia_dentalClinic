@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/cardView/practitionerCard.tsx",
+  "failedTitle": "Teammitglied konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "title": "Titel",
+  "role": "Rolle",
+  "roleValues": {
+    "dentist": "Zahnärztin/Zahnarzt",
+    "hygienist": "Dentalhygieniker/in",
+    "orthodontist": "Kieferorthopäde/in",
+    "other": "Andere"
+  },
+  "isBookable": "Online buchbar"
+}

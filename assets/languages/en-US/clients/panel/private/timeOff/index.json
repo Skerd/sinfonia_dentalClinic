@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/index.tsx",
+  "title": "Time off",
+  "description": "Holidays, training days and closures nobody can be booked in",
+  "help": {
+    "ariaLabel": "About time off",
+    "title": "About time off",
+    "overview": "Time off removes a dentist from booking for a while; a location closure removes everyone at that location.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Time off can't cover existing appointments: the error lists them so they can be moved first.",
+          "Once created, the window is fixed. To change it, delete it and add a new one."
+        ]
+      }
+    ]
+  },
+  "create": "Add time off",
+  "searchPlaceholder": "Search time off or add filters...",
+  "noData": "No time off yet",
+  "failTitle": "Failed to load time off",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "practitioner": "Dentist",
+    "location": "Location",
+    "startAt": "Starts",
+    "endAt": "Ends",
+    "internalNote": "Internal note",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/center/cardView/scheduleExceptionCard.tsx",
+  "failedTitle": "Failed to load time off",
+  "failedDescription": "Tap to retry.",
+  "startAt": "Starts",
+  "endAt": "Ends",
+  "location": "Location"
+}

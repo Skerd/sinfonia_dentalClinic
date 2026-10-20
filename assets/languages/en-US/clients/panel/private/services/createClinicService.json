@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/createClinicService.tsx",
+  "title": "Add treatment",
+  "description": "Add a treatment patients can book",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "What patients should know about this treatment",
+    "imagesLabel": "Photos",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. Zurich Centre",
+    "priceTypeLabel": "Price display",
+    "priceTypePlaceholder": "Select how the price is shown",
+    "pricingSectionTitle": "Price shown",
+    "slugLabel": "Web address name",
+    "slugPlaceholder": "e.g. check-up",
+    "timingSectionTitle": "Timing"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving treatment",
+      "time": 3000
+    },
+    "success": {
+      "title": "Treatment added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Treatment could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add treatment",
+    "description": "Add a treatment patients can book"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}

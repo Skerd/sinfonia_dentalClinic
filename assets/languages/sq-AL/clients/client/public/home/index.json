@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/home/index.tsx",
+  "title": "Takimi juaj te dentisti, i rezervuar në një minutë",
+  "subtitle": "Zgjidhni një trajtim, një mjek dhe një orar që ju përshtatet. Pa nevojë për llogari.",
+  "bookNow": "Rezervo një takim",
+  "servicesTitle": "Trajtimet",
+  "teamTitle": "Ekipi ynë",
+  "bookThis": "Rezervo këtë",
+  "callToBook": "Rezervo me telefon",
+  "bookWith": "Rezervo me këtë mjek",
+  "priceFrom": "nga",
+  "priceFree": "Falas",
+  "priceOnRequest": "Çmimi me kërkesë",
+  "minutes": "min",
+  "role": {
+    "dentist": "Dentist",
+    "hygienist": "Higjieniste dentare",
+    "orthodontist": "Ortodont",
+    "other": "Anëtar i ekipit"
+  }
+}

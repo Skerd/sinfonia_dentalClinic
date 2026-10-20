@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/index.tsx",
+  "title": "Abwesenheit",
+  "description": "Ferien, Weiterbildungstage und Schliessungen, in denen niemand gebucht werden kann",
+  "help": {
+    "ariaLabel": "Über Abwesenheiten",
+    "title": "Über Abwesenheiten",
+    "overview": "Eine Abwesenheit nimmt eine Fachperson eine Zeit lang aus der Buchung; eine Standortschliessung nimmt alle an diesem Standort heraus.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Eine Abwesenheit darf keine bestehenden Termine überdecken: Die Fehlermeldung listet sie auf, damit sie zuerst verschoben werden können.",
+          "Nach dem Erstellen ist der Zeitraum fest. Um ihn zu ändern, löschen Sie den Eintrag und erstellen Sie einen neuen."
+        ]
+      }
+    ]
+  },
+  "create": "Abwesenheit hinzufügen",
+  "searchPlaceholder": "Abwesenheiten suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Abwesenheiten",
+  "failTitle": "Abwesenheit konnte nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "practitioner": "Zahnärztin/Zahnarzt",
+    "location": "Standort",
+    "startAt": "Beginnt",
+    "endAt": "Endet",
+    "internalNote": "Interne Notiz",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

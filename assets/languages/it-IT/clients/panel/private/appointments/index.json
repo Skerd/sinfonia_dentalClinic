@@ -1,0 +1,42 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/index.tsx",
+  "title": "Appuntamenti",
+  "description": "Prenotazioni dal sito web e dalla reception",
+  "help": {
+    "ariaLabel": "Informazioni sugli appuntamenti",
+    "title": "Informazioni sugli appuntamenti",
+    "overview": "Ogni appuntamento, dal sito web o creato qui. Un appuntamento è fisso una volta creato: le modifiche passano dalle azioni del suo menu.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Conferma accetta una richiesta online quando lo studio verifica prima le prenotazioni. Sposta controlla il nuovo orario come una nuova prenotazione.",
+          "Segna una visita come completata una volta iniziata, oppure come mancata dopo il periodo di tolleranza.",
+          "Gli orari sono mostrati nel fuso orario della sede nell'appuntamento stesso. Un dentista con account collegato vede solo i propri appuntamenti."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi appuntamento",
+  "searchPlaceholder": "Cerca appuntamenti o aggiungi filtri...",
+  "noData": "Nessun appuntamento",
+  "failTitle": "Impossibile caricare gli appuntamenti",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "active": "Attivo",
+  "fields": {
+    "number": "Prenotazione",
+    "status": "Stato",
+    "startAt": "Inizia",
+    "service": "Trattamento",
+    "practitioner": "Dentista",
+    "location": "Sede",
+    "source": "Prenotato tramite",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

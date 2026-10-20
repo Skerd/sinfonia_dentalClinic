@@ -1,0 +1,64 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
+  "title": "Clinic settings",
+  "description": "Online booking rules, messages, privacy and data retention",
+  "form": {
+    "bookingSectionTitle": "Online booking",
+    "cancellationDeadlineHoursLabel": "Online cancellation until (hours before)",
+    "cancellationDeadlineHoursPlaceholder": "Online cancellation until (hours before)",
+    "currencyLabel": "Currency for prices shown",
+    "currencyPlaceholder": "Select currency",
+    "guestBookingAllowedLabel": "Patients can book without an account",
+    "includeServiceInMessagesLabel": "Name the treatment in emails and texts",
+    "maxAdvanceDaysLabel": "Bookable up to (days ahead)",
+    "maxAdvanceDaysPlaceholder": "Bookable up to (days ahead)",
+    "minNoticeHoursLabel": "Minimum notice (hours)",
+    "minNoticeHoursPlaceholder": "Minimum notice (hours)",
+    "noShowGraceMinutesLabel": "No-show after (minutes late)",
+    "noShowGraceMinutesPlaceholder": "No-show after (minutes late)",
+    "notificationsSectionTitle": "Staff alerts",
+    "notifyUsersLabel": "Tell these users about new and cancelled online bookings",
+    "patientNoteEnabledLabel": "Patients may add a short note",
+    "patientSectionTitle": "Patients and messages",
+    "privacyNoticeTextLabel": "Privacy notice shown before booking",
+    "privacyNoticeTextPlaceholder": "The notice patients accept before booking",
+    "privacyNoticeVersionLabel": "Version",
+    "privacyNoticeVersionPlaceholder": "e.g. 2026-10",
+    "privacySectionTitle": "Privacy notice",
+    "publicBookingEnabledLabel": "Online booking on the website",
+    "reminderHoursBeforeLabel": "Reminder (hours before, 0 = off)",
+    "reminderHoursBeforePlaceholder": "Reminder (hours before, 0 = off)",
+    "reminderSmsLabel": "Also send reminders by text message",
+    "removeUser": "Remove",
+    "requireStaffConfirmationLabel": "Review online bookings before confirming",
+    "rescheduleDeadlineHoursLabel": "Online changes until (hours before)",
+    "rescheduleDeadlineHoursPlaceholder": "Online changes until (hours before)",
+    "retentionMonthsLabel": "Remove patient details after (months)",
+    "retentionMonthsPlaceholder": "Remove patient details after (months)",
+    "selectUser": "Add a user",
+    "slotIntervalMinutesLabel": "Time grid (minutes)",
+    "slotIntervalMinutesPlaceholder": "Time grid (minutes)"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving settings",
+      "time": 3000
+    },
+    "success": {
+      "title": "Settings saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Settings could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Clinic settings",
+    "description": "Online booking rules, messages, privacy and data retention"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

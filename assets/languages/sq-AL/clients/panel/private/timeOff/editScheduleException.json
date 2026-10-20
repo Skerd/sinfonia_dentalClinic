@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/editScheduleException.tsx",
+  "title": "Ndrysho mungesën",
+  "description": "Ndrysho shënimin",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "endAtLabel": "Deri",
+    "endAtPlaceholder": "Shkruani fundin",
+    "internalNoteLabel": "Shënim i brendshëm",
+    "internalNotePlaceholder": "Nuk u shfaqet pacientëve",
+    "locationLabel": "Vendndodhja",
+    "locationPlaceholder": "Zgjidh vendndodhjen",
+    "practitionerLabel": "Dentist",
+    "practitionerPlaceholder": "Zgjidh mjekun",
+    "startAtLabel": "Nga",
+    "startAtPlaceholder": "Shkruani fillimin",
+    "targetHint": "Zgjidhni një mjek për mungesë, ose një vendndodhje për ta mbyllur për të gjithë. Jo të dyja. Takimet ekzistuese në këtë kohë duhet të zhvendosen fillimisht."
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho mungesën",
+    "description": "Ndrysho shënimin"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

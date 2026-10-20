@@ -1,0 +1,49 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/timeOff/editScheduleException.tsx",
+  "title": "Abwesenheit bearbeiten",
+  "description": "Die Notiz ändern",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "endAtLabel": "Bis",
+    "endAtPlaceholder": "Ende eingeben",
+    "internalNoteLabel": "Interne Notiz",
+    "internalNotePlaceholder": "Für Patienten nicht sichtbar",
+    "locationLabel": "Standort",
+    "locationPlaceholder": "Standort auswählen",
+    "practitionerLabel": "Zahnärztin/Zahnarzt",
+    "practitionerPlaceholder": "Fachperson auswählen",
+    "startAtLabel": "Von",
+    "startAtPlaceholder": "Beginn eingeben",
+    "targetHint": "Wählen Sie eine Fachperson für eine Abwesenheit oder einen Standort, um ihn für alle zu schliessen. Nicht beides. Bestehende Termine in dieser Zeit müssen zuerst verschoben werden."
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Abwesenheit bearbeiten",
+    "description": "Die Notiz ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

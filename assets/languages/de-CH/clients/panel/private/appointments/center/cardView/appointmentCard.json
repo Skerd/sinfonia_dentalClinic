@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/cardView/appointmentCard.tsx",
+  "failedTitle": "Termin konnte nicht geladen werden",
+  "failedDescription": "Zum erneuten Versuch tippen.",
+  "status": "Status",
+  "statusValues": {
+    "pending": "Wartet auf Bestätigung",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "no_show": "Nicht erschienen"
+  },
+  "startAt": "Beginnt",
+  "practitioner": "Zahnärztin/Zahnarzt",
+  "patient": "Patient/in"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/rescheduleAppointmentDialog.tsx",
+  "title": "Sposta appuntamento",
+  "description": "Nuova data e ora, nell'ora locale della sede. L'orario viene verificato come una nuova prenotazione.",
+  "confirm": "Sposta",
+  "cancel": "Indietro",
+  "dateLabel": "Nuova data",
+  "timeLabel": "Nuovo orario"
+}

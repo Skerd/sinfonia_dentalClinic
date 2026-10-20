@@ -1,0 +1,8 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicSlotPicker.tsx",
+  "loadFailed": "Non è stato possibile caricare gli orari liberi. Riprova.",
+  "earlier": "Prima",
+  "later": "Dopo",
+  "localTime": "ora locale",
+  "noneThisWeek": "Nessun orario libero questa settimana. Prova la settimana successiva."
+}

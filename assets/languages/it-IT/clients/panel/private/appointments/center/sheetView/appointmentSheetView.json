@@ -1,0 +1,62 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/sheetView/appointmentSheetView.tsx",
+  "lifecycle": "Ciclo di vita",
+  "appointmentSubtitle": "Appuntamento",
+  "at": "Quando",
+  "booked": "Come prenotato",
+  "consentVersion": "Informativa sulla privacy accettata",
+  "customer": "Account paziente",
+  "durationMinutes": "Durata (min)",
+  "email": "E-mail",
+  "endAt": "Termina",
+  "event": "Evento",
+  "firstName": "Nome",
+  "lastName": "Cognome",
+  "location": "Sede",
+  "note": "Nota",
+  "overview": "Panoramica",
+  "patient": "Paziente",
+  "phone": "Telefono",
+  "practitioner": "Dentista",
+  "price": "Prezzo",
+  "priceType": "Visualizzazione del prezzo",
+  "rescheduleCount": "Volte spostato",
+  "service": "Trattamento",
+  "serviceName": "Trattamento",
+  "source": "Prenotato tramite",
+  "startAt": "Inizia",
+  "status": "Stato",
+  "timeline": "Cronologia",
+  "timezone": "Fuso orario",
+  "priceTypeValues": {
+    "fixed": "Prezzo fisso",
+    "from": "Da",
+    "on_request": "Su richiesta",
+    "free": "Gratuito"
+  },
+  "sourceValues": {
+    "online": "Sito web",
+    "staff": "Personale"
+  },
+  "statusValues": {
+    "pending": "In attesa di conferma",
+    "confirmed": "Confermato",
+    "completed": "Completato",
+    "cancelled": "Annullato",
+    "no_show": "Non presentato"
+  },
+  "timelineEvent": {
+    "created": "Creato",
+    "confirmed": "Confermato",
+    "rescheduled": "Spostato",
+    "cancelled": "Annullato",
+    "completed": "Completato",
+    "no_show": "Non presentato",
+    "anonymized": "Dati del paziente rimossi"
+  },
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da"
+}

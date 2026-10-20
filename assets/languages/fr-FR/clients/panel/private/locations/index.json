@@ -1,0 +1,41 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/index.tsx",
+  "title": "Sites",
+  "description": "Vos cabinets, avec leur fuseau horaire et leurs horaires",
+  "help": {
+    "ariaLabel": "À propos des sites",
+    "title": "À propos des sites",
+    "overview": "Les sites sont vos cabinets. Chacun a son propre fuseau horaire et ses horaires ; les horaires des praticiens y sont limités.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Définissez le fuseau horaire IANA (par exemple Europe/Zurich) pour que les rendez-vous restent corrects lors des changements d'heure.",
+          "Ajoutez les jours fériés comme jours de fermeture ; personne ne peut y être réservé ces jours-là.",
+          "Un site avec des rendez-vous ne peut pas être supprimé ; désactivez-le plutôt."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un site",
+  "searchPlaceholder": "Rechercher des sites ou ajouter des filtres...",
+  "noData": "Aucun site pour l'instant",
+  "failTitle": "Impossible de charger les sites",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "name": "Nom",
+    "timezone": "Fuseau horaire",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "isActive": "Actif",
+    "address": "Adresse",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

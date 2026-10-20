@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/dialogs/cancelAppointmentDialog.tsx",
+  "title": "Annulla appuntamento",
+  "description": "Il paziente riceve un'e-mail che l'appuntamento è annullato.",
+  "confirm": "Annulla appuntamento",
+  "cancel": "Indietro",
+  "reasonLabel": "Motivo (interno)",
+  "reasonPlaceholder": "es. Il paziente ha chiamato per annullare"
+}
