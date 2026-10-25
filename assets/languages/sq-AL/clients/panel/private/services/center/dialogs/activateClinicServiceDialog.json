@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/dialogs/activateClinicServiceDialog.tsx",
+  "title": "Aktivizo trajtimin",
+  "description": "Ky trajtim do të ofrohet përsëri.",
+  "cancel": "Anulo",
+  "confirm": "Aktivizo",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {
+      "title": "Duke aktivizuar trajtimin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Trajtimi u aktivizua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Trajtimi nuk u aktivizua dot",
+      "time": 3000
+    }
+  }
+}

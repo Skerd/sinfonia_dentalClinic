@@ -37,7 +37,19 @@
     "staffUserPlaceholder": "Facultatif : lier un utilisateur pour qu'il voie ses propres rendez-vous",
     "startTimeLabel": "De",
     "titleLabel": "Titre",
-    "titlePlaceholder": "p. ex. Dentiste, Dr méd. dent."
+    "titlePlaceholder": "p. ex. Dentiste, Dr méd. dent.",
+    "isActiveLabel": "Actif",
+    "isBookableLabel": "Réservable en ligne",
+    "locationsLabel": "Sites",
+    "servicesLabel": "Soins",
+    "role": {
+      "dentist": "Dentiste",
+      "hygienist": "Hygiéniste",
+      "orthodontist": "Orthodontiste",
+      "other": "Autre"
+    },
+    "servicesPlaceholder": "Choisir des soins",
+    "locationsPlaceholder": "Choisir des sites"
   },
   "axios": {
     "start": {

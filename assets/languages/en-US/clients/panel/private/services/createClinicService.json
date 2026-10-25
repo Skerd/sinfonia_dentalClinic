@@ -22,7 +22,26 @@
     "pricingSectionTitle": "Price shown",
     "slugLabel": "Web address name",
     "slugPlaceholder": "e.g. check-up",
-    "timingSectionTitle": "Timing"
+    "timingSectionTitle": "Timing",
+    "bufferAfterMinutesLabel": "Clean-up (min)",
+    "bufferAfterMinutesPlaceholder": "Enter clean-up minutes",
+    "bufferBeforeMinutesLabel": "Preparation (min)",
+    "bufferBeforeMinutesPlaceholder": "Enter preparation minutes",
+    "durationMinutesLabel": "Duration (min)",
+    "durationMinutesPlaceholder": "Enter duration",
+    "isActiveLabel": "Active",
+    "isPublicLabel": "On the website",
+    "onlineBookableLabel": "Bookable online",
+    "priceLabel": "Price",
+    "pricePlaceholder": "Enter price",
+    "priceType": {
+      "fixed": "Fixed price",
+      "from": "From",
+      "on_request": "On request",
+      "free": "Free"
+    },
+    "sortOrderLabel": "Sort order",
+    "sortOrderPlaceholder": "Enter sort order"
   },
   "axios": {
     "start": {

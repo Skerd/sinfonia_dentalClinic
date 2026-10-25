@@ -34,5 +34,7 @@
   "createdBy": "Erstellt von",
   "deletedAt": "Gelöscht am",
   "deletedBy": "Gelöscht von",
-  "staffUser": "Benutzerkonto des Personals"
+  "staffUser": "Benutzerkonto des Personals",
+  "locations": "Standorte",
+  "services": "Behandlungen"
 }

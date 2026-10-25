@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/dialogs/deactivateClinicServiceDialog.tsx",
+  "title": "Behandlung deaktivieren",
+  "description": "Diese Behandlung wird nicht mehr angeboten, bis sie wieder aktiviert wird. Bereits gebuchte Termine bleiben bestehen.",
+  "cancel": "Abbrechen",
+  "confirm": "Deaktivieren",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {
+      "title": "Behandlung wird deaktiviert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Behandlung deaktiviert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Behandlung konnte nicht deaktiviert werden",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/dialogs/activateClinicServiceDialog.tsx",
+  "title": "Attiva trattamento",
+  "description": "Questo trattamento sarà di nuovo proposto.",
+  "cancel": "Annulla",
+  "confirm": "Attiva",
+  "busy": "Operazione in corso…",
+  "axios": {
+    "start": {
+      "title": "Attivazione del trattamento…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Trattamento attivato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile attivare il trattamento",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/dialogs/deactivatePractitionerDialog.tsx",
+  "title": "Deactivate team member",
+  "description": "This person will no longer be offered for new bookings. Someone with upcoming appointments can't be deactivated until those are moved or cancelled.",
+  "cancel": "Cancel",
+  "confirm": "Deactivate",
+  "busy": "Working…",
+  "axios": {
+    "start": {
+      "title": "Deactivating team member…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Team member deactivated",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not deactivate team member",
+      "time": 3000
+    }
+  }
+}

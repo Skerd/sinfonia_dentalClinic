@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/dialogs/activatePractitionerDialog.tsx",
+  "title": "Aktivizo anëtarin",
+  "description": "Ky person mund të rezervohet përsëri.",
+  "cancel": "Anulo",
+  "confirm": "Aktivizo",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {
+      "title": "Duke aktivizuar anëtarin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anëtari u aktivizua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Anëtari nuk u aktivizua dot",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/center/dialogs/deactivateClinicLocationDialog.tsx",
+  "title": "Deactivate location",
+  "description": "This location will no longer be offered until it is activated again. Appointments already booked stay as they are.",
+  "cancel": "Cancel",
+  "confirm": "Deactivate",
+  "busy": "Working…",
+  "axios": {
+    "start": {
+      "title": "Deactivating location…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Location deactivated",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not deactivate location",
+      "time": 3000
+    }
+  }
+}

@@ -36,6 +36,17 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "address.country": "Paese",
+    "address.city": "Città",
+    "address.street": "Via",
+    "address.postalCode": "CAP",
+    "address.latitude": "Latitudine",
+    "address.longitude": "Longitudine",
+    "openingHours.dayOfWeek": "Giorno",
+    "openingHours.startTime": "Da",
+    "openingHours.endTime": "Fino a",
+    "closures.date": "Data",
+    "closures.reason": "Motivo"
   }
 }

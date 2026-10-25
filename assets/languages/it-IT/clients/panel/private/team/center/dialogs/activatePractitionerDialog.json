@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/dialogs/activatePractitionerDialog.tsx",
+  "title": "Attiva membro del team",
+  "description": "Questa persona potrà di nuovo essere prenotata.",
+  "cancel": "Annulla",
+  "confirm": "Attiva",
+  "busy": "Operazione in corso…",
+  "axios": {
+    "start": {
+      "title": "Attivazione del membro…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Membro del team attivato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile attivare il membro del team",
+      "time": 3000
+    }
+  }
+}

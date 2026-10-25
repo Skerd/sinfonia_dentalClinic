@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/dialogs/deactivatePractitionerDialog.tsx",
+  "title": "Désactiver le membre",
+  "description": "Ce membre ne sera plus proposé pour les nouveaux rendez-vous. Une personne qui a des rendez-vous à venir ne peut pas être désactivée tant qu'ils ne sont pas déplacés ou annulés.",
+  "cancel": "Annuler",
+  "confirm": "Désactiver",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Désactivation du membre…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Membre désactivé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de désactiver le membre",
+      "time": 3000
+    }
+  }
+}

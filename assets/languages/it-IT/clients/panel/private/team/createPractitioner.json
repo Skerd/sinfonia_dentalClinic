@@ -37,7 +37,19 @@
     "staffUserPlaceholder": "Facoltativo: collega un utente perché veda i propri appuntamenti",
     "startTimeLabel": "Da",
     "titleLabel": "Titolo",
-    "titlePlaceholder": "es. Dentista, Dr. med. dent."
+    "titlePlaceholder": "es. Dentista, Dr. med. dent.",
+    "isActiveLabel": "Attivo",
+    "isBookableLabel": "Prenotabile online",
+    "locationsLabel": "Sedi",
+    "servicesLabel": "Trattamenti",
+    "role": {
+      "dentist": "Dentista",
+      "hygienist": "Igienista",
+      "orthodontist": "Ortodontista",
+      "other": "Altro"
+    },
+    "servicesPlaceholder": "Seleziona trattamenti",
+    "locationsPlaceholder": "Seleziona sedi"
   },
   "axios": {
     "start": {

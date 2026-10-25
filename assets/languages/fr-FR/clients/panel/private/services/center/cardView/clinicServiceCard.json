@@ -11,5 +11,6 @@
     "free": "Gratuit"
   },
   "price": "Prix",
-  "onlineBookable": "Réservable en ligne"
+  "onlineBookable": "Réservable en ligne",
+  "isActive": "Actif"
 }

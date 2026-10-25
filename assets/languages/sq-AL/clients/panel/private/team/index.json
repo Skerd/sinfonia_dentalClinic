@@ -38,6 +38,11 @@
     "company": "Kompania",
     "deletedAt": "Fshirë më",
     "deletedBy": "Fshirë nga",
-    "staffUser": "Llogaria e punonjësit"
+    "staffUser": "Llogaria e punonjësit",
+    "photo": "Foto",
+    "schedule.location": "Vendndodhja",
+    "schedule.dayOfWeek": "Dita",
+    "schedule.startTime": "Nga",
+    "schedule.endTime": "Deri"
   }
 }

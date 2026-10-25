@@ -38,6 +38,9 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "bufferAfterMinutes": "Nettoyage (min)",
+    "bufferBeforeMinutes": "Préparation (min)",
+    "isPublic": "Sur le site web"
   }
 }

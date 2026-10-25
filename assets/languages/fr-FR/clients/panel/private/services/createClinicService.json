@@ -22,7 +22,26 @@
     "pricingSectionTitle": "Prix affiché",
     "slugLabel": "Nom d'adresse web",
     "slugPlaceholder": "p. ex. controle",
-    "timingSectionTitle": "Horaires"
+    "timingSectionTitle": "Horaires",
+    "bufferAfterMinutesLabel": "Nettoyage (min)",
+    "bufferAfterMinutesPlaceholder": "Saisir le nettoyage",
+    "bufferBeforeMinutesLabel": "Préparation (min)",
+    "bufferBeforeMinutesPlaceholder": "Saisir la préparation",
+    "durationMinutesLabel": "Durée (min)",
+    "durationMinutesPlaceholder": "Saisir la durée",
+    "isActiveLabel": "Actif",
+    "isPublicLabel": "Sur le site web",
+    "onlineBookableLabel": "Réservable en ligne",
+    "priceLabel": "Prix",
+    "pricePlaceholder": "Saisir le prix",
+    "priceType": {
+      "fixed": "Prix fixe",
+      "from": "De",
+      "on_request": "Sur demande",
+      "free": "Gratuit"
+    },
+    "sortOrderLabel": "Ordre de tri",
+    "sortOrderPlaceholder": "Saisir l'ordre de tri"
   },
   "axios": {
     "start": {

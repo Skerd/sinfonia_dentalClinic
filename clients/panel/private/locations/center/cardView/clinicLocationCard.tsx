@@ -10,6 +10,10 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ClinicLocation} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicLocation/clinicLocation.dto.ts";
 import ClinicLocationSheetView from "@dentalClinicModule/clients/panel/private/locations/center/sheetView/clinicLocationSheetView.tsx";
 import {clinicLocationEditPath} from "@dentalClinicModule/clients/panel/private/locations/index.tsx";
+import ActivateClinicLocation from "@dentalClinicModule/clients/panel/private/locations/center/actions/activateClinicLocation.tsx";
+import DeactivateClinicLocation from "@dentalClinicModule/clients/panel/private/locations/center/actions/deactivateClinicLocation.tsx";
+import ActivateClinicLocationDialog from "@dentalClinicModule/clients/panel/private/locations/center/dialogs/activateClinicLocationDialog.tsx";
+import DeactivateClinicLocationDialog from "@dentalClinicModule/clients/panel/private/locations/center/dialogs/deactivateClinicLocationDialog.tsx";
 
 type ClinicLocationCardProps = WithLanguageType & {
     clinicLocation: ClinicLocation;
@@ -18,6 +22,7 @@ type ClinicLocationCardProps = WithLanguageType & {
     onDelete?: (deleted?: ClinicLocation, response?: DeletedData) => void;
     onRestore?: () => void;
     sheetOnly?: boolean;
+    onActiveChanged?: (isActive: boolean) => void;
     innerRef?: RefObject<WithAxiosLifecycleRef<ClinicLocation> | null>;
 };
 
@@ -29,6 +34,7 @@ function ClinicLocationCard({
     onDelete,
     onRestore,
     sheetOnly = false,
+    onActiveChanged,
     innerRef,
 }: ClinicLocationCardProps) {
     return (
@@ -50,10 +56,50 @@ function ClinicLocationCard({
             failedDescription={String(resolveLanguageKey("failedDescription"))}
             titlePath="name"
             innerRef={innerRef}
-        >
-            {({entity: row}) => (
+            sheetProps={({entity, setEntity}) => ({
+                fetchId,
+                onActiveChanged: (isActive: boolean) => {
+                    setEntity({...entity, isActive});
+                    onActiveChanged?.(isActive);
+                },
+                onSheetRowPatched: (row: Partial<ClinicLocation>) => {
+                    setEntity({...entity, ...row});
+                    if (typeof row.isActive === "boolean") onActiveChanged?.(row.isActive);
+                },
+            })}
+            extraDialogs={({action, setAction, entity, setEntity}) => (
                 <>
-                    <EntityCard.Header titlePath="name" title={row.name} />
+                    {action === "activateClinicLocation" && (
+                        <ActivateClinicLocationDialog
+                            open
+                            onClose={() => setAction("")}
+                            entity={entity}
+                            onSuccess={() => {
+                                setEntity({...entity, isActive: true});
+                                onActiveChanged?.(true);
+                            }}
+                        />
+                    )}
+                    {action === "deactivateClinicLocation" && (
+                        <DeactivateClinicLocationDialog
+                            open
+                            onClose={() => setAction("")}
+                            entity={entity}
+                            onSuccess={() => {
+                                setEntity({...entity, isActive: false});
+                                onActiveChanged?.(false);
+                            }}
+                        />
+                    )}
+                </>
+            )}
+        >
+            {({entity: row, setAction}) => (
+                <>
+                    <EntityCard.Header titlePath="name" title={row.name}>
+                        <ActivateClinicLocation entity={row} onAction={setAction} />
+                        <DeactivateClinicLocation entity={row} onAction={setAction} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconClock}

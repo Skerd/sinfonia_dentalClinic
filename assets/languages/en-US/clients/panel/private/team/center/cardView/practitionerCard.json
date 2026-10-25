@@ -10,5 +10,6 @@
     "orthodontist": "Orthodontist",
     "other": "Other"
   },
-  "isBookable": "Bookable online"
+  "isBookable": "Bookable online",
+  "isActive": "Active"
 }

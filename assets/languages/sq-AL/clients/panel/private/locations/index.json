@@ -36,6 +36,17 @@
     "createdBy": "Krijuar nga",
     "company": "Kompania",
     "deletedAt": "Fshirë më",
-    "deletedBy": "Fshirë nga"
+    "deletedBy": "Fshirë nga",
+    "address.country": "Shteti",
+    "address.city": "Qyteti",
+    "address.street": "Rruga",
+    "address.postalCode": "Kodi postar",
+    "address.latitude": "Gjerësia gjeografike",
+    "address.longitude": "Gjatësia gjeografike",
+    "openingHours.dayOfWeek": "Dita",
+    "openingHours.startTime": "Nga",
+    "openingHours.endTime": "Deri",
+    "closures.date": "Data",
+    "closures.reason": "Arsyeja"
   }
 }

@@ -37,7 +37,19 @@
     "staffUserPlaceholder": "Optional: link a user so they see their own appointments",
     "startTimeLabel": "From",
     "titleLabel": "Title",
-    "titlePlaceholder": "e.g. Dentist, Dr. med. dent."
+    "titlePlaceholder": "e.g. Dentist, Dr. med. dent.",
+    "isActiveLabel": "Active",
+    "isBookableLabel": "Bookable online",
+    "locationsLabel": "Locations",
+    "servicesLabel": "Treatments",
+    "role": {
+      "dentist": "Dentist",
+      "hygienist": "Hygienist",
+      "orthodontist": "Orthodontist",
+      "other": "Other"
+    },
+    "servicesPlaceholder": "Select treatments",
+    "locationsPlaceholder": "Select locations"
   },
   "axios": {
     "start": {

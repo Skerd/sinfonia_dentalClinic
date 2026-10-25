@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/dialogs/activateClinicServiceDialog.tsx",
+  "title": "Activer le soin",
+  "description": "Ce soin sera de nouveau proposé.",
+  "cancel": "Annuler",
+  "confirm": "Activer",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Activation du soin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Soin activé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'activer le soin",
+      "time": 3000
+    }
+  }
+}

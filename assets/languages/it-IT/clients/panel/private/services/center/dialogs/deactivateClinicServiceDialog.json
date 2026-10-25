@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/dialogs/deactivateClinicServiceDialog.tsx",
+  "title": "Disattiva trattamento",
+  "description": "Questo trattamento non sarà più proposto finché non viene riattivato. Gli appuntamenti già prenotati restano invariati.",
+  "cancel": "Annulla",
+  "confirm": "Disattiva",
+  "busy": "Operazione in corso…",
+  "axios": {
+    "start": {
+      "title": "Disattivazione del trattamento…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Trattamento disattivato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile disattivare il trattamento",
+      "time": 3000
+    }
+  }
+}

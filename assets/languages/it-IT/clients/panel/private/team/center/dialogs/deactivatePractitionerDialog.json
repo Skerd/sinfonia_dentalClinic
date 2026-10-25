@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/dialogs/deactivatePractitionerDialog.tsx",
+  "title": "Disattiva membro del team",
+  "description": "Questa persona non sarà più proposta per i nuovi appuntamenti. Chi ha appuntamenti in programma non può essere disattivato finché non vengono spostati o annullati.",
+  "cancel": "Annulla",
+  "confirm": "Disattiva",
+  "busy": "Operazione in corso…",
+  "axios": {
+    "start": {
+      "title": "Disattivazione del membro…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Membro del team disattivato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile disattivare il membro del team",
+      "time": 3000
+    }
+  }
+}

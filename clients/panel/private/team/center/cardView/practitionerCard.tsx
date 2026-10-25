@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarCheck, IconCertificate, IconStethoscope} from "@tabler/icons-react";
+import {IconCalendarCheck, IconCertificate, IconStethoscope, IconToggleRight} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -10,6 +10,10 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {Practitioner} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/practitioner/practitioner.dto.ts";
 import PractitionerSheetView from "@dentalClinicModule/clients/panel/private/team/center/sheetView/practitionerSheetView.tsx";
 import {practitionerEditPath} from "@dentalClinicModule/clients/panel/private/team/index.tsx";
+import ActivatePractitioner from "@dentalClinicModule/clients/panel/private/team/center/actions/activatePractitioner.tsx";
+import DeactivatePractitioner from "@dentalClinicModule/clients/panel/private/team/center/actions/deactivatePractitioner.tsx";
+import ActivatePractitionerDialog from "@dentalClinicModule/clients/panel/private/team/center/dialogs/activatePractitionerDialog.tsx";
+import DeactivatePractitionerDialog from "@dentalClinicModule/clients/panel/private/team/center/dialogs/deactivatePractitionerDialog.tsx";
 
 type PractitionerCardProps = WithLanguageType & {
     practitioner: Practitioner;
@@ -18,6 +22,7 @@ type PractitionerCardProps = WithLanguageType & {
     onDelete?: (deleted?: Practitioner, response?: DeletedData) => void;
     onRestore?: () => void;
     sheetOnly?: boolean;
+    onActiveChanged?: (isActive: boolean) => void;
     innerRef?: RefObject<WithAxiosLifecycleRef<Practitioner> | null>;
 };
 
@@ -29,6 +34,7 @@ function PractitionerCard({
     onDelete,
     onRestore,
     sheetOnly = false,
+    onActiveChanged,
     innerRef,
 }: PractitionerCardProps) {
     return (
@@ -50,10 +56,50 @@ function PractitionerCard({
             failedDescription={String(resolveLanguageKey("failedDescription"))}
             titlePath="displayName"
             innerRef={innerRef}
-        >
-            {({entity: row}) => (
+            sheetProps={({entity, setEntity}) => ({
+                fetchId,
+                onActiveChanged: (isActive: boolean) => {
+                    setEntity({...entity, isActive});
+                    onActiveChanged?.(isActive);
+                },
+                onSheetRowPatched: (row: Partial<Practitioner>) => {
+                    setEntity({...entity, ...row});
+                    if (typeof row.isActive === "boolean") onActiveChanged?.(row.isActive);
+                },
+            })}
+            extraDialogs={({action, setAction, entity, setEntity}) => (
                 <>
-                    <EntityCard.Header titlePath="displayName" title={row.displayName} />
+                    {action === "activatePractitioner" && (
+                        <ActivatePractitionerDialog
+                            open
+                            onClose={() => setAction("")}
+                            entity={entity}
+                            onSuccess={() => {
+                                setEntity({...entity, isActive: true});
+                                onActiveChanged?.(true);
+                            }}
+                        />
+                    )}
+                    {action === "deactivatePractitioner" && (
+                        <DeactivatePractitionerDialog
+                            open
+                            onClose={() => setAction("")}
+                            entity={entity}
+                            onSuccess={() => {
+                                setEntity({...entity, isActive: false});
+                                onActiveChanged?.(false);
+                            }}
+                        />
+                    )}
+                </>
+            )}
+        >
+            {({entity: row, setAction}) => (
+                <>
+                    <EntityCard.Header titlePath="displayName" title={row.displayName}>
+                        <ActivatePractitioner entity={row} onAction={setAction} />
+                        <DeactivatePractitioner entity={row} onAction={setAction} />
+                    </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconCertificate}
@@ -78,6 +124,14 @@ function PractitionerCard({
                             path="isBookable"
                             type="boolean"
                             value={row.isBookable}
+                        />
+                        <EntityCardRow
+                            icon={IconToggleRight}
+                            label={resolveLanguageKey("isActive")}
+                            tooltip={resolveLanguageKey("isActive")}
+                            path="isActive"
+                            type="boolean"
+                            value={row.isActive}
                         />
                     </EntityCard.Body>
                 </>

@@ -11,5 +11,6 @@
     "free": "Falas"
   },
   "price": "Çmimi",
-  "onlineBookable": "I rezervueshëm online"
+  "onlineBookable": "I rezervueshëm online",
+  "isActive": "Aktiv"
 }

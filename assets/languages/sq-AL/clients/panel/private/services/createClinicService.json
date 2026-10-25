@@ -22,7 +22,26 @@
     "pricingSectionTitle": "Çmimi i shfaqur",
     "slugLabel": "Emri i adresës web",
     "slugPlaceholder": "p.sh. kontroll",
-    "timingSectionTitle": "Kohët"
+    "timingSectionTitle": "Kohët",
+    "bufferAfterMinutesLabel": "Pastrimi (min)",
+    "bufferAfterMinutesPlaceholder": "Shkruani pastrimin",
+    "bufferBeforeMinutesLabel": "Përgatitja (min)",
+    "bufferBeforeMinutesPlaceholder": "Shkruani përgatitjen",
+    "durationMinutesLabel": "Kohëzgjatja (min)",
+    "durationMinutesPlaceholder": "Shkruani kohëzgjatjen",
+    "isActiveLabel": "Aktiv",
+    "isPublicLabel": "Në faqe",
+    "onlineBookableLabel": "I rezervueshëm online",
+    "priceLabel": "Çmimi",
+    "pricePlaceholder": "Shkruani çmimin",
+    "priceType": {
+      "fixed": "Çmim fiks",
+      "from": "Nga",
+      "on_request": "Me kërkesë",
+      "free": "Falas"
+    },
+    "sortOrderLabel": "Renditja",
+    "sortOrderPlaceholder": "Shkruani renditjen"
   },
   "axios": {
     "start": {

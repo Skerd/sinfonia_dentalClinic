@@ -36,6 +36,17 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "address.country": "Land",
+    "address.city": "Ort",
+    "address.street": "Strasse",
+    "address.postalCode": "Postleitzahl",
+    "address.latitude": "Breitengrad",
+    "address.longitude": "Längengrad",
+    "openingHours.dayOfWeek": "Tag",
+    "openingHours.startTime": "Von",
+    "openingHours.endTime": "Bis",
+    "closures.date": "Datum",
+    "closures.reason": "Grund"
   }
 }

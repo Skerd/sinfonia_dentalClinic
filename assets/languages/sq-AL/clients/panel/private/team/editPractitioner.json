@@ -37,7 +37,19 @@
     "staffUserPlaceholder": "Opsionale: lidhni një përdorues që të shohë takimet e veta",
     "startTimeLabel": "Nga",
     "titleLabel": "Titulli",
-    "titlePlaceholder": "p.sh. Dentist, Dr. med. dent."
+    "titlePlaceholder": "p.sh. Dentist, Dr. med. dent.",
+    "isActiveLabel": "Aktiv",
+    "isBookableLabel": "I rezervueshëm online",
+    "locationsLabel": "Vendndodhjet",
+    "servicesLabel": "Trajtimet",
+    "role": {
+      "dentist": "Dentist",
+      "hygienist": "Higjienist",
+      "orthodontist": "Ortodont",
+      "other": "Tjetër"
+    },
+    "servicesPlaceholder": "Zgjidh trajtimet",
+    "locationsPlaceholder": "Zgjidh vendndodhjet"
   },
   "axios": {
     "start": {

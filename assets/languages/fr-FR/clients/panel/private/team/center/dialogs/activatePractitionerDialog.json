@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/dialogs/activatePractitionerDialog.tsx",
+  "title": "Activer le membre",
+  "description": "Ce membre pourra de nouveau être réservé.",
+  "cancel": "Annuler",
+  "confirm": "Activer",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Activation du membre…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Membre activé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'activer le membre",
+      "time": 3000
+    }
+  }
+}

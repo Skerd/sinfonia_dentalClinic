@@ -34,5 +34,7 @@
   "createdBy": "Creato da",
   "deletedAt": "Eliminato il",
   "deletedBy": "Eliminato da",
-  "staffUser": "Account del personale"
+  "staffUser": "Account del personale",
+  "locations": "Sedi",
+  "services": "Trattamenti"
 }

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/center/dialogs/activateClinicLocationDialog.tsx",
+  "title": "Activer le site",
+  "description": "Ce site sera proposé pour les nouveaux rendez-vous.",
+  "cancel": "Annuler",
+  "confirm": "Activer",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Activation du site…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Site activé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible d'activer le site",
+      "time": 3000
+    }
+  }
+}

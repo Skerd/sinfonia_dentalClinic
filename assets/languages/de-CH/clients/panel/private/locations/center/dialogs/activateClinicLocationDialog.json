@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/locations/center/dialogs/activateClinicLocationDialog.tsx",
+  "title": "Standort aktivieren",
+  "description": "Dieser Standort wird für neue Termine angeboten.",
+  "cancel": "Abbrechen",
+  "confirm": "Aktivieren",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {
+      "title": "Standort wird aktiviert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Standort aktiviert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Standort konnte nicht aktiviert werden",
+      "time": 3000
+    }
+  }
+}

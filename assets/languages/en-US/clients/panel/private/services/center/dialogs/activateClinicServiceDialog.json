@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/dialogs/activateClinicServiceDialog.tsx",
+  "title": "Activate treatment",
+  "description": "This treatment will be offered again.",
+  "cancel": "Cancel",
+  "confirm": "Activate",
+  "busy": "Working…",
+  "axios": {
+    "start": {
+      "title": "Activating treatment…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Treatment activated",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not activate treatment",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/dialogs/deactivateClinicServiceDialog.tsx",
+  "title": "Désactiver le soin",
+  "description": "Ce soin ne sera plus proposé tant qu'il n'est pas réactivé. Les rendez-vous déjà pris restent en place.",
+  "cancel": "Annuler",
+  "confirm": "Désactiver",
+  "busy": "En cours…",
+  "axios": {
+    "start": {
+      "title": "Désactivation du soin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Soin désactivé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de désactiver le soin",
+      "time": 3000
+    }
+  }
+}

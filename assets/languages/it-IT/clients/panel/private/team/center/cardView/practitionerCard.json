@@ -10,5 +10,6 @@
     "orthodontist": "Ortodontista",
     "other": "Altro"
   },
-  "isBookable": "Prenotabile online"
+  "isBookable": "Prenotabile online",
+  "isActive": "Attivo"
 }

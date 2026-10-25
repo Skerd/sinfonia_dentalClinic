@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/dialogs/activatePractitionerDialog.tsx",
+  "title": "Activate team member",
+  "description": "This person can be booked again.",
+  "cancel": "Cancel",
+  "confirm": "Activate",
+  "busy": "Working…",
+  "axios": {
+    "start": {
+      "title": "Activating team member…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Team member activated",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not activate team member",
+      "time": 3000
+    }
+  }
+}

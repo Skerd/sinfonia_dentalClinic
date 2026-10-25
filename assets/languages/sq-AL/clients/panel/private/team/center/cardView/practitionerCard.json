@@ -10,5 +10,6 @@
     "orthodontist": "Ortodont",
     "other": "Tjetër"
   },
-  "isBookable": "I rezervueshëm online"
+  "isBookable": "I rezervueshëm online",
+  "isActive": "Aktiv"
 }

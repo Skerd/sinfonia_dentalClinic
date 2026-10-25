@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/team/center/dialogs/deactivatePractitionerDialog.tsx",
+  "title": "Çaktivizo anëtarin",
+  "description": "Ky person nuk do të ofrohet më për takimet e reja. Dikush me takime të ardhshme nuk mund të çaktivizohet derisa ato të zhvendosen ose të anulohen.",
+  "cancel": "Anulo",
+  "confirm": "Çaktivizo",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {
+      "title": "Duke çaktivizuar anëtarin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anëtari u çaktivizua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Anëtari nuk u çaktivizua dot",
+      "time": 3000
+    }
+  }
+}

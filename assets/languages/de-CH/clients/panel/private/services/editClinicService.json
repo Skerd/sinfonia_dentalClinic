@@ -22,7 +22,26 @@
     "pricingSectionTitle": "Angezeigter Preis",
     "slugLabel": "Webadressen-Name",
     "slugPlaceholder": "z. B. kontrolle",
-    "timingSectionTitle": "Zeiten"
+    "timingSectionTitle": "Zeiten",
+    "bufferAfterMinutesLabel": "Nachbereitung (Min.)",
+    "bufferAfterMinutesPlaceholder": "Nachbereitung eingeben",
+    "bufferBeforeMinutesLabel": "Vorbereitung (Min.)",
+    "bufferBeforeMinutesPlaceholder": "Vorbereitung eingeben",
+    "durationMinutesLabel": "Dauer (Min.)",
+    "durationMinutesPlaceholder": "Dauer eingeben",
+    "isActiveLabel": "Aktiv",
+    "isPublicLabel": "Auf der Website",
+    "onlineBookableLabel": "Online buchbar",
+    "priceLabel": "Preis",
+    "pricePlaceholder": "Preis eingeben",
+    "priceType": {
+      "fixed": "Fixpreis",
+      "from": "Von",
+      "on_request": "Auf Anfrage",
+      "free": "Kostenlos"
+    },
+    "sortOrderLabel": "Sortierung",
+    "sortOrderPlaceholder": "Sortierung eingeben"
   },
   "axios": {
     "start": {

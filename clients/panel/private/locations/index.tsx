@@ -7,6 +7,10 @@ import type {ClinicLocation} from "armonia/src/modules/dentalClinic/api/dentalCl
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import ClinicLocationCard from "./center/cardView/clinicLocationCard.tsx";
 import ClinicLocationSheetView from "./center/sheetView/clinicLocationSheetView.tsx";
+import ActivateClinicLocation from "./center/actions/activateClinicLocation.tsx";
+import DeactivateClinicLocation from "./center/actions/deactivateClinicLocation.tsx";
+import ActivateClinicLocationDialog from "./center/dialogs/activateClinicLocationDialog.tsx";
+import DeactivateClinicLocationDialog from "./center/dialogs/deactivateClinicLocationDialog.tsx";
 
 export function clinicLocationEditPath(row: {_id: string}) {
     return `/dentalClinic/locations/edit?clinicLocationId=${row._id}`;
@@ -19,6 +23,7 @@ function AllClinicLocations({resolveLanguageKey}: WithLanguageType) {
             collectionName="cliniclocations"
             accessModel="cliniclocations"
             tableConfigKey="cliniclocations"
+            rowActionMenu={{allowMenuForCustomChildren: true}}
             createPath="/dentalClinic/locations/create"
             createIcon={<IconPlus />}
             createLanguageKey="create"
@@ -26,20 +31,52 @@ function AllClinicLocations({resolveLanguageKey}: WithLanguageType) {
             resolveLanguageKey={resolveLanguageKey}
             sheetLanguagePath="src/modules/dentalClinic/clients/panel/private/locations/center/sheetView/clinicLocationSheetView.tsx"
             cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-            renderSheet={({open, onOpenChange, entity, onDelete, onRestore}) => (
+            renderActionMenuChildren={(entity, bindRowAction) => (
+                <>
+                    <ActivateClinicLocation entity={entity} onAction={bindRowAction} />
+                    <DeactivateClinicLocation entity={entity} onAction={bindRowAction} />
+                </>
+            )}
+            renderFloatingModals={({action, entity, resetAction, listRef}) => {
+                if (action === "activateClinicLocation") {
+                    return (
+                        <ActivateClinicLocationDialog
+                            open
+                            onClose={resetAction}
+                            entity={entity}
+                            onSuccess={() => listRef.current?.updateRow?.(entity._id, {isActive: true})}
+                        />
+                    );
+                }
+                if (action === "deactivateClinicLocation") {
+                    return (
+                        <DeactivateClinicLocationDialog
+                            open
+                            onClose={resetAction}
+                            entity={entity}
+                            onSuccess={() => listRef.current?.updateRow?.(entity._id, {isActive: false})}
+                        />
+                    );
+                }
+                return null;
+            }}
+            renderSheet={({open, onOpenChange, entity, onDelete, onRestore, listRef}) => (
                 <ClinicLocationSheetView
                     open={open}
                     onOpenChange={onOpenChange}
                     clinicLocation={entity}
                     onDelete={onDelete}
                     onRestore={onRestore}
+                    onActiveChanged={(isActive: boolean) => listRef.current?.updateRow?.(entity._id, {isActive})}
+                    onSheetRowPatched={(row: Partial<ClinicLocation>) => listRef.current?.updateRow?.(entity._id, row)}
                 />
             )}
-            renderCard={(row, onDelete, onRestore) => (
+            renderCard={(row, onDelete, onRestore, listRef) => (
                 <ClinicLocationCard
                     clinicLocation={row}
                     onDelete={(deleted: ClinicLocation | undefined, response?: DeletedData) => onDelete(deleted, response)}
                     onRestore={() => onRestore(row)}
+                    onActiveChanged={(isActive: boolean) => listRef.current?.updateRow?.(row._id, {isActive})}
                 />
             )}
         />

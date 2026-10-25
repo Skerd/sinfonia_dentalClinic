@@ -38,6 +38,11 @@
     "company": "Company",
     "deletedAt": "Deleted at",
     "deletedBy": "Deleted by",
-    "staffUser": "Staff login"
+    "staffUser": "Staff login",
+    "photo": "Photo",
+    "schedule.location": "Location",
+    "schedule.dayOfWeek": "Day",
+    "schedule.startTime": "From",
+    "schedule.endTime": "Until"
   }
 }

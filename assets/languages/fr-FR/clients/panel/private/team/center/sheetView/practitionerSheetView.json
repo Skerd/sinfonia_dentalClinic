@@ -34,5 +34,7 @@
   "createdBy": "Créé par",
   "deletedAt": "Supprimé le",
   "deletedBy": "Supprimé par",
-  "staffUser": "Compte du personnel"
+  "staffUser": "Compte du personnel",
+  "locations": "Sites",
+  "services": "Soins"
 }

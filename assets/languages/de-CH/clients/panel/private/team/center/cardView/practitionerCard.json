@@ -10,5 +10,6 @@
     "orthodontist": "Kieferorthopäde/in",
     "other": "Andere"
   },
-  "isBookable": "Online buchbar"
+  "isBookable": "Online buchbar",
+  "isActive": "Aktiv"
 }

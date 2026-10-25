@@ -37,7 +37,19 @@
     "staffUserPlaceholder": "Optional: einen Benutzer verknüpfen, damit er seine eigenen Termine sieht",
     "startTimeLabel": "Von",
     "titleLabel": "Titel",
-    "titlePlaceholder": "z. B. Zahnarzt, Dr. med. dent."
+    "titlePlaceholder": "z. B. Zahnarzt, Dr. med. dent.",
+    "isActiveLabel": "Aktiv",
+    "isBookableLabel": "Online buchbar",
+    "locationsLabel": "Standorte",
+    "servicesLabel": "Behandlungen",
+    "role": {
+      "dentist": "Zahnärztin/Zahnarzt",
+      "hygienist": "Dentalhygieniker/in",
+      "orthodontist": "Kieferorthopäde/in",
+      "other": "Andere"
+    },
+    "servicesPlaceholder": "Behandlungen auswählen",
+    "locationsPlaceholder": "Standorte auswählen"
   },
   "axios": {
     "start": {

@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/services/center/dialogs/deactivateClinicServiceDialog.tsx",
+  "title": "Çaktivizo trajtimin",
+  "description": "Ky trajtim nuk do të ofrohet më derisa të aktivizohet përsëri. Takimet e rezervuara mbeten siç janë.",
+  "cancel": "Anulo",
+  "confirm": "Çaktivizo",
+  "busy": "Duke punuar…",
+  "axios": {
+    "start": {
+      "title": "Duke çaktivizuar trajtimin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Trajtimi u çaktivizua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Trajtimi nuk u çaktivizua dot",
+      "time": 3000
+    }
+  }
+}

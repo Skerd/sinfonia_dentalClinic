@@ -37,6 +37,8 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "endAt": "Endet",
+    "customer": "Patientenkonto"
   }
 }

@@ -38,6 +38,11 @@
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
     "deletedBy": "Supprimé par",
-    "staffUser": "Compte du personnel"
+    "staffUser": "Compte du personnel",
+    "photo": "Photo",
+    "schedule.location": "Site",
+    "schedule.dayOfWeek": "Jour",
+    "schedule.startTime": "De",
+    "schedule.endTime": "Jusqu'à"
   }
 }

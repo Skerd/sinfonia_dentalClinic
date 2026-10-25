@@ -22,7 +22,26 @@
     "pricingSectionTitle": "Prezzo mostrato",
     "slugLabel": "Nome per l'indirizzo web",
     "slugPlaceholder": "es. controllo",
-    "timingSectionTitle": "Tempi"
+    "timingSectionTitle": "Tempi",
+    "bufferAfterMinutesLabel": "Riordino (min)",
+    "bufferAfterMinutesPlaceholder": "Inserisci il riordino",
+    "bufferBeforeMinutesLabel": "Preparazione (min)",
+    "bufferBeforeMinutesPlaceholder": "Inserisci la preparazione",
+    "durationMinutesLabel": "Durata (min)",
+    "durationMinutesPlaceholder": "Inserisci la durata",
+    "isActiveLabel": "Attivo",
+    "isPublicLabel": "Sul sito web",
+    "onlineBookableLabel": "Prenotabile online",
+    "priceLabel": "Prezzo",
+    "pricePlaceholder": "Inserisci il prezzo",
+    "priceType": {
+      "fixed": "Prezzo fisso",
+      "from": "Da",
+      "on_request": "Su richiesta",
+      "free": "Gratuito"
+    },
+    "sortOrderLabel": "Ordinamento",
+    "sortOrderPlaceholder": "Inserisci l'ordinamento"
   },
   "axios": {
     "start": {

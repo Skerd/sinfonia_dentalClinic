@@ -36,6 +36,17 @@
     "createdBy": "Créé par",
     "company": "Entreprise",
     "deletedAt": "Supprimé le",
-    "deletedBy": "Supprimé par"
+    "deletedBy": "Supprimé par",
+    "address.country": "Pays",
+    "address.city": "Ville",
+    "address.street": "Rue",
+    "address.postalCode": "Code postal",
+    "address.latitude": "Latitude",
+    "address.longitude": "Longitude",
+    "openingHours.dayOfWeek": "Jour",
+    "openingHours.startTime": "De",
+    "openingHours.endTime": "Jusqu'à",
+    "closures.date": "Date",
+    "closures.reason": "Motif"
   }
 }
