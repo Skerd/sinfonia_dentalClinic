@@ -17,6 +17,7 @@
     "cityPlaceholder": "Saisir la ville",
     "closureAddRow": "Ajouter un jour de fermeture",
     "closureDateLabel": "Date",
+    "dateLabel": "Date",
     "closureReasonLabel": "Motif",
     "closureReasonPlaceholder": "p. ex. Jour férié",
     "closureRemoveRow": "Supprimer",

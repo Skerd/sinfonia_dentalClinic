@@ -17,6 +17,7 @@
     "cityPlaceholder": "Enter city",
     "closureAddRow": "Add closed day",
     "closureDateLabel": "Date",
+    "dateLabel": "Date",
     "closureReasonLabel": "Reason",
     "closureReasonPlaceholder": "e.g. Public holiday",
     "closureRemoveRow": "Remove",

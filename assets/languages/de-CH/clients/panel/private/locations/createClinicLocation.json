@@ -17,6 +17,7 @@
     "cityPlaceholder": "Ort eingeben",
     "closureAddRow": "Ruhetag hinzufügen",
     "closureDateLabel": "Datum",
+    "dateLabel": "Datum",
     "closureReasonLabel": "Grund",
     "closureReasonPlaceholder": "z. B. Feiertag",
     "closureRemoveRow": "Entfernen",
