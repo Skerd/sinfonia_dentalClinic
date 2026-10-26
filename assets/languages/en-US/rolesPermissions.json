@@ -24,6 +24,7 @@
       "privacyNoticeText": "Privacy notice text",
       "privacyNoticeVersion": "Privacy notice version",
       "publicBookingEnabled": "Public booking enabled",
+      "listedOnPortal": "Listed on portal",
       "reminderHoursBefore": "Reminder hours before",
       "reminderSms": "Reminder sms",
       "requireStaffConfirmation": "Require staff confirmation",

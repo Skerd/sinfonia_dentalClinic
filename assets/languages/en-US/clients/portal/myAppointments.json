@@ -1,0 +1,12 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/myAppointments.tsx",
+  "none": "No appointment yet.",
+  "manage": "Manage",
+  "status": {
+    "pending": "Awaiting confirmation",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "no_show": "No-show"
+  }
+}

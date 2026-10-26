@@ -1,0 +1,12 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/myAppointments.tsx",
+  "none": "Ende asnjë takim.",
+  "manage": "Menaxho",
+  "status": {
+    "pending": "Në pritje të konfirmimit",
+    "confirmed": "E konfirmuar",
+    "completed": "E përfunduar",
+    "cancelled": "I anuluar",
+    "no_show": "Nuk u paraqit"
+  }
+}

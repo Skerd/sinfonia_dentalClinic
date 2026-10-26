@@ -1,0 +1,12 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/myAppointments.tsx",
+  "none": "Ancora nessun appuntamento.",
+  "manage": "Gestisci",
+  "status": {
+    "pending": "In attesa di conferma",
+    "confirmed": "Confermata",
+    "completed": "Completata",
+    "cancelled": "Annullato",
+    "no_show": "Mancata presentazione"
+  }
+}

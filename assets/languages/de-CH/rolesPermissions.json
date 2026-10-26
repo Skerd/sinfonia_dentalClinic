@@ -24,6 +24,7 @@
       "privacyNoticeText": "Text der Datenschutzerklärung",
       "privacyNoticeVersion": "Version der Datenschutzerklärung",
       "publicBookingEnabled": "Öffentliche Buchung aktiviert",
+      "listedOnPortal": "Im Portal gelistet",
       "reminderHoursBefore": "Erinnerung Stunden vorher",
       "reminderSms": "Erinnerung per SMS",
       "requireStaffConfirmation": "Bestätigung durch das Personal erforderlich",

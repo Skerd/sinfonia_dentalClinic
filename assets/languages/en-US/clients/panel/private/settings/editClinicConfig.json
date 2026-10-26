@@ -26,6 +26,7 @@
     "privacyNoticeVersionPlaceholder": "e.g. 2026-10",
     "privacySectionTitle": "Privacy notice",
     "publicBookingEnabledLabel": "Online booking on the website",
+    "listedOnPortalLabel": "List on the portal",
     "reminderHoursBeforeLabel": "Reminder (hours before, 0 = off)",
     "reminderHoursBeforePlaceholder": "Reminder (hours before, 0 = off)",
     "reminderSmsLabel": "Also send reminders by text message",

@@ -1,0 +1,12 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/myAppointments.tsx",
+  "none": "Noch kein Termin.",
+  "manage": "Verwalten",
+  "status": {
+    "pending": "Bestätigung ausstehend",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "cancelled": "Abgesagt",
+    "no_show": "Nicht erschienen"
+  }
+}

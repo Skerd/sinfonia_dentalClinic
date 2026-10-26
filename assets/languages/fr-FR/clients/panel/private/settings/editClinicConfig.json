@@ -26,6 +26,7 @@
     "privacyNoticeVersionPlaceholder": "p. ex. 2026-10",
     "privacySectionTitle": "Politique de confidentialité",
     "publicBookingEnabledLabel": "Réservation en ligne sur le site web",
+    "listedOnPortalLabel": "Afficher sur le portail",
     "reminderHoursBeforeLabel": "Rappel (heures avant, 0 = désactivé)",
     "reminderHoursBeforePlaceholder": "Rappel (heures avant, 0 = désactivé)",
     "reminderSmsLabel": "Envoyer aussi les rappels par SMS",
