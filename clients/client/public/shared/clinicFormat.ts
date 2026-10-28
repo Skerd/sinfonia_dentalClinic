@@ -29,10 +29,29 @@ export function addDays(date: string, days: number): string {
     return new Date(Date.UTC(year, month - 1, day + days)).toISOString().slice(0, 10);
 }
 
+function utcDate(date: string): Date {
+    const [year, month, day] = date.split("-").map(Number);
+    return new Date(Date.UTC(year, month - 1, day));
+}
+
 /** "Wed 9 Jun" for a local date (no time zone involved). */
 export function formatDay(date: string, locale?: string): string {
-    const [year, month, day] = date.split("-").map(Number);
-    return new Intl.DateTimeFormat(locale, {timeZone: "UTC", weekday: "short", day: "numeric", month: "short"}).format(new Date(Date.UTC(year, month - 1, day)));
+    return new Intl.DateTimeFormat(locale, {timeZone: "UTC", weekday: "short", day: "numeric", month: "short"}).format(utcDate(date));
+}
+
+/** "Tuesday, 27 October" for the hours heading under the day strip. */
+export function formatLongDay(date: string, locale?: string): string {
+    return new Intl.DateTimeFormat(locale, {timeZone: "UTC", weekday: "long", day: "numeric", month: "long"}).format(utcDate(date));
+}
+
+/** "Tue" for a day card. */
+export function weekdayShort(date: string, locale?: string): string {
+    return new Intl.DateTimeFormat(locale, {timeZone: "UTC", weekday: "short"}).format(utcDate(date));
+}
+
+/** "27" for a day card. */
+export function dayNumber(date: string): string {
+    return String(Number(date.slice(8, 10)));
 }
 
 /** An instant as the full local date and time at the clinic. */

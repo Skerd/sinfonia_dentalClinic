@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/treatment/index.tsx",
+  "loading": "Loading treatment",
+  "notFound": "This treatment is not listed",
+  "notFoundMessage": "It may have been taken off the website. Choose another from the clinic.",
+  "backToTreatments": "Back to treatments",
+  "duration": "Duration",
+  "minutes": "min",
+  "bookTitle": "Book this treatment",
+  "chooseLocation": "Where?",
+  "choosePractitioner": "With whom?",
+  "anyone": "Anyone available",
+  "chooseTime": "Pick a time",
+  "continue": "Continue with your details",
+  "callToBook": "Book by phone",
+  "description": "About this treatment",
+  "whoTitle": "Who does this",
+  "whoLocations": "At {places}",
+  "priceFrom": "from",
+  "priceFree": "Free",
+  "priceOnRequest": "Price on request",
+  "role": {
+    "dentist": "Dentist",
+    "hygienist": "Dental hygienist",
+    "orthodontist": "Orthodontist",
+    "other": "Team member"
+  }
+}

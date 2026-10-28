@@ -4,5 +4,14 @@
   "earlier": "Plus tôt",
   "later": "Plus tard",
   "localTime": "heure locale",
-  "noneThisWeek": "Aucun créneau libre cette semaine. Essayez la semaine suivante."
+  "noneThisWeek": "Aucun créneau libre cette semaine. Essayez la semaine suivante.",
+  "chooseDay": "Jours disponibles",
+  "pickTime": "Choisissez une heure",
+  "timesCount": "{count} créneaux",
+  "closed": "Aucun créneau",
+  "period": {
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "evening": "Soir"
+  }
 }

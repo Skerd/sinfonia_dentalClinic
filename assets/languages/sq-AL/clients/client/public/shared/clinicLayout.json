@@ -1,9 +1,0 @@
-{
-  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicLayout.tsx",
-  "fallbackName": "Klinikë dentare",
-  "book": "Rezervo një takim",
-  "privacy": "Privatësia",
-  "unavailableTitle": "Rezervimi online nuk është i disponueshëm",
-  "unavailableText": "Kjo klinikë nuk pranon takime online për momentin. Ju lutemi na telefononi.",
-  "locations": "Vendndodhjet"
-}

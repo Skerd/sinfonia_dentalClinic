@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/treatment/index.tsx",
+  "loading": "Chargement du soin",
+  "notFound": "Ce soin n'est pas listé",
+  "notFoundMessage": "Il a peut-être été retiré du site. Choisissez-en un autre à la clinique.",
+  "backToTreatments": "Retour aux soins",
+  "duration": "Durée",
+  "minutes": "min",
+  "bookTitle": "Réserver ce soin",
+  "chooseLocation": "Où ?",
+  "choosePractitioner": "Avec qui ?",
+  "anyone": "La première personne libre",
+  "chooseTime": "Choisir un horaire",
+  "continue": "Continuer avec vos coordonnées",
+  "callToBook": "Réserver par téléphone",
+  "description": "À propos de ce soin",
+  "whoTitle": "Qui le réalise",
+  "whoLocations": "À {places}",
+  "priceFrom": "à partir de",
+  "priceFree": "Gratuit",
+  "priceOnRequest": "Prix sur demande",
+  "role": {
+    "dentist": "Dentiste",
+    "hygienist": "Hygiéniste dentaire",
+    "orthodontist": "Orthodontiste",
+    "other": "Membre de l'équipe"
+  }
+}

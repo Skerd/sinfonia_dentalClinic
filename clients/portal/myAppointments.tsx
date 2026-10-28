@@ -4,6 +4,10 @@ import {Link} from "react-router-dom";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
+import {Button} from "@coreModule/components/ui/button.tsx";
+import {Item, ItemActions, ItemContent, ItemDescription, ItemGroup, ItemTitle} from "@coreModule/components/ui/item.tsx";
+import {useCompanyLink} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import type {MyAppointmentsResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
 
 function atClinic(iso: string, timeZone: string, locale: string): string {
@@ -12,6 +16,7 @@ function atClinic(iso: string, timeZone: string, locale: string): string {
 
 /** The portal account's appointments at every clinic; each opens the clinic's manage page. */
 function MyAppointments({resolveLanguageKey, languageCode}: WithLanguageType) {
+    const companyLink = useCompanyLink();
     const [rows, setRows] = useState<MyAppointmentsResponse["data"] | null>(null);
 
     useEffect(() => {
@@ -23,25 +28,28 @@ function MyAppointments({resolveLanguageKey, languageCode}: WithLanguageType) {
     }, []);
 
     if (rows === null) return <Loader />;
-    if (rows.length === 0) return <p className="text-portal-ink-muted">{resolveLanguageKey("none")}</p>;
+    if (rows.length === 0) return <p className="text-muted-foreground">{resolveLanguageKey("none")}</p>;
 
     return (
-        <ul className="flex flex-col divide-y divide-portal-border">
+        <ItemGroup className="gap-2">
             {rows.map(({appointment, company, manageToken}) => (
-                <li key={appointment._id} className="flex flex-wrap items-center justify-between gap-3 py-3">
-                    <div className="min-w-0">
-                        <p className="font-medium">{appointment.serviceName} · {company.name}</p>
-                        <p className="text-sm text-portal-ink-muted">
+                <Item key={appointment._id} variant="outline">
+                    <ItemContent>
+                        <ItemTitle>{appointment.serviceName} · {company.name}</ItemTitle>
+                        <ItemDescription>
                             {atClinic(appointment.startAt, appointment.timezone, languageCode)} · {appointment.practitionerName}
-                            {" · "}{appointment.number} · {resolveLanguageKey(`status.${appointment.status}`, true) ?? appointment.status}
-                        </p>
-                    </div>
-                    <Link to={`/dentists/${company.slug}/manage?${new URLSearchParams({token: manageToken})}`} className="text-sm font-semibold text-portal-accent hover:underline">
-                        {resolveLanguageKey("manage")}
-                    </Link>
-                </li>
+                            {" · "}{appointment.number}
+                        </ItemDescription>
+                    </ItemContent>
+                    <ItemActions>
+                        <Badge variant="secondary">{resolveLanguageKey(`status.${appointment.status}`, true) ?? appointment.status}</Badge>
+                        <Button asChild variant="outline">
+                            <Link to={companyLink("dentists", company.slug, `/manage?${new URLSearchParams({token: manageToken})}`)}>{resolveLanguageKey("manage")}</Link>
+                        </Button>
+                    </ItemActions>
+                </Item>
             ))}
-        </ul>
+        </ItemGroup>
     );
 }
 

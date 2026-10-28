@@ -10,6 +10,10 @@ export default createGenericEditPage<ClinicService, EditClinicServiceFormType>({
     accessModel: "clinicservices",
     apiUrl: "/api/dentalClinic/clinicService",
     schema: editClinicServiceFormSchema,
-    mapEntityData: (data) => ({...data, images: data.images?.map((image) => image._id)}),
+    mapEntityData: (data) => ({
+        ...data,
+        images: data.images?.map((image) => image._id),
+        videos: data.videos?.map((video) => video._id),
+    }),
     submitIcon: <Save />,
 });

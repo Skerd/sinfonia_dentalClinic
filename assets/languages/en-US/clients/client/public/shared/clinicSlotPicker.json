@@ -4,5 +4,14 @@
   "earlier": "Earlier",
   "later": "Later",
   "localTime": "local time",
-  "noneThisWeek": "No free times this week. Try the next week."
+  "noneThisWeek": "No free times this week. Try the next week.",
+  "chooseDay": "Available days",
+  "pickTime": "Pick a time",
+  "timesCount": "{count} times",
+  "closed": "No times",
+  "period": {
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening"
+  }
 }

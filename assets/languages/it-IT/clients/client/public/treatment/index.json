@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/treatment/index.tsx",
+  "loading": "Caricamento trattamento",
+  "notFound": "Questo trattamento non è in elenco",
+  "notFoundMessage": "Potrebbe essere stato tolto dal sito. Scegline un altro in clinica.",
+  "backToTreatments": "Torna ai trattamenti",
+  "duration": "Durata",
+  "minutes": "min",
+  "bookTitle": "Prenota questo trattamento",
+  "chooseLocation": "Dove?",
+  "choosePractitioner": "Con chi?",
+  "anyone": "Il primo disponibile",
+  "chooseTime": "Scegli un orario",
+  "continue": "Continua con i tuoi dati",
+  "callToBook": "Prenota per telefono",
+  "description": "Su questo trattamento",
+  "whoTitle": "Chi lo esegue",
+  "whoLocations": "A {places}",
+  "priceFrom": "da",
+  "priceFree": "Gratuito",
+  "priceOnRequest": "Prezzo su richiesta",
+  "role": {
+    "dentist": "Dentista",
+    "hygienist": "Igienista dentale",
+    "orthodontist": "Ortodontista",
+    "other": "Membro del team"
+  }
+}

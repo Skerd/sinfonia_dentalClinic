@@ -1,9 +1,0 @@
-{
-  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicLayout.tsx",
-  "fallbackName": "Cabinet dentaire",
-  "book": "Prendre rendez-vous",
-  "privacy": "Confidentialité",
-  "unavailableTitle": "La réservation en ligne n'est pas disponible",
-  "unavailableText": "Ce cabinet ne prend pas de rendez-vous en ligne pour le moment. Veuillez nous appeler.",
-  "locations": "Sites"
-}

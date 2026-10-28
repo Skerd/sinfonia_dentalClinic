@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/treatment/index.tsx",
+  "loading": "Behandlung wird geladen",
+  "notFound": "Diese Behandlung ist nicht gelistet",
+  "notFoundMessage": "Sie wurde möglicherweise von der Website genommen. Wählen Sie eine andere in der Praxis.",
+  "backToTreatments": "Zurück zu den Behandlungen",
+  "duration": "Dauer",
+  "minutes": "Min.",
+  "bookTitle": "Diese Behandlung buchen",
+  "chooseLocation": "Wo?",
+  "choosePractitioner": "Bei wem?",
+  "anyone": "Wer gerade frei ist",
+  "chooseTime": "Zeit wählen",
+  "continue": "Weiter zu Ihren Angaben",
+  "callToBook": "Telefonisch buchen",
+  "description": "Über diese Behandlung",
+  "whoTitle": "Wer führt das durch",
+  "whoLocations": "In {places}",
+  "priceFrom": "ab",
+  "priceFree": "Kostenlos",
+  "priceOnRequest": "Preis auf Anfrage",
+  "role": {
+    "dentist": "Zahnärztin/Zahnarzt",
+    "hygienist": "Dentalhygienikerin/Dentalhygieniker",
+    "orthodontist": "Kieferorthopädin/Kieferorthopäde",
+    "other": "Teammitglied"
+  }
+}

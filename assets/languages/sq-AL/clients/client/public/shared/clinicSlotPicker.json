@@ -4,5 +4,14 @@
   "earlier": "Më herët",
   "later": "Më vonë",
   "localTime": "ora lokale",
-  "noneThisWeek": "Asnjë orar i lirë këtë javë. Provoni javën tjetër."
+  "noneThisWeek": "Asnjë orar i lirë këtë javë. Provoni javën tjetër.",
+  "chooseDay": "Ditët e lira",
+  "pickTime": "Zgjidhni orën",
+  "timesCount": "{count} orare",
+  "closed": "Asnjë orar",
+  "period": {
+    "morning": "Mëngjes",
+    "afternoon": "Pasdite",
+    "evening": "Mbrëmje"
+  }
 }

@@ -1,0 +1,28 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/treatment/index.tsx",
+  "loading": "Trajtimi po ngarkohet",
+  "notFound": "Ky trajtim nuk është në listë",
+  "notFoundMessage": "Mund të jetë hequr nga faqja. Zgjidhni një tjetër në klinikë.",
+  "backToTreatments": "Kthehu te trajtimet",
+  "duration": "Kohëzgjatja",
+  "minutes": "min",
+  "bookTitle": "Rezervo këtë trajtim",
+  "chooseLocation": "Ku?",
+  "choosePractitioner": "Me kë?",
+  "anyone": "Kushdo i lirë",
+  "chooseTime": "Zgjidhni një orar",
+  "continue": "Vazhdo me të dhënat tuaja",
+  "callToBook": "Rezervo me telefon",
+  "description": "Rreth këtij trajtimi",
+  "whoTitle": "Kush e bën",
+  "whoLocations": "Në {places}",
+  "priceFrom": "nga",
+  "priceFree": "Falas",
+  "priceOnRequest": "Çmimi me kërkesë",
+  "role": {
+    "dentist": "Dentist",
+    "hygienist": "Higjieniste dentare",
+    "orthodontist": "Ortodont",
+    "other": "Anëtar i ekipit"
+  }
+}

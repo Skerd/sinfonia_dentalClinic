@@ -15,6 +15,7 @@
     "descriptionLabel": "Description",
     "descriptionPlaceholder": "What patients should know about this treatment",
     "imagesLabel": "Photos",
+    "videosLabel": "Videos",
     "nameLabel": "Name",
     "namePlaceholder": "e.g. Zurich Centre",
     "priceTypeLabel": "Price display",

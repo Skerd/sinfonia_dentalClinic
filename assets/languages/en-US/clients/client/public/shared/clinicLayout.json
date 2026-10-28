@@ -1,9 +1,0 @@
-{
-  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicLayout.tsx",
-  "fallbackName": "Dental clinic",
-  "book": "Book an appointment",
-  "privacy": "Privacy",
-  "unavailableTitle": "Online booking is not available",
-  "unavailableText": "This clinic does not take appointments online right now. Please call us.",
-  "locations": "Locations"
-}

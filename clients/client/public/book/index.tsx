@@ -1,6 +1,7 @@
 import {useRef, useState, type FormEvent, type ReactNode} from "react";
 import {compose} from "redux";
 import {Link, useNavigate, useSearchParams} from "react-router-dom";
+import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
@@ -13,7 +14,10 @@ import {APPOINTMENT_NOTE_MAX} from "armonia/src/modules/dentalClinic/api/dentalC
 import {bookableServices, useClinicConfig} from "../shared/clinicConfigContext.tsx";
 import ClinicSlotPicker, {type PickedSlot} from "../shared/clinicSlotPicker.tsx";
 import {formatDay, priceLabel} from "../shared/clinicFormat.ts";
-import {CLINIC_CARD, CLINIC_CHOICE, CLINIC_HEADING, CLINIC_INPUT, CLINIC_LABEL, CLINIC_PRIMARY_BUTTON} from "../shared/clinicStyles.ts";
+import {Item, ItemContent, ItemDescription, ItemMedia, ItemTitle} from "@coreModule/components/ui/item.tsx";
+import {Button} from "@coreModule/components/ui/button.tsx";
+import {Input} from "@coreModule/components/ui/input.tsx";
+import {Textarea} from "@coreModule/components/ui/textarea.tsx";
 
 const PATIENT_KEYS = ["firstName", "lastName", "email", "phone"] as const;
 type PatientKey = (typeof PATIENT_KEYS)[number];
@@ -27,6 +31,7 @@ const ANYONE = "any";
  * in the URL, so the back button and a shared link land on the same step.
  */
 function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
+    const base = useSectionBase();
     const {config, formatMoney} = useClinicConfig();
     const [params, setParams] = useSearchParams();
     const navigate = useNavigate();
@@ -96,7 +101,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         setSubmitting(true);
         try {
             const {data} = (await apiClient.post<AppointmentBookingResponse>("/api/dentalClinic/clinicStorefront/book", body)).data;
-            navigate(`/manage?${new URLSearchParams({token: data.manageToken, booked: "1"}).toString()}`);
+            navigate(`${base}/manage?${new URLSearchParams({token: data.manageToken, booked: "1"}).toString()}`);
         } catch (e) {
             const error = handleError(e, {context: "ClinicBook"});
             if (!error) return;
@@ -112,25 +117,29 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const summaryRow = (label: string, value: string | undefined, step: (typeof STEPS)[number]) => value ? (
         <div className="flex items-start justify-between gap-3">
             <div>
-                <dt className="text-xs uppercase tracking-wide text-clinic-ink-faded">{label}</dt>
+                <dt className="text-xs uppercase tracking-wide text-muted-foreground">{label}</dt>
                 <dd className="font-medium">{value}</dd>
             </div>
-            <button type="button" className="text-sm font-medium text-clinic-accent hover:underline" onClick={() => choose(step, null)}>{resolveLanguageKey("change")}</button>
+            <Button variant="link" type="button" className="h-auto p-0 text-sm" onClick={() => choose(step, null)}>{resolveLanguageKey("change")}</Button>
         </div>
     ) : null;
 
     let step: ReactNode;
     if (!services.length) {
-        step = <p className="text-clinic-ink-muted">{resolveLanguageKey("nothingBookable")}</p>;
+        step = <p className="text-muted-foreground">{resolveLanguageKey("nothingBookable")}</p>;
     } else if (!service) {
         step = (
             <StepCard title={resolveLanguageKey("chooseService")}>
                 <div className="grid gap-3 sm:grid-cols-2">
                     {services.map((s) => (
-                        <button key={s._id} type="button" className={CLINIC_CHOICE} onClick={() => choose("service", s._id)}>
-                            <p className="font-semibold">{s.name}</p>
-                            <p className="text-sm text-clinic-ink-muted">{s.durationMinutes} {resolveLanguageKey("minutes")} · {priceLabel(s, formatMoney, resolveLanguageKey)}</p>
-                        </button>
+                        <Item key={s._id} asChild variant="outline" className="cursor-pointer text-left hover:bg-muted">
+                            <button type="button" onClick={() => choose("service", s._id)}>
+                                <ItemContent>
+                                    <ItemTitle>{s.name}</ItemTitle>
+                                    <ItemDescription>{s.durationMinutes} {resolveLanguageKey("minutes")} · {priceLabel(s, formatMoney, resolveLanguageKey)}</ItemDescription>
+                                </ItemContent>
+                            </button>
+                        </Item>
                     ))}
                 </div>
             </StepCard>
@@ -140,10 +149,14 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
             <StepCard title={resolveLanguageKey("chooseLocation")}>
                 <div className="grid gap-3 sm:grid-cols-2">
                     {locations.map((l) => (
-                        <button key={l._id} type="button" className={CLINIC_CHOICE} onClick={() => choose("location", l._id)}>
-                            <p className="font-semibold">{l.name}</p>
-                            {l.address ? <p className="text-sm text-clinic-ink-muted">{l.address}</p> : null}
-                        </button>
+                        <Item key={l._id} asChild variant="outline" className="cursor-pointer text-left hover:bg-muted">
+                            <button type="button" onClick={() => choose("location", l._id)}>
+                                <ItemContent>
+                                    <ItemTitle>{l.name}</ItemTitle>
+                                    {l.address ? <ItemDescription>{l.address}</ItemDescription> : null}
+                                </ItemContent>
+                            </button>
+                        </Item>
                     ))}
                 </div>
             </StepCard>
@@ -152,18 +165,26 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         step = (
             <StepCard title={resolveLanguageKey("choosePractitioner")}>
                 <div className="grid gap-3 sm:grid-cols-2">
-                    <button type="button" className={CLINIC_CHOICE} onClick={() => choose("practitioner", ANYONE)}>
-                        <p className="font-semibold">{resolveLanguageKey("anyone")}</p>
-                        <p className="text-sm text-clinic-ink-muted">{resolveLanguageKey("anyoneHint")}</p>
-                    </button>
-                    {eligible.map((p) => (
-                        <button key={p._id} type="button" className={`${CLINIC_CHOICE} flex items-center gap-3`} onClick={() => choose("practitioner", p._id)}>
-                            {p.photo ? <img src={p.photo} alt="" className="h-12 w-12 rounded-full object-cover" /> : <span className="h-12 w-12 rounded-full bg-clinic-accent-soft" aria-hidden />}
-                            <span>
-                                <span className="block font-semibold">{p.displayName}</span>
-                                <span className="block text-sm text-clinic-ink-muted">{p.title || resolveLanguageKey(`role.${p.role}`)}</span>
-                            </span>
+                    <Item asChild variant="outline" className="cursor-pointer text-left hover:bg-muted">
+                        <button type="button" onClick={() => choose("practitioner", ANYONE)}>
+                            <ItemContent>
+                                <ItemTitle>{resolveLanguageKey("anyone")}</ItemTitle>
+                                <ItemDescription>{resolveLanguageKey("anyoneHint")}</ItemDescription>
+                            </ItemContent>
                         </button>
+                    </Item>
+                    {eligible.map((p) => (
+                        <Item key={p._id} asChild variant="outline" className="cursor-pointer text-left hover:bg-muted">
+                            <button type="button" onClick={() => choose("practitioner", p._id)}>
+                                <ItemMedia variant="image" className="size-12 rounded-full bg-muted">
+                                    {p.photo ? <img src={p.photo} alt="" /> : null}
+                                </ItemMedia>
+                                <ItemContent>
+                                    <ItemTitle>{p.displayName}</ItemTitle>
+                                    <ItemDescription>{p.title || resolveLanguageKey(`role.${p.role}`)}</ItemDescription>
+                                </ItemContent>
+                            </button>
+                        </Item>
                     ))}
                 </div>
             </StepCard>
@@ -186,40 +207,40 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     <div className="grid gap-4 sm:grid-cols-2">
                         {PATIENT_KEYS.map((key) => (
                             <label key={key} className="flex flex-col gap-1.5">
-                                <span className={CLINIC_LABEL}>{resolveLanguageKey(`patient.${key}`)}</span>
-                                <input
-                                    className={CLINIC_INPUT}
-                                    type={key === "email" ? "email" : key === "phone" ? "tel" : "text"}
-                                    autoComplete={key === "firstName" ? "given-name" : key === "lastName" ? "family-name" : key === "email" ? "email" : "tel"}
-                                    value={patient[key]}
-                                    onChange={(e) => updatePatient(key, e.target.value)}
-                                    aria-invalid={!!fieldErrors[key] || undefined}
-                                />
-                                {fieldErrors[key] ? <span className="text-sm text-clinic-danger">{fieldErrors[key]}</span> : null}
+                                <span className="text-sm font-medium">{resolveLanguageKey(`patient.${key}`)}</span>
+                                <Input
+                  
+                  type={key === "email" ? "email" : key === "phone" ? "tel" : "text"}
+                  autoComplete={key === "firstName" ? "given-name" : key === "lastName" ? "family-name" : key === "email" ? "email" : "tel"}
+                  value={patient[key]}
+                  onChange={(e) => updatePatient(key, e.target.value)}
+                  aria-invalid={!!fieldErrors[key] || undefined}
+                />
+                                {fieldErrors[key] ? <span className="text-sm text-destructive">{fieldErrors[key]}</span> : null}
                             </label>
                         ))}
                         {config.patientNoteEnabled ? (
                             <label className="flex flex-col gap-1.5 sm:col-span-2">
-                                <span className={CLINIC_LABEL}>{resolveLanguageKey("note")}</span>
-                                <textarea className={`${CLINIC_INPUT} h-24 py-2`} maxLength={APPOINTMENT_NOTE_MAX} value={note} onChange={(e) => setNote(e.target.value)} />
-                                <span className="text-xs text-clinic-ink-faded">{resolveLanguageKey("noteHint")}</span>
+                                <span className="text-sm font-medium">{resolveLanguageKey("note")}</span>
+                                <Textarea className="h-24 py-2" maxLength={APPOINTMENT_NOTE_MAX} value={note} onChange={(e) => setNote(e.target.value)} />
+                                <span className="text-xs text-muted-foreground">{resolveLanguageKey("noteHint")}</span>
                             </label>
                         ) : null}
                     </div>
                 </StepCard>
-                <div className={`${CLINIC_CARD} flex flex-col gap-4`}>
+                <div className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
                     <label className="flex items-start gap-3 text-sm">
                         <input type="checkbox" checked={acceptPrivacy} onChange={(e) => setAcceptPrivacy(e.target.checked)} />
                         <span>
                             {resolveLanguageKey("acceptPrivacy")}{" "}
-                            {config.privacyNoticeText ? <Link to="/privacy" target="_blank" className="font-medium text-clinic-accent hover:underline">{resolveLanguageKey("readPrivacy")}</Link> : null}
+                            {config.privacyNoticeText ? <Button asChild variant="link" className="h-auto p-0"><Link to={`${base}/privacy`} target="_blank">{resolveLanguageKey("readPrivacy")}</Link></Button> : null}
                         </span>
                     </label>
-                    {formError ? <p className="text-sm text-clinic-danger" role="alert">{formError}</p> : null}
-                    <button type="submit" className={`${CLINIC_PRIMARY_BUTTON} w-full sm:w-auto`} disabled={submitting}>
+                    {formError ? <p className="text-sm text-destructive" role="alert">{formError}</p> : null}
+                    <Button size="lg" type="submit" className="w-full sm:w-auto" disabled={submitting}>
                         {resolveLanguageKey(submitting ? "booking" : config.requireStaffConfirmation ? "requestAppointment" : "confirmBooking")}
-                    </button>
-                    {config.requireStaffConfirmation ? <p className="text-sm text-clinic-ink-muted">{resolveLanguageKey("reviewedHint")}</p> : null}
+                    </Button>
+                    {config.requireStaffConfirmation ? <p className="text-sm text-muted-foreground">{resolveLanguageKey("reviewedHint")}</p> : null}
                 </div>
             </form>
         );
@@ -228,21 +249,21 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     return (
         <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
             <div className="flex flex-col gap-6">
-                <h1 className={`${CLINIC_HEADING} text-3xl`}>{resolveLanguageKey("title")}</h1>
-                {formError && !(date && time) ? <p className="text-sm text-clinic-danger" role="alert">{formError}</p> : null}
+                <h1 className="font-display font-bold tracking-tight text-3xl sm:text-4xl">{resolveLanguageKey("title")}</h1>
+                {formError && !(date && time) ? <p className="text-sm text-destructive" role="alert">{formError}</p> : null}
                 {step}
             </div>
-            <aside className={`${CLINIC_CARD} flex flex-col gap-4 self-start lg:sticky lg:top-6`}>
-                <h2 className={`${CLINIC_HEADING} text-lg`}>{resolveLanguageKey("summary")}</h2>
+            <aside className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4 self-start lg:sticky lg:top-6">
+                <h2 className="font-display font-bold tracking-tight text-lg">{resolveLanguageKey("summary")}</h2>
                 <dl className="flex flex-col gap-3 text-sm">
                     {summaryRow(String(resolveLanguageKey("service")), service ? `${service.name} · ${service.durationMinutes} ${resolveLanguageKey("minutes")}` : undefined, "service")}
                     {locations.length > 1 ? summaryRow(String(resolveLanguageKey("location")), location?.name, "location") : null}
                     {summaryRow(String(resolveLanguageKey("practitioner")), anyone ? String(resolveLanguageKey("anyone")) : practitioner?.displayName, "practitioner")}
                     {summaryRow(String(resolveLanguageKey("when")), date && time ? `${formatDay(date, languageCode)}, ${time}` : undefined, "date")}
                 </dl>
-                {service ? <p className="text-sm text-clinic-ink-muted">{resolveLanguageKey("price")}: {priceLabel(service, formatMoney, resolveLanguageKey)}</p> : null}
+                {service ? <p className="text-sm text-muted-foreground">{resolveLanguageKey("price")}: {priceLabel(service, formatMoney, resolveLanguageKey)}</p> : null}
                 {config.cancellationDeadlineHours > 0 ? (
-                    <p className="text-xs text-clinic-ink-faded">
+                    <p className="text-xs text-muted-foreground">
                         {String(resolveLanguageKey("cancelPolicy")).replace("{hours}", String(config.cancellationDeadlineHours))}
                     </p>
                 ) : null}
@@ -253,8 +274,8 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
 
 function StepCard({title, children}: {title: string; children: ReactNode}) {
     return (
-        <section className={`${CLINIC_CARD} flex flex-col gap-4`}>
-            <h2 className={`${CLINIC_HEADING} text-xl`}>{title}</h2>
+        <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
+            <h2 className="font-display font-bold tracking-tight text-xl">{title}</h2>
             {children}
         </section>
     );

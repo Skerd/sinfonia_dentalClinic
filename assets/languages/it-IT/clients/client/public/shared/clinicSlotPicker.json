@@ -4,5 +4,14 @@
   "earlier": "Prima",
   "later": "Dopo",
   "localTime": "ora locale",
-  "noneThisWeek": "Nessun orario libero questa settimana. Prova la settimana successiva."
+  "noneThisWeek": "Nessun orario libero questa settimana. Prova la settimana successiva.",
+  "chooseDay": "Giorni disponibili",
+  "pickTime": "Scegli un orario",
+  "timesCount": "{count} orari",
+  "closed": "Nessun orario",
+  "period": {
+    "morning": "Mattina",
+    "afternoon": "Pomeriggio",
+    "evening": "Sera"
+  }
 }

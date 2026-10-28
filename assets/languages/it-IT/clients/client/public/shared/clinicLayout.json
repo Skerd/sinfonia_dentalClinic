@@ -1,9 +1,0 @@
-{
-  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicLayout.tsx",
-  "fallbackName": "Studio dentistico",
-  "book": "Prenota un appuntamento",
-  "privacy": "Privacy",
-  "unavailableTitle": "La prenotazione online non è disponibile",
-  "unavailableText": "Al momento questo studio non accetta appuntamenti online. Chiamaci.",
-  "locations": "Sedi"
-}

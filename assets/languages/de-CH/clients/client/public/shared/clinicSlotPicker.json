@@ -4,5 +4,14 @@
   "earlier": "Früher",
   "later": "Später",
   "localTime": "Ortszeit",
-  "noneThisWeek": "Diese Woche keine freien Zeiten. Versuchen Sie die nächste Woche."
+  "noneThisWeek": "Diese Woche keine freien Zeiten. Versuchen Sie die nächste Woche.",
+  "chooseDay": "Verfügbare Tage",
+  "pickTime": "Uhrzeit wählen",
+  "timesCount": "{count} Zeiten",
+  "closed": "Keine Zeiten",
+  "period": {
+    "morning": "Morgen",
+    "afternoon": "Nachmittag",
+    "evening": "Abend"
+  }
 }
