@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseOffers.tsx",
+  "title": "Compare the quotes",
+  "clinic": "Clinic",
+  "total": "Total",
+  "deposit": "Deposit",
+  "trips": "Trips",
+  "days": "Days",
+  "warranty": "Warranty",
+  "years": "{years} years",
+  "brands": "Brands",
+  "accepted": "Accepted",
+  "details": "Details",
+  "hide": "Hide",
+  "accept": "Accept",
+  "phaseSummary": "{visits} visit(s), about {days} days' stay",
+  "phaseGap": "at least {days} days after the previous phase",
+  "teeth": "Teeth",
+  "validUntil": "Valid until",
+  "pdf": "Download PDF"
+}

@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseDialog.tsx",
+  "title": "Ihre Kostenanfrage",
+  "failed": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+  "askedFor": "Die Praxis bittet um:",
+  "sendFiles": "Diese Dateien senden",
+  "files": "Ihre Dateien für diese Praxis",
+  "noFiles": "Noch keine Dateien.",
+  "addFiles": "Dateien hinzufügen",
+  "conversation": "Unterhaltung",
+  "shareContact": "Meine Kontaktdaten mit dieser Praxis teilen",
+  "contactShared": "Diese Praxis sieht Ihre Kontaktdaten.",
+  "withdraw": "Bei dieser Praxis zurückziehen",
+  "treatment": {
+    "checkup": "Kontrolle",
+    "hygiene": "Dentalhygiene",
+    "whitening": "Bleaching",
+    "filling": "Füllung",
+    "root_canal": "Wurzelbehandlung",
+    "extraction": "Extraktion",
+    "implant": "Implantat",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Krone",
+    "bridge": "Brücke",
+    "veneer": "Veneer",
+    "denture": "Prothese",
+    "orthodontics": "Kieferorthopädie",
+    "bone_graft": "Knochenaufbau / Sinuslift",
+    "other": "Andere"
+  },
+  "status": {
+    "new": "Gesendet",
+    "in_review": "Praxis prüft",
+    "info_requested": "Praxis braucht mehr",
+    "declined": "Praxis hat abgelehnt",
+    "lost": "Geschlossen",
+    "withdrawn": "Zurückgezogen",
+    "converted": "Sie sind hier Patient",
+    "quoted": "Angebot erhalten"
+  },
+  "kind": {
+    "opg": "Panoramaröntgen (OPG)",
+    "cbct": "3D-Aufnahme (DVT)",
+    "photos": "Fotos der Zähne",
+    "medical_history": "Anamnese",
+    "other": "Weitere Unterlagen"
+  }
+}

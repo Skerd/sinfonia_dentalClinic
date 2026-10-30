@@ -39,6 +39,7 @@
     "deletedAt": "Supprimé le",
     "deletedBy": "Supprimé par",
     "endAt": "Se termine",
-    "customer": "Compte patient"
+    "customer": "Compte patient",
+    "patientRecord": "Dossier patient"
   }
 }

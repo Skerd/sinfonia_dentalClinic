@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/actions/inquiryMenu.tsx",
+  "startReview": "Start review",
+  "requestInfo": "Ask for X-rays or documents",
+  "convert": "Open patient folder",
+  "assign": "Assign",
+  "decline": "Decline",
+  "markLost": "Mark as lost"
+}

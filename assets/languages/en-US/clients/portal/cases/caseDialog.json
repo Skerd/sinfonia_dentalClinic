@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseDialog.tsx",
+  "title": "Your estimate request",
+  "failed": "Something went wrong. Please try again.",
+  "askedFor": "The clinic asked for:",
+  "sendFiles": "Send these files",
+  "files": "Your files for this clinic",
+  "noFiles": "No files yet.",
+  "addFiles": "Add files",
+  "conversation": "Conversation",
+  "shareContact": "Share my contact details with this clinic",
+  "contactShared": "This clinic can see your contact details.",
+  "withdraw": "Withdraw from this clinic",
+  "treatment": {
+    "checkup": "Check-up",
+    "hygiene": "Cleaning & hygiene",
+    "whitening": "Whitening",
+    "filling": "Filling",
+    "root_canal": "Root canal",
+    "extraction": "Extraction",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Crown",
+    "bridge": "Bridge",
+    "veneer": "Veneer",
+    "denture": "Denture",
+    "orthodontics": "Orthodontics",
+    "bone_graft": "Bone graft / sinus lift",
+    "other": "Other"
+  },
+  "status": {
+    "new": "Sent",
+    "in_review": "Clinic is reviewing",
+    "info_requested": "Clinic needs more",
+    "declined": "Clinic declined",
+    "lost": "Closed",
+    "withdrawn": "Withdrawn",
+    "converted": "You are a patient here",
+    "quoted": "Quote received"
+  },
+  "kind": {
+    "opg": "Panoramic X-ray (OPG)",
+    "cbct": "3D scan (CBCT)",
+    "photos": "Photos of the teeth",
+    "medical_history": "Medical history",
+    "other": "Other documents"
+  }
+}

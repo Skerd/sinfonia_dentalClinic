@@ -35,7 +35,9 @@
     "serviceLabel": "Soin",
     "servicePlaceholder": "Choisir un soin",
     "timeLabel": "Heure",
-    "visitSectionTitle": "Visite"
+    "visitSectionTitle": "Visite",
+    "patientRecordLabel": "Dossier patient",
+    "patientRecordPlaceholder": "Facultatif : un patient existant"
   },
   "axios": {
     "start": {

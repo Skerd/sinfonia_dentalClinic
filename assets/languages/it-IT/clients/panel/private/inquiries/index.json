@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/index.tsx",
+  "title": "Richieste di preventivo",
+  "description": "Pazienti che chiedono un prezzo: dal portale, dal tuo sito o dalle tue chiamate",
+  "help": {
+    "ariaLabel": "Informazioni sulle richieste",
+    "title": "Informazioni sulle richieste",
+    "overview": "Un paziente può inviare una richiesta a più cliniche. Finché non condivide i contatti vedi solo nome e paese; parlagli nella conversazione della richiesta.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Rispondi entro il tuo obiettivo: il portale mostra ai pazienti quanto rapidamente rispondono le cliniche.",
+          "Chiedi una panoramica o foto se servono per il preventivo; il paziente le invia solo a te.",
+          "Apri la cartella paziente quando ti sceglie; tiene insieme contatti e appuntamenti."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi contatto",
+  "searchPlaceholder": "Cerca richieste o aggiungi filtri...",
+  "noData": "Ancora nessuna richiesta",
+  "failTitle": "Impossibile caricare le richieste",
+  "failDescription": "Si è verificato un errore. Riprova.",
+  "deleted": "Eliminato",
+  "fields": {
+    "number": "N. richiesta",
+    "status": "Stato",
+    "source": "Provenienza",
+    "assignedTo": "Assegnata a",
+    "travelFrom": "Può viaggiare dal",
+    "travelTo": "Può viaggiare fino al",
+    "budget": "Budget",
+    "budgetCurrency": "Valuta del budget",
+    "firstResponseAt": "Prima risposta",
+    "lastMessageAt": "Ultimo messaggio",
+    "patient": "Cartella paziente",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "country": "Paese",
+    "preferredLanguage": "Lingua",
+    "email": "Email",
+    "phone": "Telefono",
+    "whatsapp": "WhatsApp",
+    "contactShared": "Contatti condivisi",
+    "description": "Cosa ha scritto il paziente",
+    "files": "File",
+    "unreadForClinic": "Messaggi non letti",
+    "contact": "Paziente",
+    "treatmentsWanted": "Trattamenti richiesti",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da",
+    "contact.firstName": "Nome",
+    "contact.country": "Paese"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryRequestDetails.tsx",
+  "treatmentsTitle": "Soins souhaités",
+  "infoRequestsTitle": "Demandé au patient",
+  "requestedOn": "Demandé le",
+  "fulfilledOn": "Reçu le",
+  "treatment": {
+    "checkup": "Contrôle",
+    "hygiene": "Détartrage et hygiène",
+    "whitening": "Blanchiment",
+    "filling": "Obturation",
+    "root_canal": "Traitement de canal",
+    "extraction": "Extraction",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Couronne",
+    "bridge": "Bridge",
+    "veneer": "Facette",
+    "denture": "Prothèse amovible",
+    "orthodontics": "Orthodontie",
+    "bone_graft": "Greffe osseuse / sinus lift",
+    "other": "Autre"
+  },
+  "kind": {
+    "opg": "Radio panoramique (OPG)",
+    "cbct": "Scanner 3D (CBCT)",
+    "photos": "Photos des dents",
+    "medical_history": "Antécédents médicaux",
+    "other": "Autres documents"
+  }
+}

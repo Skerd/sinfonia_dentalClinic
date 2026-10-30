@@ -17,5 +17,6 @@
     "hygienist": "Dental hygienist",
     "orthodontist": "Orthodontist",
     "other": "Team member"
-  }
+  },
+  "requestEstimate": "Ask for an estimate"
 }

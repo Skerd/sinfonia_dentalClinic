@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/estimateBanner.tsx",
+  "title": "Merrni ofertë nga klinikat dentare",
+  "subtitle": "Krahasoni klinikat dhe dërgojuni një kërkesë me radiografitë tuaja deri në pesë prej tyre.",
+  "titleClinic": "Merrni një ofertë",
+  "subtitleClinic": "Na tregoni çfarë ju duhet dhe dërgoni radiografitë; përgjigjemi me plan trajtimi dhe çmim.",
+  "accountNeeded": "Ju duhet një llogari: aty mbahen përgjigjet, skedarët dhe bisedat.",
+  "cta": "Kërkoni ofertë",
+  "ctaSignIn": "Hyni për të kërkuar"
+}

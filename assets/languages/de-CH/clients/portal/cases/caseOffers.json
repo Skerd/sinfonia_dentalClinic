@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseOffers.tsx",
+  "title": "Angebote vergleichen",
+  "clinic": "Praxis",
+  "total": "Total",
+  "deposit": "Anzahlung",
+  "trips": "Reisen",
+  "days": "Tage",
+  "warranty": "Garantie",
+  "years": "{years} Jahre",
+  "brands": "Marken",
+  "accepted": "Angenommen",
+  "details": "Details",
+  "hide": "Ausblenden",
+  "accept": "Annehmen",
+  "phaseSummary": "{visits} Besuch(e), etwa {days} Tage Aufenthalt",
+  "phaseGap": "mindestens {days} Tage nach der vorherigen Phase",
+  "teeth": "Zähne",
+  "validUntil": "Gültig bis",
+  "pdf": "PDF herunterladen"
+}

@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/convertInquiryDialog.tsx",
+  "title": "Ouvrir le dossier patient",
+  "description": "Ouvre le dossier du patient dans ce cabinet (ou relie celui qui existe) et clôt la demande comme gagnée.",
+  "confirm": "Ouvrir le dossier patient",
+  "cancel": "Annuler",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Demande mise à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "La demande n'a pas pu être mise à jour",
+      "time": 3000
+    }
+  }
+}

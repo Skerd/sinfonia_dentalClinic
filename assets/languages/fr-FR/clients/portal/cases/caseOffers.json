@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseOffers.tsx",
+  "title": "Comparer les devis",
+  "clinic": "Cabinet",
+  "total": "Total",
+  "deposit": "Acompte",
+  "trips": "Voyages",
+  "days": "Jours",
+  "warranty": "Garantie",
+  "years": "{years} ans",
+  "brands": "Marques",
+  "accepted": "Accepté",
+  "details": "Détails",
+  "hide": "Masquer",
+  "accept": "Accepter",
+  "phaseSummary": "{visits} visite(s), environ {days} jours de séjour",
+  "phaseGap": "au moins {days} jours après la phase précédente",
+  "teeth": "Dents",
+  "validUntil": "Valable jusqu'au",
+  "pdf": "Télécharger le PDF"
+}

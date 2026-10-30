@@ -1,0 +1,51 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/index.tsx",
+  "title": "Pacientët",
+  "description": "Kartela e çdo pacienti: kontakti, gjuha dhe burimi",
+  "help": {
+    "ariaLabel": "Rreth pacientëve",
+    "title": "Rreth pacientëve",
+    "overview": "Një kartelë pacienti mban gjithçka për një person në klinikën tuaj. Rezervimet online ose nga stafi bien në të njëjtën kartelë, të lidhura me llogarinë e portalit ose me email-in dhe emrin e plotë.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Pacientët nga portali dhe rezervimet online shtohen automatikisht.",
+          "Vendosni gjuhën: email-et, ofertat dhe raporti për dentistin e tyre shkruhen në të.",
+          "Mos vendosni gjetje mjekësore te shënimet; ato shkojnë te shënimet klinike."
+        ]
+      }
+    ]
+  },
+  "create": "Shto pacient",
+  "searchPlaceholder": "Kërkoni pacientë ose shtoni filtra...",
+  "noData": "Ende asnjë pacient",
+  "failTitle": "Pacientët nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq. Provoni përsëri.",
+  "deleted": "Fshirë",
+  "fields": {
+    "number": "Nr. pacienti",
+    "firstName": "Emri",
+    "lastName": "Mbiemri",
+    "dateOfBirth": "Datëlindja",
+    "sex": "Gjinia",
+    "email": "Email",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp",
+    "preferredLanguage": "Gjuha",
+    "address": "Adresa",
+    "emergencyContact": "Kontakt urgjence",
+    "homeDentist": "Dentisti në vendlindje",
+    "source": "Burimi",
+    "tags": "Etiketa",
+    "notes": "Shënime",
+    "account": "Llogaria në portal",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga",
+    "address.country": "Shteti",
+    "address.city": "Qyteti"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/patientThread.tsx",
+  "loading": "Wird geladen…",
+  "empty": "Noch keine Nachrichten.",
+  "you": "Sie",
+  "placeholder": "Schreiben Sie der Praxis…",
+  "attach": "Anhängen",
+  "send": "Senden",
+  "failed": "Die Nachricht konnte nicht gesendet werden."
+}

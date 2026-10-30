@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/request/requestQuotesPage.tsx",
+  "title": "Praxen vergleichen und Kostenvoranschläge anfragen",
+  "subtitle": "Wählen Sie bis zu {max} Praxen und senden Sie eine Anfrage. Jede antwortet Ihnen separat, Sie entscheiden.",
+  "allTreatments": "Alle Behandlungen",
+  "usuallyAnswers": "Antwortet meist innert {hours} Std.",
+  "formTitle": "Ihre Anfrage",
+  "pickFirst": "Wählen Sie oben mindestens eine Klinik, um Ihre Anfrage zu schreiben.",
+  "treatment": {
+    "checkup": "Kontrolle",
+    "hygiene": "Dentalhygiene",
+    "whitening": "Bleaching",
+    "filling": "Füllung",
+    "root_canal": "Wurzelbehandlung",
+    "extraction": "Extraktion",
+    "implant": "Implantat",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Krone",
+    "bridge": "Brücke",
+    "veneer": "Veneer",
+    "denture": "Prothese",
+    "orthodontics": "Kieferorthopädie",
+    "bone_graft": "Knochenaufbau / Sinuslift",
+    "other": "Andere"
+  },
+  "steps": {
+    "choose": {
+      "title": "Kliniken wählen",
+      "text": "Bis zu {max}, nach Behandlung, Ort oder Sprache."
+    },
+    "describe": {
+      "title": "Beschreiben Sie Ihr Anliegen",
+      "text": "Fügen Sie Röntgenbilder oder Fotos hinzu, falls vorhanden."
+    },
+    "compare": {
+      "title": "Vergleichen und entscheiden",
+      "text": "Jede Klinik antwortet Ihnen einzeln mit Plan und Preis."
+    }
+  },
+  "chooseTitle": "Kliniken auswählen",
+  "searchLabel": "Kliniken suchen",
+  "searchPlaceholder": "Nach Klinik, Ort, Sprache oder Implantatmarke suchen",
+  "clearSearch": "Suche löschen",
+  "clearFilters": "Alle Kliniken zeigen",
+  "results": "{count} Kliniken",
+  "full": "Sie haben {max} gewählt, mehr geht pro Anfrage nicht",
+  "noMatchTitle": "Keine Kliniken gefunden",
+  "noMatchHint": "Versuchen Sie ein anderes Wort oder eine andere Behandlung.",
+  "noClinics": "Noch nimmt keine Klinik Anfragen entgegen.",
+  "viewClinic": "Klinik ansehen",
+  "selectionTitle": "Ihre Auswahl",
+  "chosen": "{count} von {max} gewählt",
+  "selectionEmpty": "Noch keine Klinik gewählt. Markieren Sie bis zu {max} in der Liste.",
+  "remove": "{name} entfernen",
+  "continue": "Weiter zur Anfrage",
+  "privacyNote": "Kliniken sehen nur Vorname und Land, bis Sie eine wählen oder Ihre Kontaktdaten teilen.",
+  "formSubtitle": "Eine Anfrage geht an alle gewählten Kliniken; jede Antwort verfolgen Sie in Ihrem Konto.",
+  "resultsOne": "1 Klinik"
+}

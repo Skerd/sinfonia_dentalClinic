@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/request/requestQuotesPage.tsx",
+  "title": "Krahasoni klinikat dhe kërkoni oferta",
+  "subtitle": "Zgjidhni deri në {max} klinika dhe u dërgoni një kërkesë. Secila ju përgjigjet, ju zgjidhni.",
+  "allTreatments": "Të gjitha trajtimet",
+  "usuallyAnswers": "Zakonisht përgjigjet brenda {hours} orëve",
+  "formTitle": "Kërkesa juaj",
+  "pickFirst": "Zgjidhni të paktën një klinikë më sipër për të shkruar kërkesën.",
+  "treatment": {
+    "checkup": "Kontroll",
+    "hygiene": "Higjienë dentare",
+    "whitening": "Zbardhim",
+    "filling": "Mbushje",
+    "root_canal": "Mjekim kanali",
+    "extraction": "Heqje dhëmbi",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Kurorë",
+    "bridge": "Urë",
+    "veneer": "Faset",
+    "denture": "Protezë",
+    "orthodontics": "Ortodonci",
+    "bone_graft": "Shtim kockor / ngritje sinusi",
+    "other": "Tjetër"
+  },
+  "steps": {
+    "choose": {
+      "title": "Zgjidhni klinikat",
+      "text": "Deri në {max}, sipas trajtimit, qytetit ose gjuhës."
+    },
+    "describe": {
+      "title": "Përshkruani çfarë ju duhet",
+      "text": "Shtoni radiografitë ose fotot nëse i keni."
+    },
+    "compare": {
+      "title": "Krahasoni dhe zgjidhni",
+      "text": "Çdo klinikë ju përgjigjet veçmas me plan dhe çmim."
+    }
+  },
+  "chooseTitle": "Zgjidhni klinikat",
+  "searchLabel": "Kërkoni klinika",
+  "searchPlaceholder": "Kërkoni sipas klinikës, qytetit, gjuhës ose markës së implantit",
+  "clearSearch": "Pastroni kërkimin",
+  "clearFilters": "Shfaqni të gjitha klinikat",
+  "results": "{count} klinika",
+  "full": "keni zgjedhur {max}, maksimumi për një kërkesë",
+  "noMatchTitle": "Nuk u gjet asnjë klinikë",
+  "noMatchHint": "Provoni një fjalë ose trajtim tjetër.",
+  "noClinics": "Ende asnjë klinikë nuk pranon kërkesa për ofertë.",
+  "viewClinic": "Shihni klinikën",
+  "selectionTitle": "Zgjedhja juaj",
+  "chosen": "{count} nga {max} të zgjedhura",
+  "selectionEmpty": "Ende asnjë klinikë e zgjedhur. Shënoni deri në {max} në listë.",
+  "remove": "Hiqni {name}",
+  "continue": "Vazhdoni te kërkesa",
+  "privacyNote": "Klinikat shohin vetëm emrin dhe vendin tuaj derisa të zgjidhni njërën ose të ndani kontaktet.",
+  "formSubtitle": "Një kërkesë shkon te çdo klinikë e zgjedhur; çdo përgjigje e ndiqni në llogarinë tuaj.",
+  "resultsOne": "1 klinikë"
+}

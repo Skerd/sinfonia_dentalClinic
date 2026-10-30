@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryRequestDetails.tsx",
+  "treatmentsTitle": "Trattamenti richiesti",
+  "infoRequestsTitle": "Richiesto al paziente",
+  "requestedOn": "Richiesto il",
+  "fulfilledOn": "Ricevuto il",
+  "treatment": {
+    "checkup": "Controllo",
+    "hygiene": "Igiene dentale",
+    "whitening": "Sbiancamento",
+    "filling": "Otturazione",
+    "root_canal": "Devitalizzazione",
+    "extraction": "Estrazione",
+    "implant": "Impianto",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Corona",
+    "bridge": "Ponte",
+    "veneer": "Faccetta",
+    "denture": "Protesi mobile",
+    "orthodontics": "Ortodonzia",
+    "bone_graft": "Innesto osseo / rialzo del seno",
+    "other": "Altro"
+  },
+  "kind": {
+    "opg": "Panoramica (OPG)",
+    "cbct": "TAC 3D (CBCT)",
+    "photos": "Foto dei denti",
+    "medical_history": "Anamnesi",
+    "other": "Altri documenti"
+  }
+}

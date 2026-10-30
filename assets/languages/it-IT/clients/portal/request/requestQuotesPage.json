@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/request/requestQuotesPage.tsx",
+  "title": "Confronta le cliniche e chiedi preventivi",
+  "subtitle": "Scegli fino a {max} cliniche e invia una sola richiesta. Ognuna ti risponde, poi scegli tu.",
+  "allTreatments": "Tutti i trattamenti",
+  "usuallyAnswers": "Di solito risponde entro {hours} ore",
+  "formTitle": "La tua richiesta",
+  "pickFirst": "Scegli almeno una clinica qui sopra per scrivere la richiesta.",
+  "treatment": {
+    "checkup": "Controllo",
+    "hygiene": "Igiene dentale",
+    "whitening": "Sbiancamento",
+    "filling": "Otturazione",
+    "root_canal": "Devitalizzazione",
+    "extraction": "Estrazione",
+    "implant": "Impianto",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Corona",
+    "bridge": "Ponte",
+    "veneer": "Faccetta",
+    "denture": "Protesi mobile",
+    "orthodontics": "Ortodonzia",
+    "bone_graft": "Innesto osseo / rialzo del seno",
+    "other": "Altro"
+  },
+  "steps": {
+    "choose": {
+      "title": "Scegli le cliniche",
+      "text": "Fino a {max}, per trattamento, città o lingua."
+    },
+    "describe": {
+      "title": "Descrivi di cosa hai bisogno",
+      "text": "Aggiungi radiografie o foto, se le hai."
+    },
+    "compare": {
+      "title": "Confronta e scegli",
+      "text": "Ogni clinica ti risponde a parte con piano e prezzo."
+    }
+  },
+  "chooseTitle": "Scegli le cliniche",
+  "searchLabel": "Cerca cliniche",
+  "searchPlaceholder": "Cerca per clinica, città, lingua o marca di impianti",
+  "clearSearch": "Cancella ricerca",
+  "clearFilters": "Mostra tutte le cliniche",
+  "results": "{count} cliniche",
+  "full": "ne hai scelte {max}, il massimo per una richiesta",
+  "noMatchTitle": "Nessuna clinica trovata",
+  "noMatchHint": "Prova un'altra parola o un altro trattamento.",
+  "noClinics": "Nessuna clinica accetta ancora richieste di preventivo.",
+  "viewClinic": "Vedi la clinica",
+  "selectionTitle": "La tua selezione",
+  "chosen": "{count} di {max} scelte",
+  "selectionEmpty": "Nessuna clinica scelta. Selezionane fino a {max} nell'elenco.",
+  "remove": "Rimuovi {name}",
+  "continue": "Continua con la richiesta",
+  "privacyNote": "Le cliniche vedono solo nome e paese finché non ne scegli una o condividi i tuoi contatti.",
+  "formSubtitle": "Una sola richiesta va a ogni clinica scelta; segui ogni risposta nel tuo account.",
+  "resultsOne": "1 clinica"
+}

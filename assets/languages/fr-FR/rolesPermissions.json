@@ -5,7 +5,11 @@
     "Clinicservices": "Soins",
     "Practitioners": "Membres de l'équipe",
     "Scheduleexceptions": "Absence",
-    "Appointments": "Rendez-vous"
+    "Appointments": "Rendez-vous",
+    "Patients": "Patients",
+    "Clinicinquiries": "Demandes de devis",
+    "Clinicmessages": "Messages avec les patients",
+    "Treatmentplans": "Plans de traitement"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -31,7 +35,18 @@
       "rescheduleDeadlineHours": "Délai de déplacement (heures)",
       "retentionMonths": "Durée de conservation (mois)",
       "slotIntervalMinutes": "Intervalle des créneaux (minutes)",
-      "updatedAt": "Mis à jour le"
+      "updatedAt": "Mis à jour le",
+      "inquiriesEnabled": "Accepter les demandes de devis",
+      "inquiryNotifyUsers": "Prévenir ces personnes des nouvelles demandes et messages",
+      "responseTargetHours": "Répondre sous (heures)",
+      "languagesSpoken": "Langues parlées",
+      "implantBrands": "Marques d'implants",
+      "nearestAirport": "Aéroport le plus proche",
+      "profileTexts": "Textes par langue",
+      "accreditations": "Accréditations et adhésions",
+      "gallery": "Photos du cabinet",
+      "quoteValidityDays": "Devis valables (jours)",
+      "quoteTerms": "Conditions standard des devis"
     },
     "Cliniclocations": {
       "address": "Adresse",
@@ -64,7 +79,9 @@
       "priceType": "Type de prix",
       "slug": "Nom d'adresse web",
       "sortOrder": "Ordre de tri",
-      "updatedAt": "Mis à jour le"
+      "updatedAt": "Mis à jour le",
+      "category": "Type de soin",
+      "perTooth": "Prix par dent"
     },
     "Practitioners": {
       "bio": "Biographie",
@@ -127,7 +144,60 @@
       "startAt": "Début",
       "status": "Statut",
       "timeline": "Chronologie",
-      "updatedAt": "Mis à jour le"
+      "updatedAt": "Mis à jour le",
+      "patientRecord": "Dossier patient"
+    },
+    "Patients": {
+      "number": "N° patient",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "dateOfBirth": "Date de naissance",
+      "sex": "Sexe",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "whatsapp": "WhatsApp",
+      "preferredLanguage": "Langue",
+      "address": "Adresse",
+      "emergencyContact": "Contact d'urgence",
+      "homeDentist": "Dentiste habituel",
+      "source": "Origine",
+      "tags": "Étiquettes",
+      "notes": "Notes",
+      "account": "Compte portail",
+      "createdAt": "Créé le",
+      "updatedAt": "Mis à jour le",
+      "createdBy": "Créé par",
+      "patients": "Patients"
+    },
+    "Clinicinquiries": {
+      "clinicinquiries": "Demandes de devis",
+      "status": "Statut",
+      "assignedTo": "Attribuée à",
+      "contact": "Patient",
+      "files": "Fichiers"
+    },
+    "Clinicmessages": {
+      "clinicmessages": "Messages avec les patients",
+      "body": "Message",
+      "attachments": "Fichiers"
+    },
+    "Treatmentplans": {
+      "treatmentplans": "Plans de traitement",
+      "number": "N° de devis",
+      "status": "Statut",
+      "optionLabel": "Option",
+      "version": "Version",
+      "inquiry": "Demande de devis",
+      "patient": "Dossier patient",
+      "currency": "Devise",
+      "validUntil": "Valable jusqu'au",
+      "sentAt": "Envoyé",
+      "depositType": "Acompte",
+      "notes": "Remarques pour le patient",
+      "terms": "Conditions",
+      "totals": "Total",
+      "lines": "Lignes chiffrées",
+      "phases": "Phases (voyages au cabinet)"
     }
   }
 }

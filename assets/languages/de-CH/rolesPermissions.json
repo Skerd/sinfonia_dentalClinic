@@ -5,7 +5,11 @@
     "Clinicservices": "Behandlungen",
     "Practitioners": "Teammitglieder",
     "Scheduleexceptions": "Abwesenheit",
-    "Appointments": "Termine"
+    "Appointments": "Termine",
+    "Patients": "Patienten",
+    "Clinicinquiries": "Kostenanfragen",
+    "Clinicmessages": "Nachrichten mit Patienten",
+    "Treatmentplans": "Behandlungspläne"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -31,7 +35,18 @@
       "rescheduleDeadlineHours": "Verschiebungsfrist (Stunden)",
       "retentionMonths": "Aufbewahrung (Monate)",
       "slotIntervalMinutes": "Zeitraster (Minuten)",
-      "updatedAt": "Aktualisiert am"
+      "updatedAt": "Aktualisiert am",
+      "inquiriesEnabled": "Kostenanfragen annehmen",
+      "inquiryNotifyUsers": "Diese Personen über neue Anfragen und Nachrichten informieren",
+      "responseTargetHours": "Antworten innert (Stunden)",
+      "languagesSpoken": "Gesprochene Sprachen",
+      "implantBrands": "Implantatmarken",
+      "nearestAirport": "Nächster Flughafen",
+      "profileTexts": "Texte pro Sprache",
+      "accreditations": "Akkreditierungen und Mitgliedschaften",
+      "gallery": "Fotos der Praxis",
+      "quoteValidityDays": "Angebote gültig (Tage)",
+      "quoteTerms": "Standard-Angebotsbedingungen"
     },
     "Cliniclocations": {
       "address": "Adresse",
@@ -64,7 +79,9 @@
       "priceType": "Preisart",
       "slug": "Webadressen-Name",
       "sortOrder": "Sortierung",
-      "updatedAt": "Aktualisiert am"
+      "updatedAt": "Aktualisiert am",
+      "category": "Behandlungsart",
+      "perTooth": "Preis pro Zahn"
     },
     "Practitioners": {
       "bio": "Biografie",
@@ -127,7 +144,60 @@
       "startAt": "Beginn",
       "status": "Status",
       "timeline": "Verlauf",
-      "updatedAt": "Aktualisiert am"
+      "updatedAt": "Aktualisiert am",
+      "patientRecord": "Patientenakte"
+    },
+    "Patients": {
+      "number": "Patienten-Nr.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "dateOfBirth": "Geburtsdatum",
+      "sex": "Geschlecht",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "preferredLanguage": "Sprache",
+      "address": "Adresse",
+      "emergencyContact": "Notfallkontakt",
+      "homeDentist": "Zahnarzt zu Hause",
+      "source": "Herkunft",
+      "tags": "Schlagwörter",
+      "notes": "Notizen",
+      "account": "Portal-Konto",
+      "createdAt": "Erstellt am",
+      "updatedAt": "Aktualisiert am",
+      "createdBy": "Erstellt von",
+      "patients": "Patienten"
+    },
+    "Clinicinquiries": {
+      "clinicinquiries": "Kostenanfragen",
+      "status": "Status",
+      "assignedTo": "Zugewiesen an",
+      "contact": "Patient",
+      "files": "Dateien"
+    },
+    "Clinicmessages": {
+      "clinicmessages": "Nachrichten mit Patienten",
+      "body": "Nachricht",
+      "attachments": "Dateien"
+    },
+    "Treatmentplans": {
+      "treatmentplans": "Behandlungspläne",
+      "number": "Angebots-Nr.",
+      "status": "Status",
+      "optionLabel": "Variante",
+      "version": "Version",
+      "inquiry": "Kostenanfrage",
+      "patient": "Patientenakte",
+      "currency": "Währung",
+      "validUntil": "Gültig bis",
+      "sentAt": "Gesendet",
+      "depositType": "Anzahlung",
+      "notes": "Hinweise für den Patienten",
+      "terms": "Bedingungen",
+      "totals": "Total",
+      "lines": "Positionen",
+      "phases": "Phasen (Reisen zur Praxis)"
     }
   }
 }

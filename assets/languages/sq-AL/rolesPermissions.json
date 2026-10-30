@@ -5,7 +5,11 @@
     "Clinicservices": "Trajtimet",
     "Practitioners": "Anëtarët e ekipit",
     "Scheduleexceptions": "Mungesë",
-    "Appointments": "Takime"
+    "Appointments": "Takime",
+    "Patients": "Pacientët",
+    "Clinicinquiries": "Kërkesat për ofertë",
+    "Clinicmessages": "Mesazhe me pacientët",
+    "Treatmentplans": "Planet e trajtimit"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -31,7 +35,18 @@
       "rescheduleDeadlineHours": "Afati i zhvendosjes (orë)",
       "retentionMonths": "Ruajtja (muaj)",
       "slotIntervalMinutes": "Intervali i orareve (minuta)",
-      "updatedAt": "Përditësuar më"
+      "updatedAt": "Përditësuar më",
+      "inquiriesEnabled": "Prano kërkesa për ofertë",
+      "inquiryNotifyUsers": "Njofto këta persona për kërkesa dhe mesazhe të reja",
+      "responseTargetHours": "Përgjigju brenda (orësh)",
+      "languagesSpoken": "Gjuhët që flitet",
+      "implantBrands": "Markat e implanteve",
+      "nearestAirport": "Aeroporti më i afërt",
+      "profileTexts": "Tekste sipas gjuhës",
+      "accreditations": "Akreditime dhe anëtarësi",
+      "gallery": "Foto të klinikës",
+      "quoteValidityDays": "Ofertat të vlefshme (ditë)",
+      "quoteTerms": "Kushtet standarde të ofertave"
     },
     "Cliniclocations": {
       "address": "Adresa",
@@ -64,7 +79,9 @@
       "priceType": "Lloji i çmimit",
       "slug": "Emri i adresës web",
       "sortOrder": "Renditja",
-      "updatedAt": "Përditësuar më"
+      "updatedAt": "Përditësuar më",
+      "category": "Lloji i trajtimit",
+      "perTooth": "Çmim për dhëmb"
     },
     "Practitioners": {
       "bio": "Biografia",
@@ -127,7 +144,60 @@
       "startAt": "Fillimi",
       "status": "Statusi",
       "timeline": "Kronologjia",
-      "updatedAt": "Përditësuar më"
+      "updatedAt": "Përditësuar më",
+      "patientRecord": "Kartela e pacientit"
+    },
+    "Patients": {
+      "number": "Nr. pacienti",
+      "firstName": "Emri",
+      "lastName": "Mbiemri",
+      "dateOfBirth": "Datëlindja",
+      "sex": "Gjinia",
+      "email": "Email",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "preferredLanguage": "Gjuha",
+      "address": "Adresa",
+      "emergencyContact": "Kontakt urgjence",
+      "homeDentist": "Dentisti në vendlindje",
+      "source": "Burimi",
+      "tags": "Etiketa",
+      "notes": "Shënime",
+      "account": "Llogaria në portal",
+      "createdAt": "Krijuar më",
+      "updatedAt": "Përditësuar më",
+      "createdBy": "Krijuar nga",
+      "patients": "Pacientët"
+    },
+    "Clinicinquiries": {
+      "clinicinquiries": "Kërkesat për ofertë",
+      "status": "Statusi",
+      "assignedTo": "Caktuar te",
+      "contact": "Pacienti",
+      "files": "Skedarët"
+    },
+    "Clinicmessages": {
+      "clinicmessages": "Mesazhe me pacientët",
+      "body": "Mesazhi",
+      "attachments": "Skedarët"
+    },
+    "Treatmentplans": {
+      "treatmentplans": "Planet e trajtimit",
+      "number": "Nr. oferte",
+      "status": "Statusi",
+      "optionLabel": "Opsioni",
+      "version": "Versioni",
+      "inquiry": "Kërkesa",
+      "patient": "Kartela e pacientit",
+      "currency": "Monedha",
+      "validUntil": "E vlefshme deri",
+      "sentAt": "Dërguar",
+      "depositType": "Paradhënia",
+      "notes": "Shënime për pacientin",
+      "terms": "Kushtet",
+      "totals": "Totali",
+      "lines": "Rreshtat me çmim",
+      "phases": "Fazat (udhëtime në klinikë)"
     }
   }
 }

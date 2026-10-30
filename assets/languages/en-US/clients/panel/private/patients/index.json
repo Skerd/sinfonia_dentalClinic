@@ -1,0 +1,51 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/index.tsx",
+  "title": "Patients",
+  "description": "Every patient's folder: contact, language and where they came from",
+  "help": {
+    "ariaLabel": "About patients",
+    "title": "About patients",
+    "overview": "A patient folder holds everything about one person at your clinic. Bookings made online or by staff land in the same folder, matched by portal account or by email and full name.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Patients from the portal and online bookings are added for you.",
+          "Set the language: emails, quotes and the handover for their home dentist are written in it.",
+          "Keep medical findings out of the notes field; clinical notes come with the clinical folder."
+        ]
+      }
+    ]
+  },
+  "create": "Add patient",
+  "searchPlaceholder": "Search patients or add filters...",
+  "noData": "No patients yet",
+  "failTitle": "Failed to load patients",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "fields": {
+    "number": "Patient no.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "dateOfBirth": "Date of birth",
+    "sex": "Sex",
+    "email": "Email",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "preferredLanguage": "Language",
+    "address": "Address",
+    "emergencyContact": "Emergency contact",
+    "homeDentist": "Home dentist",
+    "source": "Came from",
+    "tags": "Tags",
+    "notes": "Notes",
+    "account": "Portal account",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by",
+    "address.country": "Country",
+    "address.city": "City"
+  }
+}

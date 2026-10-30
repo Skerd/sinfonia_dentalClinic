@@ -1,0 +1,35 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/myDentalCases.tsx",
+  "none": "Ende nuk keni kërkuar ofertë.",
+  "start": "Kërkoni oferta",
+  "actionNeeded": "Duhen skedarë",
+  "unread": "{count} të reja",
+  "open": "Hap",
+  "treatment": {
+    "checkup": "Kontroll",
+    "hygiene": "Higjienë dentare",
+    "whitening": "Zbardhim",
+    "filling": "Mbushje",
+    "root_canal": "Mjekim kanali",
+    "extraction": "Heqje dhëmbi",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Kurorë",
+    "bridge": "Urë",
+    "veneer": "Faset",
+    "denture": "Protezë",
+    "orthodontics": "Ortodonci",
+    "bone_graft": "Shtim kockor / ngritje sinusi",
+    "other": "Tjetër"
+  },
+  "status": {
+    "new": "Dërguar",
+    "in_review": "Klinika po shqyrton",
+    "info_requested": "Klinika kërkon më shumë",
+    "declined": "Klinika refuzoi",
+    "lost": "Mbyllur",
+    "withdrawn": "Tërhequr",
+    "converted": "Jeni pacient këtu",
+    "quoted": "Oferta u mor"
+  }
+}

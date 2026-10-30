@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/actions/inquiryMenu.tsx",
+  "startReview": "Inizia la valutazione",
+  "requestInfo": "Chiedi radiografie o documenti",
+  "convert": "Apri cartella paziente",
+  "assign": "Assegna",
+  "decline": "Rifiuta",
+  "markLost": "Segna come persa"
+}

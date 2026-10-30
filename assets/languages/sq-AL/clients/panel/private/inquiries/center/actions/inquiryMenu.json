@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/actions/inquiryMenu.tsx",
+  "startReview": "Fillo shqyrtimin",
+  "requestInfo": "Kërko radiografi ose dokumente",
+  "convert": "Hap kartelën e pacientit",
+  "assign": "Cakto",
+  "decline": "Refuzo",
+  "markLost": "Shëno si të humbur"
+}

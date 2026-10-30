@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx",
+  "number": "N. preventivo",
+  "status": "Stato",
+  "optionLabel": "Opzione",
+  "version": "Versione",
+  "inquiry": "Richiesta",
+  "patient": "Cartella paziente",
+  "currency": "Valuta",
+  "validUntil": "Valido fino al",
+  "sentAt": "Inviato",
+  "depositType": "Acconto",
+  "notes": "Note per il paziente",
+  "terms": "Condizioni",
+  "totals": "Totale",
+  "planSubtitle": "Piano di cura e preventivo",
+  "overview": "Panoramica",
+  "textsGroup": "Note e condizioni",
+  "lifecycle": "Ciclo di vita",
+  "createdAt": "Creato il",
+  "updatedAt": "Aggiornato il",
+  "createdBy": "Creato da",
+  "deletedAt": "Eliminato il",
+  "deletedBy": "Eliminato da",
+  "statusValues": {
+    "draft": "Bozza",
+    "sent": "Inviato",
+    "accepted": "Accettato",
+    "rejected": "Non scelto",
+    "expired": "Scaduto",
+    "superseded": "Sostituito"
+  },
+  "depositTypeValues": {
+    "none": "Nessun acconto",
+    "fixed": "Importo fisso",
+    "percent": "Percentuale del totale"
+  }
+}

@@ -39,6 +39,7 @@
     "deletedAt": "Gelöscht am",
     "deletedBy": "Gelöscht von",
     "endAt": "Endet",
-    "customer": "Patientenkonto"
+    "customer": "Patientenkonto",
+    "patientRecord": "Patientenakte"
   }
 }

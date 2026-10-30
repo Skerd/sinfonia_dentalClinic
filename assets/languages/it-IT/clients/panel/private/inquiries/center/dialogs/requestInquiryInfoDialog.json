@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/requestInquiryInfoDialog.tsx",
+  "title": "Chiedi radiografie o documenti",
+  "description": "Il paziente riceve un'email e vede cosa ti serve nel suo account. Solo la tua clinica vede ciò che invia.",
+  "confirm": "Invia richiesta",
+  "noteLabel": "Nota per il paziente (facoltativa)",
+  "notePlaceholder": "es. Una panoramica degli ultimi 6 mesi",
+  "cancel": "Annulla",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Richiesta aggiornata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiornare la richiesta",
+      "time": 3000
+    }
+  },
+  "kind": {
+    "opg": "Panoramica (OPG)",
+    "cbct": "TAC 3D (CBCT)",
+    "photos": "Foto dei denti",
+    "medical_history": "Anamnesi",
+    "other": "Altri documenti"
+  }
+}

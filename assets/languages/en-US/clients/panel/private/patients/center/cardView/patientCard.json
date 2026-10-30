@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/center/cardView/patientCard.tsx",
+  "failedTitle": "Failed to load patient",
+  "failedDescription": "Tap to retry.",
+  "email": "Email",
+  "phone": "Phone",
+  "country": "Country",
+  "preferredLanguage": "Language",
+  "languageValues": {
+    "it-IT": "Italian",
+    "en-US": "English",
+    "de-CH": "German",
+    "fr-FR": "French",
+    "sq-AL": "Albanian"
+  }
+}

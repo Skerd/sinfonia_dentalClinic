@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/convertInquiryDialog.tsx",
+  "title": "Patientenakte eröffnen",
+  "description": "Eröffnet die Patientenakte in dieser Praxis (oder verknüpft die bestehende) und schliesst die Anfrage als gewonnen.",
+  "confirm": "Patientenakte eröffnen",
+  "cancel": "Abbrechen",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anfrage aktualisiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Anfrage konnte nicht aktualisiert werden",
+      "time": 3000
+    }
+  }
+}

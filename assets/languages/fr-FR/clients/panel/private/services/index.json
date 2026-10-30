@@ -41,6 +41,8 @@
     "deletedBy": "Supprimé par",
     "bufferAfterMinutes": "Nettoyage (min)",
     "bufferBeforeMinutes": "Préparation (min)",
-    "isPublic": "Sur le site web"
+    "isPublic": "Sur le site web",
+    "category": "Type de soin",
+    "perTooth": "Prix par dent"
   }
 }

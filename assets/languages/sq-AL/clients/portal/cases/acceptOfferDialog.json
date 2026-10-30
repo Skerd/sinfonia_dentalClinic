@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/acceptOfferDialog.tsx",
+  "title": "Prano ofertën e {clinic}",
+  "description": "Totali {total}. Lexoni para se të konfirmoni:",
+  "pointContact": "Kjo klinikë do të shohë emrin e plotë, email-in dhe telefonat për të planifikuar vizitën.",
+  "pointOthers": "Klinikat e tjera njoftohen; ofertat e tyre mbyllen.",
+  "pointProvisional": "Plani dhe çmimi përfundimtar konfirmohen pas vizitës.",
+  "signedName": "Emri juaj i plotë, si nënshkrim",
+  "agree": "E pranoj këtë ofertë dhe kushtet e saj.",
+  "failed": "Oferta nuk u pranua. Mund të ketë skaduar.",
+  "cancel": "Anulo",
+  "confirm": "Prano ofertën"
+}

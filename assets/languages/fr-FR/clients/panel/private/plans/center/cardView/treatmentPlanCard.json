@@ -1,0 +1,17 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/cardView/treatmentPlanCard.tsx",
+  "failedTitle": "Impossible de charger le devis",
+  "failedDescription": "Touchez pour réessayer.",
+  "optionLabel": "Option",
+  "inquiry": "Demande de devis",
+  "status": "Statut",
+  "total": "Total",
+  "statusValues": {
+    "draft": "Brouillon",
+    "sent": "Envoyé",
+    "accepted": "Accepté",
+    "rejected": "Non retenu",
+    "expired": "Expiré",
+    "superseded": "Remplacé"
+  }
+}

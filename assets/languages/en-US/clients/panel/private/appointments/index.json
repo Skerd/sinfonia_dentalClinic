@@ -39,6 +39,7 @@
     "deletedAt": "Deleted at",
     "deletedBy": "Deleted by",
     "endAt": "Ends",
-    "customer": "Patient account"
+    "customer": "Patient account",
+    "patientRecord": "Patient folder"
   }
 }

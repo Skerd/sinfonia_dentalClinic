@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/startReviewInquiryDialog.tsx",
+  "title": "Inizia la valutazione",
+  "description": "La richiesta passa in valutazione. Conta come la tua prima risposta.",
+  "confirm": "Inizia la valutazione",
+  "cancel": "Annulla",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Richiesta aggiornata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiornare la richiesta",
+      "time": 3000
+    }
+  }
+}

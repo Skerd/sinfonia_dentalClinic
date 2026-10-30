@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/markLostInquiryDialog.tsx",
+  "title": "Marquer comme perdue",
+  "description": "Le patient a choisi un autre cabinet ou ne répond plus. Il n'est pas prévenu. Vous perdez l'accès à ses fichiers.",
+  "confirm": "Marquer comme perdue",
+  "reasonLabel": "Note interne (facultatif)",
+  "reasonPlaceholder": "ex. A choisi un cabinet à Durrës",
+  "cancel": "Annuler",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Demande mise à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "La demande n'a pas pu être mise à jour",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/cardView/clinicInquiryCard.tsx",
+  "failedTitle": "Impossible de charger la demande",
+  "failedDescription": "Touchez pour réessayer.",
+  "patient": "Patient",
+  "country": "Pays",
+  "status": "Statut",
+  "unread": "Messages non lus",
+  "statusValues": {
+    "new": "Nouvelle",
+    "in_review": "En cours d'examen",
+    "info_requested": "En attente du patient",
+    "declined": "Refusée",
+    "lost": "Perdue",
+    "withdrawn": "Retirée",
+    "converted": "Dossier ouvert",
+    "quoted": "Devis envoyé"
+  }
+}

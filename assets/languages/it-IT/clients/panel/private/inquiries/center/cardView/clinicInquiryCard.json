@@ -1,0 +1,19 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/cardView/clinicInquiryCard.tsx",
+  "failedTitle": "Impossibile caricare la richiesta",
+  "failedDescription": "Tocca per riprovare.",
+  "patient": "Paziente",
+  "country": "Paese",
+  "status": "Stato",
+  "unread": "Messaggi non letti",
+  "statusValues": {
+    "new": "Nuova",
+    "in_review": "In valutazione",
+    "info_requested": "In attesa del paziente",
+    "declined": "Rifiutata",
+    "lost": "Persa",
+    "withdrawn": "Ritirata",
+    "converted": "Cartella aperta",
+    "quoted": "Preventivo inviato"
+  }
+}

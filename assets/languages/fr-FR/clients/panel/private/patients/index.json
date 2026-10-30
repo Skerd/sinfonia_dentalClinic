@@ -1,0 +1,51 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/index.tsx",
+  "title": "Patients",
+  "description": "Le dossier de chaque patient : coordonnées, langue et origine",
+  "help": {
+    "ariaLabel": "À propos des patients",
+    "title": "À propos des patients",
+    "overview": "Un dossier patient réunit tout ce qui concerne une personne dans votre cabinet. Les réservations en ligne ou par l'équipe arrivent dans le même dossier, rattachées par le compte portail ou par l'e-mail et le nom complet.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Les patients du portail et des réservations en ligne sont ajoutés automatiquement.",
+          "Choisissez la langue : e-mails, devis et compte rendu pour leur dentiste habituel sont rédigés dans celle-ci.",
+          "Ne mettez pas de constats médicaux dans les notes ; ils vont dans les notes cliniques."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un patient",
+  "searchPlaceholder": "Rechercher des patients ou ajouter des filtres...",
+  "noData": "Aucun patient pour l'instant",
+  "failTitle": "Impossible de charger les patients",
+  "failDescription": "Une erreur s'est produite. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "fields": {
+    "number": "N° patient",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "dateOfBirth": "Date de naissance",
+    "sex": "Sexe",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "whatsapp": "WhatsApp",
+    "preferredLanguage": "Langue",
+    "address": "Adresse",
+    "emergencyContact": "Contact d'urgence",
+    "homeDentist": "Dentiste habituel",
+    "source": "Origine",
+    "tags": "Étiquettes",
+    "notes": "Notes",
+    "account": "Compte portail",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par",
+    "address.country": "Pays",
+    "address.city": "Ville"
+  }
+}

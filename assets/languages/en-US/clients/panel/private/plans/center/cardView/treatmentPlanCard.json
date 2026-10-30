@@ -1,0 +1,17 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/cardView/treatmentPlanCard.tsx",
+  "failedTitle": "Failed to load quote",
+  "failedDescription": "Tap to retry.",
+  "optionLabel": "Option",
+  "inquiry": "Estimate request",
+  "status": "Status",
+  "total": "Total",
+  "statusValues": {
+    "draft": "Draft",
+    "sent": "Sent",
+    "accepted": "Accepted",
+    "rejected": "Not chosen",
+    "expired": "Expired",
+    "superseded": "Replaced"
+  }
+}

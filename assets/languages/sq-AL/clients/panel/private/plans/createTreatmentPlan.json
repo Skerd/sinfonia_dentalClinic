@@ -1,0 +1,98 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/createTreatmentPlan.tsx",
+  "title": "Ofertë e re",
+  "description": "Plan trajtimi dhe çmim për një pacient ose kërkesë",
+  "formHeader": {
+    "title": "Ofertë e re",
+    "description": "Plan trajtimi dhe çmim për një pacient ose kërkesë"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Krijo"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Oferta u ruajt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Oferta nuk u ruajt. Kontrolloni formularin.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "inquiryLabel": "Kërkesa",
+    "inquiryPlaceholder": "Kërkesa që i përgjigjet",
+    "patientLabel": "Kartela e pacientit",
+    "patientPlaceholder": "Ose një pacient i klinikës",
+    "targetHint": "Zgjidhni kërkesën që i përgjigjet oferta, ose pacientin.",
+    "optionLabelLabel": "Opsioni",
+    "optionLabelPlaceholder": "p.sh. Implante Straumann",
+    "phasesSectionTitle": "Fazat (udhëtime në klinikë)",
+    "phasesAddRow": "Shto fazë",
+    "phasesRemoveRow": "Hiq",
+    "phasesRowTitle": "Faza",
+    "phaseTitleLabel": "Titulli",
+    "phaseTitlePlaceholder": "p.sh. Vendosja e implanteve",
+    "phaseVisitsLabel": "Vizita",
+    "phaseVisitsPlaceholder": "p.sh. 2",
+    "phaseDaysLabel": "Ditë qëndrim",
+    "phaseDaysPlaceholder": "p.sh. 5",
+    "phaseGapLabel": "Ditë shërimi më parë",
+    "phaseGapPlaceholder": "p.sh. 90",
+    "linesSectionTitle": "Rreshtat me çmim",
+    "linesAddRow": "Shto rresht",
+    "linesRemoveRow": "Hiq",
+    "linesRowTitle": "Rresht",
+    "linePhaseLabel": "Faza nr.",
+    "linePhasePlaceholder": "1",
+    "lineKindLabel": "Lloji",
+    "lineServiceLabel": "Nga lista e çmimeve",
+    "lineServicePlaceholder": "Opsionale",
+    "lineNameLabel": "Përshkrimi",
+    "lineNamePlaceholder": "p.sh. Implant me abutment",
+    "lineTeethLabel": "Dhëmbët (FDI)",
+    "toothPickerPrimary": "Dhëmbë qumështi",
+    "toothPickerPermanent": "Dhëmbë të përhershëm",
+    "lineMaterialLabel": "Materiali",
+    "lineMaterialPlaceholder": "p.sh. Zirkon",
+    "lineBrandLabel": "Marka",
+    "lineBrandPlaceholder": "p.sh. Straumann",
+    "lineWarrantyLabel": "Garancia (vite)",
+    "lineWarrantyPlaceholder": "p.sh. 10",
+    "lineQuantityLabel": "Sasia",
+    "lineQuantityPlaceholder": "1",
+    "lineUnitPriceLabel": "Çmimi për njësi",
+    "lineUnitPricePlaceholder": "0",
+    "lineDiscountLabel": "Zbritje",
+    "lineDiscountPlaceholder": "Opsionale",
+    "depositSectionTitle": "Paradhënia dhe vlefshmëria",
+    "depositTypeLabel": "Paradhënia",
+    "depositTypePlaceholder": "Zgjidhni",
+    "depositValueLabel": "Shuma ose përqindja",
+    "depositValuePlaceholder": "p.sh. 10",
+    "refundableUntilDaysLabel": "E rimbursueshme deri (ditë para)",
+    "refundableUntilDaysPlaceholder": "p.sh. 14",
+    "validUntilLabel": "E vlefshme deri",
+    "validUntilPlaceholder": "Bosh: parazgjedhja e klinikës",
+    "textsSectionTitle": "Shënime dhe kushte",
+    "notesLabel": "Shënime për pacientin",
+    "notesPlaceholder": "Çfarë duhet të dijë pacienti",
+    "termsLabel": "Kushtet",
+    "termsPlaceholder": "Pagesa, anulimi, çfarë përfshihet",
+    "disclaimerHint": "Pacientëve u thuhet se ofertat janë paraprake deri në vizitë.",
+    "depositType": {
+      "none": "Pa paradhënie",
+      "fixed": "Shumë fikse",
+      "percent": "Përqindje e totalit"
+    },
+    "lineKind": {
+      "treatment": "Trajtim",
+      "package": "Paketë (hotel, transferim…)"
+    }
+  }
+}

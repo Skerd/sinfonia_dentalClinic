@@ -1,0 +1,35 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/myDentalCases.tsx",
+  "none": "Non hai ancora chiesto un preventivo.",
+  "start": "Chiedi preventivi",
+  "actionNeeded": "Servono file",
+  "unread": "{count} nuovi",
+  "open": "Apri",
+  "treatment": {
+    "checkup": "Controllo",
+    "hygiene": "Igiene dentale",
+    "whitening": "Sbiancamento",
+    "filling": "Otturazione",
+    "root_canal": "Devitalizzazione",
+    "extraction": "Estrazione",
+    "implant": "Impianto",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Corona",
+    "bridge": "Ponte",
+    "veneer": "Faccetta",
+    "denture": "Protesi mobile",
+    "orthodontics": "Ortodonzia",
+    "bone_graft": "Innesto osseo / rialzo del seno",
+    "other": "Altro"
+  },
+  "status": {
+    "new": "Inviata",
+    "in_review": "La clinica sta valutando",
+    "info_requested": "La clinica chiede altro",
+    "declined": "La clinica ha rifiutato",
+    "lost": "Chiusa",
+    "withdrawn": "Ritirata",
+    "converted": "Sei paziente qui",
+    "quoted": "Preventivo ricevuto"
+  }
+}

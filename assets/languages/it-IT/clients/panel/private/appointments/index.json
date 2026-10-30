@@ -39,6 +39,7 @@
     "deletedAt": "Eliminato il",
     "deletedBy": "Eliminato da",
     "endAt": "Termina",
-    "customer": "Account paziente"
+    "customer": "Account paziente",
+    "patientRecord": "Cartella paziente"
   }
 }

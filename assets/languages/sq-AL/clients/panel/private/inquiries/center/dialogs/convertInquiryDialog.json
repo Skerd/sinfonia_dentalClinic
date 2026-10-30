@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/convertInquiryDialog.tsx",
+  "title": "Hap kartelën e pacientit",
+  "description": "Hap kartelën e pacientit në këtë klinikë (ose lidh atë ekzistuese) dhe e mbyll kërkesën si të fituar.",
+  "confirm": "Hap kartelën e pacientit",
+  "cancel": "Anulo",
+  "axios": {
+    "start": {
+      "title": "Po ruhet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kërkesa u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kërkesa nuk u përditësua",
+      "time": 3000
+    }
+  }
+}

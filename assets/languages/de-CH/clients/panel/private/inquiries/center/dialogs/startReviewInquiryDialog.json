@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/startReviewInquiryDialog.tsx",
+  "title": "Prüfung beginnen",
+  "description": "Die Anfrage wird in Prüfung genommen. Das zählt als Ihre erste Antwort.",
+  "confirm": "Prüfung beginnen",
+  "cancel": "Abbrechen",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anfrage aktualisiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Anfrage konnte nicht aktualisiert werden",
+      "time": 3000
+    }
+  }
+}

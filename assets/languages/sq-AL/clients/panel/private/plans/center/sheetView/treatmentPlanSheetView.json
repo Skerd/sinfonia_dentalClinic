@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx",
+  "number": "Nr. oferte",
+  "status": "Statusi",
+  "optionLabel": "Opsioni",
+  "version": "Versioni",
+  "inquiry": "Kërkesa",
+  "patient": "Kartela e pacientit",
+  "currency": "Monedha",
+  "validUntil": "E vlefshme deri",
+  "sentAt": "Dërguar",
+  "depositType": "Paradhënia",
+  "notes": "Shënime për pacientin",
+  "terms": "Kushtet",
+  "totals": "Totali",
+  "planSubtitle": "Plan trajtimi dhe ofertë",
+  "overview": "Përmbledhje",
+  "textsGroup": "Shënime dhe kushte",
+  "lifecycle": "Cikli i jetës",
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga",
+  "statusValues": {
+    "draft": "Draft",
+    "sent": "Dërguar",
+    "accepted": "Pranuar",
+    "rejected": "Nuk u zgjodh",
+    "expired": "Skaduar",
+    "superseded": "Zëvendësuar"
+  },
+  "depositTypeValues": {
+    "none": "Pa paradhënie",
+    "fixed": "Shumë fikse",
+    "percent": "Përqindje e totalit"
+  }
+}

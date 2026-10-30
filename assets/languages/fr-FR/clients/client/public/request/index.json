@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/request/index.tsx",
+  "title": "Demander un devis",
+  "subtitle": "Dites-nous ce dont vous avez besoin et envoyez vos radios ; nous répondons dans votre langue.",
+  "unavailable": "Ce cabinet n'accepte pas de demandes de devis en ligne."
+}

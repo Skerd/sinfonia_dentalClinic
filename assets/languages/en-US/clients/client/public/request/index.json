@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/request/index.tsx",
+  "title": "Ask for an estimate",
+  "subtitle": "Tell us what you need and send your X-rays; we answer in your language.",
+  "unavailable": "This clinic does not take estimate requests online."
+}

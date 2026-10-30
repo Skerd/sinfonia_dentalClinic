@@ -1,0 +1,14 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryPlans.tsx",
+  "title": "Angebote",
+  "create": "Angebot erstellen",
+  "none": "Noch kein Angebot.",
+  "status": {
+    "draft": "Entwurf",
+    "sent": "Gesendet",
+    "accepted": "Angenommen",
+    "rejected": "Nicht gewählt",
+    "expired": "Abgelaufen",
+    "superseded": "Ersetzt"
+  }
+}

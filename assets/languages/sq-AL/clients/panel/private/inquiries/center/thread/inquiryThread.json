@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/thread/inquiryThread.tsx",
+  "title": "Biseda me pacientin",
+  "loading": "Po ngarkohen mesazhet…",
+  "empty": "Ende pa mesazhe. Shkruajini pacientit për të filluar.",
+  "clinic": "Klinika",
+  "patient": "Pacienti",
+  "placeholder": "Shkruajini pacientit (pa këshilla mjekësore para vizitës)…",
+  "attach": "Bashkëngjit",
+  "send": "Dërgo",
+  "loadError": "Mesazhet nuk u ngarkuan.",
+  "sendError": "Mesazhi nuk u dërgua. Provoni përsëri."
+}

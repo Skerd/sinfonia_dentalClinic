@@ -6,23 +6,40 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import {bookableServices, useClinicConfig} from "../shared/clinicConfigContext.tsx";
 import {priceLabel} from "../shared/clinicFormat.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
+import {usePortalSession} from "@coreModule/clients/portal/shared/portalSession.tsx";
+import ClinicProfileSection from "./clinicProfileSection.tsx";
 
 function HomePage({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();
     const {config, formatMoney} = useClinicConfig();
+    const {isAuthenticated} = usePortalSession();
     if (!config) return null;
-    const bookable = new Set(bookableServices(config).map((service) => service._id));
+    // Sending a request needs an account: signed-out visitors sign in or up first, then land on the form.
+    const requestHref = isAuthenticated ? `${base}/request` : `/login?next=${encodeURIComponent(`${base}/request`)}`;
+    const bookable = new Set(config.publicBookingEnabled ? bookableServices(config).map((service) => service._id) : []);
 
     return (
         <div className="flex flex-col gap-16 sm:gap-20">
             <section className="rounded-3xl bg-muted px-6 py-16 sm:px-12 sm:py-24">
-                <h1 className="font-display font-bold tracking-tight max-w-3xl text-4xl leading-[1.05] sm:text-6xl">{resolveLanguageKey("title")}</h1>
+                <h1 className="font-display font-bold tracking-tight max-w-3xl text-4xl leading-[1.05] sm:text-6xl">{config.profile.headline || resolveLanguageKey("title")}</h1>
                 <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">{resolveLanguageKey("subtitle")}</p>
-                <Button asChild size="lg" className="mt-8"><Link to={`${base}/book`}>
-                    {resolveLanguageKey("bookNow")}
-                    <ArrowRight className="h-4 w-4" aria-hidden />
-                </Link></Button>
+                <div className="mt-8 flex flex-wrap gap-3">
+                    {config.publicBookingEnabled ? (
+                        <Button asChild size="lg"><Link to={`${base}/book`}>
+                            {resolveLanguageKey("bookNow")}
+                            <ArrowRight className="h-4 w-4" aria-hidden />
+                        </Link></Button>
+                    ) : null}
+                    {config.inquiriesEnabled ? (
+                        <Button asChild size="lg" variant={config.publicBookingEnabled ? "outline" : "default"}><Link to={requestHref}>
+                            {resolveLanguageKey("requestEstimate")}
+                            <ArrowRight className="h-4 w-4" aria-hidden />
+                        </Link></Button>
+                    ) : null}
+                </div>
             </section>
+
+            <ClinicProfileSection profile={config.profile} />
 
             {config.services.length ? (
                 <section className="flex flex-col gap-6">

@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/sendPlanDialog.tsx",
+  "title": "Dërgo ofertën",
+  "description": "Pacienti njoftohet me email dhe mund ta krahasojë e pranojë në llogari. Oferta e dërguar nuk ndryshohet më, vetëm rishikohet.",
+  "confirm": "Dërgoja pacientit",
+  "cancel": "Anulo",
+  "axios": {
+    "start": {
+      "title": "Po ruhet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Oferta u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Oferta nuk u përditësua",
+      "time": 3000
+    }
+  }
+}

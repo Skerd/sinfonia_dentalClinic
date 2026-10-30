@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/assignInquiryDialog.tsx",
+  "title": "Assegna la richiesta",
+  "description": "Chi risponde a questo paziente. Viene avvisato di nuovi messaggi e file. Lascia vuoto per togliere l'assegnazione.",
+  "confirm": "Assegna",
+  "userLabel": "Assegnata a",
+  "userPlaceholder": "Seleziona un collega",
+  "cancel": "Annulla",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Richiesta aggiornata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiornare la richiesta",
+      "time": 3000
+    }
+  }
+}

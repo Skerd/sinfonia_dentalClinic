@@ -7,6 +7,15 @@
     "appointments": {
       "title": "Termine"
     },
+    "inquiries": {
+      "title": "Kostenanfragen"
+    },
+    "plans": {
+      "title": "Behandlungspläne"
+    },
+    "patients": {
+      "title": "Patienten"
+    },
     "team": {
       "title": "Team"
     },

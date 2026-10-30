@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryRequestDetails.tsx",
+  "treatmentsTitle": "Gewünschte Behandlungen",
+  "infoRequestsTitle": "Vom Patienten angefordert",
+  "requestedOn": "Angefordert am",
+  "fulfilledOn": "Erhalten am",
+  "treatment": {
+    "checkup": "Kontrolle",
+    "hygiene": "Dentalhygiene",
+    "whitening": "Bleaching",
+    "filling": "Füllung",
+    "root_canal": "Wurzelbehandlung",
+    "extraction": "Extraktion",
+    "implant": "Implantat",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Krone",
+    "bridge": "Brücke",
+    "veneer": "Veneer",
+    "denture": "Prothese",
+    "orthodontics": "Kieferorthopädie",
+    "bone_graft": "Knochenaufbau / Sinuslift",
+    "other": "Andere"
+  },
+  "kind": {
+    "opg": "Panoramaröntgen (OPG)",
+    "cbct": "3D-Aufnahme (DVT)",
+    "photos": "Fotos der Zähne",
+    "medical_history": "Anamnese",
+    "other": "Weitere Unterlagen"
+  }
+}

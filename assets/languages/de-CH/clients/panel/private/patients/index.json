@@ -1,0 +1,51 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/index.tsx",
+  "title": "Patienten",
+  "description": "Die Akte jeder Person: Kontakt, Sprache und Herkunft",
+  "help": {
+    "ariaLabel": "Über Patienten",
+    "title": "Über Patienten",
+    "overview": "Eine Patientenakte bündelt alles zu einer Person in Ihrer Praxis. Online- und Telefonbuchungen landen in derselben Akte, zugeordnet über das Portal-Konto oder E-Mail und Namen.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Personen aus dem Portal und aus Online-Buchungen werden automatisch angelegt.",
+          "Legen Sie die Sprache fest: E-Mails, Angebote und der Bericht für den Zahnarzt zu Hause werden darin verfasst.",
+          "Medizinische Befunde gehören nicht ins Notizfeld; dafür gibt es klinische Notizen."
+        ]
+      }
+    ]
+  },
+  "create": "Patient hinzufügen",
+  "searchPlaceholder": "Patienten suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Patienten",
+  "failTitle": "Patienten konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist ein Fehler aufgetreten. Bitte erneut versuchen.",
+  "deleted": "Gelöscht",
+  "fields": {
+    "number": "Patienten-Nr.",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "dateOfBirth": "Geburtsdatum",
+    "sex": "Geschlecht",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp",
+    "preferredLanguage": "Sprache",
+    "address": "Adresse",
+    "emergencyContact": "Notfallkontakt",
+    "homeDentist": "Zahnarzt zu Hause",
+    "source": "Herkunft",
+    "tags": "Schlagwörter",
+    "notes": "Notizen",
+    "account": "Portal-Konto",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von",
+    "address.country": "Land",
+    "address.city": "Ort"
+  }
+}

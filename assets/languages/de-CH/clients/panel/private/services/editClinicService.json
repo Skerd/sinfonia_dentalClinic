@@ -42,7 +42,27 @@
       "free": "Kostenlos"
     },
     "sortOrderLabel": "Sortierung",
-    "sortOrderPlaceholder": "Sortierung eingeben"
+    "sortOrderPlaceholder": "Sortierung eingeben",
+    "categoryLabel": "Behandlungsart",
+    "categoryPlaceholder": "Behandlungsart wählen",
+    "perToothLabel": "Preis pro Zahn",
+    "category": {
+      "checkup": "Kontrolle",
+      "hygiene": "Dentalhygiene",
+      "whitening": "Bleaching",
+      "filling": "Füllung",
+      "root_canal": "Wurzelbehandlung",
+      "extraction": "Extraktion",
+      "implant": "Implantat",
+      "all_on_x": "All-on-4 / All-on-6",
+      "crown": "Krone",
+      "bridge": "Brücke",
+      "veneer": "Veneer",
+      "denture": "Prothese",
+      "orthodontics": "Kieferorthopädie",
+      "bone_graft": "Knochenaufbau / Sinuslift",
+      "other": "Andere"
+    }
   },
   "axios": {
     "start": {

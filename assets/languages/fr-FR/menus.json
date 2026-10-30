@@ -7,6 +7,15 @@
     "appointments": {
       "title": "Rendez-vous"
     },
+    "inquiries": {
+      "title": "Demandes de devis"
+    },
+    "plans": {
+      "title": "Plans de traitement"
+    },
+    "patients": {
+      "title": "Patients"
+    },
     "team": {
       "title": "Équipe"
     },

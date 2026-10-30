@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/actions/inquiryMenu.tsx",
+  "startReview": "Prüfung beginnen",
+  "requestInfo": "Röntgenbilder oder Unterlagen anfordern",
+  "convert": "Patientenakte eröffnen",
+  "assign": "Zuweisen",
+  "decline": "Ablehnen",
+  "markLost": "Als verloren markieren"
+}

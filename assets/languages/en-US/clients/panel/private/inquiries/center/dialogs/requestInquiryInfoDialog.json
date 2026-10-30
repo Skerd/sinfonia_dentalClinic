@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/requestInquiryInfoDialog.tsx",
+  "title": "Ask for X-rays or documents",
+  "description": "The patient gets an email and sees what you need in their account. Only your clinic sees what they send.",
+  "confirm": "Send request",
+  "noteLabel": "Note for the patient (optional)",
+  "notePlaceholder": "e.g. A panoramic from the last 6 months",
+  "cancel": "Cancel",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Request updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The request could not be updated",
+      "time": 3000
+    }
+  },
+  "kind": {
+    "opg": "Panoramic X-ray (OPG)",
+    "cbct": "3D scan (CBCT)",
+    "photos": "Photos of the teeth",
+    "medical_history": "Medical history",
+    "other": "Other documents"
+  }
+}

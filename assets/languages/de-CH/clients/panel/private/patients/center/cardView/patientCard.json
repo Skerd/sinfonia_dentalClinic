@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/center/cardView/patientCard.tsx",
+  "failedTitle": "Patient konnte nicht geladen werden",
+  "failedDescription": "Tippen, um es erneut zu versuchen.",
+  "email": "E-Mail",
+  "phone": "Telefon",
+  "country": "Land",
+  "preferredLanguage": "Sprache",
+  "languageValues": {
+    "it-IT": "Italienisch",
+    "en-US": "Englisch",
+    "de-CH": "Deutsch",
+    "fr-FR": "Französisch",
+    "sq-AL": "Albanisch"
+  }
+}

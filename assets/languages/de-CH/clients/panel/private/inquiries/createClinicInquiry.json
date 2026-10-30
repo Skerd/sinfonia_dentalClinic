@@ -1,0 +1,95 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
+  "title": "Lead hinzufügen",
+  "description": "Ein Patient, der angerufen, per WhatsApp geschrieben hat oder über eine Agentur kam",
+  "formHeader": {
+    "title": "Lead hinzufügen",
+    "description": "Ein Patient, der angerufen, per WhatsApp geschrieben hat oder über eine Agentur kam"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Hinzufügen"
+  },
+  "axios": {
+    "start": {
+      "title": "Lead wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Lead hinzugefügt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Der Lead konnte nicht hinzugefügt werden. Prüfen Sie das Formular.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "contactSectionTitle": "Patient",
+    "requestSectionTitle": "Anfrage",
+    "firstNameLabel": "Vorname",
+    "firstNamePlaceholder": "Vorname eingeben",
+    "lastNameLabel": "Nachname",
+    "lastNamePlaceholder": "Nachname eingeben",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "E-Mail eingeben",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "z. B. +41 79 123 45 67",
+    "whatsappLabel": "WhatsApp",
+    "whatsappPlaceholder": "Falls abweichend vom Telefon",
+    "countryLabel": "Land",
+    "countryPlaceholder": "Land wählen",
+    "preferredLanguageLabel": "Sprache",
+    "preferredLanguagePlaceholder": "Sprache wählen",
+    "sourceLabel": "Wie sie Sie erreicht haben",
+    "sourcePlaceholder": "Auswählen",
+    "treatmentsWantedLabel": "Gewünschte Behandlungen",
+    "descriptionLabel": "Was benötigt wird",
+    "descriptionPlaceholder": "Was der Patient erzählt hat",
+    "travelFromLabel": "Reise ab",
+    "travelFromPlaceholder": "Datum wählen",
+    "travelToLabel": "Reise bis",
+    "travelToPlaceholder": "Datum wählen",
+    "budgetLabel": "Budget",
+    "budgetPlaceholder": "Optional",
+    "budgetCurrencyLabel": "Budgetwährung",
+    "budgetCurrencyPlaceholder": "Währung wählen",
+    "assignedToLabel": "Zugewiesen an",
+    "assignedToPlaceholder": "Kollegen wählen",
+    "language": {
+      "it-IT": "Italienisch",
+      "en-US": "Englisch",
+      "de-CH": "Deutsch",
+      "fr-FR": "Französisch",
+      "sq-AL": "Albanisch"
+    },
+    "source": {
+      "portal": "Portal",
+      "clinic_site": "Praxis-Website",
+      "booking": "Online-Buchung",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "walk_in": "Ohne Termin",
+      "referral": "Empfehlung",
+      "agency": "Agentur",
+      "other": "Andere"
+    },
+    "treatment": {
+      "checkup": "Kontrolle",
+      "hygiene": "Dentalhygiene",
+      "whitening": "Bleaching",
+      "filling": "Füllung",
+      "root_canal": "Wurzelbehandlung",
+      "extraction": "Extraktion",
+      "implant": "Implantat",
+      "all_on_x": "All-on-4 / All-on-6",
+      "crown": "Krone",
+      "bridge": "Brücke",
+      "veneer": "Veneer",
+      "denture": "Prothese",
+      "orthodontics": "Kieferorthopädie",
+      "bone_graft": "Knochenaufbau / Sinuslift",
+      "other": "Andere"
+    }
+  }
+}

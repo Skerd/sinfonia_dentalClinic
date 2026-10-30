@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/declineInquiryDialog.tsx",
+  "title": "Rifiuta la richiesta",
+  "description": "Il paziente viene informato che non puoi aiutarlo, con il motivo se lo indichi. Perdi l'accesso ai suoi file.",
+  "confirm": "Rifiuta",
+  "reasonLabel": "Motivo per il paziente (facoltativo)",
+  "reasonPlaceholder": "es. Non offriamo questo trattamento",
+  "cancel": "Annulla",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Richiesta aggiornata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiornare la richiesta",
+      "time": 3000
+    }
+  }
+}

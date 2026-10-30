@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/startReviewInquiryDialog.tsx",
+  "title": "Commencer l'examen",
+  "description": "La demande passe en examen. Cela compte comme votre première réponse.",
+  "confirm": "Commencer l'examen",
+  "cancel": "Annuler",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Demande mise à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "La demande n'a pas pu être mise à jour",
+      "time": 3000
+    }
+  }
+}

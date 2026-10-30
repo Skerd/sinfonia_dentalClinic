@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/center/cardView/patientCard.tsx",
+  "failedTitle": "Pacienti nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "email": "Email",
+  "phone": "Telefon",
+  "country": "Shteti",
+  "preferredLanguage": "Gjuha",
+  "languageValues": {
+    "it-IT": "Italisht",
+    "en-US": "Anglisht",
+    "de-CH": "Gjermanisht",
+    "fr-FR": "Frëngjisht",
+    "sq-AL": "Shqip"
+  }
+}

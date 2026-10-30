@@ -35,7 +35,9 @@
     "serviceLabel": "Trattamento",
     "servicePlaceholder": "Seleziona trattamento",
     "timeLabel": "Ora",
-    "visitSectionTitle": "Visita"
+    "visitSectionTitle": "Visita",
+    "patientRecordLabel": "Cartella paziente",
+    "patientRecordPlaceholder": "Facoltativo: un paziente esistente"
   },
   "axios": {
     "start": {

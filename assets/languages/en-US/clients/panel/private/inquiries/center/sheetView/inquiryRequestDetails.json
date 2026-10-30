@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryRequestDetails.tsx",
+  "treatmentsTitle": "Treatments wanted",
+  "infoRequestsTitle": "Asked from the patient",
+  "requestedOn": "Asked on",
+  "fulfilledOn": "Received on",
+  "treatment": {
+    "checkup": "Check-up",
+    "hygiene": "Cleaning & hygiene",
+    "whitening": "Whitening",
+    "filling": "Filling",
+    "root_canal": "Root canal",
+    "extraction": "Extraction",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Crown",
+    "bridge": "Bridge",
+    "veneer": "Veneer",
+    "denture": "Denture",
+    "orthodontics": "Orthodontics",
+    "bone_graft": "Bone graft / sinus lift",
+    "other": "Other"
+  },
+  "kind": {
+    "opg": "Panoramic X-ray (OPG)",
+    "cbct": "3D scan (CBCT)",
+    "photos": "Photos of the teeth",
+    "medical_history": "Medical history",
+    "other": "Other documents"
+  }
+}

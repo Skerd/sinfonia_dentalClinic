@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/actions/inquiryMenu.tsx",
+  "startReview": "Commencer l'examen",
+  "requestInfo": "Demander des radios ou documents",
+  "convert": "Ouvrir le dossier patient",
+  "assign": "Attribuer",
+  "decline": "Refuser",
+  "markLost": "Marquer comme perdue"
+}

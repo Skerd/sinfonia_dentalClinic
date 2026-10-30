@@ -35,7 +35,9 @@
     "serviceLabel": "Behandlung",
     "servicePlaceholder": "Behandlung auswählen",
     "timeLabel": "Zeit",
-    "visitSectionTitle": "Besuch"
+    "visitSectionTitle": "Besuch",
+    "patientRecordLabel": "Patientenakte",
+    "patientRecordPlaceholder": "Optional: bestehende Akte"
   },
   "axios": {
     "start": {

@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/assignInquiryDialog.tsx",
+  "title": "Anfrage zuweisen",
+  "description": "Wer diesem Patienten antwortet. Diese Person wird über neue Nachrichten und Dateien informiert. Leer lassen, um die Zuweisung aufzuheben.",
+  "confirm": "Zuweisen",
+  "userLabel": "Zugewiesen an",
+  "userPlaceholder": "Kollegen wählen",
+  "cancel": "Abbrechen",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anfrage aktualisiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Anfrage konnte nicht aktualisiert werden",
+      "time": 3000
+    }
+  }
+}

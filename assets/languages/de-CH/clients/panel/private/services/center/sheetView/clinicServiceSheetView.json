@@ -24,5 +24,24 @@
   "updatedAt": "Aktualisiert am",
   "createdBy": "Erstellt von",
   "deletedAt": "Gelöscht am",
-  "deletedBy": "Gelöscht von"
+  "deletedBy": "Gelöscht von",
+  "category": "Behandlungsart",
+  "perTooth": "Preis pro Zahn",
+  "categoryValues": {
+    "checkup": "Kontrolle",
+    "hygiene": "Dentalhygiene",
+    "whitening": "Bleaching",
+    "filling": "Füllung",
+    "root_canal": "Wurzelbehandlung",
+    "extraction": "Extraktion",
+    "implant": "Implantat",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Krone",
+    "bridge": "Brücke",
+    "veneer": "Veneer",
+    "denture": "Prothese",
+    "orthodontics": "Kieferorthopädie",
+    "bone_graft": "Knochenaufbau / Sinuslift",
+    "other": "Andere"
+  }
 }

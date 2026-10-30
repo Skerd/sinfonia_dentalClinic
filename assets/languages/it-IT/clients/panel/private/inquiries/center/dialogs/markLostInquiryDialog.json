@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/markLostInquiryDialog.tsx",
+  "title": "Segna come persa",
+  "description": "Il paziente ha scelto un'altra clinica o non risponde più. Non viene avvisato. Perdi l'accesso ai suoi file.",
+  "confirm": "Segna come persa",
+  "reasonLabel": "Nota interna (facoltativa)",
+  "reasonPlaceholder": "es. Ha scelto una clinica a Durazzo",
+  "cancel": "Annulla",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Richiesta aggiornata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiornare la richiesta",
+      "time": 3000
+    }
+  }
+}

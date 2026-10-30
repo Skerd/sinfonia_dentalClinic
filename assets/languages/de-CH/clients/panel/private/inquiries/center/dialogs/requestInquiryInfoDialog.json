@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/requestInquiryInfoDialog.tsx",
+  "title": "Röntgenbilder oder Unterlagen anfordern",
+  "description": "Der Patient erhält eine E-Mail und sieht in seinem Konto, was Sie benötigen. Nur Ihre Praxis sieht, was er sendet.",
+  "confirm": "Anforderung senden",
+  "noteLabel": "Hinweis für den Patienten (optional)",
+  "notePlaceholder": "z. B. Ein Panoramabild der letzten 6 Monate",
+  "cancel": "Abbrechen",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anfrage aktualisiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Anfrage konnte nicht aktualisiert werden",
+      "time": 3000
+    }
+  },
+  "kind": {
+    "opg": "Panoramaröntgen (OPG)",
+    "cbct": "3D-Aufnahme (DVT)",
+    "photos": "Fotos der Zähne",
+    "medical_history": "Anamnese",
+    "other": "Weitere Unterlagen"
+  }
+}

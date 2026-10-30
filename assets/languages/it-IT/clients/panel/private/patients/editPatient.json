@@ -1,0 +1,103 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/editPatient.tsx",
+  "title": "Modifica paziente",
+  "description": "Modifica i dati di questo paziente",
+  "formHeader": {
+    "title": "Modifica paziente",
+    "description": "Modifica i dati di questo paziente"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare le modifiche. Controlla il modulo.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "firstNameLabel": "Nome",
+    "firstNamePlaceholder": "Inserisci il nome",
+    "lastNameLabel": "Cognome",
+    "lastNamePlaceholder": "Inserisci il cognome",
+    "dateOfBirthLabel": "Data di nascita",
+    "dateOfBirthPlaceholder": "Scegli una data",
+    "sexLabel": "Sesso",
+    "sexPlaceholder": "Seleziona",
+    "preferredLanguageLabel": "Lingua per messaggi e documenti",
+    "preferredLanguagePlaceholder": "Seleziona una lingua",
+    "sourceLabel": "Come vi hanno trovato",
+    "sourcePlaceholder": "Seleziona",
+    "contactSectionTitle": "Contatti",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Inserisci l'email",
+    "phoneLabel": "Telefono",
+    "phonePlaceholder": "es. +39 333 123 4567",
+    "whatsappLabel": "WhatsApp",
+    "whatsappPlaceholder": "Se diverso dal telefono",
+    "countryLabel": "Paese",
+    "countryPlaceholder": "Seleziona un paese",
+    "cityLabel": "Città",
+    "cityPlaceholder": "Inserisci la città",
+    "streetLabel": "Via",
+    "streetPlaceholder": "Inserisci la via",
+    "postalCodeLabel": "CAP",
+    "postalCodePlaceholder": "Inserisci il CAP",
+    "emergencyContactSectionTitle": "Contatto di emergenza",
+    "emergencyContactNameLabel": "Nome",
+    "emergencyContactNamePlaceholder": "Inserisci il nome",
+    "emergencyContactPhoneLabel": "Telefono",
+    "emergencyContactPhonePlaceholder": "Inserisci il telefono",
+    "emergencyContactRelationLabel": "Relazione",
+    "emergencyContactRelationPlaceholder": "es. Coniuge",
+    "homeDentistSectionTitle": "Dentista di fiducia",
+    "homeDentistNameLabel": "Dentista",
+    "homeDentistNamePlaceholder": "Il dentista di fiducia",
+    "homeDentistPracticeLabel": "Studio",
+    "homeDentistPracticePlaceholder": "Inserisci lo studio",
+    "homeDentistEmailLabel": "Email",
+    "homeDentistEmailPlaceholder": "Inserisci l'email",
+    "homeDentistPhoneLabel": "Telefono",
+    "homeDentistPhonePlaceholder": "Inserisci il telefono",
+    "notesSectionTitle": "Etichette e note",
+    "tagsLabel": "Etichette",
+    "tagsPlaceholder": "es. VIP, parla italiano",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Preferenze di viaggio, come preferisce essere contattato…",
+    "notesHint": "Solo note amministrative. I dati clinici vanno nelle note cliniche.",
+    "removeItem": "Rimuovi",
+    "sex": {
+      "female": "Donna",
+      "male": "Uomo",
+      "other": "Altro",
+      "unspecified": "Preferisco non dirlo"
+    },
+    "language": {
+      "it-IT": "Italiano",
+      "en-US": "Inglese",
+      "de-CH": "Tedesco",
+      "fr-FR": "Francese",
+      "sq-AL": "Albanese"
+    },
+    "source": {
+      "portal": "Portale",
+      "clinic_site": "Sito della clinica",
+      "booking": "Prenotazione online",
+      "phone": "Telefono",
+      "whatsapp": "WhatsApp",
+      "walk_in": "Senza appuntamento",
+      "referral": "Passaparola",
+      "agency": "Agenzia",
+      "other": "Altro"
+    }
+  }
+}

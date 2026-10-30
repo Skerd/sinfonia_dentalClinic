@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/actions/planMenu.tsx",
+  "send": "An den Patienten senden",
+  "revise": "Überarbeiten",
+  "pdf": "PDF herunterladen"
+}

@@ -1,0 +1,6 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/request/index.tsx",
+  "title": "Chiedi un preventivo",
+  "subtitle": "Dicci di cosa hai bisogno e inviaci le radiografie; rispondiamo nella tua lingua.",
+  "unavailable": "Questa clinica non accetta richieste di preventivo online."
+}

@@ -7,6 +7,15 @@
     "appointments": {
       "title": "Appuntamenti"
     },
+    "inquiries": {
+      "title": "Richieste di preventivo"
+    },
+    "plans": {
+      "title": "Piani di cura"
+    },
+    "patients": {
+      "title": "Pazienti"
+    },
     "team": {
       "title": "Team"
     },

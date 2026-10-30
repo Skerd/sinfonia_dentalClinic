@@ -1,0 +1,103 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/createPatient.tsx",
+  "title": "Add patient",
+  "description": "Open a folder for a new patient",
+  "formHeader": {
+    "title": "Add patient",
+    "description": "Open a folder for a new patient"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving patient",
+      "time": 3000
+    },
+    "success": {
+      "title": "Patient added",
+      "time": 3000
+    },
+    "error": {
+      "title": "Patient could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "firstNameLabel": "First name",
+    "firstNamePlaceholder": "Enter first name",
+    "lastNameLabel": "Last name",
+    "lastNamePlaceholder": "Enter last name",
+    "dateOfBirthLabel": "Date of birth",
+    "dateOfBirthPlaceholder": "Pick a date",
+    "sexLabel": "Sex",
+    "sexPlaceholder": "Select",
+    "preferredLanguageLabel": "Language for messages and documents",
+    "preferredLanguagePlaceholder": "Select a language",
+    "sourceLabel": "How they found you",
+    "sourcePlaceholder": "Select",
+    "contactSectionTitle": "Contact",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter email",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "e.g. +39 333 123 4567",
+    "whatsappLabel": "WhatsApp",
+    "whatsappPlaceholder": "If different from the phone",
+    "countryLabel": "Country",
+    "countryPlaceholder": "Select a country",
+    "cityLabel": "City",
+    "cityPlaceholder": "Enter city",
+    "streetLabel": "Street",
+    "streetPlaceholder": "Enter street",
+    "postalCodeLabel": "Postal code",
+    "postalCodePlaceholder": "Enter postal code",
+    "emergencyContactSectionTitle": "Emergency contact",
+    "emergencyContactNameLabel": "Name",
+    "emergencyContactNamePlaceholder": "Enter name",
+    "emergencyContactPhoneLabel": "Phone",
+    "emergencyContactPhonePlaceholder": "Enter phone",
+    "emergencyContactRelationLabel": "Relation",
+    "emergencyContactRelationPlaceholder": "e.g. Spouse",
+    "homeDentistSectionTitle": "Home dentist",
+    "homeDentistNameLabel": "Dentist",
+    "homeDentistNamePlaceholder": "Their dentist at home",
+    "homeDentistPracticeLabel": "Practice",
+    "homeDentistPracticePlaceholder": "Enter practice",
+    "homeDentistEmailLabel": "Email",
+    "homeDentistEmailPlaceholder": "Enter email",
+    "homeDentistPhoneLabel": "Phone",
+    "homeDentistPhonePlaceholder": "Enter phone",
+    "notesSectionTitle": "Tags and notes",
+    "tagsLabel": "Tags",
+    "tagsPlaceholder": "e.g. VIP, Italian-speaking",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Travel preferences, how they like to be contacted…",
+    "notesHint": "Administrative notes only. Medical findings go into clinical notes, not here.",
+    "removeItem": "Remove",
+    "sex": {
+      "female": "Female",
+      "male": "Male",
+      "other": "Other",
+      "unspecified": "Prefer not to say"
+    },
+    "language": {
+      "it-IT": "Italian",
+      "en-US": "English",
+      "de-CH": "German",
+      "fr-FR": "French",
+      "sq-AL": "Albanian"
+    },
+    "source": {
+      "portal": "Portal",
+      "clinic_site": "Clinic website",
+      "booking": "Online booking",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "walk_in": "Walk-in",
+      "referral": "Referral",
+      "agency": "Agency",
+      "other": "Other"
+    }
+  }
+}

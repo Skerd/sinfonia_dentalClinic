@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/revisePlanDialog.tsx",
+  "title": "Angebot überarbeiten",
+  "description": "Aus diesem Angebot entsteht ein neuer Entwurf. Beim Senden ersetzt er dieses für den Patienten.",
+  "confirm": "Überarbeiten",
+  "cancel": "Abbrechen",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Angebot aktualisiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Das Angebot konnte nicht aktualisiert werden",
+      "time": 3000
+    }
+  }
+}

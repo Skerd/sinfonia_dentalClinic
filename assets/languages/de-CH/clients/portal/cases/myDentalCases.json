@@ -1,0 +1,35 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/myDentalCases.tsx",
+  "none": "Sie haben noch keinen Kostenvoranschlag angefragt.",
+  "start": "Kostenvoranschläge anfragen",
+  "actionNeeded": "Praxis braucht Dateien",
+  "unread": "{count} neu",
+  "open": "Öffnen",
+  "treatment": {
+    "checkup": "Kontrolle",
+    "hygiene": "Dentalhygiene",
+    "whitening": "Bleaching",
+    "filling": "Füllung",
+    "root_canal": "Wurzelbehandlung",
+    "extraction": "Extraktion",
+    "implant": "Implantat",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Krone",
+    "bridge": "Brücke",
+    "veneer": "Veneer",
+    "denture": "Prothese",
+    "orthodontics": "Kieferorthopädie",
+    "bone_graft": "Knochenaufbau / Sinuslift",
+    "other": "Andere"
+  },
+  "status": {
+    "new": "Gesendet",
+    "in_review": "Praxis prüft",
+    "info_requested": "Praxis braucht mehr",
+    "declined": "Praxis hat abgelehnt",
+    "lost": "Geschlossen",
+    "withdrawn": "Zurückgezogen",
+    "converted": "Sie sind hier Patient",
+    "quoted": "Angebot erhalten"
+  }
+}

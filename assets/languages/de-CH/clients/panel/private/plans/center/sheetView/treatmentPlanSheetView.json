@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx",
+  "number": "Angebots-Nr.",
+  "status": "Status",
+  "optionLabel": "Variante",
+  "version": "Version",
+  "inquiry": "Kostenanfrage",
+  "patient": "Patientenakte",
+  "currency": "Währung",
+  "validUntil": "Gültig bis",
+  "sentAt": "Gesendet",
+  "depositType": "Anzahlung",
+  "notes": "Hinweise für den Patienten",
+  "terms": "Bedingungen",
+  "totals": "Total",
+  "planSubtitle": "Behandlungsplan und Angebot",
+  "overview": "Übersicht",
+  "textsGroup": "Hinweise und Bedingungen",
+  "lifecycle": "Lebenszyklus",
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von",
+  "statusValues": {
+    "draft": "Entwurf",
+    "sent": "Gesendet",
+    "accepted": "Angenommen",
+    "rejected": "Nicht gewählt",
+    "expired": "Abgelaufen",
+    "superseded": "Ersetzt"
+  },
+  "depositTypeValues": {
+    "none": "Keine Anzahlung",
+    "fixed": "Fester Betrag",
+    "percent": "Prozent des Totals"
+  }
+}

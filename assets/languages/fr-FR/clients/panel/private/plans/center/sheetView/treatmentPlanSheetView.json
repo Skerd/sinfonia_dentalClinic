@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx",
+  "number": "N° de devis",
+  "status": "Statut",
+  "optionLabel": "Option",
+  "version": "Version",
+  "inquiry": "Demande de devis",
+  "patient": "Dossier patient",
+  "currency": "Devise",
+  "validUntil": "Valable jusqu'au",
+  "sentAt": "Envoyé",
+  "depositType": "Acompte",
+  "notes": "Remarques pour le patient",
+  "terms": "Conditions",
+  "totals": "Total",
+  "planSubtitle": "Plan de traitement et devis",
+  "overview": "Aperçu",
+  "textsGroup": "Remarques et conditions",
+  "lifecycle": "Cycle de vie",
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par",
+  "statusValues": {
+    "draft": "Brouillon",
+    "sent": "Envoyé",
+    "accepted": "Accepté",
+    "rejected": "Non retenu",
+    "expired": "Expiré",
+    "superseded": "Remplacé"
+  },
+  "depositTypeValues": {
+    "none": "Pas d'acompte",
+    "fixed": "Montant fixe",
+    "percent": "Pourcentage du total"
+  }
+}

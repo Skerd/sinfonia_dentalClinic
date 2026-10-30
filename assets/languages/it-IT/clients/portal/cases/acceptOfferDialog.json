@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/acceptOfferDialog.tsx",
+  "title": "Accetta il preventivo di {clinic}",
+  "description": "Totale {total}. Leggi prima di confermare:",
+  "pointContact": "Questa clinica vedrà nome completo, email e telefono per organizzare la visita.",
+  "pointOthers": "Le altre cliniche vengono informate; i loro preventivi si chiudono.",
+  "pointProvisional": "Piano e prezzo definitivi sono confermati dopo una visita.",
+  "signedName": "Il tuo nome completo, come firma",
+  "agree": "Accetto questo preventivo e le sue condizioni.",
+  "failed": "Impossibile accettare il preventivo. Potrebbe essere scaduto.",
+  "cancel": "Annulla",
+  "confirm": "Accetta preventivo"
+}

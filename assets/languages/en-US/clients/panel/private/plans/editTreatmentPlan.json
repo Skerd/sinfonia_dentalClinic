@@ -1,0 +1,98 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/editTreatmentPlan.tsx",
+  "title": "Edit quote",
+  "description": "Change this draft before sending it",
+  "formHeader": {
+    "title": "Edit quote",
+    "description": "Change this draft before sending it"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving quote",
+      "time": 3000
+    },
+    "success": {
+      "title": "Quote saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "The quote could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "inquiryLabel": "Estimate request",
+    "inquiryPlaceholder": "Which request this answers",
+    "patientLabel": "Patient folder",
+    "patientPlaceholder": "Or a patient seen at the clinic",
+    "targetHint": "Choose the estimate request this quote answers, or the patient it is for.",
+    "optionLabelLabel": "Option",
+    "optionLabelPlaceholder": "e.g. Straumann implants",
+    "phasesSectionTitle": "Phases (trips to the clinic)",
+    "phasesAddRow": "Add phase",
+    "phasesRemoveRow": "Remove",
+    "phasesRowTitle": "Phase",
+    "phaseTitleLabel": "Title",
+    "phaseTitlePlaceholder": "e.g. Implant surgery",
+    "phaseVisitsLabel": "Visits",
+    "phaseVisitsPlaceholder": "e.g. 2",
+    "phaseDaysLabel": "Days' stay",
+    "phaseDaysPlaceholder": "e.g. 5",
+    "phaseGapLabel": "Healing days before",
+    "phaseGapPlaceholder": "e.g. 90",
+    "linesSectionTitle": "Priced lines",
+    "linesAddRow": "Add line",
+    "linesRemoveRow": "Remove",
+    "linesRowTitle": "Line",
+    "linePhaseLabel": "Phase no.",
+    "linePhasePlaceholder": "1",
+    "lineKindLabel": "Kind",
+    "lineServiceLabel": "From the price list",
+    "lineServicePlaceholder": "Optional",
+    "lineNameLabel": "Description",
+    "lineNamePlaceholder": "e.g. Implant with abutment",
+    "lineTeethLabel": "Teeth (FDI)",
+    "toothPickerPrimary": "Children's teeth",
+    "toothPickerPermanent": "Adult teeth",
+    "lineMaterialLabel": "Material",
+    "lineMaterialPlaceholder": "e.g. Zirconia",
+    "lineBrandLabel": "Brand",
+    "lineBrandPlaceholder": "e.g. Straumann",
+    "lineWarrantyLabel": "Warranty (years)",
+    "lineWarrantyPlaceholder": "e.g. 10",
+    "lineQuantityLabel": "Quantity",
+    "lineQuantityPlaceholder": "1",
+    "lineUnitPriceLabel": "Unit price",
+    "lineUnitPricePlaceholder": "0",
+    "lineDiscountLabel": "Discount",
+    "lineDiscountPlaceholder": "Optional",
+    "depositSectionTitle": "Deposit and validity",
+    "depositTypeLabel": "Deposit",
+    "depositTypePlaceholder": "Select",
+    "depositValueLabel": "Amount or percentage",
+    "depositValuePlaceholder": "e.g. 10",
+    "refundableUntilDaysLabel": "Refundable until (days before visit)",
+    "refundableUntilDaysPlaceholder": "e.g. 14",
+    "validUntilLabel": "Valid until",
+    "validUntilPlaceholder": "Empty: the clinic's default",
+    "textsSectionTitle": "Notes and terms",
+    "notesLabel": "Notes for the patient",
+    "notesPlaceholder": "What the patient should know about this plan",
+    "termsLabel": "Terms",
+    "termsPlaceholder": "Payment, cancellation, what is included",
+    "disclaimerHint": "Patients are told quotes are provisional until an examination at the clinic.",
+    "depositType": {
+      "none": "No deposit",
+      "fixed": "Fixed amount",
+      "percent": "Percentage of the total"
+    },
+    "lineKind": {
+      "treatment": "Treatment",
+      "package": "Package (hotel, transfer…)"
+    }
+  }
+}

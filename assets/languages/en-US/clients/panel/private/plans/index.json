@@ -1,0 +1,36 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
+  "title": "Treatment plans",
+  "description": "Quotes for patients, from draft to accepted plan",
+  "help": {
+    "ariaLabel": "About treatment plans",
+    "title": "About treatment plans",
+    "overview": "A plan is split into phases (trips): implants now, crowns after healing. Each line names the teeth, material and brand. Make several plans for the same request to offer alternatives; the patient accepts one."
+  },
+  "create": "New quote",
+  "searchPlaceholder": "Search quotes or add filters...",
+  "noData": "No quotes yet",
+  "failTitle": "Failed to load quotes",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "fields": {
+    "number": "Quote no.",
+    "status": "Status",
+    "optionLabel": "Option",
+    "version": "Version",
+    "inquiry": "Estimate request",
+    "patient": "Patient folder",
+    "currency": "Currency",
+    "validUntil": "Valid until",
+    "sentAt": "Sent",
+    "depositType": "Deposit",
+    "notes": "Notes for the patient",
+    "terms": "Terms",
+    "totals": "Total",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

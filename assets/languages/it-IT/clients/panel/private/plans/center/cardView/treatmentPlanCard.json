@@ -1,0 +1,17 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/cardView/treatmentPlanCard.tsx",
+  "failedTitle": "Impossibile caricare il preventivo",
+  "failedDescription": "Tocca per riprovare.",
+  "optionLabel": "Opzione",
+  "inquiry": "Richiesta",
+  "status": "Stato",
+  "total": "Totale",
+  "statusValues": {
+    "draft": "Bozza",
+    "sent": "Inviato",
+    "accepted": "Accettato",
+    "rejected": "Non scelto",
+    "expired": "Scaduto",
+    "superseded": "Sostituito"
+  }
+}

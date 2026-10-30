@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/markLostInquiryDialog.tsx",
+  "title": "Als verloren markieren",
+  "description": "Der Patient hat eine andere Praxis gewählt oder antwortet nicht mehr. Er wird nicht benachrichtigt. Sie verlieren den Zugriff auf seine Dateien.",
+  "confirm": "Als verloren markieren",
+  "reasonLabel": "Interne Notiz (optional)",
+  "reasonPlaceholder": "z. B. Hat eine Praxis in Durrës gewählt",
+  "cancel": "Abbrechen",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anfrage aktualisiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Anfrage konnte nicht aktualisiert werden",
+      "time": 3000
+    }
+  }
+}

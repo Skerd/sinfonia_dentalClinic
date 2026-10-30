@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/convertInquiryDialog.tsx",
+  "title": "Apri cartella paziente",
+  "description": "Apre la cartella del paziente in questa clinica (o collega quella esistente) e chiude la richiesta come vinta.",
+  "confirm": "Apri cartella paziente",
+  "cancel": "Annulla",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Richiesta aggiornata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiornare la richiesta",
+      "time": 3000
+    }
+  }
+}

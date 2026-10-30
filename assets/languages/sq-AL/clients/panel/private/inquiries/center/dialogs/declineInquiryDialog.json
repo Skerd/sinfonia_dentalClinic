@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/declineInquiryDialog.tsx",
+  "title": "Refuzo kërkesën",
+  "description": "Pacienti njoftohet se nuk mund ta ndihmoni, me arsyen tuaj. Humbni aksesin te skedarët e tij.",
+  "confirm": "Refuzo",
+  "reasonLabel": "Arsyeja për pacientin (opsionale)",
+  "reasonPlaceholder": "p.sh. Nuk e ofrojmë këtë trajtim",
+  "cancel": "Anulo",
+  "axios": {
+    "start": {
+      "title": "Po ruhet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kërkesa u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kërkesa nuk u përditësua",
+      "time": 3000
+    }
+  }
+}

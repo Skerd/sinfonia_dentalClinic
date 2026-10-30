@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/sendPlanDialog.tsx",
+  "title": "Send the quote",
+  "description": "The patient is emailed and can compare and accept it in their account. A sent quote can no longer be edited, only revised.",
+  "confirm": "Send to the patient",
+  "cancel": "Cancel",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Quote updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The quote could not be updated",
+      "time": 3000
+    }
+  }
+}

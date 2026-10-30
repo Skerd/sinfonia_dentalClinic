@@ -35,7 +35,9 @@
     "serviceLabel": "Trajtimi",
     "servicePlaceholder": "Zgjidh trajtimin",
     "timeLabel": "Ora",
-    "visitSectionTitle": "Vizita"
+    "visitSectionTitle": "Vizita",
+    "patientRecordLabel": "Kartela e pacientit",
+    "patientRecordPlaceholder": "Opsionale: një pacient ekzistues"
   },
   "axios": {
     "start": {

@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/assignInquiryDialog.tsx",
+  "title": "Attribuer la demande",
+  "description": "La personne qui répond à ce patient. Elle est prévenue des nouveaux messages et fichiers. Laissez vide pour retirer l'attribution.",
+  "confirm": "Attribuer",
+  "userLabel": "Attribuée à",
+  "userPlaceholder": "Choisir un collègue",
+  "cancel": "Annuler",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Demande mise à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "La demande n'a pas pu être mise à jour",
+      "time": 3000
+    }
+  }
+}

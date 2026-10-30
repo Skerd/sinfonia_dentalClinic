@@ -41,6 +41,8 @@
     "deletedBy": "Fshirë nga",
     "bufferAfterMinutes": "Pastrimi (min)",
     "bufferBeforeMinutes": "Përgatitja (min)",
-    "isPublic": "Në faqe"
+    "isPublic": "Në faqe",
+    "category": "Lloji i trajtimit",
+    "perTooth": "Çmim për dhëmb"
   }
 }

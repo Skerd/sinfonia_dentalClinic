@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/estimateBanner.tsx",
+  "title": "Get an estimate from dental clinics",
+  "subtitle": "Compare clinics and send one request with your X-rays to up to five of them.",
+  "titleClinic": "Get an estimate",
+  "subtitleClinic": "Tell us what you need and send your X-rays; we answer with a treatment plan and price.",
+  "accountNeeded": "You need an account: it keeps every answer, your files and your conversations in one place.",
+  "cta": "Get an estimate",
+  "ctaSignIn": "Sign in to get an estimate"
+}

@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/startReviewInquiryDialog.tsx",
+  "title": "Start review",
+  "description": "The patient's request moves into review. This counts as your first response.",
+  "confirm": "Start review",
+  "cancel": "Cancel",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Request updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The request could not be updated",
+      "time": 3000
+    }
+  }
+}

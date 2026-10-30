@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/index.tsx",
+  "title": "Kostenanfragen",
+  "description": "Patienten, die einen Preis anfragen: über das Portal, Ihre Website oder Ihre eigenen Anrufe",
+  "help": {
+    "ariaLabel": "Über Kostenanfragen",
+    "title": "Über Kostenanfragen",
+    "overview": "Ein Patient kann eine Anfrage an mehrere Praxen senden. Bis er seinen Kontakt freigibt, sehen Sie nur Vorname und Land; schreiben Sie ihm im Verlauf der Anfrage.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Antworten Sie innerhalb Ihrer Zielzeit: Das Portal zeigt Patienten, wie schnell Praxen üblicherweise antworten.",
+          "Fordern Sie Panoramaröntgen oder Fotos an, wenn Sie sie für ein Angebot brauchen; der Patient sendet sie nur Ihnen.",
+          "Eröffnen Sie die Patientenakte, sobald er Sie wählt; sie hält Kontakt und Termine zusammen."
+        ]
+      }
+    ]
+  },
+  "create": "Lead hinzufügen",
+  "searchPlaceholder": "Anfragen suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Anfragen",
+  "failTitle": "Anfragen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist ein Fehler aufgetreten.",
+  "deleted": "Gelöscht",
+  "fields": {
+    "number": "Anfrage-Nr.",
+    "status": "Status",
+    "source": "Herkunft",
+    "assignedTo": "Zugewiesen an",
+    "travelFrom": "Reise ab",
+    "travelTo": "Reise bis",
+    "budget": "Budget",
+    "budgetCurrency": "Budgetwährung",
+    "firstResponseAt": "Erste Antwort",
+    "lastMessageAt": "Letzte Nachricht",
+    "patient": "Patientenakte",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "country": "Land",
+    "preferredLanguage": "Sprache",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp",
+    "contactShared": "Kontakt freigegeben",
+    "description": "Was der Patient schrieb",
+    "files": "Dateien",
+    "unreadForClinic": "Ungelesene Nachrichten",
+    "contact": "Patient",
+    "treatmentsWanted": "Gewünschte Behandlungen",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von",
+    "contact.firstName": "Vorname",
+    "contact.country": "Land"
+  }
+}

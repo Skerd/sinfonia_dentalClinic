@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/thread/inquiryThread.tsx",
+  "title": "Unterhaltung mit dem Patienten",
+  "loading": "Nachrichten werden geladen…",
+  "empty": "Noch keine Nachrichten. Schreiben Sie dem Patienten.",
+  "clinic": "Praxis",
+  "patient": "Patient",
+  "placeholder": "Schreiben Sie dem Patienten (keine medizinische Beratung vor einer Untersuchung)…",
+  "attach": "Anhängen",
+  "send": "Senden",
+  "loadError": "Nachrichten konnten nicht geladen werden.",
+  "sendError": "Die Nachricht konnte nicht gesendet werden."
+}

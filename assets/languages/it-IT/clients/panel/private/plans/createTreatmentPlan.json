@@ -1,0 +1,98 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/createTreatmentPlan.tsx",
+  "title": "Nuovo preventivo",
+  "description": "Piano di cura e prezzo per un paziente o una richiesta",
+  "formHeader": {
+    "title": "Nuovo preventivo",
+    "description": "Piano di cura e prezzo per un paziente o una richiesta"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Crea"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio",
+      "time": 3000
+    },
+    "success": {
+      "title": "Preventivo salvato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare il preventivo. Controlla il modulo.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "inquiryLabel": "Richiesta",
+    "inquiryPlaceholder": "La richiesta a cui risponde",
+    "patientLabel": "Cartella paziente",
+    "patientPlaceholder": "Oppure un paziente visto in clinica",
+    "targetHint": "Scegli la richiesta a cui risponde il preventivo, o il paziente.",
+    "optionLabelLabel": "Opzione",
+    "optionLabelPlaceholder": "es. Impianti Straumann",
+    "phasesSectionTitle": "Fasi (viaggi in clinica)",
+    "phasesAddRow": "Aggiungi fase",
+    "phasesRemoveRow": "Rimuovi",
+    "phasesRowTitle": "Fase",
+    "phaseTitleLabel": "Titolo",
+    "phaseTitlePlaceholder": "es. Chirurgia implantare",
+    "phaseVisitsLabel": "Visite",
+    "phaseVisitsPlaceholder": "es. 2",
+    "phaseDaysLabel": "Giorni di permanenza",
+    "phaseDaysPlaceholder": "es. 5",
+    "phaseGapLabel": "Giorni di guarigione prima",
+    "phaseGapPlaceholder": "es. 90",
+    "linesSectionTitle": "Voci",
+    "linesAddRow": "Aggiungi voce",
+    "linesRemoveRow": "Rimuovi",
+    "linesRowTitle": "Voce",
+    "linePhaseLabel": "Fase n.",
+    "linePhasePlaceholder": "1",
+    "lineKindLabel": "Tipo",
+    "lineServiceLabel": "Dal listino",
+    "lineServicePlaceholder": "Facoltativo",
+    "lineNameLabel": "Descrizione",
+    "lineNamePlaceholder": "es. Impianto con abutment",
+    "lineTeethLabel": "Denti (FDI)",
+    "toothPickerPrimary": "Denti da latte",
+    "toothPickerPermanent": "Denti permanenti",
+    "lineMaterialLabel": "Materiale",
+    "lineMaterialPlaceholder": "es. Zirconia",
+    "lineBrandLabel": "Marca",
+    "lineBrandPlaceholder": "es. Straumann",
+    "lineWarrantyLabel": "Garanzia (anni)",
+    "lineWarrantyPlaceholder": "es. 10",
+    "lineQuantityLabel": "Quantità",
+    "lineQuantityPlaceholder": "1",
+    "lineUnitPriceLabel": "Prezzo unitario",
+    "lineUnitPricePlaceholder": "0",
+    "lineDiscountLabel": "Sconto",
+    "lineDiscountPlaceholder": "Facoltativo",
+    "depositSectionTitle": "Acconto e validità",
+    "depositTypeLabel": "Acconto",
+    "depositTypePlaceholder": "Seleziona",
+    "depositValueLabel": "Importo o percentuale",
+    "depositValuePlaceholder": "es. 10",
+    "refundableUntilDaysLabel": "Rimborsabile fino a (giorni prima)",
+    "refundableUntilDaysPlaceholder": "es. 14",
+    "validUntilLabel": "Valido fino al",
+    "validUntilPlaceholder": "Vuoto: predefinito della clinica",
+    "textsSectionTitle": "Note e condizioni",
+    "notesLabel": "Note per il paziente",
+    "notesPlaceholder": "Cosa deve sapere il paziente",
+    "termsLabel": "Condizioni",
+    "termsPlaceholder": "Pagamento, cancellazione, cosa è incluso",
+    "disclaimerHint": "Ai pazienti viene detto che i preventivi sono indicativi fino alla visita.",
+    "depositType": {
+      "none": "Nessun acconto",
+      "fixed": "Importo fisso",
+      "percent": "Percentuale del totale"
+    },
+    "lineKind": {
+      "treatment": "Trattamento",
+      "package": "Pacchetto (hotel, transfer…)"
+    }
+  }
+}

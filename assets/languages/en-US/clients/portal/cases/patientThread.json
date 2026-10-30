@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/patientThread.tsx",
+  "loading": "Loading…",
+  "empty": "No messages yet.",
+  "you": "You",
+  "placeholder": "Write to the clinic…",
+  "attach": "Attach",
+  "send": "Send",
+  "failed": "The message could not be sent."
+}

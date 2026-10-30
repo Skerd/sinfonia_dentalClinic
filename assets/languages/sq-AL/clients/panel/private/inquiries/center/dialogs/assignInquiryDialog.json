@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/assignInquiryDialog.tsx",
+  "title": "Cakto kërkesën",
+  "description": "Kush i përgjigjet këtij pacienti. Njoftohet për mesazhe dhe skedarë të rinj. Lëreni bosh për ta hequr.",
+  "confirm": "Cakto",
+  "userLabel": "Caktuar te",
+  "userPlaceholder": "Zgjidhni një koleg",
+  "cancel": "Anulo",
+  "axios": {
+    "start": {
+      "title": "Po ruhet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kërkesa u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kërkesa nuk u përditësua",
+      "time": 3000
+    }
+  }
+}

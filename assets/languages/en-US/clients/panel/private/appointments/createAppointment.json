@@ -35,7 +35,9 @@
     "serviceLabel": "Treatment",
     "servicePlaceholder": "Select treatment",
     "timeLabel": "Time",
-    "visitSectionTitle": "Visit"
+    "visitSectionTitle": "Visit",
+    "patientRecordLabel": "Patient folder",
+    "patientRecordPlaceholder": "Optional: an existing patient"
   },
   "axios": {
     "start": {

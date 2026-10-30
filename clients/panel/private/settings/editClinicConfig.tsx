@@ -10,6 +10,7 @@ import {getName} from "@coreModule/helpers/general/names.ts";
 const chipLabelState = {
     loadedId: null as string | null,
     notifyUsers: {current: {} as Record<string, string>},
+    inquiryNotifyUsers: {current: {} as Record<string, string>},
 };
 
 function userDisplayName(user: SimpleBlankUser): string {
@@ -26,17 +27,25 @@ export default createGenericEditPage<ClinicConfig, EditClinicConfigFormType>({
         ...data,
         currency: data.currency?._id,
         notifyUsers: data.notifyUsers?.map((user) => user._id) ?? [],
+        inquiryNotifyUsers: data.inquiryNotifyUsers?.map((user) => user._id) ?? [],
     }),
     buildFormExtras: (_entityId, _params, entity) => {
         if (entity && chipLabelState.loadedId !== entity._id) {
             chipLabelState.loadedId = entity._id;
             chipLabelState.notifyUsers.current = {};
+            chipLabelState.inquiryNotifyUsers.current = {};
         }
         const users = entity?.notifyUsers?.filter((user) => !!user?._id) ?? [];
         for (const user of users) chipLabelState.notifyUsers.current[user._id] = userDisplayName(user);
+        const inquiryUsers = entity?.inquiryNotifyUsers?.filter((user) => !!user?._id) ?? [];
+        for (const user of inquiryUsers) chipLabelState.inquiryNotifyUsers.current[user._id] = userDisplayName(user);
         return {
             notifyUsers: users.map((user) => ({value: user._id, label: userDisplayName(user)})),
-            [FORM_EXTRAS_OBJECT_ID_CHIP_LABEL_REFS]: {notifyUsers: chipLabelState.notifyUsers},
+            inquiryNotifyUsers: inquiryUsers.map((user) => ({value: user._id, label: userDisplayName(user)})),
+            [FORM_EXTRAS_OBJECT_ID_CHIP_LABEL_REFS]: {
+                notifyUsers: chipLabelState.notifyUsers,
+                inquiryNotifyUsers: chipLabelState.inquiryNotifyUsers,
+            },
         };
     },
     submitIcon: <Save />,

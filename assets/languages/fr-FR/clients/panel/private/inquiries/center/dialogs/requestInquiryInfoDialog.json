@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/requestInquiryInfoDialog.tsx",
+  "title": "Demander des radios ou documents",
+  "description": "Le patient reçoit un e-mail et voit ce dont vous avez besoin dans son compte. Seul votre cabinet voit ce qu'il envoie.",
+  "confirm": "Envoyer la demande",
+  "noteLabel": "Note pour le patient (facultatif)",
+  "notePlaceholder": "ex. Une panoramique de moins de 6 mois",
+  "cancel": "Annuler",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Demande mise à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "La demande n'a pas pu être mise à jour",
+      "time": 3000
+    }
+  },
+  "kind": {
+    "opg": "Radio panoramique (OPG)",
+    "cbct": "Scanner 3D (CBCT)",
+    "photos": "Photos des dents",
+    "medical_history": "Antécédents médicaux",
+    "other": "Autres documents"
+  }
+}

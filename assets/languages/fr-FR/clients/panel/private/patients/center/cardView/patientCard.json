@@ -1,0 +1,16 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/center/cardView/patientCard.tsx",
+  "failedTitle": "Impossible de charger le patient",
+  "failedDescription": "Touchez pour réessayer.",
+  "email": "E-mail",
+  "phone": "Téléphone",
+  "country": "Pays",
+  "preferredLanguage": "Langue",
+  "languageValues": {
+    "it-IT": "Italien",
+    "en-US": "Anglais",
+    "de-CH": "Allemand",
+    "fr-FR": "Français",
+    "sq-AL": "Albanais"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
+  "title": "Behandlungspläne",
+  "description": "Angebote für Patienten, vom Entwurf bis zum angenommenen Plan",
+  "help": {
+    "ariaLabel": "Über Behandlungspläne",
+    "title": "Über Behandlungspläne",
+    "overview": "Ein Plan ist in Phasen (Reisen) gegliedert: jetzt Implantate, nach der Heilung Kronen. Jede Position nennt Zähne, Material und Marke. Mehrere Pläne pro Anfrage bieten Alternativen; der Patient nimmt einen an."
+  },
+  "create": "Neues Angebot",
+  "searchPlaceholder": "Angebote suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Angebote",
+  "failTitle": "Angebote konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist ein Fehler aufgetreten.",
+  "deleted": "Gelöscht",
+  "fields": {
+    "number": "Angebots-Nr.",
+    "status": "Status",
+    "optionLabel": "Variante",
+    "version": "Version",
+    "inquiry": "Kostenanfrage",
+    "patient": "Patientenakte",
+    "currency": "Währung",
+    "validUntil": "Gültig bis",
+    "sentAt": "Gesendet",
+    "depositType": "Anzahlung",
+    "notes": "Hinweise für den Patienten",
+    "terms": "Bedingungen",
+    "totals": "Total",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

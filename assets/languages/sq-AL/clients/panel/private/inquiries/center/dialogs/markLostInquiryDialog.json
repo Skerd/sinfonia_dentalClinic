@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/markLostInquiryDialog.tsx",
+  "title": "Shëno si të humbur",
+  "description": "Pacienti zgjodhi një klinikë tjetër ose nuk përgjigjet më. Nuk njoftohet. Humbni aksesin te skedarët e tij.",
+  "confirm": "Shëno si të humbur",
+  "reasonLabel": "Shënim i brendshëm (opsional)",
+  "reasonPlaceholder": "p.sh. Zgjodhi një klinikë në Durrës",
+  "cancel": "Anulo",
+  "axios": {
+    "start": {
+      "title": "Po ruhet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kërkesa u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kërkesa nuk u përditësua",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/planBreakdown.tsx",
+  "phaseSummary": "{visits} vizitë/a, rreth {days} ditë qëndrim",
+  "phaseGap": "të paktën {days} ditë pas fazës së mëparshme",
+  "package": "Paketë",
+  "teeth": "Dhëmbët",
+  "warranty": "garanci {years} vjet",
+  "discount": "Zbritje",
+  "total": "Totali",
+  "deposit": "Paradhënie",
+  "acceptedBy": "Pranuar nga {name} më {date}"
+}

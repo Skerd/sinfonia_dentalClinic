@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/patientThread.tsx",
+  "loading": "Po ngarkohet…",
+  "empty": "Ende pa mesazhe.",
+  "you": "Ju",
+  "placeholder": "Shkruajini klinikës…",
+  "attach": "Bashkëngjit",
+  "send": "Dërgo",
+  "failed": "Mesazhi nuk u dërgua."
+}

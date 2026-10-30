@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/index.tsx",
+  "title": "Demandes de devis",
+  "description": "Patients qui demandent un prix : portail, votre site ou vos appels",
+  "help": {
+    "ariaLabel": "À propos des demandes de devis",
+    "title": "À propos des demandes de devis",
+    "overview": "Un patient peut envoyer une demande à plusieurs cabinets. Tant qu'il ne partage pas ses coordonnées, vous voyez seulement son prénom et son pays ; échangez dans la conversation de la demande.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Répondez dans votre délai cible : le portail montre aux patients la rapidité habituelle des cabinets.",
+          "Demandez une radio panoramique ou des photos si besoin pour chiffrer ; le patient ne les envoie qu'à vous.",
+          "Ouvrez le dossier patient dès qu'il vous choisit ; il réunit coordonnées et rendez-vous."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un contact",
+  "searchPlaceholder": "Rechercher des demandes ou ajouter des filtres...",
+  "noData": "Aucune demande pour l'instant",
+  "failTitle": "Impossible de charger les demandes",
+  "failDescription": "Une erreur s'est produite. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "fields": {
+    "number": "N° de demande",
+    "status": "Statut",
+    "source": "Origine",
+    "assignedTo": "Attribuée à",
+    "travelFrom": "Voyage possible du",
+    "travelTo": "Voyage possible jusqu'au",
+    "budget": "Budget",
+    "budgetCurrency": "Devise du budget",
+    "firstResponseAt": "Première réponse",
+    "lastMessageAt": "Dernier message",
+    "patient": "Dossier patient",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "country": "Pays",
+    "preferredLanguage": "Langue",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "whatsapp": "WhatsApp",
+    "contactShared": "Coordonnées partagées",
+    "description": "Ce que le patient a écrit",
+    "files": "Fichiers",
+    "unreadForClinic": "Messages non lus",
+    "contact": "Patient",
+    "treatmentsWanted": "Soins souhaités",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par",
+    "contact.firstName": "Prénom",
+    "contact.country": "Pays"
+  }
+}

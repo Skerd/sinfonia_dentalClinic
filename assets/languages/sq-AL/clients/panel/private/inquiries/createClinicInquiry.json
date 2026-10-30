@@ -1,0 +1,95 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
+  "title": "Shto kontakt",
+  "description": "Një pacient që telefonoi, shkroi në WhatsApp ose erdhi nga një agjenci",
+  "formHeader": {
+    "title": "Shto kontakt",
+    "description": "Një pacient që telefonoi, shkroi në WhatsApp ose erdhi nga një agjenci"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Shto"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kontakti u shtua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kontakti nuk u shtua. Kontrolloni formularin.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "contactSectionTitle": "Pacienti",
+    "requestSectionTitle": "Kërkesa",
+    "firstNameLabel": "Emri",
+    "firstNamePlaceholder": "Shkruani emrin",
+    "lastNameLabel": "Mbiemri",
+    "lastNamePlaceholder": "Shkruani mbiemrin",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Shkruani email-in",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "p.sh. +355 69 123 4567",
+    "whatsappLabel": "WhatsApp",
+    "whatsappPlaceholder": "Nëse ndryshon nga telefoni",
+    "countryLabel": "Shteti",
+    "countryPlaceholder": "Zgjidhni shtetin",
+    "preferredLanguageLabel": "Gjuha",
+    "preferredLanguagePlaceholder": "Zgjidhni gjuhën",
+    "sourceLabel": "Si ju kontaktuan",
+    "sourcePlaceholder": "Zgjidhni",
+    "treatmentsWantedLabel": "Trajtimet e kërkuara",
+    "descriptionLabel": "Çfarë u nevojitet",
+    "descriptionPlaceholder": "Çfarë ju tha pacienti",
+    "travelFromLabel": "Mund të udhëtojë nga",
+    "travelFromPlaceholder": "Zgjidhni datën",
+    "travelToLabel": "Mund të udhëtojë deri",
+    "travelToPlaceholder": "Zgjidhni datën",
+    "budgetLabel": "Buxheti",
+    "budgetPlaceholder": "Opsionale",
+    "budgetCurrencyLabel": "Monedha e buxhetit",
+    "budgetCurrencyPlaceholder": "Zgjidhni monedhën",
+    "assignedToLabel": "Caktuar te",
+    "assignedToPlaceholder": "Zgjidhni një koleg",
+    "language": {
+      "it-IT": "Italisht",
+      "en-US": "Anglisht",
+      "de-CH": "Gjermanisht",
+      "fr-FR": "Frëngjisht",
+      "sq-AL": "Shqip"
+    },
+    "source": {
+      "portal": "Portali",
+      "clinic_site": "Faqja e klinikës",
+      "booking": "Rezervim online",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "walk_in": "Pa termin",
+      "referral": "Rekomandim",
+      "agency": "Agjenci",
+      "other": "Tjetër"
+    },
+    "treatment": {
+      "checkup": "Kontroll",
+      "hygiene": "Higjienë dentare",
+      "whitening": "Zbardhim",
+      "filling": "Mbushje",
+      "root_canal": "Mjekim kanali",
+      "extraction": "Heqje dhëmbi",
+      "implant": "Implant",
+      "all_on_x": "All-on-4 / All-on-6",
+      "crown": "Kurorë",
+      "bridge": "Urë",
+      "veneer": "Faset",
+      "denture": "Protezë",
+      "orthodontics": "Ortodonci",
+      "bone_graft": "Shtim kockor / ngritje sinusi",
+      "other": "Tjetër"
+    }
+  }
+}

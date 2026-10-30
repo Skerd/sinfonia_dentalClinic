@@ -1,0 +1,51 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/index.tsx",
+  "title": "Pazienti",
+  "description": "La cartella di ogni paziente: contatti, lingua e provenienza",
+  "help": {
+    "ariaLabel": "Informazioni sui pazienti",
+    "title": "Informazioni sui pazienti",
+    "overview": "Una cartella paziente raccoglie tutto su una persona nella tua clinica. Le prenotazioni online o fatte dallo staff finiscono nella stessa cartella, abbinate tramite account del portale o email e nome completo.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "I pazienti dal portale e dalle prenotazioni online vengono aggiunti automaticamente.",
+          "Imposta la lingua: email, preventivi e relazione per il dentista di fiducia sono scritti in quella lingua.",
+          "Non inserire dati clinici nelle note: vanno nelle note cliniche."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi paziente",
+  "searchPlaceholder": "Cerca pazienti o aggiungi filtri...",
+  "noData": "Ancora nessun paziente",
+  "failTitle": "Impossibile caricare i pazienti",
+  "failDescription": "Si è verificato un errore. Riprova.",
+  "deleted": "Eliminato",
+  "fields": {
+    "number": "N. paziente",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "dateOfBirth": "Data di nascita",
+    "sex": "Sesso",
+    "email": "Email",
+    "phone": "Telefono",
+    "whatsapp": "WhatsApp",
+    "preferredLanguage": "Lingua",
+    "address": "Indirizzo",
+    "emergencyContact": "Contatto di emergenza",
+    "homeDentist": "Dentista di fiducia",
+    "source": "Provenienza",
+    "tags": "Etichette",
+    "notes": "Note",
+    "account": "Account del portale",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da",
+    "address.country": "Paese",
+    "address.city": "Città"
+  }
+}

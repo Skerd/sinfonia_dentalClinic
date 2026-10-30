@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/acceptOfferDialog.tsx",
+  "title": "Accept the quote from {clinic}",
+  "description": "Total {total}. Please read before confirming:",
+  "pointContact": "This clinic will see your full name, email and phone numbers to plan your visit.",
+  "pointOthers": "Your other clinics are told you chose another clinic; their quotes close.",
+  "pointProvisional": "The final plan and price are confirmed by the dentist after an examination.",
+  "signedName": "Your full name, as your signature",
+  "agree": "I accept this quote and its terms.",
+  "failed": "The quote could not be accepted. It may have expired; please try again.",
+  "cancel": "Cancel",
+  "confirm": "Accept quote"
+}

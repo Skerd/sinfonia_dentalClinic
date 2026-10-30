@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/request/requestQuotesPage.tsx",
+  "title": "Compare clinics and ask for estimates",
+  "subtitle": "Pick up to {max} clinics and send them one request. Each answers you separately, and you choose.",
+  "allTreatments": "All treatments",
+  "usuallyAnswers": "Usually answers within {hours} h",
+  "formTitle": "Your request",
+  "pickFirst": "Choose at least one clinic above to write your request.",
+  "treatment": {
+    "checkup": "Check-up",
+    "hygiene": "Cleaning & hygiene",
+    "whitening": "Whitening",
+    "filling": "Filling",
+    "root_canal": "Root canal",
+    "extraction": "Extraction",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Crown",
+    "bridge": "Bridge",
+    "veneer": "Veneer",
+    "denture": "Denture",
+    "orthodontics": "Orthodontics",
+    "bone_graft": "Bone graft / sinus lift",
+    "other": "Other"
+  },
+  "steps": {
+    "choose": {
+      "title": "Choose clinics",
+      "text": "Up to {max}, by treatment, city or language."
+    },
+    "describe": {
+      "title": "Describe what you need",
+      "text": "Add your X-rays or photos if you have them."
+    },
+    "compare": {
+      "title": "Compare and choose",
+      "text": "Each clinic answers you separately with a plan and a price."
+    }
+  },
+  "chooseTitle": "Choose the clinics",
+  "searchLabel": "Search clinics",
+  "searchPlaceholder": "Search by clinic, city, language or implant brand",
+  "clearSearch": "Clear search",
+  "clearFilters": "Show all clinics",
+  "results": "{count} clinics",
+  "full": "you have chosen {max}, the most one request can go to",
+  "noMatchTitle": "No clinics found",
+  "noMatchHint": "Try another word or treatment.",
+  "noClinics": "No clinic takes estimate requests yet.",
+  "viewClinic": "View clinic",
+  "selectionTitle": "Your selection",
+  "chosen": "{count} of {max} chosen",
+  "selectionEmpty": "No clinic chosen yet. Tick up to {max} in the list.",
+  "remove": "Remove {name}",
+  "continue": "Continue to your request",
+  "privacyNote": "Clinics see only your first name and country until you choose one or share your contact details.",
+  "formSubtitle": "One request goes to every clinic you chose; you follow each answer in your account.",
+  "resultsOne": "1 clinic"
+}

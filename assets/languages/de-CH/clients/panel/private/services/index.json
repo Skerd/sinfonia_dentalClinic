@@ -41,6 +41,8 @@
     "deletedBy": "Gelöscht von",
     "bufferAfterMinutes": "Nachbereitung (Min.)",
     "bufferBeforeMinutes": "Vorbereitung (Min.)",
-    "isPublic": "Auf der Website"
+    "isPublic": "Auf der Website",
+    "category": "Behandlungsart",
+    "perTooth": "Preis pro Zahn"
   }
 }

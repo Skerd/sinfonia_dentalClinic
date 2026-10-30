@@ -41,6 +41,8 @@
     "deletedBy": "Eliminato da",
     "bufferAfterMinutes": "Riordino (min)",
     "bufferBeforeMinutes": "Preparazione (min)",
-    "isPublic": "Sul sito web"
+    "isPublic": "Sul sito web",
+    "category": "Tipo di trattamento",
+    "perTooth": "Prezzo per dente"
   }
 }

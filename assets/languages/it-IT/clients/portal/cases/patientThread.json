@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/patientThread.tsx",
+  "loading": "Caricamento…",
+  "empty": "Ancora nessun messaggio.",
+  "you": "Tu",
+  "placeholder": "Scrivi alla clinica…",
+  "attach": "Allega",
+  "send": "Invia",
+  "failed": "Impossibile inviare il messaggio."
+}

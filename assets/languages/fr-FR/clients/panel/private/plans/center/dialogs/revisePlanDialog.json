@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/revisePlanDialog.tsx",
+  "title": "Réviser le devis",
+  "description": "Un nouveau brouillon est créé à partir de ce devis. Une fois envoyé, il remplace celui-ci pour le patient.",
+  "confirm": "Réviser",
+  "cancel": "Annuler",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Devis mis à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le devis n'a pas pu être mis à jour",
+      "time": 3000
+    }
+  }
+}

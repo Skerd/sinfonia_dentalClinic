@@ -41,6 +41,8 @@
     "deletedBy": "Deleted by",
     "bufferAfterMinutes": "Clean-up (min)",
     "bufferBeforeMinutes": "Preparation (min)",
-    "isPublic": "On the website"
+    "isPublic": "On the website",
+    "category": "Treatment type",
+    "perTooth": "Priced per tooth"
   }
 }

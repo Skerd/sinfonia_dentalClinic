@@ -42,7 +42,27 @@
       "free": "Falas"
     },
     "sortOrderLabel": "Renditja",
-    "sortOrderPlaceholder": "Shkruani renditjen"
+    "sortOrderPlaceholder": "Shkruani renditjen",
+    "categoryLabel": "Lloji i trajtimit",
+    "categoryPlaceholder": "Zgjidhni llojin e trajtimit",
+    "perToothLabel": "Çmim për dhëmb",
+    "category": {
+      "checkup": "Kontroll",
+      "hygiene": "Higjienë dentare",
+      "whitening": "Zbardhim",
+      "filling": "Mbushje",
+      "root_canal": "Mjekim kanali",
+      "extraction": "Heqje dhëmbi",
+      "implant": "Implant",
+      "all_on_x": "All-on-4 / All-on-6",
+      "crown": "Kurorë",
+      "bridge": "Urë",
+      "veneer": "Faset",
+      "denture": "Protezë",
+      "orthodontics": "Ortodonci",
+      "bone_graft": "Shtim kockor / ngritje sinusi",
+      "other": "Tjetër"
+    }
   },
   "axios": {
     "start": {

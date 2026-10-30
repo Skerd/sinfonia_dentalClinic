@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/sendPlanDialog.tsx",
+  "title": "Envoyer le devis",
+  "description": "Le patient est prévenu par e-mail et peut le comparer et l'accepter dans son compte. Un devis envoyé ne se modifie plus, il se révise.",
+  "confirm": "Envoyer au patient",
+  "cancel": "Annuler",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Devis mis à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le devis n'a pas pu être mis à jour",
+      "time": 3000
+    }
+  }
+}

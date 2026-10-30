@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseOffers.tsx",
+  "title": "Krahasoni ofertat",
+  "clinic": "Klinika",
+  "total": "Totali",
+  "deposit": "Paradhënie",
+  "trips": "Udhëtime",
+  "days": "Ditë",
+  "warranty": "Garancia",
+  "years": "{years} vjet",
+  "brands": "Markat",
+  "accepted": "Pranuar",
+  "details": "Detaje",
+  "hide": "Fshih",
+  "accept": "Prano",
+  "phaseSummary": "{visits} vizitë/a, rreth {days} ditë qëndrim",
+  "phaseGap": "të paktën {days} ditë pas fazës së mëparshme",
+  "teeth": "Dhëmbët",
+  "validUntil": "E vlefshme deri më",
+  "pdf": "Shkarko PDF"
+}

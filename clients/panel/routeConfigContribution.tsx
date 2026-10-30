@@ -3,6 +3,14 @@ import type {RouteConfigArgs, RouteConfigContribution} from "@coreModule/helpers
 import ClinicDayView from "@dentalClinicModule/clients/panel/private/day/index.tsx";
 import AllAppointments from "@dentalClinicModule/clients/panel/private/appointments/index.tsx";
 import CreateAppointment from "@dentalClinicModule/clients/panel/private/appointments/createAppointment.tsx";
+import AllPatients from "@dentalClinicModule/clients/panel/private/patients/index.tsx";
+import CreatePatient from "@dentalClinicModule/clients/panel/private/patients/createPatient.tsx";
+import EditPatient from "@dentalClinicModule/clients/panel/private/patients/editPatient.tsx";
+import AllClinicInquiries from "@dentalClinicModule/clients/panel/private/inquiries/index.tsx";
+import CreateClinicInquiry from "@dentalClinicModule/clients/panel/private/inquiries/createClinicInquiry.tsx";
+import AllTreatmentPlans from "@dentalClinicModule/clients/panel/private/plans/index.tsx";
+import CreateTreatmentPlan from "@dentalClinicModule/clients/panel/private/plans/createTreatmentPlan.tsx";
+import EditTreatmentPlan from "@dentalClinicModule/clients/panel/private/plans/editTreatmentPlan.tsx";
 import AllPractitioners from "@dentalClinicModule/clients/panel/private/team/index.tsx";
 import CreatePractitioner from "@dentalClinicModule/clients/panel/private/team/createPractitioner.tsx";
 import EditPractitioner from "@dentalClinicModule/clients/panel/private/team/editPractitioner.tsx";
@@ -21,6 +29,9 @@ type CrudPages = {list: () => ReactNode; create?: () => ReactNode; edit?: (entit
 
 const PAGES: Record<string, CrudPages> = {
     appointments: {list: () => <AllAppointments />, create: () => <CreateAppointment />, idParam: "appointmentId"},
+    inquiries: {list: () => <AllClinicInquiries />, create: () => <CreateClinicInquiry />, idParam: "inquiryId"},
+    plans: {list: () => <AllTreatmentPlans />, create: () => <CreateTreatmentPlan />, edit: (id) => <EditTreatmentPlan entityId={id} />, idParam: "treatmentPlanId"},
+    patients: {list: () => <AllPatients />, create: () => <CreatePatient />, edit: (id) => <EditPatient entityId={id} />, idParam: "patientId"},
     team: {list: () => <AllPractitioners />, create: () => <CreatePractitioner />, edit: (id) => <EditPractitioner entityId={id} />, idParam: "practitionerId"},
     timeOff: {list: () => <AllScheduleExceptions />, create: () => <CreateScheduleException />, edit: (id) => <EditScheduleException entityId={id} />, idParam: "scheduleExceptionId"},
     services: {list: () => <AllClinicServices />, create: () => <CreateClinicService />, edit: (id) => <EditClinicService entityId={id} />, idParam: "clinicServiceId"},

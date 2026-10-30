@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/requestInquiryInfoDialog.tsx",
+  "title": "Kërko radiografi ose dokumente",
+  "description": "Pacienti merr një email dhe sheh në llogari çfarë ju nevojitet. Vetëm klinika juaj sheh çfarë dërgon.",
+  "confirm": "Dërgo kërkesën",
+  "noteLabel": "Shënim për pacientin (opsional)",
+  "notePlaceholder": "p.sh. Një panoramike e 6 muajve të fundit",
+  "cancel": "Anulo",
+  "axios": {
+    "start": {
+      "title": "Po ruhet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Kërkesa u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Kërkesa nuk u përditësua",
+      "time": 3000
+    }
+  },
+  "kind": {
+    "opg": "Radiografi panoramike (OPG)",
+    "cbct": "Skaner 3D (CBCT)",
+    "photos": "Foto të dhëmbëve",
+    "medical_history": "Historia mjekësore",
+    "other": "Dokumente të tjera"
+  }
+}

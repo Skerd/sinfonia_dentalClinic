@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/declineInquiryDialog.tsx",
+  "title": "Decline request",
+  "description": "The patient is told you cannot help, with your reason if you give one. You lose access to their files.",
+  "confirm": "Decline",
+  "reasonLabel": "Reason for the patient (optional)",
+  "reasonPlaceholder": "e.g. We do not offer this treatment",
+  "cancel": "Cancel",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Request updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The request could not be updated",
+      "time": 3000
+    }
+  }
+}

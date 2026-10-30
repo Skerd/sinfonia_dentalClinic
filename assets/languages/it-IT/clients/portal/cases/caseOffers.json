@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseOffers.tsx",
+  "title": "Confronta i preventivi",
+  "clinic": "Clinica",
+  "total": "Totale",
+  "deposit": "Acconto",
+  "trips": "Viaggi",
+  "days": "Giorni",
+  "warranty": "Garanzia",
+  "years": "{years} anni",
+  "brands": "Marche",
+  "accepted": "Accettato",
+  "details": "Dettagli",
+  "hide": "Nascondi",
+  "accept": "Accetta",
+  "phaseSummary": "{visits} visita/e, circa {days} giorni di permanenza",
+  "phaseGap": "almeno {days} giorni dopo la fase precedente",
+  "teeth": "Denti",
+  "validUntil": "Valido fino al",
+  "pdf": "Scarica PDF"
+}

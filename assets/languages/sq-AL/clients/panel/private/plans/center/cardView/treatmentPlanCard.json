@@ -1,0 +1,17 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/cardView/treatmentPlanCard.tsx",
+  "failedTitle": "Oferta nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "optionLabel": "Opsioni",
+  "inquiry": "Kërkesa",
+  "status": "Statusi",
+  "total": "Totali",
+  "statusValues": {
+    "draft": "Draft",
+    "sent": "Dërguar",
+    "accepted": "Pranuar",
+    "rejected": "Nuk u zgjodh",
+    "expired": "Skaduar",
+    "superseded": "Zëvendësuar"
+  }
+}

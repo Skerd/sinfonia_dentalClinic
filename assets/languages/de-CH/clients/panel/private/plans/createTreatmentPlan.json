@@ -1,0 +1,98 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/createTreatmentPlan.tsx",
+  "title": "Neues Angebot",
+  "description": "Behandlungsplan und Preis für einen Patienten oder eine Anfrage",
+  "formHeader": {
+    "title": "Neues Angebot",
+    "description": "Behandlungsplan und Preis für einen Patienten oder eine Anfrage"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Erstellen"
+  },
+  "axios": {
+    "start": {
+      "title": "Angebot wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Angebot gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Das Angebot konnte nicht gespeichert werden.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "inquiryLabel": "Kostenanfrage",
+    "inquiryPlaceholder": "Welche Anfrage beantwortet wird",
+    "patientLabel": "Patientenakte",
+    "patientPlaceholder": "Oder ein Patient der Praxis",
+    "targetHint": "Wählen Sie die Anfrage, die beantwortet wird, oder den Patienten.",
+    "optionLabelLabel": "Variante",
+    "optionLabelPlaceholder": "z. B. Straumann-Implantate",
+    "phasesSectionTitle": "Phasen (Reisen zur Praxis)",
+    "phasesAddRow": "Phase hinzufügen",
+    "phasesRemoveRow": "Entfernen",
+    "phasesRowTitle": "Phase",
+    "phaseTitleLabel": "Titel",
+    "phaseTitlePlaceholder": "z. B. Implantation",
+    "phaseVisitsLabel": "Besuche",
+    "phaseVisitsPlaceholder": "z. B. 2",
+    "phaseDaysLabel": "Tage Aufenthalt",
+    "phaseDaysPlaceholder": "z. B. 5",
+    "phaseGapLabel": "Heilungstage davor",
+    "phaseGapPlaceholder": "z. B. 90",
+    "linesSectionTitle": "Positionen",
+    "linesAddRow": "Position hinzufügen",
+    "linesRemoveRow": "Entfernen",
+    "linesRowTitle": "Position",
+    "linePhaseLabel": "Phase Nr.",
+    "linePhasePlaceholder": "1",
+    "lineKindLabel": "Art",
+    "lineServiceLabel": "Aus der Preisliste",
+    "lineServicePlaceholder": "Optional",
+    "lineNameLabel": "Beschreibung",
+    "lineNamePlaceholder": "z. B. Implantat mit Abutment",
+    "lineTeethLabel": "Zähne (FDI)",
+    "toothPickerPrimary": "Milchzähne",
+    "toothPickerPermanent": "Bleibende Zähne",
+    "lineMaterialLabel": "Material",
+    "lineMaterialPlaceholder": "z. B. Zirkon",
+    "lineBrandLabel": "Marke",
+    "lineBrandPlaceholder": "z. B. Straumann",
+    "lineWarrantyLabel": "Garantie (Jahre)",
+    "lineWarrantyPlaceholder": "z. B. 10",
+    "lineQuantityLabel": "Menge",
+    "lineQuantityPlaceholder": "1",
+    "lineUnitPriceLabel": "Einzelpreis",
+    "lineUnitPricePlaceholder": "0",
+    "lineDiscountLabel": "Rabatt",
+    "lineDiscountPlaceholder": "Optional",
+    "depositSectionTitle": "Anzahlung und Gültigkeit",
+    "depositTypeLabel": "Anzahlung",
+    "depositTypePlaceholder": "Auswählen",
+    "depositValueLabel": "Betrag oder Prozent",
+    "depositValuePlaceholder": "z. B. 10",
+    "refundableUntilDaysLabel": "Rückerstattbar bis (Tage vor Besuch)",
+    "refundableUntilDaysPlaceholder": "z. B. 14",
+    "validUntilLabel": "Gültig bis",
+    "validUntilPlaceholder": "Leer: Standard der Praxis",
+    "textsSectionTitle": "Hinweise und Bedingungen",
+    "notesLabel": "Hinweise für den Patienten",
+    "notesPlaceholder": "Was der Patient zu diesem Plan wissen sollte",
+    "termsLabel": "Bedingungen",
+    "termsPlaceholder": "Zahlung, Stornierung, Leistungsumfang",
+    "disclaimerHint": "Patienten wird mitgeteilt, dass Angebote bis zur Untersuchung vorläufig sind.",
+    "depositType": {
+      "none": "Keine Anzahlung",
+      "fixed": "Fester Betrag",
+      "percent": "Prozent des Totals"
+    },
+    "lineKind": {
+      "treatment": "Behandlung",
+      "package": "Paket (Hotel, Transfer…)"
+    }
+  }
+}

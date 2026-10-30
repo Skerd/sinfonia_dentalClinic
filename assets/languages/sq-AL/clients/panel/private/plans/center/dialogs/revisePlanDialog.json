@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/revisePlanDialog.tsx",
+  "title": "Rishiko ofertën",
+  "description": "Nga kjo ofertë krijohet një draft i ri. Kur ta dërgoni, zëvendëson këtë për pacientin.",
+  "confirm": "Rishiko",
+  "cancel": "Anulo",
+  "axios": {
+    "start": {
+      "title": "Po ruhet…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Oferta u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Oferta nuk u përditësua",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/acceptOfferDialog.tsx",
+  "title": "Accepter le devis de {clinic}",
+  "description": "Total {total}. À lire avant de confirmer :",
+  "pointContact": "Ce cabinet verra votre nom complet, e-mail et téléphones pour organiser votre visite.",
+  "pointOthers": "Vos autres cabinets sont informés ; leurs devis sont clôturés.",
+  "pointProvisional": "Le plan et le prix définitifs sont confirmés après examen.",
+  "signedName": "Votre nom complet, comme signature",
+  "agree": "J'accepte ce devis et ses conditions.",
+  "failed": "Le devis n'a pas pu être accepté. Il a peut-être expiré.",
+  "cancel": "Annuler",
+  "confirm": "Accepter le devis"
+}

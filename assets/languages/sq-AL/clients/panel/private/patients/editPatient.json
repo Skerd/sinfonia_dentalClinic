@@ -1,0 +1,103 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/editPatient.tsx",
+  "title": "Ndrysho pacientin",
+  "description": "Ndryshoni të dhënat e pacientit",
+  "formHeader": {
+    "title": "Ndrysho pacientin",
+    "description": "Ndryshoni të dhënat e pacientit"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  },
+  "axios": {
+    "start": {
+      "title": "Po ruhen ndryshimet",
+      "time": 3000
+    },
+    "success": {
+      "title": "Ndryshimet u ruajtën",
+      "time": 3000
+    },
+    "error": {
+      "title": "Ndryshimet nuk u ruajtën. Kontrolloni formularin.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "firstNameLabel": "Emri",
+    "firstNamePlaceholder": "Shkruani emrin",
+    "lastNameLabel": "Mbiemri",
+    "lastNamePlaceholder": "Shkruani mbiemrin",
+    "dateOfBirthLabel": "Datëlindja",
+    "dateOfBirthPlaceholder": "Zgjidhni datën",
+    "sexLabel": "Gjinia",
+    "sexPlaceholder": "Zgjidhni",
+    "preferredLanguageLabel": "Gjuha për mesazhet dhe dokumentet",
+    "preferredLanguagePlaceholder": "Zgjidhni gjuhën",
+    "sourceLabel": "Si ju gjetën",
+    "sourcePlaceholder": "Zgjidhni",
+    "contactSectionTitle": "Kontakti",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Shkruani email-in",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "p.sh. +355 69 123 4567",
+    "whatsappLabel": "WhatsApp",
+    "whatsappPlaceholder": "Nëse ndryshon nga telefoni",
+    "countryLabel": "Shteti",
+    "countryPlaceholder": "Zgjidhni shtetin",
+    "cityLabel": "Qyteti",
+    "cityPlaceholder": "Shkruani qytetin",
+    "streetLabel": "Rruga",
+    "streetPlaceholder": "Shkruani rrugën",
+    "postalCodeLabel": "Kodi postar",
+    "postalCodePlaceholder": "Shkruani kodin postar",
+    "emergencyContactSectionTitle": "Kontakt urgjence",
+    "emergencyContactNameLabel": "Emri",
+    "emergencyContactNamePlaceholder": "Shkruani emrin",
+    "emergencyContactPhoneLabel": "Telefon",
+    "emergencyContactPhonePlaceholder": "Shkruani telefonin",
+    "emergencyContactRelationLabel": "Lidhja",
+    "emergencyContactRelationPlaceholder": "p.sh. Bashkëshorti",
+    "homeDentistSectionTitle": "Dentisti në vendlindje",
+    "homeDentistNameLabel": "Dentisti",
+    "homeDentistNamePlaceholder": "Dentisti në vendin e tyre",
+    "homeDentistPracticeLabel": "Klinika",
+    "homeDentistPracticePlaceholder": "Shkruani klinikën",
+    "homeDentistEmailLabel": "Email",
+    "homeDentistEmailPlaceholder": "Shkruani email-in",
+    "homeDentistPhoneLabel": "Telefon",
+    "homeDentistPhonePlaceholder": "Shkruani telefonin",
+    "notesSectionTitle": "Etiketa dhe shënime",
+    "tagsLabel": "Etiketa",
+    "tagsPlaceholder": "p.sh. VIP, flet italisht",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Preferencat e udhëtimit, si preferon të kontaktohet…",
+    "notesHint": "Vetëm shënime administrative. Gjetjet mjekësore shkojnë te shënimet klinike.",
+    "removeItem": "Hiq",
+    "sex": {
+      "female": "Femër",
+      "male": "Mashkull",
+      "other": "Tjetër",
+      "unspecified": "Nuk dua ta them"
+    },
+    "language": {
+      "it-IT": "Italisht",
+      "en-US": "Anglisht",
+      "de-CH": "Gjermanisht",
+      "fr-FR": "Frëngjisht",
+      "sq-AL": "Shqip"
+    },
+    "source": {
+      "portal": "Portali",
+      "clinic_site": "Faqja e klinikës",
+      "booking": "Rezervim online",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "walk_in": "Pa termin",
+      "referral": "Rekomandim",
+      "agency": "Agjenci",
+      "other": "Tjetër"
+    }
+  }
+}

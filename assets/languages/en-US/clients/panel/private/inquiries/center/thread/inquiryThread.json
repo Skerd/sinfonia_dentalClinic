@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/thread/inquiryThread.tsx",
+  "title": "Conversation with the patient",
+  "loading": "Loading messages…",
+  "empty": "No messages yet. Write to the patient to start the conversation.",
+  "clinic": "Clinic",
+  "patient": "Patient",
+  "placeholder": "Write to the patient (no medical advice before an examination)…",
+  "attach": "Attach",
+  "send": "Send",
+  "loadError": "Messages could not be loaded.",
+  "sendError": "The message could not be sent. Try again."
+}

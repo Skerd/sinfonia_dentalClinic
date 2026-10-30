@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/estimateBanner.tsx",
+  "title": "Ricevi un preventivo dalle cliniche dentali",
+  "subtitle": "Confronta le cliniche e invia una richiesta con le tue radiografie fino a cinque di loro.",
+  "titleClinic": "Ricevi un preventivo",
+  "subtitleClinic": "Dicci di cosa hai bisogno e invia le radiografie; rispondiamo con piano di cura e prezzo.",
+  "accountNeeded": "Serve un account: raccoglie le risposte, i file e le conversazioni.",
+  "cta": "Chiedi un preventivo",
+  "ctaSignIn": "Accedi per chiedere"
+}

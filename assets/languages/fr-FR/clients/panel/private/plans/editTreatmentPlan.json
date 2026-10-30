@@ -1,0 +1,98 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/editTreatmentPlan.tsx",
+  "title": "Modifier le devis",
+  "description": "Modifier ce brouillon avant envoi",
+  "formHeader": {
+    "title": "Modifier le devis",
+    "description": "Modifier ce brouillon avant envoi"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement",
+      "time": 3000
+    },
+    "success": {
+      "title": "Devis enregistré",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le devis n'a pas pu être enregistré.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "inquiryLabel": "Demande de devis",
+    "inquiryPlaceholder": "La demande à laquelle il répond",
+    "patientLabel": "Dossier patient",
+    "patientPlaceholder": "Ou un patient vu au cabinet",
+    "targetHint": "Choisissez la demande à laquelle répond ce devis, ou le patient concerné.",
+    "optionLabelLabel": "Option",
+    "optionLabelPlaceholder": "ex. Implants Straumann",
+    "phasesSectionTitle": "Phases (voyages au cabinet)",
+    "phasesAddRow": "Ajouter une phase",
+    "phasesRemoveRow": "Retirer",
+    "phasesRowTitle": "Phase",
+    "phaseTitleLabel": "Titre",
+    "phaseTitlePlaceholder": "ex. Pose des implants",
+    "phaseVisitsLabel": "Visites",
+    "phaseVisitsPlaceholder": "ex. 2",
+    "phaseDaysLabel": "Jours de séjour",
+    "phaseDaysPlaceholder": "ex. 5",
+    "phaseGapLabel": "Jours de cicatrisation avant",
+    "phaseGapPlaceholder": "ex. 90",
+    "linesSectionTitle": "Lignes chiffrées",
+    "linesAddRow": "Ajouter une ligne",
+    "linesRemoveRow": "Retirer",
+    "linesRowTitle": "Ligne",
+    "linePhaseLabel": "Phase n°",
+    "linePhasePlaceholder": "1",
+    "lineKindLabel": "Type",
+    "lineServiceLabel": "Depuis la liste de prix",
+    "lineServicePlaceholder": "Facultatif",
+    "lineNameLabel": "Description",
+    "lineNamePlaceholder": "ex. Implant avec pilier",
+    "lineTeethLabel": "Dents (FDI)",
+    "toothPickerPrimary": "Dents de lait",
+    "toothPickerPermanent": "Dents définitives",
+    "lineMaterialLabel": "Matériau",
+    "lineMaterialPlaceholder": "ex. Zircone",
+    "lineBrandLabel": "Marque",
+    "lineBrandPlaceholder": "ex. Straumann",
+    "lineWarrantyLabel": "Garantie (ans)",
+    "lineWarrantyPlaceholder": "ex. 10",
+    "lineQuantityLabel": "Quantité",
+    "lineQuantityPlaceholder": "1",
+    "lineUnitPriceLabel": "Prix unitaire",
+    "lineUnitPricePlaceholder": "0",
+    "lineDiscountLabel": "Remise",
+    "lineDiscountPlaceholder": "Facultatif",
+    "depositSectionTitle": "Acompte et validité",
+    "depositTypeLabel": "Acompte",
+    "depositTypePlaceholder": "Choisir",
+    "depositValueLabel": "Montant ou pourcentage",
+    "depositValuePlaceholder": "ex. 10",
+    "refundableUntilDaysLabel": "Remboursable jusqu'à (jours avant)",
+    "refundableUntilDaysPlaceholder": "ex. 14",
+    "validUntilLabel": "Valable jusqu'au",
+    "validUntilPlaceholder": "Vide : valeur du cabinet",
+    "textsSectionTitle": "Remarques et conditions",
+    "notesLabel": "Remarques pour le patient",
+    "notesPlaceholder": "Ce que le patient doit savoir",
+    "termsLabel": "Conditions",
+    "termsPlaceholder": "Paiement, annulation, ce qui est inclus",
+    "disclaimerHint": "Les patients sont informés que les devis sont provisoires jusqu'à l'examen.",
+    "depositType": {
+      "none": "Pas d'acompte",
+      "fixed": "Montant fixe",
+      "percent": "Pourcentage du total"
+    },
+    "lineKind": {
+      "treatment": "Soin",
+      "package": "Forfait (hôtel, transfert…)"
+    }
+  }
+}

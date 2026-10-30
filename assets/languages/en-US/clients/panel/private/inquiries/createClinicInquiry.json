@@ -1,0 +1,95 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
+  "title": "Add lead",
+  "description": "A patient who called, wrote on WhatsApp or came through an agency",
+  "formHeader": {
+    "title": "Add lead",
+    "description": "A patient who called, wrote on WhatsApp or came through an agency"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving lead",
+      "time": 3000
+    },
+    "success": {
+      "title": "Lead added",
+      "time": 3000
+    },
+    "error": {
+      "title": "The lead could not be added. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "form": {
+    "contactSectionTitle": "Patient",
+    "requestSectionTitle": "Request",
+    "firstNameLabel": "First name",
+    "firstNamePlaceholder": "Enter first name",
+    "lastNameLabel": "Last name",
+    "lastNamePlaceholder": "Enter last name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter email",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "e.g. +39 333 123 4567",
+    "whatsappLabel": "WhatsApp",
+    "whatsappPlaceholder": "If different from the phone",
+    "countryLabel": "Country",
+    "countryPlaceholder": "Select a country",
+    "preferredLanguageLabel": "Language",
+    "preferredLanguagePlaceholder": "Select a language",
+    "sourceLabel": "How they reached you",
+    "sourcePlaceholder": "Select",
+    "treatmentsWantedLabel": "Treatments wanted",
+    "descriptionLabel": "What they need",
+    "descriptionPlaceholder": "What the patient told you",
+    "travelFromLabel": "Can travel from",
+    "travelFromPlaceholder": "Pick a date",
+    "travelToLabel": "Can travel until",
+    "travelToPlaceholder": "Pick a date",
+    "budgetLabel": "Budget",
+    "budgetPlaceholder": "Optional",
+    "budgetCurrencyLabel": "Budget currency",
+    "budgetCurrencyPlaceholder": "Select a currency",
+    "assignedToLabel": "Assigned to",
+    "assignedToPlaceholder": "Select a colleague",
+    "language": {
+      "it-IT": "Italian",
+      "en-US": "English",
+      "de-CH": "German",
+      "fr-FR": "French",
+      "sq-AL": "Albanian"
+    },
+    "source": {
+      "portal": "Portal",
+      "clinic_site": "Clinic website",
+      "booking": "Online booking",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "walk_in": "Walk-in",
+      "referral": "Referral",
+      "agency": "Agency",
+      "other": "Other"
+    },
+    "treatment": {
+      "checkup": "Check-up",
+      "hygiene": "Cleaning & hygiene",
+      "whitening": "Whitening",
+      "filling": "Filling",
+      "root_canal": "Root canal",
+      "extraction": "Extraction",
+      "implant": "Implant",
+      "all_on_x": "All-on-4 / All-on-6",
+      "crown": "Crown",
+      "bridge": "Bridge",
+      "veneer": "Veneer",
+      "denture": "Denture",
+      "orthodontics": "Orthodontics",
+      "bone_graft": "Bone graft / sinus lift",
+      "other": "Other"
+    }
+  }
+}

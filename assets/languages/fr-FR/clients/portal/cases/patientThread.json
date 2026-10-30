@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/patientThread.tsx",
+  "loading": "Chargement…",
+  "empty": "Aucun message pour l'instant.",
+  "you": "Vous",
+  "placeholder": "Écrivez au cabinet…",
+  "attach": "Joindre",
+  "send": "Envoyer",
+  "failed": "Le message n'a pas pu être envoyé."
+}

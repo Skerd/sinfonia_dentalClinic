@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/convertInquiryDialog.tsx",
+  "title": "Open patient folder",
+  "description": "Opens the patient's folder at this clinic (or links the one they already have) and closes the request as won.",
+  "confirm": "Open patient folder",
+  "cancel": "Cancel",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Request updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The request could not be updated",
+      "time": 3000
+    }
+  }
+}

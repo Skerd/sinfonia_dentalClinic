@@ -5,7 +5,11 @@
     "Clinicservices": "Treatments",
     "Practitioners": "Team members",
     "Scheduleexceptions": "Time off",
-    "Appointments": "Appointments"
+    "Appointments": "Appointments",
+    "Patients": "Patients",
+    "Clinicinquiries": "Estimate requests",
+    "Clinicmessages": "Messages with patients",
+    "Treatmentplans": "Treatment plans"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -31,7 +35,18 @@
       "rescheduleDeadlineHours": "Reschedule deadline hours",
       "retentionMonths": "Retention months",
       "slotIntervalMinutes": "Slot interval minutes",
-      "updatedAt": "Updated at"
+      "updatedAt": "Updated at",
+      "inquiriesEnabled": "Take estimate requests",
+      "inquiryNotifyUsers": "Tell these people about new requests and messages",
+      "responseTargetHours": "Answer within (hours)",
+      "languagesSpoken": "Languages spoken",
+      "implantBrands": "Implant brands",
+      "nearestAirport": "Nearest airport",
+      "profileTexts": "Texts per language",
+      "accreditations": "Accreditations and memberships",
+      "gallery": "Photos of the clinic",
+      "quoteValidityDays": "Quotes valid for (days)",
+      "quoteTerms": "Standard quote terms"
     },
     "Cliniclocations": {
       "address": "Address",
@@ -64,7 +79,9 @@
       "priceType": "Price type",
       "slug": "Slug",
       "sortOrder": "Sort order",
-      "updatedAt": "Updated at"
+      "updatedAt": "Updated at",
+      "category": "Treatment type",
+      "perTooth": "Priced per tooth"
     },
     "Practitioners": {
       "bio": "Bio",
@@ -127,7 +144,60 @@
       "startAt": "Start at",
       "status": "Status",
       "timeline": "Timeline",
-      "updatedAt": "Updated at"
+      "updatedAt": "Updated at",
+      "patientRecord": "Patient folder"
+    },
+    "Patients": {
+      "number": "Patient no.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "dateOfBirth": "Date of birth",
+      "sex": "Sex",
+      "email": "Email",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "preferredLanguage": "Language",
+      "address": "Address",
+      "emergencyContact": "Emergency contact",
+      "homeDentist": "Home dentist",
+      "source": "Came from",
+      "tags": "Tags",
+      "notes": "Notes",
+      "account": "Portal account",
+      "createdAt": "Created at",
+      "updatedAt": "Updated at",
+      "createdBy": "Created by",
+      "patients": "Patients"
+    },
+    "Clinicinquiries": {
+      "clinicinquiries": "Estimate requests",
+      "status": "Status",
+      "assignedTo": "Assigned to",
+      "contact": "Patient",
+      "files": "Files"
+    },
+    "Clinicmessages": {
+      "clinicmessages": "Messages with patients",
+      "body": "Message",
+      "attachments": "Files"
+    },
+    "Treatmentplans": {
+      "treatmentplans": "Treatment plans",
+      "number": "Quote no.",
+      "status": "Status",
+      "optionLabel": "Option",
+      "version": "Version",
+      "inquiry": "Estimate request",
+      "patient": "Patient folder",
+      "currency": "Currency",
+      "validUntil": "Valid until",
+      "sentAt": "Sent",
+      "depositType": "Deposit",
+      "notes": "Notes for the patient",
+      "terms": "Terms",
+      "totals": "Total",
+      "lines": "Priced lines",
+      "phases": "Phases (trips to the clinic)"
     }
   }
 }

@@ -1,0 +1,36 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
+  "title": "Plans de traitement",
+  "description": "Devis pour les patients, du brouillon au plan accepté",
+  "help": {
+    "ariaLabel": "À propos des plans",
+    "title": "À propos des plans",
+    "overview": "Un plan se divise en phases (voyages) : implants maintenant, couronnes après cicatrisation. Chaque ligne indique dents, matériau et marque. Plusieurs plans par demande proposent des alternatives ; le patient en accepte un."
+  },
+  "create": "Nouveau devis",
+  "searchPlaceholder": "Rechercher des devis...",
+  "noData": "Aucun devis",
+  "failTitle": "Impossible de charger les devis",
+  "failDescription": "Une erreur s'est produite.",
+  "deleted": "Supprimé",
+  "fields": {
+    "number": "N° de devis",
+    "status": "Statut",
+    "optionLabel": "Option",
+    "version": "Version",
+    "inquiry": "Demande de devis",
+    "patient": "Dossier patient",
+    "currency": "Devise",
+    "validUntil": "Valable jusqu'au",
+    "sentAt": "Envoyé",
+    "depositType": "Acompte",
+    "notes": "Remarques pour le patient",
+    "terms": "Conditions",
+    "totals": "Total",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

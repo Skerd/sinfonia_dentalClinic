@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/declineInquiryDialog.tsx",
+  "title": "Anfrage ablehnen",
+  "description": "Der Patient erfährt, dass Sie nicht helfen können, mit Ihrer Begründung. Sie verlieren den Zugriff auf seine Dateien.",
+  "confirm": "Ablehnen",
+  "reasonLabel": "Begründung für den Patienten (optional)",
+  "reasonPlaceholder": "z. B. Diese Behandlung bieten wir nicht an",
+  "cancel": "Abbrechen",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Anfrage aktualisiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Anfrage konnte nicht aktualisiert werden",
+      "time": 3000
+    }
+  }
+}

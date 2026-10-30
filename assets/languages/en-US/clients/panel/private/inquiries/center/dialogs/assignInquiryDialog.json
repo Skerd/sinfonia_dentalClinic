@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/assignInquiryDialog.tsx",
+  "title": "Assign request",
+  "description": "The person answering this patient. They are told about new messages and files. Leave empty to unassign.",
+  "confirm": "Assign",
+  "userLabel": "Assigned to",
+  "userPlaceholder": "Select a colleague",
+  "cancel": "Cancel",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Request updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The request could not be updated",
+      "time": 3000
+    }
+  }
+}

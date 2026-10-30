@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/index.tsx",
+  "title": "Estimate requests",
+  "description": "Patients asking for a price, from the portal, your website or your own calls",
+  "help": {
+    "ariaLabel": "About estimate requests",
+    "title": "About estimate requests",
+    "overview": "A patient can send one request to several clinics. Until they share their contact, you see their first name and country only; talk to them in the request's conversation.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Answer within your response target: the portal shows patients how fast clinics usually answer.",
+          "Ask for a panoramic X-ray or photos when you need them to quote; the patient sends them to you only.",
+          "Open the patient folder once they choose you; it keeps their contact and appointments together."
+        ]
+      }
+    ]
+  },
+  "create": "Add lead",
+  "searchPlaceholder": "Search requests or add filters...",
+  "noData": "No requests yet",
+  "failTitle": "Failed to load requests",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "fields": {
+    "number": "Request no.",
+    "status": "Status",
+    "source": "Came from",
+    "assignedTo": "Assigned to",
+    "travelFrom": "Can travel from",
+    "travelTo": "Can travel until",
+    "budget": "Budget",
+    "budgetCurrency": "Budget currency",
+    "firstResponseAt": "First answered",
+    "lastMessageAt": "Last message",
+    "patient": "Patient folder",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "country": "Country",
+    "preferredLanguage": "Language",
+    "email": "Email",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "contactShared": "Contact shared",
+    "description": "What the patient wrote",
+    "files": "Files",
+    "unreadForClinic": "Unread messages",
+    "contact": "Patient",
+    "treatmentsWanted": "Treatments wanted",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by",
+    "contact.firstName": "First name",
+    "contact.country": "Country"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/planBreakdown.tsx",
+  "phaseSummary": "{visits} visit(s), about {days} days' stay",
+  "phaseGap": "at least {days} days after the previous phase",
+  "package": "Package",
+  "teeth": "Teeth",
+  "warranty": "{years}-year warranty",
+  "discount": "Discount",
+  "total": "Total",
+  "deposit": "Deposit",
+  "acceptedBy": "Accepted by {name} on {date}"
+}

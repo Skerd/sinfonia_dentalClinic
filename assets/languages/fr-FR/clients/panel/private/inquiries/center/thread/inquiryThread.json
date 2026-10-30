@@ -1,0 +1,13 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/thread/inquiryThread.tsx",
+  "title": "Conversation avec le patient",
+  "loading": "Chargement des messages…",
+  "empty": "Aucun message. Écrivez au patient pour commencer.",
+  "clinic": "Cabinet",
+  "patient": "Patient",
+  "placeholder": "Écrivez au patient (pas d'avis médical avant examen)…",
+  "attach": "Joindre",
+  "send": "Envoyer",
+  "loadError": "Impossible de charger les messages.",
+  "sendError": "Le message n'a pas pu être envoyé."
+}

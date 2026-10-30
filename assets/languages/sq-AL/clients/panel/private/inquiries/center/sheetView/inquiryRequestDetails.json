@@ -1,0 +1,31 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryRequestDetails.tsx",
+  "treatmentsTitle": "Trajtimet e kërkuara",
+  "infoRequestsTitle": "Kërkuar nga pacienti",
+  "requestedOn": "Kërkuar më",
+  "fulfilledOn": "Marrë më",
+  "treatment": {
+    "checkup": "Kontroll",
+    "hygiene": "Higjienë dentare",
+    "whitening": "Zbardhim",
+    "filling": "Mbushje",
+    "root_canal": "Mjekim kanali",
+    "extraction": "Heqje dhëmbi",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Kurorë",
+    "bridge": "Urë",
+    "veneer": "Faset",
+    "denture": "Protezë",
+    "orthodontics": "Ortodonci",
+    "bone_graft": "Shtim kockor / ngritje sinusi",
+    "other": "Tjetër"
+  },
+  "kind": {
+    "opg": "Radiografi panoramike (OPG)",
+    "cbct": "Skaner 3D (CBCT)",
+    "photos": "Foto të dhëmbëve",
+    "medical_history": "Historia mjekësore",
+    "other": "Dokumente të tjera"
+  }
+}

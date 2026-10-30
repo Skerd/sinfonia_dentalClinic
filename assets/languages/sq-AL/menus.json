@@ -7,6 +7,15 @@
     "appointments": {
       "title": "Takime"
     },
+    "inquiries": {
+      "title": "Kërkesat për ofertë"
+    },
+    "plans": {
+      "title": "Planet e trajtimit"
+    },
+    "patients": {
+      "title": "Pacientët"
+    },
     "team": {
       "title": "Ekipi"
     },

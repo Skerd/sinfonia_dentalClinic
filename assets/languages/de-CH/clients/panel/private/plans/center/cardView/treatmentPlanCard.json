@@ -1,0 +1,17 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/cardView/treatmentPlanCard.tsx",
+  "failedTitle": "Angebot konnte nicht geladen werden",
+  "failedDescription": "Tippen, um es erneut zu versuchen.",
+  "optionLabel": "Variante",
+  "inquiry": "Kostenanfrage",
+  "status": "Status",
+  "total": "Total",
+  "statusValues": {
+    "draft": "Entwurf",
+    "sent": "Gesendet",
+    "accepted": "Angenommen",
+    "rejected": "Nicht gewählt",
+    "expired": "Abgelaufen",
+    "superseded": "Ersetzt"
+  }
+}

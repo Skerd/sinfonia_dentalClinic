@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/sendPlanDialog.tsx",
+  "title": "Invia il preventivo",
+  "description": "Il paziente riceve un'email e può confrontarlo e accettarlo dal suo account. Un preventivo inviato non si modifica più, si rivede.",
+  "confirm": "Invia al paziente",
+  "cancel": "Annulla",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Preventivo aggiornato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile aggiornare il preventivo",
+      "time": 3000
+    }
+  }
+}

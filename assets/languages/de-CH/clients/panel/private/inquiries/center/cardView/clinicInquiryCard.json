@@ -1,0 +1,19 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/cardView/clinicInquiryCard.tsx",
+  "failedTitle": "Anfrage konnte nicht geladen werden",
+  "failedDescription": "Tippen, um es erneut zu versuchen.",
+  "patient": "Patient",
+  "country": "Land",
+  "status": "Status",
+  "unread": "Ungelesene Nachrichten",
+  "statusValues": {
+    "new": "Neu",
+    "in_review": "In Prüfung",
+    "info_requested": "Wartet auf Patient",
+    "declined": "Abgelehnt",
+    "lost": "Verloren",
+    "withdrawn": "Zurückgezogen",
+    "converted": "Akte eröffnet",
+    "quoted": "Angebot gesendet"
+  }
+}

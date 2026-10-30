@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx",
+  "number": "Quote no.",
+  "status": "Status",
+  "optionLabel": "Option",
+  "version": "Version",
+  "inquiry": "Estimate request",
+  "patient": "Patient folder",
+  "currency": "Currency",
+  "validUntil": "Valid until",
+  "sentAt": "Sent",
+  "depositType": "Deposit",
+  "notes": "Notes for the patient",
+  "terms": "Terms",
+  "totals": "Total",
+  "planSubtitle": "Treatment plan and quote",
+  "overview": "Overview",
+  "textsGroup": "Notes and terms",
+  "lifecycle": "Lifecycle",
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by",
+  "statusValues": {
+    "draft": "Draft",
+    "sent": "Sent",
+    "accepted": "Accepted",
+    "rejected": "Not chosen",
+    "expired": "Expired",
+    "superseded": "Replaced"
+  },
+  "depositTypeValues": {
+    "none": "No deposit",
+    "fixed": "Fixed amount",
+    "percent": "Percentage of the total"
+  }
+}

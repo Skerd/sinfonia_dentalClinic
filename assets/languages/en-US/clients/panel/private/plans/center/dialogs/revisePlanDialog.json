@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/revisePlanDialog.tsx",
+  "title": "Revise the quote",
+  "description": "A new draft is made from this quote. When you send it, it replaces this one for the patient.",
+  "confirm": "Revise",
+  "cancel": "Cancel",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Quote updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The quote could not be updated",
+      "time": 3000
+    }
+  }
+}

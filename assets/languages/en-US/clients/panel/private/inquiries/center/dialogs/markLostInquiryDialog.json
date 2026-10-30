@@ -1,0 +1,23 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/dialogs/markLostInquiryDialog.tsx",
+  "title": "Mark as lost",
+  "description": "The patient chose another clinic or stopped answering. They are not told. You lose access to their files.",
+  "confirm": "Mark as lost",
+  "reasonLabel": "Internal note (optional)",
+  "reasonPlaceholder": "e.g. Chose a clinic in Durrës",
+  "cancel": "Cancel",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Request updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The request could not be updated",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
+  "title": "Piani di cura",
+  "description": "Preventivi per i pazienti, dalla bozza al piano accettato",
+  "help": {
+    "ariaLabel": "Informazioni sui piani",
+    "title": "Informazioni sui piani",
+    "overview": "Un piano è diviso in fasi (viaggi): impianti ora, corone dopo la guarigione. Ogni riga indica denti, materiale e marca. Più piani per la stessa richiesta offrono alternative; il paziente ne accetta uno."
+  },
+  "create": "Nuovo preventivo",
+  "searchPlaceholder": "Cerca preventivi...",
+  "noData": "Ancora nessun preventivo",
+  "failTitle": "Impossibile caricare i preventivi",
+  "failDescription": "Si è verificato un errore.",
+  "deleted": "Eliminato",
+  "fields": {
+    "number": "N. preventivo",
+    "status": "Stato",
+    "optionLabel": "Opzione",
+    "version": "Versione",
+    "inquiry": "Richiesta",
+    "patient": "Cartella paziente",
+    "currency": "Valuta",
+    "validUntil": "Valido fino al",
+    "sentAt": "Inviato",
+    "depositType": "Acconto",
+    "notes": "Note per il paziente",
+    "terms": "Condizioni",
+    "totals": "Totale",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

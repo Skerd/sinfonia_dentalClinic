@@ -1,0 +1,19 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/cardView/clinicInquiryCard.tsx",
+  "failedTitle": "Failed to load request",
+  "failedDescription": "Tap to retry.",
+  "patient": "Patient",
+  "country": "Country",
+  "status": "Status",
+  "unread": "Unread messages",
+  "statusValues": {
+    "new": "New",
+    "in_review": "In review",
+    "info_requested": "Waiting for patient",
+    "declined": "Declined",
+    "lost": "Lost",
+    "withdrawn": "Withdrawn",
+    "converted": "Patient folder opened",
+    "quoted": "Quote sent"
+  }
+}

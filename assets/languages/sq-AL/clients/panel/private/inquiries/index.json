@@ -1,0 +1,59 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/index.tsx",
+  "title": "Kërkesat për ofertë",
+  "description": "Pacientë që kërkojnë çmim: nga portali, faqja juaj ose thirrjet tuaja",
+  "help": {
+    "ariaLabel": "Rreth kërkesave",
+    "title": "Rreth kërkesave",
+    "overview": "Një pacient mund t'u dërgojë një kërkesë disa klinikave. Derisa të ndajë kontaktin, shihni vetëm emrin dhe shtetin; bisedoni në bisedën e kërkesës.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Përgjigjuni brenda afatit tuaj: portali u tregon pacientëve sa shpejt përgjigjen klinikat.",
+          "Kërkoni radiografi panoramike ose foto kur ju duhen për ofertë; pacienti jua dërgon vetëm juve.",
+          "Hapni kartelën e pacientit kur ju zgjedh; ajo mban bashkë kontaktin dhe takimet."
+        ]
+      }
+    ]
+  },
+  "create": "Shto kontakt",
+  "searchPlaceholder": "Kërkoni kërkesa ose shtoni filtra...",
+  "noData": "Ende asnjë kërkesë",
+  "failTitle": "Kërkesat nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq. Provoni përsëri.",
+  "deleted": "Fshirë",
+  "fields": {
+    "number": "Nr. kërkese",
+    "status": "Statusi",
+    "source": "Burimi",
+    "assignedTo": "Caktuar te",
+    "travelFrom": "Mund të udhëtojë nga",
+    "travelTo": "Mund të udhëtojë deri",
+    "budget": "Buxheti",
+    "budgetCurrency": "Monedha e buxhetit",
+    "firstResponseAt": "Përgjigja e parë",
+    "lastMessageAt": "Mesazhi i fundit",
+    "patient": "Kartela e pacientit",
+    "firstName": "Emri",
+    "lastName": "Mbiemri",
+    "country": "Shteti",
+    "preferredLanguage": "Gjuha",
+    "email": "Email",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp",
+    "contactShared": "Kontakti i ndarë",
+    "description": "Çfarë shkroi pacienti",
+    "files": "Skedarët",
+    "unreadForClinic": "Mesazhe të palexuara",
+    "contact": "Pacienti",
+    "treatmentsWanted": "Trajtimet e kërkuara",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga",
+    "contact.firstName": "Emri",
+    "contact.country": "Shteti"
+  }
+}

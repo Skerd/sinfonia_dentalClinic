@@ -1,0 +1,19 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/cardView/clinicInquiryCard.tsx",
+  "failedTitle": "Kërkesa nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "patient": "Pacienti",
+  "country": "Shteti",
+  "status": "Statusi",
+  "unread": "Mesazhe të palexuara",
+  "statusValues": {
+    "new": "E re",
+    "in_review": "Në shqyrtim",
+    "info_requested": "Në pritje të pacientit",
+    "declined": "Refuzuar",
+    "lost": "Humbur",
+    "withdrawn": "Tërhequr",
+    "converted": "Kartela u hap",
+    "quoted": "Oferta u dërgua"
+  }
+}

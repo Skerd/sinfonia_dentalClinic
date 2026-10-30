@@ -42,7 +42,27 @@
       "free": "Gratuit"
     },
     "sortOrderLabel": "Ordre de tri",
-    "sortOrderPlaceholder": "Saisir l'ordre de tri"
+    "sortOrderPlaceholder": "Saisir l'ordre de tri",
+    "categoryLabel": "Type de soin",
+    "categoryPlaceholder": "Choisissez le type de soin",
+    "perToothLabel": "Prix par dent",
+    "category": {
+      "checkup": "Contrôle",
+      "hygiene": "Détartrage et hygiène",
+      "whitening": "Blanchiment",
+      "filling": "Obturation",
+      "root_canal": "Traitement de canal",
+      "extraction": "Extraction",
+      "implant": "Implant",
+      "all_on_x": "All-on-4 / All-on-6",
+      "crown": "Couronne",
+      "bridge": "Bridge",
+      "veneer": "Facette",
+      "denture": "Prothèse amovible",
+      "orthodontics": "Orthodontie",
+      "bone_graft": "Greffe osseuse / sinus lift",
+      "other": "Autre"
+    }
   },
   "axios": {
     "start": {

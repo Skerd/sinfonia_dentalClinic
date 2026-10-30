@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseDialog.tsx",
+  "title": "Votre demande de devis",
+  "failed": "Une erreur s'est produite. Veuillez réessayer.",
+  "askedFor": "Le cabinet demande :",
+  "sendFiles": "Envoyer ces fichiers",
+  "files": "Vos fichiers pour ce cabinet",
+  "noFiles": "Aucun fichier.",
+  "addFiles": "Ajouter des fichiers",
+  "conversation": "Conversation",
+  "shareContact": "Partager mes coordonnées avec ce cabinet",
+  "contactShared": "Ce cabinet voit vos coordonnées.",
+  "withdraw": "Retirer auprès de ce cabinet",
+  "treatment": {
+    "checkup": "Contrôle",
+    "hygiene": "Détartrage et hygiène",
+    "whitening": "Blanchiment",
+    "filling": "Obturation",
+    "root_canal": "Traitement de canal",
+    "extraction": "Extraction",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Couronne",
+    "bridge": "Bridge",
+    "veneer": "Facette",
+    "denture": "Prothèse amovible",
+    "orthodontics": "Orthodontie",
+    "bone_graft": "Greffe osseuse / sinus lift",
+    "other": "Autre"
+  },
+  "status": {
+    "new": "Envoyée",
+    "in_review": "Le cabinet examine",
+    "info_requested": "Le cabinet demande plus",
+    "declined": "Le cabinet a refusé",
+    "lost": "Clôturée",
+    "withdrawn": "Retirée",
+    "converted": "Vous êtes patient ici",
+    "quoted": "Devis reçu"
+  },
+  "kind": {
+    "opg": "Radio panoramique (OPG)",
+    "cbct": "Scanner 3D (CBCT)",
+    "photos": "Photos des dents",
+    "medical_history": "Antécédents médicaux",
+    "other": "Autres documents"
+  }
+}

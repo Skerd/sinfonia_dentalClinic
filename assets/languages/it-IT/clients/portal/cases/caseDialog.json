@@ -1,0 +1,48 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseDialog.tsx",
+  "title": "La tua richiesta di preventivo",
+  "failed": "Qualcosa è andato storto. Riprova.",
+  "askedFor": "La clinica chiede:",
+  "sendFiles": "Invia questi file",
+  "files": "I tuoi file per questa clinica",
+  "noFiles": "Nessun file.",
+  "addFiles": "Aggiungi file",
+  "conversation": "Conversazione",
+  "shareContact": "Condividi i miei contatti con questa clinica",
+  "contactShared": "Questa clinica vede i tuoi contatti.",
+  "withdraw": "Ritira da questa clinica",
+  "treatment": {
+    "checkup": "Controllo",
+    "hygiene": "Igiene dentale",
+    "whitening": "Sbiancamento",
+    "filling": "Otturazione",
+    "root_canal": "Devitalizzazione",
+    "extraction": "Estrazione",
+    "implant": "Impianto",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Corona",
+    "bridge": "Ponte",
+    "veneer": "Faccetta",
+    "denture": "Protesi mobile",
+    "orthodontics": "Ortodonzia",
+    "bone_graft": "Innesto osseo / rialzo del seno",
+    "other": "Altro"
+  },
+  "status": {
+    "new": "Inviata",
+    "in_review": "La clinica sta valutando",
+    "info_requested": "La clinica chiede altro",
+    "declined": "La clinica ha rifiutato",
+    "lost": "Chiusa",
+    "withdrawn": "Ritirata",
+    "converted": "Sei paziente qui",
+    "quoted": "Preventivo ricevuto"
+  },
+  "kind": {
+    "opg": "Panoramica (OPG)",
+    "cbct": "TAC 3D (CBCT)",
+    "photos": "Foto dei denti",
+    "medical_history": "Anamnesi",
+    "other": "Altri documenti"
+  }
+}
