@@ -1,0 +1,35 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseMedicalHistory.tsx",
+  "title": "Anamnesi",
+  "prompt": "Compilala una volta e tutte le cliniche di questa richiesta potranno preparare un preventivo sicuro.",
+  "sentOn": "Inviata alle tue cliniche il {date}",
+  "fillIn": "Compila",
+  "update": "Aggiorna",
+  "intro": "Le tue risposte vanno solo alle cliniche di questa richiesta. Il dentista ne ha bisogno prima di pianificare impianti o interventi.",
+  "detailPlaceholder": "Dicci di più (quale farmaco, da quando…)",
+  "medications": "Farmaci che prendi regolarmente",
+  "medicationsPlaceholder": "Nome e dose, uno per riga",
+  "signature": "Nome e cognome",
+  "signaturePlaceholder": "Scrivi il tuo nome per firmare",
+  "signatureHint": "Scrivendo il tuo nome confermi che le risposte sono vere per quanto ne sai.",
+  "send": "Invia alle mie cliniche",
+  "cancel": "Annulla",
+  "failed": "Invio non riuscito. Riprova.",
+  "question": {
+    "allergies": "Allergie (farmaci, lattice, anestetici)",
+    "anticoagulants": "Anticoagulanti (es. warfarin, aspirina, apixaban)",
+    "bisphosphonates": "Bifosfonati o altri farmaci per le ossa (osteoporosi, tumori)",
+    "diabetes": "Diabete",
+    "heart_condition": "Malattie cardiache, pacemaker o interventi al cuore",
+    "high_blood_pressure": "Pressione alta",
+    "bleeding_disorder": "Disturbi della coagulazione o lividi frequenti",
+    "infectious_disease": "Malattie infettive (es. epatite, HIV, tubercolosi)",
+    "pregnancy": "Gravidanza o allattamento",
+    "smoking": "Fumo"
+  },
+  "answer": {
+    "no": "No",
+    "yes": "Sì",
+    "unsure": "Non so"
+  }
+}

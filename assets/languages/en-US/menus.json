@@ -6,6 +6,7 @@
     "inquiries": {"title": "Estimate requests"},
     "plans": {"title": "Treatment plans"},
     "patients": {"title": "Patients"},
+    "trips": {"title": "Trips"},
     "team": {"title": "Team"},
     "timeOff": {"title": "Time off"},
     "services": {"title": "Treatments"},

@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
+  "title": "Erstattung",
+  "description": "Kartenzahlungen werden auf die Karte erstattet; in der Klinik eingenommenes Geld wird als Erstattung erfasst, die Sie selbst auszahlen.",
+  "confirm": "Erstatten",
+  "cancel": "Abbrechen",
+  "amountLabel": "Betrag",
+  "reasonLabel": "Grund",
+  "reasonPlaceholder": "z. B. der Patient hat die Reise abgesagt",
+  "axios": {
+    "start": {
+      "title": "Speichern…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Zahlung aktualisiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Zahlung konnte nicht gespeichert werden",
+      "time": 3000
+    }
+  }
+}

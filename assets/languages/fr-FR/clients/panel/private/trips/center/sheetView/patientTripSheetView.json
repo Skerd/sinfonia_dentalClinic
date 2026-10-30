@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/center/sheetView/patientTripSheetView.tsx",
+  "patient": "Dossier patient",
+  "plan": "Plan de traitement",
+  "phase": "Phase",
+  "status": "Statut",
+  "arrivalAt": "Arrivée",
+  "departureAt": "Départ",
+  "arrivalFlight": "Vol d'arrivée",
+  "departureFlight": "Vol de départ",
+  "accommodation": "Hébergement",
+  "transfer": "Navette aéroport",
+  "companions": "Accompagnants",
+  "notes": "Notes",
+  "tripSubtitle": "Voyage du patient",
+  "overview": "Aperçu",
+  "stayGroup": "Séjour",
+  "lifecycle": "Cycle de vie",
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par",
+  "statusValues": {
+    "planned": "Prévu",
+    "confirmed": "Confirmé",
+    "completed": "Terminé",
+    "cancelled": "Annulé"
+  }
+}

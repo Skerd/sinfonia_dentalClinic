@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseTrips.tsx",
+  "title": "Udhëtimet tuaja",
+  "arrival": "Mbërritja:",
+  "departure": "Nisja:",
+  "transfer": "Klinika ju merr në aeroport",
+  "arrivalFlight": "Fluturimi juaj i mbërritjes",
+  "departureFlight": "Fluturimi juaj i kthimit",
+  "flightPlaceholder": "p.sh. W6 4567",
+  "accommodation": "Ku qëndroni",
+  "accommodationPlaceholder": "Emri dhe adresa e hotelit",
+  "save": "Ruaj",
+  "saved": "U ruajt. Klinika u njoftua.",
+  "saveFailed": "Nuk u ruajt. Ju lutemi provoni përsëri.",
+  "status": {
+    "planned": "I planifikuar",
+    "confirmed": "I konfirmuar",
+    "completed": "I përfunduar",
+    "cancelled": "I anuluar"
+  }
+}

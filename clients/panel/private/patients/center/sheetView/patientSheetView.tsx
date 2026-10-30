@@ -7,6 +7,7 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {Patient} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/patient/patient.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
+import MedicalHistoryAnswers from "@dentalClinicModule/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx";
 
 type PatientSheetViewOwnProps = {
     open: boolean;
@@ -61,7 +62,9 @@ function PatientSheetView({
                 setSheetData(row);
                 onSheetRowPatched?.(row as Partial<Patient>);
             }}
-        />
+        >
+            {(sheetData as Patient).number ? <MedicalHistoryAnswers history={(sheetData as Patient).medicalHistory} /> : null}
+        </SheetViewRenderer>
     );
 }
 

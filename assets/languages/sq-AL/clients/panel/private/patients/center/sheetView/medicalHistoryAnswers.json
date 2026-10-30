@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx",
+  "title": "Historia mjekësore",
+  "none": "Pacienti nuk e ka plotësuar ende historinë mjekësore. Kërkojeni nga kërkesa.",
+  "signed": "Nënshkruar nga {name} më {date}",
+  "answeredNo": "U përgjigj jo për:",
+  "medications": "Ilaçet e rregullta",
+  "question": {
+    "allergies": "Alergji (ilaçe, lateks, anestetikë)",
+    "anticoagulants": "Hollues gjaku (p.sh. warfarinë, aspirinë, apiksaban)",
+    "bisphosphonates": "Bisfosfonate ose ilaçe të tjera për kockat (osteoporozë, kancer)",
+    "diabetes": "Diabet",
+    "heart_condition": "Sëmundje zemre, stimulues kardiak ose operacion zemre",
+    "high_blood_pressure": "Tension i lartë",
+    "bleeding_disorder": "Çrregullim i koagulimit ose mavijosje të shpeshta",
+    "infectious_disease": "Sëmundje infektive (p.sh. hepatit, HIV, tuberkuloz)",
+    "pregnancy": "Shtatzënë ose me gji",
+    "smoking": "Duhanpirje"
+  },
+  "answer": {
+    "no": "Jo",
+    "yes": "Po",
+    "unsure": "Nuk e di"
+  }
+}

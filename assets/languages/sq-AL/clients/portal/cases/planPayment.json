@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/planPayment.tsx",
+  "title": "Plani juaj me {clinic}",
+  "total": "Totali",
+  "deposit": "Paradhënia",
+  "paid": "E paguar",
+  "due": "Mbetet për t'u paguar",
+  "payDeposit": "Paguani paradhënien prej {amount} me kartë",
+  "payAtClinic": "Klinika do t'ju tregojë si ta paguani paradhënien.",
+  "restAtClinic": "Pjesa tjetër paguhet në klinikë.",
+  "pay": "Paguaj tani",
+  "processing": "Duke u përpunuar…",
+  "payFailed": "Pagesa nuk kaloi. Ju lutemi provoni përsëri.",
+  "payUnavailable": "Pagesa me kartë nuk është e disponueshme tani.",
+  "paymentReceived": "Pagesa u mor. Do të shfaqet këtu sapo klinika të përditësojë të dhënat.",
+  "status": {
+    "unpaid": "Ende e papaguar",
+    "pending": "Pagesa me kartë në pritje",
+    "failed": "Pagesa me kartë dështoi",
+    "deposit_paid": "Paradhënia e paguar",
+    "paid": "E paguar plotësisht",
+    "partially_refunded": "E rimbursuar pjesërisht",
+    "refunded": "E rimbursuar"
+  }
+}

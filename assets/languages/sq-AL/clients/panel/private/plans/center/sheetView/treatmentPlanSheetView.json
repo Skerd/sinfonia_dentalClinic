@@ -34,5 +34,16 @@
     "none": "Pa paradhënie",
     "fixed": "Shumë fikse",
     "percent": "Përqindje e totalit"
+  },
+  "paymentStatus": "Pagesa",
+  "amountPaid": "E paguar",
+  "paymentStatusValues": {
+    "unpaid": "E papaguar",
+    "pending": "Pagesa me kartë në pritje",
+    "failed": "Pagesa me kartë dështoi",
+    "deposit_paid": "Paradhënia e paguar",
+    "paid": "E paguar plotësisht",
+    "partially_refunded": "E rimbursuar pjesërisht",
+    "refunded": "E rimbursuar"
   }
 }

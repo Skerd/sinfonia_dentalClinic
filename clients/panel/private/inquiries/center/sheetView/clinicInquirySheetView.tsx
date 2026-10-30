@@ -12,6 +12,7 @@ import InquiryDialogs from "@dentalClinicModule/clients/panel/private/inquiries/
 import InquiryRequestDetails from "@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/inquiryRequestDetails.tsx";
 import InquiryThread from "@dentalClinicModule/clients/panel/private/inquiries/center/thread/inquiryThread.tsx";
 import InquiryPlans from "@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/inquiryPlans.tsx";
+import MedicalHistoryAnswers from "@dentalClinicModule/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx";
 
 type ClinicInquirySheetViewOwnProps = {
     open: boolean;
@@ -88,6 +89,7 @@ function ClinicInquirySheetView({
                 actionMenuChildren={<InquiryMenu inquiry={inquiry} onAction={(next: InquiryAction) => setAction(next)} />}
             >
                 {inquiry.status ? <InquiryRequestDetails inquiry={inquiry} /> : null}
+                {inquiry.status ? <MedicalHistoryAnswers history={inquiry.medicalHistory} /> : null}
                 {inquiry.status ? <InquiryPlans inquiryId={entityId} canQuote={CAN_QUOTE.includes(inquiry.status)} /> : null}
                 {inquiry.status ? (
                     <InquiryThread

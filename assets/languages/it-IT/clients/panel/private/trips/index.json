@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/index.tsx",
+  "title": "Viaggi",
+  "description": "I soggiorni dei pazienti per le cure, per data di arrivo: prima i transfer dei prossimi giorni",
+  "help": {
+    "ariaLabel": "Viaggi",
+    "title": "Viaggi",
+    "overview": "Un viaggio per soggiorno: impianti ora e corone dopo la guarigione sono due viaggi. Il paziente aggiunge voli e hotel dal portale e ti viene notificato.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Una fase successiva del piano non può iniziare prima del tempo di guarigione previsto dopo il viaggio precedente.",
+          "Attiva il transfer dall'aeroporto per i pazienti che andate a prendere."
+        ]
+      }
+    ]
+  },
+  "create": "Pianifica un viaggio",
+  "searchPlaceholder": "Cerca viaggi o aggiungi filtri...",
+  "noData": "Nessun viaggio",
+  "failTitle": "Impossibile caricare i viaggi",
+  "failDescription": "Qualcosa è andato storto durante il caricamento. Riprova.",
+  "deleted": "Eliminato",
+  "fields": {
+    "patient": "Cartella paziente",
+    "plan": "Piano di trattamento",
+    "phase": "Fase",
+    "status": "Stato",
+    "arrivalAt": "Arrivo",
+    "departureAt": "Partenza",
+    "arrivalFlight": "Volo di arrivo",
+    "departureFlight": "Volo di partenza",
+    "accommodation": "Alloggio",
+    "transfer": "Transfer dall'aeroporto",
+    "companions": "Accompagnatori",
+    "notes": "Note",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

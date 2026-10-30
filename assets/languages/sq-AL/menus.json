@@ -16,6 +16,9 @@
     "patients": {
       "title": "Pacientët"
     },
+    "trips": {
+      "title": "Udhëtimet"
+    },
     "team": {
       "title": "Ekipi"
     },

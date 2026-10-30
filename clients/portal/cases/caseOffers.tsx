@@ -7,6 +7,8 @@ import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import type {PatientPlan, PatientPlansResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
 import AcceptOfferDialog from "./acceptOfferDialog.tsx";
+import PlanPayment from "./planPayment.tsx";
+import CaseTrips from "./caseTrips.tsx";
 import {downloadOfferPdf} from "./patientFiles.ts";
 
 type Props = WithLanguageType & {
@@ -20,12 +22,13 @@ const money = (plan: PatientPlan, amount: number) => (plan.currency?.abbreviatio
 /** Every clinic's quote side by side: price, deposit, trips, days, warranty and brands. */
 function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
     const [plans, setPlans] = useState<PatientPlan[] | null>(null);
+    const [onlinePayment, setOnlinePayment] = useState(false);
     const [open, setOpen] = useState<string | null>(null);
     const [accepting, setAccepting] = useState<PatientPlan | null>(null);
 
     const load = useCallback(() => {
         apiClient.post<PatientPlansResponse>("/api/dentalClinic/patientPortal/plans", {requestGroup})
-            .then((res) => setPlans(res.data.data))
+            .then((res) => { setPlans(res.data.data); setOnlinePayment(res.data.onlinePayment); })
             .catch(() => setPlans([]));
     }, [requestGroup]);
 
@@ -33,7 +36,8 @@ function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
 
     const shown = (plans ?? []).filter((plan) => plan.status === "sent" || plan.status === "accepted");
     if (!shown.length) return null;
-    const anyAccepted = shown.some((plan) => plan.status === "accepted");
+    const accepted = shown.find((plan) => plan.status === "accepted");
+    const anyAccepted = !!accepted;
 
     return (
         <section className="flex flex-col gap-3">
@@ -85,6 +89,9 @@ function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
                     </tbody>
                 </table>
             </div>
+
+            {accepted ? <PlanPayment plan={accepted} onlinePayment={onlinePayment} onPaid={load} /> : null}
+            {accepted ? <CaseTrips requestGroup={requestGroup} /> : null}
 
             {shown.filter((plan) => plan._id === open).map((plan) => (
                 <div key={plan._id} className="flex flex-col gap-3 rounded-lg border p-4">

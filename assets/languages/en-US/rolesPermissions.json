@@ -9,7 +9,8 @@
     "Patients": "Patients",
     "Clinicinquiries": "Estimate requests",
     "Clinicmessages": "Messages with patients",
-    "Treatmentplans": "Treatment plans"
+    "Treatmentplans": "Treatment plans",
+    "Patienttrips": "Patient trips"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -167,14 +168,16 @@
       "createdAt": "Created at",
       "updatedAt": "Updated at",
       "createdBy": "Created by",
-      "patients": "Patients"
+      "patients": "Patients",
+      "medicalHistory": "Medical history"
     },
     "Clinicinquiries": {
       "clinicinquiries": "Estimate requests",
       "status": "Status",
       "assignedTo": "Assigned to",
       "contact": "Patient",
-      "files": "Files"
+      "files": "Files",
+      "medicalHistory": "Medical history"
     },
     "Clinicmessages": {
       "clinicmessages": "Messages with patients",
@@ -197,7 +200,29 @@
       "terms": "Terms",
       "totals": "Total",
       "lines": "Priced lines",
-      "phases": "Phases (trips to the clinic)"
+      "phases": "Phases (trips to the clinic)",
+      "paymentStatus": "Payment",
+      "amountPaid": "Paid"
+    },
+    "Patienttrips": {
+      "patienttrips": "Patient trips",
+      "patient": "Patient folder",
+      "plan": "Treatment plan",
+      "phase": "Phase",
+      "status": "Status",
+      "arrivalAt": "Arrival",
+      "departureAt": "Departure",
+      "arrivalFlight": "Arrival flight",
+      "departureFlight": "Departure flight",
+      "accommodation": "Stays at",
+      "transfer": "Airport pickup",
+      "companions": "Travelling with",
+      "notes": "Notes",
+      "createdAt": "Created at",
+      "updatedAt": "Updated at",
+      "createdBy": "Created by",
+      "deletedAt": "Deleted at",
+      "deletedBy": "Deleted by"
     }
   }
 }

@@ -1,0 +1,35 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseMedicalHistory.tsx",
+  "title": "Antécédents médicaux",
+  "prompt": "Remplissez-les une fois : chaque clinique de cette demande pourra établir un devis en toute sécurité.",
+  "sentOn": "Envoyés à vos cliniques le {date}",
+  "fillIn": "Remplir",
+  "update": "Mettre à jour",
+  "intro": "Vos réponses ne vont qu'aux cliniques de cette demande. Le dentiste en a besoin avant de prévoir des implants ou une chirurgie.",
+  "detailPlaceholder": "Précisez (quel médicament, depuis quand…)",
+  "medications": "Médicaments que vous prenez régulièrement",
+  "medicationsPlaceholder": "Nom et dose, un par ligne",
+  "signature": "Vos nom et prénom",
+  "signaturePlaceholder": "Tapez votre nom pour signer",
+  "signatureHint": "En tapant votre nom, vous confirmez que vos réponses sont exactes à votre connaissance.",
+  "send": "Envoyer à mes cliniques",
+  "cancel": "Annuler",
+  "failed": "L'envoi a échoué. Veuillez réessayer.",
+  "question": {
+    "allergies": "Allergies (médicaments, latex, anesthésiques)",
+    "anticoagulants": "Anticoagulants (ex. warfarine, aspirine, apixaban)",
+    "bisphosphonates": "Bisphosphonates ou autres médicaments des os (ostéoporose, cancer)",
+    "diabetes": "Diabète",
+    "heart_condition": "Maladie cardiaque, stimulateur ou chirurgie cardiaque",
+    "high_blood_pressure": "Hypertension",
+    "bleeding_disorder": "Trouble de la coagulation ou bleus fréquents",
+    "infectious_disease": "Maladie infectieuse (ex. hépatite, VIH, tuberculose)",
+    "pregnancy": "Enceinte ou allaitante",
+    "smoking": "Tabac"
+  },
+  "answer": {
+    "no": "Non",
+    "yes": "Oui",
+    "unsure": "Je ne sais pas"
+  }
+}

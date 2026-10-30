@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/index.tsx",
+  "title": "Udhëtimet",
+  "description": "Qëndrimet e pacientëve për trajtim, sipas mbërritjes: së pari marrjet në aeroport të ditëve në vijim",
+  "help": {
+    "ariaLabel": "Udhëtimet",
+    "title": "Udhëtimet",
+    "overview": "Një udhëtim për çdo qëndrim: implantet tani dhe kurorat pas shërimit janë dy udhëtime. Pacienti shton fluturimet dhe hotelin në portal dhe ju njoftoheni.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Një fazë e mëvonshme e planit nuk mund të fillojë para kohës së shërimit që jep plani pas udhëtimit të mëparshëm.",
+          "Aktivizoni transfertën nga aeroporti për pacientët që i merrni ju."
+        ]
+      }
+    ]
+  },
+  "create": "Planifiko një udhëtim",
+  "searchPlaceholder": "Kërkoni udhëtime ose shtoni filtra...",
+  "noData": "Ende nuk ka udhëtime",
+  "failTitle": "Udhëtimet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "I fshirë",
+  "fields": {
+    "patient": "Dosja e pacientit",
+    "plan": "Plani i trajtimit",
+    "phase": "Faza",
+    "status": "Statusi",
+    "arrivalAt": "Mbërritja",
+    "departureAt": "Nisja",
+    "arrivalFlight": "Fluturimi i mbërritjes",
+    "departureFlight": "Fluturimi i nisjes",
+    "accommodation": "Akomodimi",
+    "transfer": "Transferta nga aeroporti",
+    "companions": "Shoqëruesit",
+    "notes": "Shënime",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

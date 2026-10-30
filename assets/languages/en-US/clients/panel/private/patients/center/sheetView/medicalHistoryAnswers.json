@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx",
+  "title": "Medical history",
+  "none": "The patient has not filled in the medical history yet. Ask for it from the request.",
+  "signed": "Signed by {name} on {date}",
+  "answeredNo": "Answered no to:",
+  "medications": "Regular medicines",
+  "question": {
+    "allergies": "Allergies (medicines, latex, anaesthetics)",
+    "anticoagulants": "Blood thinners (e.g. warfarin, aspirin, apixaban)",
+    "bisphosphonates": "Bisphosphonates or other bone medication (osteoporosis, cancer)",
+    "diabetes": "Diabetes",
+    "heart_condition": "Heart condition, pacemaker or heart surgery",
+    "high_blood_pressure": "High blood pressure",
+    "bleeding_disorder": "Bleeding disorder or easy bruising",
+    "infectious_disease": "Infectious disease (e.g. hepatitis, HIV, tuberculosis)",
+    "pregnancy": "Pregnant or breastfeeding",
+    "smoking": "Smoking"
+  },
+  "answer": {
+    "no": "No",
+    "yes": "Yes",
+    "unsure": "Not sure"
+  }
+}

@@ -34,5 +34,16 @@
     "none": "No deposit",
     "fixed": "Fixed amount",
     "percent": "Percentage of the total"
+  },
+  "paymentStatus": "Payment",
+  "amountPaid": "Paid",
+  "paymentStatusValues": {
+    "unpaid": "Unpaid",
+    "pending": "Card payment pending",
+    "failed": "Card payment failed",
+    "deposit_paid": "Deposit paid",
+    "paid": "Paid in full",
+    "partially_refunded": "Partly refunded",
+    "refunded": "Refunded"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/recordPlanPaymentDialog.tsx",
+  "title": "Record a payment",
+  "description": "Money the clinic took itself: cash, card terminal or bank transfer. It counts towards what the patient owes on this plan.",
+  "confirm": "Record payment",
+  "cancel": "Cancel",
+  "amountLabel": "Amount",
+  "noteLabel": "Note",
+  "notePlaceholder": "e.g. cash at the first visit",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Payment updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The payment could not be saved",
+      "time": 3000
+    }
+  }
+}

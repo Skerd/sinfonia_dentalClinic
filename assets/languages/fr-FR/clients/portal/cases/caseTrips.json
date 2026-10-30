@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseTrips.tsx",
+  "title": "Vos voyages",
+  "arrival": "Arrivée :",
+  "departure": "Départ :",
+  "transfer": "La clinique vient vous chercher à l'aéroport",
+  "arrivalFlight": "Votre vol d'arrivée",
+  "departureFlight": "Votre vol retour",
+  "flightPlaceholder": "ex. W6 4567",
+  "accommodation": "Où vous logez",
+  "accommodationPlaceholder": "Nom et adresse de l'hôtel",
+  "save": "Enregistrer",
+  "saved": "Enregistré. La clinique a été prévenue.",
+  "saveFailed": "L'enregistrement a échoué. Veuillez réessayer.",
+  "status": {
+    "planned": "Prévu",
+    "confirmed": "Confirmé",
+    "completed": "Terminé",
+    "cancelled": "Annulé"
+  }
+}

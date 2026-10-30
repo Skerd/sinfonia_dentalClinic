@@ -3,12 +3,12 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {IconCopy, IconFileTypePdf, IconSend} from "@tabler/icons-react";
+import {IconCash, IconCopy, IconFileTypePdf, IconReceiptRefund, IconSend} from "@tabler/icons-react";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 import {downloadPlanPdf} from "./downloadPlanPdf.ts";
 
 /** What can be done with a quote in its current state, for the row and sheet menus. */
-export type PlanAction = "send" | "revise";
+export type PlanAction = "send" | "revise" | "recordPayment" | "refund";
 
 type Props = WithLanguageType & {
     plan: TreatmentPlan;
@@ -29,6 +29,8 @@ function PlanMenu({plan, onAction, resolveLanguageKey}: Props) {
         <>
             {write?.status && plan.status === "draft" && item("send", IconSend, () => onAction("send"))}
             {write?.status && plan.status === "sent" && item("revise", IconCopy, () => onAction("revise"))}
+            {write?.amountPaid && plan.status === "accepted" && plan.amountDue > 0 && item("recordPayment", IconCash, () => onAction("recordPayment"))}
+            {write?.amountPaid && plan.amountPaid > 0 && item("refund", IconReceiptRefund, () => onAction("refund"))}
             {read?.lines && item("pdf", IconFileTypePdf, () => downloadPlanPdf(plan))}
         </>
     );

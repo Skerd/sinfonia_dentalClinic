@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/index.tsx",
+  "title": "Reisen",
+  "description": "Behandlungsaufenthalte der Patienten nach Ankunft: die Abholungen der nächsten Tage zuerst",
+  "help": {
+    "ariaLabel": "Reisen",
+    "title": "Reisen",
+    "overview": "Eine Reise pro Aufenthalt: Implantate jetzt, Kronen nach der Heilung sind zwei Reisen. Der Patient trägt Flüge und Hotel im Portal ein; Sie werden benachrichtigt.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Eine spätere Phase eines Plans kann nicht vor der im Plan vorgesehenen Heilungszeit nach der vorherigen Reise beginnen.",
+          "Aktivieren Sie den Flughafentransfer für Patienten, die Sie abholen."
+        ]
+      }
+    ]
+  },
+  "create": "Reise planen",
+  "searchPlaceholder": "Reisen suchen oder Filter hinzufügen...",
+  "noData": "Noch keine Reisen",
+  "failTitle": "Reisen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "fields": {
+    "patient": "Patientenakte",
+    "plan": "Behandlungsplan",
+    "phase": "Phase",
+    "status": "Status",
+    "arrivalAt": "Ankunft",
+    "departureAt": "Abreise",
+    "arrivalFlight": "Ankunftsflug",
+    "departureFlight": "Abflug",
+    "accommodation": "Unterkunft",
+    "transfer": "Flughafentransfer",
+    "companions": "Begleitpersonen",
+    "notes": "Notizen",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

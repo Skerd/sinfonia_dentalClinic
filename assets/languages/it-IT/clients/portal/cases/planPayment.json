@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/planPayment.tsx",
+  "title": "Il tuo piano con {clinic}",
+  "total": "Totale",
+  "deposit": "Acconto",
+  "paid": "Pagato",
+  "due": "Ancora dovuto",
+  "payDeposit": "Paga l'acconto di {amount} con carta",
+  "payAtClinic": "La clinica ti dirà come versare l'acconto.",
+  "restAtClinic": "Il resto si paga in clinica.",
+  "pay": "Paga ora",
+  "processing": "Elaborazione…",
+  "payFailed": "Il pagamento non è andato a buon fine. Riprova.",
+  "payUnavailable": "Il pagamento con carta non è disponibile al momento.",
+  "paymentReceived": "Pagamento ricevuto. Comparirà qui appena la clinica aggiorna i suoi dati.",
+  "status": {
+    "unpaid": "Non ancora pagato",
+    "pending": "Pagamento con carta in corso",
+    "failed": "Pagamento con carta non riuscito",
+    "deposit_paid": "Acconto pagato",
+    "paid": "Pagato per intero",
+    "partially_refunded": "Rimborsato in parte",
+    "refunded": "Rimborsato"
+  }
+}

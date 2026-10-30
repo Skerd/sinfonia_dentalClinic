@@ -1,0 +1,35 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseMedicalHistory.tsx",
+  "title": "Krankengeschichte",
+  "prompt": "Einmal ausfüllen, und jede Klinik dieser Anfrage kann sicher offerieren.",
+  "sentOn": "Am {date} an Ihre Kliniken gesendet",
+  "fillIn": "Ausfüllen",
+  "update": "Aktualisieren",
+  "intro": "Ihre Antworten gehen nur an die Kliniken dieser Anfrage. Der Zahnarzt braucht sie, bevor er Implantate oder Eingriffe plant.",
+  "detailPlaceholder": "Mehr dazu (welches Medikament, seit wann…)",
+  "medications": "Medikamente, die Sie regelmässig nehmen",
+  "medicationsPlaceholder": "Name und Dosis, eines pro Zeile",
+  "signature": "Vor- und Nachname",
+  "signaturePlaceholder": "Namen eingeben, um zu unterschreiben",
+  "signatureHint": "Mit Ihrem Namen bestätigen Sie, dass die Antworten nach bestem Wissen stimmen.",
+  "send": "An meine Kliniken senden",
+  "cancel": "Abbrechen",
+  "failed": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut.",
+  "question": {
+    "allergies": "Allergien (Medikamente, Latex, Betäubungsmittel)",
+    "anticoagulants": "Blutverdünner (z. B. Warfarin, Aspirin, Apixaban)",
+    "bisphosphonates": "Bisphosphonate oder andere Knochenmedikamente (Osteoporose, Krebs)",
+    "diabetes": "Diabetes",
+    "heart_condition": "Herzerkrankung, Herzschrittmacher oder Herzoperation",
+    "high_blood_pressure": "Bluthochdruck",
+    "bleeding_disorder": "Gerinnungsstörung oder häufige blaue Flecken",
+    "infectious_disease": "Infektionskrankheit (z. B. Hepatitis, HIV, Tuberkulose)",
+    "pregnancy": "Schwanger oder stillend",
+    "smoking": "Rauchen"
+  },
+  "answer": {
+    "no": "Nein",
+    "yes": "Ja",
+    "unsure": "Weiss nicht"
+  }
+}

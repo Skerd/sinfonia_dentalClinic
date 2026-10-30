@@ -11,6 +11,9 @@ import CreateClinicInquiry from "@dentalClinicModule/clients/panel/private/inqui
 import AllTreatmentPlans from "@dentalClinicModule/clients/panel/private/plans/index.tsx";
 import CreateTreatmentPlan from "@dentalClinicModule/clients/panel/private/plans/createTreatmentPlan.tsx";
 import EditTreatmentPlan from "@dentalClinicModule/clients/panel/private/plans/editTreatmentPlan.tsx";
+import AllPatientTrips from "@dentalClinicModule/clients/panel/private/trips/index.tsx";
+import CreatePatientTrip from "@dentalClinicModule/clients/panel/private/trips/createPatientTrip.tsx";
+import EditPatientTrip from "@dentalClinicModule/clients/panel/private/trips/editPatientTrip.tsx";
 import AllPractitioners from "@dentalClinicModule/clients/panel/private/team/index.tsx";
 import CreatePractitioner from "@dentalClinicModule/clients/panel/private/team/createPractitioner.tsx";
 import EditPractitioner from "@dentalClinicModule/clients/panel/private/team/editPractitioner.tsx";
@@ -32,6 +35,7 @@ const PAGES: Record<string, CrudPages> = {
     inquiries: {list: () => <AllClinicInquiries />, create: () => <CreateClinicInquiry />, idParam: "inquiryId"},
     plans: {list: () => <AllTreatmentPlans />, create: () => <CreateTreatmentPlan />, edit: (id) => <EditTreatmentPlan entityId={id} />, idParam: "treatmentPlanId"},
     patients: {list: () => <AllPatients />, create: () => <CreatePatient />, edit: (id) => <EditPatient entityId={id} />, idParam: "patientId"},
+    trips: {list: () => <AllPatientTrips />, create: () => <CreatePatientTrip />, edit: (id) => <EditPatientTrip entityId={id} />, idParam: "patientTripId"},
     team: {list: () => <AllPractitioners />, create: () => <CreatePractitioner />, edit: (id) => <EditPractitioner entityId={id} />, idParam: "practitionerId"},
     timeOff: {list: () => <AllScheduleExceptions />, create: () => <CreateScheduleException />, edit: (id) => <EditScheduleException entityId={id} />, idParam: "scheduleExceptionId"},
     services: {list: () => <AllClinicServices />, create: () => <CreateClinicService />, edit: (id) => <EditClinicService entityId={id} />, idParam: "clinicServiceId"},

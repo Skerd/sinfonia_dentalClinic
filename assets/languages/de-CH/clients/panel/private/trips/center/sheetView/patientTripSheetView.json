@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/center/sheetView/patientTripSheetView.tsx",
+  "patient": "Patientenakte",
+  "plan": "Behandlungsplan",
+  "phase": "Phase",
+  "status": "Status",
+  "arrivalAt": "Ankunft",
+  "departureAt": "Abreise",
+  "arrivalFlight": "Ankunftsflug",
+  "departureFlight": "Abflug",
+  "accommodation": "Unterkunft",
+  "transfer": "Flughafentransfer",
+  "companions": "Begleitpersonen",
+  "notes": "Notizen",
+  "tripSubtitle": "Patientenreise",
+  "overview": "Übersicht",
+  "stayGroup": "Aufenthalt",
+  "lifecycle": "Lebenszyklus",
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von",
+  "statusValues": {
+    "planned": "Geplant",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "cancelled": "Abgesagt"
+  }
+}

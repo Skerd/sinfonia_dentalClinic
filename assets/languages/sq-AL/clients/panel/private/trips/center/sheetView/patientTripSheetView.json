@@ -1,0 +1,30 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/center/sheetView/patientTripSheetView.tsx",
+  "patient": "Dosja e pacientit",
+  "plan": "Plani i trajtimit",
+  "phase": "Faza",
+  "status": "Statusi",
+  "arrivalAt": "Mbërritja",
+  "departureAt": "Nisja",
+  "arrivalFlight": "Fluturimi i mbërritjes",
+  "departureFlight": "Fluturimi i nisjes",
+  "accommodation": "Akomodimi",
+  "transfer": "Transferta nga aeroporti",
+  "companions": "Shoqëruesit",
+  "notes": "Shënime",
+  "tripSubtitle": "Udhëtimi i pacientit",
+  "overview": "Përmbledhje",
+  "stayGroup": "Qëndrimi",
+  "lifecycle": "Cikli i jetës",
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga",
+  "statusValues": {
+    "planned": "I planifikuar",
+    "confirmed": "I konfirmuar",
+    "completed": "I përfunduar",
+    "cancelled": "I anuluar"
+  }
+}

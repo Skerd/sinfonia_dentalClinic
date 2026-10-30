@@ -8,5 +8,7 @@
   "discount": "Remise",
   "total": "Total",
   "deposit": "Acompte",
-  "acceptedBy": "Accepté par {name} le {date}"
+  "acceptedBy": "Accepté par {name} le {date}",
+  "paid": "Payé",
+  "due": "Reste dû"
 }

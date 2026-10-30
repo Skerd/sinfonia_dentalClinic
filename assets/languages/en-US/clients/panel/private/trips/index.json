@@ -1,0 +1,44 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/index.tsx",
+  "title": "Trips",
+  "description": "Patients' stays for treatment, by arrival: the airport pickups of the coming days come first",
+  "help": {
+    "ariaLabel": "Trips",
+    "title": "Trips",
+    "overview": "One trip per stay: implants now, crowns after healing are two trips. The patient adds their flights and hotel on the portal; you are told when they do.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "A later phase of a plan can't start before the healing time the plan gives after the previous trip.",
+          "Turn on airport pickup for the patients you collect."
+        ]
+      }
+    ]
+  },
+  "create": "Plan a trip",
+  "searchPlaceholder": "Search trips or add filters...",
+  "noData": "No trips yet",
+  "failTitle": "Failed to load trips",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "fields": {
+    "patient": "Patient folder",
+    "plan": "Treatment plan",
+    "phase": "Phase",
+    "status": "Status",
+    "arrivalAt": "Arrival",
+    "departureAt": "Departure",
+    "arrivalFlight": "Arrival flight",
+    "departureFlight": "Departure flight",
+    "accommodation": "Stays at",
+    "transfer": "Airport pickup",
+    "companions": "Travelling with",
+    "notes": "Notes",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

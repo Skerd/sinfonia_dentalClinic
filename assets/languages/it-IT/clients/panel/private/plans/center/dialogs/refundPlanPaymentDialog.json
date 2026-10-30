@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
+  "title": "Rimborso",
+  "description": "I pagamenti con carta vengono rimborsati sulla carta; il denaro incassato in clinica viene registrato come rimborso da versare voi.",
+  "confirm": "Rimborsa",
+  "cancel": "Annulla",
+  "amountLabel": "Importo",
+  "reasonLabel": "Motivo",
+  "reasonPlaceholder": "es. il paziente ha annullato il viaggio",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Pagamento aggiornato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare il pagamento",
+      "time": 3000
+    }
+  }
+}

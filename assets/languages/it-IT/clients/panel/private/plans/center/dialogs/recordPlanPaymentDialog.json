@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/recordPlanPaymentDialog.tsx",
+  "title": "Registra un pagamento",
+  "description": "Denaro incassato dalla clinica: contanti, POS o bonifico. Viene scalato da quanto il paziente deve per questo piano.",
+  "confirm": "Registra pagamento",
+  "cancel": "Annulla",
+  "amountLabel": "Importo",
+  "noteLabel": "Nota",
+  "notePlaceholder": "es. contanti alla prima visita",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Pagamento aggiornato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare il pagamento",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/createPatientTrip.tsx",
+  "title": "Reise planen",
+  "description": "Daten des Behandlungsaufenthalts eines Patienten",
+  "weekday": {
+    "0": "Sonntag",
+    "1": "Montag",
+    "2": "Dienstag",
+    "3": "Mittwoch",
+    "4": "Donnerstag",
+    "5": "Freitag",
+    "6": "Samstag"
+  },
+  "form": {
+    "patientLabel": "Patientenakte",
+    "patientPlaceholder": "Patient wählen",
+    "planLabel": "Behandlungsplan",
+    "planPlaceholder": "Der angenommene Plan (optional)",
+    "phaseLabel": "Phase",
+    "phasePlaceholder": "z. B. 1",
+    "statusLabel": "Status",
+    "arrivalAtLabel": "Ankunft",
+    "arrivalAtPlaceholder": "Datum und Uhrzeit der Ankunft",
+    "departureAtLabel": "Abreise",
+    "departureAtPlaceholder": "Datum und Uhrzeit der Abreise",
+    "arrivalFlightLabel": "Ankunftsflug",
+    "arrivalFlightPlaceholder": "z. B. W6 4567",
+    "departureFlightLabel": "Abflug",
+    "departureFlightPlaceholder": "z. B. W6 4568",
+    "companionsLabel": "Begleitpersonen",
+    "companionsPlaceholder": "Anzahl Begleitpersonen",
+    "transferLabel": "Flughafentransfer",
+    "accommodationLabel": "Unterkunft",
+    "accommodationPlaceholder": "Name und Adresse des Hotels",
+    "notesLabel": "Notizen",
+    "notesPlaceholder": "Für den Patienten nicht sichtbar",
+    "planHint": "Wählen Sie den angenommenen Plan des Patienten und die Phase dieser Reise. Eine spätere Phase beginnt erst nach der Heilungszeit des Plans.",
+    "status": {
+      "planned": "Geplant",
+      "confirmed": "Bestätigt",
+      "completed": "Abgeschlossen",
+      "cancelled": "Abgesagt"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Reise wird gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Reise gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Reise konnte nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Reise planen",
+    "description": "Daten des Behandlungsaufenthalts eines Patienten"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Planen"
+  }
+}

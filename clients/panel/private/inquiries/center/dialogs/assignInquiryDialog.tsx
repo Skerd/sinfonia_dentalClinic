@@ -9,6 +9,9 @@ import {ApiSelect} from "@coreModule/components/viewEngine/widgets/inputs/apiSel
 import type {ClinicInquiry} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicInquiry/clinicInquiry.dto.ts";
 import type {AssignInquiryFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicInquiry/clinicInquiry.schema-def.ts";
 
+/** Staff only: patients are company members too (as customers). */
+const STAFF_ONLY = {administration: true};
+
 type Props = WithLanguageType & WithAxiosType<ClinicInquiry, AssignInquiryFormType> & {
     inquiry: ClinicInquiry;
     onClose: () => void;
@@ -36,6 +39,7 @@ function AssignInquiryDialog({inquiry, onClose, onUpdated, resolveLanguageKey, o
                 <Label>{resolveLanguageKey("userLabel")}</Label>
                 <ApiSelect
                     apiUrl="/api/company/users/select"
+                    postBody={STAFF_ONLY}
                     pageSize={50}
                     value={assignedTo}
                     defaultOptions={current}

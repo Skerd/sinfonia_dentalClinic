@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/recordPlanPaymentDialog.tsx",
+  "title": "Regjistro një pagesë",
+  "description": "Para që klinika i mori vetë: kesh, POS ose transfertë bankare. Zbritet nga ajo që pacienti detyrohet për këtë plan.",
+  "confirm": "Regjistro pagesën",
+  "cancel": "Anulo",
+  "amountLabel": "Shuma",
+  "noteLabel": "Shënim",
+  "notePlaceholder": "p.sh. kesh në vizitën e parë",
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Pagesa u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Pagesa nuk mund të ruhej",
+      "time": 3000
+    }
+  }
+}

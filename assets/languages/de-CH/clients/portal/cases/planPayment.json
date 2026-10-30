@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/planPayment.tsx",
+  "title": "Ihr Plan bei {clinic}",
+  "total": "Total",
+  "deposit": "Anzahlung",
+  "paid": "Bezahlt",
+  "due": "Noch offen",
+  "payDeposit": "Anzahlung von {amount} mit Karte bezahlen",
+  "payAtClinic": "Die Klinik sagt Ihnen, wie Sie die Anzahlung leisten.",
+  "restAtClinic": "Der Rest wird in der Klinik bezahlt.",
+  "pay": "Jetzt bezahlen",
+  "processing": "Wird verarbeitet…",
+  "payFailed": "Die Zahlung ist nicht durchgegangen. Bitte versuchen Sie es erneut.",
+  "payUnavailable": "Kartenzahlung ist im Moment nicht verfügbar.",
+  "paymentReceived": "Zahlung erhalten. Sie erscheint hier, sobald die Klinik ihre Daten aktualisiert hat.",
+  "status": {
+    "unpaid": "Noch nicht bezahlt",
+    "pending": "Kartenzahlung läuft",
+    "failed": "Kartenzahlung fehlgeschlagen",
+    "deposit_paid": "Anzahlung bezahlt",
+    "paid": "Vollständig bezahlt",
+    "partially_refunded": "Teilweise erstattet",
+    "refunded": "Erstattet"
+  }
+}

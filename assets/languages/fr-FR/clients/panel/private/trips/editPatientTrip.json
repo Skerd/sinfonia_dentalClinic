@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/editPatientTrip.tsx",
+  "title": "Modifier le voyage",
+  "description": "Changer les dates, les vols ou l'hébergement",
+  "weekday": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "form": {
+    "patientLabel": "Dossier patient",
+    "patientPlaceholder": "Choisir un patient",
+    "planLabel": "Plan de traitement",
+    "planPlaceholder": "Le plan accepté (facultatif)",
+    "phaseLabel": "Phase",
+    "phasePlaceholder": "ex. 1",
+    "statusLabel": "Statut",
+    "arrivalAtLabel": "Arrivée",
+    "arrivalAtPlaceholder": "Date et heure d'arrivée",
+    "departureAtLabel": "Départ",
+    "departureAtPlaceholder": "Date et heure de départ",
+    "arrivalFlightLabel": "Vol d'arrivée",
+    "arrivalFlightPlaceholder": "ex. W6 4567",
+    "departureFlightLabel": "Vol de départ",
+    "departureFlightPlaceholder": "ex. W6 4568",
+    "companionsLabel": "Accompagnants",
+    "companionsPlaceholder": "Nombre d'accompagnants",
+    "transferLabel": "Navette aéroport",
+    "accommodationLabel": "Hébergement",
+    "accommodationPlaceholder": "Nom et adresse de l'hôtel",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Non visibles par le patient",
+    "planHint": "Choisissez le plan accepté du patient et la phase de ce voyage. Une phase suivante doit commencer après le temps de cicatrisation du plan.",
+    "status": {
+      "planned": "Prévu",
+      "confirmed": "Confirmé",
+      "completed": "Terminé",
+      "cancelled": "Annulé"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement du voyage",
+      "time": 3000
+    },
+    "success": {
+      "title": "Voyage enregistré",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le voyage n'a pas pu être enregistré. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifier le voyage",
+    "description": "Changer les dates, les vols ou l'hébergement"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Enregistrer"
+  }
+}

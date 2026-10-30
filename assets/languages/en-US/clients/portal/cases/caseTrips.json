@@ -1,0 +1,21 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseTrips.tsx",
+  "title": "Your trips",
+  "arrival": "Arrival:",
+  "departure": "Departure:",
+  "transfer": "The clinic picks you up at the airport",
+  "arrivalFlight": "Your arrival flight",
+  "departureFlight": "Your return flight",
+  "flightPlaceholder": "e.g. W6 4567",
+  "accommodation": "Where you stay",
+  "accommodationPlaceholder": "Hotel name and address",
+  "save": "Save",
+  "saved": "Saved. The clinic has been told.",
+  "saveFailed": "It could not be saved. Please try again.",
+  "status": {
+    "planned": "Planned",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  }
+}

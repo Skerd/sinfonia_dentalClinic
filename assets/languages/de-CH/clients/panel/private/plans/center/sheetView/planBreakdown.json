@@ -8,5 +8,7 @@
   "discount": "Rabatt",
   "total": "Total",
   "deposit": "Anzahlung",
-  "acceptedBy": "Angenommen von {name} am {date}"
+  "acceptedBy": "Angenommen von {name} am {date}",
+  "paid": "Bezahlt",
+  "due": "Noch offen"
 }

@@ -1,0 +1,35 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseMedicalHistory.tsx",
+  "title": "Historia mjekësore",
+  "prompt": "Plotësojeni një herë dhe çdo klinikë e kësaj kërkese mund të japë ofertë në mënyrë të sigurt.",
+  "sentOn": "U dërgua te klinikat tuaja më {date}",
+  "fillIn": "Plotëso",
+  "update": "Përditëso",
+  "intro": "Përgjigjet tuaja shkojnë vetëm te klinikat e kësaj kërkese. Dentisti ka nevojë për to para se të planifikojë implante ose ndërhyrje.",
+  "detailPlaceholder": "Na tregoni më shumë (cili ilaç, që kur…)",
+  "medications": "Ilaçet që merrni rregullisht",
+  "medicationsPlaceholder": "Emri dhe doza, një për rresht",
+  "signature": "Emri dhe mbiemri",
+  "signaturePlaceholder": "Shkruani emrin për të nënshkruar",
+  "signatureHint": "Duke shkruar emrin konfirmoni që përgjigjet janë të vërteta sa dini ju.",
+  "send": "Dërgoja klinikave të mia",
+  "cancel": "Anulo",
+  "failed": "Dërgimi dështoi. Ju lutemi provoni përsëri.",
+  "question": {
+    "allergies": "Alergji (ilaçe, lateks, anestetikë)",
+    "anticoagulants": "Hollues gjaku (p.sh. warfarinë, aspirinë, apiksaban)",
+    "bisphosphonates": "Bisfosfonate ose ilaçe të tjera për kockat (osteoporozë, kancer)",
+    "diabetes": "Diabet",
+    "heart_condition": "Sëmundje zemre, stimulues kardiak ose operacion zemre",
+    "high_blood_pressure": "Tension i lartë",
+    "bleeding_disorder": "Çrregullim i koagulimit ose mavijosje të shpeshta",
+    "infectious_disease": "Sëmundje infektive (p.sh. hepatit, HIV, tuberkuloz)",
+    "pregnancy": "Shtatzënë ose me gji",
+    "smoking": "Duhanpirje"
+  },
+  "answer": {
+    "no": "Jo",
+    "yes": "Po",
+    "unsure": "Nuk e di"
+  }
+}

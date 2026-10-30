@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
+  "title": "Remboursement",
+  "description": "Les paiements par carte sont remboursés sur la carte ; l'argent encaissé à la clinique est enregistré comme un remboursement que vous versez vous-même.",
+  "confirm": "Rembourser",
+  "cancel": "Annuler",
+  "amountLabel": "Montant",
+  "reasonLabel": "Motif",
+  "reasonPlaceholder": "ex. le patient a annulé son voyage",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Paiement mis à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le paiement n'a pas pu être enregistré",
+      "time": 3000
+    }
+  }
+}

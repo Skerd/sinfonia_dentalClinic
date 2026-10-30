@@ -34,5 +34,16 @@
     "none": "Pas d'acompte",
     "fixed": "Montant fixe",
     "percent": "Pourcentage du total"
+  },
+  "paymentStatus": "Paiement",
+  "amountPaid": "Payé",
+  "paymentStatusValues": {
+    "unpaid": "Non payé",
+    "pending": "Paiement par carte en cours",
+    "failed": "Paiement par carte refusé",
+    "deposit_paid": "Acompte payé",
+    "paid": "Payé en totalité",
+    "partially_refunded": "Remboursé en partie",
+    "refunded": "Remboursé"
   }
 }

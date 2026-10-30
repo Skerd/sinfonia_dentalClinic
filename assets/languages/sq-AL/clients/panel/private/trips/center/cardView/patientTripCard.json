@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/center/cardView/patientTripCard.tsx",
+  "failedTitle": "Udhëtimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "arrivalAt": "Mbërritja",
+  "departureAt": "Nisja",
+  "accommodation": "Akomodimi",
+  "transfer": "Transferta nga aeroporti"
+}

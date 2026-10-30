@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/editPatientTrip.tsx",
+  "title": "Modifica viaggio",
+  "description": "Cambia date, voli o alloggio",
+  "weekday": {
+    "0": "Domenica",
+    "1": "Lunedì",
+    "2": "Martedì",
+    "3": "Mercoledì",
+    "4": "Giovedì",
+    "5": "Venerdì",
+    "6": "Sabato"
+  },
+  "form": {
+    "patientLabel": "Cartella paziente",
+    "patientPlaceholder": "Seleziona un paziente",
+    "planLabel": "Piano di trattamento",
+    "planPlaceholder": "Il piano accettato (facoltativo)",
+    "phaseLabel": "Fase",
+    "phasePlaceholder": "es. 1",
+    "statusLabel": "Stato",
+    "arrivalAtLabel": "Arrivo",
+    "arrivalAtPlaceholder": "Data e ora di arrivo",
+    "departureAtLabel": "Partenza",
+    "departureAtPlaceholder": "Data e ora di partenza",
+    "arrivalFlightLabel": "Volo di arrivo",
+    "arrivalFlightPlaceholder": "es. W6 4567",
+    "departureFlightLabel": "Volo di partenza",
+    "departureFlightPlaceholder": "es. W6 4568",
+    "companionsLabel": "Accompagnatori",
+    "companionsPlaceholder": "Numero di accompagnatori",
+    "transferLabel": "Transfer dall'aeroporto",
+    "accommodationLabel": "Alloggio",
+    "accommodationPlaceholder": "Nome e indirizzo dell'hotel",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Non visibili al paziente",
+    "planHint": "Scegli il piano accettato del paziente e la fase di questo viaggio. Una fase successiva deve iniziare dopo il tempo di guarigione del piano.",
+    "status": {
+      "planned": "Pianificato",
+      "confirmed": "Confermato",
+      "completed": "Concluso",
+      "cancelled": "Annullato"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio del viaggio",
+      "time": 3000
+    },
+    "success": {
+      "title": "Viaggio salvato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare il viaggio. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica viaggio",
+    "description": "Cambia date, voli o alloggio"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

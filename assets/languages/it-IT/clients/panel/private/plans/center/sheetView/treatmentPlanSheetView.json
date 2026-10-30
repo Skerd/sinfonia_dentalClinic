@@ -34,5 +34,16 @@
     "none": "Nessun acconto",
     "fixed": "Importo fisso",
     "percent": "Percentuale del totale"
+  },
+  "paymentStatus": "Pagamento",
+  "amountPaid": "Pagato",
+  "paymentStatusValues": {
+    "unpaid": "Non pagato",
+    "pending": "Pagamento con carta in corso",
+    "failed": "Pagamento con carta non riuscito",
+    "deposit_paid": "Acconto pagato",
+    "paid": "Pagato per intero",
+    "partially_refunded": "Rimborsato in parte",
+    "refunded": "Rimborsato"
   }
 }

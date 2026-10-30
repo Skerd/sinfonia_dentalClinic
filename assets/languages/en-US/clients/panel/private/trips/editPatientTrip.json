@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/editPatientTrip.tsx",
+  "title": "Edit trip",
+  "description": "Change the dates, flights or stay",
+  "weekday": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "form": {
+    "patientLabel": "Patient folder",
+    "patientPlaceholder": "Select a patient",
+    "planLabel": "Treatment plan",
+    "planPlaceholder": "The accepted plan (optional)",
+    "phaseLabel": "Phase",
+    "phasePlaceholder": "e.g. 1",
+    "statusLabel": "Status",
+    "arrivalAtLabel": "Arrival",
+    "arrivalAtPlaceholder": "Arrival date and time",
+    "departureAtLabel": "Departure",
+    "departureAtPlaceholder": "Departure date and time",
+    "arrivalFlightLabel": "Arrival flight",
+    "arrivalFlightPlaceholder": "e.g. W6 4567",
+    "departureFlightLabel": "Departure flight",
+    "departureFlightPlaceholder": "e.g. W6 4568",
+    "companionsLabel": "Travelling with",
+    "companionsPlaceholder": "Number of companions",
+    "transferLabel": "Airport pickup",
+    "accommodationLabel": "Stays at",
+    "accommodationPlaceholder": "Hotel name and address",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Not shown to the patient",
+    "planHint": "Pick the patient's accepted plan and the phase this trip is for. A later phase must start after the plan's healing time.",
+    "status": {
+      "planned": "Planned",
+      "confirmed": "Confirmed",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Saving the trip",
+      "time": 3000
+    },
+    "success": {
+      "title": "Trip saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "The trip could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Edit trip",
+    "description": "Change the dates, flights or stay"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Save"
+  }
+}

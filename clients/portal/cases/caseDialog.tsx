@@ -17,6 +17,7 @@ import type {
 } from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
 import PatientThread from "./patientThread.tsx";
 import CaseOffers from "./caseOffers.tsx";
+import CaseMedicalHistory from "./caseMedicalHistory.tsx";
 import {openPatientFile, uploadPatientFiles} from "./patientFiles.ts";
 
 const OPEN: InquiryStatus[] = ["new", "in_review", "info_requested", "quoted"];
@@ -96,6 +97,7 @@ function CaseDialog({requestGroup, onClose, onChanged, resolveLanguageKey}: Prop
                 {failed ? <p className="text-sm text-destructive">{resolveLanguageKey("failed")}</p> : null}
                 <input ref={fileInput} type="file" multiple hidden accept={PATIENT_FILE_MIME_TYPES.join(",") + ",.dcm,.stl,.zip"} onChange={(event) => attach([...(event.target.files ?? [])])} />
                 {patientCase ? <CaseOffers requestGroup={requestGroup} onAccepted={() => { load(); onChanged(); }} /> : null}
+                {patientCase ? <CaseMedicalHistory patientCase={patientCase} onSaved={(updated: PatientCase) => { setPatientCase(updated); onChanged(); }} /> : null}
                 {patientCase ? (
                     <Tabs defaultValue={patientCase.inquiries[0]?._id}>
                         <TabsList className="flex-wrap">

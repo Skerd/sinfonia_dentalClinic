@@ -8,5 +8,7 @@
   "discount": "Sconto",
   "total": "Totale",
   "deposit": "Acconto",
-  "acceptedBy": "Accettato da {name} il {date}"
+  "acceptedBy": "Accettato da {name} il {date}",
+  "paid": "Pagato",
+  "due": "Ancora dovuto"
 }

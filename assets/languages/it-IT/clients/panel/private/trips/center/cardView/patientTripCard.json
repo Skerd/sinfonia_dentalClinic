@@ -1,0 +1,9 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/center/cardView/patientTripCard.tsx",
+  "failedTitle": "Impossibile caricare il viaggio",
+  "failedDescription": "Tocca per riprovare.",
+  "arrivalAt": "Arrivo",
+  "departureAt": "Partenza",
+  "accommodation": "Alloggio",
+  "transfer": "Transfer dall'aeroporto"
+}

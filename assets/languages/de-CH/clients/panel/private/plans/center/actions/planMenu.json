@@ -2,5 +2,7 @@
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/actions/planMenu.tsx",
   "send": "An den Patienten senden",
   "revise": "Überarbeiten",
-  "pdf": "PDF herunterladen"
+  "pdf": "PDF herunterladen",
+  "recordPayment": "Zahlung erfassen",
+  "refund": "Erstatten"
 }

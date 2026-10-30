@@ -8,5 +8,7 @@
   "discount": "Zbritje",
   "total": "Totali",
   "deposit": "Paradhënie",
-  "acceptedBy": "Pranuar nga {name} më {date}"
+  "acceptedBy": "Pranuar nga {name} më {date}",
+  "paid": "E paguar",
+  "due": "Mbetet për t'u paguar"
 }

@@ -16,6 +16,9 @@
     "patients": {
       "title": "Patients"
     },
+    "trips": {
+      "title": "Voyages"
+    },
     "team": {
       "title": "Équipe"
     },

@@ -1,0 +1,35 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/caseMedicalHistory.tsx",
+  "title": "Medical history",
+  "prompt": "Fill it in once and every clinic of this request can quote safely.",
+  "sentOn": "Sent to your clinics on {date}",
+  "fillIn": "Fill in",
+  "update": "Update",
+  "intro": "Your answers go to the clinics of this request only. A dentist needs them before planning implants or surgery.",
+  "detailPlaceholder": "Tell us more (which medicine, since when…)",
+  "medications": "Medicines you take regularly",
+  "medicationsPlaceholder": "Name and dose, one per line",
+  "signature": "Your full name",
+  "signaturePlaceholder": "Type your name to sign",
+  "signatureHint": "By typing your name you confirm the answers are true to the best of your knowledge.",
+  "send": "Send to my clinics",
+  "cancel": "Cancel",
+  "failed": "It could not be sent. Please try again.",
+  "question": {
+    "allergies": "Allergies (medicines, latex, anaesthetics)",
+    "anticoagulants": "Blood thinners (e.g. warfarin, aspirin, apixaban)",
+    "bisphosphonates": "Bisphosphonates or other bone medication (osteoporosis, cancer)",
+    "diabetes": "Diabetes",
+    "heart_condition": "Heart condition, pacemaker or heart surgery",
+    "high_blood_pressure": "High blood pressure",
+    "bleeding_disorder": "Bleeding disorder or easy bruising",
+    "infectious_disease": "Infectious disease (e.g. hepatitis, HIV, tuberculosis)",
+    "pregnancy": "Pregnant or breastfeeding",
+    "smoking": "Smoking"
+  },
+  "answer": {
+    "no": "No",
+    "yes": "Yes",
+    "unsure": "Not sure"
+  }
+}

@@ -4,9 +4,11 @@ import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 
-type Props = WithLanguageType & {plan: Pick<TreatmentPlan, "phases" | "lines" | "totals" | "currency" | "refundableUntilDays" | "acceptance">};
+type Props = WithLanguageType & {
+    plan: Pick<TreatmentPlan, "phases" | "lines" | "totals" | "currency" | "refundableUntilDays" | "acceptance" | "status" | "amountPaid" | "amountDue">;
+};
 
-/** The quote as the patient reads it: each phase with its lines, then the totals and deposit. */
+/** The quote as the patient reads it: each phase with its lines, then the totals and deposit, and once accepted what was paid. */
 function PlanBreakdown({plan, resolveLanguageKey}: Props) {
     const money = (amount: number) => (plan.currency?.abbreviation ? formatCurrency(amount, plan.currency.abbreviation) : String(amount));
     return (
@@ -52,6 +54,14 @@ function PlanBreakdown({plan, resolveLanguageKey}: Props) {
                     <>
                         <dt className="text-muted-foreground">{resolveLanguageKey("deposit")}</dt>
                         <dd className="text-right tabular-nums">{money(plan.totals.deposit)}</dd>
+                    </>
+                ) : null}
+                {plan.status === "accepted" ? (
+                    <>
+                        <dt className="text-muted-foreground">{resolveLanguageKey("paid")}</dt>
+                        <dd className="text-right tabular-nums">{money(plan.amountPaid ?? 0)}</dd>
+                        <dt className="font-medium">{resolveLanguageKey("due")}</dt>
+                        <dd className="text-right font-medium tabular-nums">{money(plan.amountDue ?? 0)}</dd>
                     </>
                 ) : null}
             </dl>

@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
+  "title": "Rimbursim",
+  "description": "Pagesat me kartë rimbursohen në kartë; paratë e marra në klinikë regjistrohen si rimbursim që e paguani vetë.",
+  "confirm": "Rimburso",
+  "cancel": "Anulo",
+  "amountLabel": "Shuma",
+  "reasonLabel": "Arsyeja",
+  "reasonPlaceholder": "p.sh. pacienti e anuloi udhëtimin",
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Pagesa u përditësua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Pagesa nuk mund të ruhej",
+      "time": 3000
+    }
+  }
+}

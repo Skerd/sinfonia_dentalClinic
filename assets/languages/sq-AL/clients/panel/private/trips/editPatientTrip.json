@@ -1,0 +1,67 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/trips/editPatientTrip.tsx",
+  "title": "Ndrysho udhëtimin",
+  "description": "Ndryshoni datat, fluturimet ose akomodimin",
+  "weekday": {
+    "0": "E diel",
+    "1": "E hënë",
+    "2": "E martë",
+    "3": "E mërkurë",
+    "4": "E enjte",
+    "5": "E premte",
+    "6": "E shtunë"
+  },
+  "form": {
+    "patientLabel": "Dosja e pacientit",
+    "patientPlaceholder": "Zgjidhni një pacient",
+    "planLabel": "Plani i trajtimit",
+    "planPlaceholder": "Plani i pranuar (opsional)",
+    "phaseLabel": "Faza",
+    "phasePlaceholder": "p.sh. 1",
+    "statusLabel": "Statusi",
+    "arrivalAtLabel": "Mbërritja",
+    "arrivalAtPlaceholder": "Data dhe ora e mbërritjes",
+    "departureAtLabel": "Nisja",
+    "departureAtPlaceholder": "Data dhe ora e nisjes",
+    "arrivalFlightLabel": "Fluturimi i mbërritjes",
+    "arrivalFlightPlaceholder": "p.sh. W6 4567",
+    "departureFlightLabel": "Fluturimi i nisjes",
+    "departureFlightPlaceholder": "p.sh. W6 4568",
+    "companionsLabel": "Shoqëruesit",
+    "companionsPlaceholder": "Numri i shoqëruesve",
+    "transferLabel": "Transferta nga aeroporti",
+    "accommodationLabel": "Akomodimi",
+    "accommodationPlaceholder": "Emri dhe adresa e hotelit",
+    "notesLabel": "Shënime",
+    "notesPlaceholder": "Nuk shfaqen te pacienti",
+    "planHint": "Zgjidhni planin e pranuar të pacientit dhe fazën e këtij udhëtimi. Një fazë e mëvonshme fillon pas kohës së shërimit të planit.",
+    "status": {
+      "planned": "I planifikuar",
+      "confirmed": "I konfirmuar",
+      "completed": "I përfunduar",
+      "cancelled": "I anuluar"
+    }
+  },
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur udhëtimin",
+      "time": 3000
+    },
+    "success": {
+      "title": "Udhëtimi u ruajt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Udhëtimi nuk mund të ruhej. Kontrolloni formularin dhe provoni përsëri.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ndrysho udhëtimin",
+    "description": "Ndryshoni datat, fluturimet ose akomodimin"
+  },
+  "formButtons": {
+    "cancel": "Anulo",
+    "submit": "Ruaj"
+  }
+}

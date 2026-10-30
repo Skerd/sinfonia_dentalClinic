@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/recordPlanPaymentDialog.tsx",
+  "title": "Enregistrer un paiement",
+  "description": "Argent encaissé par la clinique : espèces, terminal de paiement ou virement. Il est déduit de ce que le patient doit sur ce plan.",
+  "confirm": "Enregistrer le paiement",
+  "cancel": "Annuler",
+  "amountLabel": "Montant",
+  "noteLabel": "Note",
+  "notePlaceholder": "ex. espèces à la première visite",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Paiement mis à jour",
+      "time": 3000
+    },
+    "error": {
+      "title": "Le paiement n'a pas pu être enregistré",
+      "time": 3000
+    }
+  }
+}

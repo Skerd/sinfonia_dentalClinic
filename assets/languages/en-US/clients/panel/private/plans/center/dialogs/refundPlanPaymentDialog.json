@@ -1,0 +1,24 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
+  "title": "Refund",
+  "description": "Card payments are refunded to the card; money taken at the clinic is recorded as a refund you pay out yourself.",
+  "confirm": "Refund",
+  "cancel": "Cancel",
+  "amountLabel": "Amount",
+  "reasonLabel": "Reason",
+  "reasonPlaceholder": "e.g. the patient cancelled the trip",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Payment updated",
+      "time": 3000
+    },
+    "error": {
+      "title": "The payment could not be saved",
+      "time": 3000
+    }
+  }
+}

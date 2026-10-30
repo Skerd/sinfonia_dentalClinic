@@ -9,7 +9,8 @@
     "Patients": "Pacientët",
     "Clinicinquiries": "Kërkesat për ofertë",
     "Clinicmessages": "Mesazhe me pacientët",
-    "Treatmentplans": "Planet e trajtimit"
+    "Treatmentplans": "Planet e trajtimit",
+    "Patienttrips": "Udhëtimet e pacientëve"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -167,14 +168,16 @@
       "createdAt": "Krijuar më",
       "updatedAt": "Përditësuar më",
       "createdBy": "Krijuar nga",
-      "patients": "Pacientët"
+      "patients": "Pacientët",
+      "medicalHistory": "Historia mjekësore"
     },
     "Clinicinquiries": {
       "clinicinquiries": "Kërkesat për ofertë",
       "status": "Statusi",
       "assignedTo": "Caktuar te",
       "contact": "Pacienti",
-      "files": "Skedarët"
+      "files": "Skedarët",
+      "medicalHistory": "Historia mjekësore"
     },
     "Clinicmessages": {
       "clinicmessages": "Mesazhe me pacientët",
@@ -197,7 +200,29 @@
       "terms": "Kushtet",
       "totals": "Totali",
       "lines": "Rreshtat me çmim",
-      "phases": "Fazat (udhëtime në klinikë)"
+      "phases": "Fazat (udhëtime në klinikë)",
+      "paymentStatus": "Pagesa",
+      "amountPaid": "E paguar"
+    },
+    "Patienttrips": {
+      "patienttrips": "Udhëtimet e pacientëve",
+      "patient": "Dosja e pacientit",
+      "plan": "Plani i trajtimit",
+      "phase": "Faza",
+      "status": "Statusi",
+      "arrivalAt": "Mbërritja",
+      "departureAt": "Nisja",
+      "arrivalFlight": "Fluturimi i mbërritjes",
+      "departureFlight": "Fluturimi i nisjes",
+      "accommodation": "Akomodimi",
+      "transfer": "Transferta nga aeroporti",
+      "companions": "Shoqëruesit",
+      "notes": "Shënime",
+      "createdAt": "Krijuar më",
+      "updatedAt": "Përditësuar më",
+      "createdBy": "Krijuar nga",
+      "deletedAt": "Fshirë më",
+      "deletedBy": "Fshirë nga"
     }
   }
 }

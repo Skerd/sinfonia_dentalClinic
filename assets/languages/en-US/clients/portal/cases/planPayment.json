@@ -1,0 +1,25 @@
+{
+  "path": "src/modules/dentalClinic/clients/portal/cases/planPayment.tsx",
+  "title": "Your plan with {clinic}",
+  "total": "Total",
+  "deposit": "Deposit",
+  "paid": "Paid",
+  "due": "Still due",
+  "payDeposit": "Pay the deposit of {amount} by card",
+  "payAtClinic": "The clinic will tell you how to pay the deposit.",
+  "restAtClinic": "The rest is paid at the clinic.",
+  "pay": "Pay now",
+  "processing": "Processing…",
+  "payFailed": "The payment did not go through. Please try again.",
+  "payUnavailable": "Card payment is not available right now.",
+  "paymentReceived": "Payment received. It shows here as soon as the clinic's records are updated.",
+  "status": {
+    "unpaid": "Not paid yet",
+    "pending": "Card payment in progress",
+    "failed": "Card payment failed",
+    "deposit_paid": "Deposit paid",
+    "paid": "Paid in full",
+    "partially_refunded": "Partly refunded",
+    "refunded": "Refunded"
+  }
+}
