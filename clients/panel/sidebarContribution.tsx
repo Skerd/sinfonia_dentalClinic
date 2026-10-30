@@ -1,8 +1,9 @@
-import {IconAdjustments, IconCalendarEvent, IconCalendarOff, IconLayoutColumns, IconMapPin, IconStethoscope, IconDental, IconFolders, IconInbox, IconFileInvoice, IconPlaneArrival} from "@tabler/icons-react";
+import {IconCalendarEvent, IconCalendarOff, IconLayoutColumns, IconMapPin, IconStethoscope, IconDental, IconFolders, IconInbox, IconFileInvoice, IconPlaneArrival} from "@tabler/icons-react";
 import type {SidebarContribution} from "@coreModule/helpers/types/sidebarContribution.types.ts";
 import type {NavGroup, NavItem} from "@coreModule/helpers/types/sidebarNav.types.ts";
 import type {ResolveLanguageKey} from "@coreModule/helpers/hocs/withLanguage.tsx";
 
+/** Appointments, patients, and the rest of the day's work. Setup is under Tenancy → Configurations. */
 const dentalClinicSidebarContribution: SidebarContribution = {
     id: "dentalClinic",
     order: 37,
@@ -32,7 +33,6 @@ const dentalClinicSidebarContribution: SidebarContribution = {
                     item("timeOff", IconCalendarOff, "scheduleexceptions"),
                     item("services", IconDental, "clinicservices"),
                     item("locations", IconMapPin, "cliniclocations"),
-                    item("settings", IconAdjustments, "clinicconfigs"),
                 ],
             },
         ];

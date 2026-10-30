@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
   "title": "Cilësimet e klinikës",
-  "description": "Rregullat e rezervimit online, mesazhet, privatësia dhe ruajtja e të dhënave",
+  "description": "Vlen për këtë klinikë.",
   "form": {
     "bookingSectionTitle": "Rezervim online",
     "cancellationDeadlineHoursLabel": "Anulimi online deri (orë përpara)",
@@ -46,7 +46,7 @@
     "inquiryNotifyUsersLabel": "Njofto këta persona për kërkesa dhe mesazhe të reja",
     "inquiriesHint": "Kërkesat vijnë nga portali (kur klinika është e listuar) dhe nga faqja juaj. Kërkesat pa përgjigje sinjalizohen pas kohës së mësipërme.",
     "tourismSectionTitle": "Profili për pacientët nga jashtë",
-    "languagesSpokenLabel": "Gjuhët që flitet",
+    "languagesSpokenLabel": "Gjuhët e folura",
     "languagesSpokenPlaceholder": "p.sh. Italisht",
     "implantBrandsLabel": "Markat e implanteve",
     "implantBrandsPlaceholder": "p.sh. Straumann",
@@ -105,7 +105,7 @@
   },
   "formHeader": {
     "title": "Cilësimet e klinikës",
-    "description": "Rregullat e rezervimit online, mesazhet, privatësia dhe ruajtja e të dhënave"
+    "description": "Vlen për këtë klinikë."
   },
   "formButtons": {
     "cancel": "Anulo",

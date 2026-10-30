@@ -1,5 +1,7 @@
 import type {ReactNode} from "react";
+import {Navigate} from "react-router-dom";
 import type {RouteConfigArgs, RouteConfigContribution} from "@coreModule/helpers/types/routeConfigContribution.types.ts";
+import {clinicConfigSectionPath, isClinicConfigSection} from "@dentalClinicModule/clients/panel/private/settings/clinicConfigSections.ts";
 import ClinicDayView from "@dentalClinicModule/clients/panel/private/day/index.tsx";
 import AllAppointments from "@dentalClinicModule/clients/panel/private/appointments/index.tsx";
 import CreateAppointment from "@dentalClinicModule/clients/panel/private/appointments/createAppointment.tsx";
@@ -46,8 +48,14 @@ const dentalClinicRouteConfigContribution: RouteConfigContribution = {
     id: "dentalClinic",
     order: 37,
     contributeRoutes({menu, subview, segments, searchParams}: RouteConfigArgs) {
+        if (menu === "tenancy" && subview === "systemSettings" && segments[2] === "clinicConfig") {
+            if (!isClinicConfigSection(segments[3])) return <Navigate to={clinicConfigSectionPath("booking")} replace />;
+            return <ClinicSettings />;
+        }
+        if (menu === "dentalClinic" && subview === "settings") {
+            return <Navigate to={clinicConfigSectionPath("booking")} replace />;
+        }
         if (menu !== "dentalClinic") return undefined;
-        if (subview === "settings") return <ClinicSettings />;
         if (subview === "day") return <ClinicDayView />;
 
         const pages = subview ? PAGES[subview] : undefined;

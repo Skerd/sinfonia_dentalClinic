@@ -1,38 +1,28 @@
 {
   "dentalClinic": {
     "title": "Cabinet dentaire",
-    "day": {
-      "title": "Vue du jour"
-    },
-    "appointments": {
-      "title": "Rendez-vous"
-    },
-    "inquiries": {
-      "title": "Demandes de devis"
-    },
-    "plans": {
-      "title": "Plans de traitement"
-    },
-    "patients": {
-      "title": "Patients"
-    },
-    "trips": {
-      "title": "Voyages"
-    },
-    "team": {
-      "title": "Équipe"
-    },
-    "timeOff": {
-      "title": "Absence"
-    },
-    "services": {
-      "title": "Soins"
-    },
-    "locations": {
-      "title": "Sites"
-    },
-    "settings": {
-      "title": "Paramètres"
+    "day": {"title": "Vue du jour"},
+    "appointments": {"title": "Rendez-vous"},
+    "inquiries": {"title": "Demandes de devis"},
+    "plans": {"title": "Plans de traitement"},
+    "patients": {"title": "Patients"},
+    "trips": {"title": "Voyages"},
+    "team": {"title": "Équipe"},
+    "timeOff": {"title": "Absence"},
+    "services": {"title": "Soins"},
+    "locations": {"title": "Sites"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "clinicConfig": {
+        "title": "Cabinet dentaire",
+        "booking": {"title": "Réservation en ligne"},
+        "patients": {"title": "Patients et messages"},
+        "privacy": {"title": "Politique de confidentialité"},
+        "alerts": {"title": "Alertes au personnel"},
+        "inquiries": {"title": "Demandes de devis"},
+        "profile": {"title": "Profil pour les patients de l'étranger"}
+      }
     }
   }
 }

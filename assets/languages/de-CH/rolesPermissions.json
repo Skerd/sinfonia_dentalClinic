@@ -24,7 +24,7 @@
       "maxAdvanceDays": "Maximal Tage im Voraus",
       "minNoticeHours": "Minimale Vorlaufzeit (Stunden)",
       "noShowGraceMinutes": "Kulanzzeit bis Nichterscheinen (Minuten)",
-      "notifyUsers": "Benutzer benachrichtigen",
+      "notifyUsers": "Diese Benutzer über neue und abgesagte Online-Buchungen informieren",
       "patientNoteEnabled": "Patientennotiz aktiviert",
       "privacyNoticeText": "Text der Datenschutzerklärung",
       "privacyNoticeVersion": "Version der Datenschutzerklärung",

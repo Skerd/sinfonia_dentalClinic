@@ -24,7 +24,7 @@
       "maxAdvanceDays": "Giorni massimi di anticipo",
       "minNoticeHours": "Preavviso minimo (ore)",
       "noShowGraceMinutes": "Tolleranza prima della mancata presentazione (minuti)",
-      "notifyUsers": "Avvisa utenti",
+      "notifyUsers": "Informa questi utenti delle prenotazioni online nuove e annullate",
       "patientNoteEnabled": "Nota del paziente attivata",
       "privacyNoticeText": "Testo dell'informativa sulla privacy",
       "privacyNoticeVersion": "Versione dell'informativa sulla privacy",

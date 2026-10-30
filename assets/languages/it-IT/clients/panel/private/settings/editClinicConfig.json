@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
   "title": "Impostazioni dello studio",
-  "description": "Regole di prenotazione online, messaggi, privacy e conservazione dei dati",
+  "description": "Vale per questo studio.",
   "form": {
     "bookingSectionTitle": "Prenotazione online",
     "cancellationDeadlineHoursLabel": "Annullamento online fino a (ore prima)",
@@ -105,7 +105,7 @@
   },
   "formHeader": {
     "title": "Impostazioni dello studio",
-    "description": "Regole di prenotazione online, messaggi, privacy e conservazione dei dati"
+    "description": "Vale per questo studio."
   },
   "formButtons": {
     "cancel": "Annulla",

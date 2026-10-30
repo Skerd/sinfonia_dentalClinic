@@ -24,7 +24,7 @@
       "maxAdvanceDays": "Max advance days",
       "minNoticeHours": "Min notice hours",
       "noShowGraceMinutes": "No show grace minutes",
-      "notifyUsers": "Notify users",
+      "notifyUsers": "Tell these users about new and cancelled online bookings",
       "patientNoteEnabled": "Patient note enabled",
       "privacyNoticeText": "Privacy notice text",
       "privacyNoticeVersion": "Privacy notice version",

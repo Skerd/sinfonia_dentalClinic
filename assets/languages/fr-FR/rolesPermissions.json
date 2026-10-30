@@ -24,7 +24,7 @@
       "maxAdvanceDays": "Jours d'avance maximum",
       "minNoticeHours": "Préavis minimum (heures)",
       "noShowGraceMinutes": "Délai avant absence (minutes)",
-      "notifyUsers": "Prévenir les utilisateurs",
+      "notifyUsers": "Informer ces utilisateurs des réservations en ligne nouvelles et annulées",
       "patientNoteEnabled": "Note patient activée",
       "privacyNoticeText": "Texte de la politique de confidentialité",
       "privacyNoticeVersion": "Version de la politique de confidentialité",

@@ -24,7 +24,7 @@
       "maxAdvanceDays": "Ditët maksimale përpara",
       "minNoticeHours": "Paralajmërimi minimal (orë)",
       "noShowGraceMinutes": "Toleranca para mosparaqitjes (minuta)",
-      "notifyUsers": "Njofto përdoruesit",
+      "notifyUsers": "Njofto këta përdorues për rezervimet online të reja dhe të anuluara",
       "patientNoteEnabled": "Shënimi i pacientit aktiv",
       "privacyNoticeText": "Teksti i njoftimit të privatësisë",
       "privacyNoticeVersion": "Versioni i njoftimit të privatësisë",

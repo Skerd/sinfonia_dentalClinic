@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
   "title": "Praxiseinstellungen",
-  "description": "Regeln für Online-Buchungen, Nachrichten, Datenschutz und Datenaufbewahrung",
+  "description": "Gilt für diese Praxis.",
   "form": {
     "bookingSectionTitle": "Online-Buchung",
     "cancellationDeadlineHoursLabel": "Online-Absage bis (Stunden vorher)",
@@ -105,7 +105,7 @@
   },
   "formHeader": {
     "title": "Praxiseinstellungen",
-    "description": "Regeln für Online-Buchungen, Nachrichten, Datenschutz und Datenaufbewahrung"
+    "description": "Gilt für diese Praxis."
   },
   "formButtons": {
     "cancel": "Abbrechen",

@@ -10,7 +10,19 @@
     "team": {"title": "Team"},
     "timeOff": {"title": "Time off"},
     "services": {"title": "Treatments"},
-    "locations": {"title": "Locations"},
-    "settings": {"title": "Settings"}
+    "locations": {"title": "Locations"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "clinicConfig": {
+        "title": "Dental clinic",
+        "booking": {"title": "Online booking"},
+        "patients": {"title": "Patients and messages"},
+        "privacy": {"title": "Privacy notice"},
+        "alerts": {"title": "Staff alerts"},
+        "inquiries": {"title": "Estimate requests"},
+        "profile": {"title": "Profile for patients from abroad"}
+      }
+    }
   }
 }

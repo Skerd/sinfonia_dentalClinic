@@ -1,38 +1,28 @@
 {
   "dentalClinic": {
     "title": "Studio dentistico",
-    "day": {
-      "title": "Vista giornaliera"
-    },
-    "appointments": {
-      "title": "Appuntamenti"
-    },
-    "inquiries": {
-      "title": "Richieste di preventivo"
-    },
-    "plans": {
-      "title": "Piani di cura"
-    },
-    "patients": {
-      "title": "Pazienti"
-    },
-    "trips": {
-      "title": "Viaggi"
-    },
-    "team": {
-      "title": "Team"
-    },
-    "timeOff": {
-      "title": "Assenza"
-    },
-    "services": {
-      "title": "Trattamenti"
-    },
-    "locations": {
-      "title": "Sedi"
-    },
-    "settings": {
-      "title": "Impostazioni"
+    "day": {"title": "Vista giornaliera"},
+    "appointments": {"title": "Appuntamenti"},
+    "inquiries": {"title": "Richieste di preventivo"},
+    "plans": {"title": "Piani di cura"},
+    "patients": {"title": "Pazienti"},
+    "trips": {"title": "Viaggi"},
+    "team": {"title": "Team"},
+    "timeOff": {"title": "Assenza"},
+    "services": {"title": "Trattamenti"},
+    "locations": {"title": "Sedi"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "clinicConfig": {
+        "title": "Studio dentistico",
+        "booking": {"title": "Prenotazione online"},
+        "patients": {"title": "Pazienti e messaggi"},
+        "privacy": {"title": "Informativa sulla privacy"},
+        "alerts": {"title": "Avvisi al personale"},
+        "inquiries": {"title": "Richieste di preventivo"},
+        "profile": {"title": "Profilo per pazienti dall'estero"}
+      }
     }
   }
 }

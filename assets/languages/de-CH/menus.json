@@ -1,38 +1,28 @@
 {
   "dentalClinic": {
     "title": "Zahnarztpraxis",
-    "day": {
-      "title": "Tagesansicht"
-    },
-    "appointments": {
-      "title": "Termine"
-    },
-    "inquiries": {
-      "title": "Kostenanfragen"
-    },
-    "plans": {
-      "title": "Behandlungspläne"
-    },
-    "patients": {
-      "title": "Patienten"
-    },
-    "trips": {
-      "title": "Reisen"
-    },
-    "team": {
-      "title": "Team"
-    },
-    "timeOff": {
-      "title": "Abwesenheit"
-    },
-    "services": {
-      "title": "Behandlungen"
-    },
-    "locations": {
-      "title": "Standorte"
-    },
-    "settings": {
-      "title": "Einstellungen"
+    "day": {"title": "Tagesansicht"},
+    "appointments": {"title": "Termine"},
+    "inquiries": {"title": "Kostenanfragen"},
+    "plans": {"title": "Behandlungspläne"},
+    "patients": {"title": "Patienten"},
+    "trips": {"title": "Reisen"},
+    "team": {"title": "Team"},
+    "timeOff": {"title": "Abwesenheit"},
+    "services": {"title": "Behandlungen"},
+    "locations": {"title": "Standorte"}
+  },
+  "tenancy": {
+    "systemSettings": {
+      "clinicConfig": {
+        "title": "Zahnarztpraxis",
+        "booking": {"title": "Online-Buchung"},
+        "patients": {"title": "Patienten und Nachrichten"},
+        "privacy": {"title": "Datenschutzerklärung"},
+        "alerts": {"title": "Benachrichtigungen ans Personal"},
+        "inquiries": {"title": "Kostenanfragen"},
+        "profile": {"title": "Profil für Patienten aus dem Ausland"}
+      }
     }
   }
 }

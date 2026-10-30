@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
   "title": "Paramètres du cabinet",
-  "description": "Règles de réservation en ligne, messages, confidentialité et conservation des données",
+  "description": "S'applique à ce cabinet.",
   "form": {
     "bookingSectionTitle": "Réservation en ligne",
     "cancellationDeadlineHoursLabel": "Annulation en ligne jusqu'à (heures avant)",
@@ -105,7 +105,7 @@
   },
   "formHeader": {
     "title": "Paramètres du cabinet",
-    "description": "Règles de réservation en ligne, messages, confidentialité et conservation des données"
+    "description": "S'applique à ce cabinet."
   },
   "formButtons": {
     "cancel": "Annuler",

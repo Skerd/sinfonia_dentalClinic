@@ -6,6 +6,23 @@ import type {EditClinicConfigFormType} from "armonia/src/modules/dentalClinic/ap
 import type {ClinicConfig} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicConfig/clinicConfig.dto.ts";
 import type {SimpleBlankUser} from "armonia/src/modules/core/dto/user.dto.ts";
 import {getName} from "@coreModule/helpers/general/names.ts";
+import {isClinicConfigSection, type ClinicConfigSection} from "@dentalClinicModule/clients/panel/private/settings/clinicConfigSections.ts";
+
+/** Matches `skipRenderWhenFormExtraNotTruthy` on each block in `clinicConfig.views.ts`. */
+const SECTION_FLAGS: Record<ClinicConfigSection, string> = {
+    booking: "sectionBooking",
+    patients: "sectionPatients",
+    privacy: "sectionPrivacy",
+    alerts: "sectionAlerts",
+    inquiries: "sectionInquiries",
+    profile: "sectionProfile",
+};
+
+function openSectionFlag(): string {
+    const segment = window.location.pathname.split("/").filter(Boolean)[3];
+    const section: ClinicConfigSection = isClinicConfigSection(segment) ? segment : "booking";
+    return SECTION_FLAGS[section];
+}
 
 const chipLabelState = {
     loadedId: null as string | null,
@@ -46,6 +63,7 @@ export default createGenericEditPage<ClinicConfig, EditClinicConfigFormType>({
                 notifyUsers: chipLabelState.notifyUsers,
                 inquiryNotifyUsers: chipLabelState.inquiryNotifyUsers,
             },
+            [openSectionFlag()]: true,
         };
     },
     submitIcon: <Save />,

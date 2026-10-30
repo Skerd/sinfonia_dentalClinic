@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/settings/editClinicConfig.tsx",
   "title": "Clinic settings",
-  "description": "Online booking rules, messages, privacy and data retention",
+  "description": "Applies to this clinic.",
   "form": {
     "bookingSectionTitle": "Online booking",
     "cancellationDeadlineHoursLabel": "Online cancellation until (hours before)",
@@ -105,7 +105,7 @@
   },
   "formHeader": {
     "title": "Clinic settings",
-    "description": "Online booking rules, messages, privacy and data retention"
+    "description": "Applies to this clinic."
   },
   "formButtons": {
     "cancel": "Cancel",
