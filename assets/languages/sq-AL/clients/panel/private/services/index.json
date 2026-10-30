@@ -25,6 +25,25 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "category": {
+        "checkup": "Kontroll",
+        "hygiene": "Higjienë dentare",
+        "whitening": "Zbardhim",
+        "filling": "Mbushje",
+        "root_canal": "Mjekim kanali",
+        "extraction": "Heqje dhëmbi",
+        "implant": "Implant",
+        "all_on_x": "All-on-4 / All-on-6",
+        "crown": "Kurorë",
+        "bridge": "Urë",
+        "veneer": "Faset",
+        "denture": "Protezë",
+        "orthodontics": "Ortodonci",
+        "bone_graft": "Shtim kockor / ngritje sinusi",
+        "other": "Tjetër"
+      }
+    },
     "name": "Emri",
     "slug": "Emri i adresës web",
     "durationMinutes": "Kohëzgjatja (min)",

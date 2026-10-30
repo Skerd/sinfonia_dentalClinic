@@ -1,8 +1,11 @@
 import {compose} from "redux";
+import {useMemo} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
+import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators.ts";
+import {TREATMENT_CATEGORIES} from "armonia/src/modules/dentalClinic/constants/index.ts";
 import type {ClinicService} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicService/clinicService.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import ClinicServiceCard from "./center/cardView/clinicServiceCard.tsx";
@@ -17,6 +20,33 @@ export function clinicServiceEditPath(row: {_id: string}) {
 }
 
 function AllClinicServices({resolveLanguageKey}: WithLanguageType) {
+    const quickFilters = useMemo<QuickFilterDef[]>(() => [
+        {
+            field: "category",
+            label: String(resolveLanguageKey("fields.category")),
+            type: COLUMN_TYPE.ENUM,
+            enumValues: TREATMENT_CATEGORIES.map((value) => ({
+                value,
+                label: String(resolveLanguageKey(`fields.!enums.category.${value}`)),
+            })),
+        },
+        {
+            field: "onlineBookable",
+            label: String(resolveLanguageKey("fields.onlineBookable")),
+            type: COLUMN_TYPE.BOOLEAN,
+        },
+        {
+            field: "isPublic",
+            label: String(resolveLanguageKey("fields.isPublic")),
+            type: COLUMN_TYPE.BOOLEAN,
+        },
+        {
+            field: "isActive",
+            label: String(resolveLanguageKey("fields.isActive")),
+            type: COLUMN_TYPE.BOOLEAN,
+        },
+    ], [resolveLanguageKey]);
+
     return (
         <EntityListPage<ClinicService>
             apiUrl="/api/dentalClinic/clinicService"
@@ -29,6 +59,7 @@ function AllClinicServices({resolveLanguageKey}: WithLanguageType) {
             createLanguageKey="create"
             buildEditPath={clinicServiceEditPath}
             resolveLanguageKey={resolveLanguageKey}
+            quickFilters={quickFilters}
             sheetLanguagePath="src/modules/dentalClinic/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx"
             cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             renderActionMenuChildren={(entity, bindRowAction) => (

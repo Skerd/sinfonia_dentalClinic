@@ -14,6 +14,25 @@
   "failDescription": "Diçka shkoi keq.",
   "deleted": "Fshirë",
   "fields": {
+    "!enums": {
+      "status": {
+        "draft": "Draft",
+        "sent": "Dërguar",
+        "accepted": "Pranuar",
+        "rejected": "Nuk u zgjodh",
+        "expired": "Skaduar",
+        "superseded": "Zëvendësuar"
+      },
+      "paymentStatus": {
+        "unpaid": "E papaguar",
+        "pending": "Pagesa me kartë në pritje",
+        "failed": "Pagesa me kartë dështoi",
+        "deposit_paid": "Paradhënia e paguar",
+        "paid": "E paguar plotësisht",
+        "partially_refunded": "E rimbursuar pjesërisht",
+        "refunded": "E rimbursuar"
+      }
+    },
     "number": "Nr. oferte",
     "status": "Statusi",
     "optionLabel": "Opsioni",

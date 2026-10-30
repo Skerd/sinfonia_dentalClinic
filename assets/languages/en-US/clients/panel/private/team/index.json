@@ -25,6 +25,14 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "role": {
+        "dentist": "Dentist",
+        "hygienist": "Hygienist",
+        "orthodontist": "Orthodontist",
+        "other": "Other"
+      }
+    },
     "displayName": "Display name",
     "title": "Title",
     "role": "Role",

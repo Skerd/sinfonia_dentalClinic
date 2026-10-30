@@ -23,6 +23,14 @@
   "failDescription": "Something went wrong while loading. Please try again.",
   "deleted": "Deleted",
   "fields": {
+    "!enums": {
+      "status": {
+        "planned": "Planned",
+        "confirmed": "Confirmed",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      }
+    },
     "patient": "Patient folder",
     "plan": "Treatment plan",
     "phase": "Phase",

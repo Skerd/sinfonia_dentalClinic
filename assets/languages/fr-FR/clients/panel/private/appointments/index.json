@@ -25,6 +25,15 @@
   "deleted": "Supprimé",
   "active": "Actif",
   "fields": {
+    "!enums": {
+      "status": {
+        "pending": "En attente de confirmation",
+        "confirmed": "Confirmé",
+        "completed": "Terminé",
+        "cancelled": "Annulé",
+        "no_show": "Absent"
+      }
+    },
     "number": "Réservation",
     "status": "Statut",
     "startAt": "Commence",

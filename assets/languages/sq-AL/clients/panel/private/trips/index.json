@@ -23,6 +23,14 @@
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
   "deleted": "I fshirë",
   "fields": {
+    "!enums": {
+      "status": {
+        "planned": "I planifikuar",
+        "confirmed": "I konfirmuar",
+        "completed": "I përfunduar",
+        "cancelled": "I anuluar"
+      }
+    },
     "patient": "Dosja e pacientit",
     "plan": "Plani i trajtimit",
     "phase": "Faza",

@@ -25,6 +25,15 @@
   "deleted": "Eliminato",
   "active": "Attivo",
   "fields": {
+    "!enums": {
+      "status": {
+        "pending": "In attesa di conferma",
+        "confirmed": "Confermato",
+        "completed": "Completato",
+        "cancelled": "Annullato",
+        "no_show": "Non presentato"
+      }
+    },
     "number": "Prenotazione",
     "status": "Stato",
     "startAt": "Inizia",

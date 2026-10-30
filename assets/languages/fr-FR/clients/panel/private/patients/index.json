@@ -24,6 +24,32 @@
   "failDescription": "Une erreur s'est produite. Veuillez réessayer.",
   "deleted": "Supprimé",
   "fields": {
+    "!enums": {
+      "source": {
+        "portal": "Portail",
+        "clinic_site": "Site du cabinet",
+        "booking": "Réservation en ligne",
+        "phone": "Téléphone",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Sans rendez-vous",
+        "referral": "Recommandation",
+        "agency": "Agence",
+        "other": "Autre"
+      },
+      "preferredLanguage": {
+        "it-IT": "Italien",
+        "en-US": "Anglais",
+        "de-CH": "Allemand",
+        "fr-FR": "Français",
+        "sq-AL": "Albanais"
+      },
+      "sex": {
+        "female": "Femme",
+        "male": "Homme",
+        "other": "Autre",
+        "unspecified": "Non précisé"
+      }
+    },
     "number": "N° patient",
     "firstName": "Prénom",
     "lastName": "Nom",

@@ -24,6 +24,46 @@
   "failDescription": "Diçka shkoi keq. Provoni përsëri.",
   "deleted": "Fshirë",
   "fields": {
+    "!enums": {
+      "status": {
+        "new": "E re",
+        "in_review": "Në shqyrtim",
+        "info_requested": "Në pritje të pacientit",
+        "declined": "Refuzuar",
+        "lost": "Humbur",
+        "withdrawn": "Tërhequr",
+        "converted": "Kartela u hap",
+        "quoted": "Oferta u dërgua"
+      },
+      "source": {
+        "portal": "Portali",
+        "clinic_site": "Faqja e klinikës",
+        "booking": "Rezervim online",
+        "phone": "Telefon",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Pa termin",
+        "referral": "Rekomandim",
+        "agency": "Agjenci",
+        "other": "Tjetër"
+      },
+      "treatmentsWanted": {
+        "checkup": "Kontroll",
+        "hygiene": "Higjienë dentare",
+        "whitening": "Zbardhim",
+        "filling": "Mbushje",
+        "root_canal": "Mjekim kanali",
+        "extraction": "Heqje dhëmbi",
+        "implant": "Implant",
+        "all_on_x": "All-on-4 / All-on-6",
+        "crown": "Kurorë",
+        "bridge": "Urë",
+        "veneer": "Faset",
+        "denture": "Protezë",
+        "orthodontics": "Ortodonci",
+        "bone_graft": "Shtim kockor / ngritje sinusi",
+        "other": "Tjetër"
+      }
+    },
     "number": "Nr. kërkese",
     "status": "Statusi",
     "source": "Burimi",

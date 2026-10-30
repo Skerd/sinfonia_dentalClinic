@@ -24,6 +24,46 @@
   "failDescription": "Une erreur s'est produite. Veuillez réessayer.",
   "deleted": "Supprimé",
   "fields": {
+    "!enums": {
+      "status": {
+        "new": "Nouvelle",
+        "in_review": "En cours d'examen",
+        "info_requested": "En attente du patient",
+        "declined": "Refusée",
+        "lost": "Perdue",
+        "withdrawn": "Retirée",
+        "converted": "Dossier ouvert",
+        "quoted": "Devis envoyé"
+      },
+      "source": {
+        "portal": "Portail",
+        "clinic_site": "Site du cabinet",
+        "booking": "Réservation en ligne",
+        "phone": "Téléphone",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Sans rendez-vous",
+        "referral": "Recommandation",
+        "agency": "Agence",
+        "other": "Autre"
+      },
+      "treatmentsWanted": {
+        "checkup": "Contrôle",
+        "hygiene": "Détartrage et hygiène",
+        "whitening": "Blanchiment",
+        "filling": "Obturation",
+        "root_canal": "Traitement de canal",
+        "extraction": "Extraction",
+        "implant": "Implant",
+        "all_on_x": "All-on-4 / All-on-6",
+        "crown": "Couronne",
+        "bridge": "Bridge",
+        "veneer": "Facette",
+        "denture": "Prothèse amovible",
+        "orthodontics": "Orthodontie",
+        "bone_graft": "Greffe osseuse / sinus lift",
+        "other": "Autre"
+      }
+    },
     "number": "N° de demande",
     "status": "Statut",
     "source": "Origine",

@@ -25,6 +25,15 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "pending": "Në pritje të konfirmimit",
+        "confirmed": "Konfirmuar",
+        "completed": "Përfunduar",
+        "cancelled": "Anuluar",
+        "no_show": "Mosparaqitje"
+      }
+    },
     "number": "Rezervimi",
     "status": "Statusi",
     "startAt": "Fillon",

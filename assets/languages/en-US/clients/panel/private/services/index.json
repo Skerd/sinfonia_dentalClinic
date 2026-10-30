@@ -25,6 +25,25 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "category": {
+        "checkup": "Check-up",
+        "hygiene": "Cleaning & hygiene",
+        "whitening": "Whitening",
+        "filling": "Filling",
+        "root_canal": "Root canal",
+        "extraction": "Extraction",
+        "implant": "Implant",
+        "all_on_x": "All-on-4 / All-on-6",
+        "crown": "Crown",
+        "bridge": "Bridge",
+        "veneer": "Veneer",
+        "denture": "Denture",
+        "orthodontics": "Orthodontics",
+        "bone_graft": "Bone graft / sinus lift",
+        "other": "Other"
+      }
+    },
     "name": "Name",
     "slug": "Slug",
     "durationMinutes": "Duration (min)",

@@ -25,6 +25,15 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "status": {
+        "pending": "Wartet auf Bestätigung",
+        "confirmed": "Bestätigt",
+        "completed": "Abgeschlossen",
+        "cancelled": "Storniert",
+        "no_show": "Nicht erschienen"
+      }
+    },
     "number": "Buchung",
     "status": "Status",
     "startAt": "Beginnt",

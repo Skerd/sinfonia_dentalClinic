@@ -14,6 +14,25 @@
   "failDescription": "Une erreur s'est produite.",
   "deleted": "Supprimé",
   "fields": {
+    "!enums": {
+      "status": {
+        "draft": "Brouillon",
+        "sent": "Envoyé",
+        "accepted": "Accepté",
+        "rejected": "Non retenu",
+        "expired": "Expiré",
+        "superseded": "Remplacé"
+      },
+      "paymentStatus": {
+        "unpaid": "Non payé",
+        "pending": "Paiement par carte en cours",
+        "failed": "Paiement par carte refusé",
+        "deposit_paid": "Acompte payé",
+        "paid": "Payé en totalité",
+        "partially_refunded": "Remboursé en partie",
+        "refunded": "Remboursé"
+      }
+    },
     "number": "N° de devis",
     "status": "Statut",
     "optionLabel": "Option",

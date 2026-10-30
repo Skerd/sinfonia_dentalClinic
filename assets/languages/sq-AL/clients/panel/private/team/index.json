@@ -25,6 +25,14 @@
   "deleted": "Fshirë",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "role": {
+        "dentist": "Dentist",
+        "hygienist": "Higjienist",
+        "orthodontist": "Ortodont",
+        "other": "Tjetër"
+      }
+    },
     "displayName": "Emri i shfaqur",
     "title": "Titulli",
     "role": "Roli",

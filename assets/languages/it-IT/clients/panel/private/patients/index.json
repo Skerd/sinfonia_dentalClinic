@@ -24,6 +24,32 @@
   "failDescription": "Si è verificato un errore. Riprova.",
   "deleted": "Eliminato",
   "fields": {
+    "!enums": {
+      "source": {
+        "portal": "Portale",
+        "clinic_site": "Sito della clinica",
+        "booking": "Prenotazione online",
+        "phone": "Telefono",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Senza appuntamento",
+        "referral": "Passaparola",
+        "agency": "Agenzia",
+        "other": "Altro"
+      },
+      "preferredLanguage": {
+        "it-IT": "Italiano",
+        "en-US": "Inglese",
+        "de-CH": "Tedesco",
+        "fr-FR": "Francese",
+        "sq-AL": "Albanese"
+      },
+      "sex": {
+        "female": "Donna",
+        "male": "Uomo",
+        "other": "Altro",
+        "unspecified": "Preferisco non dirlo"
+      }
+    },
     "number": "N. paziente",
     "firstName": "Nome",
     "lastName": "Cognome",

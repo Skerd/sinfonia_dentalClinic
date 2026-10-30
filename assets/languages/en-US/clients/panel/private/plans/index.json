@@ -14,6 +14,25 @@
   "failDescription": "Something went wrong while loading. Please try again.",
   "deleted": "Deleted",
   "fields": {
+    "!enums": {
+      "status": {
+        "draft": "Draft",
+        "sent": "Sent",
+        "accepted": "Accepted",
+        "rejected": "Not chosen",
+        "expired": "Expired",
+        "superseded": "Replaced"
+      },
+      "paymentStatus": {
+        "unpaid": "Unpaid",
+        "pending": "Card payment pending",
+        "failed": "Card payment failed",
+        "deposit_paid": "Deposit paid",
+        "paid": "Paid in full",
+        "partially_refunded": "Partly refunded",
+        "refunded": "Refunded"
+      }
+    },
     "number": "Quote no.",
     "status": "Status",
     "optionLabel": "Option",

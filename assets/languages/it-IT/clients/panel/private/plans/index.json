@@ -14,6 +14,25 @@
   "failDescription": "Si è verificato un errore.",
   "deleted": "Eliminato",
   "fields": {
+    "!enums": {
+      "status": {
+        "draft": "Bozza",
+        "sent": "Inviato",
+        "accepted": "Accettato",
+        "rejected": "Non scelto",
+        "expired": "Scaduto",
+        "superseded": "Sostituito"
+      },
+      "paymentStatus": {
+        "unpaid": "Non pagato",
+        "pending": "Pagamento con carta in corso",
+        "failed": "Pagamento con carta non riuscito",
+        "deposit_paid": "Acconto pagato",
+        "paid": "Pagato per intero",
+        "partially_refunded": "Rimborsato in parte",
+        "refunded": "Rimborsato"
+      }
+    },
     "number": "N. preventivo",
     "status": "Stato",
     "optionLabel": "Opzione",

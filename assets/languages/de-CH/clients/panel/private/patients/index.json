@@ -24,6 +24,32 @@
   "failDescription": "Beim Laden ist ein Fehler aufgetreten. Bitte erneut versuchen.",
   "deleted": "Gelöscht",
   "fields": {
+    "!enums": {
+      "source": {
+        "portal": "Portal",
+        "clinic_site": "Praxis-Website",
+        "booking": "Online-Buchung",
+        "phone": "Telefon",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Ohne Termin",
+        "referral": "Empfehlung",
+        "agency": "Agentur",
+        "other": "Andere"
+      },
+      "preferredLanguage": {
+        "it-IT": "Italienisch",
+        "en-US": "Englisch",
+        "de-CH": "Deutsch",
+        "fr-FR": "Französisch",
+        "sq-AL": "Albanisch"
+      },
+      "sex": {
+        "female": "Weiblich",
+        "male": "Männlich",
+        "other": "Divers",
+        "unspecified": "Keine Angabe"
+      }
+    },
     "number": "Patienten-Nr.",
     "firstName": "Vorname",
     "lastName": "Nachname",

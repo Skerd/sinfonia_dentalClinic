@@ -24,6 +24,46 @@
   "failDescription": "Beim Laden ist ein Fehler aufgetreten.",
   "deleted": "Gelöscht",
   "fields": {
+    "!enums": {
+      "status": {
+        "new": "Neu",
+        "in_review": "In Prüfung",
+        "info_requested": "Wartet auf Patient",
+        "declined": "Abgelehnt",
+        "lost": "Verloren",
+        "withdrawn": "Zurückgezogen",
+        "converted": "Akte eröffnet",
+        "quoted": "Angebot gesendet"
+      },
+      "source": {
+        "portal": "Portal",
+        "clinic_site": "Praxis-Website",
+        "booking": "Online-Buchung",
+        "phone": "Telefon",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Ohne Termin",
+        "referral": "Empfehlung",
+        "agency": "Agentur",
+        "other": "Andere"
+      },
+      "treatmentsWanted": {
+        "checkup": "Kontrolle",
+        "hygiene": "Dentalhygiene",
+        "whitening": "Bleaching",
+        "filling": "Füllung",
+        "root_canal": "Wurzelbehandlung",
+        "extraction": "Extraktion",
+        "implant": "Implantat",
+        "all_on_x": "All-on-4 / All-on-6",
+        "crown": "Krone",
+        "bridge": "Brücke",
+        "veneer": "Veneer",
+        "denture": "Prothese",
+        "orthodontics": "Kieferorthopädie",
+        "bone_graft": "Knochenaufbau / Sinuslift",
+        "other": "Andere"
+      }
+    },
     "number": "Anfrage-Nr.",
     "status": "Status",
     "source": "Herkunft",

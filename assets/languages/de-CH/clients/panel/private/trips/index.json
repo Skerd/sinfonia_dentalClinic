@@ -23,6 +23,14 @@
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
   "deleted": "Gelöscht",
   "fields": {
+    "!enums": {
+      "status": {
+        "planned": "Geplant",
+        "confirmed": "Bestätigt",
+        "completed": "Abgeschlossen",
+        "cancelled": "Abgesagt"
+      }
+    },
     "patient": "Patientenakte",
     "plan": "Behandlungsplan",
     "phase": "Phase",

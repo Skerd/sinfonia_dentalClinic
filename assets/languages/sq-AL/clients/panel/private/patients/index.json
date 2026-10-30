@@ -24,6 +24,32 @@
   "failDescription": "Diçka shkoi keq. Provoni përsëri.",
   "deleted": "Fshirë",
   "fields": {
+    "!enums": {
+      "source": {
+        "portal": "Portali",
+        "clinic_site": "Faqja e klinikës",
+        "booking": "Rezervim online",
+        "phone": "Telefon",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Pa termin",
+        "referral": "Rekomandim",
+        "agency": "Agjenci",
+        "other": "Tjetër"
+      },
+      "preferredLanguage": {
+        "it-IT": "Italisht",
+        "en-US": "Anglisht",
+        "de-CH": "Gjermanisht",
+        "fr-FR": "Frëngjisht",
+        "sq-AL": "Shqip"
+      },
+      "sex": {
+        "female": "Femër",
+        "male": "Mashkull",
+        "other": "Tjetër",
+        "unspecified": "Nuk dua ta them"
+      }
+    },
     "number": "Nr. pacienti",
     "firstName": "Emri",
     "lastName": "Mbiemri",

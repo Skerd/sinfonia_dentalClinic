@@ -23,6 +23,14 @@
   "failDescription": "Une erreur s'est produite pendant le chargement. Veuillez réessayer.",
   "deleted": "Supprimé",
   "fields": {
+    "!enums": {
+      "status": {
+        "planned": "Prévu",
+        "confirmed": "Confirmé",
+        "completed": "Terminé",
+        "cancelled": "Annulé"
+      }
+    },
     "patient": "Dossier patient",
     "plan": "Plan de traitement",
     "phase": "Phase",

@@ -24,6 +24,32 @@
   "failDescription": "Something went wrong while loading. Please try again.",
   "deleted": "Deleted",
   "fields": {
+    "!enums": {
+      "source": {
+        "portal": "Portal",
+        "clinic_site": "Clinic website",
+        "booking": "Online booking",
+        "phone": "Phone",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Walk-in",
+        "referral": "Referral",
+        "agency": "Agency",
+        "other": "Other"
+      },
+      "preferredLanguage": {
+        "it-IT": "Italian",
+        "en-US": "English",
+        "de-CH": "German",
+        "fr-FR": "French",
+        "sq-AL": "Albanian"
+      },
+      "sex": {
+        "female": "Female",
+        "male": "Male",
+        "other": "Other",
+        "unspecified": "Prefer not to say"
+      }
+    },
     "number": "Patient no.",
     "firstName": "First name",
     "lastName": "Last name",

@@ -23,6 +23,14 @@
   "failDescription": "Qualcosa è andato storto durante il caricamento. Riprova.",
   "deleted": "Eliminato",
   "fields": {
+    "!enums": {
+      "status": {
+        "planned": "Pianificato",
+        "confirmed": "Confermato",
+        "completed": "Concluso",
+        "cancelled": "Annullato"
+      }
+    },
     "patient": "Cartella paziente",
     "plan": "Piano di trattamento",
     "phase": "Fase",

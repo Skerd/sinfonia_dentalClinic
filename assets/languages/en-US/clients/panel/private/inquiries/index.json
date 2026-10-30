@@ -24,6 +24,46 @@
   "failDescription": "Something went wrong while loading. Please try again.",
   "deleted": "Deleted",
   "fields": {
+    "!enums": {
+      "status": {
+        "new": "New",
+        "in_review": "In review",
+        "info_requested": "Waiting for patient",
+        "declined": "Declined",
+        "lost": "Lost",
+        "withdrawn": "Withdrawn",
+        "converted": "Patient folder opened",
+        "quoted": "Quote sent"
+      },
+      "source": {
+        "portal": "Portal",
+        "clinic_site": "Clinic website",
+        "booking": "Online booking",
+        "phone": "Phone",
+        "whatsapp": "WhatsApp",
+        "walk_in": "Walk-in",
+        "referral": "Referral",
+        "agency": "Agency",
+        "other": "Other"
+      },
+      "treatmentsWanted": {
+        "checkup": "Check-up",
+        "hygiene": "Cleaning & hygiene",
+        "whitening": "Whitening",
+        "filling": "Filling",
+        "root_canal": "Root canal",
+        "extraction": "Extraction",
+        "implant": "Implant",
+        "all_on_x": "All-on-4 / All-on-6",
+        "crown": "Crown",
+        "bridge": "Bridge",
+        "veneer": "Veneer",
+        "denture": "Denture",
+        "orthodontics": "Orthodontics",
+        "bone_graft": "Bone graft / sinus lift",
+        "other": "Other"
+      }
+    },
     "number": "Request no.",
     "status": "Status",
     "source": "Came from",

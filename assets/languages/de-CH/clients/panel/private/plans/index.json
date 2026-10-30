@@ -14,6 +14,25 @@
   "failDescription": "Beim Laden ist ein Fehler aufgetreten.",
   "deleted": "Gelöscht",
   "fields": {
+    "!enums": {
+      "status": {
+        "draft": "Entwurf",
+        "sent": "Gesendet",
+        "accepted": "Angenommen",
+        "rejected": "Nicht gewählt",
+        "expired": "Abgelaufen",
+        "superseded": "Ersetzt"
+      },
+      "paymentStatus": {
+        "unpaid": "Unbezahlt",
+        "pending": "Kartenzahlung läuft",
+        "failed": "Kartenzahlung fehlgeschlagen",
+        "deposit_paid": "Anzahlung bezahlt",
+        "paid": "Vollständig bezahlt",
+        "partially_refunded": "Teilweise erstattet",
+        "refunded": "Erstattet"
+      }
+    },
     "number": "Angebots-Nr.",
     "status": "Status",
     "optionLabel": "Variante",

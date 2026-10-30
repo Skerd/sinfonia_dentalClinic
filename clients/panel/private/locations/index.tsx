@@ -1,8 +1,10 @@
 import {compose} from "redux";
+import {useMemo} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
+import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators.ts";
 import type {ClinicLocation} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicLocation/clinicLocation.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import ClinicLocationCard from "./center/cardView/clinicLocationCard.tsx";
@@ -17,6 +19,14 @@ export function clinicLocationEditPath(row: {_id: string}) {
 }
 
 function AllClinicLocations({resolveLanguageKey}: WithLanguageType) {
+    const quickFilters = useMemo<QuickFilterDef[]>(() => [
+        {
+            field: "isActive",
+            label: String(resolveLanguageKey("fields.isActive")),
+            type: COLUMN_TYPE.BOOLEAN,
+        },
+    ], [resolveLanguageKey]);
+
     return (
         <EntityListPage<ClinicLocation>
             apiUrl="/api/dentalClinic/clinicLocation"
@@ -29,6 +39,7 @@ function AllClinicLocations({resolveLanguageKey}: WithLanguageType) {
             createLanguageKey="create"
             buildEditPath={clinicLocationEditPath}
             resolveLanguageKey={resolveLanguageKey}
+            quickFilters={quickFilters}
             sheetLanguagePath="src/modules/dentalClinic/clients/panel/private/locations/center/sheetView/clinicLocationSheetView.tsx"
             cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             renderActionMenuChildren={(entity, bindRowAction) => (

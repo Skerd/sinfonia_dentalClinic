@@ -1,8 +1,12 @@
 import {compose} from "redux";
+import {useMemo} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
+import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators.ts";
+import {PATIENT_LANGUAGES, PATIENT_SOURCES} from "armonia/src/modules/dentalClinic/constants/index.ts";
+import {PATIENT_SEXES} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/patient/patient.schema-def.ts";
 import type {Patient} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/patient/patient.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import PatientCard from "./center/cardView/patientCard.tsx";
@@ -13,6 +17,36 @@ export function patientEditPath(row: {_id: string}) {
 }
 
 function AllPatients({resolveLanguageKey}: WithLanguageType) {
+    const quickFilters = useMemo<QuickFilterDef[]>(() => [
+        {
+            field: "source",
+            label: String(resolveLanguageKey("fields.source")),
+            type: COLUMN_TYPE.ENUM,
+            enumValues: PATIENT_SOURCES.map((value) => ({
+                value,
+                label: String(resolveLanguageKey(`fields.!enums.source.${value}`)),
+            })),
+        },
+        {
+            field: "preferredLanguage",
+            label: String(resolveLanguageKey("fields.preferredLanguage")),
+            type: COLUMN_TYPE.ENUM,
+            enumValues: PATIENT_LANGUAGES.map((value) => ({
+                value,
+                label: String(resolveLanguageKey(`fields.!enums.preferredLanguage.${value}`)),
+            })),
+        },
+        {
+            field: "sex",
+            label: String(resolveLanguageKey("fields.sex")),
+            type: COLUMN_TYPE.ENUM,
+            enumValues: PATIENT_SEXES.map((value) => ({
+                value,
+                label: String(resolveLanguageKey(`fields.!enums.sex.${value}`)),
+            })),
+        },
+    ], [resolveLanguageKey]);
+
     return (
         <EntityListPage<Patient>
             apiUrl="/api/dentalClinic/patient"
@@ -24,6 +58,7 @@ function AllPatients({resolveLanguageKey}: WithLanguageType) {
             createLanguageKey="create"
             buildEditPath={patientEditPath}
             resolveLanguageKey={resolveLanguageKey}
+            quickFilters={quickFilters}
             sheetLanguagePath="src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/patientSheetView.tsx"
             cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             renderSheet={({open, onOpenChange, entity, onDelete, onRestore, listRef}) => (

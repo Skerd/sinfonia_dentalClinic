@@ -25,6 +25,14 @@
   "deleted": "Gelöscht",
   "active": "Aktiv",
   "fields": {
+    "!enums": {
+      "role": {
+        "dentist": "Zahnärztin/Zahnarzt",
+        "hygienist": "Dentalhygieniker/in",
+        "orthodontist": "Kieferorthopäde/in",
+        "other": "Andere"
+      }
+    },
     "displayName": "Anzeigename",
     "title": "Titel",
     "role": "Rolle",

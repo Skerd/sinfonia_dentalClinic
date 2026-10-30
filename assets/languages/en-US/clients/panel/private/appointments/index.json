@@ -25,6 +25,15 @@
   "deleted": "Deleted",
   "active": "Active",
   "fields": {
+    "!enums": {
+      "status": {
+        "pending": "Awaiting confirmation",
+        "confirmed": "Confirmed",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "no_show": "No-show"
+      }
+    },
     "number": "Booking",
     "status": "Status",
     "startAt": "Starts",
