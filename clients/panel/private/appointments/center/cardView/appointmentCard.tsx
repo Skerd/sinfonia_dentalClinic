@@ -48,8 +48,8 @@ function AppointmentCard({
             sheetEntityProp="appointment"
             deleteUrl="/api/dentalClinic/appointment"
             restoreUrl="/api/dentalClinic/appointment/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="number"
             innerRef={innerRef}
             sheetProps={({entity, setAction}) => ({

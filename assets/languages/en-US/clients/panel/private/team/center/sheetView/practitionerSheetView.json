@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/team/center/sheetView/practitionerSheetView.tsx",
+  "failedTitle": "Failed to load team member",
+  "failedDescription": "Something went wrong while loading this team member. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "bio": "About",
   "dayOfWeek": "Day",

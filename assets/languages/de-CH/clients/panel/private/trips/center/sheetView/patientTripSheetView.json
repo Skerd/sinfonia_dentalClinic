@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/trips/center/sheetView/patientTripSheetView.tsx",
+  "failedTitle": "Reise konnte nicht geladen werden",
+  "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
+  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
   "patient": "Patientenakte",
   "plan": "Behandlungsplan",
   "phase": "Phase",

@@ -34,8 +34,8 @@ function PatientCard({patient, resolveLanguageKey, fetchId, hideActions = false,
             sheetEntityProp="patient"
             deleteUrl="/api/dentalClinic/patient"
             restoreUrl="/api/dentalClinic/patient/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="lastName"
         >
             {({entity: row}) => (

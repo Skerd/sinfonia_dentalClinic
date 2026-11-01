@@ -37,8 +37,8 @@ function TreatmentPlanCard({plan, resolveLanguageKey, fetchId, hideActions = fal
             sheetEntityProp="plan"
             deleteUrl="/api/dentalClinic/treatmentPlan"
             restoreUrl="/api/dentalClinic/treatmentPlan/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="number"
             sheetProps={({entity, setEntity}) => ({
                 fetchId,

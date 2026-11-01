@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/patientSheetView.tsx",
+  "failedTitle": "Pacienti nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "number": "Nr. pacienti",
   "firstName": "Emri",
   "lastName": "Mbiemri",

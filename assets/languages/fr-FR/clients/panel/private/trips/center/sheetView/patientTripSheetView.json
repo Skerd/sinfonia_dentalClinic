@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/trips/center/sheetView/patientTripSheetView.tsx",
+  "failedTitle": "Impossible de charger le voyage",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "patient": "Dossier patient",
   "plan": "Plan de traitement",
   "phase": "Phase",

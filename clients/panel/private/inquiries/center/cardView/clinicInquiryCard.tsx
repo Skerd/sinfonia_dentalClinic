@@ -35,8 +35,8 @@ function ClinicInquiryCard({inquiry, resolveLanguageKey, fetchId, hideActions = 
             sheetEntityProp="inquiry"
             deleteUrl="/api/dentalClinic/clinicInquiry"
             restoreUrl="/api/dentalClinic/clinicInquiry/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="number"
             sheetProps={({entity, setEntity}) => ({
                 fetchId,

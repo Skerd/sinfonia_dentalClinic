@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/timeOff/center/sheetView/scheduleExceptionSheetView.tsx",
+  "failedTitle": "Failed to load time off",
+  "failedDescription": "Something went wrong while loading this time off. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "endAt": "Ends",
   "internalNote": "Internal note",

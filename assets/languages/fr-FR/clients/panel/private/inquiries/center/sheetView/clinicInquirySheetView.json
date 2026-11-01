@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/clinicInquirySheetView.tsx",
+  "failedTitle": "Impossible de charger la demande",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "number": "N° de demande",
   "status": "Statut",
   "source": "Origine",

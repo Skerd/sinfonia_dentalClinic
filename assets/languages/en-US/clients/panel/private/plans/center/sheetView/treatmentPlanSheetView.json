@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx",
+  "failedTitle": "Failed to load quote",
+  "failedDescription": "Something went wrong while loading this quote. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "number": "Quote no.",
   "status": "Status",
   "optionLabel": "Option",

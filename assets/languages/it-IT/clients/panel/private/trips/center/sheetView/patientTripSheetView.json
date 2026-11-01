@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/trips/center/sheetView/patientTripSheetView.tsx",
+  "failedTitle": "Impossibile caricare il viaggio",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "patient": "Cartella paziente",
   "plan": "Piano di trattamento",
   "phase": "Fase",

@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/trips/center/sheetView/patientTripSheetView.tsx",
+  "failedTitle": "Failed to load the trip",
+  "failedDescription": "Something went wrong while loading the trip. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "patient": "Patient folder",
   "plan": "Treatment plan",
   "phase": "Phase",

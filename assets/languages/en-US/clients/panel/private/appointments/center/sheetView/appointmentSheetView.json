@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/sheetView/appointmentSheetView.tsx",
+  "failedTitle": "Failed to load appointment",
+  "failedDescription": "Something went wrong while loading this appointment. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "lifecycle": "Lifecycle",
   "appointmentSubtitle": "Appointment",
   "at": "When",

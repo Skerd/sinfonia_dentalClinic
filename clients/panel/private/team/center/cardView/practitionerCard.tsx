@@ -52,8 +52,8 @@ function PractitionerCard({
             sheetEntityProp="practitioner"
             deleteUrl="/api/dentalClinic/practitioner"
             restoreUrl="/api/dentalClinic/practitioner/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="displayName"
             innerRef={innerRef}
             sheetProps={({entity, setEntity}) => ({

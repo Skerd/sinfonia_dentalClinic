@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/team/center/sheetView/practitionerSheetView.tsx",
+  "failedTitle": "Impossible de charger le membre de l'équipe",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "lifecycle": "Cycle de vie",
   "bio": "À propos",
   "dayOfWeek": "Jour",

@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/patientSheetView.tsx",
+  "failedTitle": "Impossibile caricare il paziente",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "number": "N. paziente",
   "firstName": "Nome",
   "lastName": "Cognome",

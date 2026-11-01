@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx",
+  "failedTitle": "Impossibile caricare il preventivo",
+  "failedDescription": "Qualcosa è andato storto durante il caricamento. Fare clic per riprovare.",
+  "failedTooltipDescription": "Clicca per riprovare a caricare i dati.",
   "number": "N. preventivo",
   "status": "Stato",
   "optionLabel": "Opzione",

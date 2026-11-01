@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx",
+  "failedTitle": "Trajtimi nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për të provuar përsëri ngarkimin e të dhënave.",
   "lifecycle": "Cikli i jetës",
   "bufferAfterMinutes": "Pastrimi (min)",
   "bufferBeforeMinutes": "Përgatitja (min)",

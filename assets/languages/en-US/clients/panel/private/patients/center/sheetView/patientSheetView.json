@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/patientSheetView.tsx",
+  "failedTitle": "Failed to load patient",
+  "failedDescription": "Something went wrong while loading this patient. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
   "number": "Patient no.",
   "firstName": "First name",
   "lastName": "Last name",

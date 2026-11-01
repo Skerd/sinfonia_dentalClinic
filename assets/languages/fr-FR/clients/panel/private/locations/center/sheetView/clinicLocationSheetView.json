@@ -1,5 +1,8 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/locations/center/sheetView/clinicLocationSheetView.tsx",
+  "failedTitle": "Impossible de charger le site",
+  "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "lifecycle": "Cycle de vie",
   "address": "Adresse",
   "city": "Ville",

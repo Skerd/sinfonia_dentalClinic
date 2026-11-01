@@ -46,8 +46,8 @@ function ScheduleExceptionCard({
             sheetEntityProp="scheduleException"
             deleteUrl="/api/dentalClinic/scheduleException"
             restoreUrl="/api/dentalClinic/scheduleException/restore"
-            failedTitle={String(resolveLanguageKey("failedTitle"))}
-            failedDescription={String(resolveLanguageKey("failedDescription"))}
+            failedTitle={resolveLanguageKey("failedTitle")}
+            failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="practitioner"
             innerRef={innerRef}
         >
