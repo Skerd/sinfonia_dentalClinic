@@ -4,6 +4,7 @@
   "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
   "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
   "number": "Patienten-Nr.",
+  "medicalHistory": "Krankengeschichte",
   "firstName": "Vorname",
   "lastName": "Nachname",
   "dateOfBirth": "Geburtsdatum",

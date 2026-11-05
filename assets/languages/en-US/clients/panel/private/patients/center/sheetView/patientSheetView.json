@@ -4,6 +4,7 @@
   "failedDescription": "Something went wrong while loading this patient. Click to retry.",
   "failedTooltipDescription": "Click to retry fetching data.",
   "number": "Patient no.",
+  "medicalHistory": "Medical history",
   "firstName": "First name",
   "lastName": "Last name",
   "dateOfBirth": "Date of birth",

@@ -4,6 +4,7 @@
   "failedDescription": "Something went wrong while loading this request. Click to retry.",
   "failedTooltipDescription": "Click to retry fetching data.",
   "number": "Request no.",
+  "medicalHistory": "Medical history",
   "status": "Status",
   "source": "Came from",
   "assignedTo": "Assigned to",

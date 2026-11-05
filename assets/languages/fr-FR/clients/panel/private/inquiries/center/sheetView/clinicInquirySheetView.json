@@ -4,6 +4,7 @@
   "failedDescription": "Une erreur s'est produite lors du chargement. Cliquez pour réessayer.",
   "failedTooltipDescription": "Cliquez pour réessayer de charger les données.",
   "number": "N° de demande",
+  "medicalHistory": "Antécédents médicaux",
   "status": "Statut",
   "source": "Origine",
   "assignedTo": "Attribuée à",
