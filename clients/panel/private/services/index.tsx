@@ -2,7 +2,7 @@ import {compose} from "redux";
 import {useMemo} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators.ts";
 import {TREATMENT_CATEGORIES} from "armonia/src/modules/dentalClinic/constants/index.ts";
@@ -54,9 +54,15 @@ function AllClinicServices({resolveLanguageKey}: WithLanguageType) {
             accessModel="clinicservices"
             tableConfigKey="clinicservices"
             rowActionMenu={{allowMenuForCustomChildren: true}}
-            createPath="/dentalClinic/services/create"
-            createIcon={<IconPlus />}
-            createLanguageKey="create"
+            header={(ctx) => (
+                <EntityListHeader ctx={ctx}>
+                    <EntityListCreateButton
+                        ctx={ctx}
+                        path="/dentalClinic/services/create"
+                        icon={<IconPlus />}
+                    />
+                </EntityListHeader>
+            )}
             buildEditPath={clinicServiceEditPath}
             resolveLanguageKey={resolveLanguageKey}
             quickFilters={quickFilters}

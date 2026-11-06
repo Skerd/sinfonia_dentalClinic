@@ -2,7 +2,7 @@ import {compose} from "redux";
 import {useMemo} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import EntityListPage, {type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
+import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators.ts";
 import type {ScheduleException} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/scheduleException/scheduleException.dto.ts";
@@ -36,9 +36,15 @@ function AllScheduleExceptions({resolveLanguageKey}: WithLanguageType) {
             collectionName="scheduleexceptions"
             accessModel="scheduleexceptions"
             tableConfigKey="scheduleexceptions"
-            createPath="/dentalClinic/timeOff/create"
-            createIcon={<IconPlus />}
-            createLanguageKey="create"
+            header={(ctx) => (
+                <EntityListHeader ctx={ctx}>
+                    <EntityListCreateButton
+                        ctx={ctx}
+                        path="/dentalClinic/timeOff/create"
+                        icon={<IconPlus />}
+                    />
+                </EntityListHeader>
+            )}
             buildEditPath={scheduleExceptionEditPath}
             resolveLanguageKey={resolveLanguageKey}
             quickFilters={quickFilters}
