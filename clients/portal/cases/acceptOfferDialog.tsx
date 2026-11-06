@@ -1,7 +1,7 @@
 import {compose} from "redux";
 import {useState} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
@@ -10,6 +10,8 @@ import FormField from "@coreModule/clients/portal/shared/formField.tsx";
 import FormStatus from "@coreModule/clients/portal/shared/formStatus.tsx";
 import type {AcceptTreatmentPlanFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.forms.ts";
 import type {PatientPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
+
+const ACCEPT_PLAN_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/acceptPlan"};
 
 type Props = WithLanguageType & {
     plan: PatientPlan;
@@ -24,16 +26,13 @@ type Props = WithLanguageType & {
 function AcceptOfferDialog({plan, onClose, onAccepted, resolveLanguageKey}: Props) {
     const [signedName, setSignedName] = useState("");
     const [agreed, setAgreed] = useState(false);
-    const [state, setState] = useState<"idle" | "sending" | "failed">("idle");
+    const [acceptCount, setAcceptCount] = useState(0);
     const total = plan.currency?.abbreviation ? formatCurrency(plan.totals.total, plan.currency.abbreviation) : String(plan.totals.total);
 
-    const accept = () => {
-        const body: AcceptTreatmentPlanFormType = {plan: plan._id, signedName: signedName.trim(), acceptTerms: agreed};
-        setState("sending");
-        apiClient.post("/api/dentalClinic/patientPortal/acceptPlan", body)
-            .then(() => onAccepted())
-            .catch(() => setState("failed"));
-    };
+    const body: AcceptTreatmentPlanFormType = {plan: plan._id, signedName: signedName.trim(), acceptTerms: agreed};
+    const acceptRequest = useHttpRequest(ACCEPT_PLAN_REQUEST, body, acceptCount, true, {success: () => onAccepted()});
+    const state = acceptRequest.loading ? "sending" : acceptRequest.error ? "failed" : "idle";
+    const accept = () => setAcceptCount((count) => count + 1);
 
     return (
         <Dialog open onOpenChange={(open) => !open && state !== "sending" && onClose()}>

@@ -2,7 +2,7 @@ import {compose} from "redux";
 import {useCallback, useEffect, useRef, useState} from "react";
 import {IconPaperclip, IconSend} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Textarea} from "@coreModule/components/ui/textarea.tsx";
@@ -10,6 +10,10 @@ import {cn} from "@coreModule/components/lib/utils.ts";
 import SheetMediaFilesStrip from "@coreModule/components/viewEngine/sheet/widgets/sheetMediaFilesStrip.tsx";
 import {CLINIC_MESSAGE_ATTACHMENTS_MAX, CLINIC_MESSAGE_BODY_MAX, PATIENT_FILE_MIME_TYPES} from "armonia/src/modules/dentalClinic/constants/index.ts";
 import type {ClinicMessage} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicMessage/clinicMessage.dto.ts";
+import {Input} from "@coreModule/components/ui/input.tsx";
+
+const THREAD_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicInquiry/thread"};
+const SEND_MESSAGE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicInquiry/sendMessage"};
 
 type Props = WithLanguageType & {
     inquiryId: string;
@@ -25,42 +29,42 @@ function InquiryThread({inquiryId, canReply, onSent, resolveLanguageKey}: Props)
     const [messages, setMessages] = useState<ClinicMessage[] | null>(null);
     const [body, setBody] = useState("");
     const [files, setFiles] = useState<File[]>([]);
-    const [sending, setSending] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const fileInput = useRef<HTMLInputElement>(null);
 
-    const load = useCallback(() => {
-        apiClient
-            .post<{data: ClinicMessage[]}>("/api/dentalClinic/clinicInquiry/thread", {_id: inquiryId})
-            .then((res) => setMessages(res.data.data))
-            .catch(() => setError(String(resolveLanguageKey("loadError"))));
-    }, [inquiryId, resolveLanguageKey]);
+    const [threadCount, setThreadCount] = useState(0);
+    useHttpRequest<{data: ClinicMessage[]}>(THREAD_REQUEST, {_id: inquiryId}, threadCount, true, {
+        success: (response) => setMessages(response.data),
+        error: () => setError(String(resolveLanguageKey("loadError"))),
+    });
+    const load = useCallback(() => setThreadCount((count) => count + 1), []);
 
     useEffect(() => {
         if (access.read?.body) load();
-    }, [access.read?.body, load]);
+    }, [access.read?.body, load, inquiryId]);
+
+    // Multipart: the message and its attachments go in one request.
+    const [message, setMessage] = useState<{form: FormData; count: number}>(() => ({form: new FormData(), count: 0}));
+    const {loading: sending} = useHttpRequest<{data: ClinicMessage}>(SEND_MESSAGE_REQUEST, message.form, message.count, true, {
+        start: () => setError(null),
+        success: (response) => {
+            setMessages((current) => [...(current ?? []), response.data]);
+            setBody("");
+            setFiles([]);
+            onSent?.();
+        },
+        error: () => setError(String(resolveLanguageKey("sendError"))),
+    });
 
     if (!access.read?.body) return null;
 
-    const send = async () => {
+    const send = () => {
         if (!body.trim()) return;
-        setSending(true);
-        setError(null);
         const form = new FormData();
         form.append("_id", inquiryId);
         form.append("body", body.trim());
         for (const file of files) form.append("attachments", file);
-        try {
-            const res = await apiClient.post<{data: ClinicMessage}>("/api/dentalClinic/clinicInquiry/sendMessage", form);
-            setMessages((current) => [...(current ?? []), res.data.data]);
-            setBody("");
-            setFiles([]);
-            onSent?.();
-        } catch {
-            setError(String(resolveLanguageKey("sendError")));
-        } finally {
-            setSending(false);
-        }
+        setMessage((current) => ({form, count: current.count + 1}));
     };
 
     return (
@@ -102,7 +106,7 @@ function InquiryThread({inquiryId, canReply, onSent, resolveLanguageKey}: Props)
                     />
                     {files.length ? <p className="text-xs text-muted-foreground">{files.map((file) => file.name).join(", ")}</p> : null}
                     <div className="flex items-center justify-between gap-2">
-                        <input
+                        <Input
                             ref={fileInput}
                             type="file"
                             multiple

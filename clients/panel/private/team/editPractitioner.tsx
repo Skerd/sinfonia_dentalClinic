@@ -1,4 +1,4 @@
-import {Save} from "lucide-react";
+import {IconDeviceFloppy} from "@tabler/icons-react";
 import {createGenericEditPage} from "@coreModule/components/entityPage/pages/createGenericEditPage.tsx";
 import {FORM_EXTRAS_OBJECT_ID_CHIP_LABEL_REFS} from "@coreModule/components/custom/inputs/objectIdChipsInput.tsx";
 import {editPractitionerFormSchema} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/practitioner/editPractitioner.form.validator.ts";
@@ -11,7 +11,15 @@ const chipLabelState = {
     locations: {current: {} as Record<string, string>},
 };
 
-export default createGenericEditPage<Practitioner, EditPractitionerFormType>({
+/**
+ * The edit form's values. A schedule row holds `dayOfWeek` as a string while editing, because the
+ * #SimpleSelect weekday options are "0"…"6"; the schema turns it back into a number on submit.
+ */
+type PractitionerFormValues = Omit<EditPractitionerFormType, "schedule"> & {
+    schedule?: (Omit<NonNullable<EditPractitionerFormType["schedule"]>[number], "dayOfWeek"> & {dayOfWeek: string})[];
+};
+
+export default createGenericEditPage<Practitioner, PractitionerFormValues>({
     languagePath: "src/modules/dentalClinic/clients/panel/private/team/editPractitioner.tsx",
     collectionName: "practitioners",
     accessModel: "practitioners",
@@ -23,7 +31,7 @@ export default createGenericEditPage<Practitioner, EditPractitionerFormType>({
         photo: data.photo?._id,
         services: data.services?.map((service) => service._id) ?? [],
         locations: data.locations?.map((location) => location._id) ?? [],
-        schedule: data.schedule.map((row) => ({...row, location: row.location?._id ?? ""})),
+        schedule: data.schedule.map((row) => ({...row, dayOfWeek: String(row.dayOfWeek), location: row.location?._id ?? ""})),
     }),
     buildFormExtras: (_entityId, _params, entity) => {
         if (entity && chipLabelState.loadedId !== entity._id) {
@@ -41,5 +49,5 @@ export default createGenericEditPage<Practitioner, EditPractitionerFormType>({
             [FORM_EXTRAS_OBJECT_ID_CHIP_LABEL_REFS]: {services: chipLabelState.services, locations: chipLabelState.locations},
         };
     },
-    submitIcon: <Save />,
+    submitIcon: <IconDeviceFloppy />,
 });

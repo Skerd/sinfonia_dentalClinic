@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {IconPlus} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
@@ -11,6 +11,8 @@ import {Button} from "@coreModule/components/ui/button.tsx";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 import {treatmentPlanCreatePath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";
 import {downloadPlanPdf} from "@dentalClinicModule/clients/panel/private/plans/center/actions/downloadPlanPdf.ts";
+
+const PLANS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/treatmentPlan"};
 
 type Props = WithLanguageType & {
     inquiryId: string;
@@ -21,21 +23,16 @@ type Props = WithLanguageType & {
 /** The quotes made for this request, and a way to make one. */
 function InquiryPlans({inquiryId, canQuote, resolveLanguageKey}: Props) {
     const access = useAccess("treatmentplans");
-    const [plans, setPlans] = useState<TreatmentPlan[] | null>(null);
-
+    const [plansCount, setPlansCount] = useState(0);
     useEffect(() => {
-        if (!access.read?.lines) return;
-        let cancelled = false;
-        apiClient
-            .post<{data: TreatmentPlan[]}>("/api/dentalClinic/treatmentPlan", {
-                limit: 50,
-                offset: 0,
-                filters: {id: "inquiry-plans", operator: "and", rules: [{id: "inquiry", field: "inquiry", operator: "equals", value: inquiryId}]},
-            })
-            .then((res) => { if (!cancelled) setPlans(res.data.data); })
-            .catch(() => { if (!cancelled) setPlans([]); });
-        return () => { cancelled = true; };
+        if (access.read?.lines) setPlansCount((count) => count + 1);
     }, [access.read?.lines, inquiryId]);
+    const plansRequest = useHttpRequest<{data: TreatmentPlan[]}>(PLANS_REQUEST, {
+        limit: 50,
+        offset: 0,
+        filters: {id: "inquiry-plans", operator: "and", rules: [{id: "inquiry", field: "inquiry", operator: "equals", value: inquiryId}]},
+    }, plansCount);
+    const plans = plansRequest.error ? [] : plansRequest.data?.data ?? null;
 
     if (!access.read?.lines) return null;
 

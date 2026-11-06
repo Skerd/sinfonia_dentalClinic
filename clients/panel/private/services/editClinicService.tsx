@@ -1,4 +1,4 @@
-import {Save} from "lucide-react";
+import {IconDeviceFloppy} from "@tabler/icons-react";
 import {createGenericEditPage} from "@coreModule/components/entityPage/pages/createGenericEditPage.tsx";
 import {editClinicServiceFormSchema} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicService/editClinicService.form.validator.ts";
 import type {EditClinicServiceFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicService/clinicService.schema-def.ts";
@@ -15,5 +15,5 @@ export default createGenericEditPage<ClinicService, EditClinicServiceFormType>({
         images: data.images?.map((image) => image._id),
         videos: data.videos?.map((video) => video._id),
     }),
-    submitIcon: <Save />,
+    submitIcon: <IconDeviceFloppy />,
 });

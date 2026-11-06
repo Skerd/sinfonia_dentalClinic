@@ -1,8 +1,7 @@
 import {compose} from "redux";
-import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -14,18 +13,13 @@ function atClinic(iso: string, timeZone: string, locale: string): string {
     return new Intl.DateTimeFormat(locale, {timeZone, weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"}).format(new Date(iso));
 }
 
+const MINE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/mine"};
+
 /** The portal account's appointments at every clinic; each opens the clinic's manage page. */
 function MyAppointments({resolveLanguageKey, languageCode}: WithLanguageType) {
     const companyLink = useCompanyLink();
-    const [rows, setRows] = useState<MyAppointmentsResponse["data"] | null>(null);
-
-    useEffect(() => {
-        let cancelled = false;
-        apiClient.post<MyAppointmentsResponse>("/api/dentalClinic/clinicStorefront/mine", {})
-            .then((res) => { if (!cancelled) setRows(res.data.data); })
-            .catch(() => { if (!cancelled) setRows([]); });
-        return () => { cancelled = true; };
-    }, []);
+    const mine = useHttpRequest<MyAppointmentsResponse>(MINE_REQUEST, {}, 1);
+    const rows = mine.error ? [] : mine.data?.data ?? null;
 
     if (rows === null) return <Loader />;
     if (rows.length === 0) return <p className="text-muted-foreground">{resolveLanguageKey("none")}</p>;

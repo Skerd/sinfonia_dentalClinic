@@ -2,13 +2,17 @@ import {compose} from "redux";
 import {useCallback, useEffect, useRef, useState} from "react";
 import {IconPaperclip, IconSend} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Textarea} from "@coreModule/components/ui/textarea.tsx";
 import {cn} from "@coreModule/components/lib/utils.ts";
 import {CLINIC_MESSAGE_ATTACHMENTS_MAX, CLINIC_MESSAGE_BODY_MAX, PATIENT_FILE_MIME_TYPES} from "armonia/src/modules/dentalClinic/constants/index.ts";
-import type {PatientMessage, PatientThreadResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
-import {openPatientFile, uploadPatientFiles} from "./patientFiles.ts";
+import type {PatientMessage, PatientThreadResponse, PatientUploadResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
+import {openPatientFile, PATIENT_UPLOAD_REQUEST, patientFilesForm} from "./patientFiles.ts";
+import {Input} from "@coreModule/components/ui/input.tsx";
+
+const THREAD_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/thread"};
+const MESSAGE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/message"};
 
 type Props = WithLanguageType & {
     inquiryId: string;
@@ -20,40 +24,43 @@ type Props = WithLanguageType & {
 
 /** The patient's conversation with one clinic about their request. */
 function PatientThread({inquiryId, clinicName, canReply, onRead, resolveLanguageKey}: Props) {
-    const [messages, setMessages] = useState<PatientMessage[] | null>(null);
+    const [threadCount, setThreadCount] = useState(0);
+    const thread = useHttpRequest<PatientThreadResponse>(THREAD_REQUEST, {inquiry: inquiryId}, threadCount, true, {
+        success: () => onRead?.(),
+    });
+    const messages: PatientMessage[] | null = thread.error ? [] : thread.data?.data ?? null;
     const [body, setBody] = useState("");
     const [files, setFiles] = useState<File[]>([]);
-    const [sending, setSending] = useState(false);
-    const [failed, setFailed] = useState(false);
+    // The message is sent once its attachments are uploaded; the payload names them.
+    const [message, setMessage] = useState<{payload: Record<string, unknown>; count: number}>({payload: {}, count: 0});
     const fileInput = useRef<HTMLInputElement>(null);
 
-    const load = useCallback(() => {
-        apiClient.post<PatientThreadResponse>("/api/dentalClinic/patientPortal/thread", {inquiry: inquiryId})
-            .then((res) => { setMessages(res.data.data); onRead?.(); })
-            .catch(() => setMessages([]));
-    }, [inquiryId, onRead]);
+    const load = useCallback(() => setThreadCount((count) => count + 1), []);
 
-    useEffect(() => { load(); }, [load]);
+    useEffect(() => { load(); }, [load, inquiryId]);
 
-    const send = async () => {
-        if (!body.trim()) return;
-        setSending(true);
-        setFailed(false);
-        try {
-            const attachments = files.length ? await uploadPatientFiles(files) : [];
-            await apiClient.post("/api/dentalClinic/patientPortal/message", {
-                inquiry: inquiryId,
-                body: body.trim(),
-                attachments: attachments.map((file) => file._id),
-            });
+    const messageRequest = useHttpRequest(MESSAGE_REQUEST, message.payload, message.count, true, {
+        success: () => {
             setBody("");
             setFiles([]);
             load();
-        } catch {
-            setFailed(true);
-        } finally {
-            setSending(false);
-        }
+        },
+    });
+    const sendMessage = (attachments: string[]) => setMessage((current) => ({
+        payload: {inquiry: inquiryId, body: body.trim(), attachments},
+        count: current.count + 1,
+    }));
+    const [upload, setUpload] = useState<{form: FormData; count: number}>(() => ({form: new FormData(), count: 0}));
+    const uploadRequest = useHttpRequest<PatientUploadResponse>(PATIENT_UPLOAD_REQUEST, upload.form, upload.count, true, {
+        success: (response) => sendMessage(response.data.map((file) => file._id)),
+    });
+    const sending = uploadRequest.loading || messageRequest.loading;
+    const failed = !!uploadRequest.error || !!messageRequest.error;
+
+    const send = () => {
+        if (!body.trim()) return;
+        if (files.length) setUpload((current) => ({form: patientFilesForm(files), count: current.count + 1}));
+        else sendMessage([]);
     };
 
     return (
@@ -68,7 +75,7 @@ function PatientThread({inquiryId, clinicName, canReply, onRead, resolveLanguage
                         </span>
                         <p className="whitespace-pre-wrap break-words">{message.body}</p>
                         {message.attachments.map((file) => (
-                            <button key={file._id} type="button" className="self-start text-xs underline" onClick={() => openPatientFile(file)}>{file.name}</button>
+                            <Button key={file._id} type="button" variant="bare" className="self-start text-xs underline" onClick={() => openPatientFile(file)}>{file.name}</Button>
                         ))}
                     </li>
                 ))}
@@ -79,7 +86,7 @@ function PatientThread({inquiryId, clinicName, canReply, onRead, resolveLanguage
                     {files.length ? <p className="text-xs text-muted-foreground">{files.map((file) => file.name).join(", ")}</p> : null}
                     {failed ? <p className="text-sm text-destructive">{resolveLanguageKey("failed")}</p> : null}
                     <div className="flex items-center justify-between gap-2">
-                        <input ref={fileInput} type="file" multiple hidden accept={PATIENT_FILE_MIME_TYPES.join(",") + ",.dcm,.stl,.zip"} onChange={(event) => setFiles([...(event.target.files ?? [])].slice(0, CLINIC_MESSAGE_ATTACHMENTS_MAX))} />
+                        <Input ref={fileInput} type="file" multiple hidden accept={PATIENT_FILE_MIME_TYPES.join(",") + ",.dcm,.stl,.zip"} onChange={(event) => setFiles([...(event.target.files ?? [])].slice(0, CLINIC_MESSAGE_ATTACHMENTS_MAX))} />
                         <Button type="button" variant="ghost" size="sm" onClick={() => fileInput.current?.click()} disabled={sending}>
                             <IconPaperclip size={16} />{resolveLanguageKey("attach")}
                         </Button>

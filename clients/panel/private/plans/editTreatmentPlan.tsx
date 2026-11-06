@@ -1,4 +1,4 @@
-import {Save} from "lucide-react";
+import {IconDeviceFloppy} from "@tabler/icons-react";
 import {createGenericEditPage} from "@coreModule/components/entityPage/pages/createGenericEditPage.tsx";
 import {editTreatmentPlanFormSchema} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.form.validators.ts";
 import type {EditTreatmentPlanFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.schema-def.ts";
@@ -17,5 +17,5 @@ export default createGenericEditPage<TreatmentPlan, EditTreatmentPlanFormType>({
         patient: data.patient?._id,
         lines: data.lines.map(({total: _total, ...line}) => ({...line, service: line.service?._id})),
     }),
-    submitIcon: <Save />,
+    submitIcon: <IconDeviceFloppy />,
 });

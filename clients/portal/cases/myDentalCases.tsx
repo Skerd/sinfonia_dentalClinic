@@ -1,8 +1,8 @@
 import {compose} from "redux";
-import {useCallback, useEffect, useState} from "react";
+import {useCallback, useState} from "react";
 import {Link, useSearchParams} from "react-router-dom";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -11,21 +11,19 @@ import {usePortalSite} from "@coreModule/clients/portal/shared/portalSiteContext
 import type {PatientCasesResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
 import CaseDialog from "./caseDialog.tsx";
 
+const CASES_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/cases"};
+
 /** The portal account's estimate requests, each with every clinic's status; `?case=` opens one. */
 function MyDentalCases({resolveLanguageKey, languageCode}: WithLanguageType) {
     const [searchParams, setSearchParams] = useSearchParams();
-    const [cases, setCases] = useState<PatientCasesResponse["data"] | null>(null);
+    const [casesCount, setCasesCount] = useState(1);
+    const casesRequest = useHttpRequest<PatientCasesResponse>(CASES_REQUEST, {}, casesCount);
+    const cases = casesRequest.error ? [] : casesRequest.data?.data ?? null;
     const openCase = searchParams.get("case");
     // A clinic's own site asks that clinic; the portal lets the patient pick several.
     const requestHref = usePortalSite().site?.scope === "company" ? "/dentists/request" : "/dentists/request-quotes";
 
-    const load = useCallback(() => {
-        apiClient.post<PatientCasesResponse>("/api/dentalClinic/patientPortal/cases", {})
-            .then((res) => setCases(res.data.data))
-            .catch(() => setCases([]));
-    }, []);
-
-    useEffect(() => { load(); }, [load]);
+    const load = useCallback(() => setCasesCount((count) => count + 1), []);
 
     const setOpenCase = (requestGroup: string | null) => {
         const next = new URLSearchParams(searchParams);

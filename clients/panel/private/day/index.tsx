@@ -3,9 +3,8 @@ import {compose} from "redux";
 import {IconChevronLeft, IconChevronRight} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
-import {normalizeError} from "@coreModule/helpers/general/errors.ts";
 import Forbidden from "@coreModule/components/custom/pages/forbidden.tsx";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -18,6 +17,8 @@ import type {ClinicDayResponse} from "armonia/src/modules/dentalClinic/api/denta
 type Day = ClinicDayResponse["data"];
 
 /** Height of one hour on the grid, in pixels. */
+const LOCATIONS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicLocation/select"};
+const DAY_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicDay/view"};
 const HOUR_PX = 64;
 const DEFAULT_START_HOUR = 7;
 const DEFAULT_END_HOUR = 19;
@@ -58,40 +59,24 @@ function hhmm(minutes: number): string {
  */
 function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
     const {read} = useAccess("appointments");
-    const [locations, setLocations] = useState<{value: string; label: string}[]>([]);
     const [location, setLocation] = useState("");
     const [date, setDate] = useState(todayIso);
-    const [day, setDay] = useState<Day | null>(null);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState<string | null>(null);
-
+    const locationsRequest = useHttpRequest<SelectResponse>(LOCATIONS_REQUEST, {page: 1, limit: 50}, 1, true, {
+        success: (response) => setLocation((current) => current || String(response.data[0]?.value ?? "")),
+    });
+    const locations = useMemo(
+        () => (locationsRequest.data?.data ?? []).map(({value, label}) => ({value: String(value), label: String(label)})),
+        [locationsRequest.data],
+    );
+    const [dayCount, setDayCount] = useState(0);
     useEffect(() => {
-        apiClient
-            .post<SelectResponse>("/api/dentalClinic/clinicLocation/select", {page: 1, limit: 50})
-            .then((res) => {
-                const options = res.data.data.map(({value, label}) => ({value: String(value), label: String(label)}));
-                setLocations(options);
-                setLocation((current) => current || options[0]?.value || "");
-            })
-            .catch((e) => setError(normalizeError(e).displayMessage ?? String(resolveLanguageKey("loadError"))));
-    }, []);
-
-    useEffect(() => {
-        if (!location || !date) return;
-        const controller = new AbortController();
-        setLoading(true);
-        setError(null);
-        apiClient
-            .post<ClinicDayResponse>("/api/dentalClinic/clinicDay/view", {location, date}, {signal: controller.signal})
-            .then((res) => setDay(res.data.data))
-            .catch((e) => {
-                if (!controller.signal.aborted) setError(normalizeError(e).displayMessage ?? String(resolveLanguageKey("loadError")));
-            })
-            .finally(() => {
-                if (!controller.signal.aborted) setLoading(false);
-            });
-        return () => controller.abort();
+        if (location && date) setDayCount((count) => count + 1);
     }, [location, date]);
+    const dayRequest = useHttpRequest<ClinicDayResponse>(DAY_REQUEST, {location, date}, dayCount);
+    const day: Day | null = dayRequest.data?.data ?? null;
+    const loading = dayRequest.loading;
+    const requestError = dayRequest.error ?? locationsRequest.error;
+    const error = requestError ? requestError.message || requestError.error || String(resolveLanguageKey("loadError")) : null;
 
     const range = useMemo(() => {
         if (!day) return {start: DEFAULT_START_HOUR * 60, end: DEFAULT_END_HOUR * 60};

@@ -3,7 +3,7 @@ import {compose} from "redux";
 import {Link, useNavigate, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
 import {generateUUID} from "@coreModule/helpers/general/uuid.ts";
 import {useFieldErrors} from "@coreModule/helpers/publicAuth/useFieldErrors.ts";
@@ -18,6 +18,7 @@ import {Item, ItemContent, ItemDescription, ItemMedia, ItemTitle} from "@coreMod
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {Textarea} from "@coreModule/components/ui/textarea.tsx";
+import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
 
 const PATIENT_KEYS = ["firstName", "lastName", "email", "phone"] as const;
 type PatientKey = (typeof PATIENT_KEYS)[number];
@@ -25,6 +26,7 @@ type Patient = BookAppointmentFormType["patient"];
 /** The wizard's choices, in order; changing one clears those after it. */
 const STEPS = ["service", "location", "practitioner", "date", "time"] as const;
 const ANYONE = "any";
+const BOOK_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/book"};
 
 /**
  * Treatment → location → dentist (or anyone) → time → details. Every choice lives
@@ -38,13 +40,10 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const [patient, setPatient] = useState<Patient>({firstName: "", lastName: "", email: "", phone: ""});
     const [note, setNote] = useState("");
     const [acceptPrivacy, setAcceptPrivacy] = useState(false);
-    const [submitting, setSubmitting] = useState(false);
     const [formError, setFormError] = useState<string | null>(null);
     const {fieldErrors, clearFieldError, showIssues} = useFieldErrors<PatientKey>(PATIENT_KEYS);
     // One key per booking attempt: a retried request after a lost response returns the same appointment.
     const idempotencyKey = useRef(generateUUID());
-
-    if (!config) return null;
 
     const choose = (key: (typeof STEPS)[number], value: string | null, extra: Record<string, string> = {}) => {
         const next = new URLSearchParams(params);
@@ -54,6 +53,23 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         setParams(next);
         setFormError(null);
     };
+
+    const [booking, setBooking] = useState<{body: BookAppointmentFormType | Record<string, never>; count: number}>({body: {}, count: 0});
+    const {loading: submitting} = useHttpRequest<AppointmentBookingResponse>(BOOK_REQUEST, booking.body, booking.count, true, {
+        success: (response) => navigate(`${base}/manage?${new URLSearchParams({token: response.data.manageToken, booked: "1"}).toString()}`),
+        error: (e) => {
+            const error = handleError(e, {context: "ClinicBook"});
+            if (!error) return;
+            // A rejected request created nothing, so the next attempt is a new booking.
+            if (error.status && error.status < 500) idempotencyKey.current = generateUUID();
+            if (error.code === "appointment_slot_unavailable" || error.code === "appointment_no_practitioner_available") choose("date", null);
+            setFormError(error.displayMessage ?? String(resolveLanguageKey("bookingFailed")));
+        },
+    });
+
+    if (!config) return null;
+
+
 
     const pinned = params.get("practitioner");
     const pinnedPractitioner = pinned && pinned !== ANYONE ? config.practitioners.find((p) => p._id === pinned) : undefined;
@@ -74,7 +90,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
         clearFieldError(key);
     };
 
-    const submit = async (event: FormEvent) => {
+    const submit = (event: FormEvent) => {
         event.preventDefault();
         if (!service || !location || !date || !time) return;
         setFormError(null);
@@ -98,20 +114,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
             acceptPrivacy,
             idempotencyKey: idempotencyKey.current,
         };
-        setSubmitting(true);
-        try {
-            const {data} = (await apiClient.post<AppointmentBookingResponse>("/api/dentalClinic/clinicStorefront/book", body)).data;
-            navigate(`${base}/manage?${new URLSearchParams({token: data.manageToken, booked: "1"}).toString()}`);
-        } catch (e) {
-            const error = handleError(e, {context: "ClinicBook"});
-            if (!error) return;
-            // A rejected request created nothing, so the next attempt is a new booking.
-            if (error.status && error.status < 500) idempotencyKey.current = generateUUID();
-            if (error.code === "appointment_slot_unavailable" || error.code === "appointment_no_practitioner_available") choose("date", null);
-            setFormError(error.displayMessage ?? String(resolveLanguageKey("bookingFailed")));
-        } finally {
-            setSubmitting(false);
-        }
+        setBooking((current) => ({body, count: current.count + 1}));
     };
 
     const summaryRow = (label: string, value: string | undefined, step: (typeof STEPS)[number]) => value ? (
@@ -133,12 +136,12 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                 <div className="grid gap-3 sm:grid-cols-2">
                     {services.map((s) => (
                         <Item key={s._id} asChild variant="outline" className="cursor-pointer text-left hover:bg-muted">
-                            <button type="button" onClick={() => choose("service", s._id)}>
+                            <Button type="button" variant="bare" onClick={() => choose("service", s._id)}>
                                 <ItemContent>
                                     <ItemTitle>{s.name}</ItemTitle>
                                     <ItemDescription>{s.durationMinutes} {resolveLanguageKey("minutes")} · {priceLabel(s, formatMoney, resolveLanguageKey)}</ItemDescription>
                                 </ItemContent>
-                            </button>
+                            </Button>
                         </Item>
                     ))}
                 </div>
@@ -150,12 +153,12 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                 <div className="grid gap-3 sm:grid-cols-2">
                     {locations.map((l) => (
                         <Item key={l._id} asChild variant="outline" className="cursor-pointer text-left hover:bg-muted">
-                            <button type="button" onClick={() => choose("location", l._id)}>
+                            <Button type="button" variant="bare" onClick={() => choose("location", l._id)}>
                                 <ItemContent>
                                     <ItemTitle>{l.name}</ItemTitle>
                                     {l.address ? <ItemDescription>{l.address}</ItemDescription> : null}
                                 </ItemContent>
-                            </button>
+                            </Button>
                         </Item>
                     ))}
                 </div>
@@ -166,16 +169,16 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
             <StepCard title={resolveLanguageKey("choosePractitioner")}>
                 <div className="grid gap-3 sm:grid-cols-2">
                     <Item asChild variant="outline" className="cursor-pointer text-left hover:bg-muted">
-                        <button type="button" onClick={() => choose("practitioner", ANYONE)}>
+                        <Button type="button" variant="bare" onClick={() => choose("practitioner", ANYONE)}>
                             <ItemContent>
                                 <ItemTitle>{resolveLanguageKey("anyone")}</ItemTitle>
                                 <ItemDescription>{resolveLanguageKey("anyoneHint")}</ItemDescription>
                             </ItemContent>
-                        </button>
+                        </Button>
                     </Item>
                     {eligible.map((p) => (
                         <Item key={p._id} asChild variant="outline" className="cursor-pointer text-left hover:bg-muted">
-                            <button type="button" onClick={() => choose("practitioner", p._id)}>
+                            <Button type="button" variant="bare" onClick={() => choose("practitioner", p._id)}>
                                 <ItemMedia variant="image" className="size-12 rounded-full bg-muted">
                                     {p.photo ? <img src={p.photo} alt="" /> : null}
                                 </ItemMedia>
@@ -183,7 +186,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                                     <ItemTitle>{p.displayName}</ItemTitle>
                                     <ItemDescription>{p.title || resolveLanguageKey(`role.${p.role}`)}</ItemDescription>
                                 </ItemContent>
-                            </button>
+                            </Button>
                         </Item>
                     ))}
                 </div>
@@ -230,7 +233,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
                 </StepCard>
                 <div className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
                     <label className="flex items-start gap-3 text-sm">
-                        <input type="checkbox" checked={acceptPrivacy} onChange={(e) => setAcceptPrivacy(e.target.checked)} />
+                        <Checkbox className="mt-0.5" checked={acceptPrivacy} onCheckedChange={(checked) => setAcceptPrivacy(checked === true)} />
                         <span>
                             {resolveLanguageKey("acceptPrivacy")}{" "}
                             {config.privacyNoticeText ? <Button asChild variant="link" className="h-auto p-0"><Link to={`${base}/privacy`} target="_blank">{resolveLanguageKey("readPrivacy")}</Link></Button> : null}

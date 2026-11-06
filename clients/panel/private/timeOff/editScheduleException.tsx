@@ -1,4 +1,4 @@
-import {Save} from "lucide-react";
+import {IconDeviceFloppy} from "@tabler/icons-react";
 import {createGenericEditPage} from "@coreModule/components/entityPage/pages/createGenericEditPage.tsx";
 import {editScheduleExceptionFormSchema} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/scheduleException/editScheduleException.form.validator.ts";
 import type {EditScheduleExceptionFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/scheduleException/scheduleException.schema-def.ts";
@@ -10,5 +10,5 @@ export default createGenericEditPage<ScheduleException, EditScheduleExceptionFor
     accessModel: "scheduleexceptions",
     apiUrl: "/api/dentalClinic/scheduleException",
     schema: editScheduleExceptionFormSchema,
-    submitIcon: <Save />,
+    submitIcon: <IconDeviceFloppy />,
 });

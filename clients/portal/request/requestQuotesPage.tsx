@@ -1,10 +1,9 @@
 import {compose} from "redux";
-import {useEffect, useMemo, useState} from "react";
+import {useMemo, useState} from "react";
 import {useSearchParams} from "react-router-dom";
-import {ArrowDown, ArrowUpRight, Check, Search, X} from "lucide-react";
-import {IconClockHour4, IconLanguage, IconLock, IconMapPin} from "@tabler/icons-react";
+import {IconClockHour4, IconLanguage, IconLock, IconMapPin, IconArrowDown, IconArrowUpRight, IconCheck, IconSearch, IconX} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {Avatar, AvatarFallback, AvatarImage} from "@coreModule/components/ui/avatar.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -24,6 +23,7 @@ import PatientRequestForm from "./patientRequestForm.tsx";
 type ResolveLanguageKey = WithLanguageType["resolveLanguageKey"];
 
 const FORM_ID = "estimate-request";
+const CLINICS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/clinics"};
 const STEPS = ["choose", "describe", "compare"] as const;
 
 /** Compare without case or accents, so "durres" finds "Durrës". */
@@ -101,7 +101,7 @@ function ClinicCard({clinic, checked, full, onToggle, resolveLanguageKey}: {
                     className="relative inline-flex items-center gap-1 self-start text-sm font-medium text-primary hover:underline"
                 >
                     {resolveLanguageKey("viewClinic")}
-                    <ArrowUpRight className="size-3.5" aria-hidden />
+                    <IconArrowUpRight className="size-3.5" aria-hidden />
                 </a>
             </div>
         </li>
@@ -141,7 +141,7 @@ function Selection({clinics, onRemove, resolveLanguageKey}: {
                                 aria-label={resolveLanguageKey("remove").replace("{name}", clinic.name)}
                                 onClick={() => onRemove(clinic._id)}
                             >
-                                <X className="size-4" aria-hidden />
+                                <IconX className="size-4" aria-hidden />
                             </Button>
                         </li>
                     ))}
@@ -150,7 +150,7 @@ function Selection({clinics, onRemove, resolveLanguageKey}: {
                 <p className="text-sm text-muted-foreground">{resolveLanguageKey("selectionEmpty").replace("{max}", String(INQUIRY_MAX_CLINICS))}</p>
             )}
             {clinics.length ? (
-                <Button asChild size="lg"><a href={`#${FORM_ID}`}>{resolveLanguageKey("continue")}<ArrowDown className="size-4" aria-hidden /></a></Button>
+                <Button asChild size="lg"><a href={`#${FORM_ID}`}>{resolveLanguageKey("continue")}<IconArrowDown className="size-4" aria-hidden /></a></Button>
             ) : (
                 <Button size="lg" disabled>{resolveLanguageKey("continue")}</Button>
             )}
@@ -168,18 +168,12 @@ function Selection({clinics, onRemove, resolveLanguageKey}: {
  */
 function RequestQuotesPage({resolveLanguageKey}: WithLanguageType) {
     const [searchParams] = useSearchParams();
-    const [clinics, setClinics] = useState<RequestableClinic[] | null>(null);
+    const requestable = useHttpRequest<RequestableClinicsResponse>(CLINICS_REQUEST, {}, 1);
+    const clinics: RequestableClinic[] | null = requestable.error ? [] : requestable.data?.data ?? null;
     const [picked, setPicked] = useState<string[]>(() => searchParams.getAll("clinic").slice(0, INQUIRY_MAX_CLINICS));
     const [treatment, setTreatment] = useState<TreatmentCategory | "">("");
     const [query, setQuery] = useState("");
 
-    useEffect(() => {
-        let cancelled = false;
-        apiClient.post<RequestableClinicsResponse>("/api/dentalClinic/patientPortal/clinics", {})
-            .then((res) => { if (!cancelled) setClinics(res.data.data); })
-            .catch(() => { if (!cancelled) setClinics([]); });
-        return () => { cancelled = true; };
-    }, []);
 
     const indexed = useMemo(() => (clinics ?? []).map((clinic) => ({clinic, text: searchText(clinic)})), [clinics]);
     const needle = fold(query.trim());
@@ -218,7 +212,7 @@ function RequestQuotesPage({resolveLanguageKey}: WithLanguageType) {
                     <h2 id="estimate-clinics" className="font-display text-2xl font-bold tracking-tight">{resolveLanguageKey("chooseTitle")}</h2>
 
                     <InputGroup className="h-12 rounded-2xl bg-card">
-                        <InputGroupAddon><Search aria-hidden /></InputGroupAddon>
+                        <InputGroupAddon><IconSearch aria-hidden /></InputGroupAddon>
                         <InputGroupInput
                             value={query}
                             onChange={(event) => setQuery(event.target.value)}
@@ -228,7 +222,7 @@ function RequestQuotesPage({resolveLanguageKey}: WithLanguageType) {
                         {query ? (
                             <InputGroupAddon align="inline-end">
                                 <InputGroupButton size="icon-xs" aria-label={resolveLanguageKey("clearSearch")} onClick={() => setQuery("")}>
-                                    <X aria-hidden />
+                                    <IconX aria-hidden />
                                 </InputGroupButton>
                             </InputGroupAddon>
                         ) : null}
@@ -246,7 +240,7 @@ function RequestQuotesPage({resolveLanguageKey}: WithLanguageType) {
                                     aria-pressed={treatment === value}
                                     onClick={() => setTreatment(value)}
                                 >
-                                    {treatment === value && value ? <Check className="size-3.5" aria-hidden /> : null}
+                                    {treatment === value && value ? <IconCheck className="size-3.5" aria-hidden /> : null}
                                     {label}
                                 </Button>
                             ))}
@@ -298,7 +292,7 @@ function RequestQuotesPage({resolveLanguageKey}: WithLanguageType) {
                             <span className="text-sm font-medium tabular-nums">
                                 {resolveLanguageKey("chosen").replace("{count}", String(pickedClinics.length)).replace("{max}", String(INQUIRY_MAX_CLINICS))}
                             </span>
-                            <Button asChild size="sm"><a href={`#${FORM_ID}`}>{resolveLanguageKey("continue")}<ArrowDown className="size-4" aria-hidden /></a></Button>
+                            <Button asChild size="sm"><a href={`#${FORM_ID}`}>{resolveLanguageKey("continue")}<IconArrowDown className="size-4" aria-hidden /></a></Button>
                         </div>
                     ) : null}
                 </section>

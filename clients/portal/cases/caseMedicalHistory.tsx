@@ -2,7 +2,7 @@ import {compose} from "redux";
 import {useState} from "react";
 import {IconHeartbeat} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
 import {Label} from "@coreModule/components/ui/label.tsx";
@@ -17,6 +17,8 @@ import {
     type MedicalHistoryQuestion,
 } from "armonia/src/modules/dentalClinic/constants/index.ts";
 import type {PatientCase, PatientCaseResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
+
+const MEDICAL_HISTORY_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/medicalHistory"};
 
 type Props = WithLanguageType & {
     patientCase: PatientCase;
@@ -41,32 +43,28 @@ function CaseMedicalHistory({patientCase, onSaved, resolveLanguageKey}: Props) {
     ) as Record<MedicalHistoryQuestion, Row>);
     const [medications, setMedications] = useState(sent?.medications ?? "");
     const [signedName, setSignedName] = useState("");
-    const [saving, setSaving] = useState(false);
-    const [failed, setFailed] = useState(false);
+    const [saveCount, setSaveCount] = useState(0);
     const complete = MEDICAL_HISTORY_QUESTIONS.every((question) => rows[question].answer) && signedName.trim().length >= 3;
 
-    const save = async () => {
-        setSaving(true);
-        setFailed(false);
-        try {
-            const res = await apiClient.post<PatientCaseResponse>("/api/dentalClinic/patientPortal/medicalHistory", {
-                requestGroup: patientCase.requestGroup,
-                answers: MEDICAL_HISTORY_QUESTIONS.map((question) => ({
-                    question,
-                    answer: rows[question].answer,
-                    ...(rows[question].answer !== "no" && rows[question].detail.trim() ? {detail: rows[question].detail.trim()} : {}),
-                })),
-                ...(medications.trim() ? {medications: medications.trim()} : {}),
-                signedName: signedName.trim(),
-            });
-            onSaved(res.data.data);
-            setEditing(false);
-        } catch {
-            setFailed(true);
-        } finally {
-            setSaving(false);
-        }
+    const historyBody = {
+        requestGroup: patientCase.requestGroup,
+        answers: MEDICAL_HISTORY_QUESTIONS.map((question) => ({
+            question,
+            answer: rows[question].answer,
+            ...(rows[question].answer !== "no" && rows[question].detail.trim() ? {detail: rows[question].detail.trim()} : {}),
+        })),
+        ...(medications.trim() ? {medications: medications.trim()} : {}),
+        signedName: signedName.trim(),
     };
+    const saveRequest = useHttpRequest<PatientCaseResponse>(MEDICAL_HISTORY_REQUEST, historyBody, saveCount, true, {
+        success: (response) => {
+            onSaved(response.data);
+            setEditing(false);
+        },
+    });
+    const saving = saveRequest.loading;
+    const failed = !!saveRequest.error;
+    const save = () => setSaveCount((count) => count + 1);
 
     if (!editing) {
         return (

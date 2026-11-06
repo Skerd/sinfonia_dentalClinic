@@ -1,6 +1,7 @@
 import type {ReactNode} from "react";
 import {cn} from "@coreModule/components/lib/utils.ts";
 import type {ClinicStorefrontPractitioner} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
+import {Button} from "@coreModule/components/ui/button.tsx";
 
 type ClinicPractitionerCardProps = {
     practitioner: ClinicStorefrontPractitioner;
@@ -44,9 +45,9 @@ export function ClinicPractitionerCard({practitioner, roleLabel, locationsLabel,
     );
     if (onSelect) {
         return (
-            <button type="button" className={className} aria-pressed={selected} onClick={onSelect}>
+            <Button type="button" variant="bare" className={className} aria-pressed={selected} onClick={onSelect}>
                 {body}
-            </button>
+            </Button>
         );
     }
     return <div className={className}>{body}</div>;

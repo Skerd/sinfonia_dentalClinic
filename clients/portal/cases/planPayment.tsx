@@ -1,11 +1,11 @@
 import {compose} from "redux";
 import {useMemo, useState} from "react";
 import {toast} from "sonner";
-import {Lock} from "lucide-react";
+import {IconLock} from "@tabler/icons-react";
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements, PaymentElement, useElements, useStripe} from "@stripe/react-stripe-js";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -13,6 +13,8 @@ import type {
     PatientDepositPaymentResponse,
     PatientPlan,
 } from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
+
+const PAY_DEPOSIT_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/payDeposit"};
 
 type Props = WithLanguageType & {
     plan: PatientPlan;
@@ -59,7 +61,7 @@ function CardForm({clientSecret, onPaid, resolveLanguageKey}: CardFormProps) {
         <div className="flex flex-col gap-4">
             <PaymentElement />
             <Button type="button" onClick={() => void handlePay()} disabled={!stripe || submitting}>
-                <Lock className="h-4 w-4" aria-hidden />
+                <IconLock className="h-4 w-4" aria-hidden />
                 {resolveLanguageKey(submitting ? "processing" : "pay")}
             </Button>
         </div>
@@ -69,19 +71,17 @@ function CardForm({clientSecret, onPaid, resolveLanguageKey}: CardFormProps) {
 /** The accepted plan's money: what was paid, what is left, and the deposit by card where it is offered. */
 function PlanPayment({plan, onlinePayment, onPaid, resolveLanguageKey}: Props) {
     const [payment, setPayment] = useState<PatientDepositPaymentResponse["data"] | null>(null);
-    const [starting, setStarting] = useState(false);
+    const [startCount, setStartCount] = useState(0);
+    const {loading: starting} = useHttpRequest<PatientDepositPaymentResponse>(PAY_DEPOSIT_REQUEST, {plan: plan._id}, startCount, true, {
+        success: (response) => setPayment(response.data),
+        error: () => toast.error(String(resolveLanguageKey("payUnavailable"))),
+    });
     const publishableKey = payment?.publishableKey;
     const stripePromise = useMemo(() => (publishableKey ? loadStripe(publishableKey) : null), [publishableKey]);
     const money = (amount: number) => (plan.currency?.abbreviation ? formatCurrency(amount, plan.currency.abbreviation) : String(amount));
     const due = Math.max(0, plan.totals.total - plan.amountPaid);
 
-    function startPayment() {
-        setStarting(true);
-        apiClient.post<PatientDepositPaymentResponse>("/api/dentalClinic/patientPortal/payDeposit", {plan: plan._id})
-            .then((res) => setPayment(res.data.data))
-            .catch(() => toast.error(String(resolveLanguageKey("payUnavailable"))))
-            .finally(() => setStarting(false));
-    }
+    const startPayment = () => setStartCount((count) => count + 1);
 
     return (
         <section className="flex flex-col gap-3 rounded-lg border p-4">

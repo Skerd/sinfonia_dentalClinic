@@ -3,7 +3,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {PowerOff} from "lucide-react";
+import {IconPlugConnectedX} from "@tabler/icons-react";
 import type {ClinicLocation} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicLocation/clinicLocation.dto.ts";
 
 type DeactivateClinicLocationProps = WithLanguageType & {
@@ -19,7 +19,7 @@ function DeactivateClinicLocation({entity, resolveLanguageKey, onAction}: Deacti
 
     return (
         <DropdownMenuItem onClick={() => onAction("deactivateClinicLocation")}>
-            <PowerOff className="text-destructive" size={16} />
+            <IconPlugConnectedX className="text-destructive" size={16} />
             {resolveLanguageKey("title")}
         </DropdownMenuItem>
     );

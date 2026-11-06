@@ -1,32 +1,23 @@
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
-import type {PatientFile, PatientUploadResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
+import type {HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
+import {downloadFromApi} from "@coreModule/helpers/media/downloadFromApi.ts";
+import type {PatientFile} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
 
-/** Uploads files ahead of the message or attach call that names them. */
-export async function uploadPatientFiles(files: File[]): Promise<PatientFile[]> {
+/** Uploads files ahead of the message or attach call that names them; send it with {@link patientFilesForm}. */
+export const PATIENT_UPLOAD_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/upload"};
+
+/** The multipart body of {@link PATIENT_UPLOAD_REQUEST}. */
+export function patientFilesForm(files: File[]): FormData {
     const form = new FormData();
     for (const file of files) form.append("files", file);
-    const res = await apiClient.post<PatientUploadResponse>("/api/dentalClinic/patientPortal/upload", form);
-    return res.data.data;
+    return form;
 }
 
 /** Opens one of the patient's files; the download needs the login token, so it goes through the API client. */
-export async function openPatientFile(file: PatientFile): Promise<void> {
-    const res = await apiClient.get<Blob>(`/api/dentalClinic/patientPortal/media/${file._id}`, {responseType: "blob"});
-    const url = URL.createObjectURL(res.data);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = file.name;
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 60_000);
+export function openPatientFile(file: PatientFile): Promise<boolean> {
+    return downloadFromApi({url: `/api/dentalClinic/patientPortal/media/${file._id}`, fileName: file.name});
 }
 
 /** Downloads one of the patient's quotes as a PDF. */
-export async function downloadOfferPdf(plan: {_id: string; number: string}): Promise<void> {
-    const res = await apiClient.get<Blob>(`/api/dentalClinic/patientPortal/plan/${plan._id}/pdf`, {responseType: "blob"});
-    const url = URL.createObjectURL(res.data);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = `${plan.number}.pdf`;
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 60_000);
+export function downloadOfferPdf(plan: {_id: string; number: string}): Promise<boolean> {
+    return downloadFromApi({url: `/api/dentalClinic/patientPortal/plan/${plan._id}/pdf`, fileName: `${plan.number}.pdf`});
 }

@@ -3,7 +3,7 @@ import {useCallback, useEffect, useState} from "react";
 import {toast} from "sonner";
 import {IconCar, IconPlaneArrival, IconPlaneDeparture} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Input} from "@coreModule/components/ui/input.tsx";
@@ -17,6 +17,9 @@ import {PATIENT_TRIP_ACCOMMODATION_MAX, PATIENT_TRIP_FLIGHT_MAX} from "armonia/s
 
 type Props = WithLanguageType & {requestGroup: string};
 
+const TRIPS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/trips"};
+const TRIP_DETAILS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/tripDetails"};
+
 const when = (iso: string) => new Date(iso).toLocaleString(undefined, {dateStyle: "medium", timeStyle: "short"});
 
 type TripDetailsProps = Pick<WithLanguageType, "resolveLanguageKey"> & {trip: PatientTripView; onSaved: (trip: PatientTripView) => void};
@@ -26,15 +29,19 @@ function TripDetails({trip, onSaved, resolveLanguageKey}: TripDetailsProps) {
     const [arrivalFlight, setArrivalFlight] = useState(trip.arrivalFlight ?? "");
     const [departureFlight, setDepartureFlight] = useState(trip.departureFlight ?? "");
     const [accommodation, setAccommodation] = useState(trip.accommodation ?? "");
-    const [saving, setSaving] = useState(false);
+    const [saveCount, setSaveCount] = useState(0);
+    const {loading: saving} = useHttpRequest<PatientTripResponse>(
+        TRIP_DETAILS_REQUEST,
+        {trip: trip._id, arrivalFlight, departureFlight, accommodation},
+        saveCount,
+        true,
+        {
+            success: (response) => { onSaved(response.data); toast.success(String(resolveLanguageKey("saved"))); },
+            error: () => toast.error(String(resolveLanguageKey("saveFailed"))),
+        },
+    );
 
-    const save = () => {
-        setSaving(true);
-        apiClient.post<PatientTripResponse>("/api/dentalClinic/patientPortal/tripDetails", {trip: trip._id, arrivalFlight, departureFlight, accommodation})
-            .then((res) => { onSaved(res.data.data); toast.success(String(resolveLanguageKey("saved"))); })
-            .catch(() => toast.error(String(resolveLanguageKey("saveFailed"))))
-            .finally(() => setSaving(false));
-    };
+    const save = () => setSaveCount((count) => count + 1);
 
     return (
         <div className="grid gap-3 sm:grid-cols-2">
@@ -58,14 +65,15 @@ function TripDetails({trip, onSaved, resolveLanguageKey}: TripDetailsProps) {
 /** The stays the chosen clinic planned: dates, airport pickup, and the patient's flights and hotel. */
 function CaseTrips({requestGroup, resolveLanguageKey}: Props) {
     const [trips, setTrips] = useState<PatientTripView[]>([]);
+    const [tripsCount, setTripsCount] = useState(0);
+    useHttpRequest<PatientTripsResponse>(TRIPS_REQUEST, {requestGroup}, tripsCount, true, {
+        success: (response) => setTrips(response.data),
+        error: () => setTrips([]),
+    });
 
-    const load = useCallback(() => {
-        apiClient.post<PatientTripsResponse>("/api/dentalClinic/patientPortal/trips", {requestGroup})
-            .then((res) => setTrips(res.data.data))
-            .catch(() => setTrips([]));
-    }, [requestGroup]);
+    const load = useCallback(() => setTripsCount((count) => count + 1), []);
 
-    useEffect(() => { load(); }, [load]);
+    useEffect(() => { load(); }, [load, requestGroup]);
 
     if (!trips.length) return null;
     return (

@@ -3,7 +3,7 @@ import {compose} from "redux";
 import {Link, useNavigate, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {handleError, normalizeError} from "@coreModule/helpers/general/errors.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {cn} from "@coreModule/components/lib/utils.ts";
@@ -16,6 +16,10 @@ import {useClinicConfig} from "../shared/clinicConfigContext.tsx";
 import ClinicSlotPicker, {type PickedSlot} from "../shared/clinicSlotPicker.tsx";
 import {formatAtClinic, formatDay, priceLabel} from "../shared/clinicFormat.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
+
+const MANAGE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/manage"};
+const CANCEL_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/manage/cancel"};
+const RESCHEDULE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/manage/reschedule"};
 
 const STATUS_TONE: Record<PublicAppointment["status"], string> = {
     pending: "bg-warning/10 text-warning",
@@ -37,54 +41,48 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const [error, setError] = useState<string | null>(null);
     const [mode, setMode] = useState<"view" | "cancel" | "reschedule">("view");
     const [newSlot, setNewSlot] = useState<PickedSlot | null>(null);
-    const [busy, setBusy] = useState(false);
     const [notice, setNotice] = useState<string | null>(null);
 
+    const [loadCount, setLoadCount] = useState(0);
     useEffect(() => {
-        if (!token) return;
-        const controller = new AbortController();
-        apiClient
-            .post<PublicAppointmentResponse>("/api/dentalClinic/clinicStorefront/manage", {token}, {signal: controller.signal})
-            .then((res) => setAppointment(res.data.data))
-            .catch((e) => {
-                if (!controller.signal.aborted) setError(normalizeError(e).displayMessage ?? String(resolveLanguageKey("loadFailed")));
-            });
-        return () => controller.abort();
+        if (token) setLoadCount((count) => count + 1);
     }, [token]);
+    useHttpRequest<PublicAppointmentResponse>(MANAGE_REQUEST, {token}, loadCount, true, {
+        success: (response) => setAppointment(response.data),
+        error: (e) => setError(normalizeError(e).displayMessage ?? String(resolveLanguageKey("loadFailed"))),
+    });
 
-    const cancel = async () => {
-        setBusy(true);
-        try {
-            const res = await apiClient.post<PublicAppointmentResponse>("/api/dentalClinic/clinicStorefront/manage/cancel", {token});
+    const [cancelCount, setCancelCount] = useState(0);
+    const cancelRequest = useHttpRequest<PublicAppointmentResponse>(CANCEL_REQUEST, {token}, cancelCount, true, {
+        success: (response) => {
             // The link stops working once cancelled; keep showing what came back.
-            setAppointment(res.data.data);
+            setAppointment(response.data);
             setMode("view");
             setNotice(String(resolveLanguageKey("cancelledNotice")));
-        } catch (e) {
-            handleError(e, {context: "ClinicManageCancel", showToast: true, fallbackMessage: String(resolveLanguageKey("actionFailed"))});
-        } finally {
-            setBusy(false);
-        }
-    };
+        },
+        error: (e) => handleError(e, {context: "ClinicManageCancel", showToast: true, fallbackMessage: String(resolveLanguageKey("actionFailed"))}),
+    });
+    const cancel = () => setCancelCount((count) => count + 1);
 
-    const reschedule = async () => {
-        if (!newSlot) return;
-        setBusy(true);
-        try {
-            const {data} = (await apiClient.post<RescheduledAppointmentResponse>("/api/dentalClinic/clinicStorefront/manage/reschedule", {token, ...newSlot})).data;
+    const [rescheduleCount, setRescheduleCount] = useState(0);
+    const rescheduleRequest = useHttpRequest<RescheduledAppointmentResponse>(RESCHEDULE_REQUEST, {token, ...newSlot}, rescheduleCount, true, {
+        success: ({data}) => {
             setAppointment(data.appointment);
             setMode("view");
             setNewSlot(null);
             setNotice(String(resolveLanguageKey("movedNotice")));
             // The old link no longer works: continue with the new one.
             navigate(`${base}/manage?${new URLSearchParams({token: data.manageToken}).toString()}`, {replace: true});
-        } catch (e) {
+        },
+        error: (e) => {
             handleError(e, {context: "ClinicManageReschedule", showToast: true, fallbackMessage: String(resolveLanguageKey("actionFailed"))});
             setNewSlot(null);
-        } finally {
-            setBusy(false);
-        }
+        },
+    });
+    const reschedule = () => {
+        if (newSlot) setRescheduleCount((count) => count + 1);
     };
+    const busy = cancelRequest.loading || rescheduleRequest.loading;
 
     if (!token || error) {
         return (
@@ -163,7 +161,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     <h2 className="font-display font-bold tracking-tight text-lg">{resolveLanguageKey("cancelTitle")}</h2>
                     <p className="text-sm text-muted-foreground">{resolveLanguageKey("cancelText")}</p>
                     <div className="flex flex-wrap gap-3">
-                        <Button size="lg" type="button" className="bg-destructive hover:bg-destructive/90" disabled={busy} onClick={() => void cancel()}>
+                        <Button size="lg" type="button" className="bg-destructive hover:bg-destructive/90" disabled={busy} onClick={cancel}>
                             {resolveLanguageKey(busy ? "working" : "confirmCancel")}
                         </Button>
                         <Button variant="outline" size="lg" type="button"  disabled={busy} onClick={() => setMode("view")}>{resolveLanguageKey("keep")}</Button>
@@ -182,7 +180,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                         onPick={setNewSlot}
                     />
                     <div className="flex flex-wrap items-center gap-3">
-                        <Button size="lg" type="button"  disabled={busy || !newSlot} onClick={() => void reschedule()}>
+                        <Button size="lg" type="button"  disabled={busy || !newSlot} onClick={reschedule}>
                             {busy ? resolveLanguageKey("working") : newSlot ? `${resolveLanguageKey("moveTo")} ${formatDay(newSlot.date, languageCode)}, ${newSlot.time}` : resolveLanguageKey("pickTime")}
                         </Button>
                         <Button variant="outline" size="lg" type="button"  disabled={busy} onClick={() => { setMode("view"); setNewSlot(null); }}>{resolveLanguageKey("keep")}</Button>

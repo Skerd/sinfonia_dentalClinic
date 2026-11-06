@@ -1,7 +1,7 @@
 import {compose} from "redux";
 import {useCallback, useEffect, useState} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -10,6 +10,7 @@ import AcceptOfferDialog from "./acceptOfferDialog.tsx";
 import PlanPayment from "./planPayment.tsx";
 import CaseTrips from "./caseTrips.tsx";
 import {downloadOfferPdf} from "./patientFiles.ts";
+import {Table} from "@coreModule/components/ui/table/table.tsx";
 
 type Props = WithLanguageType & {
     requestGroup: string;
@@ -17,22 +18,22 @@ type Props = WithLanguageType & {
     onAccepted: () => void;
 };
 
+const PLANS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/plans"};
+
 const money = (plan: PatientPlan, amount: number) => (plan.currency?.abbreviation ? formatCurrency(amount, plan.currency.abbreviation) : String(amount));
 
 /** Every clinic's quote side by side: price, deposit, trips, days, warranty and brands. */
 function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
-    const [plans, setPlans] = useState<PatientPlan[] | null>(null);
-    const [onlinePayment, setOnlinePayment] = useState(false);
+    const [plansCount, setPlansCount] = useState(0);
+    const plansRequest = useHttpRequest<PatientPlansResponse>(PLANS_REQUEST, {requestGroup}, plansCount);
+    const plans: PatientPlan[] | null = plansRequest.error ? [] : plansRequest.data?.data ?? null;
+    const onlinePayment = plansRequest.data?.onlinePayment ?? false;
     const [open, setOpen] = useState<string | null>(null);
     const [accepting, setAccepting] = useState<PatientPlan | null>(null);
 
-    const load = useCallback(() => {
-        apiClient.post<PatientPlansResponse>("/api/dentalClinic/patientPortal/plans", {requestGroup})
-            .then((res) => { setPlans(res.data.data); setOnlinePayment(res.data.onlinePayment); })
-            .catch(() => setPlans([]));
-    }, [requestGroup]);
+    const load = useCallback(() => setPlansCount((count) => count + 1), []);
 
-    useEffect(() => { load(); }, [load]);
+    useEffect(() => { load(); }, [load, requestGroup]);
 
     const shown = (plans ?? []).filter((plan) => plan.status === "sent" || plan.status === "accepted");
     if (!shown.length) return null;
@@ -43,7 +44,7 @@ function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
         <section className="flex flex-col gap-3">
             <h3 className="text-sm font-semibold">{resolveLanguageKey("title")}</h3>
             <div className="overflow-x-auto rounded-lg border">
-                <table className="w-full min-w-[640px] text-sm">
+                <Table bare className="w-full min-w-[640px] text-sm">
                     <thead className="bg-muted/50 text-left text-xs text-muted-foreground">
                         <tr>
                             <th className="px-3 py-2">{resolveLanguageKey("clinic")}</th>
@@ -87,7 +88,7 @@ function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
                             );
                         })}
                     </tbody>
-                </table>
+                </Table>
             </div>
 
             {accepted ? <PlanPayment plan={accepted} onlinePayment={onlinePayment} onPaid={load} /> : null}

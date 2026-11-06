@@ -3,7 +3,8 @@ import {useId, useMemo, useRef, useState, type FormEvent} from "react";
 import {Link, useLocation} from "react-router-dom";
 import {IconFileUpload, IconX} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
+import {PATIENT_UPLOAD_REQUEST, patientFilesForm} from "@dentalClinicModule/clients/portal/cases/patientFiles.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
 import {Field, FieldLabel} from "@coreModule/components/ui/field.tsx";
@@ -26,9 +27,12 @@ import type {
     PatientRequestCreatedResponse,
     PatientUploadResponse,
 } from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
+import {Input} from "@coreModule/components/ui/input.tsx";
 
 /** The version of the consent text below; stored on every inquiry it was given for. */
 const PATIENT_REQUEST_CONSENT_VERSION = "2026-10";
+
+const CREATE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/requests"};
 
 type Props = WithLanguageType & {
     /** The clinics this request goes to (one on a clinic's own site, up to five on the portal). */
@@ -56,10 +60,19 @@ function PatientRequestForm({clinics, resolveLanguageKey, languageCode}: Props) 
     const [contact, setContact] = useState({firstName: user.name, lastName: user.surname, email: user.email, phone: user.phoneNumber ?? "", whatsapp: ""});
     const [files, setFiles] = useState<PatientFile[]>([]);
     const [consent, setConsent] = useState(false);
-    const [uploading, setUploading] = useState(false);
-    const [state, setState] = useState<"idle" | "sending" | "failed">("idle");
     const [error, setError] = useState<string | null>(null);
     const [sent, setSent] = useState<string | null>(null);
+    const [request, setRequest] = useState<{body: CreatePatientRequestFormType | Record<string, never>; count: number}>({body: {}, count: 0});
+    const createRequest = useHttpRequest<PatientRequestCreatedResponse>(CREATE_REQUEST, request.body, request.count, true, {
+        success: (response) => setSent(response.data.requestGroup),
+    });
+    const state = createRequest.loading ? "sending" : createRequest.error ? "failed" : "idle";
+    const [uploadBody, setUploadBody] = useState<{form: FormData; count: number}>(() => ({form: new FormData(), count: 0}));
+    const {loading: uploading} = useHttpRequest<PatientUploadResponse>(PATIENT_UPLOAD_REQUEST, uploadBody.form, uploadBody.count, true, {
+        start: () => setError(null),
+        success: (response) => setFiles((current) => [...current, ...response.data]),
+        error: () => setError(String(resolveLanguageKey("uploadFailed"))),
+    });
 
     if (!isAuthenticated) {
         return (
@@ -85,21 +98,11 @@ function PatientRequestForm({clinics, resolveLanguageKey, languageCode}: Props) 
     const toggleTreatment = (treatment: TreatmentCategory, checked: boolean) =>
         setTreatments((current) => (checked ? [...current, treatment] : current.filter((entry) => entry !== treatment)));
 
-    const upload = async (picked: File[]) => {
+    const upload = (picked: File[]) => {
         if (!picked.length) return;
-        const form = new FormData();
-        for (const file of picked.slice(0, INQUIRY_FILES_MAX - files.length)) form.append("files", file);
-        setUploading(true);
-        setError(null);
-        try {
-            const res = await apiClient.post<PatientUploadResponse>("/api/dentalClinic/patientPortal/upload", form);
-            setFiles((current) => [...current, ...res.data.data]);
-        } catch {
-            setError(String(resolveLanguageKey("uploadFailed")));
-        } finally {
-            setUploading(false);
-            if (fileInput.current) fileInput.current.value = "";
-        }
+        setUploadBody((current) => ({form: patientFilesForm(picked.slice(0, INQUIRY_FILES_MAX - files.length)), count: current.count + 1}));
+        // The input is read at once, so the same file can be picked again.
+        if (fileInput.current) fileInput.current.value = "";
     };
 
     const submit = (event: FormEvent) => {
@@ -127,11 +130,8 @@ function PatientRequestForm({clinics, resolveLanguageKey, languageCode}: Props) 
             consentVersion: PATIENT_REQUEST_CONSENT_VERSION,
             idempotencyKey,
         };
-        setState("sending");
         setError(null);
-        apiClient.post<PatientRequestCreatedResponse>("/api/dentalClinic/patientPortal/requests", body)
-            .then((res) => setSent(res.data.data.requestGroup))
-            .catch(() => setState("failed"));
+        setRequest((current) => ({body, count: current.count + 1}));
     };
 
     return (
@@ -167,7 +167,7 @@ function PatientRequestForm({clinics, resolveLanguageKey, languageCode}: Props) 
             <section className="flex flex-col gap-2">
                 <p className="text-sm font-semibold">{resolveLanguageKey("filesTitle")}</p>
                 <p className="text-sm text-muted-foreground">{resolveLanguageKey("filesHint")}</p>
-                <input ref={fileInput} type="file" multiple hidden accept={fileTypes} onChange={(event) => upload([...(event.target.files ?? [])])} />
+                <Input ref={fileInput} type="file" multiple hidden accept={fileTypes} onChange={(event) => upload([...(event.target.files ?? [])])} />
                 <Button type="button" variant="outline" className="self-start" disabled={uploading || files.length >= INQUIRY_FILES_MAX} onClick={() => fileInput.current?.click()}>
                     <IconFileUpload size={16} />
                     {resolveLanguageKey(uploading ? "uploading" : "addFiles")}

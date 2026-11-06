@@ -2,8 +2,7 @@ import {useEffect, useState} from "react";
 import {compose} from "redux";
 import {IconChevronDown, IconChevronLeft, IconChevronRight} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
-import {normalizeError} from "@coreModule/helpers/general/errors.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {cn} from "@coreModule/components/lib/utils.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Popover, PopoverContent, PopoverTrigger} from "@coreModule/components/ui/popover.tsx";
@@ -12,6 +11,7 @@ import type {ClinicSlot, ClinicSlotsResponse} from "armonia/src/modules/dentalCl
 import {addDays, dateInDays, dayNumber, formatDay, formatLongDay, weekdayShort} from "./clinicFormat.ts";
 
 const DAYS_SHOWN = 7;
+const SLOTS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/slots"};
 const PERIODS = ["morning", "afternoon", "evening"] as const;
 
 export type PickedSlot = {date: string; time: string};
@@ -37,32 +37,25 @@ function periodOf(time: string): (typeof PERIODS)[number] {
 /** A week of free days; pick a day, then an hour. Times are local to the clinic. */
 function ClinicSlotPicker({service, location, practitioner, selected, onPick, compact, resolveLanguageKey, languageCode}: Props) {
     const [fromDate, setFromDate] = useState(() => selected?.date ?? dateInDays(0));
-    const [days, setDays] = useState<ClinicSlotsResponse["data"]["days"] | null>(null);
-    const [timezone, setTimezone] = useState("");
-    const [error, setError] = useState<string | null>(null);
     const [pickedDate, setPickedDate] = useState(selected?.date ?? "");
     const [timesOpen, setTimesOpen] = useState(false);
 
+    const [slotsCount, setSlotsCount] = useState(0);
     useEffect(() => {
-        const controller = new AbortController();
-        setDays(null);
-        setError(null);
-        const body: ClinicSlotsFormType = {service, location, practitioner, fromDate, days: DAYS_SHOWN};
-        apiClient
-            .post<ClinicSlotsResponse>("/api/dentalClinic/clinicStorefront/slots", body, {signal: controller.signal})
-            .then((res) => {
-                const next = res.data.data.days;
-                setDays(next);
-                setTimezone(res.data.data.timezone);
-                setPickedDate(selected && next.some((day) => day.date === selected.date && day.slots.length)
-                    ? selected.date
-                    : next.find((day) => day.slots.length)?.date ?? "");
-            })
-            .catch((e) => {
-                if (!controller.signal.aborted) setError(normalizeError(e).displayMessage ?? String(resolveLanguageKey("loadFailed")));
-            });
-        return () => controller.abort();
+        setSlotsCount((count) => count + 1);
     }, [service, location, practitioner, fromDate]);
+    const slotsBody: ClinicSlotsFormType = {service, location, practitioner, fromDate, days: DAYS_SHOWN};
+    const slots = useHttpRequest<ClinicSlotsResponse>(SLOTS_REQUEST, slotsBody, slotsCount, true, {
+        success: (response) => {
+            const next = response.data.days;
+            setPickedDate(selected && next.some((day) => day.date === selected.date && day.slots.length)
+                ? selected.date
+                : next.find((day) => day.slots.length)?.date ?? "");
+        },
+    });
+    const days = slots.loading || slots.error ? null : slots.data?.data.days ?? null;
+    const timezone = slots.data?.data.timezone ?? "";
+    const error = slots.error ? slots.error.message || slots.error.error || String(resolveLanguageKey("loadFailed")) : null;
 
     const today = dateInDays(0);
     const picked = days?.find((day) => day.date === pickedDate);
@@ -91,9 +84,10 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                         {group.slots.map((slot: ClinicSlot) => {
                             const active = selected?.date === picked.date && selected.time === slot.time;
                             return (
-                                <button
+                                <Button
                                     key={slot.startAt}
                                     type="button"
+                                    variant="bare"
                                     aria-pressed={active}
                                     onClick={() => {
                                         onPick({date: picked.date, time: slot.time});
@@ -108,7 +102,7 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                                     )}
                                 >
                                     {slot.time}
-                                </button>
+                                </Button>
                             );
                         })}
                     </div>
@@ -148,9 +142,10 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                         const free = day.slots.length;
                         const active = day.date === pickedDate;
                         return (
-                            <button
+                            <Button
                                 key={day.date}
                                 type="button"
+                                variant="bare"
                                 role="option"
                                 disabled={!free}
                                 aria-selected={active}
@@ -161,7 +156,7 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                                     compact ? "min-h-14 gap-0.5 py-1.5" : "min-h-[4.5rem] gap-1 py-2.5",
                                     active && "bg-primary text-primary-foreground shadow-sm",
                                     !active && free && "bg-muted/70 hover:bg-muted",
-                                    !free && "cursor-not-allowed text-muted-foreground/40",
+                                    !free && "cursor-not-allowed text-muted-foreground/40 disabled:pointer-events-auto disabled:opacity-100",
                                 )}
                             >
                                 <span className={cn("text-[10px] font-semibold tracking-[0.14em] uppercase", active ? "text-primary-foreground/80" : "text-muted-foreground")}>
@@ -173,7 +168,7 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                                         {free ? String(resolveLanguageKey("timesCount")).replace("{count}", String(free)) : "·"}
                                     </span>
                                 )}
-                            </button>
+                            </Button>
                         );
                     })}
                 </div>
@@ -182,7 +177,7 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
             {compact && hours ? (
                 <Popover open={timesOpen} onOpenChange={setTimesOpen}>
                     <PopoverTrigger asChild>
-                        <button type="button" className="flex w-full items-center justify-between gap-3 rounded-xl border px-4 py-3 text-left transition-colors hover:bg-muted/50">
+                        <Button type="button" variant="bare" className="flex w-full items-center justify-between gap-3 rounded-xl border px-4 py-3 text-left transition-colors hover:bg-muted/50">
                             <span className="min-w-0">
                                 <span className="text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">{resolveLanguageKey("pickTime")}</span>
                                 <span className="block truncate text-sm font-semibold">
@@ -192,7 +187,7 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                                 </span>
                             </span>
                             <IconChevronDown className="size-4 shrink-0 text-muted-foreground" aria-hidden />
-                        </button>
+                        </Button>
                     </PopoverTrigger>
                     <PopoverContent align="start" className="w-[var(--radix-popover-trigger-width)] max-h-64 overflow-y-auto p-3">
                         {hours}

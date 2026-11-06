@@ -1,7 +1,7 @@
 import {compose} from "redux";
 import {Link} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
-import {ArrowRight} from "lucide-react";
+import {IconArrowRight} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import {bookableServices, useClinicConfig} from "../shared/clinicConfigContext.tsx";
 import {priceLabel} from "../shared/clinicFormat.ts";
@@ -27,13 +27,13 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                     {config.publicBookingEnabled ? (
                         <Button asChild size="lg"><Link to={`${base}/book`}>
                             {resolveLanguageKey("bookNow")}
-                            <ArrowRight className="h-4 w-4" aria-hidden />
+                            <IconArrowRight className="h-4 w-4" aria-hidden />
                         </Link></Button>
                     ) : null}
                     {config.inquiriesEnabled ? (
                         <Button asChild size="lg" variant={config.publicBookingEnabled ? "outline" : "default"}><Link to={requestHref}>
                             {resolveLanguageKey("requestEstimate")}
-                            <ArrowRight className="h-4 w-4" aria-hidden />
+                            <IconArrowRight className="h-4 w-4" aria-hidden />
                         </Link></Button>
                     ) : null}
                 </div>
@@ -63,7 +63,7 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                                     {bookable.has(service._id) ? (
                                         <span className="inline-flex items-center gap-1 text-sm font-medium">
                                             {resolveLanguageKey("bookThis")}
-                                            <ArrowRight className="h-4 w-4" aria-hidden />
+                                            <IconArrowRight className="h-4 w-4" aria-hidden />
                                         </span>
                                     ) : (
                                         <p className="text-sm text-muted-foreground">{resolveLanguageKey("callToBook")}</p>
@@ -99,7 +99,7 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                                         {offered.length ? (
                                             <Button asChild variant="link" className="mt-1 inline-flex h-auto items-center gap-1 p-0 text-sm"><Link to={bookHref}>
                                                 {resolveLanguageKey("bookWith")}
-                                                <ArrowRight className="h-4 w-4" aria-hidden />
+                                                <IconArrowRight className="h-4 w-4" aria-hidden />
                                             </Link></Button>
                                         ) : null}
                                     </div>

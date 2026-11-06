@@ -3,7 +3,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {Power} from "lucide-react";
+import {IconPower} from "@tabler/icons-react";
 import type {ClinicService} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicService/clinicService.dto.ts";
 
 type ActivateClinicServiceProps = WithLanguageType & {
@@ -19,7 +19,7 @@ function ActivateClinicService({entity, resolveLanguageKey, onAction}: ActivateC
 
     return (
         <DropdownMenuItem onClick={() => onAction("activateClinicService")}>
-            <Power className="text-success" size={16} />
+            <IconPower className="text-success" size={16} />
             {resolveLanguageKey("title")}
         </DropdownMenuItem>
     );

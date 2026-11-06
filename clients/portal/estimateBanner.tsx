@@ -1,15 +1,15 @@
 import {compose} from "redux";
-import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
-import {ArrowRight} from "lucide-react";
-import {IconDental} from "@tabler/icons-react";
+import {IconDental, IconArrowRight} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {usePortalSession} from "@coreModule/clients/portal/shared/portalSession.tsx";
 import {usePortalSite} from "@coreModule/clients/portal/shared/portalSiteContext.tsx";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import type {RequestableClinicsResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
+
+const CLINICS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/clinics"};
 
 /**
  * "Get an estimate" on top of the dentists' tab, shown when a clinic here takes requests. On the
@@ -20,15 +20,8 @@ function EstimateBanner({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();
     const {site} = usePortalSite();
     const {isAuthenticated} = usePortalSession();
-    const [clinics, setClinics] = useState<number | null>(null);
-
-    useEffect(() => {
-        let cancelled = false;
-        apiClient.post<RequestableClinicsResponse>("/api/dentalClinic/patientPortal/clinics", {})
-            .then((res) => { if (!cancelled) setClinics(res.data.data.length); })
-            .catch(() => { if (!cancelled) setClinics(0); });
-        return () => { cancelled = true; };
-    }, []);
+    const requestable = useHttpRequest<RequestableClinicsResponse>(CLINICS_REQUEST, {}, 1);
+    const clinics = requestable.data?.data.length ?? 0;
 
     if (!clinics) return null;
     const companySite = site?.scope === "company";
@@ -50,7 +43,7 @@ function EstimateBanner({resolveLanguageKey}: WithLanguageType) {
             <Button asChild size="lg" className="shrink-0 self-start sm:self-center">
                 <Link to={href}>
                     {resolveLanguageKey(isAuthenticated ? "cta" : "ctaSignIn")}
-                    <ArrowRight className="h-4 w-4" aria-hidden />
+                    <IconArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
             </Button>
         </section>

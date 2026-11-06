@@ -1,5 +1,5 @@
-import {createContext, useContext, useEffect, useMemo, useState, type ReactNode} from "react";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import {createContext, useContext, useMemo, type ReactNode} from "react";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import type {
     ClinicStorefrontConfigResponse,
@@ -23,28 +23,12 @@ const ClinicConfigContext = createContext<ClinicConfigContextValue>({
     formatMoney: () => "",
 });
 
+const CONFIG_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/config"};
+
 /** Loads the clinic, locations, treatments and team once for the whole site. */
 export function ClinicConfigProvider({children}: {children: ReactNode}) {
-    const [config, setConfig] = useState<ClinicConfig | null>(null);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        let cancelled = false;
-        apiClient
-            .post<ClinicStorefrontConfigResponse>("/api/dentalClinic/clinicStorefront/config", {})
-            .then((res) => {
-                if (!cancelled) setConfig(res.data.data);
-            })
-            .catch(() => {
-                if (!cancelled) setConfig(null);
-            })
-            .finally(() => {
-                if (!cancelled) setLoading(false);
-            });
-        return () => {
-            cancelled = true;
-        };
-    }, []);
+    const {data, loading} = useHttpRequest<ClinicStorefrontConfigResponse>(CONFIG_REQUEST, {}, 1);
+    const config = data?.data ?? null;
 
     const value = useMemo<ClinicConfigContextValue>(() => ({
         config,

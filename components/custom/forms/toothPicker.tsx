@@ -37,20 +37,21 @@ export default function ToothPicker({name, label, primaryLabel, permanentLabel, 
                 const row = (teeth: string[]) => (
                     <div className="flex flex-wrap gap-1">
                         {teeth.map((tooth, index) => (
-                            <button
+                            <Button
                                 key={tooth}
                                 type="button"
+                                variant="bare"
                                 disabled={loading}
                                 onClick={() => toggle(tooth)}
                                 aria-pressed={selected.includes(tooth)}
                                 className={cn(
-                                    "h-7 w-8 rounded border text-xs tabular-nums",
+                                    "h-7 w-8 rounded border text-xs tabular-nums disabled:pointer-events-auto disabled:opacity-100",
                                     index === teeth.length / 2 && "ml-2",
                                     selected.includes(tooth) ? "border-primary bg-primary text-primary-foreground" : "bg-background hover:bg-muted",
                                 )}
                             >
                                 {tooth}
-                            </button>
+                            </Button>
                         ))}
                     </div>
                 );

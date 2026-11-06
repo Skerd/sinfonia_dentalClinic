@@ -2,7 +2,7 @@ import {compose} from "redux";
 import {useCallback, useEffect, useRef, useState} from "react";
 import {IconFileUpload} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import apiClient from "@coreModule/helpers/apiClient/apiClient.ts";
+import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
@@ -14,13 +14,20 @@ import type {
     PatientCaseResponse,
     PatientInquiry,
     PatientInquiryResponse,
+    PatientUploadResponse,
 } from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
 import PatientThread from "./patientThread.tsx";
 import CaseOffers from "./caseOffers.tsx";
 import CaseMedicalHistory from "./caseMedicalHistory.tsx";
-import {openPatientFile, uploadPatientFiles} from "./patientFiles.ts";
+import {openPatientFile, PATIENT_UPLOAD_REQUEST, patientFilesForm} from "./patientFiles.ts";
+import {Input} from "@coreModule/components/ui/input.tsx";
 
 const OPEN: InquiryStatus[] = ["new", "in_review", "info_requested", "quoted"];
+
+const CASE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/case"};
+/** The url is the action (`shareContact` or `withdraw`), set per call. */
+const INQUIRY_ACTION_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal"};
+const ATTACH_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/attach"};
 
 type Props = WithLanguageType & {
     requestGroup: string;
@@ -32,57 +39,65 @@ type Props = WithLanguageType & {
 /** One request: each clinic's answer, what it asked for, the files and the conversation. */
 function CaseDialog({requestGroup, onClose, onChanged, resolveLanguageKey}: Props) {
     const [patientCase, setPatientCase] = useState<PatientCase | null>(null);
-    const [busy, setBusy] = useState(false);
     const [failed, setFailed] = useState(false);
     const fileInput = useRef<HTMLInputElement>(null);
     const [uploadFor, setUploadFor] = useState<PatientInquiry | null>(null);
 
-    const load = useCallback(() => {
-        apiClient.post<PatientCaseResponse>("/api/dentalClinic/patientPortal/case", {requestGroup})
-            .then((res) => setPatientCase(res.data.data))
-            .catch(() => setFailed(true));
-    }, [requestGroup]);
+    const [caseCount, setCaseCount] = useState(0);
+    useHttpRequest<PatientCaseResponse>(CASE_REQUEST, {requestGroup}, caseCount, true, {
+        success: (response) => setPatientCase(response.data),
+        error: () => setFailed(true),
+    });
+    const load = useCallback(() => setCaseCount((count) => count + 1), []);
 
-    useEffect(() => { load(); }, [load]);
+    useEffect(() => { load(); }, [load, requestGroup]);
 
     const replace = (updated: PatientInquiry) => {
         setPatientCase((current) => current && {...current, inquiries: current.inquiries.map((inquiry) => (inquiry._id === updated._id ? updated : inquiry))});
         onChanged();
     };
-
-    const act = async (inquiry: PatientInquiry, path: "shareContact" | "withdraw") => {
-        setBusy(true);
-        setFailed(false);
-        try {
-            const res = await apiClient.post<PatientInquiryResponse>(`/api/dentalClinic/patientPortal/${path}`, {inquiry: inquiry._id});
-            replace(res.data.data);
-        } catch {
-            setFailed(true);
-        } finally {
-            setBusy(false);
-        }
+    const inquiryLifecycle = {
+        start: () => setFailed(false),
+        success: (response: PatientInquiryResponse) => replace(response.data),
+        error: () => setFailed(true),
     };
 
-    const attach = async (picked: File[]) => {
+    const [action, setAction] = useState<{path: "shareContact" | "withdraw"; inquiry: string; count: number}>({path: "withdraw", inquiry: "", count: 0});
+    const actRequest = useHttpRequest<PatientInquiryResponse>(INQUIRY_ACTION_REQUEST, {inquiry: action.inquiry}, action.count, true, inquiryLifecycle, {
+        url: `${INQUIRY_ACTION_REQUEST.url}/${action.path}`,
+    });
+    const act = (inquiry: PatientInquiry, path: "shareContact" | "withdraw") =>
+        setAction((current) => ({path, inquiry: inquiry._id, count: current.count + 1}));
+
+    // Attaching uploads the files first, then names them on the inquiry.
+    const [attachment, setAttachment] = useState<{payload: Record<string, unknown>; count: number}>({payload: {}, count: 0});
+    const attachRequest = useHttpRequest<PatientInquiryResponse>(ATTACH_REQUEST, attachment.payload, attachment.count, true, inquiryLifecycle);
+    const finishUpload = () => {
+        setUploadFor(null);
+        if (fileInput.current) fileInput.current.value = "";
+    };
+    const [upload, setUpload] = useState<{form: FormData; count: number}>(() => ({form: new FormData(), count: 0}));
+    const uploadRequest = useHttpRequest<PatientUploadResponse>(PATIENT_UPLOAD_REQUEST, upload.form, upload.count, true, {
+        start: () => setFailed(false),
+        success: (response) => {
+            if (uploadFor) {
+                setAttachment((current) => ({
+                    payload: {inquiry: uploadFor._id, files: response.data.map((file) => file._id), fulfils: uploadFor.openInfoRequests},
+                    count: current.count + 1,
+                }));
+            }
+            finishUpload();
+        },
+        error: () => {
+            setFailed(true);
+            finishUpload();
+        },
+    });
+    const attach = (picked: File[]) => {
         if (!uploadFor || !picked.length) return;
-        setBusy(true);
-        setFailed(false);
-        try {
-            const files = await uploadPatientFiles(picked);
-            const res = await apiClient.post<PatientInquiryResponse>("/api/dentalClinic/patientPortal/attach", {
-                inquiry: uploadFor._id,
-                files: files.map((file) => file._id),
-                fulfils: uploadFor.openInfoRequests,
-            });
-            replace(res.data.data);
-        } catch {
-            setFailed(true);
-        } finally {
-            setBusy(false);
-            setUploadFor(null);
-            if (fileInput.current) fileInput.current.value = "";
-        }
+        setUpload((current) => ({form: patientFilesForm(picked), count: current.count + 1}));
     };
+    const busy = uploadRequest.loading || actRequest.loading || attachRequest.loading;
 
     return (
         <Dialog open onOpenChange={(open) => !open && onClose()}>
@@ -95,7 +110,7 @@ function CaseDialog({requestGroup, onClose, onChanged, resolveLanguageKey}: Prop
                 </DialogHeader>
                 {!patientCase && !failed ? <Loader /> : null}
                 {failed ? <p className="text-sm text-destructive">{resolveLanguageKey("failed")}</p> : null}
-                <input ref={fileInput} type="file" multiple hidden accept={PATIENT_FILE_MIME_TYPES.join(",") + ",.dcm,.stl,.zip"} onChange={(event) => attach([...(event.target.files ?? [])])} />
+                <Input ref={fileInput} type="file" multiple hidden accept={PATIENT_FILE_MIME_TYPES.join(",") + ",.dcm,.stl,.zip"} onChange={(event) => attach([...(event.target.files ?? [])])} />
                 {patientCase ? <CaseOffers requestGroup={requestGroup} onAccepted={() => { load(); onChanged(); }} /> : null}
                 {patientCase ? <CaseMedicalHistory patientCase={patientCase} onSaved={(updated: PatientCase) => { setPatientCase(updated); onChanged(); }} /> : null}
                 {patientCase ? (
@@ -136,7 +151,7 @@ function CaseDialog({requestGroup, onClose, onChanged, resolveLanguageKey}: Prop
                                     <div className="flex flex-col gap-1">
                                         <p className="text-sm font-medium">{resolveLanguageKey("files")}</p>
                                         {inquiry.files.length ? inquiry.files.map((file) => (
-                                            <button key={file._id} type="button" className="self-start text-sm underline" onClick={() => openPatientFile(file)}>{file.name}</button>
+                                            <Button key={file._id} type="button" variant="bare" className="self-start text-sm underline" onClick={() => openPatientFile(file)}>{file.name}</Button>
                                         )) : <p className="text-sm text-muted-foreground">{resolveLanguageKey("noFiles")}</p>}
                                         {open && !inquiry.openInfoRequests.length ? (
                                             <Button type="button" variant="outline" size="sm" className="mt-1 self-start" disabled={busy} onClick={() => { setUploadFor(inquiry); fileInput.current?.click(); }}>
