@@ -10,7 +10,11 @@ type Props = WithLanguageType & {
 
 /** The quote as the patient reads it: each phase with its lines, then the totals and deposit, and once accepted what was paid. */
 function PlanBreakdown({plan, resolveLanguageKey}: Props) {
-    const money = (amount: number) => (plan.currency?.abbreviation ? formatCurrency(amount, plan.currency.abbreviation) : String(amount));
+    // Up to the currency's own precision (D90), cents when it does not say, and whole amounts without trailing zeros.
+    const maximumFractionDigits = plan.currency?.decimalPlaces ?? 2;
+    const money = (amount: number) => (plan.currency?.abbreviation
+        ? formatCurrency(amount, plan.currency.abbreviation, {minimumFractionDigits: 0, maximumFractionDigits})
+        : String(amount));
     return (
         <div className="flex flex-col gap-5 px-4 pb-4">
             {plan.phases.map((phase, index) => (
