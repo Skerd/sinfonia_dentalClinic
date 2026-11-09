@@ -2,7 +2,7 @@ import {compose} from "redux";
 import {useCallback, useEffect, useState} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
-import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
+import {formatPlanAmount} from "@dentalClinicModule/clients/portal/cases/planAmount.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import type {PatientPlan, PatientPlansResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
@@ -20,7 +20,6 @@ type Props = WithLanguageType & {
 
 const PLANS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/plans"};
 
-const money = (plan: PatientPlan, amount: number) => (plan.currency?.abbreviation ? formatCurrency(amount, plan.currency.abbreviation) : String(amount));
 
 /** Every clinic's quote side by side: price, deposit, trips, days, warranty and brands. */
 function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
@@ -68,8 +67,8 @@ function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
                                         {plan.optionLabel ? <span className="block text-xs text-muted-foreground">{plan.optionLabel}</span> : null}
                                         {plan.status === "accepted" ? <Badge className="mt-1">{resolveLanguageKey("accepted")}</Badge> : null}
                                     </td>
-                                    <td className="px-3 py-2 text-right font-medium tabular-nums">{money(plan, plan.totals.total)}</td>
-                                    <td className="px-3 py-2 text-right tabular-nums">{plan.totals.deposit ? money(plan, plan.totals.deposit) : "—"}</td>
+                                    <td className="px-3 py-2 text-right font-medium tabular-nums">{formatPlanAmount(plan, plan.totals.total)}</td>
+                                    <td className="px-3 py-2 text-right tabular-nums">{plan.totals.deposit ? formatPlanAmount(plan, plan.totals.deposit) : "—"}</td>
                                     <td className="px-3 py-2 text-right tabular-nums">{plan.phases.length}</td>
                                     <td className="px-3 py-2 text-right tabular-nums">{plan.phases.reduce((sum, phase) => sum + phase.estimatedDays, 0)}</td>
                                     <td className="px-3 py-2 text-right tabular-nums">{warranty ? resolveLanguageKey("years").replace("{years}", String(warranty)) : "—"}</td>
@@ -112,7 +111,7 @@ function CaseOffers({requestGroup, onAccepted, resolveLanguageKey}: Props) {
                                                 {[line.teeth.length ? `${resolveLanguageKey("teeth")} ${line.teeth.join(", ")}` : "", line.material, line.brand].filter(Boolean).join(" · ")}
                                             </span>
                                         </span>
-                                        <span className="shrink-0 tabular-nums">{money(plan, line.total)}</span>
+                                        <span className="shrink-0 tabular-nums">{formatPlanAmount(plan, line.total)}</span>
                                     </li>
                                 ))}
                             </ul>

@@ -6,7 +6,7 @@ import {loadStripe} from "@stripe/stripe-js";
 import {Elements, PaymentElement, useElements, useStripe} from "@stripe/react-stripe-js";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
-import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
+import {formatPlanAmount} from "@dentalClinicModule/clients/portal/cases/planAmount.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import type {
@@ -78,7 +78,7 @@ function PlanPayment({plan, onlinePayment, onPaid, resolveLanguageKey}: Props) {
     });
     const publishableKey = payment?.publishableKey;
     const stripePromise = useMemo(() => (publishableKey ? loadStripe(publishableKey) : null), [publishableKey]);
-    const money = (amount: number) => (plan.currency?.abbreviation ? formatCurrency(amount, plan.currency.abbreviation) : String(amount));
+    const money = (amount: number) => formatPlanAmount(plan, amount);
     const due = Math.max(0, plan.totals.total - plan.amountPaid);
 
     const startPayment = () => setStartCount((count) => count + 1);

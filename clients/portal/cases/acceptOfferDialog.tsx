@@ -2,7 +2,7 @@ import {compose} from "redux";
 import {useState} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
-import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
+import {formatPlanAmount} from "@dentalClinicModule/clients/portal/cases/planAmount.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
 import {Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle} from "@coreModule/components/ui/dialog.tsx";
@@ -27,7 +27,7 @@ function AcceptOfferDialog({plan, onClose, onAccepted, resolveLanguageKey}: Prop
     const [signedName, setSignedName] = useState("");
     const [agreed, setAgreed] = useState(false);
     const [acceptCount, setAcceptCount] = useState(0);
-    const total = plan.currency?.abbreviation ? formatCurrency(plan.totals.total, plan.currency.abbreviation) : String(plan.totals.total);
+    const total = formatPlanAmount(plan, plan.totals.total);
 
     const body: AcceptTreatmentPlanFormType = {plan: plan._id, signedName: signedName.trim(), acceptTerms: agreed};
     const acceptRequest = useHttpRequest(ACCEPT_PLAN_REQUEST, body, acceptCount, true, {success: () => onAccepted()});
