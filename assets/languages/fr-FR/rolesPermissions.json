@@ -47,7 +47,8 @@
       "accreditations": "Accréditations et adhésions",
       "gallery": "Photos du cabinet",
       "quoteValidityDays": "Devis valables (jours)",
-      "quoteTerms": "Conditions standard des devis"
+      "quoteTerms": "Conditions standard des devis",
+      "ensure": "Créer les paramètres s'ils manquent"
     },
     "Cliniclocations": {
       "address": "Adresse",
@@ -61,7 +62,9 @@
       "openingHours": "Horaires d'ouverture",
       "phone": "Téléphone",
       "timezone": "Fuseau horaire",
-      "updatedAt": "Mis à jour le"
+      "updatedAt": "Mis à jour le",
+      "activate": "Activer",
+      "deactivate": "Désactiver"
     },
     "Clinicservices": {
       "bufferAfterMinutes": "Temps après (minutes)",
@@ -82,7 +85,9 @@
       "sortOrder": "Ordre de tri",
       "updatedAt": "Mis à jour le",
       "category": "Type de soin",
-      "perTooth": "Prix par dent"
+      "perTooth": "Prix par dent",
+      "activate": "Activer",
+      "deactivate": "Désactiver"
     },
     "Practitioners": {
       "bio": "Biographie",
@@ -102,7 +107,9 @@
       "sortOrder": "Ordre de tri",
       "staffUser": "Compte du personnel",
       "title": "Titre",
-      "updatedAt": "Mis à jour le"
+      "updatedAt": "Mis à jour le",
+      "activate": "Activer",
+      "deactivate": "Désactiver"
     },
     "Scheduleexceptions": {
       "createdAt": "Créé le",
@@ -146,7 +153,12 @@
       "status": "Statut",
       "timeline": "Chronologie",
       "updatedAt": "Mis à jour le",
-      "patientRecord": "Dossier patient"
+      "patientRecord": "Dossier patient",
+      "confirm": "Confirmer",
+      "reschedule": "Reprogrammer",
+      "cancel": "Annuler",
+      "complete": "Terminer",
+      "noShow": "Marquer comme absent"
     },
     "Patients": {
       "number": "N° patient",
@@ -177,7 +189,15 @@
       "assignedTo": "Attribuée à",
       "contact": "Patient",
       "files": "Fichiers",
-      "medicalHistory": "Antécédents médicaux"
+      "medicalHistory": "Antécédents médicaux",
+      "startReview": "Commencer l'examen",
+      "requestInfo": "Demander des informations",
+      "decline": "Décliner",
+      "markLost": "Marquer comme perdue",
+      "assign": "Attribuer",
+      "convert": "Convertir en patient",
+      "thread": "Voir la conversation",
+      "sendMessage": "Envoyer un message"
     },
     "Clinicmessages": {
       "clinicmessages": "Messages avec les patients",
@@ -202,7 +222,11 @@
       "lines": "Lignes chiffrées",
       "phases": "Phases (voyages au cabinet)",
       "paymentStatus": "Paiement",
-      "amountPaid": "Payé"
+      "amountPaid": "Payé",
+      "send": "Envoyer au patient",
+      "revise": "Réviser",
+      "recordPayment": "Enregistrer un paiement",
+      "refund": "Rembourser"
     },
     "Patienttrips": {
       "patienttrips": "Voyages des patients",

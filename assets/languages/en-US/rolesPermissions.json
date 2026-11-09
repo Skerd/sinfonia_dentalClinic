@@ -47,7 +47,8 @@
       "accreditations": "Accreditations and memberships",
       "gallery": "Photos of the clinic",
       "quoteValidityDays": "Quotes valid for (days)",
-      "quoteTerms": "Standard quote terms"
+      "quoteTerms": "Standard quote terms",
+      "ensure": "Create settings if missing"
     },
     "Cliniclocations": {
       "address": "Address",
@@ -61,7 +62,9 @@
       "openingHours": "Opening hours",
       "phone": "Phone",
       "timezone": "Timezone",
-      "updatedAt": "Updated at"
+      "updatedAt": "Updated at",
+      "activate": "Activate",
+      "deactivate": "Deactivate"
     },
     "Clinicservices": {
       "bufferAfterMinutes": "Buffer after minutes",
@@ -82,7 +85,9 @@
       "sortOrder": "Sort order",
       "updatedAt": "Updated at",
       "category": "Treatment type",
-      "perTooth": "Priced per tooth"
+      "perTooth": "Priced per tooth",
+      "activate": "Activate",
+      "deactivate": "Deactivate"
     },
     "Practitioners": {
       "bio": "Bio",
@@ -102,7 +107,9 @@
       "sortOrder": "Sort order",
       "staffUser": "Staff login",
       "title": "Title",
-      "updatedAt": "Updated at"
+      "updatedAt": "Updated at",
+      "activate": "Activate",
+      "deactivate": "Deactivate"
     },
     "Scheduleexceptions": {
       "createdAt": "Created at",
@@ -146,7 +153,12 @@
       "status": "Status",
       "timeline": "Timeline",
       "updatedAt": "Updated at",
-      "patientRecord": "Patient folder"
+      "patientRecord": "Patient folder",
+      "confirm": "Confirm",
+      "reschedule": "Reschedule",
+      "cancel": "Cancel",
+      "complete": "Complete",
+      "noShow": "Mark as no-show"
     },
     "Patients": {
       "number": "Patient no.",
@@ -177,7 +189,15 @@
       "assignedTo": "Assigned to",
       "contact": "Patient",
       "files": "Files",
-      "medicalHistory": "Medical history"
+      "medicalHistory": "Medical history",
+      "startReview": "Start review",
+      "requestInfo": "Request information",
+      "decline": "Decline",
+      "markLost": "Mark as lost",
+      "assign": "Assign",
+      "convert": "Convert to patient",
+      "thread": "View message thread",
+      "sendMessage": "Send message"
     },
     "Clinicmessages": {
       "clinicmessages": "Messages with patients",
@@ -202,7 +222,11 @@
       "lines": "Priced lines",
       "phases": "Phases (trips to the clinic)",
       "paymentStatus": "Payment",
-      "amountPaid": "Paid"
+      "amountPaid": "Paid",
+      "send": "Send to patient",
+      "revise": "Revise",
+      "recordPayment": "Record payment",
+      "refund": "Refund"
     },
     "Patienttrips": {
       "patienttrips": "Patient trips",

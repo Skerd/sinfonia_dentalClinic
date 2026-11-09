@@ -47,7 +47,8 @@
       "accreditations": "Akreditime dhe anëtarësi",
       "gallery": "Foto të klinikës",
       "quoteValidityDays": "Ofertat të vlefshme (ditë)",
-      "quoteTerms": "Kushtet standarde të ofertave"
+      "quoteTerms": "Kushtet standarde të ofertave",
+      "ensure": "Krijo cilësimet nëse mungojnë"
     },
     "Cliniclocations": {
       "address": "Adresa",
@@ -61,7 +62,9 @@
       "openingHours": "Orari i punës",
       "phone": "Telefoni",
       "timezone": "Zona kohore",
-      "updatedAt": "Përditësuar më"
+      "updatedAt": "Përditësuar më",
+      "activate": "Aktivizo",
+      "deactivate": "Çaktivizo"
     },
     "Clinicservices": {
       "bufferAfterMinutes": "Koha pas (minuta)",
@@ -82,7 +85,9 @@
       "sortOrder": "Renditja",
       "updatedAt": "Përditësuar më",
       "category": "Lloji i trajtimit",
-      "perTooth": "Çmim për dhëmb"
+      "perTooth": "Çmim për dhëmb",
+      "activate": "Aktivizo",
+      "deactivate": "Çaktivizo"
     },
     "Practitioners": {
       "bio": "Biografia",
@@ -102,7 +107,9 @@
       "sortOrder": "Renditja",
       "staffUser": "Llogaria e punonjësit",
       "title": "Titulli",
-      "updatedAt": "Përditësuar më"
+      "updatedAt": "Përditësuar më",
+      "activate": "Aktivizo",
+      "deactivate": "Çaktivizo"
     },
     "Scheduleexceptions": {
       "createdAt": "Krijuar më",
@@ -146,7 +153,12 @@
       "status": "Statusi",
       "timeline": "Kronologjia",
       "updatedAt": "Përditësuar më",
-      "patientRecord": "Kartela e pacientit"
+      "patientRecord": "Kartela e pacientit",
+      "confirm": "Konfirmo",
+      "reschedule": "Riplanifiko",
+      "cancel": "Anulo",
+      "complete": "Përfundo",
+      "noShow": "Shëno si mosparaqitje"
     },
     "Patients": {
       "number": "Nr. pacienti",
@@ -177,7 +189,15 @@
       "assignedTo": "Caktuar te",
       "contact": "Pacienti",
       "files": "Skedarët",
-      "medicalHistory": "Historia mjekësore"
+      "medicalHistory": "Historia mjekësore",
+      "startReview": "Fillo shqyrtimin",
+      "requestInfo": "Kërko informacion",
+      "decline": "Refuzo",
+      "markLost": "Shëno si të humbur",
+      "assign": "Cakto",
+      "convert": "Shndërro në pacient",
+      "thread": "Shiko bisedën",
+      "sendMessage": "Dërgo mesazh"
     },
     "Clinicmessages": {
       "clinicmessages": "Mesazhe me pacientët",
@@ -202,7 +222,11 @@
       "lines": "Rreshtat me çmim",
       "phases": "Fazat (udhëtime në klinikë)",
       "paymentStatus": "Pagesa",
-      "amountPaid": "E paguar"
+      "amountPaid": "E paguar",
+      "send": "Dërgo te pacienti",
+      "revise": "Rishiko",
+      "recordPayment": "Regjistro pagesë",
+      "refund": "Rimburso"
     },
     "Patienttrips": {
       "patienttrips": "Udhëtimet e pacientëve",

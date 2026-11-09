@@ -47,7 +47,8 @@
       "accreditations": "Akkreditierungen und Mitgliedschaften",
       "gallery": "Fotos der Praxis",
       "quoteValidityDays": "Angebote gültig (Tage)",
-      "quoteTerms": "Standard-Angebotsbedingungen"
+      "quoteTerms": "Standard-Angebotsbedingungen",
+      "ensure": "Einstellungen anlegen, falls sie fehlen"
     },
     "Cliniclocations": {
       "address": "Adresse",
@@ -61,7 +62,9 @@
       "openingHours": "Öffnungszeiten",
       "phone": "Telefon",
       "timezone": "Zeitzone",
-      "updatedAt": "Aktualisiert am"
+      "updatedAt": "Aktualisiert am",
+      "activate": "Aktivieren",
+      "deactivate": "Deaktivieren"
     },
     "Clinicservices": {
       "bufferAfterMinutes": "Pufferzeit danach (Minuten)",
@@ -82,7 +85,9 @@
       "sortOrder": "Sortierung",
       "updatedAt": "Aktualisiert am",
       "category": "Behandlungsart",
-      "perTooth": "Preis pro Zahn"
+      "perTooth": "Preis pro Zahn",
+      "activate": "Aktivieren",
+      "deactivate": "Deaktivieren"
     },
     "Practitioners": {
       "bio": "Biografie",
@@ -102,7 +107,9 @@
       "sortOrder": "Sortierung",
       "staffUser": "Benutzerkonto des Personals",
       "title": "Titel",
-      "updatedAt": "Aktualisiert am"
+      "updatedAt": "Aktualisiert am",
+      "activate": "Aktivieren",
+      "deactivate": "Deaktivieren"
     },
     "Scheduleexceptions": {
       "createdAt": "Erstellt am",
@@ -146,7 +153,12 @@
       "status": "Status",
       "timeline": "Verlauf",
       "updatedAt": "Aktualisiert am",
-      "patientRecord": "Patientenakte"
+      "patientRecord": "Patientenakte",
+      "confirm": "Bestätigen",
+      "reschedule": "Verschieben",
+      "cancel": "Stornieren",
+      "complete": "Abschliessen",
+      "noShow": "Als nicht erschienen markieren"
     },
     "Patients": {
       "number": "Patienten-Nr.",
@@ -177,7 +189,15 @@
       "assignedTo": "Zugewiesen an",
       "contact": "Patient",
       "files": "Dateien",
-      "medicalHistory": "Krankengeschichte"
+      "medicalHistory": "Krankengeschichte",
+      "startReview": "Prüfung starten",
+      "requestInfo": "Informationen anfordern",
+      "decline": "Ablehnen",
+      "markLost": "Als verloren markieren",
+      "assign": "Zuweisen",
+      "convert": "In Patienten umwandeln",
+      "thread": "Nachrichtenverlauf ansehen",
+      "sendMessage": "Nachricht senden"
     },
     "Clinicmessages": {
       "clinicmessages": "Nachrichten mit Patienten",
@@ -202,7 +222,11 @@
       "lines": "Positionen",
       "phases": "Phasen (Reisen zur Praxis)",
       "paymentStatus": "Zahlung",
-      "amountPaid": "Bezahlt"
+      "amountPaid": "Bezahlt",
+      "send": "An Patienten senden",
+      "revise": "Überarbeiten",
+      "recordPayment": "Zahlung erfassen",
+      "refund": "Erstatten"
     },
     "Patienttrips": {
       "patienttrips": "Patientenreisen",
