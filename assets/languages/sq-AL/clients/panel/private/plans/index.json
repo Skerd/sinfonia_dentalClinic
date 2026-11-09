@@ -16,7 +16,7 @@
   "fields": {
     "!enums": {
       "status": {
-        "draft": "Draft",
+        "draft": "Skicë",
         "sent": "Dërguar",
         "accepted": "Pranuar",
         "rejected": "Nuk u zgjodh",

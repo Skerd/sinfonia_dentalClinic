@@ -4,7 +4,7 @@
   "create": "Krijo ofertë",
   "none": "Ende pa ofertë.",
   "status": {
-    "draft": "Draft",
+    "draft": "Skicë",
     "sent": "Dërguar",
     "accepted": "Pranuar",
     "rejected": "Nuk u zgjodh",
