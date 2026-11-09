@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/revisePlanDialog.tsx",
   "title": "Rishiko ofertën",
-  "description": "Nga kjo ofertë krijohet një draft i ri. Kur ta dërgoni, zëvendëson këtë për pacientin.",
+  "description": "Nga kjo ofertë krijohet një skicë e re. Kur ta dërgoni, zëvendëson këtë për pacientin.",
   "confirm": "Rishiko",
   "cancel": "Anulo",
   "axios": {

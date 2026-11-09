@@ -1,17 +1,17 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
   "title": "Planet e trajtimit",
-  "description": "Oferta për pacientët, nga drafti te plani i pranuar",
+  "description": "Oferta për pacientët, nga skica te plani i pranuar",
   "help": {
     "ariaLabel": "Rreth planeve",
     "title": "Rreth planeve",
     "overview": "Plani ndahet në faza (udhëtime): implante tani, kurora pas shërimit. Çdo rresht tregon dhëmbët, materialin dhe markën. Disa plane për të njëjtën kërkesë ofrojnë alternativa; pacienti pranon njërin."
   },
   "create": "Ofertë e re",
-  "searchPlaceholder": "Kërkoni oferta...",
+  "searchPlaceholder": "Kërkoni oferta ose shtoni filtra...",
   "noData": "Ende asnjë ofertë",
   "failTitle": "Ofertat nuk u ngarkuan",
-  "failDescription": "Diçka shkoi keq.",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
   "deleted": "Fshirë",
   "fields": {
     "!enums": {

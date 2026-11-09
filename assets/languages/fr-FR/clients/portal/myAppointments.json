@@ -4,9 +4,9 @@
   "manage": "Gérer",
   "status": {
     "pending": "En attente de confirmation",
-    "confirmed": "Confirmée",
-    "completed": "Terminée",
+    "confirmed": "Confirmé",
+    "completed": "Terminé",
     "cancelled": "Annulé",
-    "no_show": "Non présenté"
+    "no_show": "Absent"
   }
 }

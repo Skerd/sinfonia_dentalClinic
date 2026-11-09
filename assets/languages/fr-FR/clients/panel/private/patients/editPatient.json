@@ -20,7 +20,7 @@
       "time": 3000
     },
     "error": {
-      "title": "Les modifications n'ont pas pu être enregistrées.",
+      "title": "Les modifications n'ont pas pu être enregistrées. Vérifiez le formulaire et réessayez.",
       "time": 3000
     }
   },
@@ -35,7 +35,7 @@
     "sexPlaceholder": "Choisir",
     "preferredLanguageLabel": "Langue des messages et documents",
     "preferredLanguagePlaceholder": "Choisir une langue",
-    "sourceLabel": "Comment ils vous ont trouvé",
+    "sourceLabel": "Comment le patient vous a trouvé",
     "sourcePlaceholder": "Choisir",
     "contactSectionTitle": "Coordonnées",
     "emailLabel": "E-mail",

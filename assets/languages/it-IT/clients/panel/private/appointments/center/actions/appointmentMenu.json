@@ -2,7 +2,7 @@
   "path": "src/modules/dentalClinic/clients/panel/private/appointments/center/actions/appointmentMenu.tsx",
   "confirm": "Conferma",
   "reschedule": "Sposta",
-  "complete": "Segna completato",
+  "complete": "Segna come completato",
   "noShow": "Segna non presentato",
   "cancel": "Annulla appuntamento"
 }

@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Shto kontakt",
+  "create": "Shto klient të mundshëm",
   "searchPlaceholder": "Kërkoni kërkesa ose shtoni filtra...",
   "noData": "Ende asnjë kërkesë",
   "failTitle": "Kërkesat nuk u ngarkuan",
@@ -79,7 +79,7 @@
     "lastName": "Mbiemri",
     "country": "Shteti",
     "preferredLanguage": "Gjuha",
-    "email": "Email",
+    "email": "Emaili",
     "phone": "Telefon",
     "whatsapp": "WhatsApp",
     "contactShared": "Kontakti i ndarë",

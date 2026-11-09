@@ -24,9 +24,9 @@
   },
   "status": {
     "new": "Envoyée",
-    "in_review": "Le cabinet examine",
-    "info_requested": "Le cabinet demande plus",
-    "declined": "Le cabinet a refusé",
+    "in_review": "La clinique examine",
+    "info_requested": "La clinique demande plus",
+    "declined": "La clinique a refusé",
     "lost": "Clôturée",
     "withdrawn": "Retirée",
     "converted": "Vous êtes patient ici",

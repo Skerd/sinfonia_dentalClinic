@@ -20,7 +20,7 @@
       "time": 3000
     },
     "error": {
-      "title": "Le devis n'a pas pu être enregistré.",
+      "title": "Le devis n'a pas pu être enregistré. Vérifiez le formulaire et réessayez.",
       "time": 3000
     }
   },

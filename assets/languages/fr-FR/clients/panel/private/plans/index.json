@@ -8,10 +8,10 @@
     "overview": "Un plan se divise en phases (voyages) : implants maintenant, couronnes après cicatrisation. Chaque ligne indique dents, matériau et marque. Plusieurs plans par demande proposent des alternatives ; le patient en accepte un."
   },
   "create": "Nouveau devis",
-  "searchPlaceholder": "Rechercher des devis...",
+  "searchPlaceholder": "Rechercher des devis ou ajouter des filtres...",
   "noData": "Aucun devis",
   "failTitle": "Impossible de charger les devis",
-  "failDescription": "Une erreur s'est produite.",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
   "deleted": "Supprimé",
   "fields": {
     "!enums": {

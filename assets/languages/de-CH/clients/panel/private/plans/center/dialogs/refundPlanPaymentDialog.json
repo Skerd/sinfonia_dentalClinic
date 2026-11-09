@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
   "title": "Erstattung",
-  "description": "Kartenzahlungen werden auf die Karte erstattet; in der Klinik eingenommenes Geld wird als Erstattung erfasst, die Sie selbst auszahlen.",
+  "description": "Kartenzahlungen werden auf die Karte erstattet; in der Praxis eingenommenes Geld wird als Erstattung erfasst, die Sie selbst auszahlen.",
   "confirm": "Erstatten",
   "cancel": "Abbrechen",
   "amountLabel": "Betrag",
@@ -9,7 +9,7 @@
   "reasonPlaceholder": "z. B. der Patient hat die Reise abgesagt",
   "axios": {
     "start": {
-      "title": "Speichern…",
+      "title": "Wird gespeichert…",
       "time": 3000
     },
     "success": {

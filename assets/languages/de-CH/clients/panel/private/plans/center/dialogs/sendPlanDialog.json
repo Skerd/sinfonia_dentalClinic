@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/sendPlanDialog.tsx",
   "title": "Angebot senden",
-  "description": "Der Patient wird per E-Mail informiert und kann es im Konto vergleichen und annehmen. Ein gesendetes Angebot wird nur noch überarbeitet.",
+  "description": "Der Patient wird per E-Mail informiert und kann das Angebot im Konto vergleichen und annehmen. Ein gesendetes Angebot kann nicht mehr bearbeitet, nur noch überarbeitet werden.",
   "confirm": "An den Patienten senden",
   "cancel": "Abbrechen",
   "axios": {

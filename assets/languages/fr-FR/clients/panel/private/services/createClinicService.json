@@ -25,9 +25,9 @@
     "slugPlaceholder": "p. ex. controle",
     "timingSectionTitle": "Horaires",
     "bufferAfterMinutesLabel": "Nettoyage (min)",
-    "bufferAfterMinutesPlaceholder": "Saisir le nettoyage",
+    "bufferAfterMinutesPlaceholder": "Saisir les minutes de nettoyage",
     "bufferBeforeMinutesLabel": "Préparation (min)",
-    "bufferBeforeMinutesPlaceholder": "Saisir la préparation",
+    "bufferBeforeMinutesPlaceholder": "Saisir les minutes de préparation",
     "durationMinutesLabel": "Durée (min)",
     "durationMinutesPlaceholder": "Saisir la durée",
     "isActiveLabel": "Actif",
@@ -37,7 +37,7 @@
     "pricePlaceholder": "Saisir le prix",
     "priceType": {
       "fixed": "Prix fixe",
-      "from": "De",
+      "from": "À partir de",
       "on_request": "Sur demande",
       "free": "Gratuit"
     },

@@ -4,8 +4,8 @@
   "manage": "Menaxho",
   "status": {
     "pending": "Në pritje të konfirmimit",
-    "confirmed": "E konfirmuar",
-    "completed": "E përfunduar",
+    "confirmed": "I konfirmuar",
+    "completed": "I përfunduar",
     "cancelled": "I anuluar",
     "no_show": "Nuk u paraqit"
   }

@@ -1,9 +1,9 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
-  "title": "Shto kontakt",
+  "title": "Shto klient të mundshëm",
   "description": "Një pacient që telefonoi, shkroi në WhatsApp ose erdhi nga një agjenci",
   "formHeader": {
-    "title": "Shto kontakt",
+    "title": "Shto klient të mundshëm",
     "description": "Një pacient që telefonoi, shkroi në WhatsApp ose erdhi nga një agjenci"
   },
   "formButtons": {
@@ -12,15 +12,15 @@
   },
   "axios": {
     "start": {
-      "title": "Po ruhet",
+      "title": "Po ruhet klienti i mundshëm",
       "time": 3000
     },
     "success": {
-      "title": "Kontakti u shtua",
+      "title": "Klienti i mundshëm u shtua",
       "time": 3000
     },
     "error": {
-      "title": "Kontakti nuk u shtua. Kontrolloni formularin.",
+      "title": "Klienti i mundshëm nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
       "time": 3000
     }
   },
@@ -31,7 +31,7 @@
     "firstNamePlaceholder": "Shkruani emrin",
     "lastNameLabel": "Mbiemri",
     "lastNamePlaceholder": "Shkruani mbiemrin",
-    "emailLabel": "Email",
+    "emailLabel": "Emaili",
     "emailPlaceholder": "Shkruani email-in",
     "phoneLabel": "Telefon",
     "phonePlaceholder": "p.sh. +355 69 123 4567",

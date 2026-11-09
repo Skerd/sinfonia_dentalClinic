@@ -5,7 +5,7 @@
   "allTreatments": "Alle Behandlungen",
   "usuallyAnswers": "Antwortet meist innert {hours} Std.",
   "formTitle": "Ihre Anfrage",
-  "pickFirst": "Wählen Sie oben mindestens eine Klinik, um Ihre Anfrage zu schreiben.",
+  "pickFirst": "Wählen Sie oben mindestens eine Praxis, um Ihre Anfrage zu schreiben.",
   "treatment": {
     "checkup": "Kontrolle",
     "hygiene": "Dentalhygiene",
@@ -25,7 +25,7 @@
   },
   "steps": {
     "choose": {
-      "title": "Kliniken wählen",
+      "title": "Praxen wählen",
       "text": "Bis zu {max}, nach Behandlung, Ort oder Sprache."
     },
     "describe": {
@@ -34,26 +34,26 @@
     },
     "compare": {
       "title": "Vergleichen und entscheiden",
-      "text": "Jede Klinik antwortet Ihnen einzeln mit Plan und Preis."
+      "text": "Jede Praxis antwortet Ihnen einzeln mit Plan und Preis."
     }
   },
-  "chooseTitle": "Kliniken auswählen",
-  "searchLabel": "Kliniken suchen",
-  "searchPlaceholder": "Nach Klinik, Ort, Sprache oder Implantatmarke suchen",
+  "chooseTitle": "Praxen auswählen",
+  "searchLabel": "Praxen suchen",
+  "searchPlaceholder": "Nach Praxis, Ort, Sprache oder Implantatmarke suchen",
   "clearSearch": "Suche löschen",
-  "clearFilters": "Alle Kliniken zeigen",
-  "results": "{count} Kliniken",
+  "clearFilters": "Alle Praxen zeigen",
+  "results": "{count} Praxen",
   "full": "Sie haben {max} gewählt, mehr geht pro Anfrage nicht",
-  "noMatchTitle": "Keine Kliniken gefunden",
+  "noMatchTitle": "Keine Praxen gefunden",
   "noMatchHint": "Versuchen Sie ein anderes Wort oder eine andere Behandlung.",
-  "noClinics": "Noch nimmt keine Klinik Anfragen entgegen.",
-  "viewClinic": "Klinik ansehen",
+  "noClinics": "Noch nimmt keine Praxis Anfragen entgegen.",
+  "viewClinic": "Praxis ansehen",
   "selectionTitle": "Ihre Auswahl",
   "chosen": "{count} von {max} gewählt",
-  "selectionEmpty": "Noch keine Klinik gewählt. Markieren Sie bis zu {max} in der Liste.",
+  "selectionEmpty": "Noch keine Praxis gewählt. Markieren Sie bis zu {max} in der Liste.",
   "remove": "{name} entfernen",
   "continue": "Weiter zur Anfrage",
-  "privacyNote": "Kliniken sehen nur Vorname und Land, bis Sie eine wählen oder Ihre Kontaktdaten teilen.",
-  "formSubtitle": "Eine Anfrage geht an alle gewählten Kliniken; jede Antwort verfolgen Sie in Ihrem Konto.",
-  "resultsOne": "1 Klinik"
+  "privacyNote": "Praxen sehen nur Vorname und Land, bis Sie eine wählen oder Ihre Kontaktdaten teilen.",
+  "formSubtitle": "Eine Anfrage geht an alle gewählten Praxen; jede Antwort verfolgen Sie in Ihrem Konto.",
+  "resultsOne": "1 Praxis"
 }

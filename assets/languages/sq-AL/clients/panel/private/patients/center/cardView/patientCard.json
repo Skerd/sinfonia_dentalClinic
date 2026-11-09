@@ -2,7 +2,7 @@
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/cardView/patientCard.tsx",
   "failedTitle": "Pacienti nuk u ngarkua",
   "failedDescription": "Prekni për të provuar përsëri.",
-  "email": "Email",
+  "email": "Emaili",
   "phone": "Telefon",
   "country": "Shteti",
   "preferredLanguage": "Gjuha",

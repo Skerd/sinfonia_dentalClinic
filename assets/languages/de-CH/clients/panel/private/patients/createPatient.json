@@ -20,7 +20,7 @@
       "time": 3000
     },
     "error": {
-      "title": "Patient konnte nicht hinzugefügt werden. Prüfen Sie das Formular.",
+      "title": "Patient konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
       "time": 3000
     }
   },
@@ -59,7 +59,7 @@
     "emergencyContactPhonePlaceholder": "Telefon eingeben",
     "emergencyContactRelationLabel": "Beziehung",
     "emergencyContactRelationPlaceholder": "z. B. Ehepartner",
-    "homeDentistSectionTitle": "Zahnarzt zu Hause",
+    "homeDentistSectionTitle": "Hauszahnarzt",
     "homeDentistNameLabel": "Zahnarzt",
     "homeDentistNamePlaceholder": "Zahnarzt am Wohnort",
     "homeDentistPracticeLabel": "Praxis",

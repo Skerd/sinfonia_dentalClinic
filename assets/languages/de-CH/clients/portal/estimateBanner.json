@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/portal/estimateBanner.tsx",
-  "title": "Kostenvoranschlag von Zahnkliniken erhalten",
-  "subtitle": "Vergleichen Sie Kliniken und senden Sie eine Anfrage mit Ihren Röntgenbildern an bis zu fünf.",
+  "title": "Kostenvoranschlag von Zahnarztpraxen erhalten",
+  "subtitle": "Vergleichen Sie Praxen und senden Sie eine Anfrage mit Ihren Röntgenbildern an bis zu fünf.",
   "titleClinic": "Kostenvoranschlag erhalten",
   "subtitleClinic": "Sagen Sie uns, was Sie brauchen, und senden Sie Ihre Röntgenbilder; wir antworten mit Behandlungsplan und Preis.",
   "accountNeeded": "Sie brauchen ein Konto: Dort finden Sie alle Antworten, Dateien und Gespräche.",

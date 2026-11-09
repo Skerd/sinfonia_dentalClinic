@@ -1,10 +1,10 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/editTreatmentPlan.tsx",
   "title": "Ndrysho ofertën",
-  "description": "Ndryshoni këtë draft para dërgimit",
+  "description": "Ndryshoni këtë skicë para dërgimit",
   "formHeader": {
     "title": "Ndrysho ofertën",
-    "description": "Ndryshoni këtë draft para dërgimit"
+    "description": "Ndryshoni këtë skicë para dërgimit"
   },
   "formButtons": {
     "cancel": "Anulo",

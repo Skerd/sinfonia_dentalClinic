@@ -20,7 +20,7 @@
       "time": 3000
     },
     "error": {
-      "title": "Das Angebot konnte nicht gespeichert werden.",
+      "title": "Das Angebot konnte nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
       "time": 3000
     }
   },

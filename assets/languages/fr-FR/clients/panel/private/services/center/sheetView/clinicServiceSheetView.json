@@ -19,7 +19,7 @@
   "slug": "Nom d'adresse web",
   "priceTypeValues": {
     "fixed": "Prix fixe",
-    "from": "De",
+    "from": "À partir de",
     "on_request": "Sur demande",
     "free": "Gratuit"
   },

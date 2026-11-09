@@ -11,7 +11,7 @@
         "title": "Në këtë faqe",
         "items": [
           "Pacientët nga portali dhe rezervimet online shtohen automatikisht.",
-          "Vendosni gjuhën: email-et, ofertat dhe raporti për dentistin e tyre shkruhen në të.",
+          "Vendosni gjuhën: emailet, ofertat dhe raporti për dentistin në vendin e tyre shkruhen në atë gjuhë.",
           "Mos vendosni gjetje mjekësore te shënimet; ato shkojnë te shënimet klinike."
         ]
       }
@@ -55,13 +55,13 @@
     "lastName": "Mbiemri",
     "dateOfBirth": "Datëlindja",
     "sex": "Gjinia",
-    "email": "Email",
+    "email": "Emaili",
     "phone": "Telefon",
     "whatsapp": "WhatsApp",
     "preferredLanguage": "Gjuha",
     "address": "Adresa",
     "emergencyContact": "Kontakt urgjence",
-    "homeDentist": "Dentisti në vendlindje",
+    "homeDentist": "Dentisti në vendin e vet",
     "source": "Burimi",
     "tags": "Etiketa",
     "notes": "Shënime",

@@ -20,7 +20,7 @@
       "time": 3000
     },
     "error": {
-      "title": "Der Lead konnte nicht hinzugefügt werden. Prüfen Sie das Formular.",
+      "title": "Der Lead konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
       "time": 3000
     }
   },

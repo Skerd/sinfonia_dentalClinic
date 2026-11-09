@@ -20,7 +20,7 @@
       "time": 3000
     },
     "error": {
-      "title": "Impossibile aggiungere il paziente. Controlla il modulo.",
+      "title": "Impossibile aggiungere il paziente. Controlla il modulo e riprova.",
       "time": 3000
     }
   },
@@ -35,7 +35,7 @@
     "sexPlaceholder": "Seleziona",
     "preferredLanguageLabel": "Lingua per messaggi e documenti",
     "preferredLanguagePlaceholder": "Seleziona una lingua",
-    "sourceLabel": "Come vi hanno trovato",
+    "sourceLabel": "Come ti hanno trovato",
     "sourcePlaceholder": "Seleziona",
     "contactSectionTitle": "Contatti",
     "emailLabel": "Email",

@@ -2,7 +2,7 @@
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/clinicInquirySheetView.tsx",
   "failedTitle": "Anfrage konnte nicht geladen werden",
   "failedDescription": "Beim Laden ist ein Fehler aufgetreten. Klicken Sie, um es erneut zu versuchen.",
-  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
+  "failedTooltipDescription": "Klicken Sie, um die Daten erneut zu laden.",
   "number": "Anfrage-Nr.",
   "medicalHistory": "Krankengeschichte",
   "status": "Status",

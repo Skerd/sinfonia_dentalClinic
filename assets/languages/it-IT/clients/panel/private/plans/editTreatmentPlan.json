@@ -12,7 +12,7 @@
   },
   "axios": {
     "start": {
-      "title": "Salvataggio",
+      "title": "Salvataggio del preventivo",
       "time": 3000
     },
     "success": {
@@ -20,7 +20,7 @@
       "time": 3000
     },
     "error": {
-      "title": "Impossibile salvare il preventivo. Controlla il modulo.",
+      "title": "Impossibile salvare il preventivo. Controlla il modulo e riprova.",
       "time": 3000
     }
   },

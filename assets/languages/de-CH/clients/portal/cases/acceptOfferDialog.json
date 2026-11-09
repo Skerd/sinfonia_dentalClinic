@@ -3,11 +3,11 @@
   "title": "Angebot von {clinic} annehmen",
   "description": "Total {total}. Bitte vor dem Bestätigen lesen:",
   "pointContact": "Diese Praxis sieht Ihren vollen Namen, Ihre E-Mail und Telefonnummern, um Ihren Besuch zu planen.",
-  "pointOthers": "Ihre anderen Praxen werden informiert; deren Angebote werden geschlossen.",
-  "pointProvisional": "Endgültiger Plan und Preis werden nach einer Untersuchung bestätigt.",
+  "pointOthers": "Ihre anderen Praxen werden informiert, dass Sie eine andere Praxis gewählt haben; deren Angebote werden geschlossen.",
+  "pointProvisional": "Endgültiger Plan und Preis werden von der Fachperson nach einer Untersuchung bestätigt.",
   "signedName": "Ihr vollständiger Name als Unterschrift",
   "agree": "Ich nehme dieses Angebot und seine Bedingungen an.",
-  "failed": "Das Angebot konnte nicht angenommen werden. Es ist eventuell abgelaufen.",
+  "failed": "Das Angebot konnte nicht angenommen werden. Es ist eventuell abgelaufen; bitte versuchen Sie es erneut.",
   "cancel": "Abbrechen",
   "confirm": "Angebot annehmen"
 }

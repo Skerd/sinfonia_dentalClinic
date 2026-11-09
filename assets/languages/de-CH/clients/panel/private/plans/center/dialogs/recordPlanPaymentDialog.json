@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/recordPlanPaymentDialog.tsx",
   "title": "Zahlung erfassen",
-  "description": "Geld, das die Klinik selbst eingenommen hat: bar, Kartenterminal oder Überweisung. Es wird mit dem verrechnet, was der Patient für diesen Plan schuldet.",
+  "description": "Geld, das die Praxis selbst eingenommen hat: bar, Kartenterminal oder Überweisung. Es wird mit dem verrechnet, was der Patient für diesen Plan schuldet.",
   "confirm": "Zahlung erfassen",
   "cancel": "Abbrechen",
   "amountLabel": "Betrag",
@@ -9,7 +9,7 @@
   "notePlaceholder": "z. B. bar beim ersten Termin",
   "axios": {
     "start": {
-      "title": "Speichern…",
+      "title": "Wird gespeichert…",
       "time": 3000
     },
     "success": {

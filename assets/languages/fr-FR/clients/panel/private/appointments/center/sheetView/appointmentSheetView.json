@@ -33,7 +33,7 @@
   "timezone": "Fuseau horaire",
   "priceTypeValues": {
     "fixed": "Prix fixe",
-    "from": "De",
+    "from": "À partir de",
     "on_request": "Sur demande",
     "free": "Gratuit"
   },

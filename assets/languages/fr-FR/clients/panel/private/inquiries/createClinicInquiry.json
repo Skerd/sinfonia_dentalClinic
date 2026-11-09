@@ -1,9 +1,9 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
-  "title": "Ajouter un contact",
+  "title": "Ajouter un prospect",
   "description": "Un patient qui a appelé, écrit sur WhatsApp ou est venu par une agence",
   "formHeader": {
-    "title": "Ajouter un contact",
+    "title": "Ajouter un prospect",
     "description": "Un patient qui a appelé, écrit sur WhatsApp ou est venu par une agence"
   },
   "formButtons": {
@@ -12,15 +12,15 @@
   },
   "axios": {
     "start": {
-      "title": "Enregistrement",
+      "title": "Enregistrement du prospect",
       "time": 3000
     },
     "success": {
-      "title": "Contact ajouté",
+      "title": "Prospect ajouté",
       "time": 3000
     },
     "error": {
-      "title": "Impossible d'ajouter le contact. Vérifiez le formulaire.",
+      "title": "Le prospect n'a pas pu être ajouté. Vérifiez le formulaire et réessayez.",
       "time": 3000
     }
   },
@@ -41,10 +41,10 @@
     "countryPlaceholder": "Choisir un pays",
     "preferredLanguageLabel": "Langue",
     "preferredLanguagePlaceholder": "Choisir une langue",
-    "sourceLabel": "Comment ils vous ont contacté",
+    "sourceLabel": "Comment le patient vous a contacté",
     "sourcePlaceholder": "Choisir",
     "treatmentsWantedLabel": "Soins souhaités",
-    "descriptionLabel": "Ce dont ils ont besoin",
+    "descriptionLabel": "Ce dont le patient a besoin",
     "descriptionPlaceholder": "Ce que le patient vous a dit",
     "travelFromLabel": "Voyage possible du",
     "travelFromPlaceholder": "Choisir une date",

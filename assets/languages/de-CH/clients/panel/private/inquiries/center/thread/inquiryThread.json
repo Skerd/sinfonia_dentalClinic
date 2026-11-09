@@ -9,5 +9,5 @@
   "attach": "Anhängen",
   "send": "Senden",
   "loadError": "Nachrichten konnten nicht geladen werden.",
-  "sendError": "Die Nachricht konnte nicht gesendet werden."
+  "sendError": "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
 }

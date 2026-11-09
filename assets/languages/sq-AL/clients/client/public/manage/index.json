@@ -4,7 +4,7 @@
   "linkInvalidTitle": "Kjo lidhje nuk funksionon",
   "linkInvalidText": "Lidhja mungon ose është e vjetëruar. Përdorni lidhjen nga emaili juaj i fundit ose na telefononi.",
   "backHome": "Kthehu në fillim",
-  "bookedNotice": "Jeni rezervuar. Një konfirmim po vjen në kutinë tuaj postare.",
+  "bookedNotice": "Rezervimi u krye. Një konfirmim po vjen në emailin tuaj.",
   "requestedNotice": "Kërkesa u mor. Klinika do ta konfirmojë së shpejti me email.",
   "cancelledNotice": "Takimi juaj është anuluar.",
   "movedNotice": "Takimi juaj u zhvendos. Ju dërguam një email me orarin e ri dhe një lidhje të re.",
@@ -36,6 +36,6 @@
     "confirmed": "Konfirmuar",
     "completed": "Përfunduar",
     "cancelled": "Anuluar",
-    "no_show": "Humbur"
+    "no_show": "Nuk u paraqit"
   }
 }

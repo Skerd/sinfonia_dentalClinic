@@ -21,7 +21,7 @@
   "searchPlaceholder": "Anfragen suchen oder Filter hinzufügen...",
   "noData": "Noch keine Anfragen",
   "failTitle": "Anfragen konnten nicht geladen werden",
-  "failDescription": "Beim Laden ist ein Fehler aufgetreten.",
+  "failDescription": "Beim Laden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
   "deleted": "Gelöscht",
   "fields": {
     "!enums": {

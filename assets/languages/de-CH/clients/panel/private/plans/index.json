@@ -11,7 +11,7 @@
   "searchPlaceholder": "Angebote suchen oder Filter hinzufügen...",
   "noData": "Noch keine Angebote",
   "failTitle": "Angebote konnten nicht geladen werden",
-  "failDescription": "Beim Laden ist ein Fehler aufgetreten.",
+  "failDescription": "Beim Laden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
   "deleted": "Gelöscht",
   "fields": {
     "!enums": {

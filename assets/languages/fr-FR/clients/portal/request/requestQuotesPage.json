@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/portal/request/requestQuotesPage.tsx",
-  "title": "Comparez les cabinets et demandez des devis",
-  "subtitle": "Choisissez jusqu'à {max} cabinets et envoyez-leur une demande. Chacun vous répond, vous choisissez.",
+  "title": "Comparez les cliniques et demandez des devis",
+  "subtitle": "Choisissez jusqu'à {max} cliniques et envoyez-leur une demande. Chacune vous répond séparément, et vous choisissez.",
   "allTreatments": "Tous les soins",
   "usuallyAnswers": "Répond généralement sous {hours} h",
   "formTitle": "Votre demande",

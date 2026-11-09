@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
   "title": "Remboursement",
-  "description": "Les paiements par carte sont remboursés sur la carte ; l'argent encaissé à la clinique est enregistré comme un remboursement que vous versez vous-même.",
+  "description": "Les paiements par carte sont remboursés sur la carte ; l'argent encaissé au cabinet est enregistré comme un remboursement que vous versez vous-même.",
   "confirm": "Rembourser",
   "cancel": "Annuler",
   "amountLabel": "Montant",

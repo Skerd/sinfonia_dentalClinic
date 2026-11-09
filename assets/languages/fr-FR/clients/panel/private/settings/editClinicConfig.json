@@ -84,7 +84,7 @@
       "fr-FR": "Français",
       "sq-AL": "Albanais"
     },
-    "quoteValidityDaysLabel": "Devis valables (jours)",
+    "quoteValidityDaysLabel": "Validité des devis (jours)",
     "quoteValidityDaysPlaceholder": "ex. 30",
     "quoteTermsLabel": "Conditions standard des nouveaux devis",
     "quoteTermsPlaceholder": "Paiement, annulation, ce qui est inclus…"

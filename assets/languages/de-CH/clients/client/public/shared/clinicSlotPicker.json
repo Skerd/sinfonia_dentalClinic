@@ -10,7 +10,7 @@
   "timesCount": "{count} Zeiten",
   "closed": "Keine Zeiten",
   "period": {
-    "morning": "Morgen",
+    "morning": "Vormittag",
     "afternoon": "Nachmittag",
     "evening": "Abend"
   }

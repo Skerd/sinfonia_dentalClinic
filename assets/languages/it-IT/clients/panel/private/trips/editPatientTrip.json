@@ -14,7 +14,7 @@
   "form": {
     "patientLabel": "Cartella paziente",
     "patientPlaceholder": "Seleziona un paziente",
-    "planLabel": "Piano di trattamento",
+    "planLabel": "Piano di cura",
     "planPlaceholder": "Il piano accettato (facoltativo)",
     "phaseLabel": "Fase",
     "phasePlaceholder": "es. 1",

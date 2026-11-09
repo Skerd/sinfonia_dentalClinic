@@ -11,7 +11,7 @@
         "title": "Auf dieser Seite",
         "items": [
           "Personen aus dem Portal und aus Online-Buchungen werden automatisch angelegt.",
-          "Legen Sie die Sprache fest: E-Mails, Angebote und der Bericht für den Zahnarzt zu Hause werden darin verfasst.",
+          "Legen Sie die Sprache fest: E-Mails, Angebote und der Bericht für den Hauszahnarzt werden darin verfasst.",
           "Medizinische Befunde gehören nicht ins Notizfeld; dafür gibt es klinische Notizen."
         ]
       }
@@ -61,7 +61,7 @@
     "preferredLanguage": "Sprache",
     "address": "Adresse",
     "emergencyContact": "Notfallkontakt",
-    "homeDentist": "Zahnarzt zu Hause",
+    "homeDentist": "Hauszahnarzt",
     "source": "Herkunft",
     "tags": "Schlagwörter",
     "notes": "Notizen",

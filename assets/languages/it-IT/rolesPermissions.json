@@ -158,7 +158,7 @@
       "reschedule": "Riprogramma",
       "cancel": "Annulla",
       "complete": "Completa",
-      "noShow": "Segna come mancata presentazione"
+      "noShow": "Segna come non presentato"
     },
     "Patients": {
       "number": "N. paziente",
@@ -190,7 +190,7 @@
       "contact": "Paziente",
       "files": "File",
       "medicalHistory": "Anamnesi",
-      "startReview": "Avvia l'esame",
+      "startReview": "Inizia la valutazione",
       "requestInfo": "Richiedi informazioni",
       "decline": "Rifiuta",
       "markLost": "Segna come persa",
@@ -231,7 +231,7 @@
     "Patienttrips": {
       "patienttrips": "Viaggi dei pazienti",
       "patient": "Cartella paziente",
-      "plan": "Piano di trattamento",
+      "plan": "Piano di cura",
       "phase": "Fase",
       "status": "Stato",
       "arrivalAt": "Arrivo",

@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/portal/cases/caseOffers.tsx",
   "title": "Comparer les devis",
-  "clinic": "Cabinet",
+  "clinic": "Clinique",
   "total": "Total",
   "deposit": "Acompte",
   "trips": "Voyages",

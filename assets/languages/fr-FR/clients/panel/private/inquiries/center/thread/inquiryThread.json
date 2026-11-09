@@ -9,5 +9,5 @@
   "attach": "Joindre",
   "send": "Envoyer",
   "loadError": "Impossible de charger les messages.",
-  "sendError": "Le message n'a pas pu être envoyé."
+  "sendError": "Le message n'a pas pu être envoyé. Réessayez."
 }

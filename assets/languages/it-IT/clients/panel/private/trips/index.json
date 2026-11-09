@@ -11,7 +11,7 @@
         "title": "In questa pagina",
         "items": [
           "Una fase successiva del piano non può iniziare prima del tempo di guarigione previsto dopo il viaggio precedente.",
-          "Attiva il transfer dall'aeroporto per i pazienti che andate a prendere."
+          "Attiva il transfer dall'aeroporto per i pazienti che vai a prendere."
         ]
       }
     ]
@@ -32,7 +32,7 @@
       }
     },
     "patient": "Cartella paziente",
-    "plan": "Piano di trattamento",
+    "plan": "Piano di cura",
     "phase": "Fase",
     "status": "Stato",
     "arrivalAt": "Arrivo",

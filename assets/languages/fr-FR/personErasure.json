@@ -1,5 +1,5 @@
 {
   "modules": {
-    "dentalClinic": "Clinique dentaire : les dossiers patients et les rendez-vous restent avec leurs traitements et montants mais perdent le nom et les coordonnées ; les antécédents médicaux, radiographies, photos, messages de demande et voyages sont supprimés définitivement."
+    "dentalClinic": "Cabinet dentaire : les dossiers patients et les rendez-vous restent avec leurs soins et montants mais perdent le nom et les coordonnées ; les antécédents médicaux, radiographies, photos, messages de demande et voyages sont supprimés définitivement."
   }
 }

@@ -11,7 +11,7 @@
         "title": "Sur cette page",
         "items": [
           "Définissez le fuseau horaire IANA (par exemple Europe/Zurich) pour que les rendez-vous restent corrects lors des changements d'heure.",
-          "Ajoutez les jours fériés comme jours de fermeture ; personne ne peut y être réservé ces jours-là.",
+          "Ajoutez les jours fériés comme jours de fermeture ; aucun rendez-vous ne peut y être pris ces jours-là.",
           "Un site avec des rendez-vous ne peut pas être supprimé ; désactivez-le plutôt."
         ]
       }

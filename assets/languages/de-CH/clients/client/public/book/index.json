@@ -39,7 +39,7 @@
   "minutes": "Min.",
   "role": {
     "dentist": "Zahnärztin/Zahnarzt",
-    "hygienist": "Dentalhygienikerin",
+    "hygienist": "Dentalhygieniker/in",
     "orthodontist": "Kieferorthopäde/in",
     "other": "Teammitglied"
   }

@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/recordPlanPaymentDialog.tsx",
   "title": "Enregistrer un paiement",
-  "description": "Argent encaissé par la clinique : espèces, terminal de paiement ou virement. Il est déduit de ce que le patient doit sur ce plan.",
+  "description": "Argent encaissé par le cabinet : espèces, terminal de paiement ou virement. Il est déduit de ce que le patient doit sur ce plan.",
   "confirm": "Enregistrer le paiement",
   "cancel": "Annuler",
   "amountLabel": "Montant",
