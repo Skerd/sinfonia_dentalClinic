@@ -8,7 +8,9 @@ import {Button} from "@coreModule/components/ui/button.tsx";
 import {Popover, PopoverContent, PopoverTrigger} from "@coreModule/components/ui/popover.tsx";
 import type {ClinicSlotsFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.forms.ts";
 import type {ClinicSlot, ClinicSlotsResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
-import {addDays, dateInDays, dayNumber, formatDay, formatLongDay, weekdayShort} from "./clinicFormat.ts";
+import {addCalendarDays, companyToday} from "@coreModule/helpers/general/dateTime.ts";
+import {dayNumber, formatDay, formatLongDay, weekdayShort} from "./clinicFormat.ts";
+import {useClinicConfig} from "./clinicConfigContext.tsx";
 
 const DAYS_SHOWN = 7;
 const SLOTS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/slots"};
@@ -36,7 +38,10 @@ function periodOf(time: string): (typeof PERIODS)[number] {
 
 /** A week of free days; pick a day, then an hour. Times are local to the clinic. */
 function ClinicSlotPicker({service, location, practitioner, selected, onPick, compact, resolveLanguageKey, languageCode}: Props) {
-    const [fromDate, setFromDate] = useState(() => selected?.date ?? dateInDays(0));
+    // "Today" is the clinic location's calendar day, as the server counts free days, not the patient's browser day (GLB-09).
+    const {config} = useClinicConfig();
+    const locationTimeZone = config?.locations.find((candidate) => candidate._id === location)?.timezone ?? "UTC";
+    const [fromDate, setFromDate] = useState(() => selected?.date ?? companyToday(locationTimeZone));
     const [pickedDate, setPickedDate] = useState(selected?.date ?? "");
     const [timesOpen, setTimesOpen] = useState(false);
 
@@ -57,7 +62,7 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
     const timezone = slots.data?.data.timezone ?? "";
     const error = slots.error ? slots.error.message || slots.error.error || String(resolveLanguageKey("loadFailed")) : null;
 
-    const today = dateInDays(0);
+    const today = companyToday(timezone || locationTimeZone);
     const picked = days?.find((day) => day.date === pickedDate);
     const grouped = PERIODS.map((period) => ({
         period,
@@ -114,14 +119,14 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
     return (
         <div className={cn("flex flex-col", compact ? "gap-4" : "gap-5")}>
             <div className="flex items-center justify-between gap-3">
-                <Button variant="ghost" size="icon" type="button" disabled={fromDate <= today} onClick={() => setFromDate((d) => addDays(d, -DAYS_SHOWN))} aria-label={String(resolveLanguageKey("earlier"))}>
+                <Button variant="ghost" size="icon" type="button" disabled={fromDate <= today} onClick={() => setFromDate((d) => addCalendarDays(d, -DAYS_SHOWN))} aria-label={String(resolveLanguageKey("earlier"))}>
                     <IconChevronLeft size={18} />
                 </Button>
                 <p className="min-w-0 text-center text-xs font-medium tracking-wide text-muted-foreground">
-                    {formatDay(fromDate, languageCode)} – {formatDay(addDays(fromDate, DAYS_SHOWN - 1), languageCode)}
+                    {formatDay(fromDate, languageCode)} – {formatDay(addCalendarDays(fromDate, DAYS_SHOWN - 1), languageCode)}
                     {timezone ? ` · ${resolveLanguageKey("localTime")}` : ""}
                 </p>
-                <Button variant="ghost" size="icon" type="button" onClick={() => setFromDate((d) => addDays(d, DAYS_SHOWN))} aria-label={String(resolveLanguageKey("later"))}>
+                <Button variant="ghost" size="icon" type="button" onClick={() => setFromDate((d) => addCalendarDays(d, DAYS_SHOWN))} aria-label={String(resolveLanguageKey("later"))}>
                     <IconChevronRight size={18} />
                 </Button>
             </div>

@@ -1,6 +1,6 @@
 import {describe, expect, it} from "vitest";
 import type {ResolveLanguageKey} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import {addDays, dayNumber, formatDay, priceLabel, weekdayShort} from "../clinicFormat.ts";
+import {dayNumber, formatDay, priceLabel, weekdayShort} from "../clinicFormat.ts";
 import {bookableServices, type ClinicConfig} from "../clinicConfigContext.tsx";
 
 const t: ResolveLanguageKey = (key: string) => `t:${key}`;
@@ -19,12 +19,6 @@ describe("priceLabel", () => {
 });
 
 describe("calendar days", () => {
-    it("adds days across month and year ends, and back", () => {
-        expect(addDays("2026-10-28", 7)).toBe("2026-11-04");
-        expect(addDays("2026-12-29", 7)).toBe("2027-01-05");
-        expect(addDays("2026-03-01", -1)).toBe("2026-02-28");
-    });
-
     it("formats a local date as that calendar day, not the UTC instant before it", () => {
         expect(formatDay("2026-11-01", "en-GB")).toBe("Sun 1 Nov");
         expect(weekdayShort("2026-11-01", "en-GB")).toBe("Sun");
