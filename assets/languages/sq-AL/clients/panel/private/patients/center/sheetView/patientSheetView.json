@@ -71,5 +71,39 @@
   "appointmentsGroup": "Takimet",
   "plansGroup": "Ofertat",
   "tripsGroup": "Udhëtimet",
-  "inquiriesGroup": "Kërkesat për ofertë"
+  "inquiriesGroup": "Kërkesat për ofertë",
+  "appointmentStatus": {
+    "pending": "Në pritje të konfirmimit",
+    "confirmed": "Konfirmuar",
+    "completed": "Përfunduar",
+    "cancelled": "Anuluar",
+    "no_show": "Mosparaqitje"
+  },
+  "planStatus": {
+    "draft": "Skicë",
+    "sent": "Dërguar",
+    "accepted": "Pranuar",
+    "rejected": "Nuk u zgjodh",
+    "expired": "Skaduar",
+    "superseded": "Zëvendësuar"
+  },
+  "tripStatus": {
+    "planned": "I planifikuar",
+    "confirmed": "I konfirmuar",
+    "completed": "I përfunduar",
+    "cancelled": "I anuluar"
+  },
+  "inquiryStatus": {
+    "new": "E re",
+    "in_review": "Në shqyrtim",
+    "info_requested": "Në pritje të pacientit",
+    "declined": "Refuzuar",
+    "lost": "Humbur",
+    "withdrawn": "Tërhequr",
+    "converted": "Kartela u hap",
+    "quoted": "Oferta u dërgua"
+  },
+  "toggleReferenceListView": "Ndrysho pamjen e listës",
+  "compactView": "Kompakte",
+  "cardsView": "Karta"
 }

@@ -21,5 +21,11 @@
   "allLocations": "All locations",
   "summary": "{count} appointments",
   "moved": "{number} moved to {time} with {dentist}",
-  "bookHere": "Book an appointment here"
+  "bookHere": "Book an appointment here",
+  "drop": {
+    "free": "Free, drop to move here",
+    "outside": "Outside working hours",
+    "timeOff": "The dentist is off then",
+    "overlap": "Overlaps another appointment"
+  }
 }

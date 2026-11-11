@@ -71,5 +71,39 @@
   "appointmentsGroup": "Termine",
   "plansGroup": "Angebote",
   "tripsGroup": "Reisen",
-  "inquiriesGroup": "Kostenanfragen"
+  "inquiriesGroup": "Kostenanfragen",
+  "appointmentStatus": {
+    "pending": "Wartet auf Bestätigung",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "no_show": "Nicht erschienen"
+  },
+  "planStatus": {
+    "draft": "Entwurf",
+    "sent": "Gesendet",
+    "accepted": "Angenommen",
+    "rejected": "Nicht gewählt",
+    "expired": "Abgelaufen",
+    "superseded": "Ersetzt"
+  },
+  "tripStatus": {
+    "planned": "Geplant",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "cancelled": "Abgesagt"
+  },
+  "inquiryStatus": {
+    "new": "Neu",
+    "in_review": "In Prüfung",
+    "info_requested": "Wartet auf Patient",
+    "declined": "Abgelehnt",
+    "lost": "Verloren",
+    "withdrawn": "Zurückgezogen",
+    "converted": "Akte eröffnet",
+    "quoted": "Angebot gesendet"
+  },
+  "toggleReferenceListView": "Listenansicht umschalten",
+  "compactView": "Kompakt",
+  "cardsView": "Karten"
 }

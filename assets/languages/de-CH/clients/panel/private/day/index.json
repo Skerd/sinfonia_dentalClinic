@@ -21,5 +21,11 @@
   "allLocations": "Alle Standorte",
   "summary": "{count} Termine",
   "moved": "{number} auf {time} bei {dentist} verschoben",
-  "bookHere": "Hier einen Termin buchen"
+  "bookHere": "Hier einen Termin buchen",
+  "drop": {
+    "free": "Frei, hier ablegen zum Verschieben",
+    "outside": "Ausserhalb der Arbeitszeit",
+    "timeOff": "Der Zahnarzt ist dann abwesend",
+    "overlap": "Überschneidet sich mit einem anderen Termin"
+  }
 }

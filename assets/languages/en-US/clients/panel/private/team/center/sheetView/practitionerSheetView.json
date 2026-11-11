@@ -58,5 +58,8 @@
     "pl": "Polish",
     "uk": "Ukrainian",
     "ar": "Arabic"
-  }
+  },
+  "toggleReferenceListView": "Toggle list layout",
+  "compactView": "Compact",
+  "cardsView": "Cards"
 }

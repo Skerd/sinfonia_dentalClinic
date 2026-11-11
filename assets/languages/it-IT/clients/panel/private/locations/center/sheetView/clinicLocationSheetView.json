@@ -37,5 +37,8 @@
   "createdBy": "Creato da",
   "deletedAt": "Eliminato il",
   "deletedBy": "Eliminato da",
-  "closed": "Chiuso"
+  "closed": "Chiuso",
+  "toggleReferenceListView": "Cambia visualizzazione elenco",
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

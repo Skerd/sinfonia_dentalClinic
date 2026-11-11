@@ -62,5 +62,8 @@
   "createdBy": "Creato da",
   "deletedAt": "Eliminato il",
   "deletedBy": "Eliminato da",
-  "patientRecord": "Cartella paziente"
+  "patientRecord": "Cartella paziente",
+  "toggleReferenceListView": "Cambia visualizzazione elenco",
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

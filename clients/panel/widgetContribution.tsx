@@ -44,6 +44,11 @@ const AppointmentCardLazy = lazy(() => import("@dentalClinicModule/clients/panel
 const TreatmentPlanCardLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/plans/center/cardView/treatmentPlanCard.tsx"));
 const PatientTripCardLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/trips/center/cardView/patientTripCard.tsx"));
 const ClinicInquiryCardLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/inquiries/center/cardView/clinicInquiryCard.tsx"));
+// Sheets the hub's compact rows open (`compactRow.linkedSheetWidget`).
+const AppointmentSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/appointments/center/sheetView/appointmentSheetView.tsx"));
+const TreatmentPlanSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx"));
+const PatientTripSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/trips/center/sheetView/patientTripSheetView.tsx"));
+const ClinicInquirySheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/clinicInquirySheetView.tsx"));
 
 const CAN_MESSAGE: ClinicInquiry["status"][] = ["new", "in_review", "info_requested", "quoted", "converted"];
 const CAN_QUOTE: ClinicInquiry["status"][] = ["new", "in_review", "info_requested", "quoted"];
@@ -86,6 +91,10 @@ const dentalClinicWidgetContribution: WidgetContribution = {
         "#TreatmentPlanCard": TreatmentPlanCardLazy,
         "#PatientTripCard": PatientTripCardLazy,
         "#ClinicInquiryCard": ClinicInquiryCardLazy,
+        "#AppointmentSheetView": AppointmentSheetViewLazy,
+        "#TreatmentPlanSheetView": TreatmentPlanSheetViewLazy,
+        "#PatientTripSheetView": PatientTripSheetViewLazy,
+        "#ClinicInquirySheetView": ClinicInquirySheetViewLazy,
     },
     referencesDefaultItemProps: {
         "#AppointmentCard": "appointment",

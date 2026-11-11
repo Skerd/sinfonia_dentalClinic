@@ -21,5 +21,11 @@
   "allLocations": "Të gjitha vendndodhjet",
   "summary": "{count} takime",
   "moved": "{number} u zhvendos në {time} te {dentist}",
-  "bookHere": "Rezervo një takim këtu"
+  "bookHere": "Rezervo një takim këtu",
+  "drop": {
+    "free": "E lirë, lëshoje për ta zhvendosur këtu",
+    "outside": "Jashtë orarit të punës",
+    "timeOff": "Dentisti nuk është në punë atëherë",
+    "overlap": "Përputhet me një takim tjetër"
+  }
 }

@@ -62,5 +62,8 @@
   "createdBy": "Créé par",
   "deletedAt": "Supprimé le",
   "deletedBy": "Supprimé par",
-  "patientRecord": "Dossier patient"
+  "patientRecord": "Dossier patient",
+  "toggleReferenceListView": "Basculer l'affichage de la liste",
+  "compactView": "Compact",
+  "cardsView": "Cartes"
 }

@@ -37,5 +37,8 @@
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
   "deletedBy": "Fshirë nga",
-  "closed": "Mbyllur"
+  "closed": "Mbyllur",
+  "toggleReferenceListView": "Ndrysho pamjen e listës",
+  "compactView": "Kompakte",
+  "cardsView": "Karta"
 }

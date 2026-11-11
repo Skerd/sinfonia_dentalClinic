@@ -58,5 +58,8 @@
     "pl": "Polacco",
     "uk": "Ucraino",
     "ar": "Arabo"
-  }
+  },
+  "toggleReferenceListView": "Cambia visualizzazione elenco",
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

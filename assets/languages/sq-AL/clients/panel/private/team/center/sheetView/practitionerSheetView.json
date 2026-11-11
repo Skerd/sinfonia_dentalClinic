@@ -58,5 +58,8 @@
     "pl": "Polonisht",
     "uk": "Ukrainisht",
     "ar": "Arabisht"
-  }
+  },
+  "toggleReferenceListView": "Ndrysho pamjen e listës",
+  "compactView": "Kompakte",
+  "cardsView": "Karta"
 }

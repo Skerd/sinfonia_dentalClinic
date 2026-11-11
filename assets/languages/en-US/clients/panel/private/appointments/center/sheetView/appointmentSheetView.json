@@ -62,5 +62,8 @@
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
   "deletedBy": "Deleted by",
-  "patientRecord": "Patient folder"
+  "patientRecord": "Patient folder",
+  "toggleReferenceListView": "Toggle list layout",
+  "compactView": "Compact",
+  "cardsView": "Cards"
 }

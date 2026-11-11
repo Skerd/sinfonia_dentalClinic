@@ -71,5 +71,39 @@
   "appointmentsGroup": "Appuntamenti",
   "plansGroup": "Preventivi",
   "tripsGroup": "Viaggi",
-  "inquiriesGroup": "Richieste di preventivo"
+  "inquiriesGroup": "Richieste di preventivo",
+  "appointmentStatus": {
+    "pending": "In attesa di conferma",
+    "confirmed": "Confermato",
+    "completed": "Completato",
+    "cancelled": "Annullato",
+    "no_show": "Non presentato"
+  },
+  "planStatus": {
+    "draft": "Bozza",
+    "sent": "Inviato",
+    "accepted": "Accettato",
+    "rejected": "Non scelto",
+    "expired": "Scaduto",
+    "superseded": "Sostituito"
+  },
+  "tripStatus": {
+    "planned": "Pianificato",
+    "confirmed": "Confermato",
+    "completed": "Concluso",
+    "cancelled": "Annullato"
+  },
+  "inquiryStatus": {
+    "new": "Nuova",
+    "in_review": "In valutazione",
+    "info_requested": "In attesa del paziente",
+    "declined": "Rifiutata",
+    "lost": "Persa",
+    "withdrawn": "Ritirata",
+    "converted": "Cartella aperta",
+    "quoted": "Preventivo inviato"
+  },
+  "toggleReferenceListView": "Cambia visualizzazione elenco",
+  "compactView": "Compatta",
+  "cardsView": "Schede"
 }

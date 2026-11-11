@@ -53,6 +53,14 @@ function hhmm(minutes: number): string {
 const endMinutes = (iso: string, timeZone: string) => minutesAt(iso, timeZone) || DAY_MINUTES;
 
 type Dragging = {id: string; locationId: string; grabMinutes: number};
+/** Where a dragged appointment would land: the column under the pointer and the snapped start. */
+type DropTarget = {locationId: string; practitionerId: string; minutes: number};
+/** What the day view can already tell about a landing spot; the server's rules (buffers, notice) still decide. */
+type DropVerdict = "free" | "outside" | "timeOff" | "overlap";
+
+const MINUTE_MS = 60_000;
+const overlapsMs = (a: {start: number; end: number}, b: {start: number; end: number}) => a.start < b.end && b.start < a.end;
+const msOf = (interval: Interval) => ({start: Date.parse(interval.start), end: Date.parse(interval.end)});
 
 /**
  * The clinic's day: a column per dentist at each location, with working hours, time off and appointments, each
@@ -68,6 +76,7 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
     const [date, setDate] = useState(() => companyToday(companyZone));
     const [openId, setOpenId] = useState<string | null>(null);
     const [dragging, setDragging] = useState<Dragging | null>(null);
+    const [dropTarget, setDropTarget] = useState<DropTarget | null>(null);
     // Blocks wear the status tones the appointment badges and table use (UX-02).
     const statusTones = useTableConfig("appointments").columns.find((column) => column.id === "status")?.meta?.enumTones;
 
@@ -149,16 +158,79 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
         navigate(appointmentCreatePath({date, time: hhmm(minutes), practitioner: practitionerId, location: entry._id}));
     };
 
+    /** The dragged appointment at `minutes` with that dentist: inside their working hours, clear of time off and of their other appointments. */
+    const verdictOf = (entry: ClinicDayLocation, practitionerId: string, appointment: ClinicDayAppointment, minutes: number): DropVerdict => {
+        const shift = (minutes - minutesAt(appointment.startAt, entry.timezone)) * MINUTE_MS;
+        const landing = {start: Date.parse(appointment.startAt) + shift, end: Date.parse(appointment.endAt) + shift};
+        const practitioner = entry.practitioners.find((p) => p._id === practitionerId);
+        if (!practitioner?.working.some((interval) => {
+            const work = msOf(interval);
+            return work.start <= landing.start && landing.end <= work.end;
+        })) return "outside";
+        if (practitioner.timeOff.some((interval) => overlapsMs(msOf(interval), landing))) return "timeOff";
+        const busy = (day?.appointments ?? []).some((other) => other._id !== appointment._id && other.practitionerId === practitionerId
+            && overlapsMs({start: Date.parse(other.startAt), end: Date.parse(other.endAt)}, landing));
+        return busy ? "overlap" : "free";
+    };
+
+    const dragOver = (event: DragEvent<HTMLDivElement>, entry: ClinicDayLocation, practitionerId: string) => {
+        // Another location is no drop target: the browser shows "not allowed" there.
+        if (!dragging || dragging.locationId !== entry._id) return;
+        event.preventDefault();
+        const minutes = minutesUnder(event, event.currentTarget, dragging.grabMinutes);
+        setDropTarget((current) => current && current.practitionerId === practitionerId && current.locationId === entry._id && current.minutes === minutes
+            ? current
+            : {locationId: entry._id, practitionerId, minutes});
+    };
+
+    const endDrag = () => {
+        setDragging(null);
+        setDropTarget(null);
+    };
+
+    const slotLines = Array.from({length: Math.floor((range.end - range.start) / step)}, (_, i) => range.start + i * step).filter((minutes) => minutes % 60 !== 0);
+
+    /** Where the dragged appointment would land in this column, green when it fits, red with the reason when it does not. */
+    const dropPreview = (entry: ClinicDayLocation, practitionerId: string) => {
+        if (!dragging || !dropTarget || dropTarget.locationId !== entry._id || dropTarget.practitionerId !== practitionerId) return null;
+        const appointment = day?.appointments.find((row) => row._id === dragging.id);
+        if (!appointment) return null;
+        const length = endMinutes(appointment.endAt, entry.timezone) - minutesAt(appointment.startAt, entry.timezone);
+        const from = dropTarget.minutes;
+        const verdict = verdictOf(entry, practitionerId, appointment, from);
+        return (
+            <div
+                className={cn(
+                    "pointer-events-none absolute inset-x-1 z-20 flex flex-wrap content-start gap-x-1.5 overflow-hidden rounded border-2 border-dashed px-2 py-1 text-xs font-medium shadow-sm",
+                    verdict === "free"
+                        ? "border-emerald-500 bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
+                        : "border-destructive bg-destructive/15 text-destructive",
+                )}
+                style={{top: top(from), height: height(from, from + length)}}
+                role="status"
+            >
+                <span className="tabular-nums">{hhmm(from)}–{hhmm(from + length)}</span>
+                <span>· {resolveLanguageKey(`drop.${verdict}`)}</span>
+            </div>
+        );
+    };
+
     const drop = (event: DragEvent<HTMLDivElement>, entry: ClinicDayLocation, practitionerId: string) => {
         event.preventDefault();
         const moving = dragging;
-        setDragging(null);
+        endDrag();
         // An appointment stays at its location: the reschedule action moves the time and the dentist only.
         if (!moving || moving.locationId !== entry._id) return;
         const appointment = day?.appointments.find((row) => row._id === moving.id);
         if (!appointment) return;
         const minutes = minutesUnder(event, event.currentTarget, moving.grabMinutes);
         if (minutes === minutesAt(appointment.startAt, entry.timezone) && practitionerId === appointment.practitionerId) return;
+        // A spot the preview already showed as taken is not sent; the reason is the one the preview gave.
+        const verdict = verdictOf(entry, practitionerId, appointment, minutes);
+        if (verdict !== "free") {
+            toast.error(String(resolveLanguageKey(`drop.${verdict}`)));
+            return;
+        }
         const dentist = entry.practitioners.find((p) => p._id === practitionerId)?.displayName ?? "";
         setMove((current) => ({
             payload: {_id: appointment._id, date, time: hhmm(minutes), practitioner: practitionerId},
@@ -225,7 +297,11 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                             const isToday = date === companyToday(entry.timezone);
                             const now = isToday ? minutesAt(new Date().toISOString(), entry.timezone) : null;
                             return (
-                                <div key={entry._id} className="flex min-w-fit flex-1 flex-col border-r last:border-r-0">
+                                <div
+                                    key={entry._id}
+                                    // A drag stays at its location: the others fade while it lasts.
+                                    className={cn("flex min-w-fit flex-1 flex-col border-r transition-opacity last:border-r-0", dragging && dragging.locationId !== entry._id && "opacity-40")}
+                                >
                                     {showLocationNames ? (
                                         <div className="flex h-8 items-center border-b bg-muted/30 px-3 text-xs font-medium text-muted-foreground">{entry.name}</div>
                                     ) : null}
@@ -239,10 +315,17 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                                                 <div
                                                     className="relative bg-muted/40"
                                                     style={{height: top(range.end)}}
-                                                    onDragOver={(event) => dragging?.locationId === entry._id && event.preventDefault()}
+                                                    onDragOver={(event) => dragOver(event, entry, practitioner._id)}
+                                                    onDragLeave={(event) => {
+                                                        if (!(event.relatedTarget instanceof Node && event.currentTarget.contains(event.relatedTarget))) setDropTarget(null);
+                                                    }}
                                                     onDrop={(event) => drop(event, entry, practitioner._id)}
                                                 >
                                                     {hours.map((minutes) => <div key={minutes} className="pointer-events-none absolute inset-x-0 border-t border-border/50" style={{top: top(minutes)}} />)}
+                                                    {/* While dragging, the booking grid shows where an appointment can start. */}
+                                                    {dragging?.locationId === entry._id ? slotLines.map((minutes) => (
+                                                        <div key={`slot-${minutes}`} className="pointer-events-none absolute inset-x-0 z-[5] border-t border-dashed border-primary/25" style={{top: top(minutes)}} aria-hidden />
+                                                    )) : null}
                                                     {practitioner.working.map((interval) => create ? (
                                                         <Button
                                                             key={interval.start}
@@ -277,7 +360,7 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                                                                     locationId: entry._id,
                                                                     grabMinutes: ((event.clientY - event.currentTarget.getBoundingClientRect().top) / HOUR_PX) * 60,
                                                                 })}
-                                                                onDragEnd={() => setDragging(null)}
+                                                                onDragEnd={endDrag}
                                                                 onClick={() => setOpenId(appointment._id)}
                                                                 className={cn(
                                                                     "absolute inset-x-1 z-10 overflow-hidden rounded border-l-4 border-current px-2 py-1 text-left text-xs",
@@ -293,6 +376,7 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                                                             </Button>
                                                         );
                                                     })}
+                                                    {dropPreview(entry, practitioner._id)}
                                                     {now !== null && now >= range.start && now <= range.end ? (
                                                         <div className="pointer-events-none absolute inset-x-0 z-10 border-t-2 border-destructive" style={{top: top(now)}} aria-hidden />
                                                     ) : null}

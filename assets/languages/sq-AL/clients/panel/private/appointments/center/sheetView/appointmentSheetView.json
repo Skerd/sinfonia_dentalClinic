@@ -62,5 +62,8 @@
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
   "deletedBy": "Fshirë nga",
-  "patientRecord": "Kartela e pacientit"
+  "patientRecord": "Kartela e pacientit",
+  "toggleReferenceListView": "Ndrysho pamjen e listës",
+  "compactView": "Kompakte",
+  "cardsView": "Karta"
 }

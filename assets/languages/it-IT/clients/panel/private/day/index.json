@@ -21,5 +21,11 @@
   "allLocations": "Tutte le sedi",
   "summary": "{count} appuntamenti",
   "moved": "{number} spostato alle {time} con {dentist}",
-  "bookHere": "Prenota un appuntamento qui"
+  "bookHere": "Prenota un appuntamento qui",
+  "drop": {
+    "free": "Libero, rilascia per spostare qui",
+    "outside": "Fuori dall'orario di lavoro",
+    "timeOff": "Il dentista è assente in quel momento",
+    "overlap": "Si sovrappone a un altro appuntamento"
+  }
 }

@@ -71,5 +71,39 @@
   "appointmentsGroup": "Appointments",
   "plansGroup": "Quotes",
   "tripsGroup": "Trips",
-  "inquiriesGroup": "Estimate requests"
+  "inquiriesGroup": "Estimate requests",
+  "appointmentStatus": {
+    "pending": "Awaiting confirmation",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "no_show": "No-show"
+  },
+  "planStatus": {
+    "draft": "Draft",
+    "sent": "Sent",
+    "accepted": "Accepted",
+    "rejected": "Not chosen",
+    "expired": "Expired",
+    "superseded": "Replaced"
+  },
+  "tripStatus": {
+    "planned": "Planned",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  },
+  "inquiryStatus": {
+    "new": "New",
+    "in_review": "In review",
+    "info_requested": "Waiting for patient",
+    "declined": "Declined",
+    "lost": "Lost",
+    "withdrawn": "Withdrawn",
+    "converted": "Patient folder opened",
+    "quoted": "Quote sent"
+  },
+  "toggleReferenceListView": "Toggle list layout",
+  "compactView": "Compact",
+  "cardsView": "Cards"
 }
