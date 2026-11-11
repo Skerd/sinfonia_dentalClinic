@@ -3,7 +3,9 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {DropdownMenuItem} from "@coreModule/components/ui/dropdown-menu.tsx";
-import {IconEye, IconFileSearch, IconFolderPlus, IconThumbDown, IconUserCheck, IconUserOff} from "@tabler/icons-react";
+import {IconEye, IconFilePlus, IconFileSearch, IconFolderPlus, IconThumbDown, IconUserCheck, IconUserOff} from "@tabler/icons-react";
+import {useNavigate} from "react-router-dom";
+import {treatmentPlanCreatePath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";
 import type {ClinicInquiry} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicInquiry/clinicInquiry.dto.ts";
 
 /** What can be done with an estimate request in its current state, for the row and sheet menus. */
@@ -18,6 +20,8 @@ type Props = WithLanguageType & {
 
 function InquiryMenu({inquiry, onAction, resolveLanguageKey}: Props) {
     const {write} = useAccess("clinicinquiries");
+    const plans = useAccess("treatmentplans");
+    const navigate = useNavigate();
     if (inquiry.deletedAt) return null;
 
     const open = OPEN_STATUSES.includes(inquiry.status);
@@ -31,6 +35,13 @@ function InquiryMenu({inquiry, onAction, resolveLanguageKey}: Props) {
     return (
         <>
             {write?.status && inquiry.status === "new" && item("startReview", IconEye)}
+            {/* The quote form opens on this request, the way the sheet's Quotes section does. */}
+            {plans.create && open ? (
+                <DropdownMenuItem onClick={(e) => { e.preventDefault(); e.stopPropagation(); navigate(treatmentPlanCreatePath({inquiry: inquiry._id})); }}>
+                    <IconFilePlus size={16} />
+                    <p>{resolveLanguageKey("writeQuote")}</p>
+                </DropdownMenuItem>
+            ) : null}
             {write?.status && open && item("requestInfo", IconFileSearch)}
             {write?.status && open && item("convert", IconFolderPlus)}
             {write?.assignedTo && (open || inquiry.status === "converted") && item("assign", IconUserCheck)}

@@ -15,5 +15,13 @@
   "updatedAt": "Aktualisiert am",
   "createdBy": "Erstellt von",
   "deletedAt": "Gelöscht am",
-  "deletedBy": "Gelöscht von"
+  "deletedBy": "Gelöscht von",
+  "reason": "Grund",
+  "reasonValues": {
+    "holiday": "Ferien",
+    "sick": "Krankheit",
+    "training": "Weiterbildung",
+    "closure": "Praxis geschlossen",
+    "other": "Anderes"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/timeOff/editScheduleException.tsx",
   "title": "Abwesenheit bearbeiten",
-  "description": "Die Notiz ändern",
+  "description": "Verschieben oder Grund und Notiz ändern",
   "weekday": {
     "0": "Sonntag",
     "1": "Montag",
@@ -22,7 +22,20 @@
     "practitionerPlaceholder": "Fachperson auswählen",
     "startAtLabel": "Von",
     "startAtPlaceholder": "Beginn eingeben",
-    "targetHint": "Wählen Sie eine Fachperson für eine Abwesenheit oder einen Standort, um ihn für alle zu schliessen. Nicht beides. Bestehende Termine in dieser Zeit müssen zuerst verschoben werden."
+    "targetHint": "Wählen Sie eine Fachperson für eine Abwesenheit oder einen Standort, um ihn für alle zu schliessen. Nicht beides. Bestehende Termine in dieser Zeit müssen zuerst verschoben werden.",
+    "whoSectionTitle": "Wer",
+    "whenSectionTitle": "Wann und warum",
+    "noteSectionTitle": "Notiz",
+    "reasonLabel": "Grund",
+    "reasonPlaceholder": "Grund wählen",
+    "reason": {
+      "holiday": "Ferien",
+      "sick": "Krankheit",
+      "training": "Weiterbildung",
+      "closure": "Praxis geschlossen",
+      "other": "Anderes"
+    },
+    "moveHint": "Eine verschobene Abwesenheit wird erneut mit den Terminen abgeglichen: Ein Termin im neuen Zeitraum muss zuerst verschoben werden."
   },
   "axios": {
     "start": {
@@ -40,7 +53,7 @@
   },
   "formHeader": {
     "title": "Abwesenheit bearbeiten",
-    "description": "Die Notiz ändern"
+    "description": "Verschieben oder Grund und Notiz ändern"
   },
   "formButtons": {
     "cancel": "Abbrechen",

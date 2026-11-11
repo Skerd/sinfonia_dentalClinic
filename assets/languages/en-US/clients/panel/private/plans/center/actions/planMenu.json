@@ -4,5 +4,6 @@
   "revise": "Revise",
   "pdf": "Download PDF",
   "recordPayment": "Record a payment",
-  "refund": "Refund"
+  "refund": "Refund",
+  "acceptForPatient": "Patient accepted"
 }

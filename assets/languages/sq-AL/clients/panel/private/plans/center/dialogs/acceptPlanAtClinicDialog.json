@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/acceptPlanAtClinicDialog.tsx",
+  "title": "Pacienti pranoi",
+  "description": "Regjistroni që pacienti e pranoi këtë ofertë. Pagesat mund të merren menjëherë pas kësaj.",
+  "confirm": "Shëno si të pranuar",
+  "cancel": "Kthehu",
+  "channel": {
+    "in_person": "Personalisht në klinikë",
+    "phone": "Me telefon"
+  }
+}

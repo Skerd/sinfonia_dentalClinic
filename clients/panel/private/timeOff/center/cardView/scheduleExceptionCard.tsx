@@ -12,6 +12,7 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ScheduleException} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/scheduleException/scheduleException.dto.ts";
 import ScheduleExceptionSheetView from "@dentalClinicModule/clients/panel/private/timeOff/center/sheetView/scheduleExceptionSheetView.tsx";
 import {scheduleExceptionEditPath} from "@dentalClinicModule/clients/panel/private/timeOff/index.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
 
 type ScheduleExceptionCardProps = WithLanguageType & {
     scheduleException: ScheduleException;
@@ -56,7 +57,12 @@ function ScheduleExceptionCard({
         >
             {({entity: row}) => (
                 <>
-                    <EntityCard.Header titlePath="practitioner" title={row.practitioner?.displayName ?? row.location?.name} />
+                    <EntityCard.Header
+                        titlePath="practitioner"
+                        title={row.practitioner?.displayName ?? row.location?.name}
+                        badgesBesideTitle
+                        badges={row.reason ? <Badge variant="outline" className="text-xs">{resolveLanguageKey(`reasonValues.${row.reason}`)}</Badge> : undefined}
+                    />
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconCalendarEvent}

@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/acceptPlanAtClinicDialog.tsx",
+  "title": "Le patient a accepté",
+  "description": "Enregistrez que le patient a accepté ce devis. Les paiements peuvent être encaissés juste après.",
+  "confirm": "Marquer comme accepté",
+  "cancel": "Retour",
+  "channel": {
+    "in_person": "En personne au cabinet",
+    "phone": "Par téléphone"
+  }
+}

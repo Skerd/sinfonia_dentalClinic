@@ -22,7 +22,19 @@
     "practitionerPlaceholder": "Zgjidh mjekun",
     "startAtLabel": "Nga",
     "startAtPlaceholder": "Shkruani fillimin",
-    "targetHint": "Zgjidhni një mjek për mungesë, ose një vendndodhje për ta mbyllur për të gjithë. Jo të dyja. Takimet ekzistuese në këtë kohë duhet të zhvendosen fillimisht."
+    "targetHint": "Zgjidhni një mjek për mungesë, ose një vendndodhje për ta mbyllur për të gjithë. Jo të dyja. Takimet ekzistuese në këtë kohë duhet të zhvendosen fillimisht.",
+    "whoSectionTitle": "Kush",
+    "whenSectionTitle": "Kur dhe pse",
+    "noteSectionTitle": "Shënim",
+    "reasonLabel": "Arsyeja",
+    "reasonPlaceholder": "Zgjidhni arsyen",
+    "reason": {
+      "holiday": "Pushime",
+      "sick": "Sëmundje",
+      "training": "Trajnim",
+      "closure": "Klinika e mbyllur",
+      "other": "Tjetër"
+    }
   },
   "axios": {
     "start": {

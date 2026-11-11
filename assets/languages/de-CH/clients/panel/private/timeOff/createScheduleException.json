@@ -22,7 +22,19 @@
     "practitionerPlaceholder": "Fachperson auswählen",
     "startAtLabel": "Von",
     "startAtPlaceholder": "Beginn eingeben",
-    "targetHint": "Wählen Sie eine Fachperson für eine Abwesenheit oder einen Standort, um ihn für alle zu schliessen. Nicht beides. Bestehende Termine in dieser Zeit müssen zuerst verschoben werden."
+    "targetHint": "Wählen Sie eine Fachperson für eine Abwesenheit oder einen Standort, um ihn für alle zu schliessen. Nicht beides. Bestehende Termine in dieser Zeit müssen zuerst verschoben werden.",
+    "whoSectionTitle": "Wer",
+    "whenSectionTitle": "Wann und warum",
+    "noteSectionTitle": "Notiz",
+    "reasonLabel": "Grund",
+    "reasonPlaceholder": "Grund wählen",
+    "reason": {
+      "holiday": "Ferien",
+      "sick": "Krankheit",
+      "training": "Weiterbildung",
+      "closure": "Praxis geschlossen",
+      "other": "Anderes"
+    }
   },
   "axios": {
     "start": {

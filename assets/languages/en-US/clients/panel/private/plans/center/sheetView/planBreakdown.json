@@ -10,5 +10,9 @@
   "deposit": "Deposit",
   "acceptedBy": "Accepted by {name} on {date}",
   "paid": "Paid",
-  "due": "Still due"
+  "due": "Still due",
+  "acceptedVia": {
+    "in_person": "{name} accepted in person at the clinic on {date}",
+    "phone": "{name} accepted by phone on {date}"
+  }
 }

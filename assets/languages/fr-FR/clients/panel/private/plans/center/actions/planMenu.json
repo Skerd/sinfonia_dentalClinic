@@ -4,5 +4,6 @@
   "revise": "Réviser",
   "pdf": "Télécharger le PDF",
   "recordPayment": "Enregistrer un paiement",
-  "refund": "Rembourser"
+  "refund": "Rembourser",
+  "acceptForPatient": "Le patient a accepté"
 }

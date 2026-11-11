@@ -15,5 +15,13 @@
   "updatedAt": "Updated at",
   "createdBy": "Created by",
   "deletedAt": "Deleted at",
-  "deletedBy": "Deleted by"
+  "deletedBy": "Deleted by",
+  "reason": "Reason",
+  "reasonValues": {
+    "holiday": "Holiday",
+    "sick": "Sick leave",
+    "training": "Training",
+    "closure": "Clinic closed",
+    "other": "Other"
+  }
 }

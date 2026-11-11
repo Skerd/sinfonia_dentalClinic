@@ -3,6 +3,9 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
+import {DATE_FORMATS, formatDate} from "@coreModule/helpers/general/dateTime.ts";
+
+const ACCEPTED_AT: Intl.DateTimeFormatOptions = {...DATE_FORMATS.mediumDate, hour: "2-digit", minute: "2-digit"};
 
 type Props = WithLanguageType & {
     plan: Pick<TreatmentPlan, "phases" | "lines" | "totals" | "currency" | "refundableUntilDays" | "acceptance" | "status" | "amountPaid" | "amountDue">;
@@ -71,7 +74,10 @@ function PlanBreakdown({plan, resolveLanguageKey}: Props) {
             </dl>
             {plan.acceptance ? (
                 <p className="text-xs text-muted-foreground">
-                    {resolveLanguageKey("acceptedBy").replace("{name}", plan.acceptance.name).replace("{date}", new Date(plan.acceptance.at).toLocaleString())}
+                    {/* A staff-recorded yes says how it was given; a portal acceptance is the patient's own signature. */}
+                    {resolveLanguageKey(plan.acceptance.channel ? `acceptedVia.${plan.acceptance.channel}` : "acceptedBy")
+                        .replace("{name}", plan.acceptance.name)
+                        .replace("{date}", formatDate(plan.acceptance.at, {format: ACCEPTED_AT}))}
                 </p>
             ) : null}
         </div>

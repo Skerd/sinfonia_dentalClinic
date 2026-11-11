@@ -5,5 +5,12 @@
   "startAt": "Starts",
   "endAt": "Ends",
   "location": "Location",
-  "when": "When"
+  "when": "When",
+  "reasonValues": {
+    "holiday": "Holiday",
+    "sick": "Sick leave",
+    "training": "Training",
+    "closure": "Clinic closed",
+    "other": "Other"
+  }
 }

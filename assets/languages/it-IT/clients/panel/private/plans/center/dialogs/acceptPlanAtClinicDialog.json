@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/acceptPlanAtClinicDialog.tsx",
+  "title": "Il paziente ha accettato",
+  "description": "Registra che il paziente ha accettato questo preventivo. Subito dopo si possono incassare i pagamenti.",
+  "confirm": "Segna come accettato",
+  "cancel": "Indietro",
+  "channel": {
+    "in_person": "Di persona allo studio",
+    "phone": "Per telefono"
+  }
+}

@@ -10,5 +10,9 @@
   "deposit": "Acconto",
   "acceptedBy": "Accettato da {name} il {date}",
   "paid": "Pagato",
-  "due": "Ancora dovuto"
+  "due": "Ancora dovuto",
+  "acceptedVia": {
+    "in_person": "{name} ha accettato di persona allo studio il {date}",
+    "phone": "{name} ha accettato per telefono il {date}"
+  }
 }

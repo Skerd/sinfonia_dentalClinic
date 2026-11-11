@@ -10,5 +10,9 @@
   "deposit": "Paradhënie",
   "acceptedBy": "Pranuar nga {name} më {date}",
   "paid": "E paguar",
-  "due": "Mbetet për t'u paguar"
+  "due": "Mbetet për t'u paguar",
+  "acceptedVia": {
+    "in_person": "{name} pranoi personalisht në klinikë më {date}",
+    "phone": "{name} pranoi me telefon më {date}"
+  }
 }

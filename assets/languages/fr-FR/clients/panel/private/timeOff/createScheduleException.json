@@ -22,7 +22,19 @@
     "practitionerPlaceholder": "Choisir un praticien",
     "startAtLabel": "De",
     "startAtPlaceholder": "Saisir le début",
-    "targetHint": "Choisissez un praticien pour une absence, ou un site pour le fermer à tous. Pas les deux. Les rendez-vous existants sur cette période doivent d'abord être déplacés."
+    "targetHint": "Choisissez un praticien pour une absence, ou un site pour le fermer à tous. Pas les deux. Les rendez-vous existants sur cette période doivent d'abord être déplacés.",
+    "whoSectionTitle": "Qui",
+    "whenSectionTitle": "Quand et pourquoi",
+    "noteSectionTitle": "Note",
+    "reasonLabel": "Motif",
+    "reasonPlaceholder": "Choisir un motif",
+    "reason": {
+      "holiday": "Congés",
+      "sick": "Maladie",
+      "training": "Formation",
+      "closure": "Cabinet fermé",
+      "other": "Autre"
+    }
   },
   "axios": {
     "start": {

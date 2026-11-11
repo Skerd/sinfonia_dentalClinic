@@ -34,6 +34,16 @@
     "createdBy": "Erstellt von",
     "company": "Unternehmen",
     "deletedAt": "Gelöscht am",
-    "deletedBy": "Gelöscht von"
+    "deletedBy": "Gelöscht von",
+    "reason": "Grund",
+    "!enums": {
+      "reason": {
+        "holiday": "Ferien",
+        "sick": "Krankheit",
+        "training": "Weiterbildung",
+        "closure": "Praxis geschlossen",
+        "other": "Anderes"
+      }
+    }
   }
 }

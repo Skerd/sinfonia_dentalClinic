@@ -15,5 +15,13 @@
   "updatedAt": "Përditësuar më",
   "createdBy": "Krijuar nga",
   "deletedAt": "Fshirë më",
-  "deletedBy": "Fshirë nga"
+  "deletedBy": "Fshirë nga",
+  "reason": "Arsyeja",
+  "reasonValues": {
+    "holiday": "Pushime",
+    "sick": "Sëmundje",
+    "training": "Trajnim",
+    "closure": "Klinika e mbyllur",
+    "other": "Tjetër"
+  }
 }

@@ -10,5 +10,9 @@
   "deposit": "Anzahlung",
   "acceptedBy": "Angenommen von {name} am {date}",
   "paid": "Bezahlt",
-  "due": "Noch offen"
+  "due": "Noch offen",
+  "acceptedVia": {
+    "in_person": "{name} hat am {date} persönlich in der Praxis angenommen",
+    "phone": "{name} hat am {date} telefonisch angenommen"
+  }
 }

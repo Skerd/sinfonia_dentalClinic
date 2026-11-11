@@ -5,5 +5,6 @@
   "convert": "Open patient folder",
   "assign": "Assign",
   "decline": "Decline",
-  "markLost": "Mark as lost"
+  "markLost": "Mark as lost",
+  "writeQuote": "Write a quote"
 }

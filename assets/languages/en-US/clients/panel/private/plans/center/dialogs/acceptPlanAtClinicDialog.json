@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/acceptPlanAtClinicDialog.tsx",
+  "title": "Patient accepted",
+  "description": "Record that the patient accepted this quote. Payments can be taken right after.",
+  "confirm": "Mark accepted",
+  "cancel": "Back",
+  "channel": {
+    "in_person": "In person at the clinic",
+    "phone": "By phone"
+  }
+}

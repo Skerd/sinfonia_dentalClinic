@@ -10,5 +10,11 @@ export default createGenericEditPage<ScheduleException, EditScheduleExceptionFor
     accessModel: "scheduleexceptions",
     apiUrl: "/api/dentalClinic/scheduleException",
     schema: editScheduleExceptionFormSchema,
+    // Who it is for is fixed and not on the form; send ids, not the loaded objects, so the hidden fields validate.
+    mapEntityData: (data) => ({
+        ...data,
+        practitioner: data.practitioner?._id,
+        location: data.location?._id,
+    }),
     submitIcon: <IconDeviceFloppy />,
 });

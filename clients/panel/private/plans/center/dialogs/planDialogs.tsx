@@ -1,5 +1,6 @@
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 import SendPlanDialog from "./sendPlanDialog.tsx";
+import AcceptPlanAtClinicDialog from "./acceptPlanAtClinicDialog.tsx";
 import RevisePlanDialog from "./revisePlanDialog.tsx";
 import RecordPlanPaymentDialog from "./recordPlanPaymentDialog.tsx";
 import RefundPlanPaymentDialog from "./refundPlanPaymentDialog.tsx";
@@ -23,6 +24,7 @@ export default function PlanDialogs({
 }) {
     switch (action) {
         case "send": return <SendPlanDialog plan={plan} onClose={onClose} onUpdated={onUpdated} />;
+        case "acceptForPatient": return <AcceptPlanAtClinicDialog plan={plan} onClose={onClose} onUpdated={onUpdated} />;
         case "revise": return <RevisePlanDialog plan={plan} onClose={onClose} onUpdated={onCreated} />;
         case "recordPayment": return <RecordPlanPaymentDialog plan={plan} onClose={onClose} onUpdated={onUpdated} />;
         case "refund": return <RefundPlanPaymentDialog plan={plan} onClose={onClose} onUpdated={onUpdated} />;

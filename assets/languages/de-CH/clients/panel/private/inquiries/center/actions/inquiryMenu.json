@@ -5,5 +5,6 @@
   "convert": "Patientenakte eröffnen",
   "assign": "Zuweisen",
   "decline": "Ablehnen",
-  "markLost": "Als verloren markieren"
+  "markLost": "Als verloren markieren",
+  "writeQuote": "Angebot erstellen"
 }

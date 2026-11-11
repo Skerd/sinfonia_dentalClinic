@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/timeOff/editScheduleException.tsx",
   "title": "Modifica assenza",
-  "description": "Modifica la nota",
+  "description": "Spostarla, o cambiare motivo e nota",
   "weekday": {
     "0": "Domenica",
     "1": "Lunedì",
@@ -22,7 +22,20 @@
     "practitionerPlaceholder": "Seleziona dentista",
     "startAtLabel": "Da",
     "startAtPlaceholder": "Inserisci l'inizio",
-    "targetHint": "Scegli un professionista per un'assenza, oppure una sede per chiuderla per tutti. Non entrambi. Gli appuntamenti esistenti in quel periodo vanno prima spostati."
+    "targetHint": "Scegli un professionista per un'assenza, oppure una sede per chiuderla per tutti. Non entrambi. Gli appuntamenti esistenti in quel periodo vanno prima spostati.",
+    "whoSectionTitle": "Chi",
+    "whenSectionTitle": "Quando e perché",
+    "noteSectionTitle": "Nota",
+    "reasonLabel": "Motivo",
+    "reasonPlaceholder": "Scegli un motivo",
+    "reason": {
+      "holiday": "Ferie",
+      "sick": "Malattia",
+      "training": "Formazione",
+      "closure": "Studio chiuso",
+      "other": "Altro"
+    },
+    "moveHint": "Un'assenza spostata viene ricontrollata con gli appuntamenti: un appuntamento nel nuovo periodo va prima spostato."
   },
   "axios": {
     "start": {
@@ -40,7 +53,7 @@
   },
   "formHeader": {
     "title": "Modifica assenza",
-    "description": "Modifica la nota"
+    "description": "Spostarla, o cambiare motivo e nota"
   },
   "formButtons": {
     "cancel": "Annulla",

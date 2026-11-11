@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/timeOff/editScheduleException.tsx",
   "title": "Edit time off",
-  "description": "Change the note",
+  "description": "Move it, or change the reason and note",
   "weekday": {
     "0": "Sunday",
     "1": "Monday",
@@ -22,7 +22,20 @@
     "practitionerPlaceholder": "Select dentist",
     "startAtLabel": "From",
     "startAtPlaceholder": "Enter start at",
-    "targetHint": "Choose a dentist for time off, or a location to close it for everyone. Not both. Existing appointments in this time must be moved first."
+    "targetHint": "Choose a dentist for time off, or a location to close it for everyone. Not both. Existing appointments in this time must be moved first.",
+    "whoSectionTitle": "Who",
+    "whenSectionTitle": "When and why",
+    "noteSectionTitle": "Note",
+    "reasonLabel": "Reason",
+    "reasonPlaceholder": "Select a reason",
+    "reason": {
+      "holiday": "Holiday",
+      "sick": "Sick leave",
+      "training": "Training",
+      "closure": "Clinic closed",
+      "other": "Other"
+    },
+    "moveHint": "Moving the time off is checked against appointments again: a booking inside the new window must be moved first."
   },
   "axios": {
     "start": {
@@ -40,7 +53,7 @@
   },
   "formHeader": {
     "title": "Edit time off",
-    "description": "Change the note"
+    "description": "Move it, or change the reason and note"
   },
   "formButtons": {
     "cancel": "Cancel",

@@ -5,5 +5,12 @@
   "startAt": "Commence",
   "endAt": "Se termine",
   "location": "Site",
-  "when": "Quand"
+  "when": "Quand",
+  "reasonValues": {
+    "holiday": "Congés",
+    "sick": "Maladie",
+    "training": "Formation",
+    "closure": "Cabinet fermé",
+    "other": "Autre"
+  }
 }

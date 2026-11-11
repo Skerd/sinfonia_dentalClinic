@@ -5,5 +5,12 @@
   "startAt": "Fillon",
   "endAt": "Përfundon",
   "location": "Vendndodhja",
-  "when": "Kur"
+  "when": "Kur",
+  "reasonValues": {
+    "holiday": "Pushime",
+    "sick": "Sëmundje",
+    "training": "Trajnim",
+    "closure": "Klinika e mbyllur",
+    "other": "Tjetër"
+  }
 }

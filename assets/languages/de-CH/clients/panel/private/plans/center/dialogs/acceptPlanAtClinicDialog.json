@@ -1,0 +1,11 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/acceptPlanAtClinicDialog.tsx",
+  "title": "Patient hat angenommen",
+  "description": "Halten Sie fest, dass der Patient dieses Angebot angenommen hat. Danach können Zahlungen erfasst werden.",
+  "confirm": "Als angenommen markieren",
+  "cancel": "Zurück",
+  "channel": {
+    "in_person": "Persönlich in der Praxis",
+    "phone": "Telefonisch"
+  }
+}

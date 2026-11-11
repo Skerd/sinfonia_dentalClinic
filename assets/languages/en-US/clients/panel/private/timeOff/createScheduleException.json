@@ -22,7 +22,19 @@
     "practitionerPlaceholder": "Select dentist",
     "startAtLabel": "From",
     "startAtPlaceholder": "Enter start at",
-    "targetHint": "Choose a dentist for time off, or a location to close it for everyone. Not both. Existing appointments in this time must be moved first."
+    "targetHint": "Choose a dentist for time off, or a location to close it for everyone. Not both. Existing appointments in this time must be moved first.",
+    "whoSectionTitle": "Who",
+    "whenSectionTitle": "When and why",
+    "noteSectionTitle": "Note",
+    "reasonLabel": "Reason",
+    "reasonPlaceholder": "Select a reason",
+    "reason": {
+      "holiday": "Holiday",
+      "sick": "Sick leave",
+      "training": "Training",
+      "closure": "Clinic closed",
+      "other": "Other"
+    }
   },
   "axios": {
     "start": {

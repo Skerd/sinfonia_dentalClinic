@@ -34,6 +34,16 @@
     "createdBy": "Creato da",
     "company": "Azienda",
     "deletedAt": "Eliminato il",
-    "deletedBy": "Eliminato da"
+    "deletedBy": "Eliminato da",
+    "reason": "Motivo",
+    "!enums": {
+      "reason": {
+        "holiday": "Ferie",
+        "sick": "Malattia",
+        "training": "Formazione",
+        "closure": "Studio chiuso",
+        "other": "Altro"
+      }
+    }
   }
 }

@@ -5,5 +5,12 @@
   "startAt": "Beginnt",
   "endAt": "Endet",
   "location": "Standort",
-  "when": "Wann"
+  "when": "Wann",
+  "reasonValues": {
+    "holiday": "Ferien",
+    "sick": "Krankheit",
+    "training": "Weiterbildung",
+    "closure": "Praxis geschlossen",
+    "other": "Anderes"
+  }
 }

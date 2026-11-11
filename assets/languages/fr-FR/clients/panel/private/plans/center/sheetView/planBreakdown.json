@@ -10,5 +10,9 @@
   "deposit": "Acompte",
   "acceptedBy": "Accepté par {name} le {date}",
   "paid": "Payé",
-  "due": "Reste dû"
+  "due": "Reste dû",
+  "acceptedVia": {
+    "in_person": "{name} a accepté en personne au cabinet le {date}",
+    "phone": "{name} a accepté par téléphone le {date}"
+  }
 }

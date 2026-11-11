@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/timeOff/editScheduleException.tsx",
   "title": "Ndrysho mungesën",
-  "description": "Ndrysho shënimin",
+  "description": "Zhvendoseni, ose ndryshoni arsyen dhe shënimin",
   "weekday": {
     "0": "E diel",
     "1": "E hënë",
@@ -22,7 +22,20 @@
     "practitionerPlaceholder": "Zgjidh mjekun",
     "startAtLabel": "Nga",
     "startAtPlaceholder": "Shkruani fillimin",
-    "targetHint": "Zgjidhni një mjek për mungesë, ose një vendndodhje për ta mbyllur për të gjithë. Jo të dyja. Takimet ekzistuese në këtë kohë duhet të zhvendosen fillimisht."
+    "targetHint": "Zgjidhni një mjek për mungesë, ose një vendndodhje për ta mbyllur për të gjithë. Jo të dyja. Takimet ekzistuese në këtë kohë duhet të zhvendosen fillimisht.",
+    "whoSectionTitle": "Kush",
+    "whenSectionTitle": "Kur dhe pse",
+    "noteSectionTitle": "Shënim",
+    "reasonLabel": "Arsyeja",
+    "reasonPlaceholder": "Zgjidhni arsyen",
+    "reason": {
+      "holiday": "Pushime",
+      "sick": "Sëmundje",
+      "training": "Trajnim",
+      "closure": "Klinika e mbyllur",
+      "other": "Tjetër"
+    },
+    "moveHint": "Mungesa e zhvendosur kontrollohet përsëri me takimet: një takim brenda periudhës së re duhet zhvendosur më parë."
   },
   "axios": {
     "start": {
@@ -40,7 +53,7 @@
   },
   "formHeader": {
     "title": "Ndrysho mungesën",
-    "description": "Ndrysho shënimin"
+    "description": "Zhvendoseni, ose ndryshoni arsyen dhe shënimin"
   },
   "formButtons": {
     "cancel": "Anulo",
