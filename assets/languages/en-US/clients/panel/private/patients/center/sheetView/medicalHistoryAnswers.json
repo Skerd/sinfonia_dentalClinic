@@ -1,8 +1,6 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx",
   "none": "The patient has not filled in the medical history yet. Ask for it from the request.",
-  "signed": "Signed by {name} on {date}",
-  "answeredNo": "Answered no to:",
   "medications": "Regular medicines",
   "question": {
     "allergies": "Allergies (medicines, latex, anesthetics)",
@@ -20,5 +18,8 @@
     "no": "No",
     "yes": "Yes",
     "unsure": "Not sure"
-  }
+  },
+  "noneTitle": "Medical history",
+  "signedTitle": "Signed",
+  "answeredNoTitle": "Answered no"
 }

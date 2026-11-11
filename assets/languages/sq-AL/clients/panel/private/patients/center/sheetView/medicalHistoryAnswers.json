@@ -1,8 +1,6 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx",
   "none": "Pacienti nuk e ka plotësuar ende historinë mjekësore. Kërkojeni nga kërkesa.",
-  "signed": "Nënshkruar nga {name} më {date}",
-  "answeredNo": "U përgjigj jo për:",
   "medications": "Ilaçet e rregullta",
   "question": {
     "allergies": "Alergji (ilaçe, lateks, anestetikë)",
@@ -20,5 +18,8 @@
     "no": "Jo",
     "yes": "Po",
     "unsure": "Nuk e di"
-  }
+  },
+  "noneTitle": "Historia mjekësore",
+  "signedTitle": "Nënshkruar",
+  "answeredNoTitle": "U përgjigj jo"
 }

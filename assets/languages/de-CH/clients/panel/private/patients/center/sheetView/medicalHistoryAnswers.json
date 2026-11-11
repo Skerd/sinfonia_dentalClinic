@@ -1,8 +1,6 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx",
   "none": "Der Patient hat die Krankengeschichte noch nicht ausgefüllt. Fordern Sie sie über die Anfrage an.",
-  "signed": "Unterschrieben von {name} am {date}",
-  "answeredNo": "Mit Nein beantwortet:",
   "medications": "Regelmässige Medikamente",
   "question": {
     "allergies": "Allergien (Medikamente, Latex, Betäubungsmittel)",
@@ -20,5 +18,8 @@
     "no": "Nein",
     "yes": "Ja",
     "unsure": "Weiss nicht"
-  }
+  },
+  "noneTitle": "Anamnese",
+  "signedTitle": "Unterschrieben",
+  "answeredNoTitle": "Mit Nein beantwortet"
 }

@@ -49,7 +49,8 @@ const plan: Plan = {
 };
 
 const phaseOf = (title: string) => {
-    const section = screen.getByText(new RegExp(`\\d\\. ${title}$`)).closest("section");
+    // The phase's number sits in its badge; the heading reads "1. Extraction" to assistive tech.
+    const section = screen.getByRole("heading", {name: new RegExp(`\\d\\. ${title}$`)}).closest("section");
     if (!section) throw new Error(`expected the ${title} phase`);
     return section;
 };
@@ -57,7 +58,8 @@ const phaseOf = (title: string) => {
 const totalsOf = () => {
     const dl = screen.getByText("total").closest("dl");
     if (!dl) throw new Error("expected the totals");
-    return Array.from(dl.children).map((cell) => cell.textContent);
+    // Each amount is a card holding its label and value, in reading order.
+    return Array.from(dl.querySelectorAll("dt, dd")).map((cell) => cell.textContent);
 };
 
 describe("treatment plan breakdown", () => {
@@ -87,13 +89,13 @@ describe("treatment plan breakdown", () => {
         expect(item).toHaveTextContent(chfText(2800));
     });
 
-    it("shows the discount and the deposit only when there is one, and paid/due only once accepted", () => {
+    it("shows the discount only when there is one, and what is still due only once accepted (deposit and paid are in the overview)", () => {
         const {unmount} = render(<PlanBreakdown plan={plan}/>);
-        expect(totalsOf()).toEqual(["discount", `−${chf(200)}`, "total", chf(2950), "deposit", chf(500)]);
+        expect(totalsOf()).toEqual(["discount", `−${chf(200)}`, "total", chf(2950)]);
         unmount();
 
         render(<PlanBreakdown plan={{...plan, status: "accepted", totals: {...plan.totals, discount: 0, deposit: 0}, amountPaid: 500, amountDue: 2450}}/>);
-        expect(totalsOf()).toEqual(["total", chf(2950), "paid", chf(500), "due", chf(2450)]);
+        expect(totalsOf()).toEqual(["total", chf(2950), "due", chf(2450)]);
     });
 
     it("keeps the cents of a quote instead of rounding to whole francs", () => {
@@ -118,8 +120,9 @@ describe("treatment plan breakdown", () => {
 
         render(<PlanBreakdown plan={{...plan, currency: {_id: "jpy", name: "Yen", symbol: "¥", abbreviation: "JPY", decimalPlaces: 0},
             lines: [line({phase: 1, name: "Crown", quantity: 1, unitPrice: 2015, total: 2015})],
-            totals: {subtotal: 2015, discount: 0, total: 2015, deposit: 202}}}/>);
-        expect(totalsOf()).toEqual(["total", formatCurrency(2015, "JPY", {minimumFractionDigits: 0, maximumFractionDigits: 0}), "deposit", formatCurrency(202, "JPY", {minimumFractionDigits: 0, maximumFractionDigits: 0})]);
+            totals: {subtotal: 2015.4, discount: 0, total: 2015.4, deposit: 202}}}/>);
+        expect(totalsOf()).toEqual(["total", formatCurrency(2015.4, "JPY", {minimumFractionDigits: 0, maximumFractionDigits: 0})]);
+        expect(totalsOf()[1]).not.toContain(".");
     });
 
     it("shows bare amounts when the plan has no currency", () => {

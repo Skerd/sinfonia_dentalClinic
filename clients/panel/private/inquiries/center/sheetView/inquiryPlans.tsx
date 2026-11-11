@@ -1,15 +1,16 @@
 import {compose} from "redux";
 import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
-import {IconPlus} from "@tabler/icons-react";
+import {IconFileInvoice, IconPlus} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
-import {Badge} from "@coreModule/components/ui/badge.tsx";
+import DisplayCard from "@coreModule/components/viewEngine/widgets/display/displayCard.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 import {treatmentPlanCreatePath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";
+import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 import {downloadPlanPdf} from "@dentalClinicModule/clients/panel/private/plans/center/actions/downloadPlanPdf.ts";
 
 const PLANS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/treatmentPlan"};
@@ -36,32 +37,44 @@ function InquiryPlans({inquiryId, canQuote, resolveLanguageKey}: Props) {
 
     if (!access.read?.lines) return null;
 
+    const createButton = canQuote && access.create ? (
+        <Button asChild size="sm" variant="outline">
+            <Link to={treatmentPlanCreatePath({inquiry: inquiryId})}><IconPlus size={16} />{resolveLanguageKey("create")}</Link>
+        </Button>
+    ) : null;
+    const none = String(resolveLanguageKey("none"));
+
+    // Each quote as the sheet's own card: option, total and status, with its PDF one click away.
     return (
-        <section className="flex flex-col gap-3">
-            <div className="flex items-center justify-end gap-2 empty:hidden">
-                {canQuote && access.create ? (
-                    <Button asChild size="sm" variant="outline">
-                        <Link to={treatmentPlanCreatePath({inquiry: inquiryId})}><IconPlus size={16} />{resolveLanguageKey("create")}</Link>
-                    </Button>
-                ) : null}
+        <section className="flex flex-col gap-2">
+            {plans?.length === 0 ? (
+                // The stacked layout (the only one with header actions) needs an element value; nothing shows under the title.
+                <DisplayCard show stackBody title={none} tooltip={none} Icon={IconFileInvoice} value={<span />} dontRenderValue headerActions={createButton} />
+            ) : null}
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {(plans ?? []).map((plan) => {
+                    const title = plan.optionLabel || plan.number;
+                    const total = plan.currency?.abbreviation ? formatCurrency(plan.totals.total, plan.currency.abbreviation) : String(plan.totals.total);
+                    return (
+                        <DisplayCard
+                            key={plan._id}
+                            show
+                            stackBody
+                            title={title}
+                            tooltip={plan.number}
+                            Icon={IconFileInvoice}
+                            headerActions={<Button type="button" size="sm" variant="ghost" onClick={() => downloadPlanPdf(plan)}>PDF</Button>}
+                            value={(
+                                <span className="flex flex-wrap items-center gap-2">
+                                    <span className="font-medium tabular-nums">{total}</span>
+                                    <StatusBadge tableConfigKey="treatmentplans" field="status" value={plan.status} label={String(resolveLanguageKey(`status.${plan.status}`))} />
+                                </span>
+                            )}
+                        />
+                    );
+                })}
             </div>
-            {plans?.length === 0 ? <p className="text-sm text-muted-foreground">{resolveLanguageKey("none")}</p> : null}
-            <ul className="flex flex-col gap-2">
-                {(plans ?? []).map((plan) => (
-                    <li key={plan._id} className="flex items-center justify-between gap-2 rounded-md border px-3 py-2 text-sm">
-                        <div className="flex min-w-0 flex-col">
-                            <span className="truncate font-medium">{plan.optionLabel || plan.number}</span>
-                            <span className="text-xs text-muted-foreground">
-                                {plan.number} · {plan.currency?.abbreviation ? formatCurrency(plan.totals.total, plan.currency.abbreviation) : plan.totals.total}
-                            </span>
-                        </div>
-                        <div className="flex shrink-0 items-center gap-2">
-                            <Badge variant="secondary">{resolveLanguageKey(`status.${plan.status}`)}</Badge>
-                            <Button type="button" size="sm" variant="ghost" onClick={() => downloadPlanPdf(plan)}>PDF</Button>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+            {plans?.length && createButton ? <div className="flex justify-end">{createButton}</div> : null}
         </section>
     );
 }
