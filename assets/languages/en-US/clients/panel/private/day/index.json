@@ -27,6 +27,7 @@
     "outside": "Outside working hours",
     "timeOff": "The dentist is off then",
     "overlap": "Overlaps another appointment",
-    "past": "That time has passed"
+    "past": "That time has passed",
+    "notOffered": "This dentist doesn't do this treatment"
   }
 }

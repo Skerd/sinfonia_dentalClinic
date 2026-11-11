@@ -27,6 +27,7 @@
     "outside": "Fuori dall'orario di lavoro",
     "timeOff": "Il dentista è assente in quel momento",
     "overlap": "Si sovrappone a un altro appuntamento",
-    "past": "Quell'orario è già passato"
+    "past": "Quell'orario è già passato",
+    "notOffered": "Questo dentista non esegue questo trattamento"
   }
 }

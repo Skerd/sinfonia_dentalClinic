@@ -27,6 +27,7 @@
     "outside": "Ausserhalb der Arbeitszeit",
     "timeOff": "Der Zahnarzt ist dann abwesend",
     "overlap": "Überschneidet sich mit einem anderen Termin",
-    "past": "Diese Zeit ist vorbei"
+    "past": "Diese Zeit ist vorbei",
+    "notOffered": "Dieser Zahnarzt bietet diese Behandlung nicht an"
   }
 }

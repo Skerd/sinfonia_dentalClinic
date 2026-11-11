@@ -27,6 +27,7 @@
     "outside": "Jashtë orarit të punës",
     "timeOff": "Dentisti nuk është në punë atëherë",
     "overlap": "Përputhet me një takim tjetër",
-    "past": "Kjo orë ka kaluar"
+    "past": "Kjo orë ka kaluar",
+    "notOffered": "Ky dentist nuk e bën këtë trajtim"
   }
 }

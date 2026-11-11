@@ -56,7 +56,7 @@ type Dragging = {id: string; locationId: string; grabMinutes: number};
 /** Where a dragged appointment would land: the column under the pointer and the snapped start. */
 type DropTarget = {locationId: string; practitionerId: string; minutes: number};
 /** What the day view can already tell about a landing spot; the server's rules (buffers, notice) still decide. */
-type DropVerdict = "free" | "past" | "outside" | "timeOff" | "overlap";
+type DropVerdict = "free" | "past" | "notOffered" | "outside" | "timeOff" | "overlap";
 
 const MINUTE_MS = 60_000;
 /** A transparent 1×1 image: the browser's own drag ghost would cover the landing preview, which is all the drag needs to show. */
@@ -167,6 +167,8 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
         // The server books nothing that has already started.
         if (landing.start < Date.now()) return "past";
         const practitioner = entry.practitioners.find((p) => p._id === practitionerId);
+        // Another dentist takes it only if they do this treatment (the server checks the same).
+        if (practitioner && !practitioner.serviceIds.includes(appointment.serviceId)) return "notOffered";
         if (!practitioner?.working.some((interval) => {
             const work = msOf(interval);
             return work.start <= landing.start && landing.end <= work.end;

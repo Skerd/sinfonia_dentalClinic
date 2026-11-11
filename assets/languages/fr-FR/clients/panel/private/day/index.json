@@ -27,6 +27,7 @@
     "outside": "En dehors des heures de travail",
     "timeOff": "Le dentiste est absent à ce moment",
     "overlap": "Chevauche un autre rendez-vous",
-    "past": "Cette heure est passée"
+    "past": "Cette heure est passée",
+    "notOffered": "Ce dentiste ne fait pas ce soin"
   }
 }
