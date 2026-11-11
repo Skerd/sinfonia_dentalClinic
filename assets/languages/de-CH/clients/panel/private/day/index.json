@@ -26,6 +26,7 @@
     "free": "Frei, hier ablegen zum Verschieben",
     "outside": "Ausserhalb der Arbeitszeit",
     "timeOff": "Der Zahnarzt ist dann abwesend",
-    "overlap": "Überschneidet sich mit einem anderen Termin"
+    "overlap": "Überschneidet sich mit einem anderen Termin",
+    "past": "Diese Zeit ist vorbei"
   }
 }

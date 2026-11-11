@@ -26,6 +26,7 @@
     "free": "Free, drop to move here",
     "outside": "Outside working hours",
     "timeOff": "The dentist is off then",
-    "overlap": "Overlaps another appointment"
+    "overlap": "Overlaps another appointment",
+    "past": "That time has passed"
   }
 }

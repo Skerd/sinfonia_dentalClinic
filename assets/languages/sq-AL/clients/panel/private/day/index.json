@@ -26,6 +26,7 @@
     "free": "E lirë, lëshoje për ta zhvendosur këtu",
     "outside": "Jashtë orarit të punës",
     "timeOff": "Dentisti nuk është në punë atëherë",
-    "overlap": "Përputhet me një takim tjetër"
+    "overlap": "Përputhet me një takim tjetër",
+    "past": "Kjo orë ka kaluar"
   }
 }

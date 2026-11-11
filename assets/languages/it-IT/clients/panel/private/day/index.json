@@ -26,6 +26,7 @@
     "free": "Libero, rilascia per spostare qui",
     "outside": "Fuori dall'orario di lavoro",
     "timeOff": "Il dentista è assente in quel momento",
-    "overlap": "Si sovrappone a un altro appuntamento"
+    "overlap": "Si sovrappone a un altro appuntamento",
+    "past": "Quell'orario è già passato"
   }
 }
