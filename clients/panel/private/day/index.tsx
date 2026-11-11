@@ -243,14 +243,19 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                                                     onDrop={(event) => drop(event, entry, practitioner._id)}
                                                 >
                                                     {hours.map((minutes) => <div key={minutes} className="pointer-events-none absolute inset-x-0 border-t border-border/50" style={{top: top(minutes)}} />)}
-                                                    {practitioner.working.map((interval) => (
-                                                        <div
+                                                    {practitioner.working.map((interval) => create ? (
+                                                        <Button
                                                             key={interval.start}
-                                                            className={cn("absolute inset-x-0 bg-background", create && "cursor-pointer hover:bg-primary/5")}
+                                                            type="button"
+                                                            variant="bare"
+                                                            className="absolute inset-x-0 rounded-none bg-background hover:bg-primary/5"
                                                             style={span(interval, entry.timezone)}
-                                                            title={create ? String(resolveLanguageKey("bookHere")) : undefined}
+                                                            title={String(resolveLanguageKey("bookHere"))}
+                                                            aria-label={String(resolveLanguageKey("bookHere"))}
                                                             onClick={(event) => bookAt(event, entry, practitioner._id)}
                                                         />
+                                                    ) : (
+                                                        <div key={interval.start} className="absolute inset-x-0 bg-background" style={span(interval, entry.timezone)} />
                                                     ))}
                                                     {practitioner.timeOff.map((interval) => (
                                                         <div key={interval.start} className="absolute inset-x-0 flex items-start bg-muted px-2 py-1 text-xs text-muted-foreground" style={span(interval, entry.timezone)}>
@@ -262,8 +267,9 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                                                         const to = endMinutes(appointment.endAt, entry.timezone);
                                                         const movable = canMove && MOVABLE.includes(appointment.status);
                                                         return (
-                                                            <button
+                                                            <Button
                                                                 type="button"
+                                                                variant="bare"
                                                                 key={appointment._id}
                                                                 draggable={movable}
                                                                 onDragStart={(event) => setDragging({
@@ -284,7 +290,7 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                                                             >
                                                                 <p className="font-medium">{hhmm(from)}–{hhmm(to)} {appointment.patientName ?? appointment.number}</p>
                                                                 <p className="truncate opacity-80">{appointment.serviceName}</p>
-                                                            </button>
+                                                            </Button>
                                                         );
                                                     })}
                                                     {now !== null && now >= range.start && now <= range.end ? (
