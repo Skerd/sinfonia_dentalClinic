@@ -37,7 +37,8 @@
     "timeLabel": "Zeit",
     "visitSectionTitle": "Besuch",
     "patientRecordLabel": "Patientenakte",
-    "patientRecordPlaceholder": "Optional: bestehende Akte"
+    "patientRecordPlaceholder": "Optional: bestehende Akte",
+    "patientRecordDescription": "Wiederkehrender Patient: Dossier wählen, Name, E-Mail und Telefon werden übernommen. Neuer Patient: leer lassen und die Felder unten ausfüllen."
   },
   "axios": {
     "start": {

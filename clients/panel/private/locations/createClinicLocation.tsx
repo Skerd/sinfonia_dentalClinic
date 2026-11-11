@@ -9,6 +9,7 @@ export default createGenericCreatePage<CreateClinicLocationFormType>({
     accessModel: "cliniclocations",
     apiUrl: "/api/dentalClinic/clinicLocation",
     schema: createClinicLocationFormSchema,
-    defaultValues: {name: "", timezone: "Europe/Zurich", isActive: true, openingHours: [], closures: []},
+    // A new location starts in the company's time zone (UX-06, GLB-09).
+    defaultValues: (_params, {timeZone}) => ({name: "", timezone: timeZone, isActive: true, openingHours: [], closures: []}),
     submitIcon: <IconPlus />,
 });

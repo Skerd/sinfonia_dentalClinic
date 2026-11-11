@@ -67,8 +67,8 @@
     "lineQuantityLabel": "Quantity",
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Unit price",
-    "lineUnitPricePlaceholder": "0",
-    "lineUnitPriceDescription": "In the quote's currency: the clinic's currency when the quote was created.",
+    "lineUnitPricePlaceholder": "From the price list",
+    "lineUnitPriceDescription": "In the quote's currency. Left empty, the treatment's price-list price is used.",
     "lineDiscountLabel": "Discount",
     "lineDiscountPlaceholder": "Optional",
     "depositSectionTitle": "Deposit and validity",
@@ -94,6 +94,8 @@
     "lineKind": {
       "treatment": "Treatment",
       "package": "Package (hotel, transfer…)"
-    }
+    },
+    "lineServiceDescription": "Pick a treatment and the description and unit price you leave empty are taken from the price list when you save.",
+    "targetSectionTitle": "Patient and option"
   }
 }

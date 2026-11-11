@@ -67,8 +67,8 @@
     "lineQuantityLabel": "Sasia",
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Çmimi për njësi",
-    "lineUnitPricePlaceholder": "0",
-    "lineUnitPriceDescription": "Në monedhën e ofertës: monedha e klinikës kur u krijua oferta.",
+    "lineUnitPricePlaceholder": "Nga lista e çmimeve",
+    "lineUnitPriceDescription": "Në monedhën e ofertës. Nëse lihet bosh, përdoret çmimi i trajtimit nga lista e çmimeve.",
     "lineDiscountLabel": "Zbritje",
     "lineDiscountPlaceholder": "Opsionale",
     "depositSectionTitle": "Paradhënia dhe vlefshmëria",
@@ -94,6 +94,8 @@
     "lineKind": {
       "treatment": "Trajtim",
       "package": "Paketë (hotel, transferim…)"
-    }
+    },
+    "lineServiceDescription": "Zgjidhni një trajtim: përshkrimi dhe çmimi i njësisë që lini bosh merren nga lista e çmimeve kur ruani.",
+    "targetSectionTitle": "Pacienti dhe opsioni"
   }
 }

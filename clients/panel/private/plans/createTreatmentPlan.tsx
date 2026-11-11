@@ -16,7 +16,8 @@ export default createGenericCreatePage<CreateTreatmentPlanFormType>({
             inquiry: params.get("inquiry") ?? "",
             patient: params.get("patient") ?? "",
             phases: [{title: "", visits: 1, estimatedDays: 5}],
-            lines: [{phase: 1, kind: "treatment", name: "", teeth: [], quantity: 1, unitPrice: 0}],
+            // No description or price yet: a treatment picked from the price list fills them on save.
+            lines: [{phase: 1, kind: "treatment", teeth: [], quantity: 1}],
             depositType: "none",
         };
     },

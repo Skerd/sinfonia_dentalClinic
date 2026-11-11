@@ -49,7 +49,9 @@
       "other": "Tjetër"
     },
     "servicesPlaceholder": "Zgjidh trajtimet",
-    "locationsPlaceholder": "Zgjidh vendndodhjet"
+    "locationsPlaceholder": "Zgjidh vendndodhjet",
+    "profileSectionTitle": "Profili",
+    "visibilitySectionTitle": "Dukshmëria"
   },
   "axios": {
     "start": {

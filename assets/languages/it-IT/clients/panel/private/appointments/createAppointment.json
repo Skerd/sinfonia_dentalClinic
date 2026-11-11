@@ -37,7 +37,8 @@
     "timeLabel": "Ora",
     "visitSectionTitle": "Visita",
     "patientRecordLabel": "Cartella paziente",
-    "patientRecordPlaceholder": "Facoltativo: un paziente esistente"
+    "patientRecordPlaceholder": "Facoltativo: un paziente esistente",
+    "patientRecordDescription": "Paziente già noto: scegli la sua cartella, nome, e-mail e telefono vengono ripresi. Nuovo paziente: lascia vuoto e compila i campi sotto."
   },
   "axios": {
     "start": {

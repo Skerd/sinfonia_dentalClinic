@@ -67,8 +67,8 @@
     "lineQuantityLabel": "Menge",
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Einzelpreis",
-    "lineUnitPricePlaceholder": "0",
-    "lineUnitPriceDescription": "In der Währung des Angebots: die Währung der Praxis beim Erstellen des Angebots.",
+    "lineUnitPricePlaceholder": "Aus der Preisliste",
+    "lineUnitPriceDescription": "In der Währung des Angebots. Leer gelassen, gilt der Preis aus der Preisliste.",
     "lineDiscountLabel": "Rabatt",
     "lineDiscountPlaceholder": "Optional",
     "depositSectionTitle": "Anzahlung und Gültigkeit",
@@ -94,6 +94,8 @@
     "lineKind": {
       "treatment": "Behandlung",
       "package": "Paket (Hotel, Transfer…)"
-    }
+    },
+    "lineServiceDescription": "Wählen Sie eine Behandlung: leer gelassene Beschreibung und Stückpreis werden beim Speichern aus der Preisliste übernommen.",
+    "targetSectionTitle": "Patient und Variante"
   }
 }

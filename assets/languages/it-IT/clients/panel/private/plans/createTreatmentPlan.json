@@ -67,8 +67,8 @@
     "lineQuantityLabel": "Quantità",
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Prezzo unitario",
-    "lineUnitPricePlaceholder": "0",
-    "lineUnitPriceDescription": "Nella valuta del preventivo: quella dello studio quando è stato creato.",
+    "lineUnitPricePlaceholder": "Dal listino",
+    "lineUnitPriceDescription": "Nella valuta del preventivo. Se vuoto, si usa il prezzo di listino del trattamento.",
     "lineDiscountLabel": "Sconto",
     "lineDiscountPlaceholder": "Facoltativo",
     "depositSectionTitle": "Acconto e validità",
@@ -94,6 +94,8 @@
     "lineKind": {
       "treatment": "Trattamento",
       "package": "Pacchetto (hotel, transfer…)"
-    }
+    },
+    "lineServiceDescription": "Scegli un trattamento: descrizione e prezzo unitario lasciati vuoti vengono presi dal listino al salvataggio.",
+    "targetSectionTitle": "Paziente e opzione"
   }
 }

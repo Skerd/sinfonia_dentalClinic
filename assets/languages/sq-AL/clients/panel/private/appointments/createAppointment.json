@@ -37,7 +37,8 @@
     "timeLabel": "Ora",
     "visitSectionTitle": "Vizita",
     "patientRecordLabel": "Kartela e pacientit",
-    "patientRecordPlaceholder": "Opsionale: një pacient ekzistues"
+    "patientRecordPlaceholder": "Opsionale: një pacient ekzistues",
+    "patientRecordDescription": "Pacient i njohur: zgjidhni dosjen e tij dhe përdoren emri, emaili e telefoni. Pacient i ri: lëreni bosh dhe plotësoni fushat më poshtë."
   },
   "axios": {
     "start": {

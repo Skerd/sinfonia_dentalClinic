@@ -38,7 +38,7 @@
     "longitudeLabel": "Längengrad",
     "longitudePlaceholder": "Längengrad eingeben",
     "nameLabel": "Name",
-    "namePlaceholder": "z. B. Zürich Zentrum",
+    "namePlaceholder": "z. B. Praxis Stadtzentrum",
     "openingHoursSectionTitle": "Öffnungszeiten",
     "phoneLabel": "Telefon",
     "phonePlaceholder": "Telefon eingeben",
@@ -48,7 +48,9 @@
     "streetLabel": "Strasse",
     "streetPlaceholder": "Strasse eingeben",
     "timezoneLabel": "Zeitzone",
-    "timezonePlaceholder": "z. B. Europe/Zurich"
+    "timezonePlaceholder": "z. B. Europe/Tirane",
+    "basicsSectionTitle": "Grunddaten",
+    "visibilitySectionTitle": "Sichtbarkeit"
   },
   "axios": {
     "start": {

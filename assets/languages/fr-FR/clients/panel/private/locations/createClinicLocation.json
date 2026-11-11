@@ -38,7 +38,7 @@
     "longitudeLabel": "Longitude",
     "longitudePlaceholder": "Saisir la longitude",
     "nameLabel": "Nom",
-    "namePlaceholder": "p. ex. Zurich Centre",
+    "namePlaceholder": "p. ex. Cabinet du centre-ville",
     "openingHoursSectionTitle": "Horaires d'ouverture",
     "phoneLabel": "Téléphone",
     "phonePlaceholder": "Saisir le téléphone",
@@ -48,7 +48,9 @@
     "streetLabel": "Rue",
     "streetPlaceholder": "Saisir la rue",
     "timezoneLabel": "Fuseau horaire",
-    "timezonePlaceholder": "p. ex. Europe/Zurich"
+    "timezonePlaceholder": "p. ex. Europe/Tirane",
+    "basicsSectionTitle": "Informations de base",
+    "visibilitySectionTitle": "Visibilité"
   },
   "axios": {
     "start": {

@@ -49,7 +49,9 @@
       "other": "Altro"
     },
     "servicesPlaceholder": "Seleziona trattamenti",
-    "locationsPlaceholder": "Seleziona sedi"
+    "locationsPlaceholder": "Seleziona sedi",
+    "profileSectionTitle": "Profilo",
+    "visibilitySectionTitle": "Visibilità"
   },
   "axios": {
     "start": {

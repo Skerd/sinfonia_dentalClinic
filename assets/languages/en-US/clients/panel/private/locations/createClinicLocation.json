@@ -38,7 +38,7 @@
     "longitudeLabel": "Longitude",
     "longitudePlaceholder": "Enter longitude",
     "nameLabel": "Name",
-    "namePlaceholder": "e.g. Zurich Center",
+    "namePlaceholder": "e.g. City centre practice",
     "openingHoursSectionTitle": "Opening hours",
     "phoneLabel": "Phone",
     "phonePlaceholder": "Enter phone",
@@ -48,7 +48,9 @@
     "streetLabel": "Street",
     "streetPlaceholder": "Enter street",
     "timezoneLabel": "Time zone",
-    "timezonePlaceholder": "e.g. Europe/Zurich"
+    "timezonePlaceholder": "e.g. Europe/Tirane",
+    "basicsSectionTitle": "Basics",
+    "visibilitySectionTitle": "Visibility"
   },
   "axios": {
     "start": {

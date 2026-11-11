@@ -67,8 +67,8 @@
     "lineQuantityLabel": "Quantité",
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Prix unitaire",
-    "lineUnitPricePlaceholder": "0",
-    "lineUnitPriceDescription": "Dans la devise du devis : celle du cabinet au moment de sa création.",
+    "lineUnitPricePlaceholder": "Selon la liste de prix",
+    "lineUnitPriceDescription": "Dans la devise du devis. Laissé vide, le prix de la liste de prix du soin est utilisé.",
     "lineDiscountLabel": "Remise",
     "lineDiscountPlaceholder": "Facultatif",
     "depositSectionTitle": "Acompte et validité",
@@ -94,6 +94,8 @@
     "lineKind": {
       "treatment": "Soin",
       "package": "Forfait (hôtel, transfert…)"
-    }
+    },
+    "lineServiceDescription": "Choisissez un soin : la description et le prix unitaire laissés vides sont repris de la liste de prix à l'enregistrement.",
+    "targetSectionTitle": "Patient et option"
   }
 }

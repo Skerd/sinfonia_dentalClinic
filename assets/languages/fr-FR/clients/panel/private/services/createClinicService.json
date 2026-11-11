@@ -17,7 +17,7 @@
     "imagesLabel": "Photos",
     "videosLabel": "Vidéos",
     "nameLabel": "Nom",
-    "namePlaceholder": "p. ex. Zurich Centre",
+    "namePlaceholder": "p. ex. Obturation composite",
     "priceTypeLabel": "Affichage du prix",
     "priceTypePlaceholder": "Choisir l'affichage du prix",
     "pricingSectionTitle": "Prix affiché",
@@ -63,7 +63,11 @@
       "orthodontics": "Orthodontie",
       "bone_graft": "Greffe osseuse / sinus lift",
       "other": "Autre"
-    }
+    },
+    "basicsSectionTitle": "Informations de base",
+    "mediaSectionTitle": "Photos et vidéos",
+    "visibilitySectionTitle": "Visibilité",
+    "slugDescription": "Facultatif. Laissé vide, il est créé à partir du nom."
   },
   "axios": {
     "start": {

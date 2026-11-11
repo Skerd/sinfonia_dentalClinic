@@ -37,7 +37,8 @@
     "timeLabel": "Time",
     "visitSectionTitle": "Visit",
     "patientRecordLabel": "Patient folder",
-    "patientRecordPlaceholder": "Optional: an existing patient"
+    "patientRecordPlaceholder": "Optional: an existing patient",
+    "patientRecordDescription": "A returning patient: pick their folder and their name, email and phone are used. A new patient: leave it empty and fill in the fields below."
   },
   "axios": {
     "start": {

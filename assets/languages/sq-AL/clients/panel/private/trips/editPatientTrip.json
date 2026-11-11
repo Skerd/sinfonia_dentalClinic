@@ -40,7 +40,10 @@
       "confirmed": "I konfirmuar",
       "completed": "I përfunduar",
       "cancelled": "I anuluar"
-    }
+    },
+    "whoSectionTitle": "Pacienti dhe oferta",
+    "travelSectionTitle": "Udhëtimi",
+    "stayNotesSectionTitle": "Qëndrimi dhe shënimet"
   },
   "axios": {
     "start": {

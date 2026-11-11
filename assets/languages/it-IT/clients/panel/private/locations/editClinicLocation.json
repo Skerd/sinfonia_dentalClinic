@@ -38,7 +38,7 @@
     "longitudeLabel": "Longitudine",
     "longitudePlaceholder": "Inserisci la longitudine",
     "nameLabel": "Nome",
-    "namePlaceholder": "es. Zurigo Centro",
+    "namePlaceholder": "es. Studio in centro",
     "openingHoursSectionTitle": "Orari di apertura",
     "phoneLabel": "Telefono",
     "phonePlaceholder": "Inserisci il telefono",
@@ -48,7 +48,9 @@
     "streetLabel": "Via",
     "streetPlaceholder": "Inserisci la via",
     "timezoneLabel": "Fuso orario",
-    "timezonePlaceholder": "es. Europe/Zurich"
+    "timezonePlaceholder": "es. Europe/Tirane",
+    "basicsSectionTitle": "Dati di base",
+    "visibilitySectionTitle": "Visibilità"
   },
   "axios": {
     "start": {

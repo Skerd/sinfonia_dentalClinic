@@ -17,7 +17,7 @@
     "imagesLabel": "Photos",
     "videosLabel": "Videos",
     "nameLabel": "Name",
-    "namePlaceholder": "e.g. Zurich Center",
+    "namePlaceholder": "e.g. Composite filling",
     "priceTypeLabel": "Price display",
     "priceTypePlaceholder": "Select how the price is shown",
     "pricingSectionTitle": "Price shown",
@@ -63,7 +63,11 @@
       "orthodontics": "Orthodontics",
       "bone_graft": "Bone graft / sinus lift",
       "other": "Other"
-    }
+    },
+    "basicsSectionTitle": "Basics",
+    "mediaSectionTitle": "Photos and videos",
+    "visibilitySectionTitle": "Visibility",
+    "slugDescription": "Optional. Left empty, it is made from the name."
   },
   "axios": {
     "start": {

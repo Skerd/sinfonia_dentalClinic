@@ -38,7 +38,7 @@
     "longitudeLabel": "Gjatësia gjeografike",
     "longitudePlaceholder": "Shkruani gjatësinë gjeografike",
     "nameLabel": "Emri",
-    "namePlaceholder": "p.sh. Qendra e Cyrihut",
+    "namePlaceholder": "p.sh. Klinika në qendër",
     "openingHoursSectionTitle": "Orari i punës",
     "phoneLabel": "Telefoni",
     "phonePlaceholder": "Shkruani telefonin",
@@ -48,7 +48,9 @@
     "streetLabel": "Rruga",
     "streetPlaceholder": "Shkruani rrugën",
     "timezoneLabel": "Zona kohore",
-    "timezonePlaceholder": "p.sh. Europe/Zurich"
+    "timezonePlaceholder": "p.sh. Europe/Tirane",
+    "basicsSectionTitle": "Të dhënat bazë",
+    "visibilitySectionTitle": "Dukshmëria"
   },
   "axios": {
     "start": {

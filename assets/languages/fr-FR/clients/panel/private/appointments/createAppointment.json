@@ -37,7 +37,8 @@
     "timeLabel": "Heure",
     "visitSectionTitle": "Visite",
     "patientRecordLabel": "Dossier patient",
-    "patientRecordPlaceholder": "Facultatif : un patient existant"
+    "patientRecordPlaceholder": "Facultatif : un patient existant",
+    "patientRecordDescription": "Patient connu : choisissez son dossier, ses nom, e-mail et téléphone sont repris. Nouveau patient : laissez vide et remplissez les champs ci-dessous."
   },
   "axios": {
     "start": {

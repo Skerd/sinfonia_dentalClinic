@@ -17,7 +17,7 @@
     "imagesLabel": "Foto",
     "videosLabel": "Video",
     "nameLabel": "Nome",
-    "namePlaceholder": "es. Zurigo Centro",
+    "namePlaceholder": "es. Otturazione in composito",
     "priceTypeLabel": "Visualizzazione del prezzo",
     "priceTypePlaceholder": "Seleziona come mostrare il prezzo",
     "pricingSectionTitle": "Prezzo mostrato",
@@ -63,7 +63,11 @@
       "orthodontics": "Ortodonzia",
       "bone_graft": "Innesto osseo / rialzo del seno",
       "other": "Altro"
-    }
+    },
+    "basicsSectionTitle": "Dati di base",
+    "mediaSectionTitle": "Foto e video",
+    "visibilitySectionTitle": "Visibilità",
+    "slugDescription": "Facoltativo. Se vuoto, viene creato dal nome."
   },
   "axios": {
     "start": {

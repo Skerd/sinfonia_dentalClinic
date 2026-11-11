@@ -49,7 +49,9 @@
       "other": "Autre"
     },
     "servicesPlaceholder": "Choisir des soins",
-    "locationsPlaceholder": "Choisir des sites"
+    "locationsPlaceholder": "Choisir des sites",
+    "profileSectionTitle": "Profil",
+    "visibilitySectionTitle": "Visibilité"
   },
   "axios": {
     "start": {

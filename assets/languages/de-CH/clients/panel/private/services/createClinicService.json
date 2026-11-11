@@ -17,7 +17,7 @@
     "imagesLabel": "Fotos",
     "videosLabel": "Videos",
     "nameLabel": "Name",
-    "namePlaceholder": "z. B. Zürich Zentrum",
+    "namePlaceholder": "z. B. Kompositfüllung",
     "priceTypeLabel": "Preisanzeige",
     "priceTypePlaceholder": "Preisanzeige auswählen",
     "pricingSectionTitle": "Angezeigter Preis",
@@ -63,7 +63,11 @@
       "orthodontics": "Kieferorthopädie",
       "bone_graft": "Knochenaufbau / Sinuslift",
       "other": "Andere"
-    }
+    },
+    "basicsSectionTitle": "Grunddaten",
+    "mediaSectionTitle": "Fotos und Videos",
+    "visibilitySectionTitle": "Sichtbarkeit",
+    "slugDescription": "Optional. Leer gelassen, wird er aus dem Namen gebildet."
   },
   "axios": {
     "start": {

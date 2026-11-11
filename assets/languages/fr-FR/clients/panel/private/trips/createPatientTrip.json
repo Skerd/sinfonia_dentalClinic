@@ -40,7 +40,10 @@
       "confirmed": "Confirmé",
       "completed": "Terminé",
       "cancelled": "Annulé"
-    }
+    },
+    "whoSectionTitle": "Patient et devis",
+    "travelSectionTitle": "Voyage",
+    "stayNotesSectionTitle": "Séjour et notes"
   },
   "axios": {
     "start": {
