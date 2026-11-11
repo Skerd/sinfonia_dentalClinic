@@ -10,7 +10,7 @@ import DisplayCard from "@coreModule/components/viewEngine/widgets/display/displ
 import {Button} from "@coreModule/components/ui/button.tsx";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 import {treatmentPlanCreatePath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";
-import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 import {downloadPlanPdf} from "@dentalClinicModule/clients/panel/private/plans/center/actions/downloadPlanPdf.ts";
 
 const PLANS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/treatmentPlan"};

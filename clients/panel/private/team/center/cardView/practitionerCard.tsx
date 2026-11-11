@@ -6,7 +6,7 @@ import {IconCertificate, IconDental, IconMapPin} from "@tabler/icons-react";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import TableAvatar from "@coreModule/components/entityPage/list/tableAvatar.tsx";
 import {accessFieldPathExists} from "@coreModule/helpers/context/accessContext.tsx";
-import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";

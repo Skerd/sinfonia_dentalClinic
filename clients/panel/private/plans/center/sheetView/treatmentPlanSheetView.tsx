@@ -10,8 +10,8 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import PlanMenu, {type PlanAction} from "@dentalClinicModule/clients/panel/private/plans/center/actions/planMenu.tsx";
 import PlanDialogs from "@dentalClinicModule/clients/panel/private/plans/center/dialogs/planDialogs.tsx";
 import {treatmentPlanEditPath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";
-import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
-import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
+import SheetNameTitle from "@coreModule/components/entityPage/sheet/sheetNameTitle.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 
 type TreatmentPlanSheetViewOwnProps = {
     open: boolean;

@@ -10,7 +10,7 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {Appointment} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/appointment/appointment.dto.ts";
 import AppointmentSheetView from "@dentalClinicModule/clients/panel/private/appointments/center/sheetView/appointmentSheetView.tsx";
 
-import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 import AppointmentMenu from "@dentalClinicModule/clients/panel/private/appointments/center/actions/appointmentMenu.tsx";
 import AppointmentDialogs from "@dentalClinicModule/clients/panel/private/appointments/center/dialogs/appointmentDialogs.tsx";
 type AppointmentCardProps = WithLanguageType & {

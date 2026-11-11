@@ -10,8 +10,8 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import InquiryMenu, {type InquiryAction} from "@dentalClinicModule/clients/panel/private/inquiries/center/actions/inquiryMenu.tsx";
 import InquiryDialogs from "@dentalClinicModule/clients/panel/private/inquiries/center/dialogs/inquiryDialogs.tsx";
 import {InquirySheetRefresh} from "@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/inquirySheetRefresh.ts";
-import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
-import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
+import SheetNameTitle from "@coreModule/components/entityPage/sheet/sheetNameTitle.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 
 type ClinicInquirySheetViewOwnProps = {
     open: boolean;

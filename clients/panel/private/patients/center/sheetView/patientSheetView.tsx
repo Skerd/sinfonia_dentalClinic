@@ -7,7 +7,7 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {Patient} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/patient/patient.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
-import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
+import SheetNameTitle from "@coreModule/components/entityPage/sheet/sheetNameTitle.tsx";
 
 type PatientSheetViewOwnProps = {
     open: boolean;

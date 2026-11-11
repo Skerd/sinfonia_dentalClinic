@@ -8,7 +8,7 @@ import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 import TreatmentPlanSheetView from "@dentalClinicModule/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx";
-import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 import PlanMenu from "@dentalClinicModule/clients/panel/private/plans/center/actions/planMenu.tsx";
 import PlanDialogs from "@dentalClinicModule/clients/panel/private/plans/center/dialogs/planDialogs.tsx";
 import {treatmentPlanEditPath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";

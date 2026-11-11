@@ -9,8 +9,8 @@ import type {Appointment} from "armonia/src/modules/dentalClinic/api/dentalClini
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import AppointmentMenu, {type AppointmentAction} from "@dentalClinicModule/clients/panel/private/appointments/center/actions/appointmentMenu.tsx";
 import AppointmentDialogs from "@dentalClinicModule/clients/panel/private/appointments/center/dialogs/appointmentDialogs.tsx";
-import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
-import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
+import SheetNameTitle from "@coreModule/components/entityPage/sheet/sheetNameTitle.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 
 type AppointmentSheetViewOwnProps = {
     open: boolean;

@@ -6,7 +6,7 @@ import {IconCalendarEvent, IconMapPin} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.ts";
-import {formatTimeRange} from "@dentalClinicModule/clients/panel/private/shared/timeRange.ts";
+import {formatTimeRange} from "@coreModule/helpers/general/dateTime.ts";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ScheduleException} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/scheduleException/scheduleException.dto.ts";

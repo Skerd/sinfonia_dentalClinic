@@ -7,7 +7,7 @@ import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCar
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ClinicInquiry} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicInquiry/clinicInquiry.dto.ts";
 import ClinicInquirySheetView from "@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/clinicInquirySheetView.tsx";
-import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
+import StatusBadge from "@coreModule/components/entityPage/sheet/statusBadge.tsx";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import InquiryMenu from "@dentalClinicModule/clients/panel/private/inquiries/center/actions/inquiryMenu.tsx";
 import InquiryDialogs from "@dentalClinicModule/clients/panel/private/inquiries/center/dialogs/inquiryDialogs.tsx";
