@@ -118,6 +118,7 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                         valueFormat="YYYY-MM-DD"
                         value={date}
                         onChange={(value) => value && setDate(value)}
+                        clearable={false}
                         className="w-56"
                     />
                     <Button variant="outline" size="icon" aria-label={String(resolveLanguageKey("nextDay"))} onClick={() => setDate((d) => shiftDate(d, 1))}>

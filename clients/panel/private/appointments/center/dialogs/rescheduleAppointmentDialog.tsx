@@ -54,11 +54,12 @@ function RescheduleAppointmentDialog({appointment, onClose, onUpdated, resolveLa
                         onChange={setDate}
                         minDate={timeZone ? companyToday(timeZone) : undefined}
                         disabled={loading}
+                        clearable={false}
                     />
                 </div>
                 <div className="flex flex-col gap-2">
                     <Label htmlFor="appointment-move-time">{resolveLanguageKey("timeLabel")}</Label>
-                    <DateInput id="appointment-move-time" timeOnly valueFormat="HH:mm" value={time} onChange={setTime} disabled={loading} />
+                    <DateInput id="appointment-move-time" timeOnly valueFormat="HH:mm" value={time} onChange={setTime} clearable={false} disabled={loading} />
                 </div>
             </div>
         </ConfirmDialog>
