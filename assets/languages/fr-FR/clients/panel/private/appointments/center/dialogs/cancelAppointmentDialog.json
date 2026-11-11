@@ -5,5 +5,19 @@
   "confirm": "Annuler le rendez-vous",
   "cancel": "Retour",
   "reasonLabel": "Motif (interne)",
-  "reasonPlaceholder": "p. ex. Le patient a appelé pour annuler"
+  "reasonPlaceholder": "p. ex. Le patient a appelé pour annuler",
+  "axios": {
+    "start": {
+      "title": "Annulation…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Rendez-vous annulé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Annulation impossible",
+      "time": 5000
+    }
+  }
 }

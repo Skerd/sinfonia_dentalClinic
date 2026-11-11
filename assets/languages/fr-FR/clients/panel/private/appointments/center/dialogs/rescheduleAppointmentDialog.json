@@ -5,5 +5,19 @@
   "confirm": "Déplacer",
   "cancel": "Retour",
   "dateLabel": "Nouvelle date",
-  "timeLabel": "Nouvelle heure"
+  "timeLabel": "Nouvelle heure",
+  "axios": {
+    "start": {
+      "title": "Déplacement du rendez-vous…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Rendez-vous déplacé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossible de déplacer le rendez-vous",
+      "time": 5000
+    }
+  }
 }

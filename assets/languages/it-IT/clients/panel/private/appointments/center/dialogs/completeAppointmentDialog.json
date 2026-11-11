@@ -3,5 +3,19 @@
   "title": "Segna come completato",
   "description": "Registra che la visita ha avuto luogo.",
   "confirm": "Segna come completato",
-  "cancel": "Indietro"
+  "cancel": "Indietro",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Visita completata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare",
+      "time": 5000
+    }
+  }
 }

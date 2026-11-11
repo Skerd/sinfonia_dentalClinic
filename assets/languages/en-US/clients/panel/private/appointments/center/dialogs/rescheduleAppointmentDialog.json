@@ -5,5 +5,19 @@
   "confirm": "Move",
   "cancel": "Back",
   "dateLabel": "New date",
-  "timeLabel": "New time"
+  "timeLabel": "New time",
+  "axios": {
+    "start": {
+      "title": "Moving the appointment…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Appointment moved",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not move the appointment",
+      "time": 5000
+    }
+  }
 }

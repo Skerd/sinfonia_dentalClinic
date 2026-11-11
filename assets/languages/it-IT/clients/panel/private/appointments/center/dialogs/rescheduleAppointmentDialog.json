@@ -5,5 +5,19 @@
   "confirm": "Sposta",
   "cancel": "Indietro",
   "dateLabel": "Nuova data",
-  "timeLabel": "Nuovo orario"
+  "timeLabel": "Nuovo orario",
+  "axios": {
+    "start": {
+      "title": "Spostamento appuntamento…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Appuntamento spostato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile spostare l'appuntamento",
+      "time": 5000
+    }
+  }
 }

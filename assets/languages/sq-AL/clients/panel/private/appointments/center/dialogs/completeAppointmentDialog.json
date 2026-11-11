@@ -3,5 +3,19 @@
   "title": "Shëno si të përfunduar",
   "description": "Regjistroni që vizita u krye.",
   "confirm": "Shëno të përfunduar",
-  "cancel": "Mbrapa"
+  "cancel": "Mbrapa",
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Vizita u përfundua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u ruajt dot",
+      "time": 5000
+    }
+  }
 }

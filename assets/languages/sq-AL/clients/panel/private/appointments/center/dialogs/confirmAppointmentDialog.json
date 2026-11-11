@@ -3,5 +3,19 @@
   "title": "Konfirmo takimin",
   "description": "Pacienti merr një email që takimi është konfirmuar.",
   "confirm": "Konfirmo",
-  "cancel": "Mbrapa"
+  "cancel": "Mbrapa",
+  "axios": {
+    "start": {
+      "title": "Duke ruajtur…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Takimi u konfirmua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u ruajt dot",
+      "time": 5000
+    }
+  }
 }

@@ -3,5 +3,19 @@
   "title": "Confirmer le rendez-vous",
   "description": "Le patient reçoit un e-mail indiquant que le rendez-vous est confirmé.",
   "confirm": "Confirmer",
-  "cancel": "Retour"
+  "cancel": "Retour",
+  "axios": {
+    "start": {
+      "title": "Enregistrement…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Rendez-vous confirmé",
+      "time": 3000
+    },
+    "error": {
+      "title": "Échec de l'enregistrement",
+      "time": 5000
+    }
+  }
 }

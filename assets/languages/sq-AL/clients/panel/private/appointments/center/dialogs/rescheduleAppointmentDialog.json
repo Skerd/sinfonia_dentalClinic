@@ -5,5 +5,19 @@
   "confirm": "Zhvendos",
   "cancel": "Mbrapa",
   "dateLabel": "Data e re",
-  "timeLabel": "Ora e re"
+  "timeLabel": "Ora e re",
+  "axios": {
+    "start": {
+      "title": "Duke zhvendosur takimin…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Takimi u zhvendos",
+      "time": 3000
+    },
+    "error": {
+      "title": "Takimi nuk u zhvendos dot",
+      "time": 5000
+    }
+  }
 }

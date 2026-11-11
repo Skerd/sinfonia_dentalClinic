@@ -5,5 +5,19 @@
   "confirm": "Annulla appuntamento",
   "cancel": "Indietro",
   "reasonLabel": "Motivo (interno)",
-  "reasonPlaceholder": "es. Il paziente ha chiamato per annullare"
+  "reasonPlaceholder": "es. Il paziente ha chiamato per annullare",
+  "axios": {
+    "start": {
+      "title": "Annullamento…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Appuntamento annullato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile annullare",
+      "time": 5000
+    }
+  }
 }

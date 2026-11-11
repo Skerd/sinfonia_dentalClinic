@@ -3,5 +3,19 @@
   "title": "Termin bestätigen",
   "description": "Die Patientin oder der Patient erhält eine E-Mail, dass der Termin bestätigt ist.",
   "confirm": "Bestätigen",
-  "cancel": "Zurück"
+  "cancel": "Zurück",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Termin bestätigt",
+      "time": 3000
+    },
+    "error": {
+      "title": "Konnte nicht gespeichert werden",
+      "time": 5000
+    }
+  }
 }

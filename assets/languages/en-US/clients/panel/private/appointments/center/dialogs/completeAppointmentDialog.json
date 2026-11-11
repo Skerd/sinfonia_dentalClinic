@@ -3,5 +3,19 @@
   "title": "Mark as completed",
   "description": "Record that the visit took place.",
   "confirm": "Mark completed",
-  "cancel": "Back"
+  "cancel": "Back",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Visit completed",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save",
+      "time": 5000
+    }
+  }
 }

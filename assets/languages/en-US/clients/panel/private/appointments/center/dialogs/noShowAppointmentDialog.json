@@ -3,5 +3,19 @@
   "title": "Mark as no-show",
   "description": "Record that the patient did not come. Possible once the grace period after the start has passed.",
   "confirm": "Mark no-show",
-  "cancel": "Back"
+  "cancel": "Back",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Marked as no-show",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save",
+      "time": 5000
+    }
+  }
 }

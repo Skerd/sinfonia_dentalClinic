@@ -3,5 +3,19 @@
   "title": "Als nicht erschienen markieren",
   "description": "Erfassen, dass die Patientin oder der Patient nicht gekommen ist. Möglich, sobald die Kulanzzeit nach Beginn abgelaufen ist.",
   "confirm": "Als nicht erschienen markieren",
-  "cancel": "Zurück"
+  "cancel": "Zurück",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Als nicht erschienen markiert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Konnte nicht gespeichert werden",
+      "time": 5000
+    }
+  }
 }

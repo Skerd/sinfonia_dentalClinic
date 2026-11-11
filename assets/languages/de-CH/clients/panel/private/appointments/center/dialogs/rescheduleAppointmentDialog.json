@@ -5,5 +5,19 @@
   "confirm": "Verschieben",
   "cancel": "Zurück",
   "dateLabel": "Neues Datum",
-  "timeLabel": "Neue Zeit"
+  "timeLabel": "Neue Zeit",
+  "axios": {
+    "start": {
+      "title": "Termin wird verschoben…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Termin verschoben",
+      "time": 3000
+    },
+    "error": {
+      "title": "Termin konnte nicht verschoben werden",
+      "time": 5000
+    }
+  }
 }

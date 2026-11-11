@@ -3,5 +3,19 @@
   "title": "Confirm appointment",
   "description": "The patient gets an email that the appointment is confirmed.",
   "confirm": "Confirm",
-  "cancel": "Back"
+  "cancel": "Back",
+  "axios": {
+    "start": {
+      "title": "Saving…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Appointment confirmed",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not save",
+      "time": 5000
+    }
+  }
 }

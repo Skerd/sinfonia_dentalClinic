@@ -5,5 +5,19 @@
   "confirm": "Cancel appointment",
   "cancel": "Back",
   "reasonLabel": "Reason (internal)",
-  "reasonPlaceholder": "e.g. Patient called to cancel"
+  "reasonPlaceholder": "e.g. Patient called to cancel",
+  "axios": {
+    "start": {
+      "title": "Cancelling…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Appointment cancelled",
+      "time": 3000
+    },
+    "error": {
+      "title": "Could not cancel",
+      "time": 5000
+    }
+  }
 }

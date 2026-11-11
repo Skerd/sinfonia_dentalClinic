@@ -5,5 +5,19 @@
   "confirm": "Anulo takimin",
   "cancel": "Mbrapa",
   "reasonLabel": "Arsyeja (e brendshme)",
-  "reasonPlaceholder": "p.sh. Pacienti telefonoi për të anuluar"
+  "reasonPlaceholder": "p.sh. Pacienti telefonoi për të anuluar",
+  "axios": {
+    "start": {
+      "title": "Duke anuluar…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Takimi u anulua",
+      "time": 3000
+    },
+    "error": {
+      "title": "Nuk u anulua dot",
+      "time": 5000
+    }
+  }
 }

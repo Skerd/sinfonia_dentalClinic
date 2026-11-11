@@ -3,5 +3,19 @@
   "title": "Segna come non presentato",
   "description": "Registra che il paziente non si è presentato. Possibile una volta trascorsa la tolleranza dopo l'inizio.",
   "confirm": "Segna non presentato",
-  "cancel": "Indietro"
+  "cancel": "Indietro",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Segnato come mancata presentazione",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare",
+      "time": 5000
+    }
+  }
 }

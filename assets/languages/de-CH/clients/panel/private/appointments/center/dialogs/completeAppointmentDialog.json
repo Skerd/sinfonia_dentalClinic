@@ -3,5 +3,19 @@
   "title": "Als abgeschlossen markieren",
   "description": "Erfassen, dass der Besuch stattgefunden hat.",
   "confirm": "Als abgeschlossen markieren",
-  "cancel": "Zurück"
+  "cancel": "Zurück",
+  "axios": {
+    "start": {
+      "title": "Wird gespeichert…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Besuch abgeschlossen",
+      "time": 3000
+    },
+    "error": {
+      "title": "Konnte nicht gespeichert werden",
+      "time": 5000
+    }
+  }
 }

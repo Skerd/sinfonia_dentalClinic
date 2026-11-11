@@ -3,5 +3,19 @@
   "title": "Conferma appuntamento",
   "description": "Il paziente riceve un'e-mail che l'appuntamento è confermato.",
   "confirm": "Conferma",
-  "cancel": "Indietro"
+  "cancel": "Indietro",
+  "axios": {
+    "start": {
+      "title": "Salvataggio…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Appuntamento confermato",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare",
+      "time": 5000
+    }
+  }
 }
