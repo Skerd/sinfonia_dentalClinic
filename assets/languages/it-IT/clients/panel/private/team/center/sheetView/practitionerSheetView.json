@@ -39,5 +39,24 @@
   "deletedBy": "Eliminato da",
   "staffUser": "Account del personale",
   "locations": "Sedi",
-  "services": "Trattamenti"
+  "services": "Trattamenti",
+  "notWorking": "Non lavora",
+  "languageNames": {
+    "sq": "Albanese",
+    "en": "Inglese",
+    "it": "Italiano",
+    "de": "Tedesco",
+    "fr": "Francese",
+    "es": "Spagnolo",
+    "el": "Greco",
+    "tr": "Turco",
+    "sr": "Serbo",
+    "mk": "Macedone",
+    "ru": "Russo",
+    "nl": "Olandese",
+    "pt": "Portoghese",
+    "pl": "Polacco",
+    "uk": "Ucraino",
+    "ar": "Arabo"
+  }
 }

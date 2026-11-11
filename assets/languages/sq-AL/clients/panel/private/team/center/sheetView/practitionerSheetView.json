@@ -39,5 +39,24 @@
   "deletedBy": "Fshirë nga",
   "staffUser": "Llogaria e punonjësit",
   "locations": "Vendndodhjet",
-  "services": "Trajtimet"
+  "services": "Trajtimet",
+  "notWorking": "Nuk punon",
+  "languageNames": {
+    "sq": "Shqip",
+    "en": "Anglisht",
+    "it": "Italisht",
+    "de": "Gjermanisht",
+    "fr": "Frëngjisht",
+    "es": "Spanjisht",
+    "el": "Greqisht",
+    "tr": "Turqisht",
+    "sr": "Serbisht",
+    "mk": "Maqedonisht",
+    "ru": "Rusisht",
+    "nl": "Holandisht",
+    "pt": "Portugalisht",
+    "pl": "Polonisht",
+    "uk": "Ukrainisht",
+    "ar": "Arabisht"
+  }
 }

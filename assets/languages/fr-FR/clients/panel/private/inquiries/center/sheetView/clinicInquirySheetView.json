@@ -65,5 +65,8 @@
     "de-CH": "Allemand",
     "fr-FR": "Français",
     "sq-AL": "Albanais"
-  }
+  },
+  "medicalHistoryGroup": "Antécédents médicaux",
+  "quotesGroup": "Devis",
+  "conversationGroup": "Conversation"
 }

@@ -1,6 +1,7 @@
 import {compose} from "redux";
 import {IconCircleCheck, IconClockHour4} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
+import {DATE_FORMATS, formatDate} from "@coreModule/helpers/general/dateTime.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import type {ClinicInquiry} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicInquiry/clinicInquiry.dto.ts";
 
@@ -8,9 +9,8 @@ type Props = WithLanguageType & {inquiry: Pick<ClinicInquiry, "treatmentsWanted"
 
 /** What the patient asks about, and what the clinic asked them for (answered or still open). */
 function InquiryRequestDetails({inquiry, resolveLanguageKey}: Props) {
-    const dateFormat = new Intl.DateTimeFormat(undefined, {dateStyle: "medium"});
     return (
-        <div className="flex flex-col gap-4 px-4 pb-4">
+        <div className="flex flex-col gap-4">
             <section className="flex flex-col gap-2">
                 <h4 className="text-sm font-medium">{resolveLanguageKey("treatmentsTitle")}</h4>
                 <div className="flex flex-wrap gap-1.5">
@@ -32,8 +32,8 @@ function InquiryRequestDetails({inquiry, resolveLanguageKey}: Props) {
                                     <span>{resolveLanguageKey(`kind.${request.kind}`)}</span>
                                     <span className="text-xs text-muted-foreground">
                                         {request.fulfilledAt
-                                            ? `${resolveLanguageKey("fulfilledOn")} ${dateFormat.format(new Date(request.fulfilledAt))}`
-                                            : `${resolveLanguageKey("requestedOn")} ${dateFormat.format(new Date(request.requestedAt))}`}
+                                            ? `${resolveLanguageKey("fulfilledOn")} ${formatDate(request.fulfilledAt, {format: DATE_FORMATS.mediumDate})}`
+                                            : `${resolveLanguageKey("requestedOn")} ${formatDate(request.requestedAt, {format: DATE_FORMATS.mediumDate})}`}
                                     </span>
                                     {request.note ? <span className="text-xs text-muted-foreground">{request.note}</span> : null}
                                 </div>

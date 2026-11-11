@@ -49,5 +49,6 @@
     "paid": "Paid in full",
     "partially_refunded": "Partly refunded",
     "refunded": "Refunded"
-  }
+  },
+  "breakdownGroup": "Treatment and price"
 }

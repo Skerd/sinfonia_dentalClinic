@@ -49,5 +49,6 @@
     "paid": "Payé en totalité",
     "partially_refunded": "Remboursé en partie",
     "refunded": "Remboursé"
-  }
+  },
+  "breakdownGroup": "Traitement et prix"
 }

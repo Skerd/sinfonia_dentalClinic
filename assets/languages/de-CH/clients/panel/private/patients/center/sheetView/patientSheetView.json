@@ -64,5 +64,12 @@
     "referral": "Empfehlung",
     "agency": "Agentur",
     "other": "Andere"
-  }
+  },
+  "nextVisitAt": "Nächster Termin",
+  "balanceDue": "Noch offen",
+  "medicalHistoryGroup": "Anamnese",
+  "appointmentsGroup": "Termine",
+  "plansGroup": "Angebote",
+  "tripsGroup": "Reisen",
+  "inquiriesGroup": "Kostenanfragen"
 }

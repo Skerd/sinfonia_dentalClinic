@@ -46,5 +46,8 @@
     "orthodontics": "Ortodonci",
     "bone_graft": "Shtim kockor / ngritje sinusi",
     "other": "Tjetër"
-  }
+  },
+  "timingGroup": "Kohëzgjatja",
+  "priceGroup": "Çmimi",
+  "visibilityGroup": "Dukshmëria"
 }

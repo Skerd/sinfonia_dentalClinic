@@ -39,5 +39,24 @@
   "deletedBy": "Deleted by",
   "staffUser": "Staff login",
   "locations": "Locations",
-  "services": "Treatments"
+  "services": "Treatments",
+  "notWorking": "Not working",
+  "languageNames": {
+    "sq": "Albanian",
+    "en": "English",
+    "it": "Italian",
+    "de": "German",
+    "fr": "French",
+    "es": "Spanish",
+    "el": "Greek",
+    "tr": "Turkish",
+    "sr": "Serbian",
+    "mk": "Macedonian",
+    "ru": "Russian",
+    "nl": "Dutch",
+    "pt": "Portuguese",
+    "pl": "Polish",
+    "uk": "Ukrainian",
+    "ar": "Arabic"
+  }
 }

@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryPlans.tsx",
-  "title": "Ofertat",
   "create": "Krijo ofertë",
   "none": "Ende pa ofertë.",
   "status": {

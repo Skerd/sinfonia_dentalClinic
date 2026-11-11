@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryPlans.tsx",
-  "title": "Devis",
   "create": "Créer un devis",
   "none": "Pas encore de devis.",
   "status": {

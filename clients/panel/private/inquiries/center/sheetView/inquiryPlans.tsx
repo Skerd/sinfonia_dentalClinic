@@ -37,9 +37,8 @@ function InquiryPlans({inquiryId, canQuote, resolveLanguageKey}: Props) {
     if (!access.read?.lines) return null;
 
     return (
-        <section className="flex flex-col gap-3 border-t px-4 py-4">
-            <div className="flex items-center justify-between gap-2">
-                <h4 className="text-sm font-medium">{resolveLanguageKey("title")}</h4>
+        <section className="flex flex-col gap-3">
+            <div className="flex items-center justify-end gap-2 empty:hidden">
                 {canQuote && access.create ? (
                     <Button asChild size="sm" variant="outline">
                         <Link to={treatmentPlanCreatePath({inquiry: inquiryId})}><IconPlus size={16} />{resolveLanguageKey("create")}</Link>

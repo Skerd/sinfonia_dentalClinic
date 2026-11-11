@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/thread/inquiryThread.tsx",
-  "title": "Conversation avec le patient",
   "loading": "Chargement des messages…",
   "empty": "Aucun message. Écrivez au patient pour commencer.",
   "clinic": "Cabinet",

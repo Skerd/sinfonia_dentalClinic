@@ -71,8 +71,7 @@ function InquiryThread({inquiryId, canReply, onSent, resolveLanguageKey}: Props)
     };
 
     return (
-        <section className="flex flex-col gap-3 border-t px-4 py-4">
-            <h4 className="text-sm font-medium">{resolveLanguageKey("title")}</h4>
+        <section className="flex flex-col gap-3">
             {messages === null && !error ? <p className="text-sm text-muted-foreground">{resolveLanguageKey("loading")}</p> : null}
             {messages?.length === 0 ? <p className="text-sm text-muted-foreground">{resolveLanguageKey("empty")}</p> : null}
             <ol className="flex flex-col gap-2">

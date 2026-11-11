@@ -39,5 +39,24 @@
   "deletedBy": "Gelöscht von",
   "staffUser": "Benutzerkonto des Personals",
   "locations": "Standorte",
-  "services": "Behandlungen"
+  "services": "Behandlungen",
+  "notWorking": "Arbeitet nicht",
+  "languageNames": {
+    "sq": "Albanisch",
+    "en": "Englisch",
+    "it": "Italienisch",
+    "de": "Deutsch",
+    "fr": "Französisch",
+    "es": "Spanisch",
+    "el": "Griechisch",
+    "tr": "Türkisch",
+    "sr": "Serbisch",
+    "mk": "Mazedonisch",
+    "ru": "Russisch",
+    "nl": "Niederländisch",
+    "pt": "Portugiesisch",
+    "pl": "Polnisch",
+    "uk": "Ukrainisch",
+    "ar": "Arabisch"
+  }
 }

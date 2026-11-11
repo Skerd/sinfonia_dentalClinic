@@ -64,5 +64,12 @@
     "referral": "Rekomandim",
     "agency": "Agjenci",
     "other": "Tjetër"
-  }
+  },
+  "nextVisitAt": "Vizita e radhës",
+  "balanceDue": "Për t'u paguar",
+  "medicalHistoryGroup": "Historia mjekësore",
+  "appointmentsGroup": "Takimet",
+  "plansGroup": "Ofertat",
+  "tripsGroup": "Udhëtimet",
+  "inquiriesGroup": "Kërkesat për ofertë"
 }

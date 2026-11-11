@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx",
-  "title": "Medical history",
   "none": "The patient has not filled in the medical history yet. Ask for it from the request.",
   "signed": "Signed by {name} on {date}",
   "answeredNo": "Answered no to:",

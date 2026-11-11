@@ -65,5 +65,8 @@
     "de-CH": "German",
     "fr-FR": "French",
     "sq-AL": "Albanian"
-  }
+  },
+  "medicalHistoryGroup": "Medical history",
+  "quotesGroup": "Quotes",
+  "conversationGroup": "Conversation"
 }

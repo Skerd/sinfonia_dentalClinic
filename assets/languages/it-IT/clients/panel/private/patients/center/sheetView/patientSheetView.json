@@ -64,5 +64,12 @@
     "referral": "Passaparola",
     "agency": "Agenzia",
     "other": "Altro"
-  }
+  },
+  "nextVisitAt": "Prossima visita",
+  "balanceDue": "Ancora da pagare",
+  "medicalHistoryGroup": "Anamnesi",
+  "appointmentsGroup": "Appuntamenti",
+  "plansGroup": "Preventivi",
+  "tripsGroup": "Viaggi",
+  "inquiriesGroup": "Richieste di preventivo"
 }

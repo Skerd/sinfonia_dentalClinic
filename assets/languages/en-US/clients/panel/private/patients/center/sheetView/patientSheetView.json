@@ -64,5 +64,12 @@
     "referral": "Referral",
     "agency": "Agency",
     "other": "Other"
-  }
+  },
+  "nextVisitAt": "Next visit",
+  "balanceDue": "Still to pay",
+  "medicalHistoryGroup": "Medical history",
+  "appointmentsGroup": "Appointments",
+  "plansGroup": "Quotes",
+  "tripsGroup": "Trips",
+  "inquiriesGroup": "Estimate requests"
 }

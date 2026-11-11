@@ -65,5 +65,8 @@
     "de-CH": "Deutsch",
     "fr-FR": "Französisch",
     "sq-AL": "Albanisch"
-  }
+  },
+  "medicalHistoryGroup": "Anamnese",
+  "quotesGroup": "Angebote",
+  "conversationGroup": "Unterhaltung"
 }

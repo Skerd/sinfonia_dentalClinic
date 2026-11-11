@@ -64,5 +64,12 @@
     "referral": "Recommandation",
     "agency": "Agence",
     "other": "Autre"
-  }
+  },
+  "nextVisitAt": "Prochaine visite",
+  "balanceDue": "Reste à payer",
+  "medicalHistoryGroup": "Antécédents médicaux",
+  "appointmentsGroup": "Rendez-vous",
+  "plansGroup": "Devis",
+  "tripsGroup": "Voyages",
+  "inquiriesGroup": "Demandes de devis"
 }

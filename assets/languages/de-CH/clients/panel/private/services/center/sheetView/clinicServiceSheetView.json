@@ -46,5 +46,8 @@
     "orthodontics": "Kieferorthopädie",
     "bone_graft": "Knochenaufbau / Sinuslift",
     "other": "Andere"
-  }
+  },
+  "timingGroup": "Zeitplanung",
+  "priceGroup": "Preis",
+  "visibilityGroup": "Sichtbarkeit"
 }

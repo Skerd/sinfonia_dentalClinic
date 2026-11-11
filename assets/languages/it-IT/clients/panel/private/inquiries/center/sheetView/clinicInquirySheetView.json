@@ -65,5 +65,8 @@
     "de-CH": "Tedesco",
     "fr-FR": "Francese",
     "sq-AL": "Albanese"
-  }
+  },
+  "medicalHistoryGroup": "Anamnesi",
+  "quotesGroup": "Preventivi",
+  "conversationGroup": "Conversazione"
 }

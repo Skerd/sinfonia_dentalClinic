@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx",
-  "title": "Antécédents médicaux",
   "none": "Le patient n'a pas encore rempli ses antécédents médicaux. Demandez-les depuis la demande.",
   "signed": "Signés par {name} le {date}",
   "answeredNo": "A répondu non à :",

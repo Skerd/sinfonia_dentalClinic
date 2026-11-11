@@ -39,5 +39,24 @@
   "deletedBy": "Supprimé par",
   "staffUser": "Compte du personnel",
   "locations": "Sites",
-  "services": "Soins"
+  "services": "Soins",
+  "notWorking": "Ne travaille pas",
+  "languageNames": {
+    "sq": "Albanais",
+    "en": "Anglais",
+    "it": "Italien",
+    "de": "Allemand",
+    "fr": "Français",
+    "es": "Espagnol",
+    "el": "Grec",
+    "tr": "Turc",
+    "sr": "Serbe",
+    "mk": "Macédonien",
+    "ru": "Russe",
+    "nl": "Néerlandais",
+    "pt": "Portugais",
+    "pl": "Polonais",
+    "uk": "Ukrainien",
+    "ar": "Arabe"
+  }
 }

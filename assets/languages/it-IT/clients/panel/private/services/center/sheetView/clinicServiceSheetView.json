@@ -46,5 +46,8 @@
     "orthodontics": "Ortodonzia",
     "bone_graft": "Innesto osseo / rialzo del seno",
     "other": "Altro"
-  }
+  },
+  "timingGroup": "Tempi",
+  "priceGroup": "Prezzo",
+  "visibilityGroup": "Visibilità"
 }

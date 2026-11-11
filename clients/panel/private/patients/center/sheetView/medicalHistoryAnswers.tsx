@@ -2,9 +2,12 @@ import {compose} from "redux";
 import {IconAlertTriangle} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
+import {DATE_FORMATS, formatDate} from "@coreModule/helpers/general/dateTime.ts";
 import type {MedicalHistory} from "armonia/src/modules/dentalClinic/dto/medicalHistory.dto.ts";
 
 type Props = WithLanguageType & {history?: MedicalHistory};
+
+const SIGNED_AT: Intl.DateTimeFormatOptions = {...DATE_FORMATS.mediumDate, hour: "2-digit", minute: "2-digit"};
 
 /**
  * The patient's signed questionnaire, for the dentist: what they answered "yes" or "not sure"
@@ -13,22 +16,16 @@ type Props = WithLanguageType & {history?: MedicalHistory};
 function MedicalHistoryAnswers({history, resolveLanguageKey}: Props) {
     if (!history) {
         return (
-            <section className="flex flex-col gap-1 px-4 pb-4">
-                <h4 className="text-sm font-medium">{resolveLanguageKey("title")}</h4>
-                <p className="text-sm text-muted-foreground">{resolveLanguageKey("none")}</p>
-            </section>
+            <p className="text-sm text-muted-foreground">{resolveLanguageKey("none")}</p>
         );
     }
     const flagged = history.answers.filter((row) => row.answer !== "no");
     const clear = history.answers.filter((row) => row.answer === "no");
     return (
-        <section className="flex flex-col gap-3 px-4 pb-4">
-            <div className="flex flex-col">
-                <h4 className="text-sm font-medium">{resolveLanguageKey("title")}</h4>
-                <p className="text-xs text-muted-foreground">
-                    {resolveLanguageKey("signed").replace("{name}", history.signedName).replace("{date}", new Date(history.submittedAt).toLocaleString())}
-                </p>
-            </div>
+        <section className="flex flex-col gap-3">
+            <p className="text-xs text-muted-foreground">
+                {resolveLanguageKey("signed").replace("{name}", history.signedName).replace("{date}", formatDate(history.submittedAt, {format: SIGNED_AT}))}
+            </p>
             {flagged.length ? (
                 <ul className="flex flex-col divide-y rounded-md border border-amber-500/40 bg-amber-500/5 text-sm">
                     {flagged.map((row) => (

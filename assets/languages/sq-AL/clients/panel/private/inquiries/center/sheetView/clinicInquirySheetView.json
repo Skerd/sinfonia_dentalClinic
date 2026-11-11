@@ -65,5 +65,8 @@
     "de-CH": "Gjermanisht",
     "fr-FR": "Frëngjisht",
     "sq-AL": "Shqip"
-  }
+  },
+  "medicalHistoryGroup": "Historia mjekësore",
+  "quotesGroup": "Ofertat",
+  "conversationGroup": "Biseda"
 }

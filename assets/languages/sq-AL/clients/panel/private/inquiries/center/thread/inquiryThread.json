@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/thread/inquiryThread.tsx",
-  "title": "Biseda me pacientin",
   "loading": "Po ngarkohen mesazhet…",
   "empty": "Ende pa mesazhe. Shkruajini pacientit për të filluar.",
   "clinic": "Klinika",

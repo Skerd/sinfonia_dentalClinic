@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryPlans.tsx",
-  "title": "Quotes",
   "create": "Create quote",
   "none": "No quote yet.",
   "status": {

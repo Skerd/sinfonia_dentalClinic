@@ -46,5 +46,8 @@
     "orthodontics": "Orthodontics",
     "bone_graft": "Bone graft / sinus lift",
     "other": "Other"
-  }
+  },
+  "timingGroup": "Timing",
+  "priceGroup": "Price",
+  "visibilityGroup": "Visibility"
 }

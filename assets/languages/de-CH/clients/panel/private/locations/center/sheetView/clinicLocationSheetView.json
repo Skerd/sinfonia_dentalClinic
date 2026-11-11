@@ -36,5 +36,6 @@
   "updatedAt": "Aktualisiert am",
   "createdBy": "Erstellt von",
   "deletedAt": "Gelöscht am",
-  "deletedBy": "Gelöscht von"
+  "deletedBy": "Gelöscht von",
+  "closed": "Geschlossen"
 }

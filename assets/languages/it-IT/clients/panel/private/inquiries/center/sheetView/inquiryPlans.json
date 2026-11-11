@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/center/sheetView/inquiryPlans.tsx",
-  "title": "Preventivi",
   "create": "Crea preventivo",
   "none": "Ancora nessun preventivo.",
   "status": {

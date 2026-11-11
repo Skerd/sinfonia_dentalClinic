@@ -19,7 +19,7 @@ function PlanBreakdown({plan, resolveLanguageKey}: Props) {
         ? formatCurrency(amount, plan.currency.abbreviation, {minimumFractionDigits: 0, maximumFractionDigits})
         : String(amount));
     return (
-        <div className="flex flex-col gap-5 px-4 pb-4">
+        <div className="flex flex-col gap-5">
             {plan.phases.map((phase, index) => (
                 <section key={`${phase.title}-${index}`} className="flex flex-col gap-2">
                     <div>

@@ -9,7 +9,6 @@ import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalCli
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import PlanMenu, {type PlanAction} from "@dentalClinicModule/clients/panel/private/plans/center/actions/planMenu.tsx";
 import PlanDialogs from "@dentalClinicModule/clients/panel/private/plans/center/dialogs/planDialogs.tsx";
-import PlanBreakdown from "@dentalClinicModule/clients/panel/private/plans/center/sheetView/planBreakdown.tsx";
 import {treatmentPlanEditPath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";
 import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
 import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
@@ -82,9 +81,7 @@ function TreatmentPlanSheetView({
                 }}
                 actionMenuAllowCustomChildren
                 actionMenuChildren={<PlanMenu plan={plan} onAction={(next: PlanAction) => setAction(next)} />}
-            >
-                {plan.phases ? <PlanBreakdown plan={plan} /> : null}
-            </SheetViewRenderer>
+            />
             {action ? (
                 <PlanDialogs
                     action={action}

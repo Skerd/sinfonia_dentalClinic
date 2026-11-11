@@ -9,10 +9,7 @@ import type {ClinicInquiry} from "armonia/src/modules/dentalClinic/api/dentalCli
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import InquiryMenu, {type InquiryAction} from "@dentalClinicModule/clients/panel/private/inquiries/center/actions/inquiryMenu.tsx";
 import InquiryDialogs from "@dentalClinicModule/clients/panel/private/inquiries/center/dialogs/inquiryDialogs.tsx";
-import InquiryRequestDetails from "@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/inquiryRequestDetails.tsx";
-import InquiryThread from "@dentalClinicModule/clients/panel/private/inquiries/center/thread/inquiryThread.tsx";
-import InquiryPlans from "@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/inquiryPlans.tsx";
-import MedicalHistoryAnswers from "@dentalClinicModule/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx";
+import {InquirySheetRefresh} from "@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/inquirySheetRefresh.ts";
 import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
 import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 
@@ -26,9 +23,6 @@ type ClinicInquirySheetViewOwnProps = {
     onSheetRowPatched?: (patch: Partial<ClinicInquiry>) => void;
     fetchId?: string;
 };
-
-const CAN_MESSAGE: ClinicInquiry["status"][] = ["new", "in_review", "info_requested", "quoted", "converted"];
-const CAN_QUOTE: ClinicInquiry["status"][] = ["new", "in_review", "info_requested", "quoted"];
 
 function ClinicInquirySheetView({
     open,
@@ -65,8 +59,9 @@ function ClinicInquirySheetView({
         onSheetRowPatched?.(updated);
     };
 
+    // The request's details, quotes and thread are sheet tokens placed by the view (above Lifecycle); a reply reloads it.
     return (
-        <>
+        <InquirySheetRefresh.Provider value={() => setRefreshKey((key) => key + 1)}>
             <SheetViewRenderer
                 key={refreshKey}
                 config={viewConfig}
@@ -91,20 +86,9 @@ function ClinicInquirySheetView({
                 }}
                 actionMenuAllowCustomChildren
                 actionMenuChildren={<InquiryMenu inquiry={inquiry} onAction={(next: InquiryAction) => setAction(next)} />}
-            >
-                {inquiry.status ? <InquiryRequestDetails inquiry={inquiry} /> : null}
-                {inquiry.status ? <MedicalHistoryAnswers history={inquiry.medicalHistory} /> : null}
-                {inquiry.status ? <InquiryPlans inquiryId={entityId} canQuote={CAN_QUOTE.includes(inquiry.status)} /> : null}
-                {inquiry.status ? (
-                    <InquiryThread
-                        inquiryId={entityId}
-                        canReply={CAN_MESSAGE.includes(inquiry.status)}
-                        onSent={() => inquiry.status === "new" && setRefreshKey((key) => key + 1)}
-                    />
-                ) : null}
-            </SheetViewRenderer>
+            />
             {action ? <InquiryDialogs action={action} inquiry={inquiry} onClose={() => setAction("")} onUpdated={applyUpdate} /> : null}
-        </>
+        </InquirySheetRefresh.Provider>
     );
 }
 

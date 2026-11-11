@@ -1,6 +1,5 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx",
-  "title": "Anamnesi",
   "none": "Il paziente non ha ancora compilato l'anamnesi. Chiedila dalla richiesta.",
   "signed": "Firmata da {name} il {date}",
   "answeredNo": "Ha risposto no a:",
