@@ -13,6 +13,7 @@
   "validUntil": "Valable jusqu'au",
   "sentAt": "Envoyé",
   "depositType": "Acompte",
+  "depositAmount": "Montant de l'acompte",
   "notes": "Remarques pour le patient",
   "terms": "Conditions",
   "totals": "Total",

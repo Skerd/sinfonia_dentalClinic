@@ -35,6 +35,7 @@
     "onlineBookableLabel": "Réservable en ligne",
     "priceLabel": "Prix",
     "pricePlaceholder": "Saisir le prix",
+    "priceDescription": "Dans la devise du cabinet (Configurations › Cabinet dentaire › Prix et paiements).",
     "priceType": {
       "fixed": "Prix fixe",
       "from": "À partir de",

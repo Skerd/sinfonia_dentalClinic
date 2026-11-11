@@ -3,14 +3,10 @@
   "failedTitle": "Behandlung konnte nicht geladen werden",
   "failedDescription": "Zum erneuten Versuch tippen.",
   "durationMinutes": "Dauer (Min.)",
-  "priceType": "Preisanzeige",
-  "priceTypeValues": {
-    "fixed": "Fixpreis",
-    "from": "Von",
-    "on_request": "Auf Anfrage",
-    "free": "Kostenlos"
-  },
   "price": "Preis",
+  "priceFrom": "ab",
+  "priceFree": "Kostenlos",
+  "priceOnRequest": "Preis auf Anfrage",
   "onlineBookable": "Online buchbar",
   "isActive": "Aktiv"
 }

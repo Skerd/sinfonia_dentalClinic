@@ -1,27 +1,62 @@
 {
   "dentalClinic": {
     "title": "Klinikë dentare",
-    "day": {"title": "Pamja ditore"},
-    "appointments": {"title": "Takime"},
-    "inquiries": {"title": "Kërkesat për ofertë"},
-    "plans": {"title": "Planet e trajtimit"},
-    "patients": {"title": "Pacientët"},
-    "trips": {"title": "Udhëtimet"},
-    "team": {"title": "Ekipi"},
-    "timeOff": {"title": "Mungesë"},
-    "services": {"title": "Trajtimet"},
-    "locations": {"title": "Vendndodhjet"}
+    "day": {
+      "title": "Pamja ditore"
+    },
+    "appointments": {
+      "title": "Takime"
+    },
+    "inquiries": {
+      "title": "Kërkesat për ofertë"
+    },
+    "plans": {
+      "title": "Planet e trajtimit"
+    },
+    "patients": {
+      "title": "Pacientët"
+    },
+    "trips": {
+      "title": "Udhëtimet"
+    },
+    "team": {
+      "title": "Ekipi"
+    },
+    "timeOff": {
+      "title": "Mungesë"
+    },
+    "services": {
+      "title": "Trajtimet"
+    },
+    "locations": {
+      "title": "Vendndodhjet"
+    }
   },
   "tenancy": {
     "systemSettings": {
       "clinicConfig": {
         "title": "Klinikë dentare",
-        "booking": {"title": "Rezervim online"},
-        "patients": {"title": "Pacientët dhe mesazhet"},
-        "privacy": {"title": "Njoftimi i privatësisë"},
-        "alerts": {"title": "Njoftime për punonjësit"},
-        "inquiries": {"title": "Kërkesat për ofertë"},
-        "profile": {"title": "Profili për pacientët nga jashtë"}
+        "booking": {
+          "title": "Rezervim online"
+        },
+        "prices": {
+          "title": "Çmimet dhe pagesat"
+        },
+        "patients": {
+          "title": "Pacientët dhe mesazhet"
+        },
+        "privacy": {
+          "title": "Njoftimi i privatësisë"
+        },
+        "alerts": {
+          "title": "Njoftime për punonjësit"
+        },
+        "inquiries": {
+          "title": "Kërkesat për ofertë"
+        },
+        "profile": {
+          "title": "Profili për pacientët nga jashtë"
+        }
       }
     }
   }

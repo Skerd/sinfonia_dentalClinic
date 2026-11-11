@@ -68,6 +68,7 @@
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Prezzo unitario",
     "lineUnitPricePlaceholder": "0",
+    "lineUnitPriceDescription": "Nella valuta del preventivo: quella dello studio quando è stato creato.",
     "lineDiscountLabel": "Sconto",
     "lineDiscountPlaceholder": "Facoltativo",
     "depositSectionTitle": "Acconto e validità",

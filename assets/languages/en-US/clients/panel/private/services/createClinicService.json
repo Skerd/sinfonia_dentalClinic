@@ -35,6 +35,7 @@
     "onlineBookableLabel": "Bookable online",
     "priceLabel": "Price",
     "pricePlaceholder": "Enter price",
+    "priceDescription": "In the clinic's currency (Configurations › Dental clinic › Prices and payments).",
     "priceType": {
       "fixed": "Fixed price",
       "from": "From",

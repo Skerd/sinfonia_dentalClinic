@@ -35,6 +35,7 @@
     "onlineBookableLabel": "Prenotabile online",
     "priceLabel": "Prezzo",
     "pricePlaceholder": "Inserisci il prezzo",
+    "priceDescription": "Nella valuta dello studio (Configurazioni › Studio dentistico › Prezzi e pagamenti).",
     "priceType": {
       "fixed": "Prezzo fisso",
       "from": "Da",

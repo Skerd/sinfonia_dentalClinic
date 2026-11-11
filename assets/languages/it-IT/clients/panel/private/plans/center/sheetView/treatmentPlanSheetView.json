@@ -13,6 +13,7 @@
   "validUntil": "Valido fino al",
   "sentAt": "Inviato",
   "depositType": "Acconto",
+  "depositAmount": "Importo dell'acconto",
   "notes": "Note per il paziente",
   "terms": "Condizioni",
   "totals": "Totale",

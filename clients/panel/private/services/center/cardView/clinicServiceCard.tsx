@@ -2,18 +2,27 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarCheck, IconCash, IconClock, IconTag, IconToggleRight} from "@tabler/icons-react";
+import {IconCalendarCheck, IconCash, IconClock, IconToggleRight} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ClinicService} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicService/clinicService.dto.ts";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
+import {priceLabel} from "@dentalClinicModule/clients/client/public/shared/clinicFormat.ts";
 import ClinicServiceSheetView from "@dentalClinicModule/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx";
 import {clinicServiceEditPath} from "@dentalClinicModule/clients/panel/private/services/index.tsx";
 import ActivateClinicService from "@dentalClinicModule/clients/panel/private/services/center/actions/activateClinicService.tsx";
 import DeactivateClinicService from "@dentalClinicModule/clients/panel/private/services/center/actions/deactivateClinicService.tsx";
 import ActivateClinicServiceDialog from "@dentalClinicModule/clients/panel/private/services/center/dialogs/activateClinicServiceDialog.tsx";
 import DeactivateClinicServiceDialog from "@dentalClinicModule/clients/panel/private/services/center/dialogs/deactivateClinicServiceDialog.tsx";
+
+/** An amount in the clinic currency; a bare number only while the clinic has no currency set (never a guessed one). */
+function clinicMoney(amount: number | undefined, currency: ClinicService["currency"]): string {
+    if (amount == null) return "";
+    if (!currency) return String(amount);
+    return formatCurrency(amount, currency.abbreviation, {minimumFractionDigits: 0, maximumFractionDigits: currency.decimalPlaces ?? 2});
+}
 
 type ClinicServiceCardProps = WithLanguageType & {
     clinicService: ClinicService;
@@ -110,21 +119,12 @@ function ClinicServiceCard({
                             value={row.durationMinutes}
                         />
                         <EntityCardRow
-                            icon={IconTag}
-                            label={resolveLanguageKey("priceType")}
-                            tooltip={resolveLanguageKey("priceType")}
-                            path="priceType"
-                            type="enum"
-                            languageKeyCategory="priceTypeValues"
-                            value={row.priceType}
-                        />
-                        <EntityCardRow
                             icon={IconCash}
                             label={resolveLanguageKey("price")}
                             tooltip={resolveLanguageKey("price")}
                             path="price"
-                            type="number"
-                            value={row.price}
+                            type="string"
+                            value={priceLabel(row, (amount) => clinicMoney(amount, row.currency), resolveLanguageKey)}
                         />
                         <EntityCardRow
                             icon={IconCalendarCheck}

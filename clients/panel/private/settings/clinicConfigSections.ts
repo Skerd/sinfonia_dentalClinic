@@ -1,5 +1,5 @@
 /** Path segments under `/tenancy/systemSettings/clinicConfig/`. One page per settings block. */
-export const CLINIC_CONFIG_SECTIONS = ["booking", "patients", "privacy", "alerts", "inquiries", "profile"] as const;
+export const CLINIC_CONFIG_SECTIONS = ["booking", "prices", "patients", "privacy", "alerts", "inquiries", "profile"] as const;
 
 export type ClinicConfigSection = (typeof CLINIC_CONFIG_SECTIONS)[number];
 

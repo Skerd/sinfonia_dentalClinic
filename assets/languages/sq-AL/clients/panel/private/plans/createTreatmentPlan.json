@@ -68,6 +68,7 @@
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Çmimi për njësi",
     "lineUnitPricePlaceholder": "0",
+    "lineUnitPriceDescription": "Në monedhën e ofertës: monedha e klinikës kur u krijua oferta.",
     "lineDiscountLabel": "Zbritje",
     "lineDiscountPlaceholder": "Opsionale",
     "depositSectionTitle": "Paradhënia dhe vlefshmëria",

@@ -68,6 +68,7 @@
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Einzelpreis",
     "lineUnitPricePlaceholder": "0",
+    "lineUnitPriceDescription": "In der Währung des Angebots: die Währung der Praxis beim Erstellen des Angebots.",
     "lineDiscountLabel": "Rabatt",
     "lineDiscountPlaceholder": "Optional",
     "depositSectionTitle": "Anzahlung und Gültigkeit",

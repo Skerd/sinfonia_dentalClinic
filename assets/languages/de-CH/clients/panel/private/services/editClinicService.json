@@ -35,6 +35,7 @@
     "onlineBookableLabel": "Online buchbar",
     "priceLabel": "Preis",
     "pricePlaceholder": "Preis eingeben",
+    "priceDescription": "In der Währung der Praxis (Konfigurationen › Zahnarztpraxis › Preise und Zahlungen).",
     "priceType": {
       "fixed": "Fixpreis",
       "from": "Von",

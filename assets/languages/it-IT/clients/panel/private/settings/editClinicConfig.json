@@ -4,10 +4,12 @@
   "description": "Vale per questo studio.",
   "form": {
     "bookingSectionTitle": "Prenotazione online",
+    "pricesSectionTitle": "Prezzi e pagamenti",
     "cancellationDeadlineHoursLabel": "Annullamento online fino a (ore prima)",
     "cancellationDeadlineHoursPlaceholder": "Annullamento online fino a (ore prima)",
-    "currencyLabel": "Valuta dei prezzi mostrati",
+    "currencyLabel": "Valuta dello studio",
     "currencyPlaceholder": "Seleziona valuta",
+    "currencyDescription": "Vale per i prezzi di ogni trattamento e per ogni nuovo preventivo e appuntamento. Cambiarla non modifica preventivi o appuntamenti già fatti: mantengono la loro valuta.",
     "guestBookingAllowedLabel": "I pazienti possono prenotare senza account",
     "includeServiceInMessagesLabel": "Indica il trattamento in e-mail e SMS",
     "maxAdvanceDaysLabel": "Prenotabile fino a (giorni prima)",

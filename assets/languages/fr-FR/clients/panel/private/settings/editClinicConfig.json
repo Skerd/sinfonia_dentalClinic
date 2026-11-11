@@ -4,10 +4,12 @@
   "description": "S'applique à ce cabinet.",
   "form": {
     "bookingSectionTitle": "Réservation en ligne",
+    "pricesSectionTitle": "Prix et paiements",
     "cancellationDeadlineHoursLabel": "Annulation en ligne jusqu'à (heures avant)",
     "cancellationDeadlineHoursPlaceholder": "Annulation en ligne jusqu'à (heures avant)",
-    "currencyLabel": "Devise des prix affichés",
+    "currencyLabel": "Devise du cabinet",
     "currencyPlaceholder": "Choisir une devise",
+    "currencyDescription": "S'applique au prix de chaque soin et à chaque nouveau devis et rendez-vous. La modifier ne change pas les devis ni les rendez-vous existants : ils gardent leur devise.",
     "guestBookingAllowedLabel": "Les patients peuvent réserver sans compte",
     "includeServiceInMessagesLabel": "Nommer le soin dans les e-mails et SMS",
     "maxAdvanceDaysLabel": "Réservable jusqu'à (jours à l'avance)",

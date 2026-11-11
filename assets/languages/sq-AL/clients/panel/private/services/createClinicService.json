@@ -35,6 +35,7 @@
     "onlineBookableLabel": "I rezervueshëm online",
     "priceLabel": "Çmimi",
     "pricePlaceholder": "Shkruani çmimin",
+    "priceDescription": "Në monedhën e klinikës (Konfigurimet › Klinikë dentare › Çmimet dhe pagesat).",
     "priceType": {
       "fixed": "Çmim fiks",
       "from": "Nga",

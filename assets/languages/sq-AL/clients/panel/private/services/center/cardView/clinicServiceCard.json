@@ -3,14 +3,10 @@
   "failedTitle": "Trajtimi nuk u ngarkua",
   "failedDescription": "Prekni për të provuar përsëri.",
   "durationMinutes": "Kohëzgjatja (min)",
-  "priceType": "Shfaqja e çmimit",
-  "priceTypeValues": {
-    "fixed": "Çmim fiks",
-    "from": "Nga",
-    "on_request": "Me kërkesë",
-    "free": "Falas"
-  },
   "price": "Çmimi",
+  "priceFrom": "nga",
+  "priceFree": "Falas",
+  "priceOnRequest": "Çmimi me kërkesë",
   "onlineBookable": "I rezervueshëm online",
   "isActive": "Aktiv"
 }

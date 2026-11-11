@@ -11,6 +11,7 @@ import {isClinicConfigSection, type ClinicConfigSection} from "@dentalClinicModu
 /** Matches `skipRenderWhenFormExtraNotTruthy` on each block in `clinicConfig.views.ts`. */
 const SECTION_FLAGS: Record<ClinicConfigSection, string> = {
     booking: "sectionBooking",
+    prices: "sectionPrices",
     patients: "sectionPatients",
     privacy: "sectionPrivacy",
     alerts: "sectionAlerts",

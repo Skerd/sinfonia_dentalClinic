@@ -1,10 +1,11 @@
-import {IconBell, IconCalendarEvent, IconDental, IconInbox, IconMessage, IconShieldLock, IconWorld} from "@tabler/icons-react";
+import {IconBell, IconCalendarEvent, IconCoins, IconDental, IconInbox, IconMessage, IconShieldLock, IconWorld} from "@tabler/icons-react";
 import type {TenancySettingsContribution} from "@coreModule/helpers/types/tenancySettingsContribution.types.ts";
 import type {NavLinkItem} from "@coreModule/helpers/types/sidebarNav.types.ts";
 import {clinicConfigSectionPath, type ClinicConfigSection} from "@dentalClinicModule/clients/panel/private/settings/clinicConfigSections.ts";
 
 const SECTIONS: {section: ClinicConfigSection; icon: NavLinkItem["icon"]}[] = [
     {section: "booking", icon: IconCalendarEvent},
+    {section: "prices", icon: IconCoins},
     {section: "patients", icon: IconMessage},
     {section: "privacy", icon: IconShieldLock},
     {section: "alerts", icon: IconBell},

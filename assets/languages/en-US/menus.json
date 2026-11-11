@@ -1,27 +1,62 @@
 {
   "dentalClinic": {
     "title": "Dental clinic",
-    "day": {"title": "Day view"},
-    "appointments": {"title": "Appointments"},
-    "inquiries": {"title": "Estimate requests"},
-    "plans": {"title": "Treatment plans"},
-    "patients": {"title": "Patients"},
-    "trips": {"title": "Trips"},
-    "team": {"title": "Team"},
-    "timeOff": {"title": "Time off"},
-    "services": {"title": "Treatments"},
-    "locations": {"title": "Locations"}
+    "day": {
+      "title": "Day view"
+    },
+    "appointments": {
+      "title": "Appointments"
+    },
+    "inquiries": {
+      "title": "Estimate requests"
+    },
+    "plans": {
+      "title": "Treatment plans"
+    },
+    "patients": {
+      "title": "Patients"
+    },
+    "trips": {
+      "title": "Trips"
+    },
+    "team": {
+      "title": "Team"
+    },
+    "timeOff": {
+      "title": "Time off"
+    },
+    "services": {
+      "title": "Treatments"
+    },
+    "locations": {
+      "title": "Locations"
+    }
   },
   "tenancy": {
     "systemSettings": {
       "clinicConfig": {
         "title": "Dental clinic",
-        "booking": {"title": "Online booking"},
-        "patients": {"title": "Patients and messages"},
-        "privacy": {"title": "Privacy notice"},
-        "alerts": {"title": "Staff alerts"},
-        "inquiries": {"title": "Estimate requests"},
-        "profile": {"title": "Profile for patients from abroad"}
+        "booking": {
+          "title": "Online booking"
+        },
+        "prices": {
+          "title": "Prices and payments"
+        },
+        "patients": {
+          "title": "Patients and messages"
+        },
+        "privacy": {
+          "title": "Privacy notice"
+        },
+        "alerts": {
+          "title": "Staff alerts"
+        },
+        "inquiries": {
+          "title": "Estimate requests"
+        },
+        "profile": {
+          "title": "Profile for patients from abroad"
+        }
       }
     }
   }

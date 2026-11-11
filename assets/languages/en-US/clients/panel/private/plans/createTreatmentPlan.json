@@ -68,6 +68,7 @@
     "lineQuantityPlaceholder": "1",
     "lineUnitPriceLabel": "Unit price",
     "lineUnitPricePlaceholder": "0",
+    "lineUnitPriceDescription": "In the quote's currency: the clinic's currency when the quote was created.",
     "lineDiscountLabel": "Discount",
     "lineDiscountPlaceholder": "Optional",
     "depositSectionTitle": "Deposit and validity",

@@ -3,14 +3,10 @@
   "failedTitle": "Failed to load treatment",
   "failedDescription": "Tap to retry.",
   "durationMinutes": "Duration (min)",
-  "priceType": "Price display",
-  "priceTypeValues": {
-    "fixed": "Fixed price",
-    "from": "From",
-    "on_request": "On request",
-    "free": "Free"
-  },
   "price": "Price",
+  "priceFrom": "from",
+  "priceFree": "Free",
+  "priceOnRequest": "Price on request",
   "onlineBookable": "Bookable online",
   "isActive": "Active"
 }

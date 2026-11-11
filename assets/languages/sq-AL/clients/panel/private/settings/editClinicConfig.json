@@ -4,10 +4,12 @@
   "description": "Vlen për këtë klinikë.",
   "form": {
     "bookingSectionTitle": "Rezervim online",
+    "pricesSectionTitle": "Çmimet dhe pagesat",
     "cancellationDeadlineHoursLabel": "Anulimi online deri (orë përpara)",
     "cancellationDeadlineHoursPlaceholder": "Anulimi online deri (orë përpara)",
-    "currencyLabel": "Monedha e çmimeve të shfaqura",
+    "currencyLabel": "Monedha e klinikës",
     "currencyPlaceholder": "Zgjidh monedhën",
+    "currencyDescription": "Vlen për çmimin e çdo trajtimi dhe për çdo ofertë dhe rezervim të ri. Ndryshimi i saj nuk prek ofertat ose rezervimet ekzistuese: ato ruajnë monedhën e tyre.",
     "guestBookingAllowedLabel": "Pacientët mund të rezervojnë pa llogari",
     "includeServiceInMessagesLabel": "Përmend trajtimin në email dhe SMS",
     "maxAdvanceDaysLabel": "I rezervueshëm deri në (ditë përpara)",

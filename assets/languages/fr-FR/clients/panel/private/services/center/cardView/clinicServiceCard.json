@@ -3,14 +3,10 @@
   "failedTitle": "Impossible de charger le soin",
   "failedDescription": "Touchez pour réessayer.",
   "durationMinutes": "Durée (min)",
-  "priceType": "Affichage du prix",
-  "priceTypeValues": {
-    "fixed": "Prix fixe",
-    "from": "À partir de",
-    "on_request": "Sur demande",
-    "free": "Gratuit"
-  },
   "price": "Prix",
+  "priceFrom": "à partir de",
+  "priceFree": "Gratuit",
+  "priceOnRequest": "Prix sur demande",
   "onlineBookable": "Réservable en ligne",
   "isActive": "Actif"
 }

@@ -13,6 +13,7 @@
   "validUntil": "Valid until",
   "sentAt": "Sent",
   "depositType": "Deposit",
+  "depositAmount": "Deposit amount",
   "notes": "Notes for the patient",
   "terms": "Terms",
   "totals": "Total",

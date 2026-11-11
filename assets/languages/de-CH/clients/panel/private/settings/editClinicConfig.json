@@ -4,10 +4,12 @@
   "description": "Gilt für diese Praxis.",
   "form": {
     "bookingSectionTitle": "Online-Buchung",
+    "pricesSectionTitle": "Preise und Zahlungen",
     "cancellationDeadlineHoursLabel": "Online-Absage bis (Stunden vorher)",
     "cancellationDeadlineHoursPlaceholder": "Online-Absage bis (Stunden vorher)",
-    "currencyLabel": "Währung für angezeigte Preise",
+    "currencyLabel": "Währung der Praxis",
     "currencyPlaceholder": "Währung auswählen",
+    "currencyDescription": "Gilt für alle Behandlungspreise und jedes neue Angebot und jede neue Buchung. Eine Änderung betrifft bestehende Angebote und Buchungen nicht: Sie behalten ihre Währung.",
     "guestBookingAllowedLabel": "Patienten können ohne Konto buchen",
     "includeServiceInMessagesLabel": "Behandlung in E-Mails und SMS nennen",
     "maxAdvanceDaysLabel": "Buchbar bis (Tage im Voraus)",

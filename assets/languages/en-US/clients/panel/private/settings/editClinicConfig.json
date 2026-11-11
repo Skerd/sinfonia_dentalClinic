@@ -4,10 +4,12 @@
   "description": "Applies to this clinic.",
   "form": {
     "bookingSectionTitle": "Online booking",
+    "pricesSectionTitle": "Prices and payments",
     "cancellationDeadlineHoursLabel": "Online cancellation until (hours before)",
     "cancellationDeadlineHoursPlaceholder": "Online cancellation until (hours before)",
-    "currencyLabel": "Currency for prices shown",
+    "currencyLabel": "Clinic currency",
     "currencyPlaceholder": "Select currency",
+    "currencyDescription": "Prices every treatment and every new quote and booking. Changing it does not change quotes or bookings already made: they keep the currency they were made in.",
     "guestBookingAllowedLabel": "Patients can book without an account",
     "includeServiceInMessagesLabel": "Name the treatment in emails and texts",
     "maxAdvanceDaysLabel": "Bookable up to (days ahead)",
