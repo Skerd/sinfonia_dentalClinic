@@ -10,6 +10,7 @@ import {Checkbox} from "@coreModule/components/ui/checkbox.tsx";
 import {Field, FieldLabel} from "@coreModule/components/ui/field.tsx";
 import {Textarea} from "@coreModule/components/ui/textarea.tsx";
 import FormField from "@coreModule/clients/portal/shared/formField.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import FormStatus from "@coreModule/clients/portal/shared/formStatus.tsx";
 import {usePortalSession} from "@coreModule/clients/portal/shared/portalSession.tsx";
 import {
@@ -49,6 +50,8 @@ function PatientRequestForm({clinics, resolveLanguageKey, languageCode}: Props) 
     const location = useLocation();
     const {isAuthenticated, user} = usePortalSession();
     const descriptionId = useId();
+    const travelFromId = useId();
+    const travelToId = useId();
     const fileInput = useRef<HTMLInputElement>(null);
     const idempotencyKey = useMemo(() => crypto.randomUUID(), []);
     const preferredLanguage: PatientLanguage = PATIENT_LANGUAGES.find((language) => language === languageCode) ?? "en-US";
@@ -187,8 +190,14 @@ function PatientRequestForm({clinics, resolveLanguageKey, languageCode}: Props) 
             </section>
 
             <div className="grid gap-4 sm:grid-cols-2">
-                <FormField type="date" label={resolveLanguageKey("travelFrom")} value={travelFrom} onChange={(event) => setTravelFrom(event.target.value)} />
-                <FormField type="date" label={resolveLanguageKey("travelTo")} min={travelFrom || undefined} value={travelTo} onChange={(event) => setTravelTo(event.target.value)} />
+                <Field>
+                    <FieldLabel htmlFor={travelFromId}>{resolveLanguageKey("travelFrom")}</FieldLabel>
+                    <DateInput id={travelFromId} valueFormat="YYYY-MM-DD" value={travelFrom} onChange={setTravelFrom} className="px-3.5" />
+                </Field>
+                <Field>
+                    <FieldLabel htmlFor={travelToId}>{resolveLanguageKey("travelTo")}</FieldLabel>
+                    <DateInput id={travelToId} valueFormat="YYYY-MM-DD" minDate={travelFrom || undefined} value={travelTo} onChange={setTravelTo} className="px-3.5" />
+                </Field>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">

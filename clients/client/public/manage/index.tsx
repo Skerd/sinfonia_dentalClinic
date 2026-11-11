@@ -15,6 +15,7 @@ import type {
 import {useClinicConfig} from "../shared/clinicConfigContext.tsx";
 import ClinicSlotPicker, {type PickedSlot} from "../shared/clinicSlotPicker.tsx";
 import {formatAtClinic, formatDay, priceLabel} from "../shared/clinicFormat.ts";
+import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 
 const MANAGE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/manage"};
@@ -37,6 +38,12 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const token = params.get("token") ?? "";
     const justBooked = params.get("booked") === "1";
     const {formatMoney} = useClinicConfig();
+    // A booking keeps the currency it was priced in; the clinic may have changed its currency since.
+    const bookedMoney = (amount: number | undefined) => {
+        const code = appointment?.currency?.abbreviation;
+        if (!code) return formatMoney(amount);
+        return amount == null ? "" : formatCurrency(amount, code, {minimumFractionDigits: 0, maximumFractionDigits: appointment?.currency?.decimalPlaces ?? 2});
+    };
     const [appointment, setAppointment] = useState<PublicAppointment | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [mode, setMode] = useState<"view" | "cancel" | "reschedule">("view");
@@ -120,7 +127,7 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
                     <div>
                         <dt className="font-medium">{resolveLanguageKey("service")}</dt>
                         <dd className="text-muted-foreground">{appointment.serviceName} · {appointment.durationMinutes} {resolveLanguageKey("minutes")}</dd>
-                        <dd className="text-muted-foreground">{priceLabel(appointment, formatMoney, resolveLanguageKey)}</dd>
+                        <dd className="text-muted-foreground">{priceLabel(appointment, bookedMoney, resolveLanguageKey)}</dd>
                     </div>
                     <div>
                         <dt className="font-medium">{resolveLanguageKey("practitioner")}</dt>

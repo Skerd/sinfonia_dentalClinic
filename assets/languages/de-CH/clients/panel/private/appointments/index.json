@@ -32,6 +32,11 @@
         "completed": "Abgeschlossen",
         "cancelled": "Storniert",
         "no_show": "Nicht erschienen"
+      },
+      "when": {
+        "upcoming": "Bevorstehend",
+        "today": "Heute",
+        "past": "Vergangen"
       }
     },
     "number": "Buchung",
@@ -49,6 +54,7 @@
     "deletedBy": "Gelöscht von",
     "endAt": "Endet",
     "customer": "Patientenkonto",
-    "patientRecord": "Patientenakte"
+    "patientRecord": "Patientenakte",
+    "when": "Wann"
   }
 }

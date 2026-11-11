@@ -32,6 +32,11 @@
         "completed": "Përfunduar",
         "cancelled": "Anuluar",
         "no_show": "Mosparaqitje"
+      },
+      "when": {
+        "upcoming": "Të ardhshme",
+        "today": "Sot",
+        "past": "Të kaluara"
       }
     },
     "number": "Rezervimi",
@@ -49,6 +54,7 @@
     "deletedBy": "Fshirë nga",
     "endAt": "Përfundon",
     "customer": "Llogaria e pacientit",
-    "patientRecord": "Kartela e pacientit"
+    "patientRecord": "Kartela e pacientit",
+    "when": "Kur"
   }
 }

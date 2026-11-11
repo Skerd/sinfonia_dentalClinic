@@ -32,6 +32,11 @@
         "completed": "Completed",
         "cancelled": "Cancelled",
         "no_show": "No-show"
+      },
+      "when": {
+        "upcoming": "Upcoming",
+        "today": "Today",
+        "past": "Past"
       }
     },
     "number": "Booking",
@@ -49,6 +54,7 @@
     "deletedBy": "Deleted by",
     "endAt": "Ends",
     "customer": "Patient account",
-    "patientRecord": "Patient folder"
+    "patientRecord": "Patient folder",
+    "when": "When"
   }
 }

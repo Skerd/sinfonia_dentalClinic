@@ -5,7 +5,7 @@ import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import EntityListPage, {EntityListCreateButton, EntityListHeader, type QuickFilterDef} from "@coreModule/components/entityPage/pages/entityListPage.tsx";
 import {IconPlus} from "@tabler/icons-react";
 import {COLUMN_TYPE} from "armonia/src/modules/core/database/filter/typeOperators.ts";
-import {APPOINTMENT_STATUSES} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/appointment/appointment.constants.ts";
+import {APPOINTMENT_STATUSES, APPOINTMENT_WHEN} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/appointment/appointment.constants.ts";
 import type {Appointment} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/appointment/appointment.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import AppointmentCard from "./center/cardView/appointmentCard.tsx";
@@ -19,6 +19,17 @@ export function appointmentEditPath(row: {_id: string}) {
 
 function AllAppointments({resolveLanguageKey}: WithLanguageType) {
     const quickFilters = useMemo<QuickFilterDef[]>(() => [
+        {
+            // Not a stored field: the list route turns it into a time range in the company's time zone.
+            field: "when",
+            label: String(resolveLanguageKey("fields.when")),
+            type: COLUMN_TYPE.ENUM,
+            enumValues: APPOINTMENT_WHEN.map((value) => ({
+                value,
+                label: String(resolveLanguageKey(`fields.!enums.when.${value}`)),
+            })),
+            asExtraParam: true,
+        },
         {
             field: "status",
             label: String(resolveLanguageKey("fields.status")),
@@ -85,13 +96,14 @@ function AllAppointments({resolveLanguageKey}: WithLanguageType) {
                     onUpdated={(updated) => listRef.current?.updateRow?.(entity._id, updated)}
                 />
             )}
-            renderSheet={({open, onOpenChange, entity, onDelete, onRestore}) => (
+            renderSheet={({open, onOpenChange, entity, onDelete, onRestore, listRef}) => (
                 <AppointmentSheetView
                     open={open}
                     onOpenChange={onOpenChange}
                     appointment={entity}
                     onDelete={onDelete}
                     onRestore={onRestore}
+                    onSheetRowPatched={(row: Partial<Appointment>) => listRef.current?.updateRow?.(entity._id, row)}
                 />
             )}
             renderCard={(row, onDelete, onRestore) => (

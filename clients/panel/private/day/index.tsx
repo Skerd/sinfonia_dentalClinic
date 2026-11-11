@@ -8,7 +8,7 @@ import {useAccess} from "@coreModule/helpers/hooks/useAccess.ts";
 import Forbidden from "@coreModule/components/custom/pages/forbidden.tsx";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
-import {Input} from "@coreModule/components/ui/input.tsx";
+import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import {NativeSelect, NativeSelectOption} from "@coreModule/components/ui/native-select.tsx";
 import {cn} from "@coreModule/components/lib/utils.ts";
 import type {SelectResponse} from "armonia/src/modules/core/types/shared.types.ts";
@@ -113,7 +113,13 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                     <Button variant="outline" size="icon" aria-label={String(resolveLanguageKey("previousDay"))} onClick={() => setDate((d) => shiftDate(d, -1))}>
                         <IconChevronLeft size={16} />
                     </Button>
-                    <Input type="date" className="w-40" aria-label={String(resolveLanguageKey("date"))} value={date} onChange={(e) => e.target.value && setDate(e.target.value)} />
+                    <DateInput
+                        aria-label={String(resolveLanguageKey("date"))}
+                        valueFormat="YYYY-MM-DD"
+                        value={date}
+                        onChange={(value) => value && setDate(value)}
+                        className="w-56"
+                    />
                     <Button variant="outline" size="icon" aria-label={String(resolveLanguageKey("nextDay"))} onClick={() => setDate((d) => shiftDate(d, 1))}>
                         <IconChevronRight size={16} />
                     </Button>

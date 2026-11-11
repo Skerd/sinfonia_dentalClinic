@@ -11,6 +11,9 @@ import SheetMediaFilesStrip from "@coreModule/components/viewEngine/sheet/widget
 import {CLINIC_MESSAGE_ATTACHMENTS_MAX, CLINIC_MESSAGE_BODY_MAX, PATIENT_FILE_MIME_TYPES} from "armonia/src/modules/dentalClinic/constants/index.ts";
 import type {ClinicMessage} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicMessage/clinicMessage.dto.ts";
 import {Input} from "@coreModule/components/ui/input.tsx";
+import {DATE_FORMATS, formatDate} from "@coreModule/helpers/general/dateTime.ts";
+
+const MESSAGE_TIME: Intl.DateTimeFormatOptions = {...DATE_FORMATS.mediumDate, hour: "2-digit", minute: "2-digit"};
 
 const THREAD_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicInquiry/thread"};
 const SEND_MESSAGE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicInquiry/sendMessage"};
@@ -84,7 +87,7 @@ function InquiryThread({inquiryId, canReply, onSent, resolveLanguageKey}: Props)
                         <span className="text-xs text-muted-foreground">
                             {message.from === "clinic" ? message.authorName || resolveLanguageKey("clinic") : resolveLanguageKey("patient")}
                             {" · "}
-                            {new Date(message.createdAt).toLocaleString()}
+                            {formatDate(message.createdAt, {format: MESSAGE_TIME})}
                         </span>
                         <p className="whitespace-pre-wrap break-words">{message.body}</p>
                         {message.attachments.length ? (

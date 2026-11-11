@@ -52,11 +52,9 @@ function AppointmentCard({
             failedDescription={resolveLanguageKey("failedDescription")}
             titlePath="number"
             innerRef={innerRef}
-            sheetProps={({entity, setAction}) => ({
+            sheetProps={({entity, setEntity}) => ({
                 fetchId,
-                actionMenuAllowCustomChildren: true,
-                onActionMenuAction: setAction,
-                actionMenuChildren: <AppointmentMenu appointment={entity} onAction={setAction} />,
+                onSheetRowPatched: (row: Partial<Appointment>) => setEntity({...entity, ...row}),
             })}
             extraDialogs={({action, setAction, entity, setEntity}) => (
                 <AppointmentDialogs

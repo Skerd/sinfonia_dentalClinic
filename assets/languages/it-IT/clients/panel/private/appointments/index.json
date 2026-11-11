@@ -32,6 +32,11 @@
         "completed": "Completato",
         "cancelled": "Annullato",
         "no_show": "Non presentato"
+      },
+      "when": {
+        "upcoming": "In arrivo",
+        "today": "Oggi",
+        "past": "Passati"
       }
     },
     "number": "Prenotazione",
@@ -49,6 +54,7 @@
     "deletedBy": "Eliminato da",
     "endAt": "Termina",
     "customer": "Account paziente",
-    "patientRecord": "Cartella paziente"
+    "patientRecord": "Cartella paziente",
+    "when": "Quando"
   }
 }
