@@ -2,6 +2,7 @@ import type {ReactNode} from "react";
 import {cn} from "@coreModule/components/lib/utils.ts";
 import type {ClinicStorefrontPractitioner} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
+import {languageNames} from "./clinicFormat.ts";
 
 type ClinicPractitionerCardProps = {
     practitioner: ClinicStorefrontPractitioner;
@@ -26,7 +27,7 @@ export function ClinicPractitionerCard({practitioner, roleLabel, locationsLabel,
                 <p className="font-display text-base font-semibold tracking-tight">{practitioner.displayName}</p>
                 <p className="text-sm text-muted-foreground">{roleLabel}</p>
                 {practitioner.languages.length ? (
-                    <p className="mt-0.5 text-xs text-muted-foreground">{practitioner.languages.join(" · ")}</p>
+                    <p className="mt-0.5 text-xs text-muted-foreground">{languageNames(practitioner.languages)}</p>
                 ) : null}
                 {practitioner.bio ? (
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{practitioner.bio}</p>

@@ -8,10 +8,11 @@
   "chooseDay": "Giorni disponibili",
   "pickTime": "Scegli un orario",
   "timesCount": "{count} orari",
-  "closed": "Nessun orario",
+  "closed": "Chiuso",
   "period": {
     "morning": "Mattina",
     "afternoon": "Pomeriggio",
     "evening": "Sera"
-  }
+  },
+  "fullyBooked": "Al completo"
 }

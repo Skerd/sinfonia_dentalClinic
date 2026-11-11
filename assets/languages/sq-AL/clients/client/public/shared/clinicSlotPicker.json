@@ -8,10 +8,11 @@
   "chooseDay": "Ditët e lira",
   "pickTime": "Zgjidhni orën",
   "timesCount": "{count} orare",
-  "closed": "Asnjë orar",
+  "closed": "Mbyllur",
   "period": {
     "morning": "Mëngjes",
     "afternoon": "Pasdite",
     "evening": "Mbrëmje"
-  }
+  },
+  "fullyBooked": "E zënë"
 }

@@ -1,11 +1,10 @@
 import {useEffect, useState} from "react";
 import {compose} from "redux";
-import {IconChevronDown, IconChevronLeft, IconChevronRight} from "@tabler/icons-react";
+import {IconChevronLeft, IconChevronRight} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {cn} from "@coreModule/components/lib/utils.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
-import {Popover, PopoverContent, PopoverTrigger} from "@coreModule/components/ui/popover.tsx";
 import type {ClinicSlotsFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.forms.ts";
 import type {ClinicSlot, ClinicSlotsResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
 import {addCalendarDays, companyToday} from "@coreModule/helpers/general/dateTime.ts";
@@ -43,7 +42,6 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
     const locationTimeZone = config?.locations.find((candidate) => candidate._id === location)?.timezone ?? "UTC";
     const [fromDate, setFromDate] = useState(() => selected?.date ?? companyToday(locationTimeZone));
     const [pickedDate, setPickedDate] = useState(selected?.date ?? "");
-    const [timesOpen, setTimesOpen] = useState(false);
 
     const [slotsCount, setSlotsCount] = useState(0);
     useEffect(() => {
@@ -69,19 +67,14 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
         slots: (picked?.slots ?? []).filter((slot) => periodOf(slot.time) === period),
     })).filter((group) => group.slots.length);
 
-    const pickDay = (date: string) => {
-        setPickedDate(date);
-        if (compact) setTimesOpen(true);
-    };
+    const pickDay = (date: string) => setPickedDate(date);
 
     const hours = days && picked && picked.slots.length ? (
         <div className={cn("flex flex-col gap-4", compact ? "p-1" : undefined)} aria-live="polite">
-            {compact ? null : (
-                <div className="flex flex-col gap-0.5">
-                    <p className="text-sm font-semibold">{formatLongDay(picked.date, languageCode)}</p>
-                    <p className="text-xs text-muted-foreground">{resolveLanguageKey("pickTime")}</p>
-                </div>
-            )}
+            <div className="flex flex-col gap-0.5">
+                <p className="text-sm font-semibold">{formatLongDay(picked.date, languageCode)}</p>
+                <p className="text-xs text-muted-foreground">{resolveLanguageKey("pickTime")}</p>
+            </div>
             {grouped.map((group) => (
                 <div key={group.period} className="flex flex-col gap-2">
                     <p className="text-[11px] font-semibold tracking-[0.16em] text-muted-foreground uppercase">{resolveLanguageKey(`period.${group.period}`)}</p>
@@ -94,10 +87,7 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                                     type="button"
                                     variant="bare"
                                     aria-pressed={active}
-                                    onClick={() => {
-                                        onPick({date: picked.date, time: slot.time});
-                                        setTimesOpen(false);
-                                    }}
+                                    onClick={() => onPick({date: picked.date, time: slot.time})}
                                     className={cn(
                                         "tabular-nums transition-colors",
                                         compact ? "rounded-lg border px-2 py-1.5 text-xs" : "rounded-full border px-3.5 py-2 text-sm",
@@ -146,6 +136,8 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                     {days.map((day) => {
                         const free = day.slots.length;
                         const active = day.date === pickedDate;
+                        // A greyed day says why: nobody works then, or every time is taken (or already past).
+                        const why = String(resolveLanguageKey(day.closed ? "closed" : "fullyBooked"));
                         return (
                             <Button
                                 key={day.date}
@@ -154,7 +146,8 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                                 role="option"
                                 disabled={!free}
                                 aria-selected={active}
-                                aria-label={`${formatDay(day.date, languageCode)}${free ? ` · ${resolveLanguageKey("timesCount").replace("{count}", String(free))}` : ` · ${resolveLanguageKey("closed")}`}`}
+                                aria-label={`${formatDay(day.date, languageCode)} · ${free ? resolveLanguageKey("timesCount").replace("{count}", String(free)) : why}`}
+                                title={free ? undefined : why}
                                 onClick={() => pickDay(day.date)}
                                 className={cn(
                                     "flex flex-col items-center justify-center rounded-2xl px-1 text-center transition-colors",
@@ -170,7 +163,7 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                                 <span className={cn("font-display font-semibold tabular-nums", compact ? "text-base leading-none" : "text-lg leading-none")}>{dayNumber(day.date)}</span>
                                 {compact ? null : (
                                     <span className={cn("max-w-full truncate px-0.5 text-[10px] leading-tight", active ? "text-primary-foreground/80" : "text-muted-foreground")}>
-                                        {free ? String(resolveLanguageKey("timesCount")).replace("{count}", String(free)) : "·"}
+                                        {free ? String(resolveLanguageKey("timesCount")).replace("{count}", String(free)) : why}
                                     </span>
                                 )}
                             </Button>
@@ -179,26 +172,8 @@ function ClinicSlotPicker({service, location, practitioner, selected, onPick, co
                 </div>
             ) : null}
 
-            {compact && hours ? (
-                <Popover open={timesOpen} onOpenChange={setTimesOpen}>
-                    <PopoverTrigger asChild>
-                        <Button type="button" variant="bare" className="flex w-full items-center justify-between gap-3 rounded-xl border px-4 py-3 text-left transition-colors hover:bg-muted/50">
-                            <span className="min-w-0">
-                                <span className="text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">{resolveLanguageKey("pickTime")}</span>
-                                <span className="block truncate text-sm font-semibold">
-                                    {selected?.date === picked?.date && selected?.time
-                                        ? `${formatDay(selected.date, languageCode)} · ${selected.time}`
-                                        : formatLongDay(picked?.date ?? pickedDate, languageCode)}
-                                </span>
-                            </span>
-                            <IconChevronDown className="size-4 shrink-0 text-muted-foreground" aria-hidden />
-                        </Button>
-                    </PopoverTrigger>
-                    <PopoverContent align="start" className="w-[var(--radix-popover-trigger-width)] max-h-64 overflow-y-auto p-3">
-                        {hours}
-                    </PopoverContent>
-                </Popover>
-            ) : hours}
+            {/* The times open inline under the days, in the page's flow (not over the footer). */}
+            {hours}
 
             {days && !days.some((day) => day.slots.length) ? (
                 <p className="text-sm text-muted-foreground">{resolveLanguageKey("noneThisWeek")}</p>

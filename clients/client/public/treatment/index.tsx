@@ -18,11 +18,13 @@ const ANYONE = "any";
 
 function TreatmentPage({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();
-    const {serviceId = ""} = useParams();
+    // The address carries the treatment's slug; an older link with its id still opens it.
+    const {serviceId: serviceParam = ""} = useParams();
     const [params] = useSearchParams();
     const navigate = useNavigate();
     const {config, loading, formatMoney} = useClinicConfig();
-    const service = config?.services.find((entry) => entry._id === serviceId);
+    const service = config?.services.find((entry) => entry.slug === serviceParam || entry._id === serviceParam);
+    const serviceId = service?._id ?? "";
     const canBook = Boolean(config && service && bookableServices(config).some((entry) => entry._id === service._id));
     const doers = config?.practitioners.filter((practitioner) => practitioner.services.includes(serviceId)) ?? [];
     const locations = config?.locations.filter((location) => doers.some((practitioner) => practitioner.locations.includes(location._id))) ?? [];

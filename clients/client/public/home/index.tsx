@@ -4,7 +4,7 @@ import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx"
 import {IconArrowRight} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import {bookableServices, useClinicConfig} from "../shared/clinicConfigContext.tsx";
-import {priceLabel} from "../shared/clinicFormat.ts";
+import {languageNames, priceLabel} from "../shared/clinicFormat.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {usePortalSession} from "@coreModule/clients/portal/shared/portalSession.tsx";
 import ClinicProfileSection from "./clinicProfileSection.tsx";
@@ -47,7 +47,7 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                     <ul className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
                         {config.services.map((service) => (
                             <li key={service._id}>
-                                <Link to={`${base}/treatments/${service._id}`} className="group flex flex-col gap-3 rounded-2xl outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
+                                <Link to={`${base}/treatments/${service.slug || service._id}`} className="group flex flex-col gap-3 rounded-2xl outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
                                     {service.images[0] ? (
                                         <img src={service.images[0]} alt="" className="aspect-[4/3] w-full rounded-2xl object-cover" loading="lazy" />
                                     ) : (
@@ -82,7 +82,7 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                         {config.practitioners.map((practitioner) => {
                             const offered = practitioner.services.filter((id) => bookable.has(id));
                             const bookHref = offered.length === 1
-                                ? `${base}/treatments/${offered[0]}?practitioner=${practitioner._id}`
+                                ? `${base}/treatments/${config.services.find((service) => service._id === offered[0])?.slug || offered[0]}?practitioner=${practitioner._id}`
                                 : `${base}/book?practitioner=${practitioner._id}`;
                             return (
                                 <li key={practitioner._id} className="flex gap-4">
@@ -94,7 +94,7 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                                     <div className="flex flex-col gap-1">
                                         <h3 className="font-medium">{practitioner.displayName}</h3>
                                         <p className="text-sm text-muted-foreground">{practitioner.title || resolveLanguageKey(`role.${practitioner.role}`)}</p>
-                                        {practitioner.languages.length ? <p className="text-xs text-muted-foreground">{practitioner.languages.join(" · ")}</p> : null}
+                                        {practitioner.languages.length ? <p className="text-xs text-muted-foreground">{languageNames(practitioner.languages)}</p> : null}
                                         {practitioner.bio ? <p className="mt-1 line-clamp-3 text-sm text-muted-foreground">{practitioner.bio}</p> : null}
                                         {offered.length ? (
                                             <Button asChild variant="link" className="mt-1 inline-flex h-auto items-center gap-1 p-0 text-sm"><Link to={bookHref}>

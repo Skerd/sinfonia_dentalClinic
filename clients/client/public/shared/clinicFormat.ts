@@ -44,3 +44,20 @@ export function dayNumber(date: string): string {
 export function formatAtClinic(iso: string, timeZone: string, locale?: string): string {
     return new Intl.DateTimeFormat(locale, {timeZone, weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit"}).format(new Date(iso));
 }
+
+/** Language codes ("sq", "en", "it") as names in the visitor's language ("Albanian · English · Italian"); an unknown code stays as typed. */
+export function languageNames(codes: readonly string[]): string {
+    let names: Intl.DisplayNames | null = null;
+    try {
+        names = new Intl.DisplayNames([document.documentElement.lang || "en"], {type: "language"});
+    } catch {
+        names = null;
+    }
+    return codes.map((code) => {
+        try {
+            return names?.of(code) ?? code;
+        } catch {
+            return code;
+        }
+    }).join(" · ");
+}

@@ -50,7 +50,7 @@ const baseConfig: Config = {
 const slots: ClinicSlotsResponse = {
     data: {
         timezone: "Europe/Zurich",
-        days: [{date: "2099-01-05", slots: [{time: "09:30", startAt: "2099-01-05T08:30:00.000Z", practitioners: ["p1"]}]}],
+        days: [{date: "2099-01-05", closed: false, slots: [{time: "09:30", startAt: "2099-01-05T08:30:00.000Z", practitioners: ["p1"]}]}],
     },
 };
 

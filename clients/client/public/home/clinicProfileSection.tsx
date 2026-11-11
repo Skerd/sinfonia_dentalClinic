@@ -2,6 +2,7 @@ import {compose} from "redux";
 import {IconCertificate, IconLanguage, IconPlane, IconShieldCheck} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
+import {languageNames} from "../shared/clinicFormat.ts";
 import type {ClinicStorefrontProfile} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
 
 type Props = WithLanguageType & {profile: ClinicStorefrontProfile};
@@ -33,7 +34,7 @@ function ClinicProfileSection({profile, resolveLanguageKey}: Props) {
                     {profile.languagesSpoken.length ? (
                         <div className="flex gap-3">
                             <IconLanguage className="mt-0.5 shrink-0" size={20} aria-hidden />
-                            <div><dt className="font-medium">{resolveLanguageKey("languages")}</dt><dd className="text-sm text-muted-foreground">{profile.languagesSpoken.join(" · ")}</dd></div>
+                            <div><dt className="font-medium">{resolveLanguageKey("languages")}</dt><dd className="text-sm text-muted-foreground">{languageNames(profile.languagesSpoken)}</dd></div>
                         </div>
                     ) : null}
                     {profile.implantBrands.length ? (

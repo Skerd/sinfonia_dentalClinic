@@ -8,10 +8,11 @@
   "chooseDay": "Available days",
   "pickTime": "Pick a time",
   "timesCount": "{count} times",
-  "closed": "No times",
+  "closed": "Closed",
   "period": {
     "morning": "Morning",
     "afternoon": "Afternoon",
     "evening": "Evening"
-  }
+  },
+  "fullyBooked": "Fully booked"
 }
