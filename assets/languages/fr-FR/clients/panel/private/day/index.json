@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Vue du jour",
-  "description": "Qui travaille où aujourd'hui, ses absences et tous les rendez-vous",
+  "description": "Qui travaille où, les absences et tous les rendez-vous. Cliquez sur un créneau libre pour réserver, faites glisser un rendez-vous pour le déplacer.",
   "location": "Site",
   "date": "Date",
   "previousDay": "Jour précédent",
@@ -17,5 +17,9 @@
     "completed": "Terminé",
     "cancelled": "Annulé",
     "no_show": "Absent"
-  }
+  },
+  "allLocations": "Tous les sites",
+  "summary": "{count} rendez-vous",
+  "moved": "{number} déplacé à {time} avec {dentist}",
+  "bookHere": "Réserver un rendez-vous ici"
 }

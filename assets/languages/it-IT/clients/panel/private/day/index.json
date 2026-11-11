@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Vista giornaliera",
-  "description": "Chi lavora dove oggi, le assenze e tutti gli appuntamenti",
+  "description": "Chi lavora dove, le assenze e tutti gli appuntamenti. Clicca su un orario libero per prenotare, trascina un appuntamento per spostarlo.",
   "location": "Sede",
   "date": "Data",
   "previousDay": "Giorno precedente",
@@ -17,5 +17,9 @@
     "completed": "Completato",
     "cancelled": "Annullato",
     "no_show": "Non presentato"
-  }
+  },
+  "allLocations": "Tutte le sedi",
+  "summary": "{count} appuntamenti",
+  "moved": "{number} spostato alle {time} con {dentist}",
+  "bookHere": "Prenota un appuntamento qui"
 }

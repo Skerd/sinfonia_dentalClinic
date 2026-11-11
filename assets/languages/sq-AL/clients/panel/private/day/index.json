@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Pamja ditore",
-  "description": "Kush punon ku sot, mungesat dhe çdo takim",
+  "description": "Kush punon ku, pushimet dhe çdo takim. Kliko kohën e lirë për të rezervuar, tërhiq një takim për ta zhvendosur.",
   "location": "Vendndodhja",
   "date": "Data",
   "previousDay": "Dita e mëparshme",
@@ -17,5 +17,9 @@
     "completed": "Përfunduar",
     "cancelled": "Anuluar",
     "no_show": "Mosparaqitje"
-  }
+  },
+  "allLocations": "Të gjitha vendndodhjet",
+  "summary": "{count} takime",
+  "moved": "{number} u zhvendos në {time} te {dentist}",
+  "bookHere": "Rezervo një takim këtu"
 }

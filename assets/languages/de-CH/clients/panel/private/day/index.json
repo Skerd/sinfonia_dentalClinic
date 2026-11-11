@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Tagesansicht",
-  "description": "Wer heute wo arbeitet, Abwesenheiten und alle Termine",
+  "description": "Wer wo arbeitet, Abwesenheiten und alle Termine. Freie Zeit anklicken zum Buchen, Termin ziehen zum Verschieben.",
   "location": "Standort",
   "date": "Datum",
   "previousDay": "Vorheriger Tag",
@@ -17,5 +17,9 @@
     "completed": "Abgeschlossen",
     "cancelled": "Storniert",
     "no_show": "Nicht erschienen"
-  }
+  },
+  "allLocations": "Alle Standorte",
+  "summary": "{count} Termine",
+  "moved": "{number} auf {time} bei {dentist} verschoben",
+  "bookHere": "Hier einen Termin buchen"
 }

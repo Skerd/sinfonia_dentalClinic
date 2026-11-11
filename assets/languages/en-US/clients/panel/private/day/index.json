@@ -1,7 +1,7 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Day view",
-  "description": "Who works where today, their time off and every appointment",
+  "description": "Who works where, their time off and every appointment. Click free time to book, drag an appointment to move it.",
   "location": "Location",
   "date": "Date",
   "previousDay": "Previous day",
@@ -11,5 +11,15 @@
   "loadError": "The day could not be loaded. Try again.",
   "noLocations": "Add a location first.",
   "noPractitioners": "Nobody works at this location yet. Add team members and their working hours.",
-  "status": {"pending": "Awaiting confirmation", "confirmed": "Confirmed", "completed": "Completed", "cancelled": "Cancelled", "no_show": "No-show"}
+  "status": {
+    "pending": "Awaiting confirmation",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "no_show": "No-show"
+  },
+  "allLocations": "All locations",
+  "summary": "{count} appointments",
+  "moved": "{number} moved to {time} with {dentist}",
+  "bookHere": "Book an appointment here"
 }

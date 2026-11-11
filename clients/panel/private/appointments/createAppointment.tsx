@@ -3,21 +3,25 @@ import {createGenericCreatePage} from "@coreModule/components/entityPage/pages/c
 import {createAppointmentFormSchema} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/appointment/appointment.form.validators.ts";
 import type {CreateAppointmentFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/appointment/appointment.forms.ts";
 
+/** A new booking; opened from an empty slot on the day view (`appointmentCreatePath`), it starts there. */
 export default createGenericCreatePage<CreateAppointmentFormType>({
     languagePath: "src/modules/dentalClinic/clients/panel/private/appointments/createAppointment.tsx",
     collectionName: "appointments",
     accessModel: "appointments",
     apiUrl: "/api/dentalClinic/appointment",
     schema: createAppointmentFormSchema,
-    defaultValues: () => ({
-        service: "",
-        location: "",
-        practitioner: "",
-        date: "",
-        time: "09:00",
-        patient: {firstName: "", lastName: "", email: "", phone: ""},
-        // One key per form: a double submit or a retried request returns the same appointment
-        idempotencyKey: crypto.randomUUID(),
-    }),
+    defaultValues: () => {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            service: "",
+            location: params.get("location") ?? "",
+            practitioner: params.get("practitioner") ?? "",
+            date: params.get("date") ?? "",
+            time: params.get("time") ?? "09:00",
+            patient: {firstName: "", lastName: "", email: "", phone: ""},
+            // One key per form: a double submit or a retried request returns the same appointment
+            idempotencyKey: crypto.randomUUID(),
+        };
+    },
     submitIcon: <IconPlus />,
 });
