@@ -59,6 +59,8 @@ type DropTarget = {locationId: string; practitionerId: string; minutes: number};
 type DropVerdict = "free" | "past" | "outside" | "timeOff" | "overlap";
 
 const MINUTE_MS = 60_000;
+/** A transparent 1×1 image: the browser's own drag ghost would cover the landing preview, which is all the drag needs to show. */
+const EMPTY_DRAG_IMAGE = typeof Image === "undefined" ? null : Object.assign(new Image(), {src: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"});
 const overlapsMs = (a: {start: number; end: number}, b: {start: number; end: number}) => a.start < b.end && b.start < a.end;
 const msOf = (interval: Interval) => ({start: Date.parse(interval.start), end: Date.parse(interval.end)});
 
@@ -203,10 +205,10 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
         return (
             <div
                 className={cn(
-                    "pointer-events-none absolute inset-x-1 z-20 flex flex-wrap content-start gap-x-1.5 overflow-hidden rounded border-2 border-dashed px-2 py-1 text-xs font-medium shadow-sm",
+                    "pointer-events-none absolute inset-x-1 z-20 flex flex-wrap content-start gap-x-1.5 overflow-hidden rounded border-2 border-dashed px-2 py-1 text-xs font-medium shadow-lg",
                     verdict === "free"
-                        ? "border-emerald-500 bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
-                        : "border-destructive bg-destructive/15 text-destructive",
+                        ? "border-emerald-500 bg-background text-emerald-700 ring-4 ring-emerald-500/20 dark:text-emerald-300"
+                        : "border-destructive bg-background text-destructive ring-4 ring-destructive/20",
                 )}
                 style={{top: top(from), height: height(from, from + length)}}
                 role="status"
@@ -357,18 +359,21 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
                                                                 variant="bare"
                                                                 key={appointment._id}
                                                                 draggable={movable}
-                                                                onDragStart={(event) => setDragging({
-                                                                    id: appointment._id,
-                                                                    locationId: entry._id,
-                                                                    grabMinutes: ((event.clientY - event.currentTarget.getBoundingClientRect().top) / HOUR_PX) * 60,
-                                                                })}
+                                                                onDragStart={(event) => {
+                                                                    if (EMPTY_DRAG_IMAGE) event.dataTransfer.setDragImage(EMPTY_DRAG_IMAGE, 0, 0);
+                                                                    setDragging({
+                                                                        id: appointment._id,
+                                                                        locationId: entry._id,
+                                                                        grabMinutes: ((event.clientY - event.currentTarget.getBoundingClientRect().top) / HOUR_PX) * 60,
+                                                                    });
+                                                                }}
                                                                 onDragEnd={endDrag}
                                                                 onClick={() => setOpenId(appointment._id)}
                                                                 className={cn(
                                                                     "absolute inset-x-1 z-10 overflow-hidden rounded border-l-4 border-current px-2 py-1 text-left text-xs",
                                                                     toneClass(statusTones?.[appointment.status]) ?? "bg-muted",
                                                                     movable ? "cursor-grab active:cursor-grabbing" : "cursor-pointer",
-                                                                    dragging?.id === appointment._id && "opacity-50",
+                                                                    dragging?.id === appointment._id && "opacity-30",
                                                                 )}
                                                                 style={span({start: appointment.startAt, end: appointment.endAt}, entry.timezone)}
                                                                 title={`${appointment.number} · ${resolveLanguageKey(`status.${appointment.status}`)}`}
