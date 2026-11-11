@@ -4,5 +4,6 @@
   "failedDescription": "Tocca per riprovare.",
   "timezone": "Fuso orario",
   "phone": "Telefono",
-  "isActive": "Attivo"
+  "city": "Città",
+  "inactive": "Inattivo"
 }

@@ -1,6 +1,6 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
-  "title": "Behandlungspläne",
+  "title": "Angebote",
   "description": "Angebote für Patienten, vom Entwurf bis zum angenommenen Plan",
   "help": {
     "ariaLabel": "Über Behandlungspläne",

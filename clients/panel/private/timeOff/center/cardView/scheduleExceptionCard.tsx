@@ -5,6 +5,8 @@ import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
 import {IconCalendarEvent, IconMapPin} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
+import {useCompanyTimeZone} from "@coreModule/helpers/hooks/useCompanyTimeZone.ts";
+import {formatTimeRange} from "@dentalClinicModule/clients/panel/private/shared/timeRange.ts";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ScheduleException} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/scheduleException/scheduleException.dto.ts";
@@ -31,6 +33,7 @@ function ScheduleExceptionCard({
     sheetOnly = false,
     innerRef,
 }: ScheduleExceptionCardProps) {
+    const companyTimeZone = useCompanyTimeZone();
     return (
         <EntityCard
             resource="scheduleexceptions"
@@ -57,27 +60,15 @@ function ScheduleExceptionCard({
                     <EntityCard.Body>
                         <EntityCardRow
                             icon={IconCalendarEvent}
-                            label={resolveLanguageKey("startAt")}
-                            tooltip={resolveLanguageKey("startAt")}
+                            label={resolveLanguageKey("when")}
+                            tooltip={resolveLanguageKey("when")}
                             path="startAt"
-                            type="dateTime"
-                            value={row.startAt}
+                            value={formatTimeRange(row.startAt, row.endAt, row.location?.timezone ?? companyTimeZone)}
                         />
-                        <EntityCardRow
-                            icon={IconCalendarEvent}
-                            label={resolveLanguageKey("endAt")}
-                            tooltip={resolveLanguageKey("endAt")}
-                            path="endAt"
-                            type="dateTime"
-                            value={row.endAt}
-                        />
-                        <EntityCardRow
-                            icon={IconMapPin}
-                            label={resolveLanguageKey("location")}
-                            tooltip={resolveLanguageKey("location")}
-                            path="location"
-                            value={row.location?.name}
-                        />
+                        {/* A dentist's time off may be at one location; a closure's location is already the title. */}
+                        {row.practitioner && row.location ? (
+                            <EntityCardRow icon={IconMapPin} label={resolveLanguageKey("location")} tooltip={resolveLanguageKey("location")} path="location" value={row.location.name} />
+                        ) : null}
                     </EntityCard.Body>
                 </>
             )}

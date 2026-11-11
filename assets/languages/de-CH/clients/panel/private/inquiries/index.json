@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Lead hinzufügen",
+  "create": "Neue Kostenanfrage",
   "searchPlaceholder": "Anfragen suchen oder Filter hinzufügen...",
   "noData": "Noch keine Anfragen",
   "failTitle": "Anfragen konnten nicht geladen werden",
@@ -62,6 +62,15 @@
         "orthodontics": "Kieferorthopädie",
         "bone_graft": "Knochenaufbau / Sinuslift",
         "other": "Andere"
+      },
+      "contact": {
+        "preferredLanguage": {
+          "it-IT": "Italienisch",
+          "en-US": "Englisch",
+          "de-CH": "Deutsch",
+          "fr-FR": "Französisch",
+          "sq-AL": "Albanisch"
+        }
       }
     },
     "number": "Anfrage-Nr.",

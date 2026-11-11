@@ -2,11 +2,29 @@
   "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
   "failedTitle": "Behandlung konnte nicht geladen werden",
   "failedDescription": "Zum erneuten Versuch tippen.",
-  "durationMinutes": "Dauer (Min.)",
   "price": "Preis",
   "priceFrom": "ab",
   "priceFree": "Kostenlos",
   "priceOnRequest": "Preis auf Anfrage",
-  "onlineBookable": "Online buchbar",
-  "isActive": "Aktiv"
+  "durationValue": "{minutes} Min.",
+  "inactive": "Inaktiv",
+  "notBookable": "Nicht online buchbar",
+  "duration": "Dauer",
+  "category": {
+    "checkup": "Kontrolle",
+    "hygiene": "Dentalhygiene",
+    "whitening": "Bleaching",
+    "filling": "Füllung",
+    "root_canal": "Wurzelbehandlung",
+    "extraction": "Extraktion",
+    "implant": "Implantat",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Krone",
+    "bridge": "Brücke",
+    "veneer": "Veneer",
+    "denture": "Prothese",
+    "orthodontics": "Kieferorthopädie",
+    "bone_graft": "Knochenaufbau / Sinuslift",
+    "other": "Andere"
+  }
 }

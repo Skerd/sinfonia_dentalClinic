@@ -42,27 +42,12 @@ function PatientCard({patient, resolveLanguageKey, fetchId, hideActions = false,
                 <>
                     <EntityCard.Header titlePath="lastName" title={`${row.firstName} ${row.lastName}`} />
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconMail}
-                            label={resolveLanguageKey("email")}
-                            tooltip={resolveLanguageKey("email")}
-                            path="email"
-                            value={row.email}
-                        />
-                        <EntityCardRow
-                            icon={IconPhone}
-                            label={resolveLanguageKey("phone")}
-                            tooltip={resolveLanguageKey("phone")}
-                            path="phone"
-                            value={row.phone}
-                        />
-                        <EntityCardRow
-                            icon={IconWorld}
-                            label={resolveLanguageKey("country")}
-                            tooltip={resolveLanguageKey("country")}
-                            path="address.country"
-                            value={row.address?.country?.name}
-                        />
+                        {/* A fact with no value is left off the card (UX-02). */}
+                        {row.phone ? <EntityCardRow icon={IconPhone} label={resolveLanguageKey("phone")} tooltip={resolveLanguageKey("phone")} path="phone" value={row.phone} /> : null}
+                        {row.email ? <EntityCardRow icon={IconMail} label={resolveLanguageKey("email")} tooltip={resolveLanguageKey("email")} path="email" value={row.email} /> : null}
+                        {row.address?.country?.name ? (
+                            <EntityCardRow icon={IconWorld} label={resolveLanguageKey("country")} tooltip={resolveLanguageKey("country")} path="address.country" value={row.address.country.name} />
+                        ) : null}
                         <EntityCardRow
                             icon={IconLanguage}
                             label={resolveLanguageKey("preferredLanguage")}

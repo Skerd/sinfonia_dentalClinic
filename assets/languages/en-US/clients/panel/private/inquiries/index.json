@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Add lead",
+  "create": "New estimate request",
   "searchPlaceholder": "Search requests or add filters...",
   "noData": "No requests yet",
   "failTitle": "Failed to load requests",
@@ -62,6 +62,15 @@
         "orthodontics": "Orthodontics",
         "bone_graft": "Bone graft / sinus lift",
         "other": "Other"
+      },
+      "contact": {
+        "preferredLanguage": {
+          "it-IT": "Italian",
+          "en-US": "English",
+          "de-CH": "German",
+          "fr-FR": "French",
+          "sq-AL": "Albanian"
+        }
       }
     },
     "number": "Request no.",

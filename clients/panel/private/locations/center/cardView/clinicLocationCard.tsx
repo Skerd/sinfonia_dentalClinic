@@ -2,9 +2,10 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconClock, IconPhone, IconToggleRight} from "@tabler/icons-react";
+import {IconClock, IconMapPin, IconPhone} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ClinicLocation} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicLocation/clinicLocation.dto.ts";
@@ -96,33 +97,21 @@ function ClinicLocationCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="name" title={row.name}>
+                    <EntityCard.Header
+                        titlePath="name"
+                        title={row.name}
+                        badgesBesideTitle
+                        badges={!row.isActive ? <Badge variant="secondary" className="text-xs">{resolveLanguageKey("inactive")}</Badge> : undefined}
+                    >
                         <ActivateClinicLocation entity={row} onAction={setAction} />
                         <DeactivateClinicLocation entity={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconClock}
-                            label={resolveLanguageKey("timezone")}
-                            tooltip={resolveLanguageKey("timezone")}
-                            path="timezone"
-                            value={row.timezone}
-                        />
-                        <EntityCardRow
-                            icon={IconPhone}
-                            label={resolveLanguageKey("phone")}
-                            tooltip={resolveLanguageKey("phone")}
-                            path="phone"
-                            value={row.phone}
-                        />
-                        <EntityCardRow
-                            icon={IconToggleRight}
-                            label={resolveLanguageKey("isActive")}
-                            tooltip={resolveLanguageKey("isActive")}
-                            path="isActive"
-                            type="boolean"
-                            value={row.isActive}
-                        />
+                        {row.address?.city?.name ? (
+                            <EntityCardRow icon={IconMapPin} label={resolveLanguageKey("city")} tooltip={resolveLanguageKey("city")} path="address.city" value={row.address.city.name} />
+                        ) : null}
+                        {row.phone ? <EntityCardRow icon={IconPhone} label={resolveLanguageKey("phone")} tooltip={resolveLanguageKey("phone")} path="phone" value={row.phone} /> : null}
+                        <EntityCardRow icon={IconClock} label={resolveLanguageKey("timezone")} tooltip={resolveLanguageKey("timezone")} path="timezone" value={row.timezone} />
                     </EntityCard.Body>
                 </>
             )}

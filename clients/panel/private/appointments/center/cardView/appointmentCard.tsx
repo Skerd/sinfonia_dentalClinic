@@ -2,7 +2,7 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarEvent, IconStatusChange, IconStethoscope, IconUser} from "@tabler/icons-react";
+import {IconCalendarEvent, IconDental, IconStethoscope} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -10,6 +10,7 @@ import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {Appointment} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/appointment/appointment.dto.ts";
 import AppointmentSheetView from "@dentalClinicModule/clients/panel/private/appointments/center/sheetView/appointmentSheetView.tsx";
 
+import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 import AppointmentMenu from "@dentalClinicModule/clients/panel/private/appointments/center/actions/appointmentMenu.tsx";
 import AppointmentDialogs from "@dentalClinicModule/clients/panel/private/appointments/center/dialogs/appointmentDialogs.tsx";
 type AppointmentCardProps = WithLanguageType & {
@@ -67,19 +68,25 @@ function AppointmentCard({
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="number" title={row.number}>
+                    {/* The patient is who the front desk looks for; the booking number is the subtitle (UX-01). */}
+                    <EntityCard.Header
+                        titlePath="patient"
+                        title={`${row.patient.firstName} ${row.patient.lastName}`.trim()}
+                        subtitlePath="number"
+                        subtitle={row.number}
+                        badgesBesideTitle
+                        badges={
+                            <StatusBadge
+                                tableConfigKey="appointments"
+                                field="status"
+                                value={row.status}
+                                label={String(resolveLanguageKey(`statusValues.${row.status}`))}
+                            />
+                        }
+                    >
                         <AppointmentMenu appointment={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconStatusChange}
-                            label={resolveLanguageKey("status")}
-                            tooltip={resolveLanguageKey("status")}
-                            path="status"
-                            type="enum"
-                            languageKeyCategory="statusValues"
-                            value={row.status}
-                        />
                         <EntityCardRow
                             icon={IconCalendarEvent}
                             label={resolveLanguageKey("startAt")}
@@ -89,18 +96,18 @@ function AppointmentCard({
                             value={row.startAt}
                         />
                         <EntityCardRow
+                            icon={IconDental}
+                            label={resolveLanguageKey("service")}
+                            tooltip={resolveLanguageKey("service")}
+                            path="service"
+                            value={row.service?.name ?? row.snapshot.serviceName}
+                        />
+                        <EntityCardRow
                             icon={IconStethoscope}
                             label={resolveLanguageKey("practitioner")}
                             tooltip={resolveLanguageKey("practitioner")}
                             path="practitioner"
                             value={row.practitioner?.displayName}
-                        />
-                        <EntityCardRow
-                            icon={IconUser}
-                            label={resolveLanguageKey("patient")}
-                            tooltip={resolveLanguageKey("patient")}
-                            path="patient"
-                            value={`${row.patient.firstName} ${row.patient.lastName}`}
                         />
                     </EntityCard.Body>
                 </>

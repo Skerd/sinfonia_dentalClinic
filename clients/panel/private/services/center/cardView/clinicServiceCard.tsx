@@ -2,7 +2,9 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarCheck, IconCash, IconClock, IconToggleRight} from "@tabler/icons-react";
+import {IconCash, IconClock} from "@tabler/icons-react";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
+import {AccessGatedGalleryCarousel} from "@coreModule/components/viewEngine/widgets/gallery/galleryCarousel.tsx";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -103,21 +105,41 @@ function ClinicServiceCard({
                 </>
             )}
         >
-            {({entity: row, setAction}) => (
+            {({entity: row, read, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="name" title={row.name}>
+                    {/* The treatment's first photo is its cover, as on the clinic's site (UX-02). */}
+                    {row.images?.length ? (
+                        <div className="-mx-(--density-pad) -mt-(--density-pad) w-[calc(100%+2*var(--density-pad))]">
+                            <AccessGatedGalleryCarousel
+                                read={read}
+                                imageGallery={row.images}
+                                videoGallery={row.videos || []}
+                                mainImagePath="images"
+                                imageGalleryPath="images"
+                                videoGalleryPath="videos"
+                                showThumbnails={false}
+                                allowFullScreen={false}
+                                coverAfterFirst
+                            />
+                        </div>
+                    ) : null}
+                    <EntityCard.Header
+                        titlePath="name"
+                        title={row.name}
+                        badgesBesideTitle
+                        badges={
+                            <>
+                                <Badge variant="outline" className="text-xs">{String(resolveLanguageKey(`category.${row.category}`))}</Badge>
+                                {/* Only the exception is shown: an active, bookable treatment needs no badge. */}
+                                {!row.isActive ? <Badge variant="secondary" className="text-xs">{resolveLanguageKey("inactive")}</Badge> : null}
+                                {row.isActive && !row.onlineBookable ? <Badge variant="secondary" className="text-xs">{resolveLanguageKey("notBookable")}</Badge> : null}
+                            </>
+                        }
+                    >
                         <ActivateClinicService entity={row} onAction={setAction} />
                         <DeactivateClinicService entity={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconClock}
-                            label={resolveLanguageKey("durationMinutes")}
-                            tooltip={resolveLanguageKey("durationMinutes")}
-                            path="durationMinutes"
-                            type="number"
-                            value={row.durationMinutes}
-                        />
                         <EntityCardRow
                             icon={IconCash}
                             label={resolveLanguageKey("price")}
@@ -127,20 +149,12 @@ function ClinicServiceCard({
                             value={priceLabel(row, (amount) => clinicMoney(amount, row.currency), resolveLanguageKey)}
                         />
                         <EntityCardRow
-                            icon={IconCalendarCheck}
-                            label={resolveLanguageKey("onlineBookable")}
-                            tooltip={resolveLanguageKey("onlineBookable")}
-                            path="onlineBookable"
-                            type="boolean"
-                            value={row.onlineBookable}
-                        />
-                        <EntityCardRow
-                            icon={IconToggleRight}
-                            label={resolveLanguageKey("isActive")}
-                            tooltip={resolveLanguageKey("isActive")}
-                            path="isActive"
-                            type="boolean"
-                            value={row.isActive}
+                            icon={IconClock}
+                            label={resolveLanguageKey("duration")}
+                            tooltip={resolveLanguageKey("duration")}
+                            path="durationMinutes"
+                            type="string"
+                            value={String(resolveLanguageKey("durationValue")).replace("{minutes}", String(row.durationMinutes))}
                         />
                     </EntityCard.Body>
                 </>

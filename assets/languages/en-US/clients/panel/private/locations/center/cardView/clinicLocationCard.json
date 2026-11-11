@@ -4,5 +4,6 @@
   "failedDescription": "Tap to retry.",
   "timezone": "Timezone",
   "phone": "Phone",
-  "isActive": "Active"
+  "city": "City",
+  "inactive": "Inactive"
 }

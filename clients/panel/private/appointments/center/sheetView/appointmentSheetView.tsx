@@ -9,6 +9,8 @@ import type {Appointment} from "armonia/src/modules/dentalClinic/api/dentalClini
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import AppointmentMenu, {type AppointmentAction} from "@dentalClinicModule/clients/panel/private/appointments/center/actions/appointmentMenu.tsx";
 import AppointmentDialogs from "@dentalClinicModule/clients/panel/private/appointments/center/dialogs/appointmentDialogs.tsx";
+import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
+import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 
 type AppointmentSheetViewOwnProps = {
     open: boolean;
@@ -66,6 +68,8 @@ function AppointmentSheetView({
                 open={open}
                 onOpenChange={onOpenChange}
                 resolveLanguageKey={resolveLanguageKey}
+                headerTitle={<SheetNameTitle name={`${appointment.patient?.firstName ?? ""} ${appointment.patient?.lastName ?? ""}`.trim()} code={appointment.number} typeLabel={String(resolveLanguageKey("appointmentSubtitle"))} />}
+                headerDescription={<StatusBadge tableConfigKey="appointments" field="status" value={appointment.status} label={String(resolveLanguageKey(`statusValues.${appointment.status}`))} />}
                 access={access}
                 hideActions={hideActions}
                 hideEdit

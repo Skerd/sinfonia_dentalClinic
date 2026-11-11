@@ -2,7 +2,11 @@ import {compose} from "redux";
 import type {RefObject} from "react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCalendarCheck, IconCertificate, IconStethoscope, IconToggleRight} from "@tabler/icons-react";
+import {IconCertificate, IconDental, IconMapPin} from "@tabler/icons-react";
+import {Badge} from "@coreModule/components/ui/badge.tsx";
+import TableAvatar from "@coreModule/components/entityPage/list/tableAvatar.tsx";
+import {accessFieldPathExists} from "@coreModule/helpers/context/accessContext.tsx";
+import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx";
@@ -94,45 +98,47 @@ function PractitionerCard({
                 </>
             )}
         >
-            {({entity: row, setAction}) => (
+            {({entity: row, read, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="displayName" title={row.displayName}>
+                    <EntityCard.Header
+                        titlePath="displayName"
+                        title={row.displayName}
+                        icon={accessFieldPathExists(read, "photo") && row.photo?._id ? <TableAvatar mediaId={row.photo._id} /> : undefined}
+                        badgesBesideTitle
+                        badges={
+                            <>
+                                <StatusBadge tableConfigKey="practitioners" field="role" value={row.role} label={String(resolveLanguageKey(`roleValues.${row.role}`))} />
+                                {/* Only the exception is shown (UX-02). */}
+                                {!row.isActive ? <Badge variant="secondary" className="text-xs">{resolveLanguageKey("inactive")}</Badge> : null}
+                                {row.isActive && !row.isBookable ? <Badge variant="secondary" className="text-xs">{resolveLanguageKey("notBookable")}</Badge> : null}
+                            </>
+                        }
+                    >
                         <ActivatePractitioner entity={row} onAction={setAction} />
                         <DeactivatePractitioner entity={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow
-                            icon={IconCertificate}
-                            label={resolveLanguageKey("title")}
-                            tooltip={resolveLanguageKey("title")}
-                            path="title"
-                            value={row.title}
-                        />
-                        <EntityCardRow
-                            icon={IconStethoscope}
-                            label={resolveLanguageKey("role")}
-                            tooltip={resolveLanguageKey("role")}
-                            path="role"
-                            type="enum"
-                            languageKeyCategory="roleValues"
-                            value={row.role}
-                        />
-                        <EntityCardRow
-                            icon={IconCalendarCheck}
-                            label={resolveLanguageKey("isBookable")}
-                            tooltip={resolveLanguageKey("isBookable")}
-                            path="isBookable"
-                            type="boolean"
-                            value={row.isBookable}
-                        />
-                        <EntityCardRow
-                            icon={IconToggleRight}
-                            label={resolveLanguageKey("isActive")}
-                            tooltip={resolveLanguageKey("isActive")}
-                            path="isActive"
-                            type="boolean"
-                            value={row.isActive}
-                        />
+                        {row.title ? (
+                            <EntityCardRow icon={IconCertificate} label={resolveLanguageKey("title")} tooltip={resolveLanguageKey("title")} path="title" value={row.title} />
+                        ) : null}
+                        {row.locations?.length ? (
+                            <EntityCardRow
+                                icon={IconMapPin}
+                                label={resolveLanguageKey("locations")}
+                                tooltip={resolveLanguageKey("locations")}
+                                path="locations"
+                                value={row.locations.map((location) => location.name).join(", ")}
+                            />
+                        ) : null}
+                        {row.services?.length ? (
+                            <EntityCardRow
+                                icon={IconDental}
+                                label={resolveLanguageKey("services")}
+                                tooltip={resolveLanguageKey("services")}
+                                path="services"
+                                value={row.services.map((service) => service.name).join(", ")}
+                            />
+                        ) : null}
                     </EntityCard.Body>
                 </>
             )}

@@ -13,6 +13,8 @@ import InquiryRequestDetails from "@dentalClinicModule/clients/panel/private/inq
 import InquiryThread from "@dentalClinicModule/clients/panel/private/inquiries/center/thread/inquiryThread.tsx";
 import InquiryPlans from "@dentalClinicModule/clients/panel/private/inquiries/center/sheetView/inquiryPlans.tsx";
 import MedicalHistoryAnswers from "@dentalClinicModule/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx";
+import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
+import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 
 type ClinicInquirySheetViewOwnProps = {
     open: boolean;
@@ -75,6 +77,8 @@ function ClinicInquirySheetView({
                 open={open}
                 onOpenChange={onOpenChange}
                 resolveLanguageKey={resolveLanguageKey}
+                headerTitle={<SheetNameTitle name={`${inquiry.contact?.firstName ?? ""} ${inquiry.contact?.lastName ?? ""}`.trim()} code={inquiry.number} typeLabel={String(resolveLanguageKey("inquirySubtitle"))} />}
+                headerDescription={<StatusBadge tableConfigKey="clinicinquiries" field="status" value={inquiry.status} label={String(resolveLanguageKey(`statusValues.${inquiry.status}`))} />}
                 access={access}
                 hideActions={hideActions}
                 hideEdit

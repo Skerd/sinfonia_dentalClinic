@@ -4,5 +4,6 @@
   "failedDescription": "Zum erneuten Versuch tippen.",
   "timezone": "Zeitzone",
   "phone": "Telefon",
-  "isActive": "Aktiv"
+  "city": "Ort",
+  "inactive": "Inaktiv"
 }

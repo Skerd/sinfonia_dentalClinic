@@ -10,6 +10,8 @@
     "orthodontist": "Ortodontista",
     "other": "Altro"
   },
-  "isBookable": "Prenotabile online",
-  "isActive": "Attivo"
+  "locations": "Sedi",
+  "services": "Trattamenti",
+  "inactive": "Inattivo",
+  "notBookable": "Non prenotabile online"
 }

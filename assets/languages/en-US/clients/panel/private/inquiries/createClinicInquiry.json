@@ -1,9 +1,9 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
-  "title": "Add lead",
+  "title": "New estimate request",
   "description": "A patient who called, wrote on WhatsApp or came through an agency",
   "formHeader": {
-    "title": "Add lead",
+    "title": "New estimate request",
     "description": "A patient who called, wrote on WhatsApp or came through an agency"
   },
   "formButtons": {
@@ -12,15 +12,15 @@
   },
   "axios": {
     "start": {
-      "title": "Saving lead",
+      "title": "Saving the request",
       "time": 3000
     },
     "success": {
-      "title": "Lead added",
+      "title": "Request added",
       "time": 3000
     },
     "error": {
-      "title": "The lead could not be added. Check the form and try again.",
+      "title": "The request could not be added. Check the form and try again.",
       "time": 3000
     }
   },

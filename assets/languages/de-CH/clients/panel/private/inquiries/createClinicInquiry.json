@@ -1,9 +1,9 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
-  "title": "Lead hinzufügen",
+  "title": "Neue Kostenanfrage",
   "description": "Ein Patient, der angerufen, per WhatsApp geschrieben hat oder über eine Agentur kam",
   "formHeader": {
-    "title": "Lead hinzufügen",
+    "title": "Neue Kostenanfrage",
     "description": "Ein Patient, der angerufen, per WhatsApp geschrieben hat oder über eine Agentur kam"
   },
   "formButtons": {
@@ -12,15 +12,15 @@
   },
   "axios": {
     "start": {
-      "title": "Lead wird gespeichert",
+      "title": "Anfrage wird gespeichert",
       "time": 3000
     },
     "success": {
-      "title": "Lead hinzugefügt",
+      "title": "Anfrage hinzugefügt",
       "time": 3000
     },
     "error": {
-      "title": "Der Lead konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "title": "Die Anfrage konnte nicht hinzugefügt werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
       "time": 3000
     }
   },

@@ -4,5 +4,6 @@
   "failedDescription": "Prekni për të provuar përsëri.",
   "startAt": "Fillon",
   "endAt": "Përfundon",
-  "location": "Vendndodhja"
+  "location": "Vendndodhja",
+  "when": "Kur"
 }

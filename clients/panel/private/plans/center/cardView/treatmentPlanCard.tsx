@@ -1,13 +1,14 @@
 import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import withDebug from "@coreModule/helpers/hocs/withDebug.tsx";
-import {IconCash, IconInbox, IconStatusChange, IconTag} from "@tabler/icons-react";
+import {IconCash, IconInbox, IconTag} from "@tabler/icons-react";
 import EntityCard from "@coreModule/components/entityPage/list/card/entityCard.tsx";
 import EntityCardRow from "@coreModule/components/entityPage/list/card/entityCardRow.tsx";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 import TreatmentPlanSheetView from "@dentalClinicModule/clients/panel/private/plans/center/sheetView/treatmentPlanSheetView.tsx";
+import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 import PlanMenu from "@dentalClinicModule/clients/panel/private/plans/center/actions/planMenu.tsx";
 import PlanDialogs from "@dentalClinicModule/clients/panel/private/plans/center/dialogs/planDialogs.tsx";
 import {treatmentPlanEditPath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";
@@ -51,13 +52,28 @@ function TreatmentPlanCard({plan, resolveLanguageKey, fetchId, hideActions = fal
         >
             {({entity: row, setAction}) => (
                 <>
-                    <EntityCard.Header titlePath="number" title={row.number}>
+                    {/* Who the quote is for comes first; its number is the subtitle (UX-01). */}
+                    <EntityCard.Header
+                        titlePath={row.patient ? "patient" : "number"}
+                        title={row.patient ? `${row.patient.firstName} ${row.patient.lastName}`.trim() : row.number}
+                        subtitlePath="number"
+                        subtitle={row.patient ? row.number : undefined}
+                        badgesBesideTitle
+                        badges={
+                            <StatusBadge
+                                tableConfigKey="treatmentplans"
+                                field="status"
+                                value={row.status}
+                                label={String(resolveLanguageKey(`statusValues.${row.status}`))}
+                            />
+                        }
+                    >
                         <PlanMenu plan={row} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
-                        <EntityCardRow icon={IconTag} label={resolveLanguageKey("optionLabel")} tooltip={resolveLanguageKey("optionLabel")} path="optionLabel" value={row.optionLabel} />
-                        <EntityCardRow icon={IconInbox} label={resolveLanguageKey("inquiry")} tooltip={resolveLanguageKey("inquiry")} path="inquiry" value={row.inquiry?.number} />
-                        <EntityCardRow icon={IconStatusChange} label={resolveLanguageKey("status")} tooltip={resolveLanguageKey("status")} path="status" value={resolveLanguageKey(`statusValues.${row.status}`)} />
+                        {row.optionLabel ? (
+                            <EntityCardRow icon={IconTag} label={resolveLanguageKey("optionLabel")} tooltip={resolveLanguageKey("optionLabel")} path="optionLabel" value={row.optionLabel} />
+                        ) : null}
                         <EntityCardRow
                             icon={IconCash}
                             label={resolveLanguageKey("total")}
@@ -65,6 +81,9 @@ function TreatmentPlanCard({plan, resolveLanguageKey, fetchId, hideActions = fal
                             path="totals"
                             value={row.currency?.abbreviation ? formatCurrency(row.totals.total, row.currency.abbreviation) : row.totals?.total}
                         />
+                        {row.inquiry ? (
+                            <EntityCardRow icon={IconInbox} label={resolveLanguageKey("inquiry")} tooltip={resolveLanguageKey("inquiry")} path="inquiry" value={row.inquiry.number} />
+                        ) : null}
                     </EntityCard.Body>
                 </>
             )}

@@ -10,6 +10,8 @@
     "orthodontist": "Ortodont",
     "other": "Tjetër"
   },
-  "isBookable": "I rezervueshëm online",
-  "isActive": "Aktiv"
+  "locations": "Vendndodhjet",
+  "services": "Trajtimet",
+  "inactive": "Joaktiv",
+  "notBookable": "Nuk rezervohet online"
 }

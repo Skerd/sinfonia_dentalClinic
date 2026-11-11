@@ -15,5 +15,25 @@
     "withdrawn": "Tërhequr",
     "converted": "Kartela u hap",
     "quoted": "Oferta u dërgua"
+  },
+  "treatmentsWanted": "Kërkon",
+  "receivedAt": "Marrë",
+  "budget": "Buxheti",
+  "treatment": {
+    "checkup": "Kontroll",
+    "hygiene": "Higjienë dentare",
+    "whitening": "Zbardhim",
+    "filling": "Mbushje",
+    "root_canal": "Mjekim kanali",
+    "extraction": "Heqje dhëmbi",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Kurorë",
+    "bridge": "Urë",
+    "veneer": "Faset",
+    "denture": "Protezë",
+    "orthodontics": "Ortodonci",
+    "bone_graft": "Shtim kockor / ngritje sinusi",
+    "other": "Tjetër"
   }
 }

@@ -2,11 +2,29 @@
   "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
   "failedTitle": "Impossibile caricare il trattamento",
   "failedDescription": "Tocca per riprovare.",
-  "durationMinutes": "Durata (min)",
   "price": "Prezzo",
   "priceFrom": "da",
   "priceFree": "Gratuito",
   "priceOnRequest": "Prezzo su richiesta",
-  "onlineBookable": "Prenotabile online",
-  "isActive": "Attivo"
+  "durationValue": "{minutes} min",
+  "inactive": "Inattivo",
+  "notBookable": "Non prenotabile online",
+  "duration": "Durata",
+  "category": {
+    "checkup": "Controllo",
+    "hygiene": "Igiene dentale",
+    "whitening": "Sbiancamento",
+    "filling": "Otturazione",
+    "root_canal": "Devitalizzazione",
+    "extraction": "Estrazione",
+    "implant": "Impianto",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Corona",
+    "bridge": "Ponte",
+    "veneer": "Faccetta",
+    "denture": "Protesi mobile",
+    "orthodontics": "Ortodonzia",
+    "bone_graft": "Innesto osseo / rialzo del seno",
+    "other": "Altro"
+  }
 }

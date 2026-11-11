@@ -1,6 +1,6 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
-  "title": "Treatment plans",
+  "title": "Quotes",
   "description": "Quotes for patients, from draft to accepted plan",
   "help": {
     "ariaLabel": "About treatment plans",

@@ -2,11 +2,29 @@
   "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
   "failedTitle": "Trajtimi nuk u ngarkua",
   "failedDescription": "Prekni për të provuar përsëri.",
-  "durationMinutes": "Kohëzgjatja (min)",
   "price": "Çmimi",
   "priceFrom": "nga",
   "priceFree": "Falas",
   "priceOnRequest": "Çmimi me kërkesë",
-  "onlineBookable": "I rezervueshëm online",
-  "isActive": "Aktiv"
+  "durationValue": "{minutes} min",
+  "inactive": "Joaktiv",
+  "notBookable": "Nuk rezervohet online",
+  "duration": "Kohëzgjatja",
+  "category": {
+    "checkup": "Kontroll",
+    "hygiene": "Higjienë dentare",
+    "whitening": "Zbardhim",
+    "filling": "Mbushje",
+    "root_canal": "Mjekim kanali",
+    "extraction": "Heqje dhëmbi",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Kurorë",
+    "bridge": "Urë",
+    "veneer": "Faset",
+    "denture": "Protezë",
+    "orthodontics": "Ortodonci",
+    "bone_graft": "Shtim kockor / ngritje sinusi",
+    "other": "Tjetër"
+  }
 }

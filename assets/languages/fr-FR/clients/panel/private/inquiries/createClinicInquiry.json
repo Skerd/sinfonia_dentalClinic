@@ -1,9 +1,9 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
-  "title": "Ajouter un prospect",
+  "title": "Nouvelle demande de devis",
   "description": "Un patient qui a appelé, écrit sur WhatsApp ou est venu par une agence",
   "formHeader": {
-    "title": "Ajouter un prospect",
+    "title": "Nouvelle demande de devis",
     "description": "Un patient qui a appelé, écrit sur WhatsApp ou est venu par une agence"
   },
   "formButtons": {
@@ -12,15 +12,15 @@
   },
   "axios": {
     "start": {
-      "title": "Enregistrement du prospect",
+      "title": "Enregistrement de la demande",
       "time": 3000
     },
     "success": {
-      "title": "Prospect ajouté",
+      "title": "Demande ajoutée",
       "time": 3000
     },
     "error": {
-      "title": "Le prospect n'a pas pu être ajouté. Vérifiez le formulaire et réessayez.",
+      "title": "La demande n'a pas pu être ajoutée. Vérifiez le formulaire et réessayez.",
       "time": 3000
     }
   },

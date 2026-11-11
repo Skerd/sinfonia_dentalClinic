@@ -4,5 +4,6 @@
   "failedDescription": "Tocca per riprovare.",
   "startAt": "Inizia",
   "endAt": "Termina",
-  "location": "Sede"
+  "location": "Sede",
+  "when": "Quando"
 }

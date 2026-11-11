@@ -1,9 +1,9 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
-  "title": "Aggiungi contatto",
+  "title": "Nuova richiesta di preventivo",
   "description": "Un paziente che ha chiamato, scritto su WhatsApp o è arrivato da un'agenzia",
   "formHeader": {
-    "title": "Aggiungi contatto",
+    "title": "Nuova richiesta di preventivo",
     "description": "Un paziente che ha chiamato, scritto su WhatsApp o è arrivato da un'agenzia"
   },
   "formButtons": {
@@ -12,15 +12,15 @@
   },
   "axios": {
     "start": {
-      "title": "Salvataggio del contatto",
+      "title": "Salvataggio della richiesta",
       "time": 3000
     },
     "success": {
-      "title": "Contatto aggiunto",
+      "title": "Richiesta aggiunta",
       "time": 3000
     },
     "error": {
-      "title": "Impossibile aggiungere il contatto. Controlla il modulo e riprova.",
+      "title": "Non è stato possibile aggiungere la richiesta. Controlla il modulo e riprova.",
       "time": 3000
     }
   },

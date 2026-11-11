@@ -1,6 +1,6 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
-  "title": "Piani di cura",
+  "title": "Preventivi",
   "description": "Preventivi per i pazienti, dalla bozza al piano accettato",
   "help": {
     "ariaLabel": "Informazioni sui piani",

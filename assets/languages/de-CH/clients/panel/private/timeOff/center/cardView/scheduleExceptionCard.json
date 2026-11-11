@@ -4,5 +4,6 @@
   "failedDescription": "Zum erneuten Versuch tippen.",
   "startAt": "Beginnt",
   "endAt": "Endet",
-  "location": "Standort"
+  "location": "Standort",
+  "when": "Wann"
 }

@@ -7,6 +7,8 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {PatientTrip} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/patientTrip/patientTrip.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
+import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
+import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 
 type PatientTripSheetViewOwnProps = {
     open: boolean;
@@ -52,6 +54,8 @@ function PatientTripSheetView({
             open={open}
             onOpenChange={onOpenChange}
             resolveLanguageKey={resolveLanguageKey}
+            headerTitle={<SheetNameTitle name={`${(sheetData as PatientTrip).patient?.firstName ?? ""} ${(sheetData as PatientTrip).patient?.lastName ?? ""}`.trim()} code={(sheetData as PatientTrip).patient?.number} typeLabel={String(resolveLanguageKey("tripSubtitle"))} />}
+            headerDescription={<StatusBadge tableConfigKey="patienttrips" field="status" value={(sheetData as PatientTrip).status} label={String(resolveLanguageKey(`statusValues.${(sheetData as PatientTrip).status}`))} />}
             access={access}
             hideActions={hideActions}
             onDelete={onDelete}

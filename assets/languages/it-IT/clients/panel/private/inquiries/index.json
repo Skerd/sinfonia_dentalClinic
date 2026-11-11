@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Aggiungi contatto",
+  "create": "Nuova richiesta di preventivo",
   "searchPlaceholder": "Cerca richieste o aggiungi filtri...",
   "noData": "Ancora nessuna richiesta",
   "failTitle": "Impossibile caricare le richieste",
@@ -62,6 +62,15 @@
         "orthodontics": "Ortodonzia",
         "bone_graft": "Innesto osseo / rialzo del seno",
         "other": "Altro"
+      },
+      "contact": {
+        "preferredLanguage": {
+          "it-IT": "Italiano",
+          "en-US": "Inglese",
+          "de-CH": "Tedesco",
+          "fr-FR": "Francese",
+          "sq-AL": "Albanese"
+        }
       }
     },
     "number": "N. richiesta",

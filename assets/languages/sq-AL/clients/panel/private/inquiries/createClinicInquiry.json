@@ -1,9 +1,9 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/inquiries/createClinicInquiry.tsx",
-  "title": "Shto klient të mundshëm",
+  "title": "Kërkesë e re për ofertë",
   "description": "Një pacient që telefonoi, shkroi në WhatsApp ose erdhi nga një agjenci",
   "formHeader": {
-    "title": "Shto klient të mundshëm",
+    "title": "Kërkesë e re për ofertë",
     "description": "Një pacient që telefonoi, shkroi në WhatsApp ose erdhi nga një agjenci"
   },
   "formButtons": {
@@ -12,15 +12,15 @@
   },
   "axios": {
     "start": {
-      "title": "Po ruhet klienti i mundshëm",
+      "title": "Po ruhet kërkesa",
       "time": 3000
     },
     "success": {
-      "title": "Klienti i mundshëm u shtua",
+      "title": "Kërkesa u shtua",
       "time": 3000
     },
     "error": {
-      "title": "Klienti i mundshëm nuk u shtua. Kontrolloni formularin dhe provoni përsëri.",
+      "title": "Kërkesa nuk mund të shtohej. Kontrolloni formularin dhe provoni përsëri.",
       "time": 3000
     }
   },

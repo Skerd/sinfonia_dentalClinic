@@ -2,11 +2,29 @@
   "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
   "failedTitle": "Failed to load treatment",
   "failedDescription": "Tap to retry.",
-  "durationMinutes": "Duration (min)",
   "price": "Price",
   "priceFrom": "from",
   "priceFree": "Free",
   "priceOnRequest": "Price on request",
-  "onlineBookable": "Bookable online",
-  "isActive": "Active"
+  "durationValue": "{minutes} min",
+  "inactive": "Inactive",
+  "notBookable": "Not bookable online",
+  "duration": "Duration",
+  "category": {
+    "checkup": "Check-up",
+    "hygiene": "Cleaning & hygiene",
+    "whitening": "Whitening",
+    "filling": "Filling",
+    "root_canal": "Root canal",
+    "extraction": "Extraction",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Crown",
+    "bridge": "Bridge",
+    "veneer": "Veneer",
+    "denture": "Denture",
+    "orthodontics": "Orthodontics",
+    "bone_graft": "Bone graft / sinus lift",
+    "other": "Other"
+  }
 }

@@ -11,6 +11,8 @@ import PlanMenu, {type PlanAction} from "@dentalClinicModule/clients/panel/priva
 import PlanDialogs from "@dentalClinicModule/clients/panel/private/plans/center/dialogs/planDialogs.tsx";
 import PlanBreakdown from "@dentalClinicModule/clients/panel/private/plans/center/sheetView/planBreakdown.tsx";
 import {treatmentPlanEditPath} from "@dentalClinicModule/clients/panel/private/plans/planPaths.ts";
+import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
+import StatusBadge from "@dentalClinicModule/clients/panel/private/shared/statusBadge.tsx";
 
 type TreatmentPlanSheetViewOwnProps = {
     open: boolean;
@@ -66,6 +68,8 @@ function TreatmentPlanSheetView({
                 open={open}
                 onOpenChange={onOpenChange}
                 resolveLanguageKey={resolveLanguageKey}
+                headerTitle={<SheetNameTitle name={`${plan.patient?.firstName ?? ""} ${plan.patient?.lastName ?? ""}`.trim()} code={plan.number} typeLabel={String(resolveLanguageKey("planSubtitle"))} />}
+                headerDescription={<StatusBadge tableConfigKey="treatmentplans" field="status" value={plan.status} label={String(resolveLanguageKey(`statusValues.${plan.status}`))} />}
                 access={access}
                 hideActions={hideActions}
                 hideEdit={plan.status !== "draft"}

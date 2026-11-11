@@ -15,5 +15,25 @@
     "withdrawn": "Ritirata",
     "converted": "Cartella aperta",
     "quoted": "Preventivo inviato"
+  },
+  "treatmentsWanted": "Desidera",
+  "receivedAt": "Ricevuta",
+  "budget": "Budget",
+  "treatment": {
+    "checkup": "Controllo",
+    "hygiene": "Igiene dentale",
+    "whitening": "Sbiancamento",
+    "filling": "Otturazione",
+    "root_canal": "Devitalizzazione",
+    "extraction": "Estrazione",
+    "implant": "Impianto",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Corona",
+    "bridge": "Ponte",
+    "veneer": "Faccetta",
+    "denture": "Protesi mobile",
+    "orthodontics": "Ortodonzia",
+    "bone_graft": "Innesto osseo / rialzo del seno",
+    "other": "Altro"
   }
 }

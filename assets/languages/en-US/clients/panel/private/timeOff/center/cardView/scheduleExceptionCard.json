@@ -4,5 +4,6 @@
   "failedDescription": "Tap to retry.",
   "startAt": "Starts",
   "endAt": "Ends",
-  "location": "Location"
+  "location": "Location",
+  "when": "When"
 }

@@ -4,5 +4,6 @@
   "failedDescription": "Prekni për të provuar përsëri.",
   "timezone": "Zona kohore",
   "phone": "Telefoni",
-  "isActive": "Aktiv"
+  "city": "Qyteti",
+  "inactive": "Joaktiv"
 }

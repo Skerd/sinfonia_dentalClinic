@@ -2,11 +2,29 @@
   "path": "src/modules/dentalClinic/clients/panel/private/services/center/cardView/clinicServiceCard.tsx",
   "failedTitle": "Impossible de charger le soin",
   "failedDescription": "Touchez pour réessayer.",
-  "durationMinutes": "Durée (min)",
   "price": "Prix",
   "priceFrom": "à partir de",
   "priceFree": "Gratuit",
   "priceOnRequest": "Prix sur demande",
-  "onlineBookable": "Réservable en ligne",
-  "isActive": "Actif"
+  "durationValue": "{minutes} min",
+  "inactive": "Inactif",
+  "notBookable": "Non réservable en ligne",
+  "duration": "Durée",
+  "category": {
+    "checkup": "Contrôle",
+    "hygiene": "Détartrage et hygiène",
+    "whitening": "Blanchiment",
+    "filling": "Obturation",
+    "root_canal": "Traitement de canal",
+    "extraction": "Extraction",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Couronne",
+    "bridge": "Bridge",
+    "veneer": "Facette",
+    "denture": "Prothèse amovible",
+    "orthodontics": "Orthodontie",
+    "bone_graft": "Greffe osseuse / sinus lift",
+    "other": "Autre"
+  }
 }

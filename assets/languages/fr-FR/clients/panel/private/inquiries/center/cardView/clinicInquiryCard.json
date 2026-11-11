@@ -15,5 +15,25 @@
     "withdrawn": "Retirée",
     "converted": "Dossier ouvert",
     "quoted": "Devis envoyé"
+  },
+  "treatmentsWanted": "Souhaite",
+  "receivedAt": "Reçue",
+  "budget": "Budget",
+  "treatment": {
+    "checkup": "Contrôle",
+    "hygiene": "Détartrage et hygiène",
+    "whitening": "Blanchiment",
+    "filling": "Obturation",
+    "root_canal": "Traitement de canal",
+    "extraction": "Extraction",
+    "implant": "Implant",
+    "all_on_x": "All-on-4 / All-on-6",
+    "crown": "Couronne",
+    "bridge": "Bridge",
+    "veneer": "Facette",
+    "denture": "Prothèse amovible",
+    "orthodontics": "Orthodontie",
+    "bone_graft": "Greffe osseuse / sinus lift",
+    "other": "Autre"
   }
 }

@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Ajouter un prospect",
+  "create": "Nouvelle demande de devis",
   "searchPlaceholder": "Rechercher des demandes ou ajouter des filtres...",
   "noData": "Aucune demande pour l'instant",
   "failTitle": "Impossible de charger les demandes",
@@ -62,6 +62,15 @@
         "orthodontics": "Orthodontie",
         "bone_graft": "Greffe osseuse / sinus lift",
         "other": "Autre"
+      },
+      "contact": {
+        "preferredLanguage": {
+          "it-IT": "Italien",
+          "en-US": "Anglais",
+          "de-CH": "Allemand",
+          "fr-FR": "Français",
+          "sq-AL": "Albanais"
+        }
       }
     },
     "number": "N° de demande",

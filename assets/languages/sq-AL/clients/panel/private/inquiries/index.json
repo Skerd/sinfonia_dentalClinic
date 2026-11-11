@@ -17,7 +17,7 @@
       }
     ]
   },
-  "create": "Shto klient të mundshëm",
+  "create": "Kërkesë e re për ofertë",
   "searchPlaceholder": "Kërkoni kërkesa ose shtoni filtra...",
   "noData": "Ende asnjë kërkesë",
   "failTitle": "Kërkesat nuk u ngarkuan",
@@ -62,6 +62,15 @@
         "orthodontics": "Ortodonci",
         "bone_graft": "Shtim kockor / ngritje sinusi",
         "other": "Tjetër"
+      },
+      "contact": {
+        "preferredLanguage": {
+          "it-IT": "Italisht",
+          "en-US": "Anglisht",
+          "de-CH": "Gjermanisht",
+          "fr-FR": "Frëngjisht",
+          "sq-AL": "Shqip"
+        }
       }
     },
     "number": "Nr. kërkese",

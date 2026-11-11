@@ -1,6 +1,6 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
-  "title": "Plans de traitement",
+  "title": "Devis",
   "description": "Devis pour les patients, du brouillon au plan accepté",
   "help": {
     "ariaLabel": "À propos des plans",

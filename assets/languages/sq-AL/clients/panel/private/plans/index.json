@@ -1,6 +1,6 @@
 {
   "path": "src/modules/dentalClinic/clients/panel/private/plans/index.tsx",
-  "title": "Planet e trajtimit",
+  "title": "Ofertat",
   "description": "Oferta për pacientët, nga skica te plani i pranuar",
   "help": {
     "ariaLabel": "Rreth planeve",

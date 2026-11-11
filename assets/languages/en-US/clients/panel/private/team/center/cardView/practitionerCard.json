@@ -10,6 +10,8 @@
     "orthodontist": "Orthodontist",
     "other": "Other"
   },
-  "isBookable": "Bookable online",
-  "isActive": "Active"
+  "locations": "Locations",
+  "services": "Treatments",
+  "inactive": "Inactive",
+  "notBookable": "Not bookable online"
 }

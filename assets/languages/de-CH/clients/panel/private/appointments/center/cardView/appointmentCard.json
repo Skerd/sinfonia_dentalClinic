@@ -12,5 +12,6 @@
   },
   "startAt": "Beginnt",
   "practitioner": "Zahnärztin/Zahnarzt",
-  "patient": "Patient/in"
+  "patient": "Patient/in",
+  "service": "Behandlung"
 }

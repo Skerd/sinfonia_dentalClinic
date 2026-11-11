@@ -12,5 +12,6 @@
   },
   "startAt": "Inizia",
   "practitioner": "Dentista",
-  "patient": "Paziente"
+  "patient": "Paziente",
+  "service": "Trattamento"
 }

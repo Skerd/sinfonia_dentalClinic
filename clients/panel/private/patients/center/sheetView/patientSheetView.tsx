@@ -8,6 +8,7 @@ import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {Patient} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/patient/patient.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import MedicalHistoryAnswers from "@dentalClinicModule/clients/panel/private/patients/center/sheetView/medicalHistoryAnswers.tsx";
+import SheetNameTitle from "@dentalClinicModule/clients/panel/private/shared/sheetNameTitle.tsx";
 
 type PatientSheetViewOwnProps = {
     open: boolean;
@@ -53,6 +54,7 @@ function PatientSheetView({
             open={open}
             onOpenChange={onOpenChange}
             resolveLanguageKey={resolveLanguageKey}
+            headerTitle={<SheetNameTitle name={`${(sheetData as Patient)?.firstName ?? ""} ${(sheetData as Patient)?.lastName ?? ""}`.trim()} code={(sheetData as Patient).number} typeLabel={String(resolveLanguageKey("patientSubtitle"))} />}
             access={access}
             hideActions={hideActions}
             onDelete={onDelete}
