@@ -6,7 +6,7 @@ import {loadStripe} from "@stripe/stripe-js";
 import {Elements, PaymentElement, useElements, useStripe} from "@stripe/react-stripe-js";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
-import {formatPlanAmount} from "@dentalClinicModule/clients/portal/cases/planAmount.ts";
+import {formatPlanAmount} from "@dentalClinicModule/components/custom/plans/planAmount.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import type {

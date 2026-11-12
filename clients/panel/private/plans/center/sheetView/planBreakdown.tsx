@@ -2,7 +2,7 @@ import type {ReactNode} from "react";
 import {compose} from "redux";
 import {IconCash, IconDiscount, IconReceipt, IconSignature} from "@tabler/icons-react";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
-import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
+import {formatPlanAmount} from "@dentalClinicModule/components/custom/plans/planAmount.ts";
 import {cn} from "@coreModule/components/lib/utils.ts";
 import {Badge} from "@coreModule/components/ui/badge.tsx";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
@@ -29,11 +29,7 @@ function Amount({Icon, label, value, strong}: {Icon: typeof IconCash; label: Rea
 
 /** The quote as the patient reads it: each phase with its lines, then the discount and total, and once accepted what is still due. */
 function PlanBreakdown({plan, resolveLanguageKey}: Props) {
-    // Up to the currency's own precision (D90), cents when it does not say, and whole amounts without trailing zeros.
-    const maximumFractionDigits = plan.currency?.decimalPlaces ?? 2;
-    const money = (amount: number) => (plan.currency?.abbreviation
-        ? formatCurrency(amount, plan.currency.abbreviation, {minimumFractionDigits: 0, maximumFractionDigits})
-        : String(amount));
+    const money = (amount: number) => formatPlanAmount(plan, amount);
     const accepted = plan.status === "accepted";
     return (
         <div className="flex flex-col gap-3">

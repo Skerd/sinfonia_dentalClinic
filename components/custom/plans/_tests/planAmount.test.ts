@@ -4,7 +4,7 @@ import {formatPlanAmount} from "../planAmount.ts";
 
 const currency = (abbreviation: string, decimalPlaces?: number) => ({_id: "c1", name: abbreviation, symbol: abbreviation, abbreviation, decimalPlaces});
 
-describe("formatPlanAmount (patient portal plan amounts)", () => {
+describe("formatPlanAmount (plan amounts in the portal and the panel)", () => {
     it("shows the cents a patient is charged instead of rounding to whole units", () => {
         const shown = formatPlanAmount({currency: currency("CHF", 2)}, 1234.5);
         expect(shown).toBe(formatCurrency(1234.5, "CHF", {minimumFractionDigits: 2, maximumFractionDigits: 2}));
