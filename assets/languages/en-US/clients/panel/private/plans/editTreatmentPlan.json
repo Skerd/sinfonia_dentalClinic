@@ -49,7 +49,7 @@
     "linesRemoveRow": "Remove",
     "linesRowTitle": "Line",
     "linePhaseLabel": "Phase no.",
-    "linePhasePlaceholder": "1",
+    "linePhasePlaceholder": "Choose a phase",
     "lineKindLabel": "Kind",
     "lineServiceLabel": "From the price list",
     "lineServicePlaceholder": "Optional",
