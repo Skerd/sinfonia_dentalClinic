@@ -31,7 +31,7 @@ function InquiryPlans({inquiryId, canQuote, resolveLanguageKey}: Props) {
     const plansRequest = useHttpRequest<{data: TreatmentPlan[]}>(PLANS_REQUEST, {
         limit: 50,
         offset: 0,
-        filter: {id: "inquiry-plans", operator: "and", rules: [{id: "inquiry", field: "inquiry", operator: "equals", value: inquiryId}]},
+        filter: {id: "inquiry-plans", operator: "and", rules: [{id: "inquiry", field: "inquiry", operator: "equals", value: inquiryId}], groups: []},
     }, plansCount);
     const plans = plansRequest.error ? [] : plansRequest.data?.data ?? null;
 
