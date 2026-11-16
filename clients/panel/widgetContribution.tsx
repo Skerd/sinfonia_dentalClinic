@@ -81,10 +81,22 @@ const sheetFieldRenderers: Record<string, SheetFieldRenderer> = {
     }),
 };
 
+/** Sheets a record shared in chat opens by token, named by each sheet view's `sheetWidget` (D162). */
+const ClinicLocationSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/locations/center/sheetView/clinicLocationSheetView.tsx"));
+const ScheduleExceptionSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/timeOff/center/sheetView/scheduleExceptionSheetView.tsx"));
+const PractitionerSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/team/center/sheetView/practitionerSheetView.tsx"));
+const ClinicServiceSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx"));
+const PatientSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/patients/center/sheetView/patientSheetView.tsx"));
+
 const dentalClinicWidgetContribution: WidgetContribution = {
     id: "dentalClinic",
     order: 37,
     widgets: {
+        "#ClinicLocationSheetView": ClinicLocationSheetViewLazy,
+        "#ScheduleExceptionSheetView": ScheduleExceptionSheetViewLazy,
+        "#PractitionerSheetView": PractitionerSheetViewLazy,
+        "#ClinicServiceSheetView": ClinicServiceSheetViewLazy,
+        "#PatientSheetView": PatientSheetViewLazy,
         "#EnumChecklist": EnumChecklist,
         "#ToothPicker": ToothPicker,
         "#AppointmentCard": AppointmentCardLazy,
