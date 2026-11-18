@@ -119,6 +119,15 @@ const dentalClinicWidgetContribution: WidgetContribution = {
         "#EnumChecklist": enumChecklist,
         "#ToothPicker": toothPicker,
     },
+    /** Create pages an `#ApiSelect` on `<apiUrl>/select` opens in a dialog ("Create new …" below the dropdown). */
+    createPages: {
+        "/api/dentalClinic/clinicInquiry": lazy(() => import("@dentalClinicModule/clients/panel/private/inquiries/createClinicInquiry.tsx")),
+        "/api/dentalClinic/clinicLocation": lazy(() => import("@dentalClinicModule/clients/panel/private/locations/createClinicLocation.tsx")),
+        "/api/dentalClinic/clinicService": lazy(() => import("@dentalClinicModule/clients/panel/private/services/createClinicService.tsx")),
+        "/api/dentalClinic/patient": lazy(() => import("@dentalClinicModule/clients/panel/private/patients/createPatient.tsx")),
+        "/api/dentalClinic/practitioner": lazy(() => import("@dentalClinicModule/clients/panel/private/team/createPractitioner.tsx")),
+        "/api/dentalClinic/treatmentPlan": lazy(() => import("@dentalClinicModule/clients/panel/private/plans/createTreatmentPlan.tsx")),
+    },
 };
 
 export default dentalClinicWidgetContribution;
