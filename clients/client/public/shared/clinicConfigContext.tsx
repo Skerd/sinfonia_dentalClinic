@@ -23,11 +23,12 @@ const ClinicConfigContext = createContext<ClinicConfigContextValue>({
     formatMoney: () => "",
 });
 
-const CONFIG_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/config"};
+/** The clinic site's settings and treatments; the section asks them ahead for a hovered link into a clinic's site. */
+export const CLINIC_CONFIG_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/config", cache: true};
 
 /** Loads the clinic, locations, treatments and team once for the whole site. */
 export function ClinicConfigProvider({children}: {children: ReactNode}) {
-    const {data, loading} = useHttpRequest<ClinicStorefrontConfigResponse>(CONFIG_REQUEST, {}, 1);
+    const {data, loading} = useHttpRequest<ClinicStorefrontConfigResponse>(CLINIC_CONFIG_REQUEST, {}, 1);
     const config = data?.data ?? null;
 
     const value = useMemo<ClinicConfigContextValue>(() => ({

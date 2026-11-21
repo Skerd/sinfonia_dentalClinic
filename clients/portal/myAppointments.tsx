@@ -13,7 +13,7 @@ function atClinic(iso: string, timeZone: string, locale: string): string {
     return new Intl.DateTimeFormat(locale, {timeZone, weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"}).format(new Date(iso));
 }
 
-const MINE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/mine"};
+const MINE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/mine", cache: true};
 
 /** The portal account's appointments at every clinic; each opens the clinic's manage page. */
 function MyAppointments({resolveLanguageKey, languageCode}: WithLanguageType) {

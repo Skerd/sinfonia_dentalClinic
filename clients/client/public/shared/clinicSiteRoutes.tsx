@@ -1,7 +1,6 @@
-import {lazy, Suspense} from "react";
+import {lazy} from "react";
 import {Route, Routes} from "react-router-dom";
 import ErrorBoundary from "@coreModule/components/custom/errors/errorBoundary.tsx";
-import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {ClinicConfigProvider} from "@dentalClinicModule/clients/client/public/shared/clinicConfigContext.tsx";
 import SitePageLayout from "@coreModule/clients/portal/shared/sitePageLayout.tsx";
 
@@ -20,19 +19,17 @@ const NotFoundPage = lazy(() => import("@dentalClinicModule/clients/client/publi
 export default function ClinicSiteRoutes() {
     return (
         <ClinicConfigProvider>
-            <Suspense fallback={<Loader />}>
-                <Routes>
-                    <Route element={<SitePageLayout />}>
-                        <Route index element={<ErrorBoundary><HomePage /></ErrorBoundary>} />
-                        <Route path="treatments/:serviceId" element={<ErrorBoundary><TreatmentPage /></ErrorBoundary>} />
-                        <Route path="book" element={<ErrorBoundary><BookPage /></ErrorBoundary>} />
-                        <Route path="request" element={<ErrorBoundary><RequestPage /></ErrorBoundary>} />
-                        <Route path="manage" element={<ErrorBoundary><ManagePage /></ErrorBoundary>} />
-                        <Route path="privacy" element={<ErrorBoundary><PrivacyPage /></ErrorBoundary>} />
-                        <Route path="*" element={<ErrorBoundary><NotFoundPage /></ErrorBoundary>} />
-                    </Route>
-                </Routes>
-            </Suspense>
+            <Routes>
+                <Route element={<SitePageLayout />}>
+                    <Route index element={<ErrorBoundary><HomePage /></ErrorBoundary>} />
+                    <Route path="treatments/:serviceId" element={<ErrorBoundary><TreatmentPage /></ErrorBoundary>} />
+                    <Route path="book" element={<ErrorBoundary><BookPage /></ErrorBoundary>} />
+                    <Route path="request" element={<ErrorBoundary><RequestPage /></ErrorBoundary>} />
+                    <Route path="manage" element={<ErrorBoundary><ManagePage /></ErrorBoundary>} />
+                    <Route path="privacy" element={<ErrorBoundary><PrivacyPage /></ErrorBoundary>} />
+                    <Route path="*" element={<ErrorBoundary><NotFoundPage /></ErrorBoundary>} />
+                </Route>
+            </Routes>
         </ClinicConfigProvider>
     );
 }

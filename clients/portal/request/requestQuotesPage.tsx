@@ -23,7 +23,7 @@ import PatientRequestForm from "./patientRequestForm.tsx";
 type ResolveLanguageKey = WithLanguageType["resolveLanguageKey"];
 
 const FORM_ID = "estimate-request";
-const CLINICS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/clinics"};
+const CLINICS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/clinics", cache: true};
 const STEPS = ["choose", "describe", "compare"] as const;
 
 /** Compare without case or accents, so "durres" finds "Durrës". */

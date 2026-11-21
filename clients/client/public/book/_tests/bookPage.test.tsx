@@ -7,6 +7,7 @@ import type {
     ClinicStorefrontConfigResponse,
 } from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
 import type {BookAppointmentFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.forms.ts";
+import {clearResponseCache} from "@coreModule/helpers/apiClient/responseCache.ts";
 
 const {apiClientMock} = vi.hoisted(() => ({apiClientMock: vi.fn()}));
 
@@ -103,6 +104,8 @@ const submit = () => fireEvent.click(screen.getByRole("button", {name: "confirmB
 describe("dental clinic booking wizard", () => {
     beforeEach(() => {
         apiClientMock.mockReset();
+        // Each test serves its own clinic settings; the cached ones of the last test must not answer.
+        clearResponseCache();
     });
 
     it("offers only the treatments someone can be booked for", async () => {

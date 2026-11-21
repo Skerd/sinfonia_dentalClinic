@@ -11,7 +11,7 @@ import {usePortalSite} from "@coreModule/clients/portal/shared/portalSiteContext
 import type {PatientCasesResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
 import CaseDialog from "./caseDialog.tsx";
 
-const CASES_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/cases"};
+const CASES_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/cases", cache: true};
 
 /** The portal account's estimate requests, each with every clinic's status; `?case=` opens one. */
 function MyDentalCases({resolveLanguageKey, languageCode}: WithLanguageType) {

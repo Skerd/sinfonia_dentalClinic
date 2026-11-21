@@ -9,7 +9,7 @@ import {usePortalSite} from "@coreModule/clients/portal/shared/portalSiteContext
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
 import type {RequestableClinicsResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/patientPortal/patientPortal.response.types.ts";
 
-const CLINICS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/clinics"};
+const CLINICS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/clinics", cache: true};
 
 /**
  * "Get an estimate" on top of the dentists' tab, shown when a clinic here takes requests. On the
