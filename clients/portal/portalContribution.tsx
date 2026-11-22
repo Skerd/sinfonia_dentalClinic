@@ -5,6 +5,8 @@ import ClinicSiteRoutes from "@dentalClinicModule/clients/client/public/shared/c
 import DentistsAccountSection from "./dentistsAccountSection.tsx";
 import RequestQuotesPage from "./request/requestQuotesPage.tsx";
 import EstimateBanner from "./estimateBanner.tsx";
+import {IconDental} from "@tabler/icons-react";
+import BusinessTypeSummary from "./businessTypeSummary.tsx";
 
 /**
  * Dentists on the portal: each clinic's site, its treatments in the home catalog (with the
@@ -27,6 +29,8 @@ const contribution: PortalContribution = {
         else return;
         prefetchHttpRequest(CLINIC_CONFIG_REQUEST, {}, {siteCompany});
     },
+    // A person may create this kind of business on the portal (D178); the API declares the same key.
+    businessType: {key: "dentalClinic", Icon: IconDental, Summary: BusinessTypeSummary},
 };
 
 export default contribution;
