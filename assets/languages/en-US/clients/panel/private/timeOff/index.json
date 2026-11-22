@@ -17,7 +17,6 @@
     ]
   },
   "create": "Add time off",
-  "searchPlaceholder": "Search time off or add filters...",
   "noData": "No time off yet",
   "failTitle": "Failed to load time off",
   "failDescription": "Something went wrong while loading. Please try again.",

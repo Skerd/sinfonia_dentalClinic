@@ -8,7 +8,6 @@
     "overview": "Un piano è diviso in fasi (viaggi): impianti ora, corone dopo la guarigione. Ogni riga indica denti, materiale e marca. Più piani per la stessa richiesta offrono alternative; il paziente ne accetta uno."
   },
   "create": "Nuovo preventivo",
-  "searchPlaceholder": "Cerca preventivi o aggiungi filtri...",
   "noData": "Ancora nessun preventivo",
   "failTitle": "Impossibile caricare i preventivi",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

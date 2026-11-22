@@ -18,7 +18,6 @@
     ]
   },
   "create": "Shto trajtim",
-  "searchPlaceholder": "Kërko trajtime ose shto filtra...",
   "noData": "Ende pa trajtime",
   "failTitle": "Trajtimet nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

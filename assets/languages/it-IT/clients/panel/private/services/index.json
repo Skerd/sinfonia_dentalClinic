@@ -18,7 +18,6 @@
     ]
   },
   "create": "Aggiungi trattamento",
-  "searchPlaceholder": "Cerca trattamenti o aggiungi filtri...",
   "noData": "Nessun trattamento",
   "failTitle": "Impossibile caricare i trattamenti",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

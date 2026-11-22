@@ -18,7 +18,6 @@
     ]
   },
   "create": "Nouvelle demande de devis",
-  "searchPlaceholder": "Rechercher des demandes ou ajouter des filtres...",
   "noData": "Aucune demande pour l'instant",
   "failTitle": "Impossible de charger les demandes",
   "failDescription": "Une erreur s'est produite. Veuillez réessayer.",

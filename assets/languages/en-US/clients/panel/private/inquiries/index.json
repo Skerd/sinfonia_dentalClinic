@@ -18,7 +18,6 @@
     ]
   },
   "create": "New estimate request",
-  "searchPlaceholder": "Search requests or add filters...",
   "noData": "No requests yet",
   "failTitle": "Failed to load requests",
   "failDescription": "Something went wrong while loading. Please try again.",

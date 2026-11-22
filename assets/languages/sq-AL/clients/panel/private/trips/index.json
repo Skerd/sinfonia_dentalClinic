@@ -17,7 +17,6 @@
     ]
   },
   "create": "Planifiko një udhëtim",
-  "searchPlaceholder": "Kërkoni udhëtime ose shtoni filtra...",
   "noData": "Ende nuk ka udhëtime",
   "failTitle": "Udhëtimet nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",

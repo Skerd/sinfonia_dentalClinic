@@ -18,7 +18,6 @@
     ]
   },
   "create": "Patient hinzufügen",
-  "searchPlaceholder": "Patienten suchen oder Filter hinzufügen...",
   "noData": "Noch keine Patienten",
   "failTitle": "Patienten konnten nicht geladen werden",
   "failDescription": "Beim Laden ist ein Fehler aufgetreten. Bitte erneut versuchen.",

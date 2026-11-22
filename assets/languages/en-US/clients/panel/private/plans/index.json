@@ -8,7 +8,6 @@
     "overview": "A plan is split into phases (trips): implants now, crowns after healing. Each line names the teeth, material and brand. Make several plans for the same request to offer alternatives; the patient accepts one."
   },
   "create": "New quote",
-  "searchPlaceholder": "Search quotes or add filters...",
   "noData": "No quotes yet",
   "failTitle": "Failed to load quotes",
   "failDescription": "Something went wrong while loading. Please try again.",

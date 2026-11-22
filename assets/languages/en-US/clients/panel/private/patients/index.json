@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add patient",
-  "searchPlaceholder": "Search patients or add filters...",
   "noData": "No patients yet",
   "failTitle": "Failed to load patients",
   "failDescription": "Something went wrong while loading. Please try again.",

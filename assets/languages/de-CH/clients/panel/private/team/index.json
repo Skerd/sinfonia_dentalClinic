@@ -18,7 +18,6 @@
     ]
   },
   "create": "Teammitglied hinzufügen",
-  "searchPlaceholder": "Team durchsuchen oder Filter hinzufügen...",
   "noData": "Noch kein Team",
   "failTitle": "Team konnte nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

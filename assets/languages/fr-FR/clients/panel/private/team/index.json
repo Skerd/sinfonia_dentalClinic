@@ -18,7 +18,6 @@
     ]
   },
   "create": "Ajouter un membre de l'équipe",
-  "searchPlaceholder": "Rechercher dans l'équipe ou ajouter des filtres...",
   "noData": "Aucune équipe pour l'instant",
   "failTitle": "Impossible de charger l'équipe",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

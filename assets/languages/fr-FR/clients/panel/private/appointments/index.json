@@ -18,7 +18,6 @@
     ]
   },
   "create": "Ajouter un rendez-vous",
-  "searchPlaceholder": "Rechercher des rendez-vous ou ajouter des filtres...",
   "noData": "Aucun rendez-vous pour l'instant",
   "failTitle": "Impossible de charger les rendez-vous",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

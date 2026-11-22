@@ -17,7 +17,6 @@
     ]
   },
   "create": "Aggiungi assenza",
-  "searchPlaceholder": "Cerca assenze o aggiungi filtri...",
   "noData": "Nessuna assenza",
   "failTitle": "Impossibile caricare l'assenza",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

@@ -8,7 +8,6 @@
     "overview": "Ein Plan ist in Phasen (Reisen) gegliedert: jetzt Implantate, nach der Heilung Kronen. Jede Position nennt Zähne, Material und Marke. Mehrere Pläne pro Anfrage bieten Alternativen; der Patient nimmt einen an."
   },
   "create": "Neues Angebot",
-  "searchPlaceholder": "Angebote suchen oder Filter hinzufügen...",
   "noData": "Noch keine Angebote",
   "failTitle": "Angebote konnten nicht geladen werden",
   "failDescription": "Beim Laden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",

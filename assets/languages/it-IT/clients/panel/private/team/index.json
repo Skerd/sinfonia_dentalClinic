@@ -18,7 +18,6 @@
     ]
   },
   "create": "Aggiungi membro del team",
-  "searchPlaceholder": "Cerca nel team o aggiungi filtri...",
   "noData": "Nessun membro del team",
   "failTitle": "Impossibile caricare il team",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

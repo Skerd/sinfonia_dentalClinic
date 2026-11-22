@@ -18,7 +18,6 @@
     ]
   },
   "create": "Behandlung hinzufügen",
-  "searchPlaceholder": "Behandlungen suchen oder Filter hinzufügen...",
   "noData": "Noch keine Behandlungen",
   "failTitle": "Behandlungen konnten nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

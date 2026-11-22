@@ -17,7 +17,6 @@
     ]
   },
   "create": "Pianifica un viaggio",
-  "searchPlaceholder": "Cerca viaggi o aggiungi filtri...",
   "noData": "Nessun viaggio",
   "failTitle": "Impossibile caricare i viaggi",
   "failDescription": "Qualcosa è andato storto durante il caricamento. Riprova.",

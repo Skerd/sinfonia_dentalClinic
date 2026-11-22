@@ -17,7 +17,6 @@
     ]
   },
   "create": "Abwesenheit hinzufügen",
-  "searchPlaceholder": "Abwesenheiten suchen oder Filter hinzufügen...",
   "noData": "Noch keine Abwesenheiten",
   "failTitle": "Abwesenheit konnte nicht geladen werden",
   "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",

@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add appointment",
-  "searchPlaceholder": "Search appointments or add filters...",
   "noData": "No appointments yet",
   "failTitle": "Failed to load appointments",
   "failDescription": "Something went wrong while loading. Please try again.",

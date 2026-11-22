@@ -18,7 +18,6 @@
     ]
   },
   "create": "Nuova richiesta di preventivo",
-  "searchPlaceholder": "Cerca richieste o aggiungi filtri...",
   "noData": "Ancora nessuna richiesta",
   "failTitle": "Impossibile caricare le richieste",
   "failDescription": "Si è verificato un errore. Riprova.",

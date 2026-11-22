@@ -18,7 +18,6 @@
     ]
   },
   "create": "Ajouter un soin",
-  "searchPlaceholder": "Rechercher des soins ou ajouter des filtres...",
   "noData": "Aucun soin pour l'instant",
   "failTitle": "Impossible de charger les soins",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

@@ -18,7 +18,6 @@
     ]
   },
   "create": "Aggiungi appuntamento",
-  "searchPlaceholder": "Cerca appuntamenti o aggiungi filtri...",
   "noData": "Nessun appuntamento",
   "failTitle": "Impossibile caricare gli appuntamenti",
   "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",

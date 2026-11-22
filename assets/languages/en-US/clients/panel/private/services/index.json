@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add treatment",
-  "searchPlaceholder": "Search treatments or add filters...",
   "noData": "No treatments yet",
   "failTitle": "Failed to load treatments",
   "failDescription": "Something went wrong while loading. Please try again.",

@@ -17,7 +17,6 @@
     ]
   },
   "create": "Plan a trip",
-  "searchPlaceholder": "Search trips or add filters...",
   "noData": "No trips yet",
   "failTitle": "Failed to load trips",
   "failDescription": "Something went wrong while loading. Please try again.",

@@ -17,7 +17,6 @@
     ]
   },
   "create": "Planifier un voyage",
-  "searchPlaceholder": "Rechercher des voyages ou ajouter des filtres...",
   "noData": "Aucun voyage",
   "failTitle": "Impossible de charger les voyages",
   "failDescription": "Une erreur s'est produite pendant le chargement. Veuillez réessayer.",

@@ -18,7 +18,6 @@
     ]
   },
   "create": "Shto pacient",
-  "searchPlaceholder": "Kërkoni pacientë ose shtoni filtra...",
   "noData": "Ende asnjë pacient",
   "failTitle": "Pacientët nuk u ngarkuan",
   "failDescription": "Diçka shkoi keq. Provoni përsëri.",

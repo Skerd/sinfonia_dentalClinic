@@ -18,7 +18,6 @@
     ]
   },
   "create": "Add team member",
-  "searchPlaceholder": "Search team or add filters...",
   "noData": "No team yet",
   "failTitle": "Failed to load team",
   "failDescription": "Something went wrong while loading. Please try again.",

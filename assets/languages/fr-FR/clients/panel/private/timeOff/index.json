@@ -17,7 +17,6 @@
     ]
   },
   "create": "Ajouter une absence",
-  "searchPlaceholder": "Rechercher des absences ou ajouter des filtres...",
   "noData": "Aucune absence pour l'instant",
   "failTitle": "Impossible de charger l'absence",
   "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",

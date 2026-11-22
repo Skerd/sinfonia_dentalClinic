@@ -18,7 +18,6 @@
     ]
   },
   "create": "Ajouter un patient",
-  "searchPlaceholder": "Rechercher des patients ou ajouter des filtres...",
   "noData": "Aucun patient pour l'instant",
   "failTitle": "Impossible de charger les patients",
   "failDescription": "Une erreur s'est produite. Veuillez réessayer.",
