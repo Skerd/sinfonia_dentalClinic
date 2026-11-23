@@ -1,6 +1,38 @@
 {
   "dentalClinic": {
     "setup": {"location": "Aggiungi lo studio e i suoi orari", "service": "Aggiungi i trattamenti che offri", "practitioner": "Aggiungi i dentisti e i loro orari"},
+    "guide": {
+      "locationNameTitle": "Il nome del tuo studio",
+      "locationNameText": "Il nome che i pazienti vedono sul tuo sito e nelle conferme di prenotazione.",
+      "locationAddressTitle": "Dove ti trovi",
+      "locationAddressText": "Scegli paese e città, poi la via. I pazienti ti trovano a questo indirizzo, che mette il tuo studio sulla mappa.",
+      "locationHoursTitle": "Orari di apertura",
+      "locationHoursText": "Aggiungi i giorni e gli orari di apertura. La prenotazione online propone solo orari al loro interno.",
+      "serviceNameTitle": "Nome del trattamento",
+      "serviceNameText": "Usa le parole che cercano i pazienti, come «Sbiancamento dei denti».",
+      "serviceCategoryTitle": "Tipo di trattamento",
+      "serviceCategoryText": "Raggruppa il trattamento sul tuo sito e nella ricerca dei dentisti del portale.",
+      "serviceDurationTitle": "Durata",
+      "serviceDurationText": "Quanto dura. La prenotazione online tiene libero questo tempo nel calendario del dentista.",
+      "servicePriceTitle": "Prezzo",
+      "servicePriceText": "Mostra un prezzo fisso, un prezzo «a partire da» o «su richiesta».",
+      "servicePublicTitle": "Sul sito",
+      "servicePublicText": "Lascialo attivo per mostrare il trattamento sul tuo sito e sul portale.",
+      "practitionerNameTitle": "Il nome del dentista",
+      "practitionerNameText": "Come lo vedranno i pazienti quando prenotano.",
+      "practitionerServicesTitle": "Trattamenti",
+      "practitionerServicesText": "I trattamenti che fa questo dentista. I pazienti possono prenotare con lui solo questi.",
+      "practitionerHoursTitle": "Orari di lavoro",
+      "practitionerHoursText": "I suoi orari settimanali. La prenotazione online propone orari al loro interno.",
+      "practitionerBookableTitle": "Prenotabile online",
+      "practitionerBookableText": "Attivalo perché i pazienti possano prenotare questo dentista dal tuo sito.",
+      "tour": {
+        "day": "Gli appuntamenti di oggi di ogni dentista, in un unico posto. Una buona pagina per iniziare la giornata.",
+        "appointments": "Ogni prenotazione, dal tuo sito, dal portale o inserita dal tuo team. Confermale, spostale o annullale qui.",
+        "inquiries": "Pazienti che chiedono un preventivo tramite il portale. Rispondi con un preventivo per conquistarli.",
+        "patients": "La scheda di ogni paziente: visite, piani di trattamento e note."
+      }
+    },
     "title": "Studio dentistico",
     "day": {
       "title": "Vista giornaliera"

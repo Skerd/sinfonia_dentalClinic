@@ -1,6 +1,38 @@
 {
   "dentalClinic": {
     "setup": {"location": "Shtoni klinikën dhe orarin e saj", "service": "Shtoni trajtimet që ofroni", "practitioner": "Shtoni dentistët dhe orarin e tyre"},
+    "guide": {
+      "locationNameTitle": "Emri i klinikës suaj",
+      "locationNameText": "Emri që pacientët shohin në faqen tuaj dhe në konfirmimet e rezervimeve.",
+      "locationAddressTitle": "Ku ndodheni",
+      "locationAddressText": "Zgjidhni shtetin dhe qytetin, pastaj rrugën. Pacientët ju gjejnë me këtë adresë, dhe ajo e vendos klinikën tuaj në hartë.",
+      "locationHoursTitle": "Orari i punës",
+      "locationHoursText": "Shtoni ditët dhe orët kur jeni hapur. Rezervimi online ofron vetëm orare brenda tyre.",
+      "serviceNameTitle": "Emri i trajtimit",
+      "serviceNameText": "Përdorni fjalët që kërkojnë pacientët, si “Zbardhja e dhëmbëve”.",
+      "serviceCategoryTitle": "Lloji i trajtimit",
+      "serviceCategoryText": "E grupon trajtimin në faqen tuaj dhe në kërkimin e dentistëve në portal.",
+      "serviceDurationTitle": "Kohëzgjatja",
+      "serviceDurationText": "Sa zgjat. Rezervimi online lë kaq kohë të lirë në kalendarin e dentistit.",
+      "servicePriceTitle": "Çmimi",
+      "servicePriceText": "Shfaqni një çmim fiks, një çmim fillestar, ose “me kërkesë”.",
+      "servicePublicTitle": "Në faqen e internetit",
+      "servicePublicText": "Lëreni të aktivizuar që trajtimi të shfaqet në faqen tuaj dhe në portal.",
+      "practitionerNameTitle": "Emri i dentistit",
+      "practitionerNameText": "Siç do ta shohin pacientët kur rezervojnë.",
+      "practitionerServicesTitle": "Trajtimet",
+      "practitionerServicesText": "Trajtimet që bën ky dentist. Pacientët mund të rezervojnë me të vetëm këto.",
+      "practitionerHoursTitle": "Orari i punës",
+      "practitionerHoursText": "Orët e tij javore. Rezervimi online ofron orare brenda tyre.",
+      "practitionerBookableTitle": "I rezervueshëm online",
+      "practitionerBookableText": "Aktivizojeni që pacientët ta rezervojnë këtë dentist nga faqja juaj.",
+      "tour": {
+        "day": "Takimet e sotme të çdo dentisti, në një vend. Një faqe e mirë për të nisur ditën.",
+        "appointments": "Çdo rezervim, nga faqja juaj, portali ose i shtuar nga ekipi juaj. Konfirmojini, zhvendosini ose anulojini këtu.",
+        "inquiries": "Pacientë që kërkojnë një ofertë përmes portalit. Përgjigjuni me një ofertë për t'i fituar.",
+        "patients": "Dosja e çdo pacienti: vizitat, planet e trajtimit dhe shënimet."
+      }
+    },
     "title": "Klinikë dentare",
     "day": {
       "title": "Pamja ditore"

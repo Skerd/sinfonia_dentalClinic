@@ -1,6 +1,38 @@
 {
   "dentalClinic": {
     "setup": {"location": "Add your clinic and its opening hours", "service": "Add the treatments you offer", "practitioner": "Add your dentists and their hours"},
+    "guide": {
+      "locationNameTitle": "Your clinic's name",
+      "locationNameText": "The name patients see on your website and in their booking confirmations.",
+      "locationAddressTitle": "Where you are",
+      "locationAddressText": "Choose the country and city, then the street. Patients find you by this address, and it puts your clinic on the map.",
+      "locationHoursTitle": "Opening hours",
+      "locationHoursText": "Add the days and hours you're open. Online booking only offers times inside them.",
+      "serviceNameTitle": "Treatment name",
+      "serviceNameText": "Use the words patients search for, such as “Teeth whitening”.",
+      "serviceCategoryTitle": "Treatment type",
+      "serviceCategoryText": "Groups the treatment on your website and in the portal's dentist search.",
+      "serviceDurationTitle": "Duration",
+      "serviceDurationText": "How long it takes. Online booking keeps this much time free in the dentist's calendar.",
+      "servicePriceTitle": "Price",
+      "servicePriceText": "Show a fixed price, a starting price, or “on request”.",
+      "servicePublicTitle": "On the website",
+      "servicePublicText": "Leave this on to show the treatment on your website and on the portal.",
+      "practitionerNameTitle": "The dentist's name",
+      "practitionerNameText": "As patients will see it when they book.",
+      "practitionerServicesTitle": "Treatments",
+      "practitionerServicesText": "The treatments this dentist does. Patients can book only these with them.",
+      "practitionerHoursTitle": "Working hours",
+      "practitionerHoursText": "Their weekly hours. Online booking offers times inside them.",
+      "practitionerBookableTitle": "Bookable online",
+      "practitionerBookableText": "Turn this on so patients can book this dentist from your website.",
+      "tour": {
+        "day": "Today's appointments for every dentist, in one place. A good page to start your day.",
+        "appointments": "Every booking, from your website, the portal or added by your team. Confirm, move or cancel them here.",
+        "inquiries": "Patients asking for a quote through the portal. Answer with a quote to win them.",
+        "patients": "Each patient's file: visits, treatment plans and notes."
+      }
+    },
     "title": "Dental clinic",
     "day": {
       "title": "Day view"

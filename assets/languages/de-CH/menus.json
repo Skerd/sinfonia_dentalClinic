@@ -1,6 +1,38 @@
 {
   "dentalClinic": {
     "setup": {"location": "Praxis und Öffnungszeiten erfassen", "service": "Angebotene Behandlungen erfassen", "practitioner": "Zahnärzte und ihre Zeiten erfassen"},
+    "guide": {
+      "locationNameTitle": "Name Ihrer Praxis",
+      "locationNameText": "Der Name, den Patienten auf Ihrer Website und in ihren Buchungsbestätigungen sehen.",
+      "locationAddressTitle": "Wo Sie sind",
+      "locationAddressText": "Wählen Sie Land und Ort, dann die Strasse. Patienten finden Sie unter dieser Adresse, und sie zeigt Ihre Praxis auf der Karte.",
+      "locationHoursTitle": "Öffnungszeiten",
+      "locationHoursText": "Fügen Sie die Tage und Zeiten hinzu, an denen Sie geöffnet haben. Die Online-Buchung bietet nur Zeiten darin an.",
+      "serviceNameTitle": "Name der Behandlung",
+      "serviceNameText": "Verwenden Sie die Worte, nach denen Patienten suchen, etwa «Zahnaufhellung».",
+      "serviceCategoryTitle": "Behandlungsart",
+      "serviceCategoryText": "Ordnet die Behandlung auf Ihrer Website und in der Zahnarztsuche des Portals ein.",
+      "serviceDurationTitle": "Dauer",
+      "serviceDurationText": "Wie lange sie dauert. Die Online-Buchung hält so viel Zeit im Kalender des Zahnarztes frei.",
+      "servicePriceTitle": "Preis",
+      "servicePriceText": "Zeigen Sie einen festen Preis, einen Ab-Preis oder «auf Anfrage».",
+      "servicePublicTitle": "Auf der Website",
+      "servicePublicText": "Lassen Sie dies eingeschaltet, damit die Behandlung auf Ihrer Website und im Portal erscheint.",
+      "practitionerNameTitle": "Name des Zahnarztes",
+      "practitionerNameText": "So, wie Patienten ihn beim Buchen sehen.",
+      "practitionerServicesTitle": "Behandlungen",
+      "practitionerServicesText": "Die Behandlungen, die dieser Zahnarzt durchführt. Patienten können bei ihm nur diese buchen.",
+      "practitionerHoursTitle": "Arbeitszeiten",
+      "practitionerHoursText": "Die wöchentlichen Zeiten. Die Online-Buchung bietet Zeiten darin an.",
+      "practitionerBookableTitle": "Online buchbar",
+      "practitionerBookableText": "Schalten Sie dies ein, damit Patienten diesen Zahnarzt über Ihre Website buchen können.",
+      "tour": {
+        "day": "Die heutigen Termine aller Zahnärzte an einem Ort. Ein guter Start in den Tag.",
+        "appointments": "Jede Buchung, ob von Ihrer Website, aus dem Portal oder von Ihrem Team erfasst. Hier bestätigen, verschieben oder absagen.",
+        "inquiries": "Patienten, die über das Portal ein Angebot anfragen. Antworten Sie mit einem Angebot, um sie zu gewinnen.",
+        "patients": "Die Akte jedes Patienten: Besuche, Behandlungspläne und Notizen."
+      }
+    },
     "title": "Zahnarztpraxis",
     "day": {
       "title": "Tagesansicht"

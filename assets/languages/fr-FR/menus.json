@@ -1,6 +1,38 @@
 {
   "dentalClinic": {
     "setup": {"location": "Ajoutez votre cabinet et ses horaires", "service": "Ajoutez les soins que vous proposez", "practitioner": "Ajoutez vos dentistes et leurs horaires"},
+    "guide": {
+      "locationNameTitle": "Le nom de votre cabinet",
+      "locationNameText": "Le nom que les patients voient sur votre site et dans leurs confirmations de rendez-vous.",
+      "locationAddressTitle": "Où vous êtes",
+      "locationAddressText": "Choisissez le pays et la ville, puis la rue. Les patients vous trouvent à cette adresse, et elle place votre cabinet sur la carte.",
+      "locationHoursTitle": "Horaires d'ouverture",
+      "locationHoursText": "Ajoutez les jours et heures d'ouverture. La réservation en ligne ne propose que des créneaux dans ces horaires.",
+      "serviceNameTitle": "Nom du soin",
+      "serviceNameText": "Utilisez les mots que cherchent les patients, comme « Blanchiment des dents ».",
+      "serviceCategoryTitle": "Type de soin",
+      "serviceCategoryText": "Classe le soin sur votre site et dans la recherche de dentistes du portail.",
+      "serviceDurationTitle": "Durée",
+      "serviceDurationText": "Le temps qu'il prend. La réservation en ligne bloque ce temps dans l'agenda du dentiste.",
+      "servicePriceTitle": "Prix",
+      "servicePriceText": "Affichez un prix fixe, un prix « à partir de » ou « sur demande ».",
+      "servicePublicTitle": "Sur le site",
+      "servicePublicText": "Laissez activé pour afficher le soin sur votre site et sur le portail.",
+      "practitionerNameTitle": "Le nom du dentiste",
+      "practitionerNameText": "Tel que les patients le verront en réservant.",
+      "practitionerServicesTitle": "Soins",
+      "practitionerServicesText": "Les soins que pratique ce dentiste. Les patients ne peuvent réserver que ceux-ci avec lui.",
+      "practitionerHoursTitle": "Horaires de travail",
+      "practitionerHoursText": "Ses horaires de la semaine. La réservation en ligne propose des créneaux dans ces horaires.",
+      "practitionerBookableTitle": "Réservable en ligne",
+      "practitionerBookableText": "Activez-le pour que les patients puissent réserver ce dentiste depuis votre site.",
+      "tour": {
+        "day": "Les rendez-vous du jour de chaque dentiste, au même endroit. Une bonne page pour commencer la journée.",
+        "appointments": "Chaque réservation, depuis votre site, le portail ou saisie par votre équipe. Confirmez, déplacez ou annulez-les ici.",
+        "inquiries": "Des patients qui demandent un devis via le portail. Répondez par un devis pour les gagner.",
+        "patients": "Le dossier de chaque patient : visites, plans de traitement et notes."
+      }
+    },
     "title": "Cabinet dentaire",
     "day": {
       "title": "Vue du jour"
