@@ -1,5 +1,6 @@
 {
   "dentalClinic": {
+    "setup": {"location": "Praxis und Öffnungszeiten erfassen", "service": "Angebotene Behandlungen erfassen", "practitioner": "Zahnärzte und ihre Zeiten erfassen"},
     "title": "Zahnarztpraxis",
     "day": {
       "title": "Tagesansicht"

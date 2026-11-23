@@ -1,5 +1,6 @@
 {
   "dentalClinic": {
+    "setup": {"location": "Shtoni klinikën dhe orarin e saj", "service": "Shtoni trajtimet që ofroni", "practitioner": "Shtoni dentistët dhe orarin e tyre"},
     "title": "Klinikë dentare",
     "day": {
       "title": "Pamja ditore"

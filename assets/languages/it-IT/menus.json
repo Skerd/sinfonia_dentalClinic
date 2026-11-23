@@ -1,5 +1,6 @@
 {
   "dentalClinic": {
+    "setup": {"location": "Aggiungi lo studio e i suoi orari", "service": "Aggiungi i trattamenti che offri", "practitioner": "Aggiungi i dentisti e i loro orari"},
     "title": "Studio dentistico",
     "day": {
       "title": "Vista giornaliera"

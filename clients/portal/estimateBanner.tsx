@@ -12,9 +12,9 @@ import type {RequestableClinicsResponse} from "armonia/src/modules/dentalClinic/
 const CLINICS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/patientPortal/clinics", cache: true};
 
 /**
- * "Get an estimate" on top of the dentists' tab, shown when a clinic here takes requests. On the
- * portal it opens the compare-and-request page, on a clinic's own site that clinic's request form.
- * Sending a request needs an account, so signed-out visitors sign in or up first.
+ * "Get an estimate" on top of the dentists' tab and on the home page, shown when a clinic here takes
+ * requests. On the portal it opens the compare-and-request page, on a clinic's own site that clinic's
+ * request form. Sending a request needs an account, so signed-out visitors sign in or up first.
  */
 function EstimateBanner({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();

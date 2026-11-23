@@ -1,5 +1,6 @@
 {
   "dentalClinic": {
+    "setup": {"location": "Ajoutez votre cabinet et ses horaires", "service": "Ajoutez les soins que vous proposez", "practitioner": "Ajoutez vos dentistes et leurs horaires"},
     "title": "Cabinet dentaire",
     "day": {
       "title": "Vue du jour"

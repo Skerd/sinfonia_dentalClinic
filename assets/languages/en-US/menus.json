@@ -1,5 +1,6 @@
 {
   "dentalClinic": {
+    "setup": {"location": "Add your clinic and its opening hours", "service": "Add the treatments you offer", "practitioner": "Add your dentists and their hours"},
     "title": "Dental clinic",
     "day": {
       "title": "Day view"
