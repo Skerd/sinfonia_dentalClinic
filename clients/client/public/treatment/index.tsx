@@ -103,6 +103,8 @@ function TreatmentPage({resolveLanguageKey}: WithLanguageType) {
         <DetailPage
             kind="treatment"
             title={service.name}
+            // The treatment as the catalog's card lists it, for its heart (TD-F148).
+            keep={{kind: "treatment", id: service._id, section: "dentalClinic", path: `/treatments/${service.slug || service._id}`, title: service.name}}
             media={<DetailGallery title={service.name} images={service.images} videos={service.videos} shape="landscape" placeholder />}
             story={(
                 <>
