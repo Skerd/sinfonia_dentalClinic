@@ -1,10 +1,12 @@
 import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
+import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
 import {useClinicConfig} from "../shared/clinicConfigContext.tsx";
 
 /** The privacy notice patients accept before booking; plain text, kept as the clinic wrote it. */
 function PrivacyPage({resolveLanguageKey}: WithLanguageType) {
     const {config} = useClinicConfig();
+    usePortalTitle(resolveLanguageKey("title"));
     return (
         <article className="mx-auto flex max-w-3xl flex-col gap-4">
             <h1 className="font-display font-bold tracking-tight text-3xl sm:text-4xl">{resolveLanguageKey("title")}</h1>

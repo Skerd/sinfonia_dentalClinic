@@ -2,6 +2,7 @@ import {useEffect, useId, useState} from "react";
 import {compose} from "redux";
 import {Link, useNavigate, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
+import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {handleError, normalizeError} from "@coreModule/helpers/general/errors.ts";
@@ -115,6 +116,10 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
         if (rating) setReviewCount((count) => count + 1);
     };
     const busy = cancelRequest.loading || rescheduleRequest.loading || reviewRequest.loading;
+    usePortalTitle(
+        !token || error ? resolveLanguageKey("linkInvalidTitle")
+            : appointment ? `${resolveLanguageKey("bookingNumber")} ${appointment.number}` : undefined,
+    );
 
     if (!token || error) {
         return (

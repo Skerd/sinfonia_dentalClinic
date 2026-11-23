@@ -1,11 +1,13 @@
 import {compose} from "redux";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
+import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
 import {useClinicConfig} from "../shared/clinicConfigContext.tsx";
 import PatientRequestForm from "@dentalClinicModule/clients/portal/request/patientRequestForm.tsx";
 
 /** Ask this clinic for an estimate: what you need, your X-rays, when you could come. */
 function RequestPage({resolveLanguageKey}: WithLanguageType) {
     const {config} = useClinicConfig();
+    usePortalTitle(resolveLanguageKey("title"));
     if (!config) return null;
     if (!config.inquiriesEnabled) return <p className="text-muted-foreground">{resolveLanguageKey("unavailable")}</p>;
 

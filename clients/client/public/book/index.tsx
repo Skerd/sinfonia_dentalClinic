@@ -2,6 +2,7 @@ import {useRef, useState, type FormEvent, type ReactNode} from "react";
 import {compose} from "redux";
 import {Link, useNavigate, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
+import {usePortalTitle} from "@coreModule/clients/portal/shared/portalTitle.ts";
 import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLanguage.tsx";
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {handleError} from "@coreModule/helpers/general/errors.ts";
@@ -66,6 +67,7 @@ function BookPage({resolveLanguageKey, languageCode}: WithLanguageType) {
             setFormError(error.displayMessage ?? String(resolveLanguageKey("bookingFailed")));
         },
     });
+    usePortalTitle(resolveLanguageKey("title"));
 
     if (!config) return null;
 
