@@ -1,4 +1,4 @@
-import {IconCalendarEvent, IconCalendarOff, IconLayoutColumns, IconMapPin, IconStethoscope, IconDental, IconFolders, IconInbox, IconFileInvoice, IconPlaneArrival} from "@tabler/icons-react";
+import {IconCalendarEvent, IconCalendarOff, IconLayoutColumns, IconMapPin, IconStethoscope, IconDental, IconFolders, IconInbox, IconFileInvoice, IconPlaneArrival, IconStar} from "@tabler/icons-react";
 import type {SidebarContribution} from "@coreModule/helpers/types/sidebarContribution.types.ts";
 import type {NavGroup, NavItem} from "@coreModule/helpers/types/sidebarNav.types.ts";
 import type {ResolveLanguageKey} from "@coreModule/helpers/hocs/withLanguage.tsx";
@@ -29,6 +29,7 @@ const dentalClinicSidebarContribution: SidebarContribution = {
                     item("plans", IconFileInvoice, "treatmentplans"),
                     item("patients", IconFolders, "patients"),
                     item("trips", IconPlaneArrival, "patienttrips"),
+                    item("reviews", IconStar, "clinicreviews"),
                     item("team", IconStethoscope, "practitioners"),
                     item("timeOff", IconCalendarOff, "scheduleexceptions"),
                     item("services", IconDental, "clinicservices"),

@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/index.tsx",
+  "title": "Reviews",
+  "description": "What patients wrote after their visit",
+  "help": {
+    "ariaLabel": "About reviews",
+    "title": "About reviews",
+    "overview": "A patient can leave one review from the link in their appointment email once the visit is completed. It stays hidden until you publish it; published reviews show on your clinic's site and as stars on the portal.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Publish a review to show it on your site and the portal.",
+          "An appointment can have only one review.",
+          "A review shows the patient's first name and the initial of their last name."
+        ]
+      }
+    ]
+  },
+  "create": "Add review",
+  "noData": "No reviews yet",
+  "failTitle": "Failed to load reviews",
+  "failDescription": "Something went wrong while loading. Please try again.",
+  "deleted": "Deleted",
+  "active": "Active",
+  "fields": {
+    "appointment": "Appointment",
+    "rating": "Rating",
+    "comment": "Comment",
+    "authorName": "Name",
+    "isPublished": "Published",
+    "createdAt": "Created at",
+    "updatedAt": "Updated at",
+    "createdBy": "Created by",
+    "company": "Company",
+    "deletedAt": "Deleted at",
+    "deletedBy": "Deleted by"
+  }
+}

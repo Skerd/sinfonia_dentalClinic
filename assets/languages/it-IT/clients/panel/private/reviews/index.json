@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/index.tsx",
+  "title": "Recensioni",
+  "description": "Quello che i pazienti hanno scritto dopo la visita",
+  "help": {
+    "ariaLabel": "Informazioni sulle recensioni",
+    "title": "Informazioni sulle recensioni",
+    "overview": "A visita conclusa, il paziente può lasciare una recensione dal link nell'e-mail dell'appuntamento. Resta nascosta finché non la pubblichi; le recensioni pubblicate compaiono sul sito della clinica e come stelle sul portale.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Pubblica una recensione per mostrarla sul tuo sito e sul portale.",
+          "Un appuntamento può avere una sola recensione.",
+          "Una recensione mostra il nome del paziente e l'iniziale del cognome."
+        ]
+      }
+    ]
+  },
+  "create": "Aggiungi recensione",
+  "noData": "Ancora nessuna recensione",
+  "failTitle": "Impossibile caricare le recensioni",
+  "failDescription": "Si è verificato un errore durante il caricamento. Riprova.",
+  "deleted": "Eliminata",
+  "active": "Attiva",
+  "fields": {
+    "appointment": "Appuntamento",
+    "rating": "Valutazione",
+    "comment": "Commento",
+    "authorName": "Nome",
+    "isPublished": "Pubblicata",
+    "createdAt": "Creato il",
+    "updatedAt": "Aggiornato il",
+    "createdBy": "Creato da",
+    "company": "Azienda",
+    "deletedAt": "Eliminato il",
+    "deletedBy": "Eliminato da"
+  }
+}

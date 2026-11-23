@@ -1,5 +1,5 @@
 {
   "modules": {
-    "dentalClinic": "Clinica dentale: le cartelle dei pazienti e gli appuntamenti restano con trattamenti e importi ma perdono nome e contatti; anamnesi, radiografie, foto, messaggi delle richieste e viaggi vengono cancellati definitivamente."
+    "dentalClinic": "Clinica dentale: le cartelle dei pazienti e gli appuntamenti restano con trattamenti e importi ma perdono nome e contatti; le recensioni mantengono la valutazione sotto un nome cancellato; anamnesi, radiografie, foto, messaggi delle richieste e viaggi vengono cancellati definitivamente."
   }
 }

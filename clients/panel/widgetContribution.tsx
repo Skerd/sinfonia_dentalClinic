@@ -87,6 +87,7 @@ const ScheduleExceptionSheetViewLazy = lazy(() => import("@dentalClinicModule/cl
 const PractitionerSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/team/center/sheetView/practitionerSheetView.tsx"));
 const ClinicServiceSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/services/center/sheetView/clinicServiceSheetView.tsx"));
 const PatientSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/patients/center/sheetView/patientSheetView.tsx"));
+const ClinicReviewSheetViewLazy = lazy(() => import("@dentalClinicModule/clients/panel/private/reviews/center/sheetView/clinicReviewSheetView.tsx"));
 
 const dentalClinicWidgetContribution: WidgetContribution = {
     id: "dentalClinic",
@@ -97,6 +98,7 @@ const dentalClinicWidgetContribution: WidgetContribution = {
         "#PractitionerSheetView": PractitionerSheetViewLazy,
         "#ClinicServiceSheetView": ClinicServiceSheetViewLazy,
         "#PatientSheetView": PatientSheetViewLazy,
+        "#ClinicReviewSheetView": ClinicReviewSheetViewLazy,
         "#EnumChecklist": EnumChecklist,
         "#ToothPicker": ToothPicker,
         "#AppointmentCard": AppointmentCardLazy,

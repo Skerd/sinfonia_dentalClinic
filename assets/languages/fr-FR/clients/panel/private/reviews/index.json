@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/index.tsx",
+  "title": "Avis",
+  "description": "Ce que les patients ont écrit après leur visite",
+  "help": {
+    "ariaLabel": "À propos des avis",
+    "title": "À propos des avis",
+    "overview": "Une fois le rendez-vous terminé, le patient peut laisser un avis depuis le lien de son e-mail de rendez-vous. L'avis reste caché tant que vous ne le publiez pas ; les avis publiés apparaissent sur le site de votre cabinet et en étoiles sur le portail.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Publiez un avis pour l'afficher sur votre site et sur le portail.",
+          "Un rendez-vous ne peut avoir qu'un seul avis.",
+          "Un avis affiche le prénom du patient et l'initiale de son nom."
+        ]
+      }
+    ]
+  },
+  "create": "Ajouter un avis",
+  "noData": "Aucun avis pour l'instant",
+  "failTitle": "Impossible de charger les avis",
+  "failDescription": "Un problème est survenu lors du chargement. Veuillez réessayer.",
+  "deleted": "Supprimé",
+  "active": "Actif",
+  "fields": {
+    "appointment": "Rendez-vous",
+    "rating": "Note",
+    "comment": "Commentaire",
+    "authorName": "Nom",
+    "isPublished": "Publié",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "createdBy": "Créé par",
+    "company": "Entreprise",
+    "deletedAt": "Supprimé le",
+    "deletedBy": "Supprimé par"
+  }
+}

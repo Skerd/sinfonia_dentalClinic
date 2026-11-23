@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/center/cardView/clinicReviewCard.tsx",
+  "failedTitle": "Bewertung konnte nicht geladen werden",
+  "failedDescription": "Tippen, um es erneut zu versuchen.",
+  "appointment": "Termin",
+  "rating": "Bewertung",
+  "authorName": "Name",
+  "isPublished": "Veröffentlicht",
+  "notPublished": "Nicht veröffentlicht"
+}

@@ -37,5 +37,12 @@
     "completed": "Abgeschlossen",
     "cancelled": "Storniert",
     "no_show": "Verpasst"
-  }
+  },
+  "reviewTitle": "Wie war Ihr Besuch?",
+  "reviewRating": "Ihre Bewertung",
+  "reviewStar": "{rating} von 5",
+  "reviewComment": "Ein paar Worte (freiwillig)",
+  "reviewShownAs": "Sobald die Praxis sie veröffentlicht, zeigt Ihre Bewertung Ihren Vornamen und den Anfangsbuchstaben Ihres Nachnamens.",
+  "sendReview": "Bewertung senden",
+  "reviewThanks": "Vielen Dank. Ihre Bewertung wartet auf die Veröffentlichung durch die Praxis."
 }

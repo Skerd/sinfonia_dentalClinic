@@ -1,5 +1,5 @@
 {
   "modules": {
-    "dentalClinic": "Dental clinic: patient folders and appointments stay with their treatments and amounts but lose the name and contact details; medical histories, X-rays, photos, request messages and trips are deleted for good."
+    "dentalClinic": "Dental clinic: patient folders and appointments stay with their treatments and amounts but lose the name and contact details; reviews keep their rating under an erased name; medical histories, X-rays, photos, request messages and trips are deleted for good."
   }
 }

@@ -20,6 +20,9 @@
     "trips": {
       "title": "Trips"
     },
+    "reviews": {
+      "title": "Reviews"
+    },
     "team": {
       "title": "Team"
     },

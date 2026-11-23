@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/editClinicReview.tsx",
+  "title": "Bewertung bearbeiten",
+  "description": "Bewertung, Kommentar oder angezeigten Namen ändern",
+  "form": {
+    "appointmentLabel": "Termin",
+    "appointmentPlaceholder": "Abgeschlossenen Termin wählen",
+    "ratingLabel": "Bewertung",
+    "ratingPlaceholder": "1 bis 5",
+    "commentLabel": "Kommentar",
+    "commentPlaceholder": "Was die Patientin oder der Patient gesagt hat",
+    "authorNameLabel": "Angezeigt als",
+    "authorNamePlaceholder": "z. B. Gent M.",
+    "reviewSectionTitle": "Bewertung"
+  },
+  "axios": {
+    "start": {
+      "title": "Änderungen werden gespeichert",
+      "time": 3000
+    },
+    "success": {
+      "title": "Änderungen gespeichert",
+      "time": 3000
+    },
+    "error": {
+      "title": "Die Änderungen konnten nicht gespeichert werden. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Bewertung bearbeiten",
+    "description": "Bewertung, Kommentar oder angezeigten Namen ändern"
+  },
+  "formButtons": {
+    "cancel": "Abbrechen",
+    "submit": "Speichern"
+  }
+}

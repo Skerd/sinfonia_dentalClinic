@@ -8,6 +8,7 @@ import {languageNames, priceLabel} from "../shared/clinicFormat.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
 import {usePortalSession} from "@coreModule/clients/portal/shared/portalSession.tsx";
 import ClinicProfileSection from "./clinicProfileSection.tsx";
+import ClinicReviews from "../shared/clinicReviews.tsx";
 
 function HomePage({resolveLanguageKey}: WithLanguageType) {
     const base = useSectionBase();
@@ -109,6 +110,8 @@ function HomePage({resolveLanguageKey}: WithLanguageType) {
                     </ul>
                 </section>
             ) : null}
+
+            <ClinicReviews layout="page" />
         </div>
     );
 }

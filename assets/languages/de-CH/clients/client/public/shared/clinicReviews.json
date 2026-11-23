@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicReviews.tsx",
+  "title": "Bewertungen",
+  "count": "{count} Bewertungen",
+  "countOne": "1 Bewertung",
+  "ratingLabel": "{rating} von 5 Sternen"
+}

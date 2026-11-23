@@ -10,7 +10,8 @@
     "Clinicinquiries": "Estimate requests",
     "Clinicmessages": "Messages with patients",
     "Treatmentplans": "Treatment plans",
-    "Patienttrips": "Patient trips"
+    "Patienttrips": "Patient trips",
+    "Clinicreviews": "Reviews"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -402,6 +403,16 @@
       "createdBy": "Created by",
       "deletedAt": "Deleted at",
       "deletedBy": "Deleted by"
+    },
+    "Clinicreviews": {
+      "appointment": "Appointment",
+      "authorName": "Name",
+      "comment": "Comment",
+      "isPublished": "Published",
+      "rating": "Rating",
+      "clinicreviews": "Reviews",
+      "publish": "Publish",
+      "unpublish": "Unpublish"
     }
   }
 }

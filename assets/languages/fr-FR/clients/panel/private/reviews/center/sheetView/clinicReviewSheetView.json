@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/center/sheetView/clinicReviewSheetView.tsx",
+  "failedTitle": "Impossible de charger l'avis",
+  "failedDescription": "Un problème est survenu lors du chargement de cet avis. Cliquez pour réessayer.",
+  "failedTooltipDescription": "Cliquez pour recharger les données.",
+  "lifecycle": "Cycle de vie",
+  "overview": "Aperçu",
+  "clinicReviewSubtitle": "Avis",
+  "appointment": "Rendez-vous",
+  "rating": "Note",
+  "comment": "Commentaire",
+  "authorName": "Nom",
+  "isPublished": "Publié",
+  "createdAt": "Créé le",
+  "updatedAt": "Mis à jour le",
+  "createdBy": "Créé par",
+  "company": "Entreprise",
+  "deletedAt": "Supprimé le",
+  "deletedBy": "Supprimé par"
+}

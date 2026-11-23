@@ -1,0 +1,10 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/center/cardView/clinicReviewCard.tsx",
+  "failedTitle": "Vlerësimi nuk u ngarkua",
+  "failedDescription": "Prekni për të provuar përsëri.",
+  "appointment": "Takimi",
+  "rating": "Vlerësimi",
+  "authorName": "Emri",
+  "isPublished": "I publikuar",
+  "notPublished": "I papublikuar"
+}

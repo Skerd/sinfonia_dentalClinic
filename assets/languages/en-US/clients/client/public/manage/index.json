@@ -37,5 +37,12 @@
     "completed": "Completed",
     "cancelled": "Cancelled",
     "no_show": "Missed"
-  }
+  },
+  "reviewTitle": "How was your visit?",
+  "reviewRating": "Your rating",
+  "reviewStar": "{rating} out of 5",
+  "reviewComment": "A few words (optional)",
+  "reviewShownAs": "Once the clinic publishes it, your review shows your first name and the initial of your last name.",
+  "sendReview": "Send review",
+  "reviewThanks": "Thank you. Your review is waiting for the clinic to publish it."
 }

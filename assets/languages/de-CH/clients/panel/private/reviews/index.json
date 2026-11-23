@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/index.tsx",
+  "title": "Bewertungen",
+  "description": "Was Patientinnen und Patienten nach ihrem Besuch geschrieben haben",
+  "help": {
+    "ariaLabel": "Über Bewertungen",
+    "title": "Über Bewertungen",
+    "overview": "Nach einem abgeschlossenen Termin kann die Patientin oder der Patient über den Link in der Termin-E-Mail eine Bewertung hinterlassen. Sie bleibt verborgen, bis Sie sie veröffentlichen; veröffentlichte Bewertungen erscheinen auf der Website Ihrer Praxis und als Sterne im Portal.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Veröffentlichen Sie eine Bewertung, um sie auf Ihrer Website und im Portal zu zeigen.",
+          "Ein Termin kann nur eine Bewertung haben.",
+          "Eine Bewertung zeigt den Vornamen und den Anfangsbuchstaben des Nachnamens."
+        ]
+      }
+    ]
+  },
+  "create": "Bewertung hinzufügen",
+  "noData": "Noch keine Bewertungen",
+  "failTitle": "Bewertungen konnten nicht geladen werden",
+  "failDescription": "Beim Laden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "deleted": "Gelöscht",
+  "active": "Aktiv",
+  "fields": {
+    "appointment": "Termin",
+    "rating": "Bewertung",
+    "comment": "Kommentar",
+    "authorName": "Name",
+    "isPublished": "Veröffentlicht",
+    "createdAt": "Erstellt am",
+    "updatedAt": "Aktualisiert am",
+    "createdBy": "Erstellt von",
+    "company": "Unternehmen",
+    "deletedAt": "Gelöscht am",
+    "deletedBy": "Gelöscht von"
+  }
+}

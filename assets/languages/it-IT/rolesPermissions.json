@@ -10,7 +10,8 @@
     "Clinicinquiries": "Richieste di preventivo",
     "Clinicmessages": "Messaggi con i pazienti",
     "Treatmentplans": "Piani di cura",
-    "Patienttrips": "Viaggi dei pazienti"
+    "Patienttrips": "Viaggi dei pazienti",
+    "Clinicreviews": "Recensioni"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -402,6 +403,16 @@
       "createdBy": "Creato da",
       "deletedAt": "Eliminato il",
       "deletedBy": "Eliminato da"
+    },
+    "Clinicreviews": {
+      "appointment": "Appuntamento",
+      "authorName": "Nome",
+      "comment": "Commento",
+      "isPublished": "Pubblicata",
+      "rating": "Valutazione",
+      "clinicreviews": "Recensioni",
+      "publish": "Pubblica",
+      "unpublish": "Ritira"
     }
   }
 }

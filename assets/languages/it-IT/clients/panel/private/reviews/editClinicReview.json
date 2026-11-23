@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/editClinicReview.tsx",
+  "title": "Modifica recensione",
+  "description": "Cambia la valutazione, il commento o il nome mostrato",
+  "form": {
+    "appointmentLabel": "Appuntamento",
+    "appointmentPlaceholder": "Seleziona un appuntamento concluso",
+    "ratingLabel": "Valutazione",
+    "ratingPlaceholder": "Da 1 a 5",
+    "commentLabel": "Commento",
+    "commentPlaceholder": "Quello che ha detto il paziente",
+    "authorNameLabel": "Mostrata come",
+    "authorNamePlaceholder": "es. Gent M.",
+    "reviewSectionTitle": "Recensione"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio delle modifiche",
+      "time": 3000
+    },
+    "success": {
+      "title": "Modifiche salvate",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare le modifiche. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Modifica recensione",
+    "description": "Cambia la valutazione, il commento o il nome mostrato"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Salva"
+  }
+}

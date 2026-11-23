@@ -10,7 +10,8 @@
     "Clinicinquiries": "Kërkesat për ofertë",
     "Clinicmessages": "Mesazhe me pacientët",
     "Treatmentplans": "Planet e trajtimit",
-    "Patienttrips": "Udhëtimet e pacientëve"
+    "Patienttrips": "Udhëtimet e pacientëve",
+    "Clinicreviews": "Vlerësimet"
   },
   "permissions": {
     "Clinicconfigs": {
@@ -402,6 +403,16 @@
       "createdBy": "Krijuar nga",
       "deletedAt": "Fshirë më",
       "deletedBy": "Fshirë nga"
+    },
+    "Clinicreviews": {
+      "appointment": "Takimi",
+      "authorName": "Emri",
+      "comment": "Komenti",
+      "isPublished": "I publikuar",
+      "rating": "Vlerësimi",
+      "clinicreviews": "Vlerësimet",
+      "publish": "Publiko",
+      "unpublish": "Hiq nga publikimi"
     }
   }
 }

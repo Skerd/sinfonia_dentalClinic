@@ -37,5 +37,12 @@
     "completed": "Përfunduar",
     "cancelled": "Anuluar",
     "no_show": "Nuk u paraqit"
-  }
+  },
+  "reviewTitle": "Si shkoi vizita juaj?",
+  "reviewRating": "Vlerësimi juaj",
+  "reviewStar": "{rating} nga 5",
+  "reviewComment": "Disa fjalë (opsionale)",
+  "reviewShownAs": "Pasi klinika ta publikojë, vlerësimi juaj tregon emrin tuaj dhe inicialin e mbiemrit.",
+  "sendReview": "Dërgo vlerësimin",
+  "reviewThanks": "Faleminderit. Vlerësimi juaj pret që klinika ta publikojë."
 }

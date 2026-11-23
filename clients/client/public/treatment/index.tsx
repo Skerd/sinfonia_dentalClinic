@@ -11,6 +11,7 @@ import {bookableServices, useClinicConfig} from "../shared/clinicConfigContext.t
 import ClinicSlotPicker, {type PickedSlot} from "../shared/clinicSlotPicker.tsx";
 import {ClinicPractitionerCard} from "../shared/clinicPractitionerCard.tsx";
 import {priceLabel} from "../shared/clinicFormat.ts";
+import ClinicReviews from "../shared/clinicReviews.tsx";
 import type {ClinicStorefrontPractitioner} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
 
 const LANGUAGE_PATH = "src/modules/dentalClinic/clients/client/public/treatment/index.tsx";
@@ -103,7 +104,7 @@ function TreatmentPage({resolveLanguageKey}: WithLanguageType) {
             kind="treatment"
             title={service.name}
             media={<DetailGallery title={service.name} images={service.images} videos={service.videos} shape="landscape" placeholder />}
-            story={(service.description || doers.length) ? (
+            story={(
                 <>
                     {service.description ? (
                         <DetailSection title={resolveLanguageKey("description")}>
@@ -127,8 +128,10 @@ function TreatmentPage({resolveLanguageKey}: WithLanguageType) {
                             </ul>
                         </DetailSection>
                     ) : null}
+                    {/* The clinic's reviews: the stars on the portal card that opened this page (D178). */}
+                    <ClinicReviews layout="detail" />
                 </>
-            ) : undefined}
+            )}
         >
             <PortalProviderCard kind="treatment" />
             <DetailHeading title={service.name}>

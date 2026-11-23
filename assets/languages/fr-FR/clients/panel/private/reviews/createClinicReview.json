@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/createClinicReview.tsx",
+  "title": "Ajouter un avis",
+  "description": "Enregistrer ce qu'un patient vous a dit d'un rendez-vous terminé",
+  "form": {
+    "appointmentLabel": "Rendez-vous",
+    "appointmentPlaceholder": "Choisir un rendez-vous terminé",
+    "ratingLabel": "Note",
+    "ratingPlaceholder": "1 à 5",
+    "commentLabel": "Commentaire",
+    "commentPlaceholder": "Ce que le patient a dit",
+    "authorNameLabel": "Affiché comme",
+    "authorNamePlaceholder": "p. ex. Gent M.",
+    "reviewSectionTitle": "Avis"
+  },
+  "axios": {
+    "start": {
+      "title": "Enregistrement de l'avis",
+      "time": 3000
+    },
+    "success": {
+      "title": "Avis enregistré",
+      "time": 3000
+    },
+    "error": {
+      "title": "L'avis n'a pas pu être enregistré. Vérifiez le formulaire et réessayez.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Ajouter un avis",
+    "description": "Enregistrer ce qu'un patient vous a dit d'un rendez-vous terminé"
+  },
+  "formButtons": {
+    "cancel": "Annuler",
+    "submit": "Ajouter"
+  }
+}

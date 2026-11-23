@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/center/sheetView/clinicReviewSheetView.tsx",
+  "failedTitle": "Bewertung konnte nicht geladen werden",
+  "failedDescription": "Beim Laden dieser Bewertung ist etwas schiefgelaufen. Klicken Sie, um es erneut zu versuchen.",
+  "failedTooltipDescription": "Klicken, um die Daten erneut zu laden.",
+  "lifecycle": "Lebenszyklus",
+  "overview": "Übersicht",
+  "clinicReviewSubtitle": "Bewertung",
+  "appointment": "Termin",
+  "rating": "Bewertung",
+  "comment": "Kommentar",
+  "authorName": "Name",
+  "isPublished": "Veröffentlicht",
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "createdBy": "Erstellt von",
+  "company": "Unternehmen",
+  "deletedAt": "Gelöscht am",
+  "deletedBy": "Gelöscht von"
+}

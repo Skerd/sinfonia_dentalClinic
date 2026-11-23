@@ -1,0 +1,39 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/index.tsx",
+  "title": "Vlerësimet",
+  "description": "Çfarë shkruan pacientët pas vizitës",
+  "help": {
+    "ariaLabel": "Rreth vlerësimeve",
+    "title": "Rreth vlerësimeve",
+    "overview": "Pasi takimi të jetë kryer, pacienti mund të lërë një vlerësim nga lidhja në emailin e takimit. Mbetet i fshehur derisa ta publikoni; vlerësimet e publikuara shfaqen në faqen e klinikës dhe si yje në portal.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Publikoni një vlerësim për ta treguar në faqen tuaj dhe në portal.",
+          "Një takim mund të ketë vetëm një vlerësim.",
+          "Një vlerësim tregon emrin e pacientit dhe inicialin e mbiemrit."
+        ]
+      }
+    ]
+  },
+  "create": "Shto vlerësim",
+  "noData": "Ende asnjë vlerësim",
+  "failTitle": "Vlerësimet nuk u ngarkuan",
+  "failDescription": "Diçka shkoi keq gjatë ngarkimit. Ju lutemi provoni përsëri.",
+  "deleted": "Fshirë",
+  "active": "Aktiv",
+  "fields": {
+    "appointment": "Takimi",
+    "rating": "Vlerësimi",
+    "comment": "Komenti",
+    "authorName": "Emri",
+    "isPublished": "I publikuar",
+    "createdAt": "Krijuar më",
+    "updatedAt": "Përditësuar më",
+    "createdBy": "Krijuar nga",
+    "company": "Kompania",
+    "deletedAt": "Fshirë më",
+    "deletedBy": "Fshirë nga"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/center/sheetView/clinicReviewSheetView.tsx",
+  "failedTitle": "Failed to load review",
+  "failedDescription": "Something went wrong while loading this review. Click to retry.",
+  "failedTooltipDescription": "Click to retry fetching data.",
+  "lifecycle": "Lifecycle",
+  "overview": "Overview",
+  "clinicReviewSubtitle": "Review",
+  "appointment": "Appointment",
+  "rating": "Rating",
+  "comment": "Comment",
+  "authorName": "Name",
+  "isPublished": "Published",
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "createdBy": "Created by",
+  "company": "Company",
+  "deletedAt": "Deleted at",
+  "deletedBy": "Deleted by"
+}

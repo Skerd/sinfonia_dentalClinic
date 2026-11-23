@@ -30,6 +30,9 @@ const EditClinicService = lazy(() => import("@dentalClinicModule/clients/panel/p
 const AllClinicLocations = lazy(() => import("@dentalClinicModule/clients/panel/private/locations/index.tsx"));
 const CreateClinicLocation = lazy(() => import("@dentalClinicModule/clients/panel/private/locations/createClinicLocation.tsx"));
 const EditClinicLocation = lazy(() => import("@dentalClinicModule/clients/panel/private/locations/editClinicLocation.tsx"));
+const AllClinicReviews = lazy(() => import("@dentalClinicModule/clients/panel/private/reviews/index.tsx"));
+const CreateClinicReview = lazy(() => import("@dentalClinicModule/clients/panel/private/reviews/createClinicReview.tsx"));
+const EditClinicReview = lazy(() => import("@dentalClinicModule/clients/panel/private/reviews/editClinicReview.tsx"));
 const ClinicSettings = lazy(() => import("@dentalClinicModule/clients/panel/private/settings/index.tsx"));
 
 type CrudPages = {list: () => ReactNode; create?: () => ReactNode; edit?: (entityId: string) => ReactNode; idParam: string};
@@ -40,6 +43,7 @@ const PAGES: Record<string, CrudPages> = {
     plans: {list: () => <AllTreatmentPlans />, create: () => <CreateTreatmentPlan />, edit: (id) => <EditTreatmentPlan entityId={id} />, idParam: "treatmentPlanId"},
     patients: {list: () => <AllPatients />, create: () => <CreatePatient />, edit: (id) => <EditPatient entityId={id} />, idParam: "patientId"},
     trips: {list: () => <AllPatientTrips />, create: () => <CreatePatientTrip />, edit: (id) => <EditPatientTrip entityId={id} />, idParam: "patientTripId"},
+    reviews: {list: () => <AllClinicReviews />, create: () => <CreateClinicReview />, edit: (id) => <EditClinicReview entityId={id} />, idParam: "clinicReviewId"},
     team: {list: () => <AllPractitioners />, create: () => <CreatePractitioner />, edit: (id) => <EditPractitioner entityId={id} />, idParam: "practitionerId"},
     timeOff: {list: () => <AllScheduleExceptions />, create: () => <CreateScheduleException />, edit: (id) => <EditScheduleException entityId={id} />, idParam: "scheduleExceptionId"},
     services: {list: () => <AllClinicServices />, create: () => <CreateClinicService />, edit: (id) => <EditClinicService entityId={id} />, idParam: "clinicServiceId"},

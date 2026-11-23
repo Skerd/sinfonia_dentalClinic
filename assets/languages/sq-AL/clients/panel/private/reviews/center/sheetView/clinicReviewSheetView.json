@@ -1,0 +1,20 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/center/sheetView/clinicReviewSheetView.tsx",
+  "failedTitle": "Vlerësimi nuk u ngarkua",
+  "failedDescription": "Diçka shkoi keq gjatë ngarkimit të këtij vlerësimi. Klikoni për të provuar përsëri.",
+  "failedTooltipDescription": "Klikoni për t'i ngarkuar përsëri të dhënat.",
+  "lifecycle": "Cikli i jetës",
+  "overview": "Përmbledhje",
+  "clinicReviewSubtitle": "Vlerësimi",
+  "appointment": "Takimi",
+  "rating": "Vlerësimi",
+  "comment": "Komenti",
+  "authorName": "Emri",
+  "isPublished": "I publikuar",
+  "createdAt": "Krijuar më",
+  "updatedAt": "Përditësuar më",
+  "createdBy": "Krijuar nga",
+  "company": "Kompania",
+  "deletedAt": "Fshirë më",
+  "deletedBy": "Fshirë nga"
+}

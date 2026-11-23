@@ -1,0 +1,7 @@
+{
+  "path": "src/modules/dentalClinic/clients/client/public/shared/clinicReviews.tsx",
+  "title": "Vlerësimet",
+  "count": "{count} vlerësime",
+  "countOne": "1 vlerësim",
+  "ratingLabel": "{rating} nga 5 yje"
+}

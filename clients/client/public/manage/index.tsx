@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useId, useState} from "react";
 import {compose} from "redux";
 import {Link, useNavigate, useSearchParams} from "react-router-dom";
 import {useSectionBase} from "@coreModule/clients/portal/shared/sectionBase.tsx";
@@ -7,20 +7,28 @@ import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHtt
 import {handleError, normalizeError} from "@coreModule/helpers/general/errors.ts";
 import Loader from "@coreModule/components/custom/loader/loader.tsx";
 import {cn} from "@coreModule/components/lib/utils.ts";
+import {IconStarFilled} from "@tabler/icons-react";
 import type {
+    ManagedAppointmentResponse,
     PublicAppointment,
     PublicAppointmentResponse,
     RescheduledAppointmentResponse,
 } from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
+import {CLINIC_REVIEW_COMMENT_MAX} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicReview/clinicReview.schema-def.ts";
 import {useClinicConfig} from "../shared/clinicConfigContext.tsx";
 import ClinicSlotPicker, {type PickedSlot} from "../shared/clinicSlotPicker.tsx";
 import {formatAtClinic, formatDay, priceLabel} from "../shared/clinicFormat.ts";
 import {formatCurrency} from "@coreModule/helpers/general/numbers.ts";
 import {Button} from "@coreModule/components/ui/button.tsx";
+import {Label} from "@coreModule/components/ui/label.tsx";
+import {Textarea} from "@coreModule/components/ui/textarea.tsx";
+import {ToggleGroup, ToggleGroupItem} from "@coreModule/components/ui/toggle-group.tsx";
 
 const MANAGE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/manage"};
 const CANCEL_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/manage/cancel"};
 const RESCHEDULE_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/manage/reschedule"};
+const REVIEW_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/manage/review"};
+const RATINGS = ["1", "2", "3", "4", "5"] as const;
 
 const STATUS_TONE: Record<PublicAppointment["status"], string> = {
     pending: "bg-warning/10 text-warning",
@@ -30,7 +38,7 @@ const STATUS_TONE: Record<PublicAppointment["status"], string> = {
     no_show: "bg-destructive/10 text-destructive",
 };
 
-/** The guest link from the email: see the appointment, move it or cancel it before the deadlines. */
+/** The guest link from the email: see the appointment, move it or cancel it before the deadlines, review it once it took place. */
 function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const base = useSectionBase();
     const [params] = useSearchParams();
@@ -49,13 +57,21 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const [mode, setMode] = useState<"view" | "cancel" | "reschedule">("view");
     const [newSlot, setNewSlot] = useState<PickedSlot | null>(null);
     const [notice, setNotice] = useState<string | null>(null);
+    const [canReview, setCanReview] = useState(false);
+    const [rating, setRating] = useState("");
+    const [comment, setComment] = useState("");
+    const [reviewSaved, setReviewSaved] = useState(false);
+    const commentId = useId();
 
     const [loadCount, setLoadCount] = useState(0);
     useEffect(() => {
         if (token) setLoadCount((count) => count + 1);
     }, [token]);
-    useHttpRequest<PublicAppointmentResponse>(MANAGE_REQUEST, {token}, loadCount, true, {
-        success: (response) => setAppointment(response.data),
+    useHttpRequest<ManagedAppointmentResponse>(MANAGE_REQUEST, {token}, loadCount, true, {
+        success: (response) => {
+            setAppointment(response.data);
+            setCanReview(response.canReview);
+        },
         error: (e) => setError(normalizeError(e).displayMessage ?? String(resolveLanguageKey("loadFailed"))),
     });
 
@@ -89,7 +105,16 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
     const reschedule = () => {
         if (newSlot) setRescheduleCount((count) => count + 1);
     };
-    const busy = cancelRequest.loading || rescheduleRequest.loading;
+
+    const [reviewCount, setReviewCount] = useState(0);
+    const reviewRequest = useHttpRequest(REVIEW_REQUEST, {token, rating: Number(rating), ...(comment.trim() ? {comment: comment.trim()} : {})}, reviewCount, true, {
+        success: () => setReviewSaved(true),
+        error: (e) => handleError(e, {context: "ClinicManageReview", showToast: true, fallbackMessage: String(resolveLanguageKey("actionFailed"))}),
+    });
+    const sendReview = () => {
+        if (rating) setReviewCount((count) => count + 1);
+    };
+    const busy = cancelRequest.loading || rescheduleRequest.loading || reviewRequest.loading;
 
     if (!token || error) {
         return (
@@ -162,6 +187,45 @@ function ManagePage({resolveLanguageKey, languageCode}: WithLanguageType) {
             {mode === "view" && !appointment.canReschedule && !appointment.canCancel && (appointment.status === "pending" || appointment.status === "confirmed") ? (
                 <p className="text-sm text-muted-foreground">{resolveLanguageKey("callToChange")}</p>
             ) : null}
+
+            {canReview && !reviewSaved ? (
+                <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-4">
+                    <h2 className="font-display font-bold tracking-tight text-lg">{resolveLanguageKey("reviewTitle")}</h2>
+                    <div className="flex flex-col gap-2">
+                        <p className="text-sm font-medium">{resolveLanguageKey("reviewRating")}</p>
+                        <ToggleGroup
+                            type="single"
+                            spacing={1}
+                            size="lg"
+                            value={rating}
+                            onValueChange={(next) => { if (next) setRating(next); }}
+                            aria-label={String(resolveLanguageKey("reviewRating"))}
+                        >
+                            {RATINGS.map((value) => (
+                                <ToggleGroupItem
+                                    key={value}
+                                    value={value}
+                                    className="px-1.5"
+                                    aria-label={String(resolveLanguageKey("reviewStar")).replace("{rating}", value)}
+                                >
+                                    <IconStarFilled className={cn("size-7", rating && Number(value) <= Number(rating) ? "text-amber-500" : "text-muted-foreground/40")} aria-hidden />
+                                </ToggleGroupItem>
+                            ))}
+                        </ToggleGroup>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <Label htmlFor={commentId}>{resolveLanguageKey("reviewComment")}</Label>
+                        <Textarea id={commentId} value={comment} maxLength={CLINIC_REVIEW_COMMENT_MAX} rows={3} onChange={(event) => setComment(event.target.value)} />
+                    </div>
+                    <p className="text-sm text-muted-foreground">{resolveLanguageKey("reviewShownAs")}</p>
+                    <div>
+                        <Button size="lg" type="button" disabled={busy || !rating} onClick={sendReview}>
+                            {busy ? resolveLanguageKey("working") : resolveLanguageKey("sendReview")}
+                        </Button>
+                    </div>
+                </section>
+            ) : null}
+            {reviewSaved ? <div className="rounded-2xl bg-success/10 p-4 text-success" role="status">{resolveLanguageKey("reviewThanks")}</div> : null}
 
             {mode === "cancel" ? (
                 <section className="rounded-2xl bg-muted p-5 sm:p-6 flex flex-col gap-3">

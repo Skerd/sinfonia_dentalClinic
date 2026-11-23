@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/createClinicReview.tsx",
+  "title": "Aggiungi recensione",
+  "description": "Registra quello che un paziente ti ha detto di un appuntamento concluso",
+  "form": {
+    "appointmentLabel": "Appuntamento",
+    "appointmentPlaceholder": "Seleziona un appuntamento concluso",
+    "ratingLabel": "Valutazione",
+    "ratingPlaceholder": "Da 1 a 5",
+    "commentLabel": "Commento",
+    "commentPlaceholder": "Quello che ha detto il paziente",
+    "authorNameLabel": "Mostrata come",
+    "authorNamePlaceholder": "es. Gent M.",
+    "reviewSectionTitle": "Recensione"
+  },
+  "axios": {
+    "start": {
+      "title": "Salvataggio della recensione",
+      "time": 3000
+    },
+    "success": {
+      "title": "Recensione salvata",
+      "time": 3000
+    },
+    "error": {
+      "title": "Impossibile salvare la recensione. Controlla il modulo e riprova.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Aggiungi recensione",
+    "description": "Registra quello che un paziente ti ha detto di un appuntamento concluso"
+  },
+  "formButtons": {
+    "cancel": "Annulla",
+    "submit": "Aggiungi"
+  }
+}

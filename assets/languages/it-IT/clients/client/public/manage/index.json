@@ -37,5 +37,12 @@
     "completed": "Completato",
     "cancelled": "Annullato",
     "no_show": "Mancato"
-  }
+  },
+  "reviewTitle": "Com'è andata la visita?",
+  "reviewRating": "La tua valutazione",
+  "reviewStar": "{rating} su 5",
+  "reviewComment": "Qualche parola (facoltativo)",
+  "reviewShownAs": "Quando la clinica la pubblica, la tua recensione mostra il tuo nome e l'iniziale del cognome.",
+  "sendReview": "Invia recensione",
+  "reviewThanks": "Grazie. La tua recensione è in attesa di pubblicazione da parte della clinica."
 }

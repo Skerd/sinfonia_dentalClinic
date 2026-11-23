@@ -1,0 +1,22 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/center/dialogs/unpublishClinicReviewDialog.tsx",
+  "title": "Veröffentlichung aufheben",
+  "description": "Diese Bewertung wird auf Ihrer Website und im Portal ausgeblendet, bis sie wieder veröffentlicht wird.",
+  "cancel": "Abbrechen",
+  "confirm": "Veröffentlichung aufheben",
+  "busy": "Wird ausgeführt…",
+  "axios": {
+    "start": {
+      "title": "Veröffentlichung wird aufgehoben…",
+      "time": 3000
+    },
+    "success": {
+      "title": "Veröffentlichung aufgehoben",
+      "time": 3000
+    },
+    "error": {
+      "title": "Veröffentlichung konnte nicht aufgehoben werden",
+      "time": 3000
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "path": "src/modules/dentalClinic/clients/panel/private/reviews/createClinicReview.tsx",
+  "title": "Add review",
+  "description": "Record what a patient told you about a completed appointment",
+  "form": {
+    "appointmentLabel": "Appointment",
+    "appointmentPlaceholder": "Select a completed appointment",
+    "ratingLabel": "Rating",
+    "ratingPlaceholder": "1 to 5",
+    "commentLabel": "Comment",
+    "commentPlaceholder": "What the patient said",
+    "authorNameLabel": "Shown as",
+    "authorNamePlaceholder": "e.g. Gent M.",
+    "reviewSectionTitle": "Review"
+  },
+  "axios": {
+    "start": {
+      "title": "Saving review",
+      "time": 3000
+    },
+    "success": {
+      "title": "Review saved",
+      "time": 3000
+    },
+    "error": {
+      "title": "The review could not be saved. Check the form and try again.",
+      "time": 3000
+    }
+  },
+  "formHeader": {
+    "title": "Add review",
+    "description": "Record what a patient told you about a completed appointment"
+  },
+  "formButtons": {
+    "cancel": "Cancel",
+    "submit": "Add"
+  }
+}
