@@ -10,8 +10,8 @@ import BusinessTypeSummary from "./businessTypeSummary.tsx";
 
 /**
  * Dentists on the portal: each clinic's site, its treatments in the home catalog (with the
- * estimate request on top of that tab and on the home page, D178), one estimate request to
- * several clinics, and the visitor's requests and appointments.
+ * estimate request on top of that tab), one estimate request to several clinics, and the
+ * visitor's requests and appointments.
  */
 const contribution: PortalContribution = {
     id: "dentalClinic",
@@ -20,7 +20,6 @@ const contribution: PortalContribution = {
     path: "dentists",
     CompanySite: ClinicSiteRoutes,
     catalogs: [{kind: "treatment", Intro: EstimateBanner}],
-    Home: EstimateBanner,
     sectionPages: [{path: "request-quotes", Page: RequestQuotesPage}],
     AccountSection: DentistsAccountSection,
     // A link into a clinic's site about to be followed: the page's code and the site's settings and treatments.
