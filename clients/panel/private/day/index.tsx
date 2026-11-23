@@ -16,6 +16,8 @@ import {Button} from "@coreModule/components/ui/button.tsx";
 import {DateInput} from "@coreModule/components/custom/inputs/dateInput.tsx";
 import {NativeSelect, NativeSelectOption} from "@coreModule/components/ui/native-select.tsx";
 import {cn} from "@coreModule/components/lib/utils.ts";
+import Header from "@coreModule/components/custom/header.tsx";
+import {readPageHelp} from "@coreModule/components/custom/pageHelp.tsx";
 import {toneClass} from "@coreModule/components/entityPage/list/table/columnConfigToColumnDef.tsx";
 import {useTableConfig} from "@coreModule/helpers/hooks/useTableConfig.ts";
 import type {SelectResponse} from "armonia/src/modules/core/types/shared.types.ts";
@@ -248,10 +250,11 @@ function ClinicDayView({resolveLanguageKey}: WithLanguageType) {
     return (
         <div className="flex flex-col gap-4 p-6">
             <div className="flex flex-wrap items-end justify-between gap-4">
-                <div>
-                    <h2 className="text-xl font-semibold">{resolveLanguageKey("title")}</h2>
-                    <p className="text-sm text-muted-foreground">{resolveLanguageKey("description")}</p>
-                </div>
+                <Header
+                    title={String(resolveLanguageKey("title"))}
+                    description={String(resolveLanguageKey("description"))}
+                    help={readPageHelp(resolveLanguageKey)}
+                />
                 <div className="flex flex-wrap items-center gap-2">
                     <NativeSelect aria-label={String(resolveLanguageKey("location"))} value={location} onChange={(e) => setLocation(e.target.value)}>
                         <NativeSelectOption value="">{resolveLanguageKey("allLocations")}</NativeSelectOption>

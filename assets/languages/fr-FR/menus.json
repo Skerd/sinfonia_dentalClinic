@@ -27,10 +27,8 @@
       "practitionerBookableTitle": "Réservable en ligne",
       "practitionerBookableText": "Activez-le pour que les patients puissent réserver ce dentiste depuis votre site.",
       "tour": {
-        "day": "Les rendez-vous du jour de chaque dentiste, au même endroit. Une bonne page pour commencer la journée.",
-        "appointments": "Chaque réservation, depuis votre site, le portail ou saisie par votre équipe. Confirmez, déplacez ou annulez-les ici.",
-        "inquiries": "Des patients qui demandent un devis via le portail. Répondez par un devis pour les gagner.",
-        "patients": "Le dossier de chaque patient : visites, plans de traitement et notes."
+        "introTitle": "Votre cabinet dentaire",
+        "introText": "Cette partie du panneau fait tourner votre cabinet : les rendez-vous du jour, les demandes de devis et les devis, les patients et leurs voyages, les avis, l'équipe, les soins et les sites, et vos règles. La visite ouvre maintenant chaque page et l'explique. Le ⓘ à côté du titre d'une page affiche la même aide à tout moment."
       }
     },
     "title": "Cabinet dentaire",

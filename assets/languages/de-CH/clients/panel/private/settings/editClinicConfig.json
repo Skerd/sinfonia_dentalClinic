@@ -109,6 +109,25 @@
     "title": "Praxiseinstellungen",
     "description": "Gilt für diese Praxis."
   },
+  "help": {
+    "ariaLabel": "Über die Praxiseinstellungen",
+    "title": "Über die Praxiseinstellungen",
+    "overview": "Die Regeln Ihrer Praxis, auf sieben Seiten. Jede Seite speichert für sich und gilt ab dann.",
+    "sections": [
+      {
+        "title": "Die sieben Seiten",
+        "items": [
+          "Online-Buchung: ob Ihre Website Buchungen annimmt und Sie im Portal zeigt, ob Patienten ein Konto brauchen, ob Ihr Team Online-Buchungen zuerst prüft, das Zeitraster, der Mindestvorlauf, wie weit im Voraus gebucht werden kann, bis wann online abgesagt oder geändert werden kann und nach wie vielen Minuten Verspätung ein Patient als nicht erschienen gilt.",
+          "Preise und Zahlungen: die Währung Ihrer Behandlungen, Angebote und Buchungen. Bestehende Angebote und Buchungen behalten die Währung, in der sie erstellt wurden.",
+          "Patienten und Nachrichten: ob Patienten eine Notiz hinzufügen dürfen, ob E-Mails und SMS die Behandlung nennen, wann Erinnerungen hinausgehen und ob auch per SMS, und nach wie vielen Monaten vergangene Termine die Patientendaten verlieren.",
+          "Datenschutzerklärung: der Text, den Patienten vor der Buchung annehmen. Geben Sie jedem neuen Text eine Version, damit jede Online-Buchung festhält, welchen der Patient angenommen hat.",
+          "Benachrichtigungen ans Personal: wer in Ihrem Team über neue und abgesagte Online-Buchungen informiert wird, und wer über neue Kostenanfragen und Nachrichten.",
+          "Kostenanfragen: ob Sie sie annehmen, innert welcher Zeit Sie antworten wollen (unbeantwortete Anfragen werden danach markiert), wie lange neue Angebote gültig sind, und ihre Standardbedingungen.",
+          "Profil für Patienten aus dem Ausland: gesprochene Sprachen, Implantatmarken, nächster Flughafen, Fotos, Akkreditierungen und Texte in jeder Sprache über die Praxis, die Garantie sowie Anreise und Aufenthalt. Erscheint auf Ihrer Website."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Abbrechen",
     "submit": "Speichern"

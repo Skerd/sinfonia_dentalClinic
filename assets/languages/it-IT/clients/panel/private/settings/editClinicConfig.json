@@ -109,6 +109,25 @@
     "title": "Impostazioni dello studio",
     "description": "Vale per questo studio."
   },
+  "help": {
+    "ariaLabel": "Informazioni sulle impostazioni dello studio",
+    "title": "Informazioni sulle impostazioni dello studio",
+    "overview": "Le regole del tuo studio, su sette pagine. Ogni pagina si salva da sola e vale da quel momento.",
+    "sections": [
+      {
+        "title": "Le sette pagine",
+        "items": [
+          "Prenotazione online: se il tuo sito accetta prenotazioni e ti mostra sul portale, se i pazienti devono avere un account, se il tuo team verifica prima le prenotazioni online, la griglia oraria, il preavviso minimo, con quanto anticipo si può prenotare, fino a quando si può annullare o modificare online e dopo quanti minuti di ritardo un paziente risulta non presentato.",
+          "Prezzi e pagamenti: la valuta di trattamenti, preventivi e prenotazioni. I preventivi e le prenotazioni già fatti mantengono la valuta con cui sono stati fatti.",
+          "Pazienti e messaggi: se i pazienti possono aggiungere una nota, se e-mail e SMS indicano il trattamento, quando partono i promemoria e se anche via SMS, e dopo quanti mesi gli appuntamenti passati perdono i dati del paziente.",
+          "Informativa sulla privacy: l'informativa che i pazienti accettano prima di prenotare. Dai una versione a ogni nuovo testo, così ogni prenotazione online registra quale ha accettato il paziente.",
+          "Avvisi al personale: chi del tuo team viene avvisato delle prenotazioni online nuove e annullate, e chi delle nuove richieste di preventivo e dei messaggi.",
+          "Richieste di preventivo: se le accetti, entro quanto vuoi rispondere (le richieste senza risposta vengono segnalate dopo quel tempo), per quanto restano validi i nuovi preventivi e le loro condizioni standard.",
+          "Profilo per pazienti dall'estero: lingue parlate, marche di impianti, aeroporto più vicino, foto, accreditamenti e testi in ogni lingua sullo studio, la garanzia, il viaggio e il soggiorno. Compare sul tuo sito."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Annulla",
     "submit": "Salva"

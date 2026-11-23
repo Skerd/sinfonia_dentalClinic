@@ -2,6 +2,30 @@
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Pamja ditore",
   "description": "Kush punon ku, pushimet dhe çdo takim. Kliko kohën e lirë për të rezervuar, tërhiq një takim për ta zhvendosur.",
+  "help": {
+    "ariaLabel": "Rreth pamjes ditore",
+    "title": "Rreth pamjes ditore",
+    "overview": "Dita e klinikës në një ekran: një kolonë për çdo dentist në çdo vendndodhje, me orarin e punës, mungesat dhe takimet e tij.",
+    "sections": [
+      {
+        "title": "Në këtë faqe",
+        "items": [
+          "Zgjidhni një vendndodhje ose të gjitha, dhe kaloni nga një ditë në tjetrën me shigjetat, datën ose Sot.",
+          "Klikoni një takim për ta hapur. Klikoni kohën e lirë të punës për të rezervuar një takim aty.",
+          "Takimet kanë ngjyrën e statusit të tyre, mungesat shfaqen në gri, dhe një vijë e kuqe tregon orën aktuale të ditës së sotme. Çdo vendndodhje shfaqet në zonën e saj kohore.",
+          "Një dentist me llogari të lidhur sheh vetëm takimet e veta."
+        ]
+      },
+      {
+        "title": "Zhvendosja e një takimi",
+        "items": [
+          "Tërhiqni një takim në pritje të konfirmimit ose të konfirmuar në një orë tjetër, ose te një dentist tjetër në të njëjtën vendndodhje.",
+          "Vendi ku do të bjerë bëhet jeshil kur përshtatet, ose i kuq me arsyen kur nuk përshtatet: jashtë orarit të punës, mungesë, një takim tjetër, një orë që ka kaluar, ose një trajtim që ai dentist nuk e bën.",
+          "Zhvendosja kontrollohet si një rezervim i ri, kështu që rregullat e rezervimit të klinikës vlejnë gjithsesi."
+        ]
+      }
+    ]
+  },
   "location": "Vendndodhja",
   "date": "Data",
   "previousDay": "Dita e mëparshme",

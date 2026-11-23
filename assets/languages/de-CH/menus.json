@@ -27,10 +27,8 @@
       "practitionerBookableTitle": "Online buchbar",
       "practitionerBookableText": "Schalten Sie dies ein, damit Patienten diesen Zahnarzt über Ihre Website buchen können.",
       "tour": {
-        "day": "Die heutigen Termine aller Zahnärzte an einem Ort. Ein guter Start in den Tag.",
-        "appointments": "Jede Buchung, ob von Ihrer Website, aus dem Portal oder von Ihrem Team erfasst. Hier bestätigen, verschieben oder absagen.",
-        "inquiries": "Patienten, die über das Portal ein Angebot anfragen. Antworten Sie mit einem Angebot, um sie zu gewinnen.",
-        "patients": "Die Akte jedes Patienten: Besuche, Behandlungspläne und Notizen."
+        "introTitle": "Ihre Zahnarztpraxis",
+        "introText": "Dieser Teil des Panels führt Ihre Praxis: die Termine des Tages, Kostenanfragen und Angebote, Patienten und ihre Reisen, Bewertungen, Ihr Team, Behandlungen und Standorte sowie Ihre Regeln. Als Nächstes öffnet die Tour jede Seite und erklärt sie. Das ⓘ neben dem Seitentitel zeigt dieselbe Hilfe jederzeit."
       }
     },
     "title": "Zahnarztpraxis",

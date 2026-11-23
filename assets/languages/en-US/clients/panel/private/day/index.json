@@ -2,6 +2,30 @@
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Day view",
   "description": "Who works where, their time off and every appointment. Click free time to book, drag an appointment to move it.",
+  "help": {
+    "ariaLabel": "About the day view",
+    "title": "About the day view",
+    "overview": "The clinic's day on one screen: a column for each dentist at each location, with their working hours, time off and appointments.",
+    "sections": [
+      {
+        "title": "On this page",
+        "items": [
+          "Pick a location or all of them, and move between days with the arrows, the date or Today.",
+          "Click an appointment to open it. Click free working time to book an appointment there.",
+          "Appointments wear the color of their status, time off is grayed out, and a red line marks the current time today. Each location shows its own time zone.",
+          "A dentist with a linked login sees only their own appointments."
+        ]
+      },
+      {
+        "title": "Moving an appointment",
+        "items": [
+          "Drag an appointment that is awaiting confirmation or confirmed to another time, or to another dentist at the same location.",
+          "Where it would land turns green when it fits, or red with the reason when it doesn't: outside working hours, time off, another appointment, a time that has passed, or a treatment that dentist doesn't do.",
+          "The move is checked like a new booking, so the clinic's booking rules still apply."
+        ]
+      }
+    ]
+  },
   "location": "Location",
   "date": "Date",
   "previousDay": "Previous day",

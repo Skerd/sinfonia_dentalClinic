@@ -109,6 +109,25 @@
     "title": "Paramètres du cabinet",
     "description": "S'applique à ce cabinet."
   },
+  "help": {
+    "ariaLabel": "À propos des paramètres du cabinet",
+    "title": "À propos des paramètres du cabinet",
+    "overview": "Les règles de votre cabinet, sur sept pages. Chaque page s'enregistre seule et s'applique à partir de là.",
+    "sections": [
+      {
+        "title": "Les sept pages",
+        "items": [
+          "Réservation en ligne : si votre site prend des réservations et vous affiche sur le portail, si les patients ont besoin d'un compte, si votre équipe vérifie d'abord les réservations en ligne, la grille horaire, le préavis minimum, combien de temps à l'avance on peut réserver, jusqu'à quand on peut annuler ou modifier en ligne, et après combien de minutes de retard un patient est noté absent.",
+          "Prix et paiements : la devise de vos soins, devis et réservations. Les devis et réservations déjà faits gardent la devise dans laquelle ils ont été faits.",
+          "Patients et messages : si les patients peuvent ajouter une note, si les e-mails et SMS nomment le soin, quand partent les rappels et s'ils partent aussi par SMS, et après combien de mois les rendez-vous passés perdent les données du patient.",
+          "Politique de confidentialité : le texte que les patients acceptent avant de réserver. Donnez une version à chaque nouveau texte, pour que chaque réservation en ligne garde celui que le patient a accepté.",
+          "Alertes au personnel : qui, dans votre équipe, est prévenu des réservations en ligne nouvelles et annulées, et qui des nouvelles demandes de devis et des messages.",
+          "Demandes de devis : si vous les acceptez, dans quel délai vous visez de répondre (les demandes sans réponse sont signalées après ce délai), combien de temps les nouveaux devis restent valables, et leurs conditions standard.",
+          "Profil pour les patients de l'étranger : langues parlées, marques d'implants, aéroport le plus proche, photos, accréditations, et textes dans chaque langue sur le cabinet, sa garantie, le voyage et le séjour. Affiché sur votre site."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Annuler",
     "submit": "Enregistrer"

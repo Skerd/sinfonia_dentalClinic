@@ -109,6 +109,25 @@
     "title": "Cilësimet e klinikës",
     "description": "Vlen për këtë klinikë."
   },
+  "help": {
+    "ariaLabel": "Rreth cilësimeve të klinikës",
+    "title": "Rreth cilësimeve të klinikës",
+    "overview": "Rregullat e klinikës suaj, në shtatë faqe. Çdo faqe ruhet më vete dhe vlen që nga ai moment.",
+    "sections": [
+      {
+        "title": "Shtatë faqet",
+        "items": [
+          "Rezervim online: nëse faqja juaj pranon rezervime dhe ju shfaq në portal, nëse pacientët duhet të kenë llogari, nëse ekipi juaj i shqyrton fillimisht rezervimet online, rrjeta orare, paralajmërimi minimal, sa ditë përpara mund të rezervohet, deri kur mund të anulohet ose ndryshohet online, dhe pas sa minutash vonesë pacienti shënohet si mosparaqitje.",
+          "Çmimet dhe pagesat: monedha e trajtimeve, ofertave dhe rezervimeve tuaja. Ofertat dhe rezervimet e bëra më parë e mbajnë monedhën me të cilën u bënë.",
+          "Pacientët dhe mesazhet: nëse pacientët mund të shtojnë një shënim, nëse emailet dhe SMS-të e përmendin trajtimin, kur dërgohen kujtesat dhe nëse edhe me SMS, dhe pas sa muajsh takimet e kaluara i humbasin të dhënat e pacientit.",
+          "Njoftimi i privatësisë: njoftimi që pacientët pranojnë para se të rezervojnë. Jepini çdo teksti të ri një version, që çdo rezervim online të ruajë se cilin njoftim pranoi pacienti.",
+          "Njoftime për punonjësit: kush nga ekipi juaj njoftohet për rezervimet online të reja dhe të anuluara, dhe kush për kërkesat e reja për ofertë dhe mesazhet.",
+          "Kërkesat për ofertë: nëse i pranoni, brenda sa orësh synoni të përgjigjeni (kërkesat pa përgjigje shënohen pas kësaj kohe), sa kohë vlejnë ofertat e reja dhe kushtet e tyre standarde.",
+          "Profili për pacientët nga jashtë: gjuhët që flisni, markat e implanteve, aeroporti më i afërt, fotot, akreditimet, si dhe tekste në çdo gjuhë për klinikën, garancinë, udhëtimin dhe qëndrimin. Shfaqet në faqen tuaj të internetit."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Anulo",
     "submit": "Ruaj"

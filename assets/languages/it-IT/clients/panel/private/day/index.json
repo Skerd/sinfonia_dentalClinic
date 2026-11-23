@@ -2,6 +2,30 @@
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Vista giornaliera",
   "description": "Chi lavora dove, le assenze e tutti gli appuntamenti. Clicca su un orario libero per prenotare, trascina un appuntamento per spostarlo.",
+  "help": {
+    "ariaLabel": "Informazioni sulla vista giornaliera",
+    "title": "Informazioni sulla vista giornaliera",
+    "overview": "La giornata dello studio in una schermata: una colonna per ogni dentista in ogni sede, con orario di lavoro, assenze e appuntamenti.",
+    "sections": [
+      {
+        "title": "In questa pagina",
+        "items": [
+          "Scegli una sede o tutte, e passa da un giorno all'altro con le frecce, la data o Oggi.",
+          "Clicca su un appuntamento per aprirlo. Clicca su un orario di lavoro libero per prenotare lì un appuntamento.",
+          "Gli appuntamenti hanno il colore del loro stato, le assenze sono in grigio e oggi una linea rossa segna l'ora attuale. Ogni sede è mostrata nel suo fuso orario.",
+          "Un dentista con account collegato vede solo i propri appuntamenti."
+        ]
+      },
+      {
+        "title": "Spostare un appuntamento",
+        "items": [
+          "Trascina un appuntamento in attesa di conferma o confermato a un altro orario, o a un altro dentista della stessa sede.",
+          "Il punto di arrivo diventa verde quando va bene, o rosso con il motivo quando non va: fuori dall'orario di lavoro, assenza, un altro appuntamento, un orario già passato o un trattamento che quel dentista non esegue.",
+          "Lo spostamento viene controllato come una nuova prenotazione, quindi le regole di prenotazione dello studio valgono comunque."
+        ]
+      }
+    ]
+  },
   "location": "Sede",
   "date": "Data",
   "previousDay": "Giorno precedente",

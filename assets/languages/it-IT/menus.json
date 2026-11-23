@@ -27,10 +27,8 @@
       "practitionerBookableTitle": "Prenotabile online",
       "practitionerBookableText": "Attivalo perché i pazienti possano prenotare questo dentista dal tuo sito.",
       "tour": {
-        "day": "Gli appuntamenti di oggi di ogni dentista, in un unico posto. Una buona pagina per iniziare la giornata.",
-        "appointments": "Ogni prenotazione, dal tuo sito, dal portale o inserita dal tuo team. Confermale, spostale o annullale qui.",
-        "inquiries": "Pazienti che chiedono un preventivo tramite il portale. Rispondi con un preventivo per conquistarli.",
-        "patients": "La scheda di ogni paziente: visite, piani di trattamento e note."
+        "introTitle": "Il tuo studio dentistico",
+        "introText": "Questa parte del pannello gestisce il tuo studio: gli appuntamenti del giorno, le richieste di preventivo e i preventivi, i pazienti e i loro viaggi, le recensioni, il team, i trattamenti e le sedi, e le tue regole. Ora il tour apre ogni pagina e la spiega. La ⓘ accanto al titolo di una pagina mostra lo stesso aiuto in qualsiasi momento."
       }
     },
     "title": "Studio dentistico",

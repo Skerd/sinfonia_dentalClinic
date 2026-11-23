@@ -2,6 +2,30 @@
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Tagesansicht",
   "description": "Wer wo arbeitet, Abwesenheiten und alle Termine. Freie Zeit anklicken zum Buchen, Termin ziehen zum Verschieben.",
+  "help": {
+    "ariaLabel": "Über die Tagesansicht",
+    "title": "Über die Tagesansicht",
+    "overview": "Der Tag der Praxis auf einem Bildschirm: eine Spalte pro Zahnarzt an jedem Standort, mit Arbeitszeiten, Abwesenheiten und Terminen.",
+    "sections": [
+      {
+        "title": "Auf dieser Seite",
+        "items": [
+          "Wählen Sie einen Standort oder alle, und wechseln Sie den Tag mit den Pfeilen, dem Datum oder Heute.",
+          "Klicken Sie auf einen Termin, um ihn zu öffnen. Klicken Sie auf freie Arbeitszeit, um dort einen Termin zu buchen.",
+          "Termine tragen die Farbe ihres Status, Abwesenheiten sind grau, und heute zeigt eine rote Linie die aktuelle Uhrzeit. Jeder Standort erscheint in seiner eigenen Zeitzone.",
+          "Ein Zahnarzt mit verknüpftem Konto sieht nur seine eigenen Termine."
+        ]
+      },
+      {
+        "title": "Einen Termin verschieben",
+        "items": [
+          "Ziehen Sie einen Termin, der auf Bestätigung wartet oder bestätigt ist, auf eine andere Zeit oder zu einem anderen Zahnarzt am selben Standort.",
+          "Die Zielstelle wird grün, wenn es passt, oder rot mit dem Grund, wenn nicht: ausserhalb der Arbeitszeit, Abwesenheit, ein anderer Termin, eine vergangene Zeit oder eine Behandlung, die dieser Zahnarzt nicht anbietet.",
+          "Das Verschieben wird wie eine neue Buchung geprüft, die Buchungsregeln der Praxis gelten also weiterhin."
+        ]
+      }
+    ]
+  },
   "location": "Standort",
   "date": "Datum",
   "previousDay": "Vorheriger Tag",

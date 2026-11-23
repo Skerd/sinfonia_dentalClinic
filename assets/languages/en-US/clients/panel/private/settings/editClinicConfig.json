@@ -109,6 +109,25 @@
     "title": "Clinic settings",
     "description": "Applies to this clinic."
   },
+  "help": {
+    "ariaLabel": "About clinic settings",
+    "title": "About clinic settings",
+    "overview": "Your clinic's rules, on seven pages. Each page saves on its own and applies from then on.",
+    "sections": [
+      {
+        "title": "The seven pages",
+        "items": [
+          "Online booking: whether your website takes bookings and lists you on the portal, whether patients need an account, whether your team reviews online bookings first, the time grid, the minimum notice, how far ahead patients can book, until when they can cancel or change online, and when a late patient counts as a no-show.",
+          "Prices and payments: the currency of your treatments, quotes and bookings. Quotes and bookings already made keep the currency they were made in.",
+          "Patients and messages: whether patients can add a note, whether emails and texts name the treatment, when reminders go out and whether also by text message, and after how many months past appointments lose the patient's details.",
+          "Privacy notice: the notice patients accept before they book. Give each new text a version, so every online booking records which one the patient accepted.",
+          "Staff alerts: who on your team hears about new and cancelled online bookings, and who hears about new estimate requests and messages.",
+          "Estimate requests: whether you take them, how quickly you aim to answer (unanswered requests are flagged after that), how long new quotes stay valid, and their standard terms.",
+          "Profile for patients from abroad: languages spoken, implant brands, the nearest airport, photos, accreditations, and texts in each language about the clinic, its warranty, and travel and stay. Shown on your website."
+        ]
+      }
+    ]
+  },
   "formButtons": {
     "cancel": "Cancel",
     "submit": "Save"

@@ -2,6 +2,30 @@
   "path": "src/modules/dentalClinic/clients/panel/private/day/index.tsx",
   "title": "Vue du jour",
   "description": "Qui travaille où, les absences et tous les rendez-vous. Cliquez sur un créneau libre pour réserver, faites glisser un rendez-vous pour le déplacer.",
+  "help": {
+    "ariaLabel": "À propos de la vue du jour",
+    "title": "À propos de la vue du jour",
+    "overview": "La journée du cabinet sur un seul écran : une colonne par dentiste sur chaque site, avec ses heures de travail, ses absences et ses rendez-vous.",
+    "sections": [
+      {
+        "title": "Sur cette page",
+        "items": [
+          "Choisissez un site ou tous, et passez d'un jour à l'autre avec les flèches, la date ou Aujourd'hui.",
+          "Cliquez sur un rendez-vous pour l'ouvrir. Cliquez sur un temps de travail libre pour y prendre un rendez-vous.",
+          "Les rendez-vous ont la couleur de leur statut, les absences sont grisées et, aujourd'hui, une ligne rouge marque l'heure actuelle. Chaque site s'affiche dans son propre fuseau horaire.",
+          "Un dentiste avec un compte lié ne voit que ses propres rendez-vous."
+        ]
+      },
+      {
+        "title": "Déplacer un rendez-vous",
+        "items": [
+          "Faites glisser un rendez-vous en attente de confirmation ou confirmé vers une autre heure, ou vers un autre dentiste du même site.",
+          "L'endroit d'arrivée devient vert quand il convient, ou rouge avec la raison quand il ne convient pas : en dehors des heures de travail, absence, autre rendez-vous, heure passée ou soin que ce dentiste ne fait pas.",
+          "Le déplacement est vérifié comme une nouvelle réservation : les règles de réservation du cabinet s'appliquent toujours."
+        ]
+      }
+    ]
+  },
   "location": "Site",
   "date": "Date",
   "previousDay": "Jour précédent",

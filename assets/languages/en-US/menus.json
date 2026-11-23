@@ -27,10 +27,8 @@
       "practitionerBookableTitle": "Bookable online",
       "practitionerBookableText": "Turn this on so patients can book this dentist from your website.",
       "tour": {
-        "day": "Today's appointments for every dentist, in one place. A good page to start your day.",
-        "appointments": "Every booking, from your website, the portal or added by your team. Confirm, move or cancel them here.",
-        "inquiries": "Patients asking for a quote through the portal. Answer with a quote to win them.",
-        "patients": "Each patient's file: visits, treatment plans and notes."
+        "introTitle": "Your dental clinic",
+        "introText": "This part of the panel runs your clinic: the day's appointments, estimate requests and quotes, patients and their trips, reviews, your team, treatments and locations, and your rules. Next, the tour opens each page and explains it. The ⓘ beside a page's title shows the same help any time."
       }
     },
     "title": "Dental clinic",

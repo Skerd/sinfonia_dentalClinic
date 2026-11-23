@@ -3,7 +3,7 @@ import type {HomeContribution} from "@coreModule/helpers/types/homeContribution.
 /**
  * What a new dental clinic company sets up before it can take customers (D178), in the order it needs them; each
  * step is done once its list has a row. Each step's guide points at the fields that matter most (D179), and the tour
- * shows the pages a clinic uses every day. Texts are in this module's `menus.json` (`setup`, `guide`).
+ * walks every page of the module (D180). Texts are in this module's `menus.json` (`setup`, `guide`).
  */
 const contribution: HomeContribution = {
     id: "dentalClinic",
@@ -55,13 +55,31 @@ const contribution: HomeContribution = {
             },
         ];
     },
-    // Sidebar links, shown from wherever the person is; the tour then ends at the last one's page help.
-    getTour: ({resolveLanguageKey: t}) => (["day", "appointments", "inquiries", "patients"] as const).map((page) => ({
-        target: `nav:/dentalClinic/${page}`,
-        // Named as the sidebar names them.
-        title: t(`menus.dentalClinic.${page}.title`),
-        text: t(`menus.dentalClinic.guide.tour.${page}`),
-    })),
+    // Every page of the module in sidebar order, then its settings, each explained by its own ⓘ help (D180); a page the
+    // person may not read is left out. The settings pages share one help, so the tour opens the first of them.
+    getTour: ({resolveLanguageKey: t}) => [
+        {
+            target: "page.help",
+            to: "/dentalClinic/day",
+            accessModel: "appointments",
+            title: t("menus.dentalClinic.guide.tour.introTitle"),
+            text: t("menus.dentalClinic.guide.tour.introText"),
+        },
+        ...([
+            ["/dentalClinic/day", "appointments"],
+            ["/dentalClinic/appointments", "appointments"],
+            ["/dentalClinic/inquiries", "clinicinquiries"],
+            ["/dentalClinic/plans", "treatmentplans"],
+            ["/dentalClinic/patients", "patients"],
+            ["/dentalClinic/trips", "patienttrips"],
+            ["/dentalClinic/reviews", "clinicreviews"],
+            ["/dentalClinic/team", "practitioners"],
+            ["/dentalClinic/timeOff", "scheduleexceptions"],
+            ["/dentalClinic/services", "clinicservices"],
+            ["/dentalClinic/locations", "cliniclocations"],
+            ["/tenancy/systemSettings/clinicConfig/booking", "clinicconfigs"],
+        ] as const).map(([page, accessModel]) => ({page, accessModel})),
+    ],
 };
 
 export default contribution;

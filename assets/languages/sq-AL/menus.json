@@ -27,10 +27,8 @@
       "practitionerBookableTitle": "I rezervueshëm online",
       "practitionerBookableText": "Aktivizojeni që pacientët ta rezervojnë këtë dentist nga faqja juaj.",
       "tour": {
-        "day": "Takimet e sotme të çdo dentisti, në një vend. Një faqe e mirë për të nisur ditën.",
-        "appointments": "Çdo rezervim, nga faqja juaj, portali ose i shtuar nga ekipi juaj. Konfirmojini, zhvendosini ose anulojini këtu.",
-        "inquiries": "Pacientë që kërkojnë një ofertë përmes portalit. Përgjigjuni me një ofertë për t'i fituar.",
-        "patients": "Dosja e çdo pacienti: vizitat, planet e trajtimit dhe shënimet."
+        "introTitle": "Klinika juaj dentare",
+        "introText": "Kjo pjesë e panelit drejton klinikën tuaj: takimet e ditës, kërkesat për ofertë dhe ofertat, pacientët dhe udhëtimet e tyre, vlerësimet, ekipin, trajtimet dhe vendndodhjet, si dhe rregullat tuaja. Më pas, turi hap çdo faqe dhe e shpjegon. Butoni ⓘ pranë titullit të faqes tregon të njëjtën ndihmë në çdo kohë."
       }
     },
     "title": "Klinikë dentare",
