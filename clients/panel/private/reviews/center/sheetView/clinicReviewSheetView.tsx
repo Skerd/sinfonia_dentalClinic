@@ -70,7 +70,8 @@ function ClinicReviewSheetView({
                 hideActions={hideActions}
                 onDelete={onDelete}
                 onRestore={onRestore}
-                editPath={`/dentalClinic/reviews/edit?clinicReviewId=${entityId}`}
+                hideEdit
+                editPath=""
                 onSheetRowPatched={(row) => {
                     setSheetData(row);
                     onSheetRowPatched?.(row as Partial<ClinicReview>);

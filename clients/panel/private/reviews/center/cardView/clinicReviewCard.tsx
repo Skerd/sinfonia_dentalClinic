@@ -9,7 +9,6 @@ import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ClinicReview} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicReview/clinicReview.dto.ts";
 import ClinicReviewSheetView from "@dentalClinicModule/clients/panel/private/reviews/center/sheetView/clinicReviewSheetView.tsx";
-import {clinicReviewEditPath} from "@dentalClinicModule/clients/panel/private/reviews/index.tsx";
 import PublishClinicReview from "@dentalClinicModule/clients/panel/private/reviews/center/actions/publishClinicReview.tsx";
 import UnpublishClinicReview from "@dentalClinicModule/clients/panel/private/reviews/center/actions/unpublishClinicReview.tsx";
 import PublishClinicReviewDialog from "@dentalClinicModule/clients/panel/private/reviews/center/dialogs/publishClinicReviewDialog.tsx";
@@ -48,7 +47,8 @@ function ClinicReviewCard({
             onRestore={onRestore}
             hideActions={hideActions}
             sheetOnly={sheetOnly}
-            editPath={clinicReviewEditPath}
+            hideEdit
+            editPath={() => ""}
             Sheet={ClinicReviewSheetView}
             sheetEntityProp="clinicReview"
             deleteUrl="/api/dentalClinic/clinicReview"
