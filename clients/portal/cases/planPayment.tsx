@@ -68,7 +68,15 @@ function CardForm({clientSecret, onPaid, resolveLanguageKey}: CardFormProps) {
     );
 }
 
-/** The accepted plan's money: what was paid, what is left, and the deposit by card where it is offered. */
+/** An IBAN as people read it, in groups of four. */
+function groupedIban(iban: string): string {
+    return iban.replace(/(.{4})(?=.)/g, "$1 ");
+}
+
+/**
+ * The accepted plan's money: what was paid, what is left, and the deposit by card where it is offered. Without card
+ * payments (D190) the deposit is paid at the clinic, or by bank transfer when the clinic gave its account.
+ */
 function PlanPayment({plan, onlinePayment, onPaid, resolveLanguageKey}: Props) {
     const [payment, setPayment] = useState<PatientDepositPaymentResponse["data"] | null>(null);
     const [startCount, setStartCount] = useState(0);
@@ -110,7 +118,39 @@ function PlanPayment({plan, onlinePayment, onPaid, resolveLanguageKey}: Props) {
                 </Button>
             ) : null}
             {plan.depositDue > 0 && !onlinePayment ? (
-                <p className="text-sm text-muted-foreground">{resolveLanguageKey("payAtClinic")}</p>
+                <p className="text-sm text-muted-foreground">{resolveLanguageKey("payAtClinic").replace("{amount}", money(plan.depositDue))}</p>
+            ) : null}
+            {plan.depositDue > 0 && !onlinePayment && plan.bankTransfer ? (
+                <div className="flex flex-col gap-2 rounded-md bg-muted p-3">
+                    <h4 className="text-sm font-medium">{resolveLanguageKey("bankTitle")}</h4>
+                    <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm">
+                        {plan.bankTransfer.holder ? (
+                            <>
+                                <dt className="text-muted-foreground">{resolveLanguageKey("bankHolder")}</dt>
+                                <dd>{plan.bankTransfer.holder}</dd>
+                            </>
+                        ) : null}
+                        <dt className="text-muted-foreground">{resolveLanguageKey("bankIban")}</dt>
+                        <dd className="font-mono tabular-nums">{groupedIban(plan.bankTransfer.iban)}</dd>
+                        {plan.bankTransfer.bic ? (
+                            <>
+                                <dt className="text-muted-foreground">{resolveLanguageKey("bankBic")}</dt>
+                                <dd className="font-mono">{plan.bankTransfer.bic}</dd>
+                            </>
+                        ) : null}
+                        {plan.bankTransfer.bankName ? (
+                            <>
+                                <dt className="text-muted-foreground">{resolveLanguageKey("bankName")}</dt>
+                                <dd>{plan.bankTransfer.bankName}</dd>
+                            </>
+                        ) : null}
+                        <dt className="text-muted-foreground">{resolveLanguageKey("bankAmount")}</dt>
+                        <dd className="tabular-nums">{money(plan.depositDue)}</dd>
+                        <dt className="text-muted-foreground">{resolveLanguageKey("bankReference")}</dt>
+                        <dd className="font-mono">{plan.bankTransfer.reference}</dd>
+                    </dl>
+                    <p className="text-xs text-muted-foreground">{resolveLanguageKey("bankHint")}</p>
+                </div>
             ) : null}
             {payment && stripePromise ? (
                 <Elements stripe={stripePromise} options={{clientSecret: payment.clientSecret}}>

@@ -2,6 +2,7 @@
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
   "title": "Erstattung",
   "description": "Kartenzahlungen werden auf die Karte erstattet; in der Praxis eingenommenes Geld wird als Erstattung erfasst, die Sie selbst auszahlen.",
+  "descriptionAtClinic": "In der Praxis eingenommenes Geld wird als Erstattung erfasst, die Sie selbst auszahlen.",
   "confirm": "Erstatten",
   "cancel": "Abbrechen",
   "amountLabel": "Betrag",

@@ -2,6 +2,7 @@
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
   "title": "Rimborso",
   "description": "I pagamenti con carta vengono rimborsati sulla carta; il denaro incassato in clinica viene registrato come rimborso che versi tu.",
+  "descriptionAtClinic": "Il denaro incassato in clinica viene registrato come rimborso che versi tu.",
   "confirm": "Rimborsa",
   "cancel": "Annulla",
   "amountLabel": "Importo",

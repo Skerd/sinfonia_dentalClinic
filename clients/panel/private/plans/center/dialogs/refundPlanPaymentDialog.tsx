@@ -8,6 +8,7 @@ import {Input} from "@coreModule/components/ui/input.tsx";
 import {Label} from "@coreModule/components/ui/label.tsx";
 import type {TreatmentPlan} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.dto.ts";
 import type {RefundPlanPaymentFormType} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/treatmentPlan/treatmentPlan.schema-def.ts";
+import {CARD_PAYMENTS_AVAILABLE} from "armonia/src/modules/finance/helpers/cardPaymentAvailability.ts";
 
 type Props = WithLanguageType & WithAxiosType<TreatmentPlan, RefundPlanPaymentFormType> & {
     plan: TreatmentPlan;
@@ -15,7 +16,7 @@ type Props = WithLanguageType & WithAxiosType<TreatmentPlan, RefundPlanPaymentFo
     onUpdated: (updated: TreatmentPlan) => void;
 };
 
-/** Gives money back: card payments through the gateway, money taken at the clinic by hand. */
+/** Gives money back: card payments through the gateway, money taken at the clinic by hand (the only kind while cards are coming soon, D190). */
 function RefundPlanPaymentDialog({plan, onClose, onUpdated, resolveLanguageKey, onFilterChange, innerRef, loading}: Props) {
     const paid = plan.amountPaid ?? 0;
     const [amount, setAmount] = useState(String(paid));
@@ -28,7 +29,7 @@ function RefundPlanPaymentDialog({plan, onClose, onUpdated, resolveLanguageKey, 
             open
             onOpenChange={(next: boolean) => !loading && !next && onClose()}
             title={resolveLanguageKey("title")}
-            desc={resolveLanguageKey("description")}
+            desc={resolveLanguageKey(CARD_PAYMENTS_AVAILABLE ? "description" : "descriptionAtClinic")}
             confirmText={resolveLanguageKey("confirm")}
             cancelBtnText={resolveLanguageKey("cancel")}
             destructive

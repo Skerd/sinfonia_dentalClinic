@@ -2,6 +2,7 @@
   "path": "src/modules/dentalClinic/clients/panel/private/plans/center/dialogs/refundPlanPaymentDialog.tsx",
   "title": "Refund",
   "description": "Card payments are refunded to the card; money taken at the clinic is recorded as a refund you pay out yourself.",
+  "descriptionAtClinic": "Money taken at the clinic is recorded as a refund you pay out yourself.",
   "confirm": "Refund",
   "cancel": "Cancel",
   "amountLabel": "Amount",
