@@ -12,6 +12,8 @@
   "images": "Images",
   "isActive": "Actif",
   "isPublic": "Sur le site web",
+  "hiddenByPlatform": "Masqué par la plateforme",
+  "hiddenByPlatformNote": "La plateforme a masqué ce soin après un signalement. Il n'apparaît plus sur votre site ni sur le portail et ne peut plus être réservé en ligne. Contactez la plateforme pour en discuter.",
   "onlineBookable": "Réservable en ligne",
   "overview": "Aperçu",
   "price": "Prix",

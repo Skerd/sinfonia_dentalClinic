@@ -4,7 +4,5 @@
   "failedDescription": "Tocca per riprovare.",
   "appointment": "Appuntamento",
   "rating": "Valutazione",
-  "authorName": "Nome",
-  "isPublished": "Pubblicata",
-  "notPublished": "Non pubblicata"
+  "authorName": "Nome"
 }

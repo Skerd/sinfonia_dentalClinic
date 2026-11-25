@@ -97,6 +97,7 @@
       "images": "Imazhet",
       "isActive": "Është aktiv",
       "isPublic": "Është publik",
+      "hiddenByPlatform": "I fshehur nga platforma",
       "name": "Emri",
       "onlineBookable": "I rezervueshëm online",
       "price": "Çmimi",
@@ -408,11 +409,9 @@
       "appointment": "Takimi",
       "authorName": "Emri",
       "comment": "Komenti",
-      "isPublished": "I publikuar",
+      "hiddenByPlatform": "I fshehur nga platforma",
       "rating": "Vlerësimi",
-      "clinicreviews": "Vlerësimet",
-      "publish": "Publiko",
-      "unpublish": "Hiq nga publikimi"
+      "clinicreviews": "Vlerësimet"
     }
   }
 }

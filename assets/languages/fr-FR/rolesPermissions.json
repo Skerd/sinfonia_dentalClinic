@@ -97,6 +97,7 @@
       "images": "Images",
       "isActive": "Est actif",
       "isPublic": "Est public",
+      "hiddenByPlatform": "Masqué par la plateforme",
       "name": "Nom",
       "onlineBookable": "Réservable en ligne",
       "price": "Prix",
@@ -408,11 +409,9 @@
       "appointment": "Rendez-vous",
       "authorName": "Nom",
       "comment": "Commentaire",
-      "isPublished": "Publié",
+      "hiddenByPlatform": "Masqué par la plateforme",
       "rating": "Note",
-      "clinicreviews": "Avis des patients",
-      "publish": "Publier",
-      "unpublish": "Retirer"
+      "clinicreviews": "Avis des patients"
     }
   }
 }

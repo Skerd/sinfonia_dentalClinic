@@ -41,7 +41,7 @@ const PAGES: Record<string, CrudPages> = {
     plans: {list: () => <AllTreatmentPlans />, create: () => <CreateTreatmentPlan />, edit: (id) => <EditTreatmentPlan entityId={id} />, idParam: "treatmentPlanId"},
     patients: {list: () => <AllPatients />, create: () => <CreatePatient />, edit: (id) => <EditPatient entityId={id} />, idParam: "patientId"},
     trips: {list: () => <AllPatientTrips />, create: () => <CreatePatientTrip />, edit: (id) => <EditPatientTrip entityId={id} />, idParam: "patientTripId"},
-    // Patients write reviews from their appointment email's link; staff only publish them, so no create or edit page.
+    // Patients write reviews from their appointment email's link and they show at once (D191), so no create or edit page.
     reviews: {list: () => <AllClinicReviews />, idParam: "clinicReviewId"},
     team: {list: () => <AllPractitioners />, create: () => <CreatePractitioner />, edit: (id) => <EditPractitioner entityId={id} />, idParam: "practitionerId"},
     timeOff: {list: () => <AllScheduleExceptions />, create: () => <CreateScheduleException />, edit: (id) => <EditScheduleException entityId={id} />, idParam: "scheduleExceptionId"},

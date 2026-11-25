@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "Rreth vlerësimeve",
     "title": "Rreth vlerësimeve",
-    "overview": "Pasi takimi të jetë kryer, pacienti mund të lërë një vlerësim nga lidhja në emailin e takimit. Mbetet i fshehur derisa ta publikoni; vlerësimet e publikuara shfaqen në faqen e klinikës dhe si yje në portal.",
+    "overview": "Pasi takimi të jetë kryer, pacienti mund të lërë një vlerësim nga lidhja në emailin e takimit. Shfaqet menjëherë në faqen e klinikës dhe si yje në portal.",
     "sections": [
       {
         "title": "Në këtë faqe",
         "items": [
-          "Publikoni një vlerësim për ta treguar në faqen tuaj dhe në portal.",
+          "Nuk mund ta ndryshoni, fshehni ose fshini një vlerësim. Nëse një vlerësim shkel rregullat, raportojeni te platforma nga menyja e tij.",
           "Një takim mund të ketë vetëm një vlerësim.",
           "Një vlerësim tregon emrin e pacientit dhe inicialin e mbiemrit."
         ]
@@ -27,7 +27,7 @@
     "rating": "Vlerësimi",
     "comment": "Komenti",
     "authorName": "Emri",
-    "isPublished": "I publikuar",
+    "hiddenByPlatform": "I fshehur nga platforma",
     "createdAt": "Krijuar më",
     "updatedAt": "Përditësuar më",
     "createdBy": "Krijuar nga",

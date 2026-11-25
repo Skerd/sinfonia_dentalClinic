@@ -42,7 +42,7 @@
   "reviewRating": "Ihre Bewertung",
   "reviewStar": "{rating} von 5",
   "reviewComment": "Ein paar Worte (freiwillig)",
-  "reviewShownAs": "Sobald die Praxis sie veröffentlicht, zeigt Ihre Bewertung Ihren Vornamen und den Anfangsbuchstaben Ihres Nachnamens.",
+  "reviewShownAs": "Ihre Bewertung erscheint sofort, mit Ihrem Vornamen und dem Anfangsbuchstaben Ihres Nachnamens.",
   "sendReview": "Bewertung senden",
-  "reviewThanks": "Vielen Dank. Ihre Bewertung wartet auf die Veröffentlichung durch die Praxis."
+  "reviewThanks": "Vielen Dank. Ihre Bewertung ist jetzt auf der Website."
 }

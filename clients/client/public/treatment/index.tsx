@@ -7,6 +7,7 @@ import {Button} from "@coreModule/components/ui/button.tsx";
 import DetailPage, {DetailHeading, DetailPrice, DetailSection, DetailText} from "@coreModule/clients/portal/shared/detailPage.tsx";
 import DetailGallery from "@coreModule/clients/portal/shared/detailGallery.tsx";
 import PortalProviderCard from "@coreModule/clients/portal/shared/portalProviderCard.tsx";
+import ReportButton from "@coreModule/components/custom/report/reportButton.tsx";
 import {bookableServices, useClinicConfig} from "../shared/clinicConfigContext.tsx";
 import ClinicSlotPicker, {type PickedSlot} from "../shared/clinicSlotPicker.tsx";
 import {ClinicPractitionerCard} from "../shared/clinicPractitionerCard.tsx";
@@ -209,6 +210,8 @@ function TreatmentPage({resolveLanguageKey}: WithLanguageType) {
             ) : (
                 <p className="text-sm text-muted-foreground">{resolveLanguageKey("callToBook")}</p>
             )}
+            {/* Something wrong with the treatment goes to the platform, not the clinic (D191). */}
+            <ReportButton kind="dentalClinic.treatment" recordId={service._id} className="self-start" />
         </DetailPage>
     );
 }

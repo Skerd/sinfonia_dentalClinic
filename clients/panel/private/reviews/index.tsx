@@ -8,16 +8,15 @@ import type {ClinicReview} from "armonia/src/modules/dentalClinic/api/dentalClin
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import ClinicReviewCard from "./center/cardView/clinicReviewCard.tsx";
 import ClinicReviewSheetView from "./center/sheetView/clinicReviewSheetView.tsx";
-import PublishClinicReview from "./center/actions/publishClinicReview.tsx";
-import UnpublishClinicReview from "./center/actions/unpublishClinicReview.tsx";
-import PublishClinicReviewDialog from "./center/dialogs/publishClinicReviewDialog.tsx";
-import UnpublishClinicReviewDialog from "./center/dialogs/unpublishClinicReviewDialog.tsx";
+import ReportMenuItem, {REPORT_TO_PLATFORM_ACTION} from "@coreModule/components/custom/report/reportMenuItem.tsx";
+import {CLINIC_REVIEW_REPORT_KIND} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicReview/clinicReview.dto.ts";
+import {ReportDialog} from "@coreModule/components/custom/report/reportButton.tsx";
 
 function AllClinicReviews({resolveLanguageKey}: WithLanguageType) {
     const quickFilters = useMemo<QuickFilterDef[]>(() => [
         {
-            field: "isPublished",
-            label: resolveLanguageKey("fields.isPublished"),
+            field: "hiddenByPlatform",
+            label: resolveLanguageKey("fields.hiddenByPlatform"),
             type: COLUMN_TYPE.BOOLEAN,
         },
     ], [resolveLanguageKey]);
@@ -27,7 +26,8 @@ function AllClinicReviews({resolveLanguageKey}: WithLanguageType) {
             collectionName="clinicreviews"
             accessModel="clinicreviews"
             tableConfigKey="clinicreviews"
-            // The patient writes the review and staff only publish it: no create, no edit.
+            // The patient writes the review and it shows at once; staff only report one to the platform (D191): no create,
+            // no edit, no delete.
             rowActionMenu={{allowMenuForCustomChildren: true, hideEdit: true}}
             buildEditPath={() => ""}
             resolveLanguageKey={resolveLanguageKey}
@@ -35,34 +35,13 @@ function AllClinicReviews({resolveLanguageKey}: WithLanguageType) {
             sheetLanguagePath="src/modules/dentalClinic/clients/panel/private/reviews/center/sheetView/clinicReviewSheetView.tsx"
             cardViewClassName="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             renderActionMenuChildren={(entity, bindRowAction) => (
-                <>
-                    <PublishClinicReview entity={entity} onAction={bindRowAction} />
-                    <UnpublishClinicReview entity={entity} onAction={bindRowAction} />
-                </>
+                <ReportMenuItem hidden={entity.hiddenByPlatform} onAction={bindRowAction} />
             )}
-            renderFloatingModals={({action, entity, resetAction, listRef}) => {
-                if (action === "publishClinicReview") {
-                    return (
-                        <PublishClinicReviewDialog
-                            open
-                            onClose={resetAction}
-                            entity={entity}
-                            onSuccess={() => listRef.current?.updateRow?.(entity._id, {isPublished: true})}
-                        />
-                    );
-                }
-                if (action === "unpublishClinicReview") {
-                    return (
-                        <UnpublishClinicReviewDialog
-                            open
-                            onClose={resetAction}
-                            entity={entity}
-                            onSuccess={() => listRef.current?.updateRow?.(entity._id, {isPublished: false})}
-                        />
-                    );
-                }
-                return null;
-            }}
+            renderFloatingModals={({action, entity, resetAction}) => (
+                action === REPORT_TO_PLATFORM_ACTION ? (
+                    <ReportDialog kind={CLINIC_REVIEW_REPORT_KIND} recordId={entity._id} open onOpenChange={(next) => { if (!next) resetAction(); }} />
+                ) : null
+            )}
             renderSheet={({open, onOpenChange, entity, onDelete, onRestore, listRef}) => (
                 <ClinicReviewSheetView
                     open={open}
@@ -70,16 +49,14 @@ function AllClinicReviews({resolveLanguageKey}: WithLanguageType) {
                     clinicReview={entity}
                     onDelete={onDelete}
                     onRestore={onRestore}
-                    onPublishedChanged={(isPublished: boolean) => listRef.current?.updateRow?.(entity._id, {isPublished})}
                     onSheetRowPatched={(row: Partial<ClinicReview>) => listRef.current?.updateRow?.(entity._id, row)}
                 />
             )}
-            renderCard={(row, onDelete, onRestore, listRef) => (
+            renderCard={(row, onDelete, onRestore) => (
                 <ClinicReviewCard
                     clinicReview={row}
                     onDelete={(deleted: ClinicReview | undefined, response?: DeletedData) => onDelete(deleted, response)}
                     onRestore={() => onRestore(row)}
-                    onPublishedChanged={(isPublished: boolean) => listRef.current?.updateRow?.(row._id, {isPublished})}
                 />
             )}
         />

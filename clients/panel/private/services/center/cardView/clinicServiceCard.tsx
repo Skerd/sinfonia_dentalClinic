@@ -18,6 +18,7 @@ import ActivateClinicService from "@dentalClinicModule/clients/panel/private/ser
 import DeactivateClinicService from "@dentalClinicModule/clients/panel/private/services/center/actions/deactivateClinicService.tsx";
 import ActivateClinicServiceDialog from "@dentalClinicModule/clients/panel/private/services/center/dialogs/activateClinicServiceDialog.tsx";
 import DeactivateClinicServiceDialog from "@dentalClinicModule/clients/panel/private/services/center/dialogs/deactivateClinicServiceDialog.tsx";
+import PlatformHiddenBadge from "@coreModule/components/custom/report/platformHiddenBadge.tsx";
 
 /** An amount in the clinic currency; a bare number only while the clinic has no currency set (never a guessed one). */
 function clinicMoney(amount: number | undefined, currency: ClinicService["currency"]): string {
@@ -131,6 +132,7 @@ function ClinicServiceCard({
                             <>
                                 <Badge variant="outline" className="text-xs">{String(resolveLanguageKey(`category.${row.category}`))}</Badge>
                                 {/* Only the exception is shown: an active, bookable treatment needs no badge. */}
+                                <PlatformHiddenBadge hidden={row.hiddenByPlatform} />
                                 {!row.isActive ? <Badge variant="secondary" className="text-xs">{resolveLanguageKey("inactive")}</Badge> : null}
                                 {row.isActive && !row.onlineBookable ? <Badge variant="secondary" className="text-xs">{resolveLanguageKey("notBookable")}</Badge> : null}
                             </>

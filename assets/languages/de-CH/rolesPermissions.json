@@ -97,6 +97,7 @@
       "images": "Bilder",
       "isActive": "Ist aktiv",
       "isPublic": "Ist öffentlich",
+      "hiddenByPlatform": "Von der Plattform verborgen",
       "name": "Name",
       "onlineBookable": "Online buchbar",
       "price": "Preis",
@@ -408,11 +409,9 @@
       "appointment": "Termin",
       "authorName": "Name",
       "comment": "Kommentar",
-      "isPublished": "Veröffentlicht",
+      "hiddenByPlatform": "Von der Plattform verborgen",
       "rating": "Bewertung",
-      "clinicreviews": "Bewertungen",
-      "publish": "Veröffentlichen",
-      "unpublish": "Veröffentlichung aufheben"
+      "clinicreviews": "Bewertungen"
     }
   }
 }

@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "Über Bewertungen",
     "title": "Über Bewertungen",
-    "overview": "Nach einem abgeschlossenen Termin kann die Patientin oder der Patient über den Link in der Termin-E-Mail eine Bewertung hinterlassen. Sie bleibt verborgen, bis Sie sie veröffentlichen; veröffentlichte Bewertungen erscheinen auf der Website Ihrer Praxis und als Sterne im Portal.",
+    "overview": "Nach einem abgeschlossenen Termin kann die Patientin oder der Patient über den Link in der Termin-E-Mail eine Bewertung hinterlassen. Sie erscheint sofort auf der Website Ihrer Praxis und als Sterne im Portal.",
     "sections": [
       {
         "title": "Auf dieser Seite",
         "items": [
-          "Veröffentlichen Sie eine Bewertung, um sie auf Ihrer Website und im Portal zu zeigen.",
+          "Sie können eine Bewertung nicht ändern, verbergen oder löschen. Verstösst eine gegen die Regeln, melden Sie sie über ihr Menü der Plattform.",
           "Ein Termin kann nur eine Bewertung haben.",
           "Eine Bewertung zeigt den Vornamen und den Anfangsbuchstaben des Nachnamens."
         ]
@@ -27,7 +27,7 @@
     "rating": "Bewertung",
     "comment": "Kommentar",
     "authorName": "Name",
-    "isPublished": "Veröffentlicht",
+    "hiddenByPlatform": "Von der Plattform verborgen",
     "createdAt": "Erstellt am",
     "updatedAt": "Aktualisiert am",
     "createdBy": "Erstellt von",

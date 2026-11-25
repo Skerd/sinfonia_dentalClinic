@@ -4,6 +4,7 @@ import withLanguage, {WithLanguageType} from "@coreModule/helpers/hocs/withLangu
 import useHttpRequest, {type HttpRequest} from "@coreModule/helpers/hooks/useHttpRequest.ts";
 import {DATE_FORMATS, formatDate} from "@coreModule/helpers/general/dateTime.ts";
 import {DetailSection} from "@coreModule/clients/portal/shared/detailPage.tsx";
+import ReportButton from "@coreModule/components/custom/report/reportButton.tsx";
 import type {ClinicReviewsResponse} from "armonia/src/modules/dentalClinic/api/dentalClinic/public/clinicStorefront/clinicStorefront.response.types.ts";
 
 const REVIEWS_REQUEST: HttpRequest = {method: "POST", url: "/api/dentalClinic/clinicStorefront/reviews", cache: true};
@@ -24,8 +25,8 @@ type Props = WithLanguageType & {
 };
 
 /**
- * The clinic's published reviews (D178): written by patients after completed appointments and published by staff.
- * Nothing is shown until there is one.
+ * The clinic's published reviews (D178): written by patients after completed appointments and shown at once; each can
+ * be reported to the platform (D191). Nothing is shown until there is one.
  */
 function ClinicReviews({layout, resolveLanguageKey}: Props) {
     const {data} = useHttpRequest<ClinicReviewsResponse>(REVIEWS_REQUEST, {limit: 10}, 1);
@@ -43,14 +44,17 @@ function ClinicReviews({layout, resolveLanguageKey}: Props) {
                 </span>
             </p>
             <ul className="flex flex-col divide-y">
-                {found.reviews.map((review, index) => (
-                    <li key={`${review.createdAt}-${index}`} className="flex flex-col gap-1.5 py-3">
+                {found.reviews.map((review) => (
+                    <li key={review._id} className="flex flex-col gap-1.5 py-3">
                         <div className="flex flex-wrap items-center justify-between gap-2">
                             <Stars rating={review.rating} label={ratingLabel(review.rating)} />
                             <span className="text-xs text-muted-foreground">{formatDate(review.createdAt, {format: DATE_FORMATS.mediumDate})}</span>
                         </div>
                         {review.comment ? <p className="text-sm">{review.comment}</p> : null}
-                        <p className="text-xs text-muted-foreground">{review.authorName}</p>
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                            <p className="text-xs text-muted-foreground">{review.authorName}</p>
+                            <ReportButton kind="dentalClinic.review" recordId={review._id} variant="link" />
+                        </div>
                     </li>
                 ))}
             </ul>

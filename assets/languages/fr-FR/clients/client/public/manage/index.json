@@ -42,7 +42,7 @@
   "reviewRating": "Votre note",
   "reviewStar": "{rating} sur 5",
   "reviewComment": "Quelques mots (facultatif)",
-  "reviewShownAs": "Une fois publié par le cabinet, votre avis affiche votre prénom et l'initiale de votre nom.",
+  "reviewShownAs": "Votre avis s'affiche aussitôt, avec votre prénom et l'initiale de votre nom.",
   "sendReview": "Envoyer l'avis",
-  "reviewThanks": "Merci. Votre avis attend la publication par le cabinet."
+  "reviewThanks": "Merci. Votre avis est maintenant en ligne."
 }

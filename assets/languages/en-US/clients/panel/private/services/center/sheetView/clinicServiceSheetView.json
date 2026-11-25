@@ -12,6 +12,8 @@
   "images": "Images",
   "isActive": "Active",
   "isPublic": "On the website",
+  "hiddenByPlatform": "Hidden by the platform",
+  "hiddenByPlatformNote": "The platform hid this treatment after a report. It no longer shows on your site or the portal and cannot be booked online. Contact the platform to talk it over.",
   "onlineBookable": "Bookable online",
   "overview": "Overview",
   "price": "Price",

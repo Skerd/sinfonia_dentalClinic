@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "À propos des avis",
     "title": "À propos des avis",
-    "overview": "Une fois le rendez-vous terminé, le patient peut laisser un avis depuis le lien de son e-mail de rendez-vous. L'avis reste caché tant que vous ne le publiez pas ; les avis publiés apparaissent sur le site de votre cabinet et en étoiles sur le portail.",
+    "overview": "Une fois le rendez-vous terminé, le patient peut laisser un avis depuis le lien de son e-mail de rendez-vous. L'avis apparaît aussitôt sur le site de votre cabinet et en étoiles sur le portail.",
     "sections": [
       {
         "title": "Sur cette page",
         "items": [
-          "Publiez un avis pour l'afficher sur votre site et sur le portail.",
+          "Vous ne pouvez ni modifier, ni masquer, ni supprimer un avis. S'il enfreint les règles, signalez-le à la plateforme depuis son menu.",
           "Un rendez-vous ne peut avoir qu'un seul avis.",
           "Un avis affiche le prénom du patient et l'initiale de son nom."
         ]
@@ -27,7 +27,7 @@
     "rating": "Note",
     "comment": "Commentaire",
     "authorName": "Nom",
-    "isPublished": "Publié",
+    "hiddenByPlatform": "Masqué par la plateforme",
     "createdAt": "Créé le",
     "updatedAt": "Mis à jour le",
     "createdBy": "Créé par",

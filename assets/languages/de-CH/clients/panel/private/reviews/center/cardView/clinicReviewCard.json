@@ -4,7 +4,5 @@
   "failedDescription": "Tippen, um es erneut zu versuchen.",
   "appointment": "Termin",
   "rating": "Bewertung",
-  "authorName": "Name",
-  "isPublished": "Veröffentlicht",
-  "notPublished": "Nicht veröffentlicht"
+  "authorName": "Name"
 }

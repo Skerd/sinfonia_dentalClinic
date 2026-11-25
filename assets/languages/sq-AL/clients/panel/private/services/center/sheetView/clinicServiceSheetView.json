@@ -12,6 +12,8 @@
   "images": "Imazhet",
   "isActive": "Aktiv",
   "isPublic": "Në faqe",
+  "hiddenByPlatform": "I fshehur nga platforma",
+  "hiddenByPlatformNote": "Platforma e fshehu këtë trajtim pas një raportimi. Nuk shfaqet më në faqen tuaj as në portal dhe nuk mund të rezervohet online. Kontaktoni platformën për ta diskutuar.",
   "onlineBookable": "I rezervueshëm online",
   "overview": "Përmbledhje",
   "price": "Çmimi",

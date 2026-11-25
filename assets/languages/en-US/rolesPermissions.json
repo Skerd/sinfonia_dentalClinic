@@ -97,6 +97,7 @@
       "images": "Images",
       "isActive": "Is active",
       "isPublic": "Is public",
+      "hiddenByPlatform": "Hidden by the platform",
       "name": "Name",
       "onlineBookable": "Online bookable",
       "price": "Price",
@@ -408,11 +409,9 @@
       "appointment": "Appointment",
       "authorName": "Name",
       "comment": "Comment",
-      "isPublished": "Published",
+      "hiddenByPlatform": "Hidden by the platform",
       "rating": "Rating",
-      "clinicreviews": "Reviews",
-      "publish": "Publish",
-      "unpublish": "Unpublish"
+      "clinicreviews": "Reviews"
     }
   }
 }

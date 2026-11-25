@@ -12,6 +12,8 @@
   "images": "Bilder",
   "isActive": "Aktiv",
   "isPublic": "Auf der Website",
+  "hiddenByPlatform": "Von der Plattform verborgen",
+  "hiddenByPlatformNote": "Die Plattform hat diese Behandlung nach einer Meldung verborgen. Sie erscheint nicht mehr auf Ihrer Website oder im Portal und kann nicht online gebucht werden. Wenden Sie sich an die Plattform, um es zu besprechen.",
   "onlineBookable": "Online buchbar",
   "overview": "Übersicht",
   "price": "Preis",

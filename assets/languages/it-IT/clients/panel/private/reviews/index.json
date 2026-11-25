@@ -5,12 +5,12 @@
   "help": {
     "ariaLabel": "Informazioni sulle recensioni",
     "title": "Informazioni sulle recensioni",
-    "overview": "A visita conclusa, il paziente può lasciare una recensione dal link nell'e-mail dell'appuntamento. Resta nascosta finché non la pubblichi; le recensioni pubblicate compaiono sul sito della clinica e come stelle sul portale.",
+    "overview": "A visita conclusa, il paziente può lasciare una recensione dal link nell'e-mail dell'appuntamento. Compare subito sul sito della clinica e come stelle sul portale.",
     "sections": [
       {
         "title": "In questa pagina",
         "items": [
-          "Pubblica una recensione per mostrarla sul tuo sito e sul portale.",
+          "Non puoi modificare, nascondere o eliminare una recensione. Se una viola le regole, segnalala alla piattaforma dal suo menu.",
           "Un appuntamento può avere una sola recensione.",
           "Una recensione mostra il nome del paziente e l'iniziale del cognome."
         ]
@@ -27,7 +27,7 @@
     "rating": "Valutazione",
     "comment": "Commento",
     "authorName": "Nome",
-    "isPublished": "Pubblicata",
+    "hiddenByPlatform": "Nascosta dalla piattaforma",
     "createdAt": "Creato il",
     "updatedAt": "Aggiornato il",
     "createdBy": "Creato da",

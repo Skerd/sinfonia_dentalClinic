@@ -97,6 +97,7 @@
       "images": "Immagini",
       "isActive": "È attivo",
       "isPublic": "È pubblico",
+      "hiddenByPlatform": "Nascosto dalla piattaforma",
       "name": "Nome",
       "onlineBookable": "Prenotabile online",
       "price": "Prezzo",
@@ -408,11 +409,9 @@
       "appointment": "Appuntamento",
       "authorName": "Nome",
       "comment": "Commento",
-      "isPublished": "Pubblicata",
+      "hiddenByPlatform": "Nascosta dalla piattaforma",
       "rating": "Valutazione",
-      "clinicreviews": "Recensioni",
-      "publish": "Pubblica",
-      "unpublish": "Ritira"
+      "clinicreviews": "Recensioni"
     }
   }
 }

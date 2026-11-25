@@ -7,10 +7,9 @@ import SheetViewRenderer from "@coreModule/components/viewEngine/SheetViewRender
 import {useViewConfig} from "@coreModule/helpers/hooks/useViewConfig.ts";
 import type {ClinicReview} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicReview/clinicReview.dto.ts";
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
-import PublishClinicReview from "@dentalClinicModule/clients/panel/private/reviews/center/actions/publishClinicReview.tsx";
-import UnpublishClinicReview from "@dentalClinicModule/clients/panel/private/reviews/center/actions/unpublishClinicReview.tsx";
-import PublishClinicReviewDialog from "@dentalClinicModule/clients/panel/private/reviews/center/dialogs/publishClinicReviewDialog.tsx";
-import UnpublishClinicReviewDialog from "@dentalClinicModule/clients/panel/private/reviews/center/dialogs/unpublishClinicReviewDialog.tsx";
+import ReportMenuItem, {REPORT_TO_PLATFORM_ACTION} from "@coreModule/components/custom/report/reportMenuItem.tsx";
+import {CLINIC_REVIEW_REPORT_KIND} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicReview/clinicReview.dto.ts";
+import {ReportDialog} from "@coreModule/components/custom/report/reportButton.tsx";
 
 type ClinicReviewSheetViewOwnProps = {
     open: boolean;
@@ -20,7 +19,6 @@ type ClinicReviewSheetViewOwnProps = {
     onDelete?: (response?: DeletedData) => void;
     onRestore?: () => void;
     onSheetRowPatched?: (patch: Partial<ClinicReview>) => void;
-    onPublishedChanged?: (isPublished: boolean) => void;
     fetchId?: string;
 };
 
@@ -33,7 +31,6 @@ function ClinicReviewSheetView({
     onDelete = () => {},
     onRestore = () => {},
     onSheetRowPatched,
-    onPublishedChanged,
     fetchId,
 }: ClinicReviewSheetViewOwnProps & WithLanguageType) {
     const [sheetData, setSheetData] = useState<Record<string, unknown>>(clinicReviewProp || {_id: fetchId});
@@ -77,36 +74,10 @@ function ClinicReviewSheetView({
                     onSheetRowPatched?.(row as Partial<ClinicReview>);
                 }}
                 actionMenuAllowCustomChildren
-                actionMenuChildren={
-                    <>
-                        <PublishClinicReview entity={asEntity} onAction={(a: string) => setAction(a)} />
-                        <UnpublishClinicReview entity={asEntity} onAction={(a: string) => setAction(a)} />
-                    </>
-                }
+                actionMenuChildren={<ReportMenuItem hidden={asEntity.hiddenByPlatform} onAction={(a: string) => setAction(a)} />}
             />
-            {action === "publishClinicReview" && (
-                <PublishClinicReviewDialog
-                    open
-                    onClose={() => setAction("")}
-                    entity={asEntity}
-                    onSuccess={() => {
-                        setSheetData((prev) => ({...prev, isPublished: true}));
-                        onSheetRowPatched?.({isPublished: true});
-                        onPublishedChanged?.(true);
-                    }}
-                />
-            )}
-            {action === "unpublishClinicReview" && (
-                <UnpublishClinicReviewDialog
-                    open
-                    onClose={() => setAction("")}
-                    entity={asEntity}
-                    onSuccess={() => {
-                        setSheetData((prev) => ({...prev, isPublished: false}));
-                        onSheetRowPatched?.({isPublished: false});
-                        onPublishedChanged?.(false);
-                    }}
-                />
+            {action === REPORT_TO_PLATFORM_ACTION && (
+                <ReportDialog kind={CLINIC_REVIEW_REPORT_KIND} recordId={asEntity._id} open onOpenChange={(next) => { if (!next) setAction(""); }} />
             )}
         </>
     );

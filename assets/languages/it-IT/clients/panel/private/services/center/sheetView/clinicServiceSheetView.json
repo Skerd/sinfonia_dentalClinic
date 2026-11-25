@@ -12,6 +12,8 @@
   "images": "Immagini",
   "isActive": "Attivo",
   "isPublic": "Sul sito web",
+  "hiddenByPlatform": "Nascosto dalla piattaforma",
+  "hiddenByPlatformNote": "La piattaforma ha nascosto questo trattamento dopo una segnalazione. Non compare più sul tuo sito né sul portale e non si può prenotare online. Contatta la piattaforma per parlarne.",
   "onlineBookable": "Prenotabile online",
   "overview": "Panoramica",
   "price": "Prezzo",

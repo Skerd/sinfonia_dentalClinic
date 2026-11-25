@@ -9,11 +9,10 @@ import type {WithAxiosLifecycleRef} from "@coreModule/helpers/hocs/withAxios.tsx
 import type {DeletedData} from "armonia/src/modules/core/types/shared.types.ts";
 import type {ClinicReview} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicReview/clinicReview.dto.ts";
 import ClinicReviewSheetView from "@dentalClinicModule/clients/panel/private/reviews/center/sheetView/clinicReviewSheetView.tsx";
-import PublishClinicReview from "@dentalClinicModule/clients/panel/private/reviews/center/actions/publishClinicReview.tsx";
-import UnpublishClinicReview from "@dentalClinicModule/clients/panel/private/reviews/center/actions/unpublishClinicReview.tsx";
-import PublishClinicReviewDialog from "@dentalClinicModule/clients/panel/private/reviews/center/dialogs/publishClinicReviewDialog.tsx";
-import UnpublishClinicReviewDialog from "@dentalClinicModule/clients/panel/private/reviews/center/dialogs/unpublishClinicReviewDialog.tsx";
-import {Badge} from "@coreModule/components/ui/badge.tsx";
+import ReportMenuItem, {REPORT_TO_PLATFORM_ACTION} from "@coreModule/components/custom/report/reportMenuItem.tsx";
+import {CLINIC_REVIEW_REPORT_KIND} from "armonia/src/modules/dentalClinic/api/dentalClinic/private/clinicReview/clinicReview.dto.ts";
+import {ReportDialog} from "@coreModule/components/custom/report/reportButton.tsx";
+import PlatformHiddenBadge from "@coreModule/components/custom/report/platformHiddenBadge.tsx";
 
 type ClinicReviewCardProps = WithLanguageType & {
     clinicReview: ClinicReview;
@@ -21,7 +20,6 @@ type ClinicReviewCardProps = WithLanguageType & {
     hideActions?: boolean;
     onDelete?: (deleted?: ClinicReview, response?: DeletedData) => void;
     onRestore?: () => void;
-    onPublishedChanged?: (isPublished: boolean) => void;
     sheetOnly?: boolean;
     innerRef?: RefObject<WithAxiosLifecycleRef<ClinicReview> | null>;
 };
@@ -33,7 +31,6 @@ function ClinicReviewCard({
     hideActions = false,
     onDelete,
     onRestore,
-    onPublishedChanged,
     sheetOnly = false,
     innerRef,
 }: ClinicReviewCardProps) {
@@ -59,40 +56,12 @@ function ClinicReviewCard({
             innerRef={innerRef}
             sheetProps={({entity, setEntity}) => ({
                 fetchId,
-                onPublishedChanged: (isPublished: boolean) => {
-                    setEntity({...entity, isPublished});
-                    onPublishedChanged?.(isPublished);
-                },
-                onSheetRowPatched: (row: Partial<ClinicReview>) => {
-                    setEntity({...entity, ...row});
-                    if (typeof row.isPublished === "boolean") onPublishedChanged?.(row.isPublished);
-                },
+                onSheetRowPatched: (row: Partial<ClinicReview>) => setEntity({...entity, ...row}),
             })}
-            extraDialogs={({action, setAction, entity, setEntity}) => (
-                <>
-                    {action === "publishClinicReview" && (
-                        <PublishClinicReviewDialog
-                            open
-                            onClose={() => setAction("")}
-                            entity={entity}
-                            onSuccess={() => {
-                                setEntity({...entity, isPublished: true});
-                                onPublishedChanged?.(true);
-                            }}
-                        />
-                    )}
-                    {action === "unpublishClinicReview" && (
-                        <UnpublishClinicReviewDialog
-                            open
-                            onClose={() => setAction("")}
-                            entity={entity}
-                            onSuccess={() => {
-                                setEntity({...entity, isPublished: false});
-                                onPublishedChanged?.(false);
-                            }}
-                        />
-                    )}
-                </>
+            extraDialogs={({action, setAction, entity}) => (
+                action === REPORT_TO_PLATFORM_ACTION ? (
+                    <ReportDialog kind={CLINIC_REVIEW_REPORT_KIND} recordId={entity._id} open onOpenChange={(next) => { if (!next) setAction(""); }} />
+                ) : null
             )}
         >
             {({entity: row, setAction}) => (
@@ -100,9 +69,8 @@ function ClinicReviewCard({
                     <EntityCard.Header titlePath="authorName"
                         title={row.authorName}
                         badgesBesideTitle
-                        badges={!row.isPublished ? <Badge variant="outline" className="text-xs">{String(resolveLanguageKey("notPublished"))}</Badge> : null}>
-                        <PublishClinicReview entity={row} onAction={setAction} />
-                        <UnpublishClinicReview entity={row} onAction={setAction} />
+                        badges=<PlatformHiddenBadge hidden={row.hiddenByPlatform} />>
+                        <ReportMenuItem hidden={row.hiddenByPlatform} onAction={setAction} />
                     </EntityCard.Header>
                     <EntityCard.Body>
                         <EntityCardRow
